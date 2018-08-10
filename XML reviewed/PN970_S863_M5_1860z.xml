@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-11-27"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-080-08"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="Blue pictorial wrappers align(centre)">
+                <bibl>
+                    <title level="m">MIND YOR MOTHER. <lb/>AN OLD MAN'S STORY.</title>
+                    <lb/>&rule; <lb/><publisher>SUNDAY&ndash;SCHOOL UNION,</publisher>
+                    <lb/><pubPlace>200 MULBERRY&ndash;STREET, N.Y.</pubPlace>
+                </bibl>
+
+                <pb n="2"/>
+            </div>
+
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart type="main">MIND YOR MOTHER.</titlePart>
+                    <titlePart type="sub">AN OLD MAN'S STORY.</titlePart>
+                </docTitle>
+                <docImprint>
+                    <publisher>&rule;<lb/>SUNDAY&ndash;SCHOOL UNION,</publisher>
+                    <pubPlace>200 MULBERRY&ndash;STREET, NEW YORK.</pubPlace>
+                </docImprint>
+            </titlePage>
+
+            <pb n="4"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>43C128</name>
+                    <desc>fisherman</desc>
+                </ic:iconClass>
+            </figure>
+        </front>
+        <body>
+            <pb n="5"/>
+            <head type="work" rend="align(centre)">MIND YOUR MOTHER.<lb/>&rule;</head>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">Come, boys, here is a story for<lb/>you. I want
+                you all to come close<lb/>to me and hear every word I say,<lb/>for it may be of
+                great use to you. I<lb/>was a boy once, and I know very<lb/>well how boys feel. I am
+                a man<lb/>now, but I have had as much to do <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> with boys as I
+                have with men, and<lb/>I always like to see boys try to do<lb/>right, and I love to
+                help them do<lb/>so.</p>
+            <p rend="first-indent(3) align(justify)">God has been very kind to spare<lb/>your mother
+                alive to watch over and<lb/>care for you. What I want to tell<lb/>you is how to
+                treat her. Now don't<lb/>turn up your nose, as much as to say,<lb/>&ldquo; O that is
+                not worth hearing, it don't<lb/>concern me.&rdquo; Let me tell you it<lb/>does
+                concern you very much. It<lb/>has to do with what kind of a man <pb n="7"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> you will make in the
+                world.<lb/>When I was a boy no larger than<lb/>you are, my mother used to tell
+                me<lb/>that she never knew any one to do<lb/>well in the world that did not
+                treat<lb/>his mother well. She said that when<lb/>she was young she had
+                known<lb/>many boys that did not treat their<lb/>mothers well, and they all came
+                to<lb/>some bad end.</p>
+            <p rend="first-indent(3) align(justify)">I know three boys that did not<lb/>treat their
+                mothers well, and I<lb/>made up my mind to watch and see <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> how they turned
+                out in the world.<lb/>That was a good many years ago,<lb/>for you see I am old and
+                gray now.<lb/>I will call them Bill, and Dick, and<lb/>Sam. It is all just as fresh
+                in my<lb/>mind as if it was only two days ago.<lb/>They were all in the same
+                class<lb/>with me at school. I knew their<lb/>mothers too very well, for I
+                often<lb/>went home with them to play.</p>
+            <p rend="first-indent(3) align(justify)">Bill was a nice boy when he was<lb/>among us.
+                He was always gay and<lb/>full of life, and very often at the <pb n="9"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> head of his class. One day I
+                was<lb/>at his house. We were, it may<lb/>be, as many as ten of us playing
+                a<lb/>fine game of ball on the green in<lb/>front of the house. By and by
+                Bill's<lb/>mother came to the door and called<lb/>him.</p>
+            <p rend="first-indent(3) align(justify)">At first Bill did not seem to hear<lb/>it, we
+                were all so busy at play.<lb/>&ldquo;Bill,&rdquo; said I, &ldquo;your mother
+                calls<lb/>you.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">Just then he ran close by her,<lb/>and so he
+                stopped to hear what she <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> had to say.
+                &ldquo; Here, my son, I want<lb/>you to take this box down to the<lb/>shop to your
+                father. He wants it<lb/>before night.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; But I don't want to go,
+                mother.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo;Well, you must go.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo;But I'm at play and I can't go.<lb/>I'm
+                in the game.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; I tell you, you must go at
+                once,<lb/>and that is all there is about it.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">Just then the other party who<lb/>were in the
+                game beat, and set up a<lb/>loud huzza ; and Bill, half vexed that <pb n="11"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw><lb/> the game had gone against
+                him,<lb/>picked up a stick and threw it at<lb/>his mother, saying, &ldquo;Well, I
+                won't<lb/>go, there! you may go yourself for<lb/>what I care,&rdquo; and off he ran.
+                I<lb/>turned just in time to see the stick<lb/>fall from her dress, and to see
+                how<lb/>sad she looked when she went into<lb/>the house.</p>
+            <p rend="first-indent(3) align(justify)">I never before had seen a boy<lb/>strike his
+                mother, or throw anything<lb/>at her, and it made me feel so badly<lb/>that I could
+                play no more. I told <fw type="signature" rend="align(centre)">1*</fw><lb/>
+                <pb n="12"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> the boys that I
+                did not feel well and<lb/>I must go home. Indeed, it made<lb/>me quite
+                heart&ndash;sick. I thought of<lb/>all my mother had told me about<lb/>boys that did
+                not mind their mother,<lb/>and I thought I would see how it<lb/>went with Bill. But
+                I loved Bill,<lb/>and it made me sad to think that he<lb/>was the one that would
+                have such<lb/>bad things come upon him.</p>
+            <p rend="first-indent(3) align(justify)">Perhaps he would have done bet&ndash;<lb
+                    type="inWord"/>ter if his mother had spoken more<lb/>kindly to him, but that was
+                no ex&ndash; <pb n="13" type="inWord"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">11</fw><lb/> cuse for his bad actions. I
+                used to<lb/>talk to him about it, and tell him<lb/>what I feared for him ; but he
+                would<lb/>only laugh at me, or if he tried to do<lb/>better it was only for a little
+                while.</p>
+            <p rend="first-indent(3) align(justify)">Before he grew up to be a man he<lb/>was taken
+                sick. His mother was<lb/>very kind to him, and he learned to<lb/>love her better
+                then. But he never<lb/>got well. Year after year he lay on<lb/>his sick bed, or sat
+                in his easy chair,<lb/>and I often went to see him and<lb/>talk with him, and at
+                last he died.</p>
+
+            <pb n="14"/>
+            <fw type="pagenumber" rend="align(left)">12</fw>
+            <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">The next boy was Dick. His<lb/>mother used to
+                let him do just as<lb/>he chose in all things. If he wanted<lb/>anything she was
+                sure to do it for<lb/>him ; but if she wanted anything of<lb/>him, he was sure <hi
+                    rend="italics"> not</hi> to do it for her.</p>
+            <p rend="first-indent(3) align(justify)">I never saw a boy so willful as he<lb/>was
+                about that. If she even asked<lb/>him to do a thing that was for his<lb/>own good,
+                he was very likely not<lb/>to do it. I think he had much<lb/>more regard for George
+                Pell, who<lb/>was the leader of our sports, than he <pb n="15"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw><lb/> had for his mother. Why,
+                she<lb/>might as well have talked to the<lb/>bricks in the walk as to have
+                asked<lb/>him to do an errand. He always<lb/>acted as if he felt, &ldquo;I don't
+                care for<lb/>my mother.&rdquo; When I saw just<lb/>what kind of a boy he was I
+                gave<lb/>up going with him. I could not<lb/>bear to play with him, or sit
+                beside<lb/>him in class.</p>
+            <p rend="first-indent(3) align(justify)">Well, Dick is dead too. As he<lb/>grew up he
+                would go out at nights<lb/>with bad boys, and he soon learned <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> to drink and
+                swear, and before he<lb/>was twenty&ndash;one he was found dead<lb/>in the
+                gutter.</p>
+            <p rend="first-indent(3) align(justify)">Sam was worse, if anything, than<lb/>the other
+                two boys. He not only<lb/>cared nothing for what his mother<lb/>said, but he used to
+                make sport of<lb/>her before the other boys. And<lb/>what do you think became of him
+                ?<lb/>His end was worse than that of<lb/>Dick or Bill. He was sent to
+                State&ndash;<lb/>prison for a very bad crime and<lb/>died there. I can't bear to
+                think <pb n="17"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">15</fw><lb/> of it. I can't bear to speak
+                of it.<lb/>I do not like to tell such bad<lb/>stories. I have only told these
+                to<lb/>show how it goes with wicked boys,<lb/>and to warn you not to do as
+                they<lb/>have done.</p>
+            <p rend="first-indent(3) align(justify)">I have seen one thing about all<lb/>such boys.
+                They seldom live long.<lb/>But those who obey and honor their<lb/>parents, have the
+                promise that their<lb/>days shall be long in the land. I<lb/>do not suppose this is
+                always so, for<lb/>some very good boys and girls die <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> young, and go
+                home to that better<lb/>land where they are much more<lb/>happy than they can be
+                here.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">I was thinking of one little boy<lb/>the other
+                day that used to be so<lb/>good to his mother. His name was<lb/>Fred. I do believe
+                he loved his<lb/>mother better than anything or any<lb/>body else in the world. She
+                was<lb/>sick a great part of the time, and<lb/>Fred liked, to stay by her,
+                watch<lb/>over and care for her. It was<lb/>not much of the time that she <pb n="19"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">17</fw><lb/> was so sick as to keep her
+                bed.<lb/>She was up and about the house,<lb/>and did much of the work. She
+                was<lb/>not able to keep a girl, and her little<lb/>Tot, Fred's sister, was only six
+                years<lb/>old when they came to live in our<lb/>place. Then there was the
+                baby.<lb/>Tot was just the right size to rock<lb/>him to sleep, or to play with
+                him.</p>
+            <p rend="first-indent(3) align(justify)">But when baby was cross<lb/>Fred took care of
+                her. He would<lb/>take her out of doors and draw<lb/>her in his cart; he would call
+                    <pb n="20"/>
+                <fw type="pagenumber" rend="align(left)">18</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> the big dog Ned
+                to play with her;<lb/>he would show her the sheep, and<lb/>the calves, and the hens,
+                and when<lb/>she was tired he would rock her to<lb/>sleep in the big
+                arm&ndash;chair. Then he<lb/>would go and bring in wood and<lb/>water for his
+                mother; if it was meal&ndash;<lb type="inWord"/>time he would set the table,
+                and<lb/>after the meal he would clear it<lb/>away, and wash up and put away<lb/>the
+                dishes. We boys all thought<lb/>that very odd. I don't think there<lb/>was one in
+                ten of us that would <pb n="21"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">19</fw><lb/> have done it at our homes.
+                And<lb/>the first day he came to school some<lb/>of the boys got round him at
+                    noon&ndash;<lb type="inWord"/>time and called him <hi rend="italics"
+                    >gal&ndash;boy</hi>, and<lb/>asked him if he could play ball as<lb/>well as he
+                could wash dishes.</p>
+            <p rend="first-indent(3) align(justify)">You should have seen him pick<lb/>up the
+                ball&ndash;club then. &ldquo;Yes,&rdquo; said<lb/>he, &ldquo;I can play ball with
+                the best of<lb/>you.&rdquo; We did not tease him any<lb/>more then. We saw that he
+                had a<lb/>high spirit, and we began to think<lb/>well of him. After a few days we
+                    <pb n="22"/>
+                <fw type="pagenumber" rend="align(left)">20</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> found that he was
+                as smart as any<lb/>of us in play, or in study, or any&ndash;<lb type="inWord"
+                />thing that was good. He never<lb/>would take any part in our bad<lb/>tricks; and
+                when some of the boys<lb/>tried to shame him, and told him he<lb/>was afraid, he
+                said yes, he was<lb/>afraid to do anything that was<lb/>wrong, and they rarely tried
+                him<lb/>again.</p>
+            <p rend="first-indent(3) align(justify)">When his sisters grew up he did<lb/>not have so
+                much to do in the house,<lb/>but he was just as kind to his <pb n="23"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">21</fw><lb/> mother as ever. I know one
+                night,<lb/>when he was as much as sixteen, he<lb/>would not go to skate with us
+                    be&ndash;<lb type="inWord"/>cause his father was away from<lb/>home, and he
+                would not leave his<lb/>mother alone. Dick Holt and I<lb/>went over to ask her if he
+                could not<lb/>go, and she said, &ldquo;O yes,&rdquo; and<lb/>tried to get him to go,
+                but he would<lb/>not stir a step. He came to the<lb/>door with us, and the air was
+                so<lb/>clear and the moon so bright that I<lb/>could not help asking him once again,
+                    <pb n="24"/>
+                <fw type="pagenumber" rend="align(left)">22</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> and I told over
+                some of the boys that<lb/>were to be there.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo;Jim,&rdquo; said he, &ldquo;I care more
+                for<lb/>my mother than for all the boys in<lb/>town, and I'd give more for
+                one<lb/>such look from her eyes as she gave<lb/>me to&ndash;night, when I said I'd
+                stay<lb/>by her, than I would for a whole<lb/>day on the skates.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">When he got to be a man his<lb/>father died,
+                and he had his mother<lb/>live with him, and he taught his<lb/>children to love her
+                just as he had <pb n="25"/>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw>
+                <fw type="pagenumber" rend="align(right)">23</fw><lb/> loved her, and to love their
+                own<lb/>mother too.</p>
+            <p rend="first-indent(3) align(justify)">And I thought of it all the other<lb/>day when
+                I met Mr. Post, for that<lb/>is his name, with a grandchild on<lb/>each side of him.
+                He is an old man<lb/>now, and his hair is white; but it is<lb/>like a crown of glory
+                to him. Mr.<lb/>Post ? Yes, Mr. Post, the dear old<lb/>man that you love so much. He
+                is<lb/>the very Fred of my story. All<lb/>who know him love him. The
+                rich<lb/>respect him. The poor bless him. <pb n="26"/>
+                <fw type="pagenumber" rend="align(left)">26</fw>
+                <fw type="header" rend="align(centre)">MIND YOUR MOTHER.</fw><lb/> Children run to
+                meet him, and the<lb/>very birds of the air seem to sing a<lb/>sweeter song when he
+                passes by.</p>
+            <p rend="first-indent(3) align(justify)">A long, a happy, and useful life<lb/>he has
+                led, and now he stands close<lb/>by the gate of heaven, waiting till<lb/>till the
+                angel of death shall call him<lb/>away to meet his mother in that<lb/>bright world
+                to which she has gone<lb/>before him.</p>
+            <p rend="align(centre)">THE END.</p>
+        </body>
+        <back>
+            <pb n="27"/>
+            <pb n="28"/>
+        </back>
+    </text>
+</TEI>

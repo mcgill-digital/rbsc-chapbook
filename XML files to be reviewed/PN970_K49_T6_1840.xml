@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name/>Kara Garvey<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="MetricalTales">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="orange coloured pictorial wrappers">
+                <bibl>
+                    <publisher>S. &amp;J. KEYS'S EDITION, DEVONPORT.<lb/>&rule;<lb/></publisher>
+                    <!-- is there a way to indicate that the title is embedded in the image?-->
+                    <title level="m">THE<lb/>HISTORY<lb/>OF<lb/>TOM THUMB</title><lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>47I223</name>
+                            <desc>milking</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <head type="work" rend="align(centre)">TOM THUMB.<lb/>&rule;<lb/></head>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31A42</name>
+                    <desc>human beings (legendary or not) of abnormal proportions, size, strength, etc.</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l rend="indent(2)">&ldquo; My name is Tom Thumb,</l>
+                <l rend="indent(2)">From the fairies I've come;</l>
+                <l rend="indent(2)">When King Arthur shone,</l>
+                <l rend="indent(2)">This court was my home.</l>
+                <l rend="indent(2)">In me he delighted,</l>
+                <l rend="indent(2)">By him I was knighted;</l>
+                <l>Did you never hear of Sir Thomas<lb rend="indent(6)"/>Thumb.</l>
+            </lg>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">2</fw>
+            <fw type="header" rend="align(centre)">TOM THUMB.</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31A42</name>
+                    <desc>human beings (legendary or not) of abnormal proportions, size, strength, etc.</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l>In good King Arthur's happy reign</l>
+                <l rend="indent(2)">Was born the great Tom Thumb;</l>
+                <l>And vast were his renown and fame,</l>
+                <l rend="indent(2)">Though but a poor man's son.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>He one day crept into a bag</l>
+                <l rend="indent(2)">To steal some cherry&ndash;stones ;</l>
+                <l>But being caught around the waist,</l>
+                <l rend="indent(2)">Sore squeez'd were his poor bones.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>Soon after little Tommy Thumb</l>
+                <l rend="indent(2)">Into a batter pudding fell;</l>
+                <l>But when the pot began to boil,</l>
+                <l rend="indent(2)">He kick'd and roar'd right well.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>The pudding then was thrown away,</l>
+                <l rend="indent(2)">A tinker found the prize;</l>
+                <l>But quickly flung it o'er a hedge,</l>
+                <l rend="indent(2)">When he heard poor Tom Thumb's cries.</l>
+            </lg>
+
+            <pb n="5"/>
+            <fw type="header" rend="align(centre)">TOM THUMB.</fw>
+            <fw type="pagenumber" rend="align(right)">3</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31A42</name>
+                    <desc>human beings (legendary or not) of abnormal proportions, size, strength, etc.</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l>His mother went to milk her cow :</l>
+                <l rend="indent(2)">Tom, she to a thistle tied;</l>
+                <l>But soon, alas! his oak&ndash;leaf hat</l>
+                <l rend="indent(2)">The cherry cow espied.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>She ate the thistle and Tom Thumb&mdash;</l>
+                <l rend="indent(2)">(Small mouthful 'twas in truth) :</l>
+                <l>&ldquo; Where are you, Tom ? &rdquo; his mother cried;</l>
+                <l rend="indent(2)">&ldquo; Oh ! in the red cow's mouth.&rdquo;</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>A raven next flew off with Tom,</l>
+                <l rend="indent(2)">And dropp'd him in the sea;</l>
+                <l>A large fish saw Tom headlong fall,</l>
+                <l rend="indent(2)">And gulp'd him instantly.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>Soon afterwards the fish was caught,</l>
+                <l rend="indent(2)">And for the King prepared;</l>
+                <l>When open'd, out crept Tommy Thumb :</l>
+                <l rend="indent(2)">O, how the people stared.</l>
+            </lg>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">TOM THUMB.</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31A42</name>
+                    <desc>human beings (legendary or not) of abnormal proportions, size, strength, etc.</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l>Then Tom was made King Arthur's dwarf&mdash;</l>
+                <l rend="indent(2)">A favourite grew at court&mdash;</l>
+                <l>The Knights of the Round Table pleas'd</l>
+                <l rend="indent(2)">With various kinds of sport.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>Then for his home Tom was equipp'd,</l>
+                <l rend="indent(2)">With wealth a mighty store&mdash;</l>
+                <l>A silver three&ndash;penny piece his load,</l>
+                <l rend="indent(2)">Which gall'd his shoulders sore.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>The King decreed that Tom should die:</l>
+                <l rend="indent(2)">When to the scaffold brought,</l>
+                <l>He quaked with fear, and, to escape,</l>
+                <l rend="indent(2)">Jump'd down a miller's throat.</l>
+            </lg>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">TOM THUMB.</fw>
+            <fw type="pagenumber" rend="align(right)">5</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31A42</name>
+                    <desc>human beings (legendary or not) of abnormal proportions, size, strength, etc.</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l>He teazed the man when he got home</l>
+                <l rend="indent(2)">Who thought himself bewitch'd,</l>
+                <l>He yawn d, Tom leap'd out, but was caught</l>
+                <l rend="indent(2)">And in the river pitch'd.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>A fine large salmon swimming by,</l>
+                <l rend="indent(2)">Beheld unlucky Tom</l>
+                <l>Drop from th' enraged miller's hand,</l>
+                <l rend="indent(2)">And quickly gorged him down.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>The fish was caught&mdash;so Tom again</l>
+                <l rend="indent(2)">Was in King Arthur's pow'r;</l>
+                <l>He in a mouse&ndash;trap was confin'd</l>
+                <l rend="indent(2)">For many a tedious hour.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>The King forgave Tom Thumbs offence,</l>
+                <l rend="indent(2)">Created him a Knight,</l>
+                <l>Then he was called Sir Thomas Thumb,</l>
+                <l rend="indent(2)">And deck'd with jewels bright.</l>
+            </lg>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">TOM THUMB.</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31A42</name>
+                    <desc>human beings (legendary or not) of abnormal proportions, size, strength, etc.</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l>With needle dangling at his side,</l>
+                <l rend="indent(2)">He strutted up and down;</l>
+                <l>And oft upon a mouse would ride,</l>
+                <l rend="indent(2)">To view the palace round.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>One day, when hunting with the King,</l>
+                <l>Proud seated on his mouse,</l>
+                <l>A large cat sprang upon them both,</l>
+                <l>From a neighbouring farm house.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>With courage Tom drew forth his sword,</l>
+                <l rend="indent(2)">And fought with all his skill,</l>
+                <l>Until he drove the cat away :&mdash;</l>
+                <l rend="indent(2)">The nobles laugh'd their fill.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>The Queen of Fairies next to Tom</l>
+                <l rend="indent(2)">In all her pomp appears,</l>
+                <l>And carried him to Fairy Land,</l>
+                <l rend="indent(2)">Where he remain'd for years.</l>
+            </lg>
+            <lb/>
+
+            <pb n="9"/>
+            <fw type="header" rend="align(centre)">TOM THUMB.</fw>
+            <fw type="pagenumber" rend="align(right)">7</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C31</name>
+                    <desc>flying on or with the aid of animal(s)</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l>But wishing to return once more</l>
+                <l rend="indent(2)">His native land to view,</l>
+                <l>The fairy sent him through the air,</l>
+                <l rend="indent(2)">Array'd in shining blue.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>He mounted on a butterfly,</l>
+                <l rend="indent(2)">And flew from field to field;</l>
+                <l>Such gambols for his royal friends;</l>
+                <l rend="indent(2)">Much merriment did yield.</l>
+            </lg>
+            <lb/>
+
+            <lg rend="align(left)">
+                <l>But soon these pleasing frolics ceased :</l>
+                <l rend="indent(2)">A cruel spider's bite</l>
+                <l>Deprived him of his life:&mdash;thus died</l>
+                <l rend="indent(2)">Tom Thumb, King Arthur's Knight.</l>
+            </lg>
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+            <fw type="header" rend="align(centre)">TOM THUMB.</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>44G31</name>
+                    <desc>imprisonment</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <div type="section">
+                <head rend="align(centre)">TOM THUMB'S EPITAPH.</head>
+                <lg rend="align(left)">
+                    <l>Here lies Tom Thumb, King Arthur's Knight,</l>
+                    <l>Who died by a spider's cruel bite;</l>
+                    <l>He was well known in Arthur's court,</l>
+                    <l>Where he afforded gallant sport:</l>
+                    <l>He rode at tilt and tournament,</l>
+                    <l>And on a mouse a hunting went;</l>
+                    <l>Alive, he fill'd the court with mirth,</l>
+                    <l>His death to sorrow soon gave birth.</l>
+                    <l>Wipe, wipe your eyes, and shake your head,</l>
+                    <l>And cry, &ldquo; Alas! Tom Thumb is dead.&rdquo;</l>
+                </lg>
+            </div>
+        </body>
+
+        <back>
+            <div type="colophon">
+                <p rend="align(centre)">&rule;<lb/>DEVONPORT: PRINTED BY SAMUEL AND JOHN KEYS.</p>
+            </div>
+
+            <pb n="11"/>
+
+            <pb n="12"/>
+            <div type="advertisement">
+                <head>HISTORY BOOKS,<lb/>PUBLISHED BY S. &amp;J. KEYS, WHOLESALE AND
+                    RETAIL,<lb/>SELL AT <measure type="price">ONE PENNY</measure> EACH.</head>
+                <list rend="align(left)" type="simple">
+                    <item>The History of Fair Rosamond</item>
+                    <item>The Life and Adventures of Richard Turpin</item>
+                    <item>The History of Tom Thumb</item>
+                    <item>The surprising Adventures of Puss in Boots</item>
+                    <item>Rhymes for the Nursery</item>
+                    <item>The entertaining History of Whittington and hie Cat</item>
+                    <item>The droll Adventures of Mother Hubbard and her Dog</item>
+                    <item>The Serio&ndash;Comic Drama of Punch and Judy</item>
+                    <item>The History of Tom Tucker</item>
+                    <item>The Life and Adventures of Jack Sheppard</item>
+                    <item>The Life and Adventures of Bampfylde Moore Carew</item>
+                    <item>The History of the unfortunate Jane Shore</item>
+                    <item>The interesting History of Jack and the Giants</item>
+                    <item>The New Letter Writer ; or, Art of Polite Correspondence</item>
+                    <item>Remarkable Predictions of Robert Nixon, the Cheshire<lb rend="indent(2)"
+                        />Prophet.</item>
+                </list>
+            </div>
+
+            <div type="advertisement">
+                <head>DREAM BOOKS &amp;FORTUNE TELLERS,<lb/>PRICE <measure type="price">ONE
+                        PENNY</measure> EACH.</head>
+                <list rend="align(left)" type="simple">
+                    <!-- is this how to code a hanging indent? -->
+                    <item>The New Universal Dream Book ; or, the Dreamer's sure Guide<lb
+                            rend="indent(2)"/>to the hidden Mysteries of Futurity.</item>
+                    <item>Napoleon Bonaparte's Book of Fate, found in his Cabinet, who<lb
+                            rend="indent(2)"/>estimated it as his greatest treasure, being in the
+                        habit of consulting<lb/>it on all momentous occasions, and having always
+                        found its revel&ndash;<lb type="inWord"/>ations the best Insight into
+                        Futurity.</item>
+                    <item>The Wheel of Fortune: on Love, Marriage, &amp;c.; to which are<lb
+                            rend="indent(2)"/>added the Signification of Moles; Judgments drawn from
+                        the Moon's<lb/>age; the Lucky and Unlucky Days and Hours; full directions
+                        for<lb/>young Ladies to choose their Husbands, and Gentlemen their
+                        Wives;<lb/>how to know if their present sweethearts will marry them ; and
+                        how<lb/>to see then future partner; and to enjoy the pleasure of seeing in
+                        a<lb/>Dream what their Future Fate will be; and other curious and
+                            in&ndash;<lb type="inWord"/>teresting matter.</item>
+                    <item>The Everlasting and True&ndash;telling Gipsy Fortune Teller:<lb
+                            rend="indent(2)"/>being a New and Original Guide to Future Events;
+                        comprising full<lb/>and explicit instructions for predicting the Destinies
+                        of all who may<lb/>consult its mystic pages, by the following faithful and
+                        infallible secret<lb/>arts :&mdash;The Royal Table of Fate; or, Oracle of
+                        Love, Marriage, and<lb/>Destiny; a list of Lucky and Unlucky Days; and of
+                        the Days for&ndash;<lb type="inWord"/>tunate in Courtship and Marriage;
+                        Cardiology or Cards; also, by the<lb/>Grounds of a Tea or Coffee Cup, and by
+                        Charms, Spells, and Incan&ndash;<lb type="inWord"/>tations ; Signs of Love
+                        and Speedy Marriage.</item>
+                </list>
+                <p>&rule;</p>
+                <!-- how can I code the image of a small hand? -->
+                <p rend="align(centre)"><hi rend="italic">Always on Sale, a large assortment of
+                        Penny Song Books</hi>.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

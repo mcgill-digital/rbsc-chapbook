@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+<!ENTITY ctlig "ct-ligature">
+<!ENTITY brace "&#x7d;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+<!ENTITY tcdquo   "&#11826;"> <!-- turned comma -->
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+]>
+
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Annika Robbins</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Instruction">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="brown coloured pictorial wrapper">
+                <figure type="borderornament"/>
+                <bibl><title level="m">THE<lb/> GARDEN<lb/> OF<lb/> LEARNING.</title><lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>11Q2112</name>
+                            <desc>prayer at going to bed, or at getting up</desc>
+                        </ic:iconClass>
+                    </figure>&crule;<lb/><pubPlace>LONDON.</pubPlace><lb/>Printed and Published by
+                    J. L. Marks,<lb/>91, Long Lane Smithfield.</bibl>
+
+                <pb n="2"/>
+            </div>
+            <pb n="3"/>
+            <titlePage>
+                <titlePart type="main">THE GARDEN OF LEARNING.<lb/></titlePart>
+                <figure>
+                    <ic:iconClass>
+                        <name>42B742</name>
+                        <desc>mother and child(ren), woman and child(ren) (family group)</desc>
+                    </ic:iconClass>
+                </figure>
+                <docImprint><pubPlace rend="italic">London</pubPlace>
+                    <publisher rend="italic">J. L. Marks,</publisher></docImprint>
+            </titlePage>
+
+            <pb n="4"/>
+            <div type="alphabet">
+                <head>ROMAN CAPITALS.</head>
+                <lb/>
+                <p>A B C D E F G<lb/>H I J K L M N<lb/>O P Q R S T U<lb/>V W X Y Z</p>
+            </div>
+            <div type="alphabet">
+                <head>SMALL LETTERS</head>
+                <lb/>
+                <p>a b c d e f g h i j<lb/>k l m n o p q r s<lb/>t u v w x y z<lb/>1 2 3 4 5 6 7 8 9
+                    0</p>
+            </div>
+        </front>
+
+
+        <pb n="5"/>
+        <body rend="align(justify)">
+            <div type="section">
+                <head rend="align(centre)">LESSONS OF TWO LETTERS.</head>
+                <lb/>
+                <p><cb n="1"/> ab eb ib ob ub<lb/>ac ec ic oc uc<lb/> ad ed id od ud <cb n="2"/> ba
+                    be bi bo bu<lb/> ca ce ci co cu<lb/> da de di do du</p>
+
+                <p><cb n="1"/> la<lb/> ma<lb/> na<lb/> pa<lb/> ra<lb/> sa<lb/> ta<lb/> va<lb/><cb
+                        n="2"/>
+                    <figure>
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head rend="align(centre)">EASTER.</head>
+                    </figure><cb n="3"/> we<lb/> wa<lb/> ya<lb/> za<lb/> ze<lb/> zi<lb/> zo<lb/>
+                    zu</p>
+            </div>
+            <div type="section">
+                <head rend="align(centre)">EASY READING LESSONS.</head>
+                <lb/>
+                <p><cb n="1"/>It is an ox. If<lb/> I go up to it,<lb/> is he to go in.<lb/> Am I to
+                    do so. <cb n="2"/> If it is an ox<lb/> am I to go by.<lb/> It is to go on,<lb/>
+                    if we go to it.</p>
+            </div>
+
+            <pb n="6"/>
+            <div type="section">
+                <head rend="align(centre)">LESSONS OF THREE LETTERS.</head>
+                <lb/>
+                <p><cb n="1"/>can<lb/>man<lb/>dan<lb/>pan <cb n="2"/>top<lb/>hop<lb/>sop<lb/>fop <cb
+                        n="3"/>jug<lb/>tug<lb/>rug<lb/>mug <cb n="4"/>saw<lb/>law<lb/>paw<lb/>daw
+                        <cb n="5"/>tub<lb/>rub<lb/>cub<lb/>dub <cb n="6"
+                    />hat<lb/>mat<lb/>cat<lb/>fat</p>
+                <p><cb n="1"/>bed<lb/> fed<lb/> led<lb/> red<lb/><lb/> dog<lb/> wet<lb/> bet<cb
+                        n="2"/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25F32(FINCH)</name>
+                            <desc>song-birds: finch</desc>
+                        </ic:iconClass>
+                        <head>THE BULL FINCH.</head>
+                    </figure>
+                    <cb n="3"/> bad<lb/> lad<lb/> mad<lb/> pad<lb/><lb/> dig<lb/> sob<lb/> rob</p>
+
+                <p>
+                    <cb n="1"/> a pen<lb/>a gun<lb/>a man<lb/>a toy <cb n="2"/> a bed<lb/>a
+                    hog<lb/>a nut<lb/>a van <cb n="3"/> a cat<lb/>a jug<lb/>a pot<lb/>a bat <cb
+                        n="4"/> a dog<lb/>a kid<lb/>a sow<lb/>a can <cb n="5"/> a fly<lb/>a
+                    log<lb/>a rod<lb/>a dot</p>
+            </div>
+
+
+            <pb n="7"/>
+            <div type="section">
+                <head rend="align(centre)">SPELLING LESSONS OF FOUR LETTERS.</head>
+                <lb/>
+                <p>
+                    <cb n="1"/> cake<lb/>bake<lb/>take<lb/>lake<lb/>dart <cb n="2"/>
+                    flag<lb/>drag<lb/>brag<lb/>crag<lb/>fish <cb n="3"/>
+                    play<lb/>dray<lb/>slay<lb/>tray<lb/>hope <cb n="4"/>
+                    mine<lb/>line<lb/>pine<lb/>fine<lb/>fern <cb n="5"/>
+                    teal<lb/>seal<lb/>heal<lb/>meal<lb/>mile <cb n="6"/>
+                    crab<lb/>drab<lb/>slab<lb/>blab<lb/>bank</p>
+                <p>
+                    <cb n="1"/>
+                    book<lb/>cook<lb/>look<lb/>took<lb/>boat<lb/>coat<lb/>moat<lb/>goat<lb/>pail<lb/>rail<lb/>ail
+                        <cb n="2"/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>44B1511</name>
+                            <desc>queen, empress, etc. (wife of a ruler)</desc>
+                        </ic:iconClass>
+                        <head rend="align(centre)">THE QUEEN.</head>
+                    </figure>
+                    <cb n="3"/>
+                    pale<lb/>sale<lb/>tale<lb/>bale<lb/>fast<lb/>last<lb/>past<lb/>cast<lb/>beat<lb/>seat<lb/>heat</p>
+            </div>
+
+
+            <div type="section">
+                <head rend="align(centre)">EASY READING LESSONS.</head>
+                <lb/>
+                <p><cb n="1"/>Bring me my book.<lb/>I can read in it.<lb/>Spell all the
+                    words.<lb/>That is a good boy. <cb n="2"/>It will not rain.<lb/>So we may go
+                    out.<lb/>Pat on your new hat.<lb/>We will see the fair.</p>
+            </div>
+
+
+            <pb n="8"/>
+            <div type="section">
+                <head rend="align(centre)">Things belonging to a House.</head>
+                <lb/>
+                <p>
+                    <cb n="1"/> knife<lb/>fork<lb/>plate <cb n="2"/> bar<lb/>bolt<lb/>lock <cb n="3"
+                    /> chest<lb/>trunk<lb/>jack <cb n="4"/> chair<lb/>stool<lb/>glass <cb n="5"/>
+                    bed<lb/>couch<lb/>rug <cb n="6"/> stone<lb/>tiles<lb/>thatch</p>
+
+                <p>
+                    <cb n="1"/>
+                    spoon<lb/>latch<lb/>quilt<lb/>shelf<lb/>grate<lb/>roof<lb/>sheet<lb/>stairs<lb/>spit<lb/>key<lb/>mug
+                        <cb n="2"/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>43C7146</name>
+                            <desc>ball games (children's games)</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <cb n="3"/>
+                    slate<lb/>bench<lb/>broom<lb/>pin<lb/>brick<lb/>dish<lb/>door<lb/>box<lb/>brush<lb/>pot<lb/>lime</p>
+            </div>
+
+            <div type="section">
+                <head rend="align(centre)">THE GOOD BOY.</head>
+                <lb/>
+                <p rend="first-indent(2)">A good child will not lie, swear, nor steal,<lb/>nor will
+                    he take God’s name in vain. He<lb/>will be good at home, and will take
+                    care<lb/>to read his book; and when he gets up, he<lb/>will wash his face and
+                    hands clean, comb<lb/>cut his hair, and make haste to school, and<lb/>will not
+                    play by the way, as bad boys do.</p>
+            </div>
+
+
+            <pb n="9"/>
+            <div type="section">
+                <head rend="align(centre)">Lessons of Five Letters.</head>
+                <lb/>
+                <p>
+                    <cb n="1"/> tight<lb/>night <cb n="2"/> crest<lb/>guest <cb n="3"/>
+                    chink<lb/>brink <cb n="4"/> stock<lb/>block <cb n="5"/> drill<lb/>quill <cb
+                        n="6"/> jaunt<lb/>taunt</p>
+                <p>
+                    <cb n="1"/>
+                    blank<lb/>flank<lb/>prank<lb/>spank<lb/>thank<lb/>&rule;<lb/>green<lb/>black<lb/>white<lb/>brown<lb/>short
+                        <cb n="2"/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>11Q712 church</name>
+                            <desc>(exterior)</desc>
+                        </ic:iconClass>
+                        <head rend="align(centre)">THE CHURCH.</head>
+                    </figure>
+                    <cb n="3"/>
+                    blush<lb/>flush<lb/>brush<lb/>crush<lb/>plush<lb/>&rule;<lb/>trout<lb/>roach<lb/>tench<lb/>sprat<lb/>perch</p>
+            </div>
+
+            <div type="section">
+                <head rend="align(centre)">MORNING PRAYER.</head>
+                <lb/>
+                <p rend="indent(5)">Now I see the glorious Sun<lb/>Begin his shining race to run,
+                    Heavenly Father, grant me grace<lb/>To shine this day in virtue’s race, Keep me
+                    from each evil way<lb/>Through each minute of this day : That I the path to
+                    Heaven may take,<lb/>For my divine Redeemer’s sake.</p>
+            </div>
+
+
+
+            <pb n="10"/>
+            <div type="section">
+                <head rend="align(centre)">EVENING PRAYER.</head>
+                <lb/>
+                <lg rend="indent(4)">
+                    <l>Me O Heavenly Father, keep</l>
+                    <l>From all evil while I sleep;</l>
+                    <l>And that I in health may live,</l>
+                    <l>Sweet refreshing slumber give;</l>
+                    <l>With thy smile my parents cheer;</l>
+                    <l>Guard my friends and kindred dear</l>
+                    <l>Till we in the morning wake</l>
+                    <l>To praise thee!&mdash;for our Saviour’s sake.</l>
+                </lg>
+            </div>
+            <lb/>
+            <div type="section">
+                <head rend="align(centre)">THE LORD’S PRAYER.</head>
+                <lb/>
+                <p rend="first-indent(2)">Our Fa&ndash;ther which art in hea&ndash;ven,
+                        hallow&ndash;<lb type="inWord"/>ed be thy name; thy king&ndash;dom come;
+                    thy<lb/>will be done in earth as it is in hea&ndash;ven.<lb/>Give us this day
+                    our dai&ndash;ly bread ; and for&ndash;<lb type="inWord"/>give us our
+                    tres&ndash;pass&ndash;es, as we for&ndash;give them<lb/>that
+                    tres&ndash;pass&ndash;es, a&ndash;gainst us. And lead ns<lb/>not in&ndash;to
+                    tem&ndash;ta&ndash;tion, but de&ndash;&ndash;liv&ndash;er us
+                    from<lb/>e&ndash;vil; for thine is the king&ndash;dom, and the<lb/>pow&ndash;er,
+                    and the glo&ndash;ry, for ev&ndash;er and ev&ndash;er<lb/>A&ndash;men.</p>
+            </div>
+            <pb n="11"/>
+        </body>
+        <back>
+            <div type="colophon" rend="align(centre)">
+                <p>Printed and Sold by J. L, Marks, Long Lane, Smithfield</p>
+            </div>
+
+
+            <pb n="12"/>
+            <figure type="borderornament"/>
+            <div type="advertisement">
+                <list>
+                    <head rend="align(centre)">A LIST OF JUVENILE BOOKS.<lb/> PUBLISHED BY J. L.
+                        MARKS,<lb/>UNIFORM WITH THIS.<lb/> &crule;</head>
+                    <item>Hawthorn Farm or the lost Son.</item>
+                    <item>The Butterfly's Court Day.</item>
+                    <item>History of the Country Cousins.</item>
+                    <item>Gaffer Gurtons visit to the Fair.</item>
+                    <item>Select Gleanings for Children.</item>
+                    <item>Dowlas's trip to Hampton Court.</item>
+                    <item>Adventures of Matty Marvelous.</item>
+                    <item>The History of Paddy Shane.</item>
+                    <item>Adventures of Peter Poppleton.</item>
+                    <item>Nursery Rhymes</item>
+                    <item>The Garden of Learning.</item>
+                    <item>The Bower of Knowledge.</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>

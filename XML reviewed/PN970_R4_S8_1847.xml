@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-21"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-07"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="pink coloured pictorial wrappers">
+                <bibl>
+                    <figure type="borderornament"/>
+                    <title level="m">SUSAN<lb/>AND HER<lb/>BIRTHDAY.<lb/>&rule;<lb/></title>
+                    <publisher>RELIGIOUS TRACT SOCIETY ;<lb/>56, Paternoster&ndash;row; 164,
+                        Piccadilly,<lb/>LONDON.</publisher>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>49N1</name>
+                            <desc>reading to somebody</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <head type="work" rend="align(centre)">SUSAN AND HER BIRTH&ndash;<lb type="inWord"
+                />DAY.</head>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>43C7361</name>
+                    <desc>child and rain</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>SUSAN is a little girl, and is now<lb/>nearly ten years old. She was<lb/>always a
+                kind and pleasant child,<lb/>except that she once had a very<lb/>sad fault. When she
+                could have<lb/>her own way, her face looked <fw type="signature" rend="align(right)"
+                    >G</fw>
+                <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">2</fw>
+                <fw type="header" rend="align(centre)">SUSAN AND HER BIRTH&ndash;DAY.</fw><lb/>
+                bright and happy; but when she<lb/>could not, she showed a sullen<lb/>and naughty
+                temper.</p>
+            <p rend="first-indent(2) align(justify)">It was Susan's ninth birth&ndash;day,<lb/>in
+                the month of June. She had<lb/>looked forward with great delight<lb/>to this time
+                for many weeks, for<lb/>her kind parents had promised<lb/>her that she should have
+                some of<lb/>her young friends for company<lb/>on that day. As there is a
+                    beauti&ndash;<lb type="inWord"/>ful park about two miles from her<lb/>father's
+                house, it was planned<lb/>that Susan and her visitors should<lb/>go about three
+                o'clock, and take<lb/>with them the tea&ndash;things, and<lb/>have a very happy time
+                of it<lb/>under the shade of the trees.<lb/>No wonder that she had set her<lb/>heart
+                upon this treat. It was to<lb/>be <hi rend="italic">her</hi> party, and on <hi
+                    rend="italic">her</hi> birth&ndash;<lb type="inWord"/>day. The ride, and the
+                feast, and <pb n="5"/>
+                <fw type="header" rend="align(centre)">SUSAN AND HER BIRTH&ndash;DAY.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> the romp, were all pleasant
+                to<lb/>think of.</p>
+            <p rend="first-indent(2) align(justify)">Susan thought the day was a<lb/>long time
+                coming, but at last it did<lb/>come. But it came with a storm<lb/>of rain. It was
+                cold and cloudy<lb/>the day before, and in the night<lb/>it began to rain. And when
+                the<lb/>little girl arose on the morning<lb/>of her birth&ndash;day, the rain
+                was<lb/>falling in a slow, steady way,<lb/>which promised to last all
+                day<lb/>long.</p>
+            <p rend="first-indent(2) align(justify)">Susan was angry at the rain.<lb/>She said it
+                always rained when<lb/>she wanted to go anywhere.<lb/>Then she began to pout,
+                and<lb/>grow sullen. She did not wish<lb/>anybody to speak to her, or to<lb/>speak
+                to any one. She went up<lb/>stairs after breakfast, and sat<lb/>down on a chair by
+                the window <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">SUSAN AND HER BIRTH&ndash;DAY.</fw><lb/> and
+                looked out at the rain, with<lb/>swollen eyes, flushed cheeks, and<lb/>a stubborn
+                heart. Her mother<lb/>went up to her, and tried to<lb/>comfort her by saying that
+                it<lb/>might be pleasant on the morrow,<lb/>and she should then have her<lb/>party,
+                and keep the birth&ndash;day;<lb/>but she was too sullen and re&ndash;<lb
+                    type="inWord"/>pining to be satisfied with such a<lb/>way of getting over her
+                trouble.</p>
+            <p rend="first-indent(2) align(justify)">In the course of the morning<lb/>Susan's father
+                asked for his<lb/>daughter. He had a pretty<lb/>birth&ndash;day gift in his pocket
+                to<lb/>give to her. But when he was<lb/>told that she had shut herself in<lb/>her
+                room in the sulks, he went<lb/>up stairs. He then sat down<lb/>and talked to her
+                very calmly<lb/>and seriously. He showed how <pb n="7"/>
+                <fw type="header" rend="align(centre)">SUSAN AND HER BIRTH&ndash;DAY.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> wicked it was to cherish
+                angry<lb/>thoughts and sullen feelings, and<lb/>that they would make her
+                    un&ndash;<lb type="inWord"/>happy in herself, and unlovely in<lb/>the eyes of
+                others. &ldquo; And now,<lb/>Susan,&rdquo; said he, &ldquo; I do not ask if<lb/>you
+                are sorry, for I fear you are<lb/>not. You still murmur at the<lb/>providence of
+                God, and are angry<lb/>because you cannot have your<lb/>own way. Your conduct is
+                    sin&ndash;<lb type="inWord"/>ful, and must be punished. And<lb/>you shall be
+                punished by letting<lb/>you have your own way. You<lb/>have chosen to come up into
+                your<lb/>own room, and have nothing to<lb/>do with the rest of the family,<lb/>who
+                would be glad to enjoy the<lb/>day in&ndash;doors with you. We<lb/>would have tried
+                to please you;<lb/>you might have been with us, and <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">SUSAN AND HER BIRTH&ndash;DAY.</fw><lb/> you
+                could have had the party of<lb/>little friends some other day.<lb/>But as you have
+                chosen to be ill&ndash;<lb type="inWord"/>tempered and sullen, sit here
+                by<lb/>yourself. Your dinner and tea<lb/>shall be sent up to you, and you<lb/>can go
+                to bed in the evening;<lb/>but I hope not till you have<lb/>repented of your sins.
+                If you<lb/>feel in a better temper to&ndash;morrow<lb/>morning you can come
+                down<lb/>stairs: if you do not, stay here<lb/>till I send for you.&rdquo;
+                Susan's<lb/>father then told her to kneel<lb/>down with him while he prayed<lb/>that
+                God would give his Holy<lb/>Spirit to change the heart of his<lb/>stubborn child,
+                that she might<lb/>be sorry for her sins, and look by<lb/>faith to Jesus Christ to
+                take<lb/>away their guilt.</p>
+
+            <pb n="9"/>
+            <fw type="header" rend="align(centre)">SUSAN AND HER BIRTH&ndash;DAY.</fw>
+            <fw type="pagenumber" rend="align(right)">7</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">Susan was struck with sur&ndash;<lb
+                    type="inWord"/>prise. She supposed that she<lb/>had a right to <hi rend="italic"
+                    >feel</hi> just as she<lb/>pleased; but now she was taught<lb/>that sinful
+                feelings are offensive<lb/>to God, and that they showed<lb/>her heart was wrong.
+                Instead of<lb/>being humoured and coaxed as<lb/>she expected, she was punished.</p>
+            <p rend="first-indent(2) align(justify)">It was a long, sad birth&ndash;day
+                for<lb/>Susan; but before night she<lb/>began to think of what her<lb/>father had
+                said to her, and she<lb/>saw she had been very wicked in<lb/>sinning against God,
+                who had<lb/>sent the rain. She then knelt<lb/>down by herself, and wept as
+                she<lb/>asked God to forgive her for the<lb/>sake of Jesus Christ. After she<lb/>had
+                prayed, instead of idly look&ndash;<lb type="inWord"/>ing out of the window at
+                the<lb/>rain, she got her sewing, and <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">SUSAN AND HER BIRTH&ndash;DAY.</fw><lb/> went
+                to work. In the evening<lb/>also she read a little book, and<lb/>a chapter in the
+                New Testament.</p>
+            <p rend="first-indent(2) align(justify)">At breakfast next morning,<lb/>Susan went into
+                the breakfast&ndash;<lb type="inWord"/>parlour, in a very humble manner,<lb/>yet
+                with a smiling face. She<lb/>kissed her parents and said, &ldquo;Do<lb/>please,
+                forgive me, and I will not<lb/>be so naughty again.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">In a few days after this, Susan<lb/>had a party
+                of her young com&ndash;<lb type="inWord"/>panions : it was a very fine day,<lb/>and
+                they were all quite happy to&ndash;<lb type="inWord"/>gether in the park. Since
+                that<lb/>time, Susan has not forgotten to<lb/>pray to God for his grace to
+                keep<lb/>her from a sullen and bad spirit.<lb/>We are pleased to add that
+                all<lb/>Susan's friends say she is now<lb/>quite an altered girl.</p>
+
+            <p>&rule;</p>
+            <div type="colophon">
+                <p>Benjamin Pardon, Printer, Paternoster Row.</p>
+            </div>
+        </body>
+
+        <back>
+            <pb n="11"/>
+
+            <pb n="12"/>
+            <figure type="borderornament"/>
+            <div type="epigraph">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">A HUMBLE MIND.</head>
+                    <lb/>
+                    <l>SINCE I am a little child,</l>
+                    <l>Humble I should be and mild;</l>
+                    <l>Always ready to be taught,</l>
+                    <l>And to do the things I ought.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l>When I cannot have my way,</l>
+                    <l>I must no ill&ndash;will display,</l>
+                    <l>But must learn to bend my will,</l>
+                    <l>And be kind and gentle still.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l>Pride and anger I must shun,</l>
+                    <l>Nor be rude to any one ;</l>
+                    <l>Evil tempers must not rise,</l>
+                    <l>To offend God's holy eyes.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l>Lord, thy help and grace I seek,</l>
+                    <l>Make me humble, modest, meek ;</l>
+                    <l>Poor in spirit may I be,</l>
+                    <l>And submit myself to thee.</l>
+                </lg>
+            </div>
+        </back>
+    </text>
+</TEI>

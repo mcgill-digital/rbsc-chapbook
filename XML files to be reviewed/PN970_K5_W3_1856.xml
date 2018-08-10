@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-16"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-06"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="green coloured pictorial wrappers">
+                <bibl>
+                    <figure type="borderornament"/>
+                    <series>
+                        <biblScope>SECOND SERIES.&mdash;No. 9.<lb/>&rule;<lb/></biblScope>
+                    </series>
+                    <title level="m">THE<lb/>WAGON&ndash;BOY ;<lb/>OR,<lb/>TRUST IN
+                        PROVIDENCE.</title>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>46C1441</name>
+                            <desc>four-wheeled vehicle drawn by one animal</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <publisher>NEW YORK:<lb/>KIGGINS &amp;KELLOGG,<lb/>123 &amp;125 William
+                        St.</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+            <pb n="3"/>
+            <note type="handwritten" rend="align(right)">25&mdash;</note>
+            <titlePage>
+                <docTitle>
+                    <titlePart type="main">THE<lb/>WAGON&ndash;BOY ;</titlePart>
+                    <titlePart type="sub">OR,<lb/>TRUST IN PROVIDENCE.</titlePart>
+                </docTitle>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C1444</name>
+                        <desc>four-wheeled vehicle drawn by more than three animals</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace>NEW YORK:</pubPlace>
+                    <publisher>KIGGINS &amp;KELLOGG,<lb/>123 &amp;125 William St.</publisher>
+                </docImprint>
+            </titlePage>
+
+            <pb n="4"/>
+            <figure rend="align(centre) landscape">
+                <ic:iconClass>
+                    <name>49N</name>
+                    <desc>reading</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+        </front>
+
+        <body>
+            <pb n="5"/>
+            <head rend="align(centre)">THE<lb/>WAGON&ndash;BOY.<lb/>&rule;<lb/></head>
+           
+            <p rend="first-indent(2) align(justify)">Richard Edwards was a<lb/>studious boy ; and
+                while at<lb/>school, he attended closely to<lb/>his books, never suffering
+                his<lb/>attention to be diverted for a<lb/>moment. The desk he occu&ndash;<lb
+                    type="inWord"/>pied was shared with Thomas<lb/>Johnson, an idle indolent
+                youth<lb/>who hated his books, and if the<lb/>teacher's eye was not on him,<lb/>he
+                would often be in a state of<lb/>complete slumber. The con&ndash;<lb type="inWord"
+                />sequence was, that while Rich&ndash; <pb n="6" type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">THE WAGON&ndash;BOY; OR</fw><lb/> ard, as
+                often as the end of the<lb/>week came round, carried home<lb/>to his parents the
+                teacher's<lb/>testimonial of the continued and<lb/>rapid progress which he
+                made<lb/>in his studies, Thomas received<lb/>a weekly reprimand for his in&ndash;<lb
+                    type="inWord"/>attention to his books, and often<lb/>punishment for bad
+                behavior.</p>
+            <p rend="first-indent(2) align(justify)">One clear wintry Saturday,<lb/>Richard received
+                the reward<lb/>of attentive study and amiable<lb/>deportment, by being
+                    permit&ndash;<lb type="inWord"/>ted to accompany his father on<lb/>a visit to
+                Mr. Delano's, an in&ndash;<lb type="inWord"/>timate friend of his, who re&ndash;<lb
+                    type="inWord"/>sided in an adjoining town.<lb/>Richard was up betimes,
+                and<lb/>after breakfast two horses were<lb/>saddled, and Richard and his<lb/>father
+                started off. On their<lb/>route, they passed a wagoner <pb n="7"/>
+                <fw type="header" rend="align(centre)">TRUST IN PROVIDENCE.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>46C1451</name>
+                        <desc>covered wagon, hooded wagon</desc>
+                    </ic:iconClass>
+                </figure><lb/>
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">THE WAGON&ndash;BOY; OR</fw><lb/> accompanied
+                by a youth about<lb/>eighteen years of age, whom<lb/>they learned by a few
+                words<lb/>exchanged in passing, was his<lb/>son. The boy drove the team,<lb/>while
+                the father, who had a<lb/>gun, occupied his time in hunt&ndash;<lb type="inWord"
+                />ing. The incident made but<lb/>little impression on their minds<lb/>at the time,
+                and were it not for<lb/>what afterward occurred would<lb/>have soon been
+                forgotten.</p>
+            <p rend="first-indent(2) align(justify)">They arrived in good time<lb/>at Mr. Delano's,
+                and Richard<lb/>passed the day most agreeably.<lb/>He was fond of ranging
+                the<lb/>woods ; and meeting the wag&ndash;<lb type="inWord"/>oner in the morning,
+                    suggest&ndash;<lb type="inWord"/>ing to him the idea of amusing<lb/>himself by
+                hunting, Mr. Dela&ndash;<lb type="inWord"/>no furnished him with a gun<lb/>and
+                ammunition for that pur&ndash; <pb n="9" type="inWord"/>
+                <fw type="header" rend="align(centre)">TRUST IN PROVIDENCE.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>43C114</name>
+                        <desc>hunter</desc>
+                    </ic:iconClass>
+                </figure><lb/>
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">THE WAGON&ndash;BOY; OR</fw><lb/> pose. And
+                when, attired in<lb/>his hunting&ndash;gear and accom&ndash;<lb type="inWord"
+                />panied by Mr. Delano's dog,<lb/>he started for the woods, he<lb/>looked like a
+                western&ndash;hunter.<lb/>However, although he enjoyed<lb/>his jaunt through the
+                woods and<lb/>pastures, he returned empty&ndash;<lb type="inWord"/>handed. With the
+                exception<lb/>of a fox that crossed his path,<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C11123</name>
+                        <desc>hunt ~ predatory animals (fox, lion)</desc>
+                    </ic:iconClass>
+                </figure><lb/> and which he did not succeed<lb/>in capturing, he did not
+                meet<lb/>with anything worth shooting <pb n="11"/>
+                <fw type="header" rend="align(centre)">TRUST IN PROVIDENCE.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw><lb/> at. Richard had to bear
+                the<lb/>good&ndash;natured jokes of his father<lb/>and friend, on his want of
+                    suc&ndash;<lb type="inWord"/>cess ; but he did not care; he<lb/>had enjoyed
+                himself, and that<lb/>satisfied him.</p>
+            <p rend="first-indent(2) align(justify)">They were on their return<lb/>home in the
+                evening, and were<lb/>about two miles from their res&ndash;<lb type="inWord"
+                />idence. They had urged their<lb/>horses forward through the ad&ndash;<lb
+                    type="inWord"/>joining woods, and were just<lb/>fording a shallow tributary
+                of<lb/>the river they had to cross be&ndash;<lb type="inWord"/>fore reaching home,
+                in order<lb/>to shorten their route, for fear<lb/>the ferry&ndash;boat should have
+                made<lb/>its last trip before they reach&ndash;<lb type="inWord"/>ed there, when
+                Richard called,<lb/>&ldquo; Stop, father, I hear the sound<lb/>of distress !&rdquo;
+                Mr. Edwards<lb/>reined in his horse, and lis&ndash; <pb n="12" type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">THE WAGON&ndash;BOY; OR</fw><lb/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>46C131</name>
+                        <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                    </ic:iconClass>
+                </figure><lb/>
+                <pb n="13"/>
+                <fw type="header" rend="align(centre)">TRUST IN PROVIDENCE.</fw>
+                <fw type="pagenumber" rend="align(right)">11</fw><lb/> tened. &ldquo; I perceive
+                nothing,&rdquo;<lb/>said he, &ldquo;but these wild forest<lb/>birds, that gather at
+                night&ndash;fall.<lb/>But hark ! Whoa ! Pete, be<lb/>quiet,&rdquo; continued he to
+                his<lb/>horse, which was impatient to<lb/>go on. A wild, childlike sob<lb/>of agony
+                burst distinctly on<lb/>their ears. &ldquo;We must look<lb/>into this,
+                Richard,&rdquo; said his<lb/>father ; and reaching the oppo&ndash;<lb type="inWord"
+                />site shore, they started in the<lb/>direction of the sound.</p>
+            <p rend="first-indent(2) align(justify)">As they rode over the un&ndash;<lb
+                    type="inWord"/>cleared space, they heard, at<lb/>intervals, the same cry,
+                and<lb/>they were soon near enough<lb/>to perceive the object of their<lb/>search.
+                In one of the <hi rend="italic">turn&ndash;<lb type="inWord"/>outs</hi>, as they are
+                sometimes<lb/>called, made through the woods<lb/>by wagoners, when the main <pb
+                    n="14"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw type="header" rend="align(centre)">THE WAGON&ndash;BOY; OR</fw><lb/> road is cut
+                up by heavy wheels,<lb/>they perceived the team of the<lb/>wagoner they passed in
+                the<lb/>morning ; but by it a sad scene<lb/>met their view. Extended on<lb/>the
+                ground, with the cold stern<lb/>countenance of death, lay the<lb/>wagoner. His son
+                was kneel&ndash;<lb type="inWord"/>ing on one side of him, with<lb/>his head resting
+                on his silent<lb/>breast sobbing as if his heart<lb/>would break, while his
+                dog<lb/>stood looking wistfully at both,<lb/>as if he knew the sufferings of
+                <lb/>one and the helplessness of the<lb/>other.</p>
+            <p rend="first-indent(2) align(justify)">At the sound of footsteps the<lb/>youth sprang
+                up. The sad<lb/>tale was soon told. In leaping<lb/>a fence in chase of a fox,
+                his<lb/>gun accidentally went off and<lb/>lodged the contents in his body. <pb
+                    n="15"/>
+                <fw type="header" rend="align(centre)">TRUST IN PROVIDENCE.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw><lb/> &ldquo; Sir,&rdquo; he cried,
+                &ldquo; can you save<lb/>my father ? Can anything save<lb/>him?&rdquo; Mr. Edwards
+                alighted<lb/>from his horse, and approach&ndash;<lb type="inWord"/>ed the body. It
+                had all the<lb/>marks of death ; the cold and<lb/>shrunk countenance, the
+                    ap&ndash;<lb type="inWord"/>palling repose of mortality, be&ndash;<lb
+                    type="inWord"/>reft of soul. The eyes of the<lb/>youth brightened with
+                intense<lb/>hope as Mr. Edwards felt the<lb/>breast and pulse of the de&ndash;<lb
+                    type="inWord"/>ceased. There was no an&ndash;<lb type="inWord"/>swering sympathy
+                in his look.<lb/>He shook his head mournfully,<lb/>and said, &ldquo; My poor
+                fellow.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">The wagon&ndash;boy threw him&ndash;<lb
+                    type="inWord"/>self again on the body of his<lb/>father, and gave that cry
+                of<lb/>deep and wailing sorrow, that<lb/>God allows to the crowded<lb/>heart to keep
+                it from breaking.</p>
+
+            <pb n="16"/>
+            <fw type="pagenumber" rend="align(left)">14</fw>
+            <fw type="header" rend="align(centre)">THE WAGON&ndash;BOY; OR</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">The cold wind swept by with<lb/>a wintry gust,
+                and seemed faint&ndash;<lb type="inWord"/>ly to echo his subsiding moan.</p>
+            <p rend="first-indent(2) align(justify)">Richard took his hand. &ldquo; We<lb/>will try
+                to comfort you, my<lb/>poor lad,&rdquo; said he. &ldquo;Father,<lb/>shall he go home
+                with us?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;What! leave <hi rend="italic"
+                >him</hi>?&rdquo; said<lb/>the wagon&ndash;boy, clinging to his<lb/>father, while a
+                deep shudder&ndash;<lb type="inWord"/>ing shook his frame.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; No,&rdquo; said Mr. Edwards<lb/>gently,
+                &ldquo; you shall not leave<lb/>him, but would it not relieve<lb/>your mind to see
+                him laid in a<lb/>decent grave ?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Mr. Edwards had touched<lb/>the string that
+                finds an answer&ndash;<lb type="inWord"/>ing chord in every heart.
+                The<lb/>wagon&ndash;boy silently rose, passed<lb/>his arm across his eyes,
+                from<lb/>which the large tears still rolled, <pb n="17"/>
+                <fw type="header" rend="align(centre)">TRUST IN PROVIDENCE.</fw>
+                <fw type="pagenumber" rend="align(right)">15</fw><lb/> and assisted by Mr.
+                Edwards,<lb/>placed the body on the wagon,<lb/>The sad procession moved<lb/>along,
+                and reached the ferry&ndash;<lb type="inWord"/>boat, in time to pass to town.</p>
+            <p rend="first-indent(2) align(justify)">Mr. Edwards was affluent<lb/>and generous. He
+                clothed the<lb/>wagon&ndash;boy in appropriate gar&ndash;<lb type="inWord"/>ments
+                the following day, and<lb/>walked with Richard, to see<lb/>the sad youth deposite
+                his only<lb/>relation in the tomb. His faith&ndash;<lb type="inWord"/>ful dog mutely
+                followed, and<lb/>when the wagon&ndash;boy returned<lb/>from that mournful scene,
+                he<lb/>laid himself down by the side<lb/>of the poor brute, and throw&ndash;<lb
+                    type="inWord"/>ing his arms around the animal<lb/>hid his swollen eyes upon
+                him,<lb/>as if he only could understand<lb/>his feelings.</p>
+            <p rend="first-indent(2) align(justify)">For many days they tried to <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">THE WAGON&ndash;BOY.</fw><lb/> comfort him in
+                vain, for re&ndash;<lb type="inWord"/>ligious emotions were new to<lb/>him. But when
+                Mr. Edwards<lb/>explained to him &ldquo;the resur&ndash;<lb type="inWord"/>rection
+                and the life,&rdquo; and Rich&ndash;<lb type="inWord"/>ard read to him those
+                sublime<lb/>and touching portions of Scrip&ndash;<lb type="inWord"/>ture which tell
+                us that &ldquo; afflic&ndash;<lb type="inWord"/>tions are not of the dust,&rdquo;
+                and<lb/>that &ldquo; the Lord loveth whom<lb/>he chasteneth,&rdquo; the
+                wagon&ndash;boy<lb/>was comforted. He returned<lb/>to his native scenes, sad
+                but<lb/>peaceful, and Richard was<lb/>taught a reliance on Provi&ndash;<lb
+                    type="inWord"/>dence, that was often renewed<lb/>when he rode by the
+                spot,<lb/>where the cry of the wagon&ndash;<lb type="inWord"/>boy first pierced his
+                ears.</p>
+        </body>
+
+        <back>
+            <pb n="19"/>
+
+            <pb n="20"/>
+            <figure type="borderornament"/>
+            <div type="advertisement" rend="align(centre)">
+                <head>KIGGINS &amp;KELLOGG,</head>
+                <p>Publishers, Booksellers, &amp;Stationers,<lb/>123 &amp;125 William St.</p>
+                <p>Also Manufacturers of every description of<lb/>ACCOUNT BOOKS,<lb/><hi
+                        rend="italic">MEMORANDUMS and PASS BOOKS,</hi><lb/>a large stock of which is
+                    constantly kept<lb/>on hand. Their assortment
+                    of<lb/>SCHOOL,<lb/>AND<lb/>MISCELLANEOUS BOOKS,<lb/>And of Foreign and
+                        Domestic<lb/>STATIONERY,<lb/><hi rend="italic">Is very complete, to the
+                        inspection of which<lb/>they would invite</hi> COUNTRY MERCHANTS<lb/>before
+                    purchasing elsewhere.<lb/>&rule;</p>
+                <p>ALSO PUBLISH,<lb/>REDFIELD'S TOY BOOKS,<lb/>Four Series of Twelve Books
+                    each,<lb/>BEAUTIFULLY ILLUSTRATED,</p>
+                <p><hi rend="italic">Price,<measure type="price"> One, Two, Four, and Six
+                            Cents.</measure></hi></p>
+            </div>
+        </back>
+    </text>
+</TEI>

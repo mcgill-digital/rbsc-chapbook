@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+
+<!ENTITY amp "&#x0026;">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>sharon</p>
+
+
+            </sourceDesc>
+
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Sharon Rankin <note/>
+            </change>
+
+            <change>
+                <date when="2012-07-19"/>
+                <label>Initial TEI Markup</label>
+                <name/>Jason Grand <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-08-01"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+            </change>
+            <change>
+                <date when="2013-03-03"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+            </change>
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <text type="Instruction">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="Yellow pictorial wrappers align (centre)">
+
+                <bibl>
+                    <title level="s">COBB'S TOYS,<lb/>THIRD SERIES,<lb/>No. 1.</title><lb/>
+                    <title level="m">THE ALPHABET,<lb/>AND<lb/>EASY WORDS<lb/>OF<lb/>ONE, TWO, AND
+                        THREE SYLLABLES</title>
+                    <lb/><figure>
+                        <ic:iconClass>
+                            <name>46C122</name>
+                            <desc>wheelbarrow</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <publisher>NEWARK, (N. J.)<lb/> BENJAMIN OLDS.<lb/>
+                        <date>1835.</date>
+                        <lb/>&rule;<lb/></publisher> PRICE <measure type="price">THREE
+                        CENTS.</measure><lb/>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart type="main">COBB'S TOYS,</titlePart>
+                    <titlePart type="sub">THIRD SERIES,<lb/>No. 1.<lb/>THE
+                        ALPHABET,<lb/>AND<lb/>EASY WORDS<lb/>OF<lb/>ONE, TWO, AND THREE
+                        SYLLABLES.</titlePart>
+                </docTitle>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F23</name>
+                        <desc>beasts of prey, predatory animals: bear</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <docImprint>
+                    <pubPlace>NEWARK, (N.J.)</pubPlace>
+                    <publisher>BENJAMIN OLDS.</publisher>
+                    <docDate>1835.&rule;</docDate>
+                    <lb/>PRICE <measure type="price">THREE CENTS.</measure>
+                </docImprint>
+            </titlePage>
+
+            <pb n="4"/>
+            <div type="imprint">
+
+                <p rend="first-indent(3) align(justify)">Entered according to the Act of Congress, in the
+                    year<lb/>1835, by LYMAN COBB, in the Clerk's office of the Dis&ndash;<lb
+                        type="inWord"/>trict Court of the Southern District of New York.</p>
+                <p rend="align(center)">&drule;</p>
+            </div>
+            <div type="preface">
+                <head rend="align(centre)">PREFACE<lb/>TO THE THIRD SERIES.</head>
+                <p rend="first-indent(3) align(justify)">THE Alphabet is arranged in lessons, in this
+                    little<lb/>book, that the child may first learn the vowels, then
+                    the<lb/>consonants which require a vowel after them in the<lb/>pronunciation,
+                    and then those which require a vowel<lb/>before them in pronouncing them; thus
+                    acquiring the<lb/>letters in distinct analytical parts. It is very
+                    injudicious<lb/>to teach a child the Alphabet by course, that is,
+                    to<lb/>commence with the letter A, and sound the whole<lb/>Alphabet to the child
+                    at one lesson: no child or <hi rend="italic">adult,</hi><lb/>however strong his
+                    memory may be, is capable of<lb/>remembering all the sounds of the Alphabet, and
+                    the<lb/>characters which represent them, until he shall have<lb/>learned them
+                    separately, or those of nearly the same<lb/>sound by having them classed.</p>
+                <p rend="first-indent(3) align(justify)">A few combinations of letters, and words of one,
+                    two<lb/>and three syllables, have been inserted to aid my<lb/>young friends in
+                    learning the pleasing and interesting<lb/>art of combining letters to form
+                    words</p>
+                <p rend="first-indent(3) align(justify)">New York, July 4,1835.</p>
+            </div>
+        </front>
+        <pb n="5"/>
+        <fw type="pagenumber" rend="align(centre)">3</fw>
+
+
+        <body>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F38</name>
+                        <desc>walker and runner birds: turkey</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE TURKEY.</head>
+                </figure>
+                <lb/>
+
+
+                <cb n="1"/>
+                <p>A a</p>
+                <p>E e</p>
+                <p>I i</p>
+                <p>O o</p>
+                <p>U u</p>
+
+                <cb n="2"/>
+                <p>B b</p>
+                <p>C c</p>
+                <p>D d</p>
+                <p>P p</p>
+                <p>T t</p>
+                <p>V v</p>
+                <p>Z z</p>
+
+                <cb n="3"/>
+                <p>G g</p>
+                <p>J j</p>
+                <p>K k</p>
+                <p>Q q</p>
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(centre)">4</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F27</name>
+                        <desc>swimming mammals (walrus)</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE WALRUS.</head>
+                </figure>
+                <lb/>
+
+
+                <cb n="1"/>
+                <p>F f </p>
+                <p>L l </p>
+                <p>M m </p>
+                <p>N n</p>
+                <p>R r</p>
+                <p>S s</p>
+
+
+                <cb n="2"/>
+                <p>H h </p>
+                <p>W x </p>
+                <p>X x </p>
+                <p>Y y </p>
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="7"/>
+            <fw type="pagenumber" rend="align(centre)">5</fw>
+            <div type="section">
+
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F32</name>
+                        <desc>song-birds: finch</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE BULLFINCH.</head>
+                </figure>
+                <lb/>
+
+
+                <p rend="italics">abcdefghi jklmnopq<lb/>rstuvwxyz</p>
+                <p rend="align(justify)">ABCDEFGHIJKLM<lb/>NOPQRSTUVWXYZ</p>
+                <p rend="align(centre)">&slong;i &slong;&slong; &slong;l &slong;&slong;i
+                    &slong;&slong;l &amp;</p>
+            </div>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(centre)">6</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>46C13141</name>
+                        <desc>horse</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE HORSE.</head>
+                </figure>
+                <lb/>
+
+
+                <cb n="1"/>
+                <p>ba</p>
+                <p>bo</p>
+                <p>bi</p>
+                <p>bo</p>
+                <p>bu</p>
+                <p>da</p>
+                <p>de</p>
+                <p>di</p>
+                <p>do</p>
+                <p>du</p>
+                <p>ma</p>
+                <p>me</p>
+
+
+                <cb n="2"/>
+                <p>mi</p>
+                <p>mo</p>
+                <p>mu</p>
+                <p>na</p>
+                <p>ne</p>
+                <p>ni</p>
+                <p>no</p>
+                <p>nu</p>
+                <p>pa</p>
+                <p>pe</p>
+                <p>pi</p>
+                <p>po</p>
+
+                <cb n="3"/>
+                <p>pu</p>
+                <p>ra</p>
+                <p>re</p>
+                <p>ri</p>
+                <p>ro</p>
+                <p>ru</p>
+                <p>la</p>
+                <p>le</p>
+                <p>li</p>
+                <p>lo</p>
+                <p>lu</p>
+                <p>ta</p>
+
+
+                <cb n="4"/>
+
+                <p>te</p>
+                <p>ti</p>
+                <p>to</p>
+                <p>tu</p>
+                <p>va</p>
+                <p>ve</p>
+                <p>vi</p>
+                <p>vo</p>
+                <p>vu</p>
+                <p>am</p>
+                <p>em</p>
+                <p>im</p>
+
+                <cb n="5"/>
+                <p>om</p>
+                <p>um</p>
+                <p>an</p>
+                <p>en</p>
+                <p>in</p>
+                <p>on</p>
+                <p>un</p>
+                <p>al</p>
+                <p>el</p>
+                <p>il</p>
+                <p>ol</p>
+                <p>ul</p>
+
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+
+            <pb n="9"/>
+            <fw type="pagenumber" rend="align(centre)">7</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F32</name>
+                        <desc>song-birds: nightingale</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE NIGHTINGALE.</head>
+                </figure>
+                <lb/>
+
+
+                <cb n="1"/>
+                <p>bla</p>
+                <p>ble</p>
+                <p>bli</p>
+                <p>blo</p>
+                <p>blu</p>
+                <p>fla</p>
+                <p>fle</p>
+                <p>fli</p>
+                <p>flo</p>
+                <p>flu</p>
+                <p>gla</p>
+                <p>gle</p>
+                <p/>
+                <p/>
+                <p/>
+                <cb/>
+
+                <cb n="2"/>
+                <p>pla</p>
+                <p>ple</p>
+                <p>pli</p>
+                <p>plo</p>
+                <p>plu</p>
+                <p>bra</p>
+                <p>bre</p>
+                <p>bri</p>
+                <p>bro</p>
+                <p>bru</p>
+                <p>cra</p>
+                <p>cre</p>
+                <p>cri</p>
+                <p>cro</p>
+                <p>cru</p>
+
+                <cb n="3"/>
+                <p>spla</p>
+                <p>sple</p>
+                <p>spli</p>
+                <p>splo</p>
+                <p>splu</p>
+                <p>spra</p>
+                <p>spre</p>
+                <p>spri</p>
+                <p>spro</p>
+                <p>spru</p>
+                <p>stra</p>
+                <p>stre</p>
+                <p>srti</p>
+                <p>stro</p>
+                <p>stru</p>
+
+                <cb n="4"/>
+                <p>by</p>
+                <p>dy</p>
+                <p>py</p>
+                <p>fy</p>
+                <p>ly</p>
+                <p>my</p>
+                <p>sy</p>
+                <p>bly</p>
+                <p>fly</p>
+                <p>ply</p>
+                <p>shy</p>
+                <p>bry</p>
+                <p>dry</p>
+                <p>spy</p>
+                <p>sly</p>
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(centre)">8</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>47I2131</name>
+                        <desc>ram</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE SHEEP.</head>
+                </figure>
+                <lb/>
+
+
+
+                <cb n="1"/>
+                <p>had</p>
+                <p>lad</p>
+                <p>mad</p>
+                <p>sad</p>
+                <p>bag</p>
+                <p>hag</p>
+                <p>rag</p>
+                <p>bat</p>
+                <p>bed</p>
+                <p>fed</p>
+                <p>beg</p>
+                <p>elk</p>
+                <p>elm</p>
+                <p>end</p>
+                <p>bet</p>
+
+                <cb n="2"/>
+                <p>let</p>
+                <p>met</p>
+                <p>wet</p>
+                <p>big</p>
+                <p>dig</p>
+                <p>fig</p>
+                <p>pig</p>
+                <p>fin</p>
+                <p>pin</p>
+                <p>tin</p>
+                <p>lip</p>
+                <p>din</p>
+                <p>rib</p>
+                <p>rid</p>
+                <p>bit</p>
+
+
+                <cb n="3"/>
+                <p>wit</p>
+                <p>mob</p>
+                <p>rob</p>
+                <p>rod</p>
+                <p>dog</p>
+                <p>hog</p>
+                <p>fop</p>
+                <p>top</p>
+                <p>bug</p>
+                <p>fun</p>
+                <p>gun</p>
+                <p>run</p>
+                <p>pun</p>
+                <p>cup</p>
+                <p>fur</p>
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="11"/>
+            <fw type="pagenumber" rend="align(centre)">9</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F39</name>
+                        <desc>other birds: woodpecker</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE WOODPECKER.</head>
+                </figure>
+                <lb/>
+
+
+
+
+                <cb n="1"/>
+                <p>dace</p>
+                <p>face</p>
+                <p>lace</p>
+                <p>pace</p>
+                <p>race</p>
+                <p>page</p>
+                <p>rage</p>
+                <p>sage</p>
+                <p>bake</p>
+                <p>lake</p>
+                <p>dale</p>
+                <p>gale</p>
+                <p>dame</p>
+                <p>game</p>
+
+                <cb n="2"/>
+                <p>cape</p>
+                <p>tape</p>
+                <p>date</p>
+                <p>late</p>
+                <p>cave</p>
+                <p>gave</p>
+                <p>lave</p>
+                <p>rave</p>
+                <p>case</p>
+                <p>mice</p>
+                <p>nice</p>
+                <p>hide</p>
+                <p>ride</p>
+                <p>bile</p>
+
+
+                <cb n="3"/>
+                <p>file</p>
+                <p>mile</p>
+                <p>dine</p>
+                <p>fine</p>
+                <p>bite</p>
+                <p>kite</p>
+                <p>mild</p>
+                <p>wild</p>
+                <p>bone</p>
+                <p>hone</p>
+                <p>note</p>
+                <p>vote</p>
+                <p>lute</p>
+                <p>pure</p>
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="12"/>
+            <fw type="pagenumber" rend="align(centre)">10</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F24</name>
+                        <desc>hoofed animals: deer</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE DEER.</head>
+                </figure>
+                <lb/>
+
+
+
+                <cb n="1"/>
+                <p>stab</p>
+                <p>glad</p>
+                <p>shad</p>
+                <p>drag</p>
+                <p>flag</p>
+                <p>plan</p>
+                <p>span</p>
+                <p>cast</p>
+                <p>fast</p>
+                <p>bled</p>
+                <p>fled</p>
+                <p>bolt</p>
+
+                <cb n="2"/>
+                <p>felt</p>
+                <p>melt</p>
+                <p>lend</p>
+                <p>mend</p>
+                <p>tent</p>
+                <p>rent</p>
+                <p>best</p>
+                <p>nest</p>
+                <p>sing</p>
+                <p>wing</p>
+                <p>milk</p>
+                <p>silk</p>
+
+
+                <cb n="3"/>
+                <p>grade</p>
+                <p>shade</p>
+                <p>shake</p>
+                <p>snake</p>
+                <p>blame</p>
+                <p>flame</p>
+                <p>brave</p>
+                <p>grave</p>
+                <p>crime</p>
+                <p>prime</p>
+                <p>drove</p>
+                <p>grove</p>
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="13"/>
+            <fw type="pagenumber" rend="align(centre)">11</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F39</name>
+                        <desc>other birds: kingfisher</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE KINGFISHER.</head>
+                </figure>
+                <lb/>
+
+
+
+                <cb n="1"/>
+                <p>e ra</p>
+                <p>he ro</p>
+                <p>so fa</p>
+                <p>ne gro</p>
+                <p>ba by</p>
+                <p>la dy</p>
+                <p>na vy</p>
+                <p>du ly</p>
+                <p>du ty</p>
+                <p>di al</p>
+                <p>re al</p>
+                <p>fa tal</p>
+                <p>i tem</p>
+                <p>ri val</p>
+                <p>fi nal</p>
+
+                <cb n="2"/>
+                <p>to tal</p>
+                <p>vi tal</p>
+                <p>a pril</p>
+                <p>tri al</p>
+                <p>ha tred</p>
+                <p>mo ment</p>
+                <p>si lent</p>
+                <p>stu dent</p>
+                <p>tu mult</p>
+                <p>plu ral</p>
+                <p>stu pid</p>
+                <p>fe male</p>
+                <p>pa gan</p>
+                <p>va cant</p>
+                <p>de ist</p>
+
+
+
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+
+            <pb n="14"/>
+            <fw type="pagenumber" rend="align(centre)">12</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>47I2112</name>
+                        <desc>cow</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE COW.</head>
+                </figure>
+                <lb/>
+
+
+
+                <cb n="1"/>
+                <p>ba ker</p>
+                <p>ma ker</p>
+                <p>pa per</p>
+                <p>ta per</p>
+                <p>wa fer</p>
+                <p>sto ny</p>
+                <p>fe ver</p>
+                <p>ci der</p>
+                <p>o ver</p>
+                <p>bri er</p>
+                <p>spi der</p>
+                <p>sto ry</p>
+                <p>gra tis</p>
+                <p>cri sis</p>
+                <p>vi brato</p>
+
+                <cb n="2"/>
+                <p>al um</p>
+                <p>cam el</p>
+                <p>hab it</p>
+                <p>rap id</p>
+                <p>sat in</p>
+                <p>mer it</p>
+                <p>lim it</p>
+                <p>at las</p>
+                <p>flan nel</p>
+                <p>grav el</p>
+                <p>em blem</p>
+                <p>shil ling</p>
+                <p>sun set</p>
+                <p>chap el</p>
+                <p>den tist</p>
+
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="15"/>
+            <fw type="pagenumber" rend="align(centre)">13</fw>
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F32</name>
+                        <desc>song-birds (blackbird)</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE BLACKBIRD.</head>
+                </figure>
+                <lb/>
+
+
+                <cb n="1"/>
+                <p>slan der</p>
+                <p>tan ner</p>
+                <p>en ter</p>
+                <p>ev er</p>
+                <p>let ter</p>
+                <p>pep per</p>
+                <p>tem per</p>
+                <p>ten der</p>
+                <p>din ner</p>
+                <p>riv er</p>
+                <p>win ter</p>
+                <p>num ber</p>
+                <p>ten ant</p>
+                <p>ful gent</p>
+                <p>but ment</p>
+
+                <cb n="2"/>
+                <p>can dy</p>
+                <p>car ry</p>
+                <p>fan cy</p>
+                <p>hap py</p>
+                <p>mar ry</p>
+                <p>en vy</p>
+                <p>fer ry</p>
+                <p>mer ry</p>
+                <p>plen ty</p>
+                <p>fif ty</p>
+                <p>hur ry</p>
+                <p>pup py</p>
+                <p>put ty</p>
+                <p>wit ty</p>
+                <p>pet ty</p>
+
+
+            </div>
+            <pb n="16"/>
+            <fw type="pagenumber" rend="align(centre)">14</fw>
+            <div type="section">
+
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F23</name>
+                        <desc>beasts of prey, predatory animals: lynx</desc>
+                    </ic:iconClass>
+                    <p rend="align(centre)">THE LYNX.</p>
+                </figure>
+                <lb/>
+
+
+
+                <cb n="1"/>
+                <p>be have</p>
+                <p>de bate</p>
+                <p>de fame</p>
+                <p>e vade</p>
+                <p>hu mane</p>
+                <p>re late</p>
+                <p>de file</p>
+                <p>de fine</p>
+                <p>po lite</p>
+                <p>re pine</p>
+                <p>be fore</p>
+                <p>de pute</p>
+                <p>re vile</p>
+                <p>re buke</p>
+                <p>re duce</p>
+
+                <cb n="2"/>
+                <p>be gan</p>
+                <p>can al</p>
+                <p>o mit</p>
+                <p>ad mit</p>
+                <p>sub mit</p>
+                <p>com pel</p>
+                <p>dis pel</p>
+                <p>in cur</p>
+                <p>oc cur</p>
+                <p>de pend</p>
+                <p>re pent</p>
+                <p>in tend</p>
+                <p>re ject</p>
+                <p>pre vent</p>
+                <p>pro tect</p>
+
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="17"/>
+            <fw type="pagenumber" rend="align(centre)">15</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>25F</name>
+                        <desc>zebra</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE ZEBRA.</head>
+                </figure>
+                <lb/>
+
+
+
+
+                <cb n="1"/>
+
+                <p>vi o late</p>
+                <p>vi o lent</p>
+                <p>vi o let</p>
+                <p>di a dem</p>
+                <p>fu ner al</p>
+                <p>pi e ty</p>
+                <p>ap pe tite</p>
+                <p>del e gate</p>
+                <p>em u late</p>
+                <p>el e vate</p>
+                <p>tes ta ment</p>
+                <p>ig no rant</p>
+                <p>stip u late</p>
+                <p>stim u late</p>
+            </div>
+
+            <fw type="signature" rend="align(centre)">a</fw>
+            <pb n="18"/>
+            <fw type="pagenumber" rend="align(centre)">16</fw>
+
+            <div type="section">
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>46C13142</name>
+                        <desc>ass, donkey</desc>
+                    </ic:iconClass>
+                    <head rend="align(centre)">THE ASS.</head>
+                </figure>
+                <lb/>
+
+                <cb n="1"/>
+                <p>po ta to</p>
+                <p>i de a</p>
+                <p>a maze ment</p>
+                <p>re vi val</p>
+                <p>con fine ment</p>
+                <p>oc to ber</p>
+                <p>in hab it</p>
+                <p>a mend ment</p>
+                <p>con tem plate</p>
+                <p>um brel la</p>
+                <p>no vem ber</p>
+                <p>de cem ber</p>
+                <p>re mem ber</p>
+                <p>sur ren der</p>
+
+            </div>
+
+
+            <fw type="signature" rend="align(centre)">a</fw>
+        </body>
+
+        <pb n="19"/>
+        <pb n="20"/>
+
+        <back>
+            <div type="advertisement">
+                <head rend="align(centre)">BENJAMIN OLDS,<lb/>HAS ALSO FOR SALE<lb/>COBB'S
+                    SERIES<lb/>OF<lb/>SCHOOL BOOKS,<lb/>COMPRISING<lb/>A SPELLING, READING, AND
+                    ARITHMETICAL<lb/>COURSE.</head>
+                <p rend="align(centre)">&drule;</p>
+                <list type="simple">
+                    <head rend="align(centre)">SPELLING COURSE.</head>
+                    <item>Cobb's First Book,</item>
+                    <item>Cobb's Spelling Book,</item>
+                    <item>Cobb's Expositor,</item>
+                    <item>Cobb's School Dictionary.</item>
+                </list>
+
+                <p rend="align(centre)">&rule;</p>
+                <list type="simple">
+                    <head rend="align(centre)">READING COURSE.</head>
+                    <item>Cobb's Juvenile Reader, No. 1,</item>
+                    <item>Cobb's Juvenile Reader, No. 2,</item>
+                    <item>Cobb's Juvenile Reader, No. 3,</item>
+                    <item>Cobb's Sequel to the Juvenile Readers,</item>
+                    <item>Cobb's North American Reader.</item>
+
+                </list>
+                <p rend="align(centre)">&rule;</p>
+                <list type="simple">
+                    <head rend="align(centre)">ARITHMETICAL COURSE.</head>
+                    <item>Cobb's Arithmetical Rules and Tables,</item>
+                    <item>Cobb's Explanatory Arithmetick, No. 1,</item>
+                    <item>Cobb's Explanatory Arithmetick, No. 2,</item>
+                    <item>Cobb's Ciphering&ndash;Book, No. 1,</item>
+                    <item>Cobb's Ciphering&ndash;Book, No. 2,</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+<!ENTITY ctlig "ct-ligature">
+<!ENTITY brace "&#x7d;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+<!ENTITY tcdquo   "&#11826;"> <!-- turned comma -->
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+]>
+
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Erin</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="ProseFiction">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="beige coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">THE<lb/>HERMIT<lb/>AND<lb/>THE TRAVELLERS.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>43B15</name>
+                            <desc>enjoying nature ~ animals</desc>
+                        </ic:iconClass>
+                    </figure><lb/> &rule;<lb/>
+                    <pubPlace>NEW-YORK :</pubPlace><lb/><publisher>PUBLISHED BY SAMUEL WOOD &amp;
+                        SONS,<lb/>NO. 261, PEARL-STREET ;<lb/>And Samuel S. Wood &amp; Co. No. 212,
+                        Market-street,<lb/>Baltimore.</publisher>
+                </bibl>
+            </div>
+            <pb n="2"/>
+            <note type="illegible"/>
+            <pb n="3"/>
+            <titlePage>
+                <note type="handwritten">Mary-ann Rurse</note>
+                <!-- how to indicate coloured background of text -->
+                <lb/>
+                <docTitle>
+                    <titlePart type="main"> THE <lb/> HERMIT <lb/>AND <lb/>THE
+                        <lb/>TRAVELLER<lb/>&orn;</titlePart>
+                </docTitle>
+                <lb/>
+                <docImprint><pubPlace>NEW-YORK :</pubPlace><lb/><publisher>PUBLISHED BY SAMUEL WOOD
+                        &amp; SONS,<lb/>NO. 261, PEARL-STREET ;<lb/>And Samuel S. Wood &amp; Co. No.
+                        212, Market-street, <lb/>BALTIMORE.<lb/>&mdash;&mdash;<lb/></publisher>
+                    <date>1818.</date></docImprint>
+            </titlePage>
+            <pb n="4"/>
+            <note type="handwritten">George Nurss<lb/>George W Nurss<lb/>Book
+                Claridon<lb/>Vermont</note>
+        </front>
+        <body>
+            <pb n="5"/>
+            <note type="handwritten">Mary A Nurss</note>
+            <div type="section">
+                <head rend="align(centre)">THE HERMIT.*<lb/>&orn;</head>
+                <lb/>
+                <epigraph rend="align(centre)">
+                    <lg>
+                        <l>&mdash;&mdash;I may assert eternal Providence,</l>
+                        <l>And justify the ways of God to man.</l>
+                    </lg>
+                    <p rend="align(right)">MILTON.</p>
+                </epigraph>
+                <lg>
+                    <l rend="indent(3)">FAR in a wild, unknown to public view,</l>
+                    <l>From youth to age a rev;rend Hermit grew ;</l>
+                    <l>The moss his bed&mdash;the cave his humble cell,</l>
+                    <l>His food the fruits, his drink the crystral well.</l>
+                    <l>Remote from man with God he passed his days,</l>
+                    <l>Prayer all his business, all his pleasure praise.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">A life so sacred, such serene repose ;</l>
+                    <l>Seem'd heav'n itself, till one suggestion rose :</l>
+                    <l>That vice should triumph, virtue vice obey ;</l>
+                    <l>This sprung some doubt of Providence's sway.</l>
+                    <l>His hopes no more a certain prospect boast,</l>
+                    <l>And all the tenour of his soul is lost.</l>
+                </lg>
+                <fw type="footer" rend="first-indent(3)">&rule;<lb/>* Little children are desired to
+                    consider this pleas&ndash;<lb type="inWord"/>ing and beautiful Poem, not as a
+                    real fact, but a beau&ndash;<lb type="inWord"/>tiful allegory of the ways of the
+                    Almighty with his<lb/>
+                    <choice>
+                        <orig>ercatures.</orig>
+                        <corr>creatures</corr>
+                    </choice></fw>
+                <pb n="6"/>
+                <fw type="pagenumber" rend="align(centre)">4</fw>
+                <lb/>
+                <lg>
+                    <l>So when a smooth expanse receives impresss'd</l>
+                    <l>Calm nature's image on its wat'ry breast,</l>
+                    <l>Down bend the banks, the trees impending grow,</l>
+                    <l>And skies beneath with answering colours glow.</l>
+                    <l>But if a stone the gentle sea divide,</l>
+                    <l>Swift ruffling circles curl on every side ;</l>
+                    <l>And glimm'ring fragments of a broken sun ;</l>
+                    <l>Banks, trees, and skies in thick disorder run.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">To clear this doubt, to know the world by sight,</l>
+                    <l>To find if books or swains report it right,</l>
+                    <l>(For yet by swains alone the world he knew,</l>
+                    <l>Whose feet came wand'ring o'er the nightly dew)</l>
+                    <l>He quits his cell; the pilgrim's stair he bore,</l>
+                    <l> And fix'd the scallop in his hat before ;</l>
+                    <l>Then with the sun a rising journey went,</l>
+                    <l>Sedate to think, and watching each event.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">The morn was wasted in the pathless grass,</l>
+                    <l>And long and lonesome was the wild to pass :</l>
+                    <l>But when the southern sun had warm'd the day,</l>
+                    <l>A youth came'posting o'er a crossing way ;</l>
+                    <l>His raiment decent, his complexion fair,</l>
+                    <l>And soft in graceful ringlets wav'd his hair.</l>
+                    <l>Then near approaching, Father, hail ! he cry'd ;</l>
+                    <l>And hail, my son ! the rev'rend sire reply'd ;</l>
+                    <pb n="7"/>
+                    <fw type="pagenumber" rend="align(centre)">5</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>31D16</name>
+                            <desc>old man</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Words followed words, from question answer<lb rend="indent(5)"/>flow'd,</l>
+                    <l>And talk of various kinds deceiv'd the road :</l>
+                    <l>Till each with other pleas'd, and loth to part,</l>
+                    <l>While in their age they differ, join in heart.</l>
+                    <l>Thus stands an aged elm in ivy bound,</l>
+                    <l>Thus youthful ivy clasps an elm around.</l>
+                    <l>But here the youth enjoin'd the eager sire,</l>
+                    <l>Who into hidden truths did much inquire,</l>
+                    <pb n="8"/>
+                    <fw type="pagenumber" rend="align(centre)">6</fw>
+                    <lb/>
+                    <l>If he'd in silence each event behold,</l>
+                    <l>He would to him some wondrous things unfold.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Now sunk the sun&mdash;the closing hour of day</l>
+                    <l>Came onward, mantled o'er with sober grey ;</l>
+                    <l>Nature in silence bid the world repose ;</l>
+                    <l>When near the road a stately palace rose :</l>
+                    <l>There by the moon, thro' ranks of trees they pass,</l>
+                    <l>Whose verdure crown'd their sloping sides of grass.</l>
+                    <l>It chanc'd, the noble master of the dome</l>
+                    <l>Still made his house the wand'ring stranger's home.</l>
+                    <l>Yet still his kindness, from a thirst of praise,</l>
+                    <l>Prov'd the vain flourish of expensive ease.</l>
+                    <l>The pair arrive, the livery'd servants wait;</l>
+                    <l>Their lord receives them at the pompous gate;</l>
+                    <l>The table groans with costly piles of food,</l>
+                    <l>And all is more than hospitably good.</l>
+                    <l>Then led to rest, the day's long toil they drown,</l>
+                    <l>Deep sunk in sleep, and silk, and heaps of down.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">At length ;tis morn, and at the dawn of day</l>
+                    <l>Along the wide canals the zephyrs play;</l>
+                    <l>Fresh o'er the gay parterres the breezes creep,</l>
+                    <l>And shake the neighbouring wood to banish sleep.</l>
+                    <l>Up rise the guests, obedient to the call;</l>
+                    <l>An early banquet deck'd the splendid hall;</l>
+                    <pb n="9"/>
+                    <fw type="pagenumber" rend="align(centre)">7</fw>
+                    <lb/>
+                    <l>Rich, luscious wine a golden goblet grac'd,</l>
+                    <l>Which the kind master forced his guests to taste :</l>
+                    <l>Then pleas'd and thankful from the porch they go</l>
+                    <l>And, but the landlord, none had cause of wo;</l>
+                    <l>His cup was vanish'd ; for in secret guise</l>
+                    <l>The younger guest purloin'd the glittering prize.</l>
+                    <l>Now on they pass&mdash;when far upon the road,</l>
+                    <l>The wealthy spoil the wily partner show'd.</l>
+                </lg>
+                <lb/>
+                <figure rend="align(right)">
+                    <ic:iconClass>
+                        <name>31D16</name>
+                        <desc>old man</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">As one who spies a serpent in his way,</l>
+                    <l>Glist'ning and basking in the summer ray,</l>
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(centre)">8</fw>
+                    <lb/>
+                    <l>Disorder'd stops, to shun the danger near,</l>
+                    <l>Then walks with faintness on, and looks with fear:</l>
+                    <l>So seem'd the sire, he walk'd with trembling heart:</l>
+                    <l>And much he wish'd, but durst not ask to part :</l>
+                    <l>Murm'ring, he lifts his eyes, and thinks it hard,</l>
+                    <l>That gen'rous actions meet a base reward.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">While thus they pass, the sun his glory shrouds,</l>
+                    <l>The changing skies hang out their sable clouds ;</l>
+                    <l>A sound in air presag'd approaching rain,</l>
+                    <l>And beasts to coverts scud across the plain.</l>
+                    <l>Warn'd by the signs, the wand'ring pair retreat,</l>
+                    <l>To seek for shelter at a neighb'ring seat :</l>
+                    <l>'Twas built with turrets on a rising ground,</l>
+                    <l>And strong, and large, and unimprov'd around :</l>
+                    <l>Its owner's temper, tim'rous and severe,</l>
+                    <l>Unkind and griping, caus'd a desert there.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">As near the miser's heavy door they drew,</l>
+                    <l>Fierce rising gusts with sudden fury blew ;</l>
+                    <l>The nimble light'ning mix'd with showers began,</l>
+                    <l> And o'er their heads loud rolling thunder ran.</l>
+                    <l>Here long they knock, but knock or call in vain,</l>
+                    <l>Driv'n by the wind, and batter'd by the rain.</l>
+                    <pb n="11"/>
+                    <fw type="pagenumber" rend="align(centre)">9</fw>
+                    <lb/>
+                    <l>At length some pity warm'd the master's breast:</l>
+                    <l>('Twas then his threshold first receiv'd a guest.)</l>
+                    <l>Slow, creaking turns the door with jealous care ;</l>
+                    <l>And half he welcomes in the shiv'ring pair;</l>
+                    <l>One frugal fagot lights the naked walls,</l>
+                    <l>And nature's fervour through their limbs recalls :</l>
+                    <l>Bread of the coarsest sort, with meager wine,</l>
+                    <l>Each hardly granted, serv'd them both to dine ;</l>
+                    <l>And when the tempest first appear'd to cease,</l>
+                    <l>A ready warning bid them part in peace.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">With still remark the pondering Hermit view'd,</l>
+                    <l>In one so rich, a life so poor and rude ;</l>
+                    <l>And why should such, within himself he cry'd,</l>
+                    <l>Lock the lost wealth a thousand want beside ?</l>
+                    <l>But what new marks of wonder soon took place</l>
+                    <l>In ev'ry settling feature of his face !</l>
+                    <l>When, from his vest, the young companion bore</l>
+                    <l>That cup the generous landlord own'd before ;</l>
+                    <l>And paid profusely, with the precious bowl</l>
+                    <l>The stinted kindness of this churlish soul :</l>
+                    <l>Just sunk to earth, the miser in surprise,</l>
+                    <l>Receiv'd the gliit'rlng gift with startled eyes :</l>
+                    <fw type="signature" rend="align(centre)">2 H</fw>
+                    <pb n="12"/>
+                    <fw type="pagenumber" rend="align(centre)">10</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>33A2</name>
+                            <desc>taking leave</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>But ere he could recover from his fright,</l>
+                    <l>The generous guests had travelled from his sight,</l>
+                    <l>Now the brisk clouds in airy tumults fly,</l>
+                    <l>The sun emerging opes an azure sky :</l>
+                    <l>A fresher green the fragrant leaves display,</l>
+                    <l>And glitt'ring as they tremble, cheer the day :</l>
+                    <l>The weather courts them from the poor retreat,</l>
+                    <l>And the glad master bolts the wary gate.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">While hence they walk, the pilgrim's bosom<lb
+                            rend="indent(4)"/>wrought</l>
+                    <pb n="13"/>
+                    <fw type="pagenumber" rend="align(centre)">11</fw>
+                    <l>With all the travail of uncertain thought;</l>
+                    <l>His partner's acts without their cause appear,*</l>
+                    <l>'Twas there a vice, but seem'd a madness here,</l>
+                    <l>Detesting that, and pitying this, he goes,</l>
+                    <l>Lost and confounded with the various shows.</l>
+                    <l>Now night's dim shades again invoke the sky,&brace;</l>
+                    <l>Again the wand'rers want a place to lie,</l>
+                    <l>Again they search and find a mansion nigh.</l>
+                    <l>The soil improv'd around, the mansion neat,</l>
+                    <l>And neither poorly low, nor idly great:</l>
+                    <l>It seem'd to speak its master's turn of mind,</l>
+                    <l>Content, and not for praise but virtue kind.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Hither the walkers turn their weary feet,</l>
+                    <l>Then bless the mansion, and the master greet;</l>
+                    <l>Their greeting fair, bestow'd with modest guise,</l>
+                    <l>The courteous master hears, and thus replies:</l>
+                    <l>Without a vain, without a grudging heart,</l>
+                    <l>To him who gives us all, I yield a part :</l>
+                    <l>From him you come, from him accept it here,</l>
+                    <l>A frank and sober, more than costly cheer.</l>
+                    <l>He spoke, and bid the welcome table spread,</l>
+                    <l>Then talk'd of virtue till the time of bed ;</l>
+                    <lb/>
+                    <fw type="footer" rend="first-indent(3)">&rule;<lb/>* To steal the cup from the
+                        generous man, and give<lb/>it to a wretch that would scarcely admit them
+                        within his<lb/>gate.</fw>
+                    <pb n="14"/>
+                    <fw type="pagenumber" rend="align(centre)">12</fw>
+                    <lb/>
+                    <l>When the grave household round the hall repair,</l>
+                    <l>Warn'd by a bell, and close the hours with prayer.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">At length the world, renew'd by calm repose,</l>
+                    <l>Was strong for toil, the dappled morn arose :</l>
+                    <l>Before the pilgrims part, the younger crept</l>
+                    <l>Near the clos'd cradle, where an infant slept,</l>
+                    <l>And writh'd his neck ; the landlord's little pride,</l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>31D5</name>
+                            <desc>young versus old age; young and old</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>O strange return! grew black, and gasp'd, and<lb rend="indent(5)"/>died.</l>
+                    <l>Horror of horrors ! what ! his only son !</l>
+                    <l>How look'd our hermit when the fact was done !</l>
+                    <l>Not hell, tho'hell's black jaws in sunder part,</l>
+                    <l>And breathe blue fire, could more assail his heart.</l>
+                </lg>
+                <pb n="15"/>
+                <fw type="pagenumber" rend="align(centre)">13</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">Confus'd and struck with silence at the deed,</l>
+                    <l>He flies&mdash; but trembling, fails to fly with speed.</l>
+                    <l>His steps the youth pursues ; the country lay</l>
+                    <l>Perplex'd with roads, a servant shew'd the way;</l>
+                    <l>A river cross'd the path ; the passage o'er</l>
+                    <l>Was nice to find, the servant went before ;</l>
+                    <l>Long arms of oak an open bridge supplied,</l>
+                    <l>And deep the waves beneath the branches glide:</l>
+                    <l>The youth who seem'd to watch a time to sin,</l>
+                    <l>Approach'd the careless guide, and thrust him in:</l>
+                    <l>Plunging he falls, and rising lifts his head,</l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>46C2931</name>
+                            <desc>saving a person from drowning</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Then flashing turns, and sinks among the dead.</l>
+                </lg>
+                <fw type="signature" rend="align(centre)">3 H</fw>
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(centre)">14</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">Wild sparkling rage inflames the Father's eyes,</l>
+                    <l>He bursts the bands of fear, and madly cries,</l>
+                    <l>Detested wretch ! but scarce his speech began</l>
+                    <l>When the strange partner seem'd no longer man;</l>
+                    <l>His youthful face grew more serenely sweet,</l>
+                    <l>His robe turn'd white, and flow'd about his feet :</l>
+                    <l>Fair rounds of radient points invest his hair;</l>
+                    <l>Celestial odours breathe through purpled air;</l>
+                    <l>And wings, whose colours glitter'd like the day,</l>
+                    <l>Wide at his back the dazzling plumes display</l>
+                    <l>The form etherial bursts upon his sight,</l>
+                    <l>And moves in all the majesty of light.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Tho' loud at first the pilgrim's passion grew ;</l>
+                    <l>Sudden he gaz'd and wist not what to do :</l>
+                    <l>Surprise in secret chains his words suspends,</l>
+                    <l>And in a calm his settling temper ends.</l>
+                    <l>But silence here the beauteous angel broke,</l>
+                    <l>The voice of music ravish'd as he spoke.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">&ldquo; Thy prayer, thy praise, thy life to vice
+                            un&ndash;<lb type="inWord" rend="indent(5)"/>known,</l>
+                    <l>In sweet memorial rise before the throne ;</l>
+                    <l>These charms success in our bright region find,</l>
+                    <l>And force an angel down to calm thy mind;</l>
+                    <l>For this commission'd I forsook the sky;</l>
+                    <pb n="17"/>
+                    <fw type="pagenumber" rend="align(centre)">15</fw>
+                    <lb/>
+                    <l>Nay, cease to kneel&mdash;thy fellow servant, I.</l>
+                    <l>Then know the truth of government divine,</l>
+                    <l>And let these scruples be no longer thine.</l>
+                    <l>The Maker justly claims that world he made;</l>
+                    <l>In this the right of Providence is laid ;</l>
+                    <l>Its sacred majesty through all depends,</l>
+                    <l>On using second means* to work his ends :</l>
+                    <l>'Tis thus withdrawn in state from human eye,</l>
+                    <l>The power exerts his attributes on high:</l>
+                    <l>Your actions uses, nor controls your will,</l>
+                    <l>And bids the doubting sons of men be still.</l>
+                    <l>What strange events can strike with more sur&ndash;<lb type="inWord"
+                            rend="indent(5)"/>prise</l>
+                    <l>Than those which lately struck thy wond'ring<lb rend="indent(5)"/>eyes ?</l>
+                    <l>Yet taught by these, confess th'; Almighty just,</l>
+                    <l>And, where you can't unriddle, learn to trust!</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">&ldquo; The great vain man, who fared on costly food,</l>
+                    <l>Whose life was too luxurious to be good ;</l>
+                    <fw type="footer" rend="first-indent(3)">&rule;<lb/>* Second means&mdash;God
+                        often appoints wicked and<lb/>abandoned wretches to be his instruments of
+                        justice upon<lb/>others, for some ends tending to public good, though
+                            un&ndash;<lb type="inWord"/>perceived by human eyes.</fw>
+                    <pb n="18"/>
+                    <fw type="pagenumber" rend="align(centre)">16</fw>
+                    <lb/>
+                    <l>Who made his iv'ry stands with goblets shine,</l>
+                    <l>And forc'd his guests to morning draughts of wine,</l>
+                    <l>Has with the cup, the graceless custom lost,</l>
+                    <l>And still he welcomes, but with less of cost.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">&ldquo; The mean suspicious wretch, whose bolted<lb
+                            rend="indent(5)"/>door</l>
+                    <l>Ne'er mov'd in pity to the wand'ring poor :</l>
+                    <l>With him I left the cup to teach his mind</l>
+                    <l>That Heav'n can bless, if mortals will be kind ;</l>
+                    <l>Conscious of wanting worth, he views the bowl,</l>
+                    <l>And feels compassion touch his grateful soul.</l>
+                    <l>Thus artists melt the sullen ore of lead,</l>
+                    <l>With heaping coals of fire upon his head ;</l>
+                    <l>In the kind warmth the metal learns to glow,</l>
+                    <l>And loose from dross the silver runs below.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">&ldquo; Long had our pious friend in virtue trod,</l>
+                    <l>But now the child half wean'd his soul from God ;</l>
+                    <l>Child of his age,* for him he liv'd in pain,</l>
+                    <l>And measured back his steps to earth again.</l>
+                    <l>To what excesses had his dotage run!</l>
+                    <l>But God, to save the father, took the son,</l>
+                    <l>To all but thee, in fits he seem'd to go,</l>
+                    <l>And 'twas my ministry to deal the blow.</l>
+                    <fw type="footer" rend="first-indent(3)">&rule;<lb/>* Child of his age.&mdash;A
+                        child born to him when in<lb/>years, on which he doated too fondly.</fw>
+                    <pb n="19"/>
+                    <fw type="pagenumber" rend="align(centre)">17</fw>
+                    <lb/>
+                    <l>The poor fond parent, humbled in the dust,</l>
+                    <l>Now owns in tears the punishment was just.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">&ldquo; But how had all his fortune felt a wrack,</l>
+                    <l>Had the false servant sped in safety back!</l>
+                    <l>This very night, by secret plot contriv'd,</l>
+                    <l>Of life and wealth his master he'd depriv'd,</l>
+                    <l>Had he in this conspiracy prevail'd,</l>
+                    <l>What funds of charity would then have fail'd !</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">&ldquo; Thus heaven instructs thy mind : this trial<lb
+                            rend="align(5)"/>o'er,</l>
+                    <l>Depart in peace, resign, and sin no more.&rdquo;</l>
+                    <l>On sounding pinions here the youth withdrew,</l>
+                    <l>The sage stood wond'ring as the seraph flew.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Thus look'd Elisha, when to mount on high,</l>
+                    <l>His master took the chariot of the sky :</l>
+                    <l>The fiery pomp, ascending, left the view ;</l>
+                    <l>The prophet gaz'd and wish'd to follow too.</l>
+                    <l>The bending Hermit here a prayer begun,</l>
+                    <l>&ldquo;Lord ! as in heaven, on earth thy will be done.&rdquo;</l>
+                    <l>Then gladly turning, sought his ancient place,</l>
+                    <l>And pass'd a life of piety and peace.&rdquo;</l>
+                </lg>
+                <fw type="signature" rend="align(centre)">4 H</fw>
+            </div>
+            <pb n="20"/>
+            <pb n="21"/>
+            <div type="section">
+                <head type="main" rend="align(centre)">THE<lb/>TRAVELLER:</head>
+                <lb/>
+                <head type="sub" rend="align(centre)">OR,<lb/>A PROSPECT OF
+                    SOCIETY.<lb/>&orn;</head>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">REMOTE, unfriended, melancholy, slow,</l>
+                    <l>Or by the lazy Scheld, or wand'ring Po;</l>
+                    <l>Or onward, where the rude Carinthian boor :</l>
+                    <l>Against the houseless stranger shuts the door;</l>
+                    <l>Or where Campania's plain forsaken lies,</l>
+                    <l>A weary waste, expanding to the skies;</l>
+                    <l>Where'er I roam, whatever realms to see,</l>
+                    <l>My heart untravell'd, fondly turns to thee ;</l>
+                    <l>Still to my brother turns with ceaseless pain,</l>
+                    <l>And drags, at each remove, a length'ning chains.</l>
+                </lg>
+                <fw type="signature" rend="align(centre)">5 H</fw>
+                <pb n="22"/>
+                <fw type="pagenumber" rend="align(centre)">20</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">Perpetual blessings crown my earliest friend,</l>
+                    <l>And round his dwelling guardian saints attend ;</l>
+                    <l>Blest be that spot where cheerful guests retire,</l>
+                    <l>To pause from toil, and trim their evening fire;</l>
+                    <l>Blest that abode where want and pain repair,</l>
+                    <l>And every stranger finds a ready chair:</l>
+                    <l>Blest be those feasts, with simple plenty crown'd,</l>
+                    <l>Where all the ruddy family around</l>
+                    <l>Laugh at the jests, or pranks* that never fail,</l>
+                    <l>Or sigh with pity at some mournful tale;</l>
+                    <l>Or press the bashful stranger to his food,</l>
+                    <l>And learn the luxury of doing good.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">But me, not destin'd such delights to share,</l>
+                    <l>My prime of life in wand'ring spent and care ;</l>
+                    <l>Impell'd with steps unceasing to pursue</l>
+                    <l>Some fleeting good that mocks me with the view ;</l>
+                    <l>That, like the circle bounding earth and skies,</l>
+                    <l>Allures from far, yet as I follow, flies ;</l>
+                    <l>My fortune leads to traverse realms alone,</l>
+                    <l>And find no spot of alt the world my own.</l>
+                </lg>
+                <fw type="footer" rend="first-indent(3)">&rule;<lb/>Jests or Pranks. It is to be feared, these words
+                    rather<lb/>encourage more than innocent mirth or cheerfulness,<lb/>and tend to
+                    lightness or dissipation.</fw>
+                <pb n="23"/>
+                <fw type="pagenumber" rend="align(centre)">21</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">E'en now, where Alpine solitudes ascend,</l>
+                    <l>I sit me down a pensive hour to spend : </l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>43B11</name>
+                            <desc>contemplating nature</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>And plac'd on high, above the storm's career,</l>
+                    <l>Look downward where a hundred realms appear ;</l>
+                    <l>Lakes, forests, cities, plains extending wide,</l>
+                    <l>The pomp of kings, the shepherd's humbler pride.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)"/>
+                    <l>When thus creation's charms around combine,</l>
+                    <l>Amidst the store, should thankless pride repine ?</l>
+                    <l>Say, should the philosophic mind disdain</l>
+                    <l>That good which makes each humbler bosom<lb rend="indent(4)"/>vain ?</l>
+                    <pb n="24"/>
+                    <fw type="pagenumber" rend="align(centre)">22</fw>
+                    <lb/>
+                    <l>Let school taught pride dissemble all it can,</l>
+                    <l>These little things are great to little man;</l>
+                    <l>And wiser he, whose sympathetic mind</l>
+                    <l>Exults in all the good of all mankind.</l>
+                    <l>Ye glitt'ring towns with wealth and splendour<lb rend="indent(4)"/>crown'd
+                        ;</l>
+                    <l>Ye fields, where summer spreads profusion round;</l>
+                    <l>Ye lakes, whose vessels catch the busy gale;</l>
+                    <l>Ye bending swains, that dress the flow'ry vale,</l>
+                    <l>For me your tributary stores combine :</l>
+                    <l>Creation's heir ! the world, the world is mine!</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">As some lone miser, visiting his store</l>
+                    <l>Bends at his treasure, counts, recounts it o'er ;</l>
+                    <l>Hoards after hoards his rising raptures fill,</l>
+                    <l>Yet still he sighs, for hoards are wanting still :</l>
+                    <l>Thus to my breast alternate passions rise,</l>
+                    <l>Pleas'd with each good that Heav'n to man supplies;</l>
+                    <l>Yet oft a sigh prevails, and sorrows fall</l>
+                    <l>To see the hoard of human bliss so small;</l>
+                    <l>And oft I wish, amidst the scene, to find</l>
+                    <l>Some spot to real happiness consign'd;</l>
+                    <l>Where my worn soul, each wand'ring hope at rest</l>
+                    <l>May gather bliss to see my fellows blest.</l>
+                </lg>
+                <pb n="25"/>
+                <fw type="pagenumber" rend="align(centre)">23</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">But where to find that happiest spot below,</l>
+                    <l>Who can direct, when all pretend to know ?</l>
+                    <l>The shudd'ring tenant of the frigid zone</l>
+                    <l>Boldly proclaims that happiest spot his own ;</l>
+                    <l>Extols the treasures of his stormy seas,</l>
+                    <l>And his long nights of revelry and ease :</l>
+                    <l>The naked negro panting at the line,</l>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>32B32</name>
+                            <desc>Africans</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Boasts of his golden sands and palmy wine ;</l>
+                    <lb/>
+                    <fw type="signature" rend="align(centre)">6 S</fw>
+                    <pb n="26"/>
+                    <fw type="pagenumber" rend="align(centre)">24</fw>
+                    <l>Basks in the glare, or stems the tepid wave,</l>
+                    <l>And thanks his gods* for all the good they gave,</l>
+                    <l>Such is the patriot's boast, where'er we roam;</l>
+                    <l>His first, best country ever is at home.</l>
+                    <l>And yet, perhaps, if countries we compare,</l>
+                    <l>And estimate the blessings which they share,</l>
+                    <l>Though patriots flatter, still shall wisdom find</l>
+                    <l>An equal portion dealt to all mankind ;</l>
+                    <l>As different good, by art or nature given,</l>
+                    <l>To different nations, make their blessings even.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Nature, a mother kind alike to all,</l>
+                    <l>Still grants her bliss at labour's earnest call ;</l>
+                    <l>With food as well the peasant is supply'd</l>
+                    <l>On Idra's cliffs, as Arno's shelvy side !</l>
+                    <l>And though the rocky crested summits frown,</l>
+                    <l>These rocks by custom turn to beds of down.</l>
+                    <l>From art more various are the blessings sent;</l>
+                    <l>Wealth, commerce, honour, liberty, content,</l>
+                    <l>Yet these each other's power so strong contest,</l>
+                    <l>That either seems destructive of the rest.</l>
+                    <lb/>
+                    <fw type="footer" rend="first-indent(3)">&rule;<lb/>* Though there is but one
+                        true and living God, yet<lb/>not only the children of Africa, but many
+                        others, have<lb/>been, and some still continue so enveloped in error,
+                        as<lb/>to believe in a plurality of gods.</fw>
+                    <pb n="27"/>
+                    <fw type="pagenumber" rend="align(centre)">25</fw>
+                    <lb/>
+                    <l>Where wealth and freedom reign, contentment<lb rend="indent(5)"/>fails ;</l>
+                    <l>And honour sinks where commerce long prevails.</l>
+                    <l>Hence ev'ry state, to one lov'd blessing prone,</l>
+                    <l>Comforts and models life to that alone.</l>
+                    <l>Each to the fav'rite happiness attends,</l>
+                    <l>And spurns the plan that aims at other ends ;</l>
+                    <l>Till carried to excess in each domain,</l>
+                    <l>This fav'rite good begets peculiar pain.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">But let us try those truths with closer eyes,</l>
+                    <l>And trace them through the pospect as it lies :</l>
+                    <l>Here, fore a while, my proper cares resign'd</l>
+                    <l>Here let me sit in sorrow for mankind ;</l>
+                    <l>Like yon neglected shrub at random cast,</l>
+                    <l>That shades the steep, and sighs at ev'ry blast.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Far to the right, where Appenine ascends,</l>
+                    <l>Bright as the summer, Italy extends ;</l>
+                    <l>Its uplands sloping deck the mountain's side,</l>
+                    <l>Woods over woods in gay theatric pride ;</l>
+                    <l>While oft some temple's mould'ring tops between,</l>
+                    <l>With venerable grandeur marks the scene.</l>
+                </lg>
+                <pb n="28"/>
+                <fw type="pagenumber" rend="align(centre)">26</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">Could nature's bounty satisfy the breast,</l>
+                    <l>The sons of Italy were surely blest.</l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>31D14</name>
+                            <desc>adult man</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Whatever fruits in different climes are found,</l>
+                    <l>That proudly rise, or humbly court the ground ;</l>
+                    <l>Whatever blooms in torrid tracts appear,</l>
+                    <l>Whose bright succession decks the varied year ;</l>
+                    <l>Whatever sweets salute the northern sky</l>
+                    <l>With vernal leaves, that blossom but to die&mdash;</l>
+                    <l>These, here disporting, own the kindred soil,</l>
+                    <l>Nor ask luxuriance from the planter's toil ;</l>
+                    <l>While sea-born gales their gelid wings expand,</l>
+                    <l>To winnow fragrance round the smiling land.</l>
+                </lg>
+                <pb n="29"/>
+                <fw type="pagenumber" rend="align(centre)">27</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">But small the bliss that sense alone bestows</l>
+                    <l>And sensual bliss is all the nation knows.*</l>
+                    <l>In florid beauty groves and fields appear,</l>
+                    <l>Man seems the only growth that dwindles here.</l>
+                    <l>Contrasted faults through all his manners reign ;</l>
+                    <l>Though poor, luxurious ; though submissive, vain :</l>
+                    <l>Though grave, yet trifling ; zealous, yet untrue;</l>
+                    <l>And e'en in penance planning sins anew.</l>
+                    <l>All evils here contaminate the mind,</l>
+                    <l>That opulence departed leaves behind ;</l>
+                    <l>For wealth was theirs, not far removed the date,</l>
+                    <l>When commerce proudly flourish'd thro' the state,</l>
+                    <l>At her command the palace learn'd to rise,</l>
+                    <l>Again the long fallen column sought the skies ;</l>
+                    <l>The canvass glow'd beyond e'en nature warm ;</l>
+                    <l>The pregnant quarry teem'd with human form ;</l>
+                    <l>Till, more unsteady than the southern gale,</l>
+                    <l>Commerce on other shores display'd her sail ;</l>
+                    <l>While nought remain'd of all that riches gave,</l>
+                    <l>But towns unman'd, and lords without a slave :</l>
+                    <lb/>
+                    <fw type="footer" rend="first-indent(3)">&rule;<lb/>* Although too true as a
+                        nation, yet it is hoped many<lb/>individuals have a better idea of
+                        bliss.</fw>
+                    <pb n="30"/>
+                    <fw type="pagenumber" rend="align(centre)">28</fw>
+                    <lb/>
+                    <l>And late the nation found, with fruitless skill,</l>
+                    <l>Its former strength was but plethoric ill.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Yet still the loss of wealth is here supply'd</l>
+                    <l>By arts, the splendid wrecks of former pride ;</l>
+                    <l>From these the feeble heart and long fallen mind</l>
+                    <l>An easy compensation seem to find.</l>
+                    <l>Here may be seen in bloodless pomp array'd</l>
+                    <l>The pasteboard triumph and the cavalcade ;</l>
+                    <l>Processions form'd for piety and love,</l>
+                    <l>A mistress or a saint in ev'ry grove.</l>
+                    <l>By sports like these are all their cares beguil'd ;</l>
+                    <l>The sports of children satisfy the child :</l>
+                    <l>Each nobler aim, represt by long control,</l>
+                    <l>Now sinks at last, or feebly mans the soul ;</l>
+                    <l>While low delights, succeeding fast behind,</l>
+                    <l>In happier meanness occupy the mind :</l>
+                    <l>As in those domes, where Caesar's once bore sway,</l>
+                    <l>Defac'd by time, and tott'ring in decay,</l>
+                    <l>There in the ruin, heedless of the dead,</l>
+                    <l>The shelter seeking peasant builds his shed ;</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">And, wondering man could want the larger pile,</l>
+                    <l>Exults, and owns his cottage with a smile.</l>
+                    <pb n="31"/>
+                    <fw type="pagenumber" rend="align(centre)">29</fw>
+                    <lb/>
+                    <l>My soul turn from them&mdash;turn we to survey</l>
+                    <l>Where rougher climes a nobler race display ;</l>
+                    <l>Where the bleak Swiss their stormy mansion<lb rend="indent(4)"/>tread,</l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>45C16</name>
+                            <desc>(RIFLE)	firearms: rifle</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>And force a churlish soil for scanty bread ;</l>
+                    <l>No product here the barren hills afford,</l>
+                    <l>But man and steel, the soldier and his sword.</l>
+                    <l>No vernal blooms their torpid rocks array,</l>
+                    <l>But winter ling'ring chills the lap of May :</l>
+                    <l>No zephyr fondly sues the mountain's breast,</l>
+                    <l>But meteors glare, and stormy glooms invest.</l>
+                </lg>
+                <pb n="32"/>
+                <fw type="pagenumber" rend="align(centre)">30</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">Yet still, e'en here content can spread a charm,</l>
+                    <l>Redress the clime, and all its rage disarm.</l>
+                    <l>Tho' poor the peasant's hut, his feast tho' small,</l>
+                    <l>He sees his little lot the lot of all ;</l>
+                    <l>Sees no coutigous palace rear its head,</l>
+                    <l>To shame the meanness of his humble shed ;</l>
+                    <l>No costly lord the sumptuous banquet deal,</l>
+                    <l>To make him loathe his vegetable meal ;</l>
+                    <l>But calm, and bred in ignorance and toil,</l>
+                    <l>Each wish contracting, fits him for the soil,</l>
+                    <l>Cheerful at morn he wakes from short repose,</l>
+                    <l>Breathes the keen air, and carols as he goes :</l>
+                    <l>With patient angle trolls the finny deep,</l>
+                    <l>Or drives his vent'rous ploughshare to the steep;</l>
+                    <l>Or seeks the den where snow tracks mark the<lb rend="indent(4)"/>way,</l>
+                    <l>And drags the struggling savage into day!</l>
+                    <l>At night returning, ev'ry labour sped,</l>
+                    <l>He sits him down the monarch of a shed ;</l>
+                    <l>Smiles by his cheerful fire, and round surveys</l>
+                    <l>His children's looks, that brighten in the blaze ;</l>
+                    <l>While his lov'd partner, boastful of her hoard,</l>
+                    <l>Displays her cleanly platter on the board :</l>
+                    <pb n="33"/>
+                    <fw type="pagenumber" rend="align(centre)">31</fw>
+                    <lb/>
+                    <l>And haply too some pilgrim thither led,</l>
+                    <l>With many a tale repays the nightly bed.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Thus ev'rygood his native wilds impart,</l>
+                    <l>Imprints the patriot passion on his heart ;</l>
+                    <l>And e'en those ills that round his mansion rise,</l>
+                    <l>Enhance the bliss his scanty fund supplies.</l>
+                    <l>Dear is that shed to which his soul conforms,</l>
+                    <l>And dear that hill which lifts him to the storms ;</l>
+                    <l>And as a child, when scaring sounds molest,</l>
+                    <l>Clings close and closer to the mother's breast,</l>
+                    <l>So the loud torrent, and the whirlwind's roar,</l>
+                    <l>But bind him to his native mountains more.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Such are the charms to barren states assign'd :</l>
+                    <l>Their wants but few, their wishes all confin'd.</l>
+                    <l>Yet let them only share the praises due ;</l>
+                    <l>If few their wants, their pleasures are but few :</l>
+                    <l>For ev'ry want that stimulates the breast,</l>
+                    <l>Becomes a source of pleasure when redrest.</l>
+                    <l>When from such lands each pleasing science flies.</l>
+                    <l>That first excites desire, and then supplies ;</l>
+                    <l>Unknown to them, when sensual pleasures cloy,</l>
+                    <l>To fill the languid pause with finer joy</l>
+                    <l>Unknown those powers that raise the soul to flame,</l>
+                    <lb/>
+                    <pb n="34"/>
+                    <fw type="pagenumber" rend="align(centre)">32</fw>
+                    <lb/>
+                    <l>Catch ev'ry nerve and vibrate thro' the frame.</l>
+                    <l>Their level life is but a mould'ring fire,</l>
+                    <l>Unquench'd by want, unfan'd by strong desire ;</l>
+                    <l>Unfit for raptures; or, if raptures cheer</l>
+                    <l>In some high festival of once a year,</l>
+                    <l>In wild excess the vulgar breast takes fire,</l>
+                    <l>Till, buried in debauch, the bliss expire.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">But not their joys alone thus coarsely flow ;</l>
+                    <l>Their morals like their pleasures, are but low :</l>
+                    <l>For, as refinement stops, from sire to son,</l>
+                    <l>Unalter'd, unimprov'd, the manners run ;</l>
+                    <l>And love's and friendship's finely pointed dart</l>
+                    <l>Falls blunted from each indurated heart.</l>
+                    <l>Some sterner virtues o'er the mountain's breast</l>
+                    <l>May sit, like falcons cowering on the nest;</l>
+                    <l>But all* the gentler morals, such as play</l>
+                    <l>Through life's more cultur'd walks, and charm<lb rend="indent(4)"/>the
+                        way,</l>
+                    <l>These far dispers'd, on timorous pinions fly,</l>
+                    <l>To sport and flutter in a kinder sky.</l>
+                </lg>
+                <lb/>
+                <fw type="footer">&rule;<lb/>* Doubtless this must be understood comparatively.</fw>
+                <pb n="35"/>
+                <fw type="pagenumber" rend="align(centre)">33</fw>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">To kinder skies, where gentler manners reign,</l>
+                    <l>I turn&mdash;and France displays her bright domain.</l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>31D14</name>
+                            <desc>adult man</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Gay, sprightly land of mirth and social ease,</l>
+                    <l>Pleas'd with thyself, whom all the world can<lb rend="indent(4)"/>please,</l>
+                    <l>How often have I led thy sportive choir</l>
+                    <l>With tuneless pipe, beside the murm'ring Loire :</l>
+                    <l>Where shading elms along the margin grew,</l>
+                    <l>And, freshen'd from the wave, the zephyr flew ;</l>
+                    <l>And haply, tho' my harsh touch, falt'ring still,</l>
+                    <l>But mock'd all tune, and marr'd the dancer's skill,</l>
+                    <l>Yet would the village praise my wond'rous power,</l>
+                    <l>And dance, forgetful of the noontide hour!</l>
+                    <pb n="36"/>
+                    <fw type="pagenumber" rend="align(centre)">34</fw>
+                    <lb/>
+                    <l>Alike all ages. Dames of ancient days </l>
+                    <l>Have led their children through the mirthful<lb rend="indent(4)"/>maze ;</l>
+                    <l>And the gay grandsire, skill'd in gestic lore,</l>
+                    <l>Has frisk'd beneath the burden of three-score.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">So gay a life these thoughtless realms display,</l>
+                    <l>Thus idly busy rolls their world away :</l>
+                    <l>Theirs are those arts that mind to mind endear ;</l>
+                    <l>For honour forms the social temper here :</l>
+                    <l>Honour, that praise which real merit gains,</l>
+                    <l>Or e'en imaginary worth obtains,</l>
+                    <l>Here passes current; paid from hand to hand,</l>
+                    <l>It shifts in splendid traffic round the land :</l>
+                    <l>From courts to camps, to cottages it strays,</l>
+                    <l>And all are taught an avarice of praise :</l>
+                    <l>They please, are pleas'd, they give to get esteem,</l>
+                    <l/>
+                    <l>Till, seeming blest, they grow to what they seem.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">But while this softer art their bliss supplies,</l>
+                    <l>It gives their follies also room to rise,</l>
+                    <l>For praise too dearly lov'd, or warmly sought,</l>
+                    <l>Enfeebles all internal strength of thought;</l>
+                    <l>And the weak soul, within itself unblest,</l>
+                    <l>Leans for all pleasure on another's breast.</l>
+                    <pb n="37"/>
+                    <fw type="pagenumber" rend="align(centre)">35</fw>
+                    <lb/>
+                    <l>Hence ostentation here, with tawdry art,</l>
+                    <l>Pants for the vulgar praise which fools impart :</l>
+                    <l>Here vanity assumes her pert grimace,</l>
+                    <l>And trims her robes of frieze with copper lace ;</l>
+                    <l>Here beggar pride defrauds her daily cheer,</l>
+                    <l>To boast one splendid banquet once a year ;</l>
+                    <l>The mind still turns where shifting fashion draws,</l>
+                    <l>Nor weighs the solid worth of self applause.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">To men of other minds my fancy flies,</l>
+                    <l>Embosom'd in the deep where Holland lies.</l>
+                    <l>Methinks her patient sons before me stand,</l>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>46C2711</name>
+                            <desc>seaman</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Where the broad ocean leans against the land;</l>
+                    <pb n="38"/>
+                    <fw type="pagenumber" rend="align(centre)">
+                        <choice>
+                            <orig>86</orig>
+                            <corr>36</corr>
+                        </choice>
+                    </fw>
+                    <lb/>
+                    <l>And, sedulous to stop the coming tide,</l>
+                    <l>Lift the tall rampire's artificial pride.</l>
+                    <l>Onward, methinks, and diligently slow,</l>
+                    <l>The firm connected bulwark seems to grow ;</l>
+                    <l>Spreads its long arms amidst the wat'ry roar,</l>
+                    <l>Scoops out an empire, and usurps the shore,</l>
+                    <l>While the pent ocean, rising o'er the pile,</l>
+                    <l>Sees an amphibious world beneath him smile,</l>
+                    <l>The slow canal, the yellow blossom'd vale,</l>
+                    <l>The willow tufted bank, the gliding sail,</l>
+                    <l>The crowded mart, the cultivated plain,</l>
+                    <l>A new creation rescued from his reign.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Thus while around the wave subjected soil</l>
+                    <l>Impels the native to repeated toil,</l>
+                    <l>Industrious habits in each bosom reign,</l>
+                    <l>And industry begets a love of gain.</l>
+                    <l>Hence all the good from opulence that springs,</l>
+                    <l>With all those ills superfluous treasure brings,</l>
+                    <l>Are here display'd. Their much lov'd wealth<lb rend="indent(6)"/>imparts</l>
+                    <l>Convenience, plenty, elegance, and arts ;</l>
+                    <l>But view them closer, craft and fraud appear ;</l>
+                    <l>Even liberty itself is barter'd here ;</l>
+                    <pb n="39"/>
+                    <fw type="pagenumber" rend="align(centre)">37</fw>
+                    <lb/>
+                    <l>At gold's superior charms all freedom flies ;</l>
+                    <l>The needy sell it, and the rich man buys ;</l>
+                    <l>A laud of tyrants, and a den of slaves !</l>
+                    <l>Here wretches seek dishonourable graves,</l>
+                    <l>And calmly bent, to servitude conform ;</l>
+                    <l>Dull as their lakes that slumber in the storm.</l>
+                    <l>Oh ! how unlike their Belgic sires of old !</l>
+                    <l>Rough, poor, content, ungovernably bold ;</l>
+                    <l>War in each breast, and freedom on each brow ;</l>
+                    <l>How much unlike the sons of Britain now !</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Fir'd at the sound, my genius spreads her wing,</l>
+                    <l>And flies where Britain courts the western spring;</l>
+                    <l>Where lawns extend that scorn Arcadian pride,</l>
+                    <l>And brighter streams than fam'd Hydaspes glide :</l>
+                    <l>There all around the gentlest breezes stray ;</l>
+                    <l>There gentle music melts on ev'ry spray;</l>
+                    <l>Creation's mildest charms are there combin'd ;</l>
+                    <l>Extremes are only in the master's mind !</l>
+                    <l>Stern o'er each bosom reason holds her state,</l>
+                    <l>With daring aims irregularly great :</l>
+                    <l>Pride in their port, defiance in their eye,</l>
+                    <l>I see the lords of human kind* pass by ;</l>
+                    <lb/>
+                    <fw type="footer" rend="first-indent(3)">&rule;<lb/>* The writer of this was a British
+                        subject. As a<lb/>parallel, see the little boy's song, page 45, headed
+                            Preju&ndash;<lb type="inWord"/>dice taken from Original Poems, and the
+                        wise and hap&ndash;<lb type="inWord"/>py conclusion occasioned by the
+                        Father's observations<lb/>to his Child.</fw>
+                    <pb n="40"/>
+                    <fw type="pagenumber" rend="align(centre)">38</fw>
+                    <lb/>
+                    <l>Intent on his designs, a thoughtful band,</l>
+                    <l>By forms unfashion'd, fresh from nature's hand ;</l>
+                    <l>Fierce in their native hardiness of soul,</l>
+                    <l>True to imagin'd right, above control,</l>
+                    <l>While e'en the peasant boasts these rights to scan,</l>
+                    <l>And learns to venerate himself as man.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Thine, freedom, thine the blessings pictur'd here</l>
+                    <l>Thine are those charms that dazzle and endear;</l>
+                    <l>Too blest indeed were such without alloy,</l>
+                    <l>But foster'd e'en by freedom ills annoy :</l>
+                    <l>That independence Briton's prize too high,</l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>49N</name>
+                            <desc>reading</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Keeps man from man, and breaks the social tie ;</l>
+                    <pb n="41"/>
+                    <fw type="pagenumber" rend="align(centre)">39</fw>
+                    <lb/>
+                    <l>The self-dependent lordlings stand alone :</l>
+                    <l>All claims that bind and sweeten life unknown :</l>
+                    <l>Here by the bonds of nature feebly held,</l>
+                    <l>Minds combat minds, repelling and repell'd.</l>
+                    <l>Ferments arise, imprison'd factions roar,</l>
+                    <l>Repress'd ambition struggles round her shore,</l>
+                    <l>Till over wrought, the general system feels</l>
+                    <l>Its motion stop, or phrenzy fires the wheels.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Nor this the worst. As nature's ties decay,</l>
+                    <l>As duty, love, and honour fail to sway,</l>
+                    <l>Fictitious bonds, the bonds of wealth and law,</l>
+                    <l>Still gather strength and force unwilling awe.</l>
+                    <l>Hence all obedience bows to these alone,</l>
+                    <l>And talent sinks, and merit weeps unknown ;</l>
+                    <l>Till time may come, when, stript of all her charms,</l>
+                    <l>The land of scholars and the nurse of arms,</l>
+                    <l>Where noble stems transmit the patriot flame,</l>
+                    <l>Where kings have toil'd, and poets wrote for fame,</l>
+                    <l>One sink of level avarice shall lie,</l>
+                    <l rend="indent(3)">And scholars, soldiers, kings, unhonour'd die.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Yet think not, thus when freedom's ills I state,</l>
+                    <l>I mean to flatter kings, or court the great;</l>
+                    <l>Ye powers of truth, that bid my soul aspire,</l>
+                    <l>Far from my bosom drive the low desire :</l>
+                    <pb n="42"/>
+                    <fw type="pagenumber" rend="align(centre)">40</fw>
+                    <lb/>
+                    <l>And thou, fair freedom, taught alike to feel,</l>
+                    <l>The rabble's rage, and tyrant's angry stee l;</l>
+                    <l>Thou transitory flower, alike undone</l>
+                    <l>By proud contempt, or favour's fost'ring sun,</l>
+                    <l>Still may thy blooms the changeful clime endure,</l>
+                    <l>I only would repress them to secure ;</l>
+                    <l>For just experience tells, in ev'ry soil,</l>
+                    <l>That those who think must govern those who toil ;</l>
+                    <l>And all that freedom's highest aims can reach,</l>
+                    <l>Is but to lay proportion'd loads on each.</l>
+                    <l>Hence, should one order disproportion'd grow,</l>
+                    <l>Its double weight must ruin all below.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">O then, how blind to all that truth requires,</l>
+                    <l>Who think it freedom when a part aspires.</l>
+                    <l>Calm is my soul, nor apt to rise in arms,</l>
+                    <l>Except when fast approaching danger warms :</l>
+                    <l>But when contending chiefs blockade the throne,</l>
+                    <l>Contracting regal power to stretch their own ;</l>
+                    <l>When I behold a factious band agree</l>
+                    <l>To call it freedom when themselves are free ;</l>
+                    <l>Each wanton judge new penal statutes draw,</l>
+                    <l>Laws grind the poor, and rich men rule the law ;</l>
+                    <l>The wealth of climes, where savage nations roam,</l>
+                    <l>Pillag'd from slaves to purchase slaves at home,</l>
+                    <pb n="43"/>
+                    <fw type="pagenumber" rend="align(centre)">41</fw>
+                    <lb/>
+                    <l>Fear, pity, justice, indignation start,</l>
+                    <l>Tear off reserve and bear my swelling heart ;</l>
+                    <l>Till, half a patriot, half a coward grown,</l>
+                    <l>I fly from petty tyrants to the throne.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Yes, brother, curse with me that baleful hour,</l>
+                    <l>When first ambition struck at regal power;</l>
+                    <l>And, thus polluted honour in its source,</l>
+                    <l>Gave wealth to sway the mind with double force.</l>
+                    <l>Have we not seen, round Britain's peopled shore,</l>
+                    <l>Her useful sons exchang'd for useless ore ?</l>
+                    <l>Seen all her triumphs but destruction haste</l>
+                    <l>Like flaring tapers bright'ning as they waste ?</l>
+                    <l>Seen opulence, her grandeur to maintain,</l>
+                    <l>Lead stern depopulation in her train</l>
+                    <l>And over fields, where scatter'd hamlets rose,</l>
+                    <l>In barren, solitary pomp repose ?</l>
+                    <l/>
+                    <l>Have we not seen, at pleasure's lordly call,</l>
+                    <l>The smiling long frequented village fall ?</l>
+                    <l>Beheld the duteous son, the sire decay'd,</l>
+                    <l>The modest matron, and the blushing maid ;</l>
+                    <l>Forc'd from their homes, a melancholy train,</l>
+                    <l>To traverse climes beyond the western main ;</l>
+                    <l>Where wild Oswego spreads her swamps around,</l>
+                    <l>And Niagara stuns with thund'ring sound !</l>
+                    <pb n="44"/>
+                    <fw type="pagenumber" rend="align(centre)">42</fw>
+                    <lb/>
+                    <l>E'en now, perhaps, as there some pilgrim strays</l>
+                    <l>Thro' tangled forest's* and thro' dang'rous ways ;</l>
+                    <l>Where beasts with man divided empire claim,</l>
+                    <l>And the brown Indian marks with murd'rous aim ;</l>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>32B342</name>
+                            <desc>Red Indians, American Indians</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>There, while above the giddy tempest flies,</l>
+                    <l>And all around distressful yells arise,</l>
+                    <l>The pensive exile, bending with his wo,</l>
+                    <l>To stop too fearful, and too faint to go,</l>
+                    <lb/>
+                    <fw type="footer" rend="first-indent(3)">&rule;<lb/>* Abundantly altered by the
+                        hand of industry and<lb/>American enterprise, a peaceful asylum from
+                        European<lb/>oppression.</fw>
+                    <pb n="45"/>
+                    <fw type="pagenumber" rend="align(centre)">43</fw>
+                    <lb/>
+                    <l>Cast a long look where England's glories* shine,</l>
+                    <l>And bids his bosom sympathize with mine.</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">Vain, very vain, my weary search, to find<lb/>That bliss
+                        which only centres in the mind !</l>
+                    <l>Why have I stray'd from pleasure and repose,</l>
+                    <l>To seek a good each government bestows ?</l>
+                    <l>In ev'ry government tho' terrors reign,</l>
+                    <l>Tho' tyrant kings or tyrant laws restrain,</l>
+                    <l>How small, of all that human hearts endure,</l>
+                    <l>That part which laws or kings can cause or cure !</l>
+                    <l>Still to ourselves in ev'ry place consign'd,</l>
+                    <l>Our own felicity we make or find :</l>
+                    <l>With secret course, which no loud storms annoy,</l>
+                    <l>Glides the smooth current of domestic joy.</l>
+                    <l>The lifted axe, the agonizing wheel,</l>
+                    <l>Luke's iron crown, and Damien's bed of steel,</l>
+                    <l>To men remote from power but rarely known,</l>
+                    <l>Leave reason, faith, and conscience, all our own.</l>
+                </lg>
+                <fw type="footer" rend="first-indent(3)">&rule;<lb/>* Nature has done much ; but the
+                    pride and avarice<lb/>of those in power, have much marred its glory.</fw>
+            </div>
+            <pb n="46"/>
+            <pb n="47"/>
+            <div type="section">
+                <head type="main" rend="align(centre)">PREJUDICE.<lb/>&orn;</head>
+                <lb/>
+                <head type="sub" rend="align(centre)">PART I.</head>
+                <lb/>
+                <lg>
+                    <l rend="indent(3)">&ldquo; WITH England no land can compare;</l>
+                    <l>For every thing fine, sweet and rare,</l>
+                    <l>So grand, and so rich, and so fair,</l>
+                    <l rend="indent(3)">Old England, O nothing like thee!</l>
+                </lg>
+                <lg>
+                    <l>The Frenchmen, they say, feed on frogs,</l>
+                    <l>The Germans are stupid as dogs,</l>
+                    <l>The Dutchmen are clumsy as hogs;</l>
+                    <l rend="indent(3)">Hail England ! Old England for me !</l>
+                </lg>
+                <lg>
+                    <l>We'll beat them&mdash;the cowardly slaves!</l>
+
+                    <l>For nobly a Briton behaves,</l>
+                    <l>He rules both the land and the waves,</l>
+                    <l rend="indent(3)">O none but bold Britons are free !</l>
+                </lg>
+                <lg>
+                    <l>Thus Edward sang, as round the spacious hall,</l>
+                    <l>He whip'd his top&mdash;A map adorn'd the wall,</l>
+                    <l>On which his father look'd, yet list'ning stood,</l>
+                    <l>Then call'd the boy, but in no angry mood.</l>
+                    <l>He lifts him to the map, and says, &ldquo; Look here ;</l>
+                    <l>Tell me those countries on each hemisphere:&rdquo;</l>
+                    <l>&ldquo; Here's Europe, father, 'twixt this sea and this;</l>
+                    <l>How wonderfully large all Europe is!</l>
+                    <l>Yet Asia's larger, to the right it stands ;</l>
+                    <l>I scarce can cover it with both my hands.</l>
+                    <pb n="48"/>
+                    <fw type="pagenumber" rend="align(centre)">46</fw>
+                    <lb/>
+                    <l>Then great America, take South and North,</l>
+                    <l>What sums of money all this land is worth !</l>
+                    <l>Those heaps of islands in the sea beside,</l>
+                    <l>And Africa ! how vast ! how long! how wide !&ldquo;</l>
+                </lg>
+                <lg>
+                    <l rend="indent(3)">&ldquo;ButEdward,&rdquo; cries the father with a smile,</l>
+                    <l>&ldquo; You have not shown me England, all the while ;</l>
+                    <l>Edward, my boy, look sharp, use well your eyes;</l>
+                    <l>Under your little finger England lies.&rdquo;</l>
+                    <l>Says Ned, &ldquo; Ay, this is it; but, dear, how very<lb rend="indent(8)"
+                        />small;</l>
+                    <l>I was afraid it was not here at all.&rdquo;</l>
+                    <l>Ned listens, and his father thus replies :</l>
+                    <l>&ldquo;God form'd all things, you know&mdash;he's good<lb rend="indent(8)"
+                        />and wise,</l>
+                    <l>And can you think so large a world he'd make,</l>
+                    <l>Sun, moon, and stars, for little England's sake ?</l>
+                    <l>Think of the people by the map or chart,</l>
+                    <l>We do not make their hundred thousandth part.</l>
+                    <l>If we're the only grain, they chaff and bran,</l>
+                    <l>God's work was ill bestow'd in making man ;</l>
+                    <l>Do for your own, what in your power lies,</l>
+                    <l>But other countries hate not, nor despise.&rdquo;</l>
+                    <l>Cries Ned, &ldquo;I'll love all good men that I see,</l>
+                    <l>And where they're born is all alike to me.&rdquo;</l>
+                </lg>
+            </div>
+            <pb n="49"/>
+            <fw type="pagenumber" rend="align(centre)">47</fw>
+            <lb/>
+            <div type="section">
+                <head type="sub" rend="align(centre)">PART II.</head>
+                <lb/>
+                <lg>
+                    <l>&ldquo; FATHER, since on the map you made me look,</l>
+                    <l>Geography I've learn'd&mdash;I've read the book ;</l>
+                    <l>And history&mdash;I've conn'd that very well,</l>
+                    <l>And what I've read in both to you I'll tell;</l>
+                    <l>Yes, now I know, that on this world around,</l>
+                    <l>Men great and good, and precious things are<lb rend="indent(8)"/>found :</l>
+                    <l>In Africa, gold, rich drugs, and fragrant gums :</l>
+                    <l>Best wine from France, coffee from Turkey comes;</l>
+                    <l>Dies, cocoa, sugar, silver, white and pure,</l>
+                    <l>And bark, in which the sick can find a cure,</l>
+                    <l>In vast America, and Caribbees,</l>
+                    <l>Where blacks are slaves, that whites may drink<lb rend="indent(8)"/>and
+                        sneeze;</l>
+                    <l>In Asia, diamonds, spices, finest birds, and fruits,</l>
+                    <l>Lions and Elephants, the noblest brutes ;</l>
+                    <l>The Paradise and Eden, where the Lord</l>
+                    <l>Placed man&mdash;where Moses, God adored,</l>
+                    <l>Where Christ was born, where our Redeemer bled,</l>
+                    <l>Lie all in Asia, Sir, these things I've read ;</l>
+                    <pb n="50"/>
+                    <fw type="pagenumber" rend="align(centre)">48</fw>
+                    <lb/>
+                    <l>And first in Greece sprang up the arts so fine,</l>
+                    <l>Wise Solon too, and Plato call'd divine,</l>
+                    <l>And Socrates, who drank the hemlock bowl,</l>
+                    <l>To save his body, would not kill his soul.</l>
+                    <l>Greece and the Swiss, their patriot heroes have</l>
+                    <l>In Scanderberg, and William Tell, the brave :</l>
+                    <l>If then so fine, so good, each foreign part,</l>
+                    <l>Although I love dear England in my heart,</l>
+                    <l>Although my country's rights I would defend,</l>
+                    <l>My prejudice to others here shall end ;</l>
+                    <l>May other countries look on me with scorn,</l>
+                    <l>When I despise good men, where'er they're born.&rdquo;</l>
+                </lg>
+                <lb/>
+                <lb/>
+                <lb/>
+                <p>FINIS.</p>
+            </div>
+        </body>
+        <back>
+            <pb n="51"/>
+            <pb n="52"/>
+            <div type="cover" rend="beige coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F3</name>
+                        <desc>birds</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F24</name>
+                        <desc>(DEER)	hoofed animals: deer</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-11-20"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-07"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="pink coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <bibl>
+                    <lb/><title level="m">LITTLE RACHEL.</title>
+                    <lb/>&rule; <lb/><publisher>RELIGIOUS TRACT SOCIETY ;</publisher>
+                    <lb/><pubPlace>56, Paternoster&ndash;row; 164, Piccadilly,
+                        <lb/>LONDON.</pubPlace>
+                </bibl>
+                <lb/>
+                <figure rend="align(left)">
+                    <ic:iconClass>
+                        <name>31BB19</name>
+                        <desc>resting - BB - out of doors</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+
+            <pb n="2"/>
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <head type="work" rend="align(centre)">LITTLE RACHEL.</head>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>49B2</name>
+                    <desc>elementary school; class, form</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(justify)">A NEW school&ndash;room was built in<lb/>an English village.
+                When the<lb/>Sunday came round, many little<lb/>boys and girls were seen walking <fw
+                    type="signature" rend="align(right)">M</fw>
+                <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">2</fw>
+                <fw type="header" rend="align(centre)">LITTLE RACHEL.</fw><lb/> up the green lanes,
+                on their way<lb/>to meet the teachers. They were<lb/>nicely clean, with happy faces
+                ;<lb/>but there was one who did not<lb/>look so happy as the rest. It<lb/>was little
+                Rachel. &ldquo;Why do you<lb/>cry, Rachel? you wished to go<lb/>to the
+                Sunday&ndash;school, and you<lb/>may be quite sure that no one<lb/>will hurt
+                you.&rdquo; But the child<lb/>when she entered the room was<lb/>full of fear at
+                finding herself<lb/>among so many strangers; and<lb/>besides, she was the least of
+                all<lb/>the little girls in the new school.<lb/>She said to herself, &ldquo;I wish
+                I<lb/>were at home again, and not in<lb/>this strange place.&rdquo; And when<lb/>one
+                of the elder scholars came<lb/>up to speak to her, with a large <pb n="5"/>
+                <fw type="header" rend="align(centre)">LITTLE RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> Bible in her hand, she
+                cried<lb/>aloud, &ldquo;Oh! I can never learn<lb/>that great book; I can
+                never<lb/>learn it.&rdquo; Her teacher was kind,<lb/>and knew how to comfort
+                the<lb/>simple child. &ldquo;Well, Rachel,&rdquo;<lb/>she said, &ldquo;you shall not
+                at present<lb/>learn from that large book. You<lb/>are only a little child, and I
+                have<lb/>a book for you with short lessons.&rdquo;<lb/>Little Rachel smiled through
+                her<lb/>tears, and longed to see this new<lb/>lesson&ndash;book. When it was
+                shown,<lb/>to her, she saw it had nice pic&ndash;<lb type="inWord"/>tures, and
+                pretty verses of hymns,<lb/>and it was just such a book as<lb/>she liked to call her
+                own.</p>
+            <p rend="first-indent(2) align(justify)">Rachel had never been to any<lb/>school before.
+                She was an or&ndash;<lb type="inWord"/>phan; for both her father and <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">LITTLE RACHEL.</fw><lb/> mother were dead;
+                but then she<lb/>had a kind and pious aunt, who<lb/>took her home, and taught
+                her<lb/>many things, that she might grow<lb/>up to be wise, useful, and pious.</p>
+            <p rend="first-indent(2) align(justify)">Rachel always tried to do her<lb/>best. Though
+                she was not quick<lb/>in learning, she attended to what<lb/>was said to her, and was
+                never<lb/>idle. This was as it should be<lb/>with every child. After some<lb/>time
+                she went to a nice day<lb/>school, and as she still was dili&ndash;<lb type="inWord"
+                />gent she soon improved, so that<lb/>she was put into the first class<lb/>for her
+                neat sewing. Then, too,<lb/>she got on very well with her<lb/>reading, and was no
+                longer afraid<lb/>of a large book because it had<lb/>hard and long words in it.</p>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">LITTLE RACHEL.</fw>
+            <fw type="pagenumber" rend="align(right)">5</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">Some girls who get forward<lb/>grow careless
+                and vain; but<lb/>Rachel did not. She always<lb/>tried to please her teachers.
+                A<lb/>kind look from them was among<lb/>her best rewards. As she had<lb/>a grateful
+                temper she became<lb/>more and more happy. In due<lb/>time she was made a
+                monitor,<lb/>or teacher of others. To instruct<lb/>little children, she thought,
+                was<lb/>much harder work than learning;<lb/>but never did a teacher strive<lb/>more
+                to improve her class than<lb/>she did.</p>
+            <p rend="first-indent(2) align(justify)">Though, of course, she grew<lb/>older, she did
+                not grow much<lb/>taller, so that her friends still<lb/>called her &ldquo;Little
+                Rachel.&rdquo; This<lb/>did not offend her, for among <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">LITTLE RACHEL.</fw><lb/> other good qualities
+                she had a<lb/>humble mind. About this time<lb/>she became pious, and showed<lb/>her
+                love to Christ in many<lb/>ways. At length she became<lb/>the teacher of a Scripture
+                class,<lb/>and sought to lead her children<lb/>to know and love the Lord
+                Jesus<lb/>Christ. This was delightful work,<lb/>though she could not attend to
+                it<lb/>for a very long time, as she was<lb/>taken ill, and had to give up
+                her<lb/>school. Nor did she return to it<lb/>again; for she became worse,
+                and<lb/>then died. But she did not die<lb/>before she showed her piety to&ndash;<lb
+                    type="inWord"/>wards God and a loving desire to<lb/>do good to all among whom
+                she<lb/>lived.</p>
+            <p rend="first-indent(2) align(justify)">And now she has gone to the <pb n="9"/>
+                <fw type="header" rend="align(centre)">LITTLE RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> rest prepared for all who
+                have<lb/>believed on the name of Christ,<lb/>and have served him here
+                on<lb/>earth.</p>
+            <p rend="first-indent(2) align(justify)">Do you, young reader, wish<lb/>to be like
+                Rachel when she was<lb/>on earth, and then go to the<lb/>same bright home in heaven?
+                If<lb/>you do, remember that the same<lb/>grace which changed her heart<lb/>must be
+                sought by you. Like<lb/>her, you must trust in Jesus as<lb/>the Saviour of sinners,
+                who died<lb/>for you on the cross, and who<lb/>ever lives to plead for all who
+                go<lb/>unto God by faith in him. May<lb/>the Holy Spirit give you this<lb/>grace;
+                then, it you live, you may<lb/>hope to do some good on earth,<lb/>and there is work
+                for us all to do <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">LITTLE RACHEL.</fw><lb/> for God and the good
+                of souls.<lb/>Even the youngest may be of some<lb/>service in some way to some
+                    per&ndash;<lb type="inWord"/>son. Then when you have done<lb/>with this world,
+                you shall be called<lb/>to dwell in heaven among the re&ndash;<lb type="inWord"
+                />deemed, for ever and ever. How<lb/>delightful then it will be to meet<lb/>with
+                those whom you helped and<lb/>taught on earth, and who, with<lb/>yourself, have been
+                saved through<lb/>the merits of the Redeemer.</p>
+            <lg>
+                <l>Father, let thy Holy Spirit</l>
+                <l rend="indent(2)">Now reveal a Saviour's love,</l>
+                <l>And prepare me to inherit</l>
+                <l rend="indent(2)">Glory, where he reigns above</l>
+                <lb/>
+                <l>There with saints and angels dwelling,</l>
+                <l rend="indent(2)">May I Christ's great love proclaim,</l>
+                <l>And with them be ever telling</l>
+                <l rend="indent(2)">All the wonders of his name.</l>
+            </lg>
+            <div type="colophon" rend="align(centre)"><p>&rule;<lb/><hi rend="italics">Pardon and Son, Printers,
+                    Paternoster&ndash;row.</hi></p></div>
+            <lb/>
+        </body>
+        <back>
+
+            <pb n="11"/>
+
+            <pb n="12"/>
+            <figure type="borderornament"/>
+            <div type="epigraph">
+                <lg>
+                    <l>LORD Jesus, teach a child to pray</l>
+                    <l rend="indent(2)">Who humbly kneels, to thee;</l>
+                    <l>And every night and every day</l>
+                    <l rend="indent(2)">My Friend and Saviour be.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l>While here I live, give me thy grace;</l>
+                    <l rend="indent(2)">And when I'm called to die,</l>
+                    <l>Oh ! take my soul to see thy face,</l>
+                    <l rend="indent(2)">And sing thy praise on high.</l>
+                </lg>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+            
+            <change>
+                <date when="2012-11-13"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+            
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        <change>                 <date when="2013-03-20"/>                 <label>Available to Library Technology Services for processing</label>                 <name/>                 <note/>             </change>         </revisionDesc>
+        
+        
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    
+    <text type="Instruction">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="grey coloured pictorial wrappers align(centre)">
+                <bibl>
+                <fw>&rule;<lb/>No 7.</fw>
+                    <lb/>
+                <figure type="borderornament"/>
+                <lb/><title level="m">THE<lb/>
+                    BOY'S<lb/>
+                    PICTURE<lb/>
+                    BOOK.</title>
+                    <lb/>&rule;
+                <lb/><pubPlace>CONCORD, N. H.</pubPlace>
+                    <lb/><publisher>RUFUS MERRILL.</publisher>
+                    <lb/><date>1843.</date>
+                </bibl>
+                
+                <pb n="2"/>
+
+            </div>
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <note type="handwritten">G M Wordlings</note>
+                <docTitle>
+                    <titlePart>THE<lb/>BOY'S<lb/>PICTURE<lb/>BOOK.</titlePart>
+                </docTitle>
+                <epigraph>
+                    <lg>
+                        <l>This penny book</l>
+                        <l>Of little things,</l>
+                        <l>Though small and cheap,</l>
+                        <l>Instruction brings</l>
+                    </lg>
+                </epigraph>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C13141</name>
+                        <desc>horse</desc>
+                    </ic:iconClass>
+                </figure>
+                <docImprint>
+                    <pubPlace>CONCORD, N. H.</pubPlace>
+                    <publisher>PUBLISHED BY R. MERRILL.</publisher>
+                    <date>1843.</date>
+                </docImprint>
+            </titlePage>
+            
+            <pb n="4"/>
+            <div type="alphabet" rend="align(centre)">
+                <p>The Alphabet.</p>
+                <p>A B C D E<lb/>
+                    F G H I J<lb/>
+                    K L M N O<lb/>
+                    P Q R S T<lb/>
+                    U V W X<lb/>
+                    Y Z</p>
+                <p>a b c d e f g h<lb/>
+                    i j k l m n o<lb/>
+                    p q r s t u v<lb/>
+                    w x y z</p>
+            </div>
+        </front>
+    <body>
+        <pb n="5"/>
+        <head rend="align(centre)">THE BOY'S<lb/>PICTURE BOOK.</head><lb/>
+        <p rend="align(centre)">&rule;</p>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>47K42</name>
+                <desc>fishing net</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">This is a net to catch fish.<lb/>They catch a great many at<lb/>one time with the
+            net.</p>
+        <p>&drule;</p>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>43C121(+41614)</name>
+                <desc>angling (+ fish-hook)</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">Here is a fish hook.<lb/>Only one fish is caught at a<lb/>time with the hook</p>
+        
+        <pb n="6"/>
+        <fw type="pagenumber" rend="align(centre)">4</fw>
+        <fw rend="align(centre)">&drule;</fw><lb/>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>46C1451</name>
+                <desc>covered wagon, hooded wagon</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">This is a picture of a<lb/>Wagon, formerly used to<lb/>travel to Ohio. They go
+            very<lb/>slow&mdash;only three miles in an<lb/>hour.</p>
+        <p>&drule;</p>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>46C26</name>
+                <desc>steamsailer</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">Here is a Steamboat,<lb/>which goes much faster than<lb/>a wagon. It will go twelve<lb/>miles an hour. It has
+            very<lb/>handsome rooms in it.</p>
+        
+        <pb n="7"/>
+        <fw type="pagenumber" rend="align(centre)">5</fw>
+        <fw rend="align(centre)">&drule;</fw><lb/>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>46C1521</name>
+                <desc>steam locomotive</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">Here is a Railroad<lb/>Car, filled with people go&ndash;<lb type="inWord"/>ing twenty or thirty miles
+            in<lb/>an hour. Some of these cars<lb/>will hold fifty people. You<lb/>can go as far
+            in one day in<lb/>this car, as you can in twelve<lb/>or fifteen days in the
+            wagon.<lb/>The locomotive is forward<lb/>of the passenger car. See<lb/>the smoke
+            issue out of it!<lb/>It looks very beautiful in the<lb/>night to see the
+            locomotive.</p>
+        
+        <pb n="8"/>
+        <fw type="pagenumber" rend="align(centre)">6</fw>
+        <fw rend="align(centre)">&drule;</fw><lb/>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>25G4</name>
+                <desc>(WHEAT)	plants and herbs: wheat</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">This is a sheaf of wheat<lb/>ready to be carried to the<lb/>barn, and thrashed.
+            Flour<lb/>is made of wheat, and cakes<lb/>are made of flour. Children<lb/>love to eat
+            good warm cakes.</p>
+        <p rend="first-indent(2)">Did you ever see wheat<lb/>growing in the fields? It<lb/>then looks very beautiful.
+            It<lb/>sometimes grows 5 feet high.</p>
+        
+        <pb n="9"/>
+        <fw type="pagenumber" rend="align(centre)">7</fw>
+        <fw rend="align(centre)">&drule;</fw><lb/>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>43C722</name>
+                <desc>(playing with) top</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">Here is a picture of a top.<lb/>A top will spin round. Ed&ndash;<lb type="inWord"/>ward, please make my
+            top<lb/>spin round.</p>
+        <p>&drule;</p>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>46C232</name>
+                <desc>rowing-boat, canoe, etc.</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">See the boy in the boat.<lb/>He makes the boat go with<lb/>an oar or paddle, which
+            he<lb/>holds in his hands.</p>
+        
+        <pb n="10"/>
+        <fw type="pagenumber" rend="align(centre)">8</fw>
+        <fw rend="align(centre)">&drule;</fw><lb/>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>49M11</name>
+                <desc>printing press</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">Here is a printing<lb/>press. By this, books and<lb/>newspapers are printed.</p>
+        <p>&drule;</p>
+        <figure rend="align(centre)">
+            <ic:iconClass>
+                <name>46C121</name>
+                <desc>carrying something</desc>
+            </ic:iconClass>
+        </figure>
+        <p rend="first-indent(2)">See this boy carrying a<lb/>pocket book. It is a great<lb/>load for such a small
+            boy.</p>
+     </body>
+        <back>
+            <pb n="11"/>
+            <pb n="12"/>
+            <div type="advertisement">
+                <figure type="borderornament"/>
+                <head rend="align(centre)">JUST PUBLISHED BY<lb/>R. MERRILL,</head><lb/>
+                <p rend="align(right)">CONCORD, N. H.</p>
+                <p rend="first-indent(2)">Webster's First Book,<lb/>
+                    Or Introduction to the Spell&ndash;<lb type="inWord"/>
+                    ing Book. By NOAH WEB&ndash;<lb type="inWord"/>
+                    STER, LL.D. Price <measure type="price">6 cents.</measure></p>
+                <p rend="first-indent(1)">No. 1, or <measure type="price">one Cent</measure> Toys,<lb/>
+                    containing 12 Nos. To be<lb/>
+                    continued to 18 Nos.</p>
+                <p rend="first-indent(1)">No. 2, or <measure type="price">two Cent</measure> Toys,<lb/>
+                    containing 12 Nos. of useful<lb/>
+                    and amusing matter.</p>
+                <p rend="first-indent(1)">No. 4, or <measure type="price">six Cent</measure> Toys,<lb/>
+                    in press, to contain 12 Nos.<lb/>
+                    on natural history, &amp;c.</p>
+                <p rend="align(centre)">ALSO,<lb/>
+                    The Infant School Primer,<lb/>
+                    By Mrs. Teachem.</p>
+                <p>The whole to be embellished<lb/>
+                    with handsome wood cuts.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

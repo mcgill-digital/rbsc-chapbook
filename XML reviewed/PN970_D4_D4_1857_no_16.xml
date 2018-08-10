@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-10-23"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-07-30"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S<lb/>Illustrated Farthing Books.<lb/>&rule;</title><lb/>
+                    <title level="m">THE NEGRO WIFE.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>46A24</name>
+                            <desc>relation between master and servant</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <pubPlace>LONDON</pubPlace>:<publisher> DEAN &amp;SON,<lb/>11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">16</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <div type="section">
+                <head rend="align(centre)">THE NEGRO WIFE.</head>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46A63</name>
+                        <desc>meeting, assembly</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <p rend="align(justify)">DR. LIVINGSTONE, in his travels in<lb/>Africa, came one
+                    night to the house of<lb/>Mozinkwa, a friendly black man, with a<lb/>pleasant
+                    looking wife and fine family of<lb/>children, very &ldquo; black, but
+                    comely.&rdquo; Per&ndash;<lb type="inWord"/>haps their hospitable, kind ways
+                    made<lb/>them look handsome to the lonely mis&ndash;<lb type="inWord"/>sionary,
+                    so far from home and friends. He<lb/>was caught in a heavy rain, but he and <pb n="3"/>
+                    <fw type="header" rend="align(centre)">THE NEGRO WIFE.</fw>
+                    <fw type="pagenumber" rend="align(right)">3</fw><lb/> his companions received a
+                    warm welcome<lb/>and plenty of food from this friendly<lb/>couple, till they
+                    were able to proceed.</p>
+                <p rend="first-indent(2) align(justify)">They had a large garden, cultivated
+                    by<lb/>the wife, with yams, sweet potatoes, and<lb/>other vegetables growing in
+                    it, and all<lb/>surrounded by a fine hedge of the banian&ndash;<lb type="inWord"
+                    />tree. Under some larger trees, in the<lb/>middle of the yard, stood the huts
+                    in<lb/>which they lived, and no doubt the fine&ndash;<lb type="inWord"/>looking
+                    little black children played many<lb/>happy days under their mother's care
+                    in<lb/>the shade.</p>
+                <p rend="first-indent(2) align(justify)">When Dr Livingstone took his leave
+                    of<lb/>this interesting family, the wife asked him<lb/>to bring her some cloth
+                    from the white<lb/>man's country. When he returned, after<lb/>a long journey, he
+                    was surprised to find<lb/>the pleasant home silent and deserted;<lb/>the garden
+                    given up to wild weeds, and<lb/>the huts in ruins, and no sign of life
+                    in<lb/>the spot where he last saw a large family<lb/>of frolicking children.
+                    Poor <hi rend="italic">Mozinkwa's<lb/>wife was dead</hi> and in her grave under
+                    the<lb/>large trees, while the huts, garden, and<lb/>hedge, of which she had
+                    been so proud, <pb n="4"/>
+                    <fw type="pagenumber" rend="align(left)">4</fw>
+                    <fw type="header" rend="align(centre)">THE NEGRO WIFE.</fw><lb/> were fast going
+                    to ruin : for, according to<lb/>the custom of that heathen country, a
+                    man<lb/>can never continue to live where a favour&ndash;<lb type="inWord"/>ite
+                    wife has died. He is so lonely and<lb/>sorrowful when he thinks of the
+                    happy<lb/>times they have had together, that he<lb/>cannot stay where everything
+                    reminds him<lb/>of his loss. If ever he visits the spot<lb/>again, it is to pray
+                    to his dead wife and<lb/>make some offering. So for want of a<lb/>knowledge of
+                    the Friend of Sinners, who<lb/>binds up the wounded heart, they must<lb/>move
+                    from place to place, and can never<lb/>have any settled villages in that part
+                    of<lb/>the country.</p>
+                <p rend="first-indent(2) align(justify)">How different would the scene have<lb/>been
+                    on Dr. Livingstone's return, if poor<lb/>Mozinkwa and his wife had been <hi
+                        rend="italic">Chris&ndash;<lb type="inWord"/>tians</hi>. Then he might have
+                    been happy<lb/>even in his loneliness, for he would have<lb/>prayed to God for
+                    strength to bear his<lb/>loss, and read the Bible, and taught his<lb/>children
+                    to live so as to meet their mother<lb/>in heaven. Instead of flying from
+                    place<lb/>to place to forget their troubles, those poor<lb/>Africans might have
+                    permanently happy <pb n="5"/>
+                    <fw type="header" rend="align(centre)">THE NEGRO WIFE.</fw>
+                    <fw type="pagenumber" rend="align(right)">5</fw><lb/> homes, if they knew the
+                    peace the gospel<lb/>gives.</p>
+                <p rend="first-indent(2) align(justify)">Dr. Livingstone is spending the
+                    best<lb/>part of his life far from home and friends,<lb/>in trying to open a way
+                    for missionary<lb/>labor among those who have never seen<lb/>a white man, or
+                    heard of the name of<lb/>Jesus.</p>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43B15</name>
+                        <desc>enjoying nature ~ animals</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+            </div>
+
+            <pb n="6"/>
+            <div type="section">
+                <head rend="align(centre)">A LEAP FOR LIFE.</head>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25H131</name>
+                        <desc>rocky coast</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <p rend="align(justify)">ON a part of the British coast, where<lb/>cliffs from three
+                    to five hundred feet in<lb/>height overhang the ocean, a few poor<lb/>people,
+                    during a part of the year, gain<lb/>their living by collecting the eggs
+                    and<lb/>feathers of the rock&ndash;birds who make their<lb/>nests in the
+                    crevices of the rocks.</p>
+
+
+                <pb n="7"/>
+                <fw type="header" rend="align(centre)">A LEAP FOR LIFE.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The method these people pursue is this
+                    :<lb/>selecting a cliff, they drive a crowbar into<lb/>the ground a few feet
+                    from the precipice.<lb/>To this they attach a rope; fastening the<lb/>rope to
+                    his body, the man will lower him&ndash;<lb type="inWord"/>self till he reaches
+                    the ledge of rocks<lb/>where he wishes to begin his search.</p>
+                <p rend="first-indent(2) align(justify)">In doing this, the adventurer is
+                    often<lb/>in great peril. In one instance, a man<lb/>who was thus employed, in
+                    gaining a<lb/>narrow ledge of rock which jutted under<lb/>the overhanging cliff,
+                    secured his footing<lb/>and began his work. Discovering a full<lb/>nest on an
+                    almost inaccessible point, he<lb/>swung himself to it; but in his
+                    eagerness<lb/>to grasp the eggs, he accidently unloosed<lb/>the rope attached to
+                    his waist, and in an<lb/>instant it swung out beyond his reach.<lb/>He at once
+                    saw his danger: no one could<lb/>come to his relief, or even hear his
+                    cries.<lb/>He must starve to death where he stood,<lb/>or be dashed to pieces on
+                    the rocks hun&ndash;<lb type="inWord"/>dreds of feet below.</p>
+                <p rend="first-indent(2) align(justify)">Turning round in his terror, he saw
+                    the<lb/>rope as it swung to and fro, but it was<lb/>far beyond his reach in its
+                    long vibrations. <pb n="8"/>
+                    <fw type="pagenumber" rend="align(left)">8</fw>
+                    <fw type="header" rend="align(centre)">A LEAP FOR LIFE.</fw><lb/> He looked at
+                    it in agony when he noticed<lb/>that every moment of the rope was
+                    shorter<lb/>than the preceding, and that it would soon<lb/>hang motionless.</p>
+                <p rend="first-indent(2) align(justify)">He reasoned thus: &ldquo;That rope is
+                        my<lb/><hi rend="italic">only</hi> chance of life. It will soon be
+                        en&ndash;<lb type="inWord"/>tirely beyond my reach. It is nearer
+                    now<lb/>than it will ever be again. I can but die<lb/>if I stay here ; possibly
+                    I may grasp it;&rdquo;<lb/>and with the thought he sprang from the<lb/>ledge as
+                    the rope again swung towards<lb/>him, caught it, and with desperate
+                    effort<lb/>ascended, hand over hand, in safety to<lb/>the top.</p>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C131</name>
+                        <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI>

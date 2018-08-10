@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+<!ENTITY ctlig "ct-ligature">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Annika Robbins</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="RomancesFairyFolk">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="blue coloured wrappers">
+                <bibl rend="align(centre)"><title level="m" type="main">TOM THUMB'S
+                        FOLIO;</title><lb/>OR,<title type="sub">A<lb/><hi rend="italic">Penny
+                            Plaything</hi><lb/>FOR<lb/>LITTLE GIANTS:<lb/>AN ABSTRACT OF THE LIFE
+                        OF<lb/>MR. THUMB,<lb/>AND AN ACCOUNT OF THE<lb/><hi rend="italic">Wonderful
+                            Deeds he
+                        Performed.</hi></title>&rule;<lb/><pubPlace>YORK:<lb/></pubPlace><lb/>Printed
+                    by <publisher>J. Kendrew Colliergate</publisher>.</bibl>
+            </div>
+
+            <pb n="2"/>
+            <div type="frontispiece">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                    <head rend="italic">Tom Thumb's Maxim in Trade and<lb/>Politics.</head>
+                </figure>
+                <lb/>
+                <p rend="first-indent(2)">He who buys this book for a penny,<lb/>and lays it tip
+                    till it is worth two&ndash;<lb type="inWord"/>pence, may get an hundred per
+                    cent.<lb/>that is, one half by the bargain; but<lb/>let him take care that he
+                    gets money<lb/>honestly, for he that cheats another<lb/>cheats himself, and
+                    instead of gaining<lb/>shall lose double.</p>
+                <p rend="first-indent(2)">There is no treasure like honesty,<lb/>and no gain like a
+                    good conscience.</p>
+            </div>
+
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <titlePart type="main">TOM THUMB'S FOLIO;</titlePart>
+                <lb/>
+                <titlePart type="sub">OR, A NEW<lb/>
+                    <hi rend="italic">PENNY PLAY&ndash;THlNG,</hi><lb/> FOR<lb/> LITTLE GIANTS:<lb/>
+                    TO WHICH IS PREFIXED,<lb/> AN ABSTRACT OF THE LIFE OF<lb/>
+                    <hi rend="italic">MR. THUMB,</hi><lb/> AND AN HISTORICAL ACCOUNT OF THE<lb/>
+                    <hi rend="italic">Wonderful Deeds he Performed.</hi></titlePart>
+                <lb/>
+                <docImprint>&rule;<lb/><pubPlace>York</pubPlace>:<lb/>Printed by <publisher>J.
+                        Kendrew, Colliergate</publisher>.</docImprint>
+            </titlePage>
+
+
+            <pb n="4"/>
+            <div type="alphabet" rend="align(centre)">
+                <p><hi rend="italic">Roman Capital and Small Letters.</hi><lb/>&rule;</p>
+                <lb/>
+                <p>A B C D E F G H I J K L<lb/>M N O P Q R S T U<lb/>V W X Y Z</p>
+                <p>a b c d e f g h i j k l m n o p q r<lb/>s t u v w x y z &ae; &oe;
+                    &amp;<lb/>&orn;<lb/></p>
+
+                <p><hi rend="italic">Italic Capital and Small Letters.</hi><lb/>&rule;</p>
+                <p rend="italic">>A B C D E F G H I J K L M<lb/>N O P Q R S T U V W X Y Z</p>
+                <p rend="italic">a b c d e f g h i j k l m n o p q r<lb/>s t u v w x y z &ae; &oe;
+                    &amp;</p>
+            </div>
+        </front>
+
+
+        <pb n="5"/>
+        <body rend="align(justify)">
+            <div type="chapter">
+
+
+                <head type="main" rend="align(centre)">CHAP. I.<lb/>&rule;<lb/></head>
+                <lb/>
+                <head type="sub" rend="align(centrer)"><hi rend="italic">The Life of Tom
+                    Thumb.</hi></head>
+                <lb/>
+
+                <p rend="first-indent(2)">Mr. THOMAS THUMB was the son of<lb/>Mr. Theophilus Thumb,
+                    of Thumb<lb/>Hall, in Northumberland. He was<lb/>born in the very year in which
+                    Sir<lb/>Walter Raleigh lost his life for serv&ndash;<lb type="inWord"/>ing his
+                    country, in which people were<lb/>so frightened that they have not cared<lb/>to
+                    enter into that service since.</p>
+                <p rend="first-indent(2)">At the time of his birth the sun was<lb/>eclipsed; which
+                    'tis supposed, stinted<lb/>his growth, and made him almost in&ndash;<lb
+                        type="inWord"/>visible. His father was greatly dis&ndash;<lb type="inWord"
+                    />concerted at having such a little tiny<lb/>toy of a child, and his mother
+                    too<lb/>forgot her duty, and took but little <pb n="6"/>
+                    <fw type="pagenumber" rend="align(centre)">6</fw><lb/> notice of him, till a
+                    learned gentleman<lb/>looked at him through a great pair of<lb/>spectacles, and
+                    told the parents, that<lb/>he would be a very little man, and a<lb/>very great
+                    man; which is a paradox or<lb/>riddle, we are to resolve
+                    by&ndash;and&ndash;by.</p>
+                <p rend="first-indent(2)">When his father heard this, he took<lb/>him upon his
+                    little finger, and chirped<lb/>to him, as a boy does to a bird: and<lb/>his
+                    mother wrapped him up in a piece<lb/>of cotton, put him into a thimble
+                        in&ndash;<lb type="inWord"/>stead of a cradle, and carried him<lb/>about in
+                    her warm pocket.</p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+            </div>
+
+
+            <pb n="7"/>
+            <fw type="pagenumber" rend="align(centre)">7</fw>
+            <lb/>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAP. II.</head>
+                <lb/>
+                <head type="sub" rend="align(centre)"><hi rend="italic">How Tom became a greater Man
+                        than<lb/> his Mother.</hi></head>
+                <lb/>
+                <p rend="first-indent(2)">BEFORE we attempt to prove this<lb/>we must enquire what
+                    makes a great<lb/>man. Is it a great head? No. Is<lb/>it a long leg? No. Is it a
+                    big body ?<lb/>No. Is it a large leg? No. But<lb/>I'll tell you what it is, it
+                    is a wise<lb/>head and a good heart that consti&ndash;<lb type="inWord"/>tutes a
+                    great man. It is wisdom<lb/>and virtue, and that only, which can<lb/>make us
+                    great and happy. A great<lb/>brute, or a great bear, or a great<lb/>blockhead,
+                    may be made by other<lb/>means; but a great man cannot be<lb/>formed without
+                    wisdom and virtue,<lb/>which are the only two sources of<lb/>honour and esteem,
+                    and will always<lb/>make us beloved and admired.</p>
+
+
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(centre)">8</fw>
+                <lb/>
+                <p rend="first-indent(2)">This was said by the gentleman with<lb/>the great pair of
+                    spectacles, to Tom's<lb/>father, who immediately bought for<lb/>his son all Mr.
+                    KENDREW's little<lb/>penny and halfpenny books, having<lb/>been informed that
+                    they were pub&ndash;<lb type="inWord"/>lished with no other view, but
+                    to<lb/>make people wise and good; and<lb/>Tom read from the beginning to
+                    the<lb/>end, first one volume then another,<lb/>till he had made himself master
+                    of<lb/>the whole.<lb/><lb/><hi rend="align(centre)">&drule;</hi></p>
+            </div>
+
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAP. III.</head>
+                <lb/>
+                <head type="sub" rend="align(centre)"><hi rend="italic">Such is the Father, such is
+                        the Son.</hi></head>
+                <lb/>
+                <p rend="first-indent(2)">AS Tom's father had been at Lon&ndash;<lb type="inWord"
+                    />don, served in the Train&ndash;Bands, and<lb/>performed many feats of valour,
+                    both <pb n="9"/>
+                    <fw type="pagenumber" rend="align(centre)">9</fw><lb/> in White&ndash;chapel and
+                    Bunhill&ndash;fields,<lb/>he would have his son become a war&ndash;<lb
+                        type="inWord"/>rior also. In which, I think, he was<lb/>to blame; for one of
+                    his figure would<lb/> have made a better physician, as his<lb/>diminutive size
+                    might permit him to<lb/>slide down a patient's throat, and see<lb/>what was the
+                    matter within, for want<lb/>of which intelligence such great
+                    mis&ndash;<lb/>takes are often made, that those who<lb/>would get the better of
+                    a disorder,<lb/>frequently die of the doctor. Tom,<lb/>however, was to be a
+                    warrior, and<lb/>therefore his mother made him a<lb/>sword of a small needle, a
+                    helmet of<lb/>a hazel nut&ndash;shell, and a coat of mail<lb/>of a mouse's ear;
+                    of which he was<lb/>so fond, that he always went armed,<lb/>and on that account
+                    the neighbours<lb/>first called him Captain Thumb, then<lb/>Colonel Thumb, and
+                    at last he ob&ndash;<lb type="inWord"/>tained the name of General.</p>
+            </div>
+
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(centre)">10</fw>
+            <lb/>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAP. IV.</head>
+                <lb/>
+                <head type="sub" rend="align(centre)"><hi rend="italic">A sad Disaster.</hi></head>
+                <lb/>
+                <p rend="first-indent(2)">THE great people, as well as the<lb/>little, are subject
+                    to misfortunes, from<lb/>which neither arms nor honours can<lb/>protect them.
+                    Goody Thumb being<lb/>one day in a hurry, and unable to<lb/>dress any thing for
+                    her son's dinner,<lb/>gave him a piece of hog's sweetbread,<lb/>and bid him
+                    carry it to the bake<lb/>house to be dressed. Tom put it on<lb/>his head, and as
+                    he was trudging<lb/>along, a rogue of a raven, who had<lb/>been long about the
+                    village, and was<lb/>half&ndash;tame and half&ndash;wild, mistaking<lb/>both Tom
+                    and his meat for a piece of<lb/>carrion, trussed him up in his claws,<lb/>and
+                    flew with him to the nest, where<lb/>he and his black sweet&ndash;heart
+                    soon<lb/>despatched the meat, but left poor <pb n="11"/>
+                    <fw type="pagenumber" rend="align(centre)">11</fw><lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure><lb/> Tom, laid along by the side of their<lb/>eggs, in a terrible
+                    fright, and almost<lb/>perished with hunger. Tom's wit,<lb/>however, soon
+                    relieved him from his<lb/>distress; for, perceiving that both<lb/>the ravens
+                    were flown to the next tree,<lb/>and were there gossiping with others<lb/>of
+                    their companions, he slily run his<lb/>sword into one of the ravens' eggs,
+                    on<lb/>that side which lay downwards, and <pb n="12"/>
+                    <fw type="pagenumber" rend="align(centre)">12</fw><lb/> clapping his mouth to
+                    the place, he<lb/>sucked it, and made a most delicious<lb/>repast.<lb/><lb/><hi
+                        rend="align(centre)">&drule;</hi></p>
+            </div>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAP. V.</head>
+                <lb/>
+                <head type="sub" rend="align(centre)"><hi rend="italic">How Tom travelled down the
+                        Tree, and<lb/>what happened to him on the Road.</hi></head>
+                <lb/>
+                <p rend="first-indent(2)">AFTER a few days, Tom saw with<lb/>concern, that his stock
+                    of food greatly<lb/>decreased, and that when all the eggs<lb/>were done he
+                    should be in danger <lb/>of starving; and every one knows it<lb/>must be a sad
+                    thing to be starved<lb/>upon the top of such a high tree, he<lb/>therefore
+                    watched every opportunity<lb/>of making his escape; and one day,<lb/>when there
+                    was but one egg left, and<lb/>the ravens were gone out for food, he <pb n="13"/>
+                    <fw type="pagenumber" rend="align(centre)">13</fw><lb/> put the egg in his
+                    pocket opposite<lb/>the sword side, and clambering over<lb/>the nest, let
+                    himself down from<lb/>branch to branch, till the bark of the<lb/>tree became
+                    rough enough for him to<lb/>lay hold of it, and then clung by de&ndash;<lb
+                        type="inWord"/>gress down the body, but in his pro&ndash;<lb type="inWord"
+                    />gress he had like to have been over&ndash;<lb type="inWord"/>set, for the side
+                    where the egg lay<lb/>was abundantly too heavy for the<lb/>other, and almost
+                    weighed him down.<lb/>Tired and fatigued, however, he at<lb/>last came to a
+                    large limb, where there<lb/>was a squirrel's nest, and there he<lb/>crept in for
+                    shelter, and took up his<lb/>lodging for that night.</p>
+                <p rend="first-indent(2)">The young squirrels liked his com&ndash;<lb type="inWord"
+                    />pany very well; but when old Goody<lb/>Scugg came home she seemed very
+                    <lb/>angry, and as Gaffer Scugg entered<lb/>the door told him what had
+                    happened.<lb/>Old Scugg bounced about a good <pb n="14"/>
+                    <fw type="pagenumber" rend="align(centre)">14</fw><lb/> deal; but when he saw
+                    Tom pull the<lb/>egg out of his pocket, and found that<lb/>he did not intend to
+                    feast on their<lb/>food, he became easy, and they all sat<lb/>down and supped
+                    together.</p>
+                <p rend="first-indent(2)">In the morning Tom arose with<lb/>the sun, as every good
+                    boy should<lb/>do, and having kissed the young<lb/>squirrels, he set out on his
+                    journey,<lb/>travelling still on the rough bark till<lb/>almost night: when, as
+                    it rained very<lb/>hard, he crept for shelter into a wren's<lb/>nest. The poor
+                    wren was very much<lb/>alarmed on seeing so formidable a<lb/>fellow enter her
+                    dwelling, which was<lb/>then full of young ones; and as Tom<lb/>had too much
+                    humility to disturb a<lb/>whole family and make them miser&ndash;<lb
+                        type="inWord"/>able, he left the poor distressed mo&ndash;<lb type="inWord"
+                    />ther, and took up his lodging on a<lb/>bough under the nest, where he
+                    was<lb/>well sheltered from the rain.</p>
+
+
+                <pb n="15"/>
+                <fw type="pagenumber" rend="align(centre)">15</fw>
+                <lb/>
+                <p rend="first-indent(2)">Again in the morning he set out<lb/>with the sun, and
+                    travelling hard,<lb/>arrived at the bottom of the tree<lb/>about noon, where he
+                    was attacked<lb/>by an humble bee, with whom he<lb/>fought a most desperate
+                    battle. What<lb/>the drone took him for, it is hard to<lb/>say, but he perched
+                    on a shrub by the<lb/>root of the tree, raised his gristly<lb/>beard, and
+                    attacked our hero full in<lb/>the face. Tom received the blow<lb/>with that
+                    undauntedness which true<lb/>courage can only inspire, and drawing<lb/>his
+                    sword, returned the blow with the<lb/>most intrepid resolution. Those,
+                    and<lb/>those only, who have read Homer's<lb/>battles, or the history of
+                    ancient<lb/>tournaments, can form to themselves a<lb/>just idea of the conflict,
+                    and tell how<lb/>the thunder of their arms re&ndash;echoed<lb/>from the distant
+                    hills. Tom was vic<lb/>torious, he slew the bee, which to <pb n="16"/>
+                    <fw type="pagenumber" rend="align(centre)">16</fw><lb/> him appeared dreadful as
+                    a dragon,<lb/>and was fanning himself with the flap<lb/>of his coat, when
+                    'Squire Bugle, one<lb/>of his father's friends, rode by from<lb/>bunting. Tom
+                    hailed him, but the<lb/>'squire was at too great a distance to<lb/>hear him;
+                    however, one of the<lb/>hounds which Tom knew, making up<lb/>to him, he laid
+                    hold of his ear, sprung<lb/>upon his back, and rode home to his<lb/>disconsolate
+                    father and mother, who<lb/>received him with joy.<lb/><lb/><hi
+                        rend="align(centre)">&drule;</hi></p>
+            </div>
+
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAP. VI.</head>
+                <lb/>
+                <head type="sub" rend="align(centre)"><hi rend="italic">A great Action.</hi></head>
+                <lb/>
+                <p rend="first-indent(2)">IT has been observed, and with<lb/>great truth, that
+                    historians, and the<lb/>biographers, or writers of lives, are <pb n="17"/>
+                    <fw type="pagenumber" rend="align(centre)">17</fw><lb/> generally partial, and
+                    lean to the one<lb/>side or other, as they are influenced<lb/>by party or have
+                    been prejudiced by<lb/>education! but we are above all this!<lb/>while we have
+                    the actions of others,<lb/>under consideration we are to behave<lb/>as citizens
+                    of the world, and pay no<lb/>particular regard to any party, per&ndash;<lb
+                        type="inWord"/>suasion nor country whatsoever. And<lb/>this we intend as an
+                    apology for our<lb/>presuming to relate the following<lb/>exploit of Tom Thumb,
+                    without de&ndash;<lb type="inWord"/>claring whether he was a whig or a<lb/>tory.
+                    It is impossible that both these<lb/>may be good, though it has
+                    been<lb/>maliciously said, that one of them<lb/>put nothing in a box for the
+                    other<lb/>to find it. But leaving all party and<lb/>folly to madmen and fools,
+                    let us<lb/>proceed with our history.</p>
+                <p rend="first-indent(2)">Tom Thumb's reputation being<lb/>firmly established at
+                    home, lie deter&ndash; <pb n="18" type="inWord"/>
+                    <fw type="pagenumber" rend="align(centre)">18</fw><lb/> mined to travel into
+                    foreign parts, to<lb/>see if he could find a nation where<lb/>there were more
+                    fools than in his own.<lb/>He was for a long time doubtful what<lb/>part he
+                    should first visit. He con<lb/>sulted his friends on this occasion,<lb/>who
+                    generally advised him to sail to<lb/>the kingdom of cuckoos. He took<lb/>their
+                    advice in part, but not in the<lb/>whole, for knowing that a ship would<lb/>be a
+                    long time sailing to that very<lb/>distant country, and considering, at<lb/>the
+                    same time, that a philosopher<lb/>might travel without baggage, and<lb/>live
+                    upon his brains, he placed him<lb/>self in a bird's nest, at a time when<lb/>the
+                    cuckoos were hoarse, and about<lb/>to leave the country, and laying hold<lb/>of
+                    a strong one, which came to suck<lb/>the eggs, he mounted on its back,
+                    and<lb/>rode through the air and over the<lb/>seas at a surprising rate.</p>
+
+
+                <pb n="19"/>
+                <fw type="pagenumber" rend="align(centre)">19</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="first-indent(2)">We must observe that Tom, like a<lb/>dutiful child,
+                    consulted both his father<lb/>and mother about his method of tra&ndash;<lb
+                        type="inWord"/>velling, who objected to it, and said,<lb/>that nothing could
+                    be learned by fly&ndash;<lb type="inWord"/>ing through a country. As
+                    much,<lb/>quoth Tom, as by gallopping through<lb/>a country, which is the
+                    modern<lb/>mode of travelling: and therefore<lb/>after kissing them and
+                    receiving their<lb/>blessing, he set off.</p>
+
+
+                <pb n="20"/>
+                <fw type="pagenumber" rend="align(centre)">20</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="first-indent(2)">He had comforted and fed the cuc<lb/>koo, as well as he
+                    could, with a pow&ndash;<lb type="inWord"/>der which his mother put into
+                    his<lb/>pocket to serve him as food ; but the<lb/>poor bird grew so weak, at the
+                    time<lb/>they arrived in his own country, that<lb/>he fell down; and our hero,
+                    by en&ndash;<lb type="inWord"/>deavouring to save himself, plunged<lb/>into a
+                    large mess of milk porridge,<lb/>which was intended for the Giant <pb n="21"/>
+                    <fw type="pagenumber" rend="align(centre)">21</fw><lb/> Grumbo, who was then
+                    king of the<lb/>country. The Giant muttered a few<lb/>words with a growl, which
+                    made the<lb/>vallies ring, it was so loud and dread&ndash;<lb type="inWord"
+                    />ful; and then taking Mr. Thumb up<lb/>in his spoon, threw him out of
+                    the<lb/>bowl, but not till Tom had first taken<lb/>a sup or two of the porridge.
+                    He lay<lb/>for some time by the Giant's leg,<lb/>where he observed all his
+                    actions;<lb/>and finding that he pulled bread out<lb/>of his pocket to crumb his
+                    mess,<lb/>Tom slily crept up his coat as he<lb/>was sitting down, and got into
+                    his<lb/>pocket, where he feasted himself for<lb/>several days, taking care,
+                    whenever<lb/>the Giant put his hand in his pocket,<lb/>to hide behind his
+                    snuff&ndash;box; and<lb/>whenever the Giant slept, Tom got<lb/>liquor out of his
+                    can. In the course<lb/>of his residence there, Tom grew so<lb/>hardy that he
+                    would frequently peep <pb n="22"/>
+                    <fw type="pagenumber" rend="align(centre)">22</fw><lb/> out of the Giant's
+                    pocket when he<lb/>found him about a bad action, and<lb/>after giving him a goad
+                    with his<lb/>sword, would boldly call out, sirrah!<lb/>what are you at there,
+                    sirrah? and<lb/>then pop in his head, and hide be&ndash;<lb type="inWord"/>hind
+                    the snuff&ndash;box as usual. The<lb/>Giant not only missed his bread,
+                    but<lb/>found something instead thereof,<lb/>which he did not like; for Tom
+                    who<lb/>had conveyed all the food among the<lb/>folds of the linings, where he
+                    had<lb/>room to range, made use of the pocket<lb/>for another purpose, which was
+                    not al&ndash;<lb type="inWord"/>together fair, but he could not help it.</p>
+                <p rend="first-indent(2)">Tom continued in this situation till<lb/>he had discovered
+                    the Giant's dispo&ndash;<lb type="inWord"/>sition, which he found to be very
+                    bad;<lb/>for he had a heavy head and a hard<lb/>heart, he was proud, selfish,
+                    surly, and<lb/>so tyrannical and cruel, that his sub&ndash;<lb type="inWord"
+                    />jects were afraid to come near him. <pb n="23"/>
+                    <fw type="pagenumber" rend="align(centre)">23</fw><lb/> Tom knew there would be
+                    no travel&ndash;<lb type="inWord"/>ling the country with safety, till he<lb/>had
+                    broken the spirit of this turbu&ndash;<lb type="inWord"/>lent Giant, and reduced
+                    him to bet&ndash;<lb type="inWord"/>ter manners; he therefore would<lb/>never
+                    suffer him to rest, but when&ndash;<lb type="inWord"/>ever he began to sleep
+                    pricked him<lb/>with his little sword, so that after some<lb/>time, he was so
+                    weak for want of rest,<lb/>that he could not walk.</p>
+                <p rend="first-indent(2)">He kept him in this state till he had<lb/>learned the
+                    language of the country;<lb/>and then, as he lay in bed, Tom got<lb/>upon his
+                    breast, and thus addressed<lb/>him, &ldquo; Are you inclined, oh Grumbo,<lb/>to
+                    live or die; if you would live, you<lb/>must take my advice, and behave
+                    with<lb/>humanity and kindness to all your<lb/>subjects and to me; but if you
+                    would<lb/>rather die than be good, do so, for<lb/>nobody will be sorry for
+                    you.&rdquo; The<lb/>Giant, who had never seen Tom before <pb n="24"/>
+                    <fw type="pagenumber" rend="align(centre)">24</fw><lb/> but in his mess of
+                    porridge, trembled<lb/>with amazement; and thinking that<lb/>he fell from the
+                    moon to punish his<lb/>iniquities, begged that he might live<lb/>to make amends
+                    for his bad behaviour.<lb/>Then sleep, says Tom, and I will see<lb/>you again.
+                    So from this time Tom<lb/>left of goading him with his little<lb/>sword, and he
+                    soon recovered. After<lb/>this he was fond of Mr. Thumb, and<lb/>would do
+                    nothing without him; so<lb/>that Tom had, in a manner, the whole<lb/>direction
+                    of the kingdom, and made<lb/>the people happy, by a fair and
+                    equal<lb/>distribution of justice, and for that<lb/>purpose he rode in pomp in a
+                    coach<lb/>drawn by ten squirrels, all round the<lb/>kingdom, and wrote a
+                    particular ac<lb/>count of the country and the inhabi&ndash;<lb type="inWord"
+                    />tants, their laws, customs, and man&ndash;<lb type="inWord"/>ners; which we
+                    are told, will soon be<lb/>revised and published. To avoid <pb n="25"/>
+                    <fw type="pagenumber" rend="align(centre)">25</fw><lb/> putting the inhabitants
+                    to any expence<lb/>on his journey, he carried his provi&ndash;<lb type="inWord"
+                    />sions with him in a coach, as travel<lb/>lers do in Spain, and ordered
+                    his<lb/>squirrels to draw him every night up<lb/>a tree, where they all lodged
+                    safely,<lb/>and without either trouble or expence.</p>
+                <p rend="first-indent(2)">In this journey, Tom sat as judge<lb/>in most places he
+                    came to, and com<lb/>manded the criminals, and those who<lb/>had quarrelled, to
+                    come before him,<lb/>that he might try the one and decide<lb/>the differences of
+                    the other, without<lb/>favour or affection. Among the causes<lb/>I remember a
+                    rich man was brought<lb/>before him and accused of not giving<lb/>any relief to
+                    the poor in the late hard<lb/>season. Up on which, Tom ordered<lb/>him to eat
+                    out of the hutch, among<lb/>his own hogs, till his head and heart<lb/>were
+                    humanized, and he had learned<lb/>to feel the misfortunes of others.</p>
+
+
+                <pb n="26"/>
+                <fw type="pagenumber" rend="align(centre)">26</fw>
+                <lb/>
+                <p rend="first-indent(2)">On his return to court, he was<lb/>admired and applauded
+                    both by king<lb/>and people, for they had all heard of<lb/>his wise and good
+                    behaviour in the<lb/>country; and Grumbo made him a<lb/>present of a shamsham of
+                    gold, and<lb/> gave him his daughter in marriage;<lb/>who though she was a
+                    giantess, loved<lb/>little Tom, and always carried him<lb/>about in her bosom;
+                    nor is it a won<lb/>der, for we find the Patagonian wo&ndash;<lb type="inWord"
+                    />men were fond of our sailors, though<lb/>they were not half so big as their
+                    own<lb/>countrymen.</p>
+                <p rend="first-indent(2)">Tom lived happily with his gigantic<lb/>wife for many
+                    years, and then died, <lb/>greatly lamented both by king and<lb/>people, who
+                    erected a splendid monu&ndash;<lb type="inWord"/>ment to his
+                        memory.<lb/><lb/><hi rend="align(centre)">&drule;</hi></p>
+
+
+                <pb n="27"/>
+                <fw type="pagenumber" rend="align(centre)">27</fw>
+                <lb/>
+                <p rend="first-indent(2)">In compiling the history of Tom<lb/>Thumb, we forgot to
+                    mention one<lb/>circumstance, which gave the Giant<lb/>king and all his court a
+                    great inclina&ndash;<lb type="inWord"/>tion to become acquainted with
+                    letters<lb/>and modern learning.</p>
+                <p rend="first-indent(2)">There was at this time in the cuc&ndash;<lb type="inWord"
+                    />koo court, a natural philosopher, who<lb/>never knew the use of letters, yet
+                    was<lb/>wise and ingenious; him Mr. Thumb<lb/>taught to read and write, in order
+                    that<lb/>he might correspond with him when<lb/>he travelled; and, on a certain
+                    time,<lb/>when he had occasion to visit the ex&ndash;<lb type="inWord"/>treme
+                    parts of his father's kingdoms,<lb/>with his wife the princess, who was<lb/>then
+                    big with child, he took some<lb/>pigeons with him, which had been<lb/>bred by
+                    this philosopher, in order to<lb/>convey the most speedy intelligence<lb/>to his
+                    father's court of what might <lb/>happen to them on the journey. Now <pb n="28"/>
+                    <fw type="pagenumber" rend="align(centre)">28</fw><lb/> it came to pass, that
+                    when they were<lb/>ninety&ndash;five thousand miles from home,<lb/>his princess
+                    was brought to bed of two<lb/>bouncing boys, nine hundred times<lb/>as big as
+                    himself; upon which he de&ndash;<lb type="inWord"/>spatched a pigeon with a note
+                    tied<lb/>round her leg, directed to his friend<lb/>the philosopher, to inform
+                    his father<lb/>of that important affair. Domine<lb/>Doodle, for that was the
+                    philosopher's<lb/>name, carried it immediately to the<lb/>king, and told him
+                    that his daughter<lb/>was brought to bed of Gog and Ma&ndash;<lb type="inWord"
+                    />gog, two great princes. Where are<lb/>they? said the Giant, greatly
+                    rejoiced<lb/>at the event. Ninety&ndash;five thousand<lb/>miles off, answered
+                    the philosopher.</p>
+                <p rend="first-indent(2)">And how came you by the news?<lb/>said his majesty. From
+                    that great<lb/>prince Tom Thumb himself, replied<lb/>the other, and threw the
+                    letter on the<lb/>table.</p>
+
+
+                <pb n="29"/>
+                <fw type="pagenumber" rend="align(centre)">29</fw>
+                <lb/>
+                <p rend="first-indent(2)">The king was greatly astonished,<lb/>and taking up the
+                    letter, surveyed it,<lb/>but could not understand a syllable,<lb/>nor did he
+                    believe a word that was<lb/>said to him; but thinking it an im&ndash;<lb
+                        type="inWord"/>position, he gave such an angry roar,<lb/>that he shook all
+                    the glass out of the<lb/>windows. However, he despatched<lb/>nineteen fleet
+                    horsemen, ten chariots,<lb/>twenty trumpeters, and a kettle<lb/>drummer to
+                    enquire into the affair;<lb/>and finding it true, and seeing the<lb/>princess
+                    enter the palace soon after<lb/>with Gog in one arm and Magog in<lb/>the other,
+                    and Tom Thumb dancing<lb/>a jig before them, he was both de&ndash;<lb
+                        type="inWord"/>lighted and surprised; and taking<lb/>Mr. Thumb on his little
+                    finder, he <lb/>asked him how it was possible to talk<lb/>to his friends, and
+                    make himself un&ndash;<lb type="inWord"/>derstood, at the distance of
+                        ninety&ndash;<lb type="inWord"/>five thousand miles. Tom let him <pb n="30"/>
+                    <fw type="pagenumber" rend="align(centre)">30</fw><lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure><lb/>into the whole affair, which gave his<lb/>majesty such an high
+                    opinion of let&ndash;<lb type="inWord"/>ters and learning, that he desired
+                    Mr.<lb/>Thumb would draw up some lessons<lb/>for his instruction.</p>
+                <p rend="align(centre)">THE END.</p>
+            </div>
+
+
+            <pb n="31"/>
+            <div type="section"/>
+            <fw type="pagenumber" rend="align(centre)">31</fw>
+            <lb/>
+            <div type="section">
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>On a pretty bay nag</l>
+                <l>Here conies Tommy Tag,</l>
+                <l>Who ne'er knew deceit,</l>
+                <l>Nor would lie nor would cheat;</l>
+                <l>But was honest and good,</l>
+                <l>As alt of you should; [did advise,</l>
+                <l>And listen'd and learn'd when his friend</l>
+                <l>And so became wealthy, and happy,<lb rend="indent(4)"/>and wise.</l>
+            </lg>
+            </div>
+        </body>
+        <back>
+
+
+            <pb n="32"/>
+            <div type="advertisement">
+                <head rend="align(centre)">PENNY BOOKS<lb/>
+                    <hi rend="italic">PRINTED AND SOLD</hi><lb/> BY<lb/> J. KENDREW,
+                    COLLIERGATE<lb/>YORK.</head>
+                <list>
+                    <item>Mrs. Lovechild's Golden Present &ndash;</item>
+                    <item>Silver Penny &ndash; &ndash; &ndash; &ndash; </item>
+                    <item>Death and Burial of Cock Robin &ndash;</item>
+                    <item>The Cries of York</item>
+                    <item>Surprising Adventures of Puss in Boots</item>
+                    <item>Sister's Gift; or the Bad Boy Reformed</item>
+                    <item>Tom Thumb's Folio &ndash; &ndash; &ndash;</item>
+                    <item>The History of Giles Gingerbread &ndash; </item>
+                    <item>Entertainments at the Royal Circus &ndash;</item>
+                    <item>The House that Jack Built &ndash; &ndash;</item>
+                    <item>The World turned Upside Down &ndash;</item>
+                    <item>The Cries of London &ndash; &ndash; &ndash; &ndash;</item>
+                    <item>Adventures of Old Mother Hubbard and<lb rend="indent(2)"/>her Dog, In
+                        Three Parts &ndash; &ndash;</item>
+                    <item>Cinderilla; or the Little Glass Slipper</item>
+                    <item>A New&ndash;Year's Gift &ndash; &ndash; &ndash;</item>
+                    <item>&mdash; &mdash; &mdash;Riddles &ndash; &ndash; &ndash;</item>
+                    <item>The Foundling &ndash; &ndash; &ndash; &ndash;</item>
+                    <item>Life and Adventures of Robinson Crusoe</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>

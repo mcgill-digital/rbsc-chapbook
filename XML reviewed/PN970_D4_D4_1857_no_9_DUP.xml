@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013-01-07"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-01-15"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S<lb/> Illustrated Farthing Books.<lb/> &rule;</title><lb/>
+                    <title level="m">THE RED APPLE.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>46C121</name>
+                            <desc>carrying something</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <pubPlace>LONDON</pubPlace>:<publisher>DEAN &amp; SON,<lb/>11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">9</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+        <body>
+            <pb n="2"/>
+            <head rend="align(centre)">THE RED APPLE.</head>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42B7422</name>
+                    <desc>mother and daughter(s) (family group)</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(justify)">LITTLE DELIA was one day sent by her<lb/>mother to do some
+                errand in the yard. A<lb/>wood&ndash;sawyer was at work there, and a<lb/>pile of
+                wood was thrown up directly before<lb/>the door. Little Delia climbed
+                carefully<lb/>over the wood, and did her errand. When<lb/>she was on her way back,
+                the wood&ndash;<lb type="inWord"/>
+                <pb n="3"/>
+                <fw type="header" rend="align(centre)">THE RED APPLE.</fw><fw type="pagenumber"
+                    rend="align(right)">3</fw> sawyer took her up in his arms, and set<lb/>her down
+                safely in the door&ndash;way, smiling<lb/>as he did so, and saying to her in a
+                kind<lb/>tone, &ldquo; There, my little girl ; I was afraid<lb/>you might
+                fall.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">Delia thanked him very pleasantly, and<lb/>went up
+                stairs to tell her mother. &ldquo; Now,<lb/>mother, I like the woodman very
+                much,<lb/>for he was so good to me,&rdquo; she said. &ldquo; He<lb/>lifted me kindly
+                over the wood, so that I<lb/>shouldn&rsquo;t get hurt ; I thanked him plea&ndash;<lb
+                    type="inWord"/>santly ; may I not give him that very<lb/>large red apple you
+                gave me this morning ?<lb/>Wouldn&rsquo;t that be nice ?&rdquo; said Delia.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Yes, that would do very well,&rdquo;
+                her<lb/>mother answered.</p>
+            <p>Delia ran down and gave the apple,<lb/>quite delighted.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Thank you ; you&rsquo;re a good
+                dear,&rdquo;<lb/>said the wood&ndash;sawyer, as he received it;<lb/>may I give it to
+                my poor little Johnny?&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Johnny, and who is Johnny ?&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; My poor little boy, who is all burnt<lb/>and
+                crippled by the fire.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; How came he so ?&rdquo; asked Delia.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Why, when he was a baby,&rdquo; said the <pb
+                    n="4"/>
+                <fw type="pagenumber" rend="align(left)">4</fw><fw type="header"
+                    rend="align(centre)">THE RED APPLE.</fw> wood&ndash;sawyer, &ldquo; the poor
+                thing was tied<lb/>into a chair and left alone for a minute ;<lb/>he was a bright
+                and strong baby, and I<lb/>suppose he stretched and pulled for some&ndash;<lb
+                    type="inWord"/>thing, and tipped himself over against the<lb/>hot stove, and his
+                clothes took fire, and he<lb/>was sadly burned indeed. But he&rsquo;s a<lb/>good
+                little thing, and so loving ; shall I<lb/>give him the apple ?&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Yes, indeed,&rdquo; said Delia ; and
+                she<lb/>ran quickly back into the house, and with<lb/>her mother&rsquo;s permission,
+                brought out a<lb/>brown wooden horse. &ldquo; There, give that<lb/>to Johnny,
+                too,&rdquo; said she, &ldquo; for I&rsquo;m sorry<lb/>that he&rsquo;s so
+                burnt.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">When the wood&ndash;sawyer returned home<lb/>at
+                night, little Johnny sat watching for<lb/>him at the window ; and when he
+                gave<lb/>him the horse and apple, Johnny thought<lb/>he had never seen so fine a
+                plaything as<lb/>the horse, nor so large and red an apple<lb/>before, He kissed his
+                father, and thanked<lb/>him heartily ; and then he kissed the<lb/>horse, and the
+                apple too.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; What are you going to do with
+                your<lb/>presents?&rdquo; said his father.</p>
+
+            <pb n="5"/>
+            <fw type="header" rend="align(centre)">THE RED APPLE.</fw>
+            <fw type="pagenumber" rend="align(right)">5</fw>
+            <p rend="first-indent(3) align(justify)">Johnny thought for a moment. &ldquo; I<lb/>know what
+                I shall do with the apple,&rdquo; he<lb/>said. &ldquo; Don&rsquo;t you know that big
+                boy that<lb/>looks in here and makes me cry some&ndash;<lb type="inWord"/>times,
+                looking so bad, shriveling up one <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>42B7411</name>
+                        <desc>father and son(s) (family group)</desc>
+                    </ic:iconClass>
+                </figure> side of his face, and drawing his head<lb/>down to his shoulder, as if
+                trying to make<lb/>fun of me because I am so burnt, and my<lb/>head is all drawn to
+                one side by the fire<lb/>&mdash;don&rsquo;t you know that boy ?&rdquo;</p>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">THE RED APPLE.</fw>
+            <p rend="first-indent(3) align(justify)">&ldquo; Jim Norton, do you mean ?&rdquo;
+                asked<lb/>the father ; why, you don&rsquo;t like him so<lb/>much, do you
+                ?&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Not so much ; but I want him to<lb/>like me.
+                I want to show him that I<lb/>don&rsquo;t hate him because he tries to make<lb/>fun
+                of what I can&rsquo;t help, and what I am<lb/>sometimes so sorry for, though I know
+                I<lb/>ought not to be, for God did it. I&rsquo;m<lb/>going to give Jim this
+                beautiful apple, to<lb/>show him that it&rsquo;s only my face and
+                leg<lb/>that&rsquo;s burnt.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">The next day little Johnny watched at<lb/>the window,
+                and when he saw the bad<lb/>boy, he beckoned to him. Jim did not<lb/>know what to
+                make of it, and thought<lb/>Johnny meant to play him a trick in<lb/>return for all
+                his unkindness ; so he did<lb/>not seem to notice Johnny&rsquo;s gesture.
+                But<lb/>Johnny raised up the tempting apple, and<lb/>again beckoned to him to come
+                to his<lb/>window.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Here, Jim,&rdquo; said Johnny, &ldquo;
+                here&rsquo;s a<lb/>nice apple. I don&rsquo;t hate you. Won&rsquo;t you<lb/>love me
+                now, Jim ?&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">The bad boy reddened with shame and<lb/>guilt. He
+                could not take the apple.</p>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">THE RED APPLE.</fw>
+            <fw type="pagenumber" rend="align(right)">7</fw>
+            <p rend="first-indent(3) align(justify)">&ldquo; Yes, I want you to take it,&rdquo;
+                said<lb/>Johnny ; &ldquo; then you won&rsquo;t hate me,<lb/>perhaps.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">The apple was tempting, and Jim took<lb/>it ; but as
+                he went away looking at it, he<lb/>could not help feeling ashamed of him&ndash;<lb
+                    type="inWord"/>self.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; What a good boy that Johnny is,<lb/>when
+                I&rsquo;ve acted so to him,&rdquo; he thought,<lb/>&ldquo; I&rsquo;m sorry I took
+                his apple, for I don't<lb/>suppose he gets half as many as I do. &rdquo;</p>
+            <p rend="first-indent(3) align(justify)">He could not eat the apple, so he took<lb/>it home
+                and divided it among his brothers<lb/>and sisters. This was a new thing for<lb/>him,
+                for instead of giving to them, he had<lb/>always tried to get from them.</p>
+            <p rend="first-indent(3) align(justify)">Jim could not forget the apple.
+                Johnny&rsquo;s<lb/>goodness was such a strange thing to him,<lb/>that he could not
+                keep it out of his mind,<lb/>and the more he thought of it, the more<lb/>it seemed
+                to soften him. He made no<lb/>more bad faces at Johnny, and soon began<lb/>to smile
+                as he passed his window ; and<lb/>Johnny was very glad to see the change<lb/>in him,
+                and always smiled pleasantly in<lb/>return.</p>
+            <p rend="first-indent(3) align(justify)">Jim Norton thought, &ldquo; I wish I had <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">8</fw><fw type="header"
+                    rend="align(centre)">THE RED APPLE.</fw> something to give Johnny. I ought to
+                give<lb/>to him, rather than he to me.&rdquo; Then he<lb/>thought, &ldquo; I have
+                sometimes earned a few<lb/>pence by selling shavings ; why can't I<lb/>earn some
+                money for Johnny ?&rdquo; He set<lb/>about it, and sold two baskets of
+                shavings.<lb/>With the pence so gained, he bought some<lb/>sugar plums. He gave them
+                to Johnny,<lb/>and was never so happy in his life before.<lb/>He was now, by
+                degrees, growing generous<lb/>and kind to everybody, but particularly to<lb/>Johnny,
+                for he felt something like gratitude<lb/>towards him, and he was learning to
+                pity<lb/>him and love him, He took up a root of<lb/>pretty sweet&ndash;briar and
+                planted it in a little<lb/>pot and set it in Johnny&rsquo;s window ; and<lb/>though
+                it does not bloom very often, it is<lb/>always fresh and sweet.</p>
+            <p rend="first-indent(3) align(justify)">Have you not noticed, little reader, how,<lb/>in this
+                story, one little good act brought<lb/>on another and another, till there
+                was<lb/>quite a chain of kind deeds ? There are<lb/>little good acts for you to do
+                all the time.<lb/>Be sure you do them ; and who knows<lb/>what may come of it. A
+                little seed<lb/>makes a great tree when God smiles<lb/>on it.</p>
+        </body>
+        <back/>
+    </text>
+</TEI>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-05"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="NurseryRhymes">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover">
+                <bibl>
+                    <title level="m">THE<lb/>LIFE OF<lb/>JACK SPRAT,<lb/><hi rend="italic">HIS
+                            WIFE,</hi><lb/>AND HIS CAT.<lb/>&rule;</title>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>34B12</name>
+                            <desc>cat</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <!-- coded the rhyme below as <p> to allow it within "cover"...is there a better way? -->
+                    <p>This one ear'd Cat,<lb/>Belongs to Jack Sprat.<lb/>&rule;<lb/></p>
+                    <publisher>YORK :<lb/>Printed and Sold by J. Kendrew, Colliergate.</publisher>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <div type="section">
+                <head rend="align(centre)">&rule;<lb/>JACK SPRAT.<lb/>&rule;</head>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34B12</name>
+                        <desc>cat</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg rend="align(left)">
+                    <l>JACK SPRAT could eat no fat,</l>
+                    <l rend="indent(2)">His wife could eat no lean,</l>
+                    <l>And so between them both,</l>
+                    <l rend="indent(2)">They lick'd the platter clean ;</l>
+                    <l>Jack eat all the lean,</l>
+                    <l rend="indent(2)">Joan eat all the fat,</l>
+                    <l>The bone they pick'd it clean,</l>
+                    <l rend="indent(2)">Then gave it to the cat.</l>
+
+                    <pb n="3"/>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <fw type="pagenumber" rend="align(right)">3</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>31D14</name>
+                            <desc>adult man</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>When Jack Sprat was young,</l>
+                    <l rend="indent(2)">He dressed very smart,</l>
+                    <l>He courted Joan Cole,</l>
+                    <l rend="indent(2)">And he gained her heart ;</l>
+                    <l>In his fine leather doublet,</l>
+                    <l rend="indent(2)">And old greasy hat,</l>
+                    <l>O what a smart fellow</l>
+                    <l rend="indent(2)">Was little Jack Sprat.</l>
+
+                    <pb n="4"/>
+                    <fw type="pagenumber" rend="align(right)">4</fw>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>31AA551</name>
+                            <desc>dressing oneself, getting dressed - AA - female human figure</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Joan Cole had a hole.</l>
+                    <l rend="indent(2)">In her petticoat,</l>
+                    <l>Jack Sprat, to get a patch</l>
+                    <l rend="indent(2)">Gave her a groat ;</l>
+                    <l>The groat bought a patch,</l>
+                    <l rend="indent(2)">Which stopp'd Joan's hole,</l>
+                    <l>I thank you, Jack Sprat,</l>
+                    <l rend="indent(2)">Says little Joan Cole.</l>
+
+                    <pb n="5"/>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <fw type="pagenumber" rend="align(right)">5</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>42D261</name>
+                            <desc>departure (for honeymoon)</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack Sprat was the bridegroom,</l>
+                    <l rend="indent(2)">Joan Cole was the bride,</l>
+                    <l>Jack said, from the church</l>
+                    <l rend="indent(2)">His Joan home should ride ;</l>
+                    <l>But no coach could take her,</l>
+                    <l rend="indent(2)">The lane was so narrow,</l>
+                    <l>Said Jack, then I'll take her</l>
+                    <l rend="indent(2)">Home in a wheel&ndash;barrow.</l>
+
+                    <pb n="6"/>
+                    <fw type="pagenumber" rend="align(right)">6</fw>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>46C12(+9)</name>
+                            <desc>human strength ~ traffic and transport on land (+ accident, collision, crash ~ traffic and transport)</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack Sprat was wheeling</l>
+                    <l rend="indent(2)">His wife by a ditch,</l>
+                    <l>The barrow turn'd over,</l>
+                    <l rend="indent(2)">And in she did pitch ;</l>
+                    <l>Says Jack, she'll be drown'd,</l>
+                    <l rend="indent(2)">But Joan did reply,</l>
+                    <l>I don't think I shall,</l>
+                    <l rend="indent(2)">For the ditch is quite dry.</l>
+
+                    <pb n="7"/>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <fw type="pagenumber" rend="align(right)">7</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>34A1</name>
+                            <desc>friendship between man and animal; caressing, petting</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack brought home his Joan,</l>
+                    <l rend="indent(2)">And she sat on a chair,</l>
+                    <l>When in came his cat,</l>
+                    <l rend="indent(2)">That had got but one ear,</l>
+                    <l>Says Joan, I'm come home puss,</l>
+                    <l rend="indent(2)">Pray how do you do,</l>
+                    <l>The cat wagg'd her tail,</l>
+                    <l rend="indent(2)">And said nothing but mew.</l>
+
+                    <pb n="8"/>
+                    <fw type="pagenumber" rend="align(right)">8</fw>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>43C1113</name>
+                            <desc>bird hunting</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack Sprat took his gun,</l>
+                    <l rend="indent(2)">And went to the brook,</l>
+                    <l>He shot at the drake,</l>
+                    <l rend="indent(2)">But he kill'd a duck,</l>
+                    <l>He brought it to Joan,</l>
+                    <l rend="indent(2)">Who a fire did make,</l>
+                    <l>To roast the fat duck,</l>
+                    <l rend="indent(2)">While Jack went for the drake.</l>
+
+                    <pb n="9"/>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <fw type="pagenumber" rend="align(right)">9</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25F36</name>
+                            <desc>(DUCK)	water-birds: duck</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>The drake was a swimming,</l>
+                    <l rend="indent(2)">With his curley tail,</l>
+                    <l>Jack Sprat came to shoot him,</l>
+                    <l rend="indent(2)">But happen'd to fail ;</l>
+                    <l>He let off his gun,</l>
+                    <l rend="indent(2)">But missing his mark,</l>
+                    <l>The drake flew away,</l>
+                    <l rend="indent(2)">Crying, quack, quack quack.</l>
+
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(right)">10</fw>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>47I212</name>
+                            <desc>pig</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack Sprat, to live pretty,</l>
+                    <l rend="indent(2)">Now bought him a pig,</l>
+                    <l>It was not very little,</l>
+                    <l rend="indent(2)">It was not very big,</l>
+                    <l>It was not very lean,</l>
+                    <l rend="indent(2)">It was not very fat,</l>
+                    <l>It will serve for a grunter,</l>
+                    <l rend="indent(2)">For little Jack Sprat.</l>
+
+                    <pb n="11"/>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <fw type="pagenumber" rend="align(right)">11</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25F3</name>
+                            <desc>birds</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Then Joan went to market,</l>
+                    <l rend="indent(2)">To buy her some fowls,</l>
+                    <l>She bought a jackdaw</l>
+                    <l rend="indent(2)">And a couple of owls ;</l>
+                    <l>The owls they were white,</l>
+                    <l rend="indent(2)">The jackdaw was black,</l>
+                    <l>They'll make a rare breed,</l>
+                    <l rend="indent(2)">Says little Joan Sprat.</l>
+
+                    <pb n="12"/>
+                    <fw type="pagenumber" rend="align(right)">12</fw>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>47I223</name>
+                            <desc>milking</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack Sprat bought a cow,</l>
+                    <l rend="indent(2)">His Joan for to please,</l>
+                    <l>For Joan she could make</l>
+                    <l rend="indent(2)">Both butter and cheese,</l>
+                    <l>Or pancakes, or puddings,</l>
+                    <l rend="indent(2)">Without any fat,</l>
+                    <l>A notable housewife</l>
+                    <l rend="indent(2)">Was little Joan Sprat.</l>
+
+                    <pb n="13"/>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <fw type="pagenumber" rend="align(right)">13</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>47B1821</name>
+                            <desc>brewer</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Joan Sprat went to brewing</l>
+                    <l rend="indent(2)">A barrel of ale,</l>
+                    <l>She put in some hops</l>
+                    <l rend="indent(2)">That it might not turn stale,</l>
+                    <l>But as for the malt,</l>
+                    <l rend="indent(2)">She forgot to put that,</l>
+                    <l>This is sober liquor,</l>
+                    <l rend="indent(2)">Says little Jack Sprat.</l>
+
+                    <pb n="14"/>
+                    <fw type="pagenumber" rend="align(right)">14</fw>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>46C13141</name>
+                            <desc>horse</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack Sprat went to market,</l>
+                    <l rend="indent(2)"> And bought him a mare,</l>
+                    <l>She was lame of three legs,</l>
+                    <l rend="indent(2)">And as blind as a bat,</l>
+                    <l>Her ribs they were bare,</l>
+                    <l rend="indent(2)">For the mare had no fat,</l>
+                    <l>She looks like a racer,</l>
+                    <l rend="indent(2)">Says little Jack Sprat.</l>
+
+                    <pb n="15"/>
+                    <fw type="header" rend="align(centre)">JACK SPRAT.</fw>
+                    <fw type="pagenumber" rend="align(right)">15</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>34B12</name>
+                            <desc>cat</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Jack and Joan went abroad,</l>
+                    <l rend="indent(2)">Puss took care of the house,</l>
+                    <l>She caught a large rat</l>
+                    <l rend="indent(2)">And a very small mouse,</l>
+                    <l>She caught a small mouse</l>
+                    <l rend="indent(2)">And a very large rat,</l>
+                    <l>You are an excellent hunter,</l>
+                    <l rend="indent(2)">Says little Jack Sprat.</l>
+
+                    <pb n="16"/>
+                    <fw type="pagenumber" rend="align(right)">16</fw>
+                    <fw type="header" rend="align(centre)">JACK SPRAT</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>34A1</name>
+                            <desc>friendship between man and animal; caressing, petting</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <l>Now I have told you the story</l>
+                    <l rend="indent(2)">Of little Jack Sprat,</l>
+                    <l>Of little Joan Cole,</l>
+                    <l rend="indent(2)">And the one ear'd cat.</l>
+                    <l>Now Jack has got rich.</l>
+                    <l rend="indent(2)">And has plenty of pelf,</l>
+                    <l>If you'd know any more,</l>
+                    <l rend="indent(2)">You may tell it yourself.</l>
+                </lg>
+            </div>
+        </body>
+        <back>
+            <div type="colophon" rend="align(centre)">
+                <p><hi rend="italic">&rule;<lb/>Printed By J. Kendrew, Colliergate.</hi></p>
+            </div>
+        </back>
+    </text>
+</TEI>

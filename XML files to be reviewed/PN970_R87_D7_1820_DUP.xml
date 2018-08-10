@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013"/>
+                <label>Reviewed by Encoder Wid</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="SongBooks">
+        <front>
+            <div type="cover" rend="blue coloured pictorial wrappers">
+                <pb n="1"/>
+                <bibl rend="align(centre)">
+                    <title level="m">DR. WATT'S <lb/>Moral Songs,<lb/>FOR <lb/>CHILDREN.</title>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>42A3</name>
+                            <desc>mother and baby or young child</desc>
+                        </ic:iconClass>
+                        <p rend="align(right)">See Page 4.</p>
+                    </figure>
+                    <lb/>&rule;<lb/>
+                    <pubPlace>BANBURY :</pubPlace>
+                    <lb/><publisher><hi rend="italic">Printed and Sold by J. G.
+                        RUSHER,</hi></publisher>
+                    <lb/><pubPlace>BRIDGE&ndash;STREET.</pubPlace>
+                    <lb/>&rule; <lb/>Price <measure type="price">One Penny.</measure>
+                </bibl>
+
+                <pb n="2"/>
+                <bibl rend="align(centre)">&crule;<lb/><edition>RUSHER'S
+                    EDITION.</edition><lb/>&crule;</bibl>
+                <epigraph>
+                    <lg>
+                        <l>Where I see the blind or lame,</l>
+                        <l rend="indent(2)">Deaf or dumb, I'll kindly treat them ;</l>
+                        <l>I deserve to feel the same,</l>
+                        <l rend="indent(2)">If I mock, or hurt, or cheat them.</l>
+                    </lg>
+                </epigraph>
+                <lb/>
+                <figure rend="align(centre)">
+                    <p rend="align(right)">See Page 7.</p>
+                    <ic:iconClass>
+                        <name>33A1</name>
+                        <desc>saluting</desc>
+                    </ic:iconClass>
+                </figure>
+                <epigraph>
+                    <lg>
+                        <l>I'll not willingly offend,</l>
+                        <l rend="indent(2)">Nor be easily offended ;</l>
+                        <l>What's amiss I'll strive to mend,</l>
+                        <l rend="indent(2)">And endure what can't be mended.</l>
+                    </lg>
+                </epigraph>
+            </div>
+        </front>
+        <body>
+            <pb n="3"/>
+            <note type="handwritten" rend="landscape">June 2/26 <unclear reason="illegible"
+                    >atteinson (aps 22/26)</unclear> P.W Redpath</note>
+
+            <head type="work" rend="align(centre)">Dr. WATTS's<lb/>MORAL SONGS.<lb/>&swell;</head>
+            <lb/>
+            <div type="section">
+                <head rend="align(centre)"><hi rend="italic">The Sluggard.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">'T</c>IS the voice of the sluggard, I heard him<lb
+                            rend="indent(10)"/> complain,</l>
+                    <l rend="indent(2)">&ldquo; You have wak'd me too soon, I must<lb
+                            rend="indent(5)"/>slumber again ;&rdquo;</l>
+                    <l rend="indent(2)">As the door on its hinges, so he on his bed,</l>
+                    <l rend="indent(2)">Turns his sides and his shoulders and his<lb
+                            rend="indent(5)"/>heavy head.</l>
+                </lg>
+                <lg>
+                    <l>2 A little more sleep, &amp;a little more slumber ;</l>
+                    <l rend="indent(2)">Thus wastes half his days and his hours<lb rend="indent(5)"
+                        />without number;</l>
+                    <!--      how to code last word for line below?           -->
+                    <l rend="indent(2)">And when he gets up, he sits folding his<lb rend="indent(5)"
+                        />hands, [ stands.</l>
+                    <l rend="indent(2)">Or walks about saunt'ring, or trifling he</l>
+                </lg>
+                <lg>
+                    <l>3 I pass'd by his garden, and saw the wild brier,</l>
+                    <l rend="indent(2)">The thorn and the thistle grow broader and<lb
+                            rend="indent(5)"/>higher; [ rags,</l>
+                    <l rend="indent(2)">The clothes that hang on him are turning to</l>
+                    <l rend="indent(2)">And his money still wastes till he starves or<lb
+                            rend="indent(5)"/>he begs.</l>
+                </lg>
+                <lg>
+                    <l>4 I made him a visit, still hoping to find</l>
+                    <l rend="indent(2)">He'd took better care for improving his mind:</l>
+                    <l rend="indent(2)">He told me his dreams, talk'd of eating and<lb
+                            rend="indent(5)"/>drinking ; [thinking.</l>
+                    <l rend="indent(2)">But scarce reads his Bible, and never loves</l>
+                </lg>
+
+                <pb n="4"/>
+                <fw type="pagenumber" rend="align(centre)">4</fw>
+
+                <lg>
+                    <l>5 Said I then to my heart, &ldquo;Here's a lesson<lb rend="indent(5)"/>for me
+                        !&rdquo; [be;</l>
+                    <l rend="indent(2)">That man's but a picture of what I might</l>
+                    <l rend="indent(2)">But thanks to my friends, for their care in<lb
+                            rend="indent(5)"/>my breeding, [and reading.</l>
+                    <l rend="indent(2)">Who taught me betimes to love working</l>
+                </lg>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">Innocent Play.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">A</c>BROAD in the meadows, to see the young<lb/>lambs
+                        [dams,</l>
+                    <l rend="indent(2)">Run sporting about by the side of their</l>
+                    <l rend="indent(4)">With fleeces so clean and so white;</l>
+                    <l rend="indent(2)">Or a nest of young doves in a large open<lb/>cage, [or
+                        rage,</l>
+                    <l rend="indent(2)">When they play all in love, without anger</l>
+                    <l rend="indent(4)">How much we may learn from the sight.</l>
+                </lg>
+                <lg>
+                    <l>2 If we had been ducks we might dabble in mud,</l>
+                    <l rend="indent(2)">Or dogs we might play till it ended in blood;</l>
+                    <l rend="indent(4)">So foul and so fierce are their natures :</l>
+                    <l rend="indent(2)">But Thomas and William and such pretty<lb/>names, [as
+                        lambs,</l>
+                    <l rend="indent(2)">Should be cleanly and harmless as doves or</l>
+                    <l rend="indent(4)">Those lovely sweet innocent creatures.</l>
+                </lg>
+                <lg>
+                    <l>3 Not a thing that we do, nor a word that<lb/>we say,</l>
+                    <l rend="indent(2)">Should hinder another in jesting or play ;</l>
+                    <l rend="indent(4)">For he's still in earnest that's hurt:</l>
+                    <l rend="indent(2)">How rude are the boys that throw pebbles<lb/>and mire! [
+                        fire.</l>
+                    <l rend="indent(2)">There's none but a madman will fling about</l>
+                    <l rend="indent(4)">And tell you 'tis all but in sport.</l>
+                </lg>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">The Rose.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">H</c>OW fair is the rose! what a beautiful<lb/>flow'r!</l>
+
+                    <pb n="5"/>
+                    <fw type="pagenumber" rend="align(centre)">5</fw>
+
+                    <l rend="indent(4)">The glory of April and May:</l>
+                    <l rend="indent(2)">But the leaves are beginning to fade in an<lb/>hour,</l>
+                    <l rend="indent(4)">They wither and die in a day.</l>
+                </lg>
+                <lg>
+                    <l>2 Yet the rose has one powerful virtue to<lb/>boast,</l>
+                    <l rend="indent(4)">Above all the flow'rs of the field;</l>
+                    <l rend="indent(2)">When its leaves are all dead, and fine<lb/>colours are
+                        lost,</l>
+                    <l rend="indent(4)">How sweet a perfume it will yield !</l>
+                </lg>
+                <lg>
+                    <l>3 So frail is the youth and the beauty of men,</l>
+                    <l rend="indent(4)">They bloom and look gay, like the rose ;</l>
+                    <l rend="indent(2)">But all our fond care to preserve them is<lb/>vain:</l>
+                    <l rend="indent(4)">Time kills them as fast as he goes.</l>
+                </lg>
+                <lg>
+                    <l>4 Then I'll not be proud of my youth or my<lb/>beauty,</l>
+                    <l rend="indent(4)">Since both of them wither and fade;</l>
+                    <l rend="indent(2)">But gain a good name by well doing my duty,</l>
+                    <l rend="indent(4)">'Twill scent like a rose when I'm dead.</l>
+                </lg>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">The Thief.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">W</c>HY should I deprive my neighbour</l>
+                    <l rend="indent(8)">Of his goods against his will ?</l>
+                    <l rend="indent(2)">Hands were made for honest labour,</l>
+                    <l rend="indent(4)">Not to plunder or to steal.</l>
+                </lg>
+                <lg>
+                    <l>2 'Tis a foolish self&ndash;deceiving,</l>
+                    <l rend="indent(4)">By such tricks to hope for gain:</l>
+                    <l rend="indent(2)">All that's ever got by thieving,</l>
+                    <l rend="indent(4)">Turns to sorrow, shame, and pain,</l>
+                </lg>
+                <lg>
+                    <l>3 Have not Eve and Adam taught us</l>
+                    <l rend="indent(4)">Their sad profit to compute?</l>
+                    <l rend="indent(2)">To what dismal state they brought us,</l>
+                    <l rend="indent(4)">When they stole forbidden fruit !</l>
+                </lg>
+
+                <pb n="6"/>
+                <fw type="pagenumber" rend="align(centre)">6</fw>
+
+                <lg>
+                    <l>4 Oft we see a young beginner</l>
+                    <l rend="indent(4)">Practise little pilf'ring ways,</l>
+                    <l rend="indent(2)">'Till grown up a harden'd sinner ;</l>
+                    <l rend="indent(4)">Then the gallows ends his days.</l>
+                </lg>
+                <lg>
+                    <l>5 Theft will not be always hidden,</l>
+                    <l rend="indent(4)">Tho' we fancy none can spy:</l>
+                    <l rend="indent(2)">When we take a thing forbidden,</l>
+                    <l rend="indent(4)">God beholds it with his eye.</l>
+                </lg>
+                <lg>
+                    <l>6 Guard my heart, O God of heaven,</l>
+                    <l rend="indent(4)">Lest I covet what's not mine;</l>
+                    <l rend="indent(2)">Lest I steal what is not given,</l>
+                    <l rend="indent(4)">Guard my heart and hands from sin.</l>
+                </lg>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">The Ant or Emmet.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">T</c>HESE emmets, how little they are in our<lb/>eyes!
+                        [dies,</l>
+                    <l rend="indent(2)">We tread them to dust and a troop of them</l>
+                    <l rend="indent(4)">Without our regard or concern :</l>
+                    <l rend="indent(2)">Yet, wise as we are, if we went to their<lb/>school,</l>
+                    <l rend="indent(2)">There's many a sluggard, and many a fool,</l>
+                    <l rend="indent(4)">Some lessons of wisdom might learn.</l>
+                </lg>
+                <lg>
+                    <l>2 They don't wear their time out in sleeping<lb/>or play,</l>
+                    <l rend="indent(2)">But gather up corn in a sunshiny day,</l>
+                    <l rend="indent(4)">For winter they lay up their stores:</l>
+                    <l rend="indent(2)">They manage their work in such regular <lb/>forms, [the
+                        storms,</l>
+                    <l rend="indent(2)">You'd think they foresaw all the frosts and</l>
+                    <l rend="indent(4)">And so brought their food within doors.</l>
+                </lg>
+                <lg>
+                    <l>3 But I have less sense than a poor creeping<lb/>ant, [want.</l>
+                    <l rend="indent(2)">If I take not care for the things I shall</l>
+                    <l rend="indent(4)">Nor provide against dangers in time :</l>
+
+                    <pb n="7"/>
+                    <fw type="pagenumber" rend="align(centre)">7</fw>
+
+                    <l rend="indent(2)">For when death or old age shall stare in my<lb/>face,
+                        [days,</l>
+                    <l rend="indent(2)">What a wretch shall I be at the end of my</l>
+                    <l rend="indent(4)">If I trifle away all their prime!</l>
+                </lg>
+                <lg>
+                    <l>4 Now, now while my strength and my youth<lb/>are in bloom,</l>
+                    <l rend="indent(2)">Let me think what will serve me when<lb/>sickness shall
+                        come,</l>
+                    <l rend="indent(4)">And pray that my sins be forgiv'n :</l>
+                    <l rend="indent(2)">Let me read in good books, and believe, and<lb/>obey,</l>
+                    <l rend="indent(2)">That when death turns me out of this cottage<lb/>of
+                        clay,</l>
+                    <l rend="indent(4)">I may dwell in a palace in heav'n.</l>
+                </lg>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">Good Resolutions.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">T</c>HO' I'm now in younger days,</l>
+                    <l rend="indent(8)">Nor can tell what will befal me,</l>
+                    <l rend="indent(2)">I'll prepare for ev'ry place</l>
+                    <l rend="indent(4)">Where my growing age shall call me.</l>
+                </lg>
+                <lg>
+                    <l>2 Should I ere be rich or great,</l>
+                    <l rend="indent(4)">Others shall partake my goodness :</l>
+                    <l rend="indent(2)">I'll supply the poor with meat,</l>
+                    <l rend="indent(4)">Never shewing scorn or rudeness.</l>
+                </lg>
+                <lg>
+                    <l>3 Where I see the blind or lame,</l>
+                    <l rend="indent(4)">Deaf or dumb, I'll kindly treat them;</l>
+                    <l rend="indent(2)">I deserve to feel the same,</l>
+                    <l rend="indent(4)">If I mock, or hurt, or cheat them.</l>
+                </lg>
+                <lg>
+                    <l>4 If I meet with railing tongues,</l>
+                    <l rend="indent(4)">Why should I return them railing ?</l>
+                    <l rend="indent(2)">Since I best revenge my wrongs</l>
+                    <l rend="indent(4)">By my patience never failing.</l>
+                </lg>
+                <lg>
+                    <l>5 When I hear them telling lies,</l>
+                    <l rend="indent(4)">Talking foolish, cursing, swearing;</l>
+
+                    <pb n="8"/>
+                    <fw type="pagenumber" rend="align(centre)">8</fw>
+
+                    <l rend="indent(2)">First I'll try to make them wise,</l>
+                    <l rend="indent(4)">Or I'll soon go out of hearing.</l>
+                </lg>
+                <lg>
+                    <l>6 What tho' I be low and mean,</l>
+                    <l rend="indent(4)">I'll engage the rich to love me;</l>
+                    <l rend="indent(2)">While I'm modest, neat, and clean,</l>
+                    <l rend="indent(4)">And submit when they reprove me.</l>
+                </lg>
+                <lg>
+                    <l>7 If I should be poor and sick,</l>
+                    <l rend="indent(4)">I shall meet I hope with pity ;</l>
+                    <l rend="indent(2)">Since I love to help the weak,</l>
+                    <l rend="indent(4)">Tho' they're neither fair nor witty.</l>
+                </lg>
+                <lg>
+                    <l>8 I'll not willingly offend,</l>
+                    <l rend="indent(4)">Nor be easily offended;</l>
+                    <l rend="indent(2)">What's amiss I'll strive to mend,</l>
+                    <l rend="indent(4)">And endure what can't be mended.</l>
+                </lg>
+                <lg>
+                    <l>9 May I be so watchful still</l>
+                    <l rend="indent(4)">O'er my humours and my passion,</l>
+                    <l rend="indent(2)">As to speak and do no ill,</l>
+                    <l rend="indent(4)">Tho' it should be all the fashion,</l>
+                </lg>
+                <lg>
+                    <l>10 Wicked fashions lead to hell,</l>
+                    <l rend="indent(4)">Ne'er may I be found complying;</l>
+                    <l rend="indent(2)">But in life behave so well,</l>
+                    <l rend="indent(4)">Not to be afraid of dying.</l>
+                </lg>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">A Summer Evening.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">H</c>OW fine has the day been! how bright<lb
+                            rend="indent(6)"/> was the sun! [run!</l>
+                    <l rend="indent(2)">How lovely and joyful the course that he</l>
+                    <l rend="indent(2)">Tho' he rose in a mist when his race he<lb rend="indent(4)"
+                        />begun, [rain!</l>
+                    <l rend="indent(4)">And there follow'd some droppings of</l>
+                    <l rend="indent(2)">But now the fair traveller's come to the west,</l>
+                    <l rend="indent(2)">His rays are all gold, and his beauties are best,</l>
+                    <l rend="indent(2)">He paints the sky gay as he sinks to his rest,</l>
+                    <l rend="indent(4)">And foretells a bright rising again.</l>
+                </lg>
+
+                <pb n="9"/>
+                <fw type="pagenumber" rend="align(centre)">9</fw>
+
+                <lg>
+                    <l>2 Just such is the Christian, his course he begins</l>
+                    <l rend="indent(2)">Like the sun in a mist, while he mourns for<lb
+                            rend="indent(4)"/>his sins, [shines,</l>
+                    <l rend="indent(2)">And melts into tears, then he breaks out and</l>
+                    <l rend="indent(4)">And travels his heavenly way :</l>
+                    <l rend="indent(2)">But when he comes nearer to finish his race,</l>
+                    <l rend="indent(2)">Like a fine setting sun he looks richer in grace,</l>
+                    <l rend="indent(2)">And gives a sure hope at the end of his days,</l>
+                    <l rend="indent(4)">Of rising in brighter array.</l>
+                </lg>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">A Cradle Hymn.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">H</c>USH ! my dear, lie still, and slumber,</l>
+                    <l rend="indent(6)">Holy angels guard thy bed!</l>
+                    <l rend="indent(2)">Heav'nly blessings without number</l>
+                    <l rend="indent(4)">Gently falling on thy head.</l>
+                </lg>
+                <lg>
+                    <l>2 Sleep, my babe, thy food and raiment;</l>
+                    <l rend="indent(4)">House and home thy friends provide ;</l>
+                    <l rend="indent(2)">All without thy care or payment,</l>
+                    <l rend="indent(4)">All thy wants are well supplied.</l>
+                </lg>
+                <lg>
+                    <l>3 How much better thou'rt attended</l>
+                    <l rend="indent(4)">Than the Son of God could be,</l>
+                    <l rend="indent(2)">When from heaven he descended,</l>
+                    <l rend="indent(4)">And became a Child, like thee!</l>
+                </lg>
+                <lg>
+                    <l>4 Soft and easy is thy cradle ;</l>
+                    <l rend="indent(4)">Coarse and hard thy Saviour lay,</l>
+                    <l rend="indent(2)">When his birth&ndash;place was a stable,</l>
+                    <l rend="indent(4)">And his softest bed was hay.</l>
+                </lg>
+                <lg>
+                    <l>5 Blessed babe! what glorious features,</l>
+                    <l rend="indent(4)">Spotless fair, divinely bright!</l>
+                    <l rend="indent(2)">Must he dwell with brutal creatures ;</l>
+                    <l rend="indent(4)">How could angels bear the sight !</l>
+                </lg>
+                <lg>
+                    <l>6 Was there nothing but a manger</l>
+                    <l rend="indent(4)">Cursed sinners could afford.</l>
+                    <l rend="indent(2)">To receive the heav'nly Stranger;</l>
+                    <l rend="indent(4)">Did they thus affront the Lord !</l>
+
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(centre)">10</fw>
+
+                </lg>
+                <lg>
+                    <l>7 Soft, my child ! I did not chide thee,</l>
+                    <l rend="indent(4)">Tho' my song might sound too hard ;</l>
+                    <l rend="indent(2)">'Tis thy Mother* sits beside thee,</l>
+                    <l rend="indent(4)">And her arm shall be thy guard.</l>
+                </lg>
+                <lg>
+                    <l>8 Yet, to read the shameful story,</l>
+                    <l rend="indent(4)">How the Jews abus'd their King !</l>
+                    <l rend="indent(2)">How they serv'd the Lord of Glory,</l>
+                    <l rend="indent(4)">Makes me angry while I sing.</l>
+                </lg>
+                <lg>
+                    <l>9 See the kinder shepherds round him,</l>
+                    <l rend="indent(4)">Telling wonders from the sky!</l>
+                    <l rend="indent(2)">Where they sought him there they found him,</l>
+                    <l rend="indent(4)">With his Virgin Mother by.</l>
+                </lg>
+                <lg>
+                    <l>10 See the lovely Babe a dressing;</l>
+                    <l rend="indent(4)">Lovely Infant, how he smil'd !</l>
+                    <l rend="indent(2)">When he wept, the mother's blessing</l>
+                    <l rend="indent(4)">Sooth'd and hush'd the holy Child.</l>
+                </lg>
+                <lg>
+                    <l>11 Lo ! he slumbers in a manger,</l>
+                    <l rend="indent(4)">Where the horned oxen fed!</l>
+                    <l rend="indent(2)">Peace, my darling, here's no danger,</l>
+                    <l rend="indent(4)">Here's no ox a&ndash;near thy bed.</l>
+                </lg>
+                <lg>
+                    <l>12 'Twas to save thee, child, from dying !</l>
+                    <l rend="indent(4)">Save my dear from burning flame,</l>
+                    <l rend="indent(2)">Bitter groans and endless crying,</l>
+                    <l rend="indent(4)">That thy blest Redeemer came.</l>
+                </lg>
+                <lg>
+                    <l>13 May'st thou live to know and fear him,</l>
+                    <l rend="indent(4)">Trust and love him all thy days;</l>
+                    <l rend="indent(2)">Then go dwell for ever near him,</l>
+                    <l rend="indent(4)">See his face and sing his praise.</l>
+                </lg>
+                <lg>
+                    <l>14 I could give thee thousand kisses,</l>
+                    <l rend="indent(4)">Hoping what I most desire ;</l>
+                    <l rend="indent(2)">Not a mother's fondest wishes</l>
+                    <l rend="indent(4)">Can to greater joys aspire.</l>
+                </lg>
+                <p>* Here you may use the words Sister, Neighbour, &amp;c.</p>
+            </div>
+
+            <pb n="11"/>
+
+            <div type="section">
+                <head rend="align(centre)">SELECT PIECES.<lb/>&drule;</head>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)"><hi rend="italic">THE BEGGAR'S PETITION:</hi></head>
+                    <lb/>
+                    <lg>
+                        <l><c rend="lettrine">P</c>ITY the sorrows of a poor old man,</l>
+                        <l rend="indent(2)">Whose trembling limbs have borne him<lb/>to your
+                            door,</l>
+                        <l>Whose days are dwindled to the shortest span ;</l>
+                        <l rend="indent(2)">Oh! give relief, and heav'n will bless
+                            your<lb/>store.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>These tatter'd clothes my poverty bespeak,</l>
+                        <l rend="indent(2)">These hoary locks proclaim my lengthen'd<lb/>years;</l>
+                        <l>And many a furrow in my grief&ndash;worn cheek</l>
+                        <l rend="indent(2)">Has been the channel to a flood of tears,</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>Yon house, erected on the rising ground,</l>
+                        <l rend="indent(2)">With tempting aspect drew me from my roads</l>
+                        <l>For plenty there a residence has found,</l>
+                        <l rend="indent(2)">And grandeur a magnificent abode.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>Hard is the fate of the infirm and poor!</l>
+                        <l rend="indent(2)">Here, as I crav'd a morsel of their bread,</l>
+                        <l>A pamper'd menial drove me from the door,</l>
+                        <l rend="indent(2)">To seek a shelter in an humbler shed.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>O take me to your hospitable dome;</l>
+                        <l rend="indent(2)">Keen blows the wind, and piercing is the cold!</l>
+                        <l>Short is my passage to the friendly tomb !</l>
+                        <l rend="indent(2)">For I am poor and miserably old.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>Should I reveal the sources of my grief,</l>
+                        <l rend="indent(2)">If soft humanity e'er touch'd your breast,</l>
+                        <l>Your hands would not withold the kind relief,</l>
+                        <l rend="indent(2)">And tears of pity would not be represt.</l>
+                    </lg>
+
+                    <pb n="12"/>
+                    <fw type="pagenumber" rend="align(centre)">12</fw>
+
+                    <lg>
+                        <l>Heav'n sends misfortunes ; why should we<lb/>'repine ? [ you see;</l>
+                        <l rend="indent(2)">'Tis heaven has brought me to the state</l>
+                        <l>And your condition may be soon like mine,</l>
+                        <l rend="indent(2)">The child of sorrow and of misery.&mdash;</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>A little farm was my paternal lot, [morn ;</l>
+                        <l rend="indent(2)">Then like the lark I sprightly hail'd the</l>
+                        <l>But ah ! oppression forc'd me from my cot,</l>
+                        <l rend="indent(2)">My cattle died, and blighted was my corn.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>My daughter, once the comfort of my age,</l>
+                        <l rend="indent(2)">Lur'd by a villain from her native home,</l>
+                        <l>Is cast abandon'd on the world's wide stage,</l>
+                        <l rend="indent(2)">And doom'd in scanty poverty to roam.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>My tender wife, sweet soother of my care!</l>
+                        <l rend="indent(2)">Struck with sad anguish at the stern decree,</l>
+                        <l>Fell, ling'ring fell, a victim to despair,</l>
+                        <l rend="indent(2)">And left the world to wretchedness and me.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>Pity the sorrows of a poor old man,</l>
+                        <l rend="indent(2)">Whose trembling limbs have borne him to<lb/>your
+                            door,</l>
+                        <l>Whose days are dwindled to the shortest span:</l>
+                        <l rend="indent(2)">Oh! give relief, and heav'n will bless
+                            your<lb/>store.</l>
+                    </lg>
+                </div>
+                <div>
+                    <head rend="align(centre)"><hi rend="italic">The Use of Sight.</hi></head>
+                    <lb/>
+                    <p/>
+                    <lg>
+                        <l>&ldquo; <c rend="lettrine">W</c>HAT, Charles return'd!&rdquo; papa
+                                ex&ndash;<lb type="inWord" rend="indent(8)"/>claimed,</l>
+                        <l rend="indent(2)">&ldquo; How short your walk has been!</l>
+                        <l>But Thomas&mdash; Julia&mdash; where are they ?</l>
+                        <l rend="indent(2)">Come, tell me what you've seen.&rdquo;</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; So tedious, stupid, dull a walk!&rdquo;</l>
+                        <l rend="indent(2)">Said Charles, &ldquo; I'll go no more&mdash;</l>
+
+                        <pb n="13"/>
+                        <fw type="pagenumber" rend="align(centre)">13</fw>
+
+                        <l>First stopping here, then lagging there,</l>
+                        <l rend="indent(2)">O'er this and that to pore.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; I cross'd the fields near Woodland House,</l>
+                        <l rend="indent(2)">And just went up the hill:</l>
+                        <l>Then by the river side came down,</l>
+                        <l rend="indent(2)">Near Mr. Fair play's mill.&rdquo;</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>Now Tom and Julia both ran in;&ndash;&mdash;</l>
+                        <l rend="indent(2)">&ldquo; O dear, papa,&rdquo; said they,</l>
+                        <l>&rdquo; The sweetest walk we both have had,</l>
+                        <l rend="indent(2)">O, what a pleasant day !</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; Near Woodland House we cross'd the fields,</l>
+                        <l rend="indent(2)">And by the mill we came . &rdquo;</l>
+                        <l>&ldquo; Indeed ! !&rdquo; exclaim'd papa, &ldquo;how's this?</l>
+                        <l rend="indent(2)">Your brother took the same ;</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; But very dull he found the walk,&mdash;</l>
+                        <l rend="indent(2)">What have you there? let's see;&mdash;</l>
+                        <l>Come, Charles, enjoy this charming treat,</l>
+                        <l rend="indent(2)">As new to you as me.&rdquo;</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; First look, papa, at this small branch,</l>
+                        <l rend="indent(2)">Which on a tall oak grew,</l>
+                        <l>And by its slimy berries white,</l>
+                        <l rend="indent(2)">The mistletoe we knew.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; A bird all green ran up a tree,</l>
+                        <l rend="indent(2)">A woodpecker we call,</l>
+                        <l>Who with his strong bill wounds the bark,</l>
+                        <l rend="indent(2)">To feed on insects small.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; And many lapwings cried peewit;</l>
+                        <l rend="indent(2)">And one, among the rest,</l>
+                        <l>Pretended lameness, to decoy</l>
+                        <l rend="indent(2)">Us from her lowly nest.</l>
+                    </lg>
+                    <pb n="14"/>
+                    <fw type="pagenumber" rend="align(centre)">14</fw>
+
+                    <lg>
+                        <l>&ldquo; Young starlings, martins, swallows, all</l>
+                        <l rend="indent(2)">Such lovely flocks, so gay;</l>
+                        <l>A heron, too, which caught a fish,</l>
+                        <l rend="indent(2)">And with it flew away.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; This bird we found, a kingfisher,</l>
+                        <l rend="indent(2)">Tho' dead, his plumes how bright!</l>
+                        <l>Do have him stuff'd, my dear papa,</l>
+                        <l rend="indent(2)">'Twill be a charming sight!</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; When reach'd the heath, how wide the space,</l>
+                        <l rend="indent(2)">The air how fresh and sweet;</l>
+                        <l>We pluck'd these flow'rs and diff'rent heaths,</l>
+                        <l rend="indent(2)">The fairest we could meet.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; The distant prospect we admir'd,</l>
+                        <l rend="indent(2)">The mountains far and blue;</l>
+                        <l>A mansion here, a cottage there;&mdash;</l>
+                        <l rend="indent(2)"> See, here's the sketch we drew.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; A splendid sight we next beheld,</l>
+                        <l rend="indent(2)">The glorious setting sun,</l>
+                        <l>In clouds of crimson, purple, gold,</l>
+                        <l rend="indent(2)">His daily race was done.&rdquo;</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; True taste and knowledge,&rdquo; said papa,</l>
+                        <l rend="indent(2)">&ldquo; By observation's gain'd;</l>
+                        <l>You've both us'd well the gift of sight.</l>
+                        <l rend="indent(2)">And thus reward obtain'd.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; My Julia, in this desk will find</l>
+                        <l rend="indent(2)">A drawing&ndash;box, quite new ;</l>
+                        <l>This spy&ndash;glass, Tom, you oft desir'd,</l>
+                        <l rend="indent(2)">I think it now your due.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; And pretty toys, and pretty gifts,</l>
+                        <l rend="indent(2)">For Charles, too, shall be bought,</l>
+                        <l>When he can see the works of God,</l>
+                        <l rend="indent(2)">And prize them as he o ught.&rdquo;</l>
+                    </lg>
+                </div>
+
+                <pb n="15"/>
+                <fw type="pagenumber" rend="align(centre)">15</fw>
+
+                <div type="section">
+                    <head rend="align(centre)"><hi rend="italic">The Little Beggar Girl.</hi></head>
+                    <lb/>
+                    <lg>
+                        <l><c rend="lettrine">T</c>HERE'S a poor beggar going by,</l>
+                        <l rend="indent(6)">I see her looking in ;</l>
+                        <l>She's just about as big as I,</l>
+                        <l rend="indent(2)">Only so very thin.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>She has no shoes upon her feet,</l>
+                        <l rend="indent(2)">She is so very poor;</l>
+                        <l>And hardly any thing to eat:</l>
+                        <l rend="indent(2)">I pity her, I'm sure!</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>But I have got nice clothes, you know ;</l>
+                        <l rend="indent(2)">And meat, and bread, and fire;</l>
+                        <l>And you, mamma, that love me so,</l>
+                        <l rend="indent(2)">And all that I desire.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>If I were forc'd to stroll so far,</l>
+                        <l rend="indent(2)">O dear, what should I do!</l>
+                        <l>I wish she had a dear mamma,</l>
+                        <l rend="indent(2)">Just such a one as you.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>Here, little girl, come back again,</l>
+                        <l rend="indent(2)">And hold your ragged hat,</l>
+                        <l>For I will put a penny in ;</l>
+                        <l rend="indent(2)">So buy some bread with that.</l>
+                    </lg>
+                </div>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)"><hi rend="italic">Questions and Answers.</hi></head>
+                    <lb/>
+                    <lg>
+                        <l><c rend="lettrine">W</c>HO shew'd the little ant the way</l>
+                        <l>Her narrow hole to bore?</l>
+                        <l>And spend the pleasant summer day,</l>
+                        <l rend="indent(2)">In laying up her store ?</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>The sparrow builds her clever nest,</l>
+                        <l rend="indent(2)">Of wool, and hay, and moss;</l>
+                        <l>Who told her how to weave it best,</l>
+                        <l rend="indent(2)">And lay the twigs across ?</l>
+                    </lg>
+                    <pb n="16"/>
+                    <fw type="pagenumber" rend="align(centre)">16</fw>
+                    <lg>
+                        <l>Who taught the busy bee to fly</l>
+                        <l rend="indent(2)">Among the sweetest flow'rs,</l>
+                        <l>And lay his store of honey by,</l>
+                        <l rend="indent(2)">To eat in winter hours?</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>'Twas God who shew'd them all the way,</l>
+                        <l rend="indent(2)">And gave their little skill ;</l>
+                        <l>And teaches children, if they pray,</l>
+                        <l rend="indent(2)">To do his holy will.</l>
+                    </lg>
+                    <p rend="align(centre)">&drule;</p>
+                </div>
+            </div>
+            <div type="section">
+                <head rend="align(centre)"><hi rend="italic">The Ten Commandments.</hi></head>
+                <lb/>
+                <lg>
+                    <l>1 <c rend="lettrine">T</c>HOU shalt have no more Gods but me.</l>
+                    <l>2 Before no idol bow thy knee.</l>
+                    <l>3 Take not the name of God in vain.</l>
+                    <l>4 Nor dare the Sabbath&ndash;day profane.</l>
+                    <l>5 Give both thy parents honour due.</l>
+                    <l>6 Take heed that thou no murder do.</l>
+                    <l>7 Abstain from words and deeds unclean.</l>
+                    <l>8 Nor steal, tho' thou art poor and mean.</l>
+                    <l>9 Nor make a wilful lie, nor love it.</l>
+                    <l>10 What is thy neighbour's dare not covet.</l>
+                </lg>
+            </div>
+            <lb/>
+            <div type="section">
+                <head rend="align(centre)"><hi rend="italic">The Sum of the
+                    Commandments.</hi></head>
+                <lb/>
+                <l><c rend="lettrine">W</c>ITH all thy soul love God above ;</l>
+                <l rend="indent(5)">And as thyself thy neighbour love.</l>
+            </div>
+            <lb/>
+            <div type="section">
+                <head rend="align(centre)"><hi rend="italic">Our Saviour's Golden Rule.</hi></head>
+                <lb/>
+                <l><c rend="lettrine">B</c>E you to others kind and true,</l>
+                <l rend="indent(4)">As you'd have others be to you ;</l>
+                <l>And neither do nor say to men,</l>
+                <l>Whate'er you would not take again.</l>
+            </div>
+
+            <pb n="17"/>
+            <fw type="pagenumber" rend="align(centre)">17</fw>
+
+            <div type="section">
+                <head rend="align(centre)"><hi rend="italic">Duty to God and our
+                    Neighbour.</hi></head>
+                <lb/>
+                <lg>
+                    <l><c rend="lettrine">L</c>OVE God with all your soul and strength,</l>
+                    <l rend="indent(2)">With all your heart and mind;</l>
+                    <l rend="indent(2)">And love your neighbour as yourself,</l>
+                    <l rend="indent(4)">Be faithful, just, and kind.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>2 Deal with another as you'd have</l>
+                    <l rend="indent(4)">Another deal with you:</l>
+                    <l rend="indent(2)">What you're unwilling to receive,</l>
+                    <l rend="indent(4)">Be sure you never do.</l>
+                </lg>
+            </div>
+            <lb/>
+            <div type="section">
+                <head rend="align(centre)"><hi rend="italic">The Hosanna, or Salvation ascribed to
+                        Christ.</hi></head>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)">LONG METRE.</head>
+                    <lb/>
+                    <lg>
+                        <l><c rend="lettrine">H</c>OSANNA to King David's Son,</l>
+                        <l rend="indent(2)">Who reigns on a superior throne;</l>
+                        <l rend="indent(2)">We bless the Prince of heav'nly birth.</l>
+                        <l rend="indent(2)">Who brings salvation down on earth.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>2 Let ev'ry nation, ev'ry age,</l>
+                        <l rend="indent(2)">In this delightful work engage;</l>
+                        <l rend="indent(2)">Old men and babes in Sion sing</l>
+                        <l rend="indent(4)">The growing glories of her King !</l>
+                    </lg>
+                </div>
+                <div type="section">
+                    <head rend="align(centre)">COMMON METRE.</head>
+                    <lg>
+                        <l><c rend="lettrine">H</c>OSANNA to the Prince of grace!</l>
+                        <l rend="indent(2)"> Sion, behold thy King!</l>
+                        <l rend="indent(2)">Proclaim the Son of David's race,</l>
+                        <l rend="indent(4)">And teach the babes to sing.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>2 Hosanna to th' eternal Word,</l>
+                        <l rend="indent(4)">Who from the Father came;</l>
+                        <l rend="indent(2)">Ascribe salvation to the Lord,</l>
+                        <l rend="indent(4)">With blessings on his name.</l>
+                    </lg>
+                </div>
+                <pb n="18"/>
+                <fw type="pagenumber" rend="align(centre)">18</fw>
+
+                <div type="section">
+                    <p rend="align(centre)">SHORT METRE.</p>
+                    <lg>
+                        <l><c rend="lettrine">H</c>OSANNA to the Son</l>
+                        <l rend="indent(4)">Of David and of God,</l>
+                        <l rend="indent(2)">Who brought the news of pardon down,</l>
+                        <l rend="indent(4)">And bought it with his blood.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>2 To Christ, th' anointed King,</l>
+                        <l rend="indent(4)">Be endless blessings giv'n ;</l>
+                        <l rend="indent(2)">Let the whole earth his glory sing,</l>
+                        <l rend="indent(4)">Who made our peace with heav'n.</l>
+                    </lg>
+                    <lb/>
+                    <p rend="align(centre)">&drule;</p>
+                </div>
+            </div>
+            <div>
+                <head rend="align(centre)"><hi rend="italic">Glory to the</hi> FATHER,<hi
+                        rend="italic"> to the</hi> SON,<hi rend="italic"> &amp;c.</hi></head>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)">LONG METRE.</head>
+                    <lg rend="indent(2)">
+                        <l><c rend="lettrine">T</c>O God the Father, God the Son,</l>
+                        <l>And God the Spirit, Three in One,</l>
+                        <l>Be honour, praise, and glory giv'n,</l>
+                        <l>By all on earth, and all in heav'n.</l>
+                    </lg>
+                </div>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)">COMMON METRE.</head>
+                    <lg>
+                        <l><c rend="lettrine">N</c>OW let the Father and the Son,</l>
+                        <l>And Spirit be ador'd ;</l>
+                        <l>Where there are works to make him known</l>
+                        <l rend="indent(2)">Or saints to love the Lord.</l>
+                    </lg>
+                </div>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)">SHORT METRE.</head>
+                    <lg rend="indent(4)">
+                        <l><c rend="lettrine">G</c>IVE to the Father praise,</l>
+                        <l rend="indent(2)">Give glory to the Son;</l>
+                        <l>And to the Spirit of his grace</l>
+                        <l rend="indent(2)">Be equal honour done.</l>
+                    </lg>
+                    <lb/>
+                    <p rend="align(centre)">THE END.</p>
+                </div>
+            </div>
+            <div type="colophon">
+                <p>&rule;<lb/>J. G. Rusher, Printer, Bridge&ndash;st. Banbury.</p>
+            </div>
+        </body>
+        <pb n="19"/>
+        <back>
+            <div type="advertisement">
+                <head rend="align(centre)">THE FOLLOWING <measure type="price">PENNY</measure>
+                    BOOKS,<lb/>and many others,<lb/>Adorned with a great number of Cuts,<lb/><hi
+                        rend="italic">Are just Printed and Sold by</hi><lb/> J. G. RUSHER,
+                    BANBURY.<lb/>&rule;</head>
+                <lb/>
+                <list>
+                    <item>History of a Banbury Cake</item>
+                    <item>History of John Gilpin</item>
+                    <item>Good Farmer, or History of T. Wiseman</item>
+                    <item>Galloping Guide to the A B C</item>
+                    <item>Adventures of Sir Richard Whittington<lb rend="indent(3)"/>and his
+                        Cat</item>
+                    <item>Riddler's Riddle Book, by Peter Puzzlecap</item>
+                    <item>The New House that Jack Built</item>
+                    <item>Anecdotes for Good Children</item>
+                    <item>Short Stories, or Treasures of Truth</item>
+                    <item>Adventures of a Birmingham Halfpenny</item>
+                    <item>Pretty Poems for Young Folks</item>
+                    <item>Dr. Watts's Divine Songs</item>
+                    <item>Dr. Watts's Moral Songs</item>
+                    <item>The Children in the Wood, in Verse</item>
+                    <item>Children in the Wood Restored, in prose</item>
+                    <item>The Trial of an Ox for killing a Man</item>
+                    <item>Many kinds of Children's Battledores.</item>
+                    <item>Also a variety of others, at <measure type="price">1/2, 1d, 2d,<lb
+                                rend="indent(2)"/>3d, 4d, 6d, 1s, 1s 6d,</measure> &amp;c. for
+                        Sale.</item>
+                    <item>A quantity of entertaining <measure type="price">6d</measure>
+                        Pamphlets.</item>
+                </list>
+            </div>
+            <pb n="20"/>
+            <figure rend="landscape">
+                <ic:iconClass>
+                    <name>47I4131</name>
+                    <desc>picking fruit</desc>
+                </ic:iconClass>
+                <head>Why should I deprive my neighbour of his goods against his will?&mdash;</head>
+                <lb/>
+            </figure>
+        </back>
+    </text>
+</TEI>

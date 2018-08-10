@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY brace "&#x7d;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+
+
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+    
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name>
+                <note/>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2013-06-05"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+        
+        
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>      
+            <div type="cover">
+                <bibl>
+                    <note type="handwritten" rend="align(centre)"><unclear/></note>
+                    &rule;
+                    <lb/>
+                    <title level="s">&rule;<lb/>CHEAP REPOSITORY.<lb/>&rule;<lb/></title>
+                    &rule;
+                    <lb/>
+                    <title level="m">THE<lb/>COCK&ndash;FIGHTER.<lb/>A TRUE HISTORY.</title>
+                    <note type="handwritten" rend="align(centre)"><unclear/></note>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>11Q21</name>
+                            <desc>one person praying</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <publisher rend="align(centre)">Sold by J. MARSHALL,<lb/>
+                     rend="indent(1)first-indent(-1)align(left)">Printer to the CHEAP REPOSITORY for Moral and Religious<lb rend="indent(2)"/>Tracts) No. <num type="cardinal">17</num>,
+                        Queen&ndash;Street, Cheap&slong;ide, and No. <num type="cardinal">4</num>, Aldermary<lb/>Church&ndash;Yard, and R. WHITE,
+                        Piccadilly, London.<lb/>
+                        <lb rend="align(centre)"/>By S. HAZARD,<lb/>
+                        rend="indent(1)first-indent(-1)align(left)">Printer to the Cheap Repository) at Bath: and by all<lb rend="indent(2)"/>Book&slong;ellers, New&slong;men, and
+                        Hawkers, in Town and Country.&mdash;<lb/>Great Allowance will be made to Shopkeepers and
+                        Hawkers.<lb rend="align(centre)"/>PRICE <measure type="price">ONE HALFPENNY</measure>,<lb rend="align(centre)"/>Or <measure type="price">2s. 3d.</measure> per 100.&mdash;<measure type="price">1s. 3d.</measure> for 50. &mdash; and <measure type="price">9d.</measure> for 25.</publisher>
+                    
+                    
+                    <!-- WW Project Brown instructions - hanging indents -->
+                </bibl>
+            </div>
+            
+         <pb n="2"/>
+   <div type="advertisement">
+        <p rend="align(centre)">&rule;<lb/><hi rend="italic">This Day are publi&slong;hed</hi>,</p>
+       <p rend="indent(1)first-indent(-1)">The Shepherd of Sali&slong;bury Plain. Part <num type="roman numeral">II</num>.&mdash;The<lb/>Beggarly Boy, a Parable,&mdash;and Wild
+            Robert,<lb/>a Ballad.</p>
+      <p rend="align(centre)"><hi rend="italic">On the 1&slong;t of July, 1795, will be publi&slong;hed</hi>,</p>
+       <p rend="indent(1)first-indent(-1)">A Sunday Reading.&mdash;The good Mother's Legacy,<lb/>&mdash;and the Newca&slong;tle Collier, a
+            Ballad.</p>
+      <p rend="align(centre)"><hi rend="italic">On the 1&slong;t Augu&slong;t</hi>,</p>
+       <p rend="indent(1)first-indent(-1)">A Sunday Reading.&mdash;The Happy Waterman,&mdash;<lb/>and the Plow&ndash;boy's Dream, a Ballad.</p>
+      <p rend="align(centre)"><hi rend="italic">On the 1&slong;t of September</hi>,</p>
+       <p rend="indent(1)first-indent(-1)">A Sunday Reading.&mdash;The Two Farmers. Part <num type="roman numeral">I</num>.<lb/>&mdash;and Dame Andrews, a Ballad.</p>
+      <p rend="align(centre)"><hi rend="italic">On the 1&slong;t of October</hi>,</p>
+       <p rend="indent(1)first-indent(-1)">A Sunday Reading.&mdash;The Two Farmers. Part <num type="roman numeral">II</num>.<lb/> &mdash;and the Hone&slong;t Miller, a
+            Ballad.</p>
+      <p rend="align(centre)"><hi rend="italic">On the 1&slong;t of November</hi>,</p>
+       <p rend="indent(1)first-indent(-1)">A Sunday Reading.&mdash;The Hi&slong;tory of Sorrowful<lb/>Sam, and a Ballad.</p>
+      <p rend="align(centre)"><hi rend="italic">And other Pieces on a &slong;imilar Plan, on the 1&slong;t of<lb/>every Month</hi>.<lb/>&rule;</p>
+  </div>    
+        </front>
+                
+        <body>
+        <pb n="3"/>
+        <head type="work" rend="align(centre)">THE<lb/>COCK&ndash;FIGHTER.<lb/>A TRUE HISTORY.<lb/>&rule;</head><lb/>
+        <p rend="align(justify)"><c rend="lettrine">A</c>S ROBERT HAZLEM, a very &slong;ober&ndash;<lb type="inWord"/>minded religious York&slong;hire collier,<lb/>was on his
+            way to Leeds one Sunday morn&ndash;<lb type="inWord"/>ing, he met with a brother collier, who
+            for&ndash;<lb type="inWord"/>merly was a companion to him in iniquity,<lb/>Robert, after enquiring of his
+            health, &slong;aid,<lb/>&ldquo; Where are you going?&rdquo; He replied,<lb/>&ldquo; To buy a cock, we
+            are to have a match<lb/>&ldquo; to&ndash;morrow ;&rdquo; this being a favourite di&ndash;<lb type="inWord"/>ver&slong;ion among
+            the colliers. Robert &slong;aid,<lb/>&ldquo; This is a bad errand any day, but much<lb/>&ldquo;
+            wor&slong;e on the &slong;abbath ; I wi&slong;h you would<lb/>&ldquo; go with me to church.&rdquo; But GOD,
+            who<lb/>had a kindne&slong;s towards him, &slong;ecretly in&ndash;<lb type="inWord"/>clined his heart to yield to the
+            &slong;olicitations<lb/>of the good man who prevailed upon him<lb/>to accompany him. The
+            clergyman's text<lb/>was from I&slong;aiah, &ldquo; In that day &slong;hall the<lb/>&ldquo; branch of
+            the Lord be beautiful and<lb/>&ldquo; glorious, and the fruit of the earth &slong;hall<lb/>&ldquo;
+            be excellent and comely for them that<lb/>&ldquo; are e&slong;caped of I&slong;rael.&rdquo;</p>
+                
+        <pb n="4"/>
+            <fw type="pagenumber" rend="align(centre) pre( () post( ))">4</fw><lb/>
+        <p rend="first-indent(2) align(justify)">When the &slong;ermon was over, Robert &slong;aid,<lb/>&ldquo; How do you find your&slong;elf?&rdquo; He
+            replied,<lb/>&ldquo; I do not know how I find my&slong;elf, but I<lb/>&ldquo; feel I am one of the
+            vile&slong;t &slong;inners in the<lb/>&ldquo; world.&rdquo; Robert &slong;aid, &ldquo; I generally<lb/>&ldquo; bring a
+            bit of bread and chee&slong;e in<lb/>&ldquo; my pocket, and if you will &slong;tay, you<lb/>&ldquo;
+            &slong;hall have half of it &slong;or your dinner ;&rdquo; to<lb/>which he did not want much pre&slong;&slong;ing.
+            In<lb/>the afternoon the clergyman addre&slong;&slong;ed<lb/>him&slong;elf to the wor&slong;t of
+            &slong;inners, encouraging<lb/>them <hi rend="italic">to repent, and believe in the Saviour<lb/>of the
+            world</hi>, &amp;c. The poor man wept<lb/>bitterly, but &slong;aid, &ldquo; He had a little gleam<lb/>&ldquo;
+            of hope, that perhaps GOD might have<lb/>&ldquo; mercy upon his &slong;oul.&rdquo; His friend,
+            &slong;ee&ndash;<lb type="inWord"/>ing him &slong;o deeply impre&slong;&slong;ed, &slong;aid, &ldquo; If he<lb/>&ldquo; had a mind, he would go
+            with him again<lb/>&ldquo; to a place of wor&slong;hip ; he had heard the<lb/>&ldquo; clergyman
+            &slong;poken of as being a very fine<lb/>&ldquo; preacher ;&rdquo; accordingly they went.
+            His<lb/>&slong;ubject was on the leper's being healed;<lb/>when he appeared &slong;till more
+            affected. Af&ndash;<lb type="inWord"/>terwards, they went as far as their road lay<lb/>together, about a
+            mile, and then they<lb/>parted.</p>
+        <p rend="first-indent(2) align(justify)">How this poor man pa&slong;&slong;ed the night, we<lb/>have not been able to learn ; but he
+            went<lb/>to his work the next morning. His com&ndash;<lb type="inWord"/>
+        <fw type="catchword" rend="align(right)">panions</fw>
+       
+            <pb n="5"/>
+            <fw type="pagenumber" rend="align(centre) pre( () post( ))">5</fw><lb/>
+            panions acco&slong;ted him by &slong;aying, &ldquo; Now<lb/>&ldquo; where is the cock?&rdquo; He &slong;aid, &ldquo;
+            I<lb/>&ldquo; fought three &slong;uch battles ye&slong;terday as I<lb/>&ldquo; never fought in my life : I
+            have bought<lb/>&ldquo; no cock, nor do I intend ever to fight<lb/>&ldquo; any again.&rdquo; So &slong;ome
+            of them &slong;aid,<lb/>&ldquo; Here's bonny to do ! what is become of<lb/>&ldquo; our <measure type="price">half guineas</measure>
+            ?&rdquo; He an&slong;wered, &ldquo; I<lb/>&ldquo; will freely forfeit mine ;&rdquo; and &slong;aid,<lb/>&ldquo; Come,
+            lads, let us go down into the<lb/>&ldquo; pit.&rdquo; One remarked, &ldquo; <hi rend="italic">Come lads</hi> ! it<lb/>&ldquo;
+            u&slong;ed to be with a great oath, and now it<lb/>&ldquo; is only <hi rend="italic">Come lads</hi> ! I'll lay a wager
+            he<lb/>&ldquo; has been to hear &slong;ome non&slong;en&slong;ical<lb/>&ldquo; preachments.&rdquo; The pit &slong;teward
+            &slong;aid,<lb/>&ldquo; I'll give thee a <measure type="price">guinea</measure>, if thou do&slong;t not<lb/>&ldquo; &slong;wear for a month ;
+            but I'll bet a guinea<lb/>&ldquo; thou wilt &slong;wear before the week is out.&rdquo;<lb/>He was
+            &slong;o much affected with what they<lb/>&slong;aid to him, and a view of his own weak&ndash;<lb type="inWord"/>ne&slong;s,
+            that he kneeled down on the pit hill,<lb/>and prayed earne&slong;tly, &ldquo; That he might
+            ra&ndash;<lb type="inWord"/>&ldquo; ther die then, than be left to bla&slong;pheme<lb/>&ldquo; that holy name he had now
+            &slong;uch a re&ndash;<lb type="inWord"/>&ldquo; verence for, and which he knew, if left<lb/>&ldquo; to him&slong;elf, he &slong;hould
+            bla&slong;pheme before<lb/>&ldquo; night.&rdquo; His reque&slong;t was granted, for<lb/>died in&slong;tantly, as
+            &slong;oon as he had fini&slong;hed<lb/>his prayer!</p>
+        <fw type="catchword" rend="align(right)">Robert</fw>
+                
+                <pb n="6"/>
+            <fw type="pagenumber" rend="align(centre) pre( () post( ))">6</fw><lb/>
+        <p rend="first-indent(2) align(justify)">Robert Hazlem got up the Monday fol&ndash;<lb type="inWord"/>lowing, and appeared as well as u&slong;ual,
+            but<lb/>died after an hour's indi&slong;po&slong;ition.</p>
+        <p rend="first-indent(2) align(justify)">The day before Robert's death, a collier,<lb/>who&slong;e name was Bottomly, went, it is
+            &slong;aid,<lb/>to hear a funeral &slong;ermon, which much af&ndash;<lb type="inWord"/>fected his mind, and made him
+            get up the<lb/>three following mornings, very early, to<lb/>read his bible, &amp;c. His
+            wife, being &slong;ur&ndash;<lb type="inWord"/>prized at it, &slong;aid, &ldquo; What do you get up<lb/>&ldquo; &slong;o &slong;oon for
+            ?&rdquo; He replied, &rdquo;I have a<lb/>&ldquo; long journey to take, and but little
+            time<lb/>&ldquo; to do it in ;&rdquo; which really proved true<lb/>&mdash;for the third morning, he,
+            with &slong;even&ndash;<lb type="inWord"/>teen other men, went to their work in a<lb/>foul mine, where they
+            pre&slong;ently perceived<lb/>the fire damp ; fifteen of them were drawn<lb/>up alive,
+            and this poor man, with the re&ndash;<lb type="inWord"/>maining two, were burnt to death. Two<lb/>of
+            them that were drawn out, died &slong;oon<lb/>after.</p>
+            <fw type="catchword" rend="align(right)"><hi rend="italic">The</hi></fw>
+                
+                <pb n="7"/>
+            <fw type="pagenumber" rend="align(centre) pre( () post( ))">7</fw><lb/>
+        <p rend="align(left)">&orn;<lb/><hi rend="italic">The above Hi&slong;tory was ver&slong;ified in the fol&ndash;<lb type="inWord" rend="indent(2)"/>lowing manner, by that famous Poet Mr.<lb/>Cowper</hi>.</p>
+            <lg rend="align(left)">
+        <l>WHERE Humber pours his rich commercial</l>
+        <l rend="indent(6)">&slong;tream, <hi rend="align(right)">[pheme ;</hi></l>
+        <l>There dwelt a wretch who breath'd but to bla&slong;&ndash;</l>
+        <l>In &slong;ubterraneous caves his life he led.</l>
+        <l>Black as the mine in which he wrought for bread :</l>
+        <l>When on a day, emerging from the deep,</l>
+        <l>A &slong;abbath&ndash;day ! (&slong;uch &slong;abbaths thou&slong;ands keep)</l>
+        <l>The wages of his weekly toil he bore,</l>
+        <l>To buy a cock, who&slong;e blood might win him more ;</l>
+        <l>As if the noble&slong;t of the feather'd kind</l>
+        <l>Were but for battle and for death de&slong;ign'd ;</l>
+        <l>As if the con&slong;ecrated hours were meant</l>
+        <l>For &slong;port to minds on cruelty intent.</l>
+        <l>It chanc'd (&slong;uch chances Providence obey)</l>
+        <l>He met a fellow labourer on the way ;</l>
+        <l>Who&slong;e heart the &slong;ame de&slong;ires had once inflam'd,</l>
+        <l>But now the &slong;avage temper was reclaim'd.</l>
+        <l>Per&slong;ua&slong;ion on his lips had taken place,</l>
+        <l>For all plead well who plead the cau&slong;e of grace)</l>
+        <l>His iron heart with &slong;cripture he a&slong;&slong;ail'd,</l>
+        <l>Woo'd him to hear a &slong;ermon, and prevail'd.</l>
+        <l>His faithful bow the mighty preacher drew,</l>
+        <l>Swift as the light'ning glimp&slong;e his arrows flew.</l>
+        <l>He wept, he trembled, ca&slong;t his eyes around,</l>
+        <l>To find a wor&slong;e than he, but none he &slong;ound.</l>
+        <l>He felt his &slong;ins, and wonder'd he &slong;hould feel !</l>
+        <l>Grace made the wound, and only grace could heal.</l>
+                
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(centre) pre( () post( ))">8</fw><lb/>
+        <l>Now farewel oaths, and bla&slong;phemies, and lies,</l>
+        <l>He quits the &slong;inner's, for the martyr's prize.</l>
+        <l>That holy day was wa&slong;h'd with many a tear,</l>
+        <l>Gilded with hope, yet &slong;haded too by fear.</l>
+        <l>The next, his &slong;warthy brethren of the mine</l>
+        <l>Learnt from his alter'd &slong;peech thechange divine,</l>
+        <l>Laugh'd where they &slong;hould have wept, and &slong;wore<lb  rend="indent(6)"/>the day</l>
+        <l>Was nigh, when he would &slong;wear as fa&slong;t as they.</l>
+        <l>&ldquo; No !&rdquo; &slong;aid the penitent, &ldquo;&slong;uch words &slong;hall &slong;hare</l>
+        <l>&ldquo; This breath no more, henceforth employ'd<lb rend="indent(6)"/>&ldquo; in prayer.</l>
+        <l>&ldquo; Oh ! if Thou &slong;ee&slong;t (thine eye the future &slong;ees)</l>
+        <l>&ldquo; That I &slong;hall yet again bla&slong;pheme like the&slong;e,</l>
+        <l>&ldquo; Now &slong;trike me to the ground on which I kneel,</l>
+        <l>&ldquo; Ere yet this heart relap&slong;es into &slong;teel,</l>
+        <l>&ldquo; Now take me to that heav'n I once defied,</l>
+        <l>&ldquo; Thy pre&slong;ence, thy embrace !&rdquo;&mdash; he &slong;poke, and<lb rend="indent(6)"/>died.</l>
+        
+                <l><hi rend="align (right)">&brace;</hi>Short was the race allotted him to run,</l>
+        <l>Ju&slong;t enter'd on the lift, he gain'd the crown, }</l>
+                <l>His prayer &slong;carce ended, ere his prai&slong;e begun.</l>
+            </lg>
+        <fw type="catchword" rend="align(right)"><hi rend="italic">The</hi></fw>
+                
+                <pb n="9"/>
+            <fw type="pagenumber" rend="align(centre) pre( () post( ))">9</fw><lb/>
+        <p rend="align(left)"><hi rend="italic">The following Account of an affecting<lb rend="indent(2)"/>mournful Death, is related by DR.<lb/>YOUNG,
+            Author of the famous Book called<lb/>NIGHT THOUGHTS, who was pre&slong;ent at<lb/>the
+            melancholy &slong;cene</hi>.</p>
+        <p rend="align(justify)"><c rend="lettrine">T</c>HE &slong;ad evening before the death of<lb/> that young gentleman who&slong;e la&slong;t<lb/>hours
+            occa&slong;ioned the&slong;e thoughts, I was<lb/>with him. No one was there but his
+            phy&ndash;<lb type="inWord"/>&slong;ician, and an intimate whom he loved,<lb/>and whom he had ruined. At
+            my coming<lb/>in, he &slong;aid, &ldquo;You and the phy&slong;ician are<lb/>&ldquo; come too late; I have
+            neither life nor<lb/>&ldquo; hope. You both aim at miracles ; you<lb/>&ldquo; would rai&slong;e
+            the dead.&rdquo; &lsquo; Heaven,&rsquo; I<lb/>&slong;aid, &lsquo; was merciful.&rsquo; &ldquo;Yes, (cried
+            he)<lb/>&ldquo; or I could not have been thus guilty.<lb/>&ldquo; What has not GOD done to &slong;ave
+            and<lb/>&ldquo; ble&slong;s me ? I have been too &slong;trong for<lb/>&ldquo; Omnipotence ; I have plucked
+            down<lb/>&ldquo; ruin.&rdquo; I &slong;aid, &lsquo; The ble&slong;&slong;ed Redeem&ndash;<lb type="inWord"/>&lsquo; er.&rsquo; &mdash; &ldquo;Hold, hold,
+            (&slong;aid he) you<lb/>&ldquo; wound me ! that is the rock on which I<lb/>&ldquo; &slong;plit! I denied his
+            name, I forgot my<lb/>&ldquo; Redeemer !&rdquo;</p>
+        <p rend="first-indent(2) align(justify)"> Refu&slong;ing to hear any thing from me, or<lb/>to take any thing from the phy&slong;ician, he
+            lay<lb/>&slong;ilent, as far as &slong;udden darts of pain would
+        <fw type="catchword" rend="align(right)">permit</fw>
+                
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(centre) pre( () post( ))">10</fw>
+            permit, till the clock &slong;truck ; then with<lb/>vehemence he cried, &ldquo; Oh time, time !
+            it<lb/>&ldquo; is fit thou &slong;houlde&slong;t thus &slong;trike thy mur&ndash;<lb type="inWord"/>&ldquo; derer to the heart.
+            How art thou fled<lb/>&ldquo; for ever ! A month!&mdash; Oh! for one &slong;ingle<lb/>&ldquo; week! I
+            a&slong;k not for years; though an<lb/>&ldquo; age were too little for the much I have<lb/>&ldquo;
+            to do !&rdquo;</p>
+         <p rend="first-indent(2) align(justify)">On my &slong;aying, &lsquo; We could not do too<lb/>&lsquo; much, that heaven was a ble&slong;&slong;ed place
+            ;'<lb/>he exclaimed, &ldquo; So much the wor&slong;e ! 'tis<lb/>&ldquo; lo&slong;t, 'tis lo&slong;t; heaven
+            is lo&slong;t to me !&mdash;<lb/>&ldquo; the &slong;evere&slong;t part of hell.&rdquo; Soon after I<lb/>propo&slong;ed
+            prayer. &ldquo; Pray you that can,&rdquo;<lb/>&slong;aid he, &ldquo; I never prayed, I cannot pray
+            ;<lb/>&ldquo; nor need I. Is not heaven on my &slong;ide<lb/>&ldquo; already ? It clo&slong;es with my
+            con&slong;cience ;<lb/>&ldquo; it's &slong;evere&slong;t &slong;trokes but &slong;econd my own.&rdquo;<lb/>His friend
+            being much touched, even to<lb/>tears, at this, (who could forbear ? I could<lb/>not)
+            with a mo&slong;t affectionate look he &slong;aid,<lb/>&ldquo; Keep tho&slong;e tears &slong;or thy&slong;elf. I
+            have<lb/>&ldquo; undone thee ! Do&slong;t weep for me ? That's<lb/>&ldquo; cruel; what can pain me
+            more ?&rdquo;</p>
+         <p rend="first-indent(2) align(justify)">Here his friend, too much affected,<lb/>would have left him. &ldquo; No, &slong;tay; thou<lb/>&ldquo;
+            &slong;till may'&slong;t hope&mdash; therefore hear me.<lb/>&ldquo; How madly have I talked ! how
+            madly<lb/>&ldquo; ha&slong;t thou li&slong;tened and believed! but
+        <fw type="catchword" rend="align(right)">&ldquo; look</fw>
+        
+                <pb n="11"/>
+             <fw type="pagenumber" rend="align(centre) pre( () post( ))">11</fw><lb/>
+            &ldquo; look on my pre&slong;ent &slong;tate as a full an&slong;wer<lb/>&ldquo; to thee and to my&slong;elf. This body is
+            all<lb/>&ldquo; weakne&slong;s and pain; but my &slong;oul (as if<lb/>&ldquo; &slong;tung up by torment to greater
+            &slong;trength<lb/>&ldquo; and &slong;pirit) is full powerful to rea&slong;on,<lb/>&ldquo; full mighty to
+            &slong;uffer. And that which<lb/>&ldquo; thus triumphs within the jaws of immor&ndash;<lb type="inWord"/>&ldquo; tality,
+            is doubtle&slong;s immortal: yes, I<lb/>&ldquo; feel nothing but the Almighty could in&ndash;<lb type="inWord"/>&ldquo;
+            flict: what I feel. Oh ! let me &slong;peak on&mdash;<lb/>&ldquo; I have not long to &slong;peak. Oh ! my
+            much&ndash;<lb type="inWord"/>&ldquo; injured friend, my &slong;oul as my body lies<lb/>&ldquo; in ruins, in &slong;cattered
+            fragments of bro&ndash;<lb type="inWord"/>&ldquo; ken thoughts. Remor&slong;e for the pa&slong;t<lb/>&ldquo; throws my thoughts
+            on the future;<lb/>&ldquo; wor&slong;e dread for the future &slong;trikes it<lb/>&ldquo; back on the pa&slong;t: I
+            turn and turn, and<lb/>&ldquo; can find no way. Did&slong;t thou feel half<lb/>&ldquo; the mountain
+            that is on me, thou<lb/>&ldquo; would'&slong;t &slong;truggle with the martyr for his<lb/>&ldquo; &slong;take,
+            and ble&slong;s heaven for the flames !<lb/>&ldquo; &mdash;that is not an everla&slong;ting flame !&mdash;
+            that<lb/>&ldquo; is not an unquenchable fire !&rdquo;</p>
+         <p rend="first-indent(2) align(justify)">How were we &slong;truck ! yet &slong;oon after<lb/>&slong;till more ! With what an eye of
+            diffracti&ndash;<lb type="inWord"/>on, what a face of de&slong;pair he cried out,<lb/>&ldquo; My wickedne&slong;s has
+            ruined my friend;<lb/>&ldquo; my extravagance has beggared my boy;<lb/>&ldquo; my unkindne&slong;s has
+            murdered my wife;
+       <fw type="catchword" rend="align(right)">&ldquo; and</fw>
+        
+                <pb n="12"/>
+             <fw type="pagenumber" rend="align(centre) pre( () post( ))">12</fw><lb/>
+            &ldquo; and is there another hell ? Oh ! I have<lb/>&ldquo; bla&slong;phemed ! yet, indulgent LORD
+            GOD,<lb/>&ldquo; hell it&slong;elf is a refuge, if it hide me from<lb/>&ldquo; thy frown !&rdquo; Soon
+            after his under&slong;tand&ndash;<lb type="inWord"/>ing failed, his terrified imagination uttered<lb/>horrors
+            not to be repeated or ever forgot&ndash;<lb type="inWord"/>ten ; and before the &slong;un aro&slong;e, this
+            gay<lb/>wicked young gentleman expired.</p>
+         <p rend="first-indent(2) align(justify)">If this be a man of plea&slong;ure, what is a<lb/>man of pain ? How quick, how total
+            is<lb/>their change ! in what a di&slong;mal gloom they<lb/>&slong;et for ever ! How &slong;hort,
+            alas ! the day of<lb/>their rejoicing ! For a moment they glit&ndash;<lb type="inWord"/>ter, they dazzle :
+            in a moment where are<lb/>they ? Lo&slong;t in endle&slong;s mi&slong;ery, and hopele&slong;s<lb/>everla&slong;ting
+            de&slong;pair.</p>
+        <p rend="align(centre)">F I N I S.</p>
+        </body>
+        <back/>
+</text>
+</TEI>

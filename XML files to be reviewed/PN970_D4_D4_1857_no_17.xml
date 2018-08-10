@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-10-23"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S<lb/>Illustrated Farthing Books.<lb/>&rule;</title><lb/>
+                    <title level="m">THE PASSIONATE<lb/>YOUNG LADY.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>49N</name>
+                            <desc>reading</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <pubPlace>LONDON</pubPlace>:<publisher> DEAN &amp; SON,<lb/>11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)"> 17 </biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <head rend="align(centre)">THE PASSIONATE LITTLE LADY.</head>
+
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>41A3362</name>
+                    <desc>human figure at (open) window, seen from inside</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <!-- 2 consecutive <&ndash;>'s below - for a particularly long dash, change to <&mdash;>? or 2 <&mdash;>'s?-->
+            <p rend="align(justfify)">LITTLE Harriet M&ndash;&ndash; was between six<lb/>and seven
+                years old; she was, in many<lb/>respects, a very good little girl. She
+                was<lb/>obedient, affectionate to her friends, and<lb/>obliging and kind ; but she
+                had a violent<lb/>temper. When anything teased or pro&ndash; <pb n="3" type="inWord"/>
+                <fw type="header" rend="align(centre)">THE PASSIONATE LITTLE LADY.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> voked her, she would get into
+                a transport<lb/>of fury, and tear and strike whatever was<lb/>in her way. One day,
+                as her mamma<lb/>was passing the nursery door, she heard<lb/>a great noise within,
+                and her little Harriet's<lb/>voice speaking in a tone that made her<lb/>sure she was
+                wrong. She opened the door,<lb/>and there saw Harriet, with her little
+                face<lb/>swelled and distorted with rage, her curly<lb/>hair all in disorder, while
+                with her feet<lb/>and hands she was kicking and striking<lb/>with all her force at
+                one of the servants,<lb/>and crying out, &ldquo; I don't love you, Mary<lb/>I <hi
+                    rend="italic">hate</hi> you.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; What is the meaning of all
+                this?&rdquo;<lb/>said Mrs. M. &ldquo; It is just this, ma'am,&rdquo;<lb/>said the
+                servant, &ldquo; that Miss Harriet kept<lb/>throwing water about the room, out of
+                her<lb/>little new jug; when I forbade her, she<lb/>threw the water that was in the
+                jug in my<lb/>face, and when I attempted to take hold of<lb/>her, to carry her to
+                you, as you desired<lb/>when she did wrong, she flew at me and<lb/>struck me, as you
+                have seen.&rdquo; Mrs. M.<lb/>looked very grave, and lifting the sobbing<lb/>Harriet
+                in her arms, carried her into her<lb/>own room.</p>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">THE PASSIONATE</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">She then placed her on her knee, and<lb/>in a
+                solemn voice told her to repeat after<lb/>her the following words: &ldquo; Oh, my
+                    Hea&ndash;<lb type="inWord"/>venly Father, look down with pardoning<lb/>mercy on
+                my little wicked heart; drive<lb/>away this bad spirit; help me with Thy<lb/>good
+                spirit, and pardon me for the evil I<lb/>have done this day, for Christ Jesus'
+                sake,<lb/>Amen.&rdquo; Harriet trembled exceedingly,<lb/>but she repeated the words
+                after her mo&ndash;<lb type="inWord"/>ther ; and as she did so, in her heart
+                she<lb/>wished that God might hear them.</p>
+            <p rend="first-indent(2) align(justify)">Her mamma then asked if her rage<lb/>was gone.
+                Harriet answered in a soft<lb/>voice, &ldquo; Not quite, mamma, but it
+                is<lb/>better.&rdquo; &ldquo;Very well,&rdquo; said her mother,<lb/>&ldquo; I shall
+                now tell you a story that I was<lb/>told when I was young, and I hope it
+                will<lb/>make as deep an impression on your mind,<lb/>my poor child, and
+                <!--4 consecutive <&ndash;>'s below - for a particularly long dash, change to <&mdash;>? or multiple <&mdash;>'s?-->
+                tend effectually to<lb/>make you try yourself to check your<lb/>furious temper. Lord
+                and Lady L&ndash;&ndash;&ndash;&ndash;<lb/>were very rich people. They had
+                only<lb/>one daughter. They were very fond of<lb/>this child, and she was in truth a
+                fine<lb/>little creature, lively and merry, and <pb n="5"/>
+                <fw type="header" rend="align(centre)">LITTLE LADY.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> affectionate; but, like you,
+                Harriet, she<lb/>had a naughty temper ; like you, she got<lb/>into transports of
+                rage when anything<lb/>vexed her, and, like you, would turn at,<lb/>or strike
+                whoever provoked her.</p>
+
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42A361</name>
+                    <desc>rocking the baby</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+
+            <p rend="first-indent(2) align(justify)">&ldquo;When she was just your age,
+                her<lb/>mamma had a little son&mdash;a sweet little<lb/>tender baby. Her papa and
+                mamma<lb/>were very glad&mdash;and little Eveline would<lb/>have been glad too; but
+                the servants very <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">THE PASSIONATE</fw><lb/> wickedly teased and
+                irritated her, by<lb/>telling her that papa and mamma would<lb/>not care for her
+                now; all their love and<lb/>pleasure would be in this brother. Poor<lb/>Eveline
+                burst into a passion of tears, and<lb/>cried bitterly. &lsquo; You are a wicked
+                woman<lb/>to say so; mamma will always love me,<lb/>and I will go this minute and
+                ask her, I<lb/>will;&rsquo; and she darted out of the nursery<lb/>and flew to her
+                mamma's room.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Eveline burst open the door of
+                her<lb/>mother's room, but was instantly caught<lb/>by a strange woman she had never
+                seen<lb/>before. &lsquo; My dear,&rsquo; said this person, &lsquo;you<lb/>cannot be
+                allowed to see your mamma<lb/>just now.&rsquo; She would have said more;<lb/>but
+                Eveline was too angry to listen ; she<lb/>screamed and kicked at the woman,
+                who,<lb/>finding her unreasonable, lifted her by<lb/>force out of the room, carrying
+                her into<lb/>the nursery; and said to the servant<lb/>there, as she was going away,
+                that she<lb/>must prevent miss coming to her mamma's<lb/>room.&rsquo; </p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Eveline heard this, and it added
+                to<lb/>her rage: and then the wicked servant <pb n="7"/>
+                <fw type="header" rend="align(centre)">LITTLE LADY.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> burst out laughing, and said,
+                &lsquo; I told you<lb/>that, miss ; you see mamma does not love<lb/>you
+                now!&rsquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; The poor child became mad with<lb/>fury
+                ; she darted at the cradle where lay<lb/>the little innocent new&ndash;born baby ;
+                and<lb/>oh, Harriet, Harriet! like as you did to<lb/>Mary just now, she struck it
+                with all her<lb/>force, struck it on the little tender head&mdash;<lb/>it gave one
+                feeble struggling cry, and<lb/>breathed no more!&rdquo; &ldquo; Why,
+                mamma,<lb/>mamma,&rdquo; cried Harriet, bursting into tears,<lb/>&ldquo; Why did it
+                breathe no more ?&rdquo; &ldquo;It was<lb/>dead&mdash;killed by its own
+                sister!&rdquo; &ldquo;Oh,<lb/>mamma, mamma! what a dreadful, what <lb/>a wicked
+                little girl! Oh, mamma! I am<lb/>not so wicked as her; I never killed a<lb/>little
+                baby,&rdquo; sobbed Harriet, as she hid her<lb/>face in her mother's bosom, and
+                clung<lb/>to her neck. &ldquo; My dear child,&rdquo; said Mrs. M.<lb/>solemnly,
+                &ldquo;you are more wicked; and<lb/>but for the goodness of God to you,
+                might<lb/>have been at this moment as miserable.<lb/>Were you not in as great a rage
+                when I<lb/>came to the nursery as she was ? Were<lb/>you not striking Mary with all
+                your force <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">THE PASSIONATE LITTLE LADY.</fw><lb/>
+                &mdash;not one blow, but repeated blows ? It<lb/>was only because she was bigger
+                and<lb/>stronger than yourself that you did not<lb/>actually do so.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; And, mamma, what did Eveline's<lb/>poor
+                mamma say to her for killing the<lb/>baby?&rdquo; &ldquo;Eveline never again saw
+                her<lb/>dear mamma; she died that night with<lb/>grief and horror on hearing that
+                her sweet<lb/>and lovely infant was murdered.&rdquo; &ldquo; Oh,<lb/>dear, oh, dear
+                mamma&mdash;was Eveline<lb/>sorry ?&rdquo; &ldquo;My love, how can you ask
+                such<lb/>a question ?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Indeed, Harriet, it is not easy
+                to<lb/>know or tell how she could be sorry<lb/>enough?&rsquo; All that I know is,
+                that she<lb/>lived to be a big lady&mdash;she lived to be<lb/>herself a
+                mother&mdash;and <hi rend="italic">in her whole life<lb/>no one ever saw her
+                    smile.&rdquo;</hi> &ldquo; And, mam&ndash;<lb type="inWord"/>ma, was it quite a
+                true story ? it is so<lb/>dreadful, mamma.&rdquo; &ldquo; Yes, my child, it
+                is<lb/>quite a true story ; that unfortunate child<lb/>was the great grandmother of
+                an earl now<lb/>living.&rdquo;</p>
+        </body>
+        <back/>
+    </text>
+</TEI>

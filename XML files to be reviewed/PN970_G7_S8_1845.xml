@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY emdash "&#8212;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY eacute "&#x233;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+<!ENTITY ctlig "ct-ligature">
+<!ENTITY brace "&#x7d;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+<!ENTITY tcdquo   "&#11826;"> <!-- turned comma -->
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+]>
+
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Erin Bienert</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Instruction">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <pb n="2"/>
+            <div type="frontispiece" rend="landscape">
+                <figure>
+                    <ic:iconClass>
+                        <name>48C52</name>
+                        <desc>drawing</desc>
+                    </ic:iconClass>
+                    <head>&lsquo;Well done, my boy, that is a very creditable drawing.&rsquo; Page
+                        34</head>
+                </figure>
+            </div>
+            <pb n="3"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart>THE STORY<lb/>OF<lb/>PETER LAWLEY.</titlePart>
+                </docTitle>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>47B1113</name>
+                        <desc>lock-smith</desc>
+                    </ic:iconClass>
+                    <head>Lockmaking. Page 29.</head>
+                </figure>
+                <lb/>
+                <docImprint> &swell;<lb/><pubPlace>LONDON</pubPlace>:<lb/><publisher>GROOMBRIDGE AND
+                        SONS, PATERNOSTER ROW</publisher>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="4"/>
+            <div type="section">
+                <head type="work" rend="align(centre)">The Story of Peter Lawley.</head>
+                <lb/>
+                <head type="main" rend="align(centre)">CHAPTER <num type="roman numeral"
+                    >I</num>.</head>
+                <lb/>
+                <p rend="align(justify)">ABOUT twenty&ndash;five years ago, a stranger
+                    going<lb/>through a street in the outskirts of the large<lb/>and busy town of
+                    Birmingham, would have<lb/>heard the noise of hammers in almost every<lb/>house.
+                    The whole town is alive with the roar<lb/>of furnaces and the clatter of
+                    machinery, but<lb/>in this street, which was very black and dirty,<lb/>it was
+                    nothing but thump and smite from<lb/>morning till night, as the nailmakers, or
+                        nail&ndash;<lb type="inWord"/>ers, as they are called, plied their trade.
+                    The<lb/>front door of nearly every house stood open,<lb/>and it was easy to be
+                    seen that not much pains<lb/>was taken to keep the interior clean and
+                        com&ndash;<lb type="inWord"/>fortable; women were seated on the step,
+                        gos&ndash;<lb type="inWord"/>siping with one another about bad times
+                    and<lb/>family affairs, while their children played in<lb/>the muddy gutters
+                    that ran down each side of<lb/>the street. Looking through to the low
+                        work&ndash;<lb type="inWord"/>shop at the back of one of these houses, a
+                        lit&ndash;<lb type="inWord"/>tle boy might have been seen, standing on
+                    an<lb/>old iron pot turned upside down to raise him<lb/>high enough to reach the
+                    anvil, helping his<lb/>father to make nails. The rods of iron were<lb/>made red
+                    hot in the fire, and then the two,<lb/>father and son, worked away upon their
+                    anvils, <pb n="5"/>
+                    <fw type="header" rend="align(centre)">THE STORY OF PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">5</fw>
+                    <lb/> striking off nails as fast as their hammers<lb/>could go. Peter Lawley,
+                    that was the little<lb/>boy's name, did all that he could to help to earn<lb/>a
+                    few shillings every week; but he was only<lb/>eight years old, and although from
+                    practice<lb/>his arms were pretty strong, yet after hammer&ndash;<lb
+                        type="inWord"/>ing for ten or twelve hours a day, he was often<lb/>ready to
+                    drop with fatigue. His father was<lb/>not an unkind man, but he was poor,
+                    and<lb/>thought it better to make Peter work, than to<lb/>send him to school.
+                    Sometimes when nails<lb/>were wanted in a great hurry, the little
+                    fellow<lb/>could not get a minute for play. The father<lb/>did not know that he
+                    was doing wrong by<lb/>keeping his son at work for so many hours<lb/>shut up in
+                    a smoky forge, nor was he aware<lb/>that children, to be healthy and strong,
+                    should<lb/>be let to run about, and laugh and shout in<lb/>the open fields and
+                    bright sunshine.</p>
+                <p rend="align(justify) first-indent(3)">Lawley and his wife had been married
+                    about<lb/>twelve years; they had four children, two<lb/>girls, one older and one
+                    younger than Peter,<lb/>and a poor little boy under three years of age,<lb/>who
+                    was a helpless cripple, owing to a fall<lb/>from his mother's arms when he was
+                    quite an<lb/>infant. The girls played about barefooted in<lb/>the street, and
+                    paid no attention to what was<lb/>said by their mother, and the little lame
+                    boy<lb/>sat fretting at the door or by the side of the<lb/>fire. Peter seemed to
+                    be pretty much like his<lb/>companions, except that he was rather
+                    more<lb/>willing to stick to work than nailers' boys in<lb/>general, and was
+                    very kind to his helpless bro&ndash;<lb type="inWord"/>ther, and, did what he
+                    could to amuse him.<lb/>In other respects he was as ignorant and dirty <pb n="6"/>
+                    <fw type="pagenumber">6</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>as any other children in the neighbourhood.<lb/>But Peter used to think: at
+                    work, when he<lb/>could get a chance to speak, he was always<lb/>asking
+                    questions of his father about things<lb/>that he had seen or heard of. The
+                    parent<lb/>answered as far as his knowledge went, but he<lb/>had never learned
+                    to read, which prevented<lb/>him from talking to his son of many things<lb/>that
+                    would have been useful. Besides he was<lb/>always in a hurry to make as many
+                    nails as<lb/>possible, and could not spare time to answer<lb/>Peter's questions;
+                    he did not see much good in<lb/>being over curious, he could not earn
+                    money<lb/>enough for his family's wants; and to strug&ndash;<lb type="inWord"
+                    />gling people life often seems nothing but a<lb/>gloomy and dismal object.</p>
+                <p rend="align(justify) first-indent(3)">Peter's father and mother had fallen
+                    into<lb/>careless and disorderly habits; the few things<lb/>they had in the
+                    house were seldom clean or in<lb/>their right places. If a dish or saucepan
+                    were<lb/>wanted, it was always found dirty, and had to<lb/>be cleaned before it
+                    could be used. The floor<lb/>was rarely swept, and the fireplace was
+                    always<lb/>choked with an unsightly heap of ashes.<lb/>People sometimes think
+                    that it is less trou&ndash;<lb type="inWord"/>ble to let things take their
+                    chance, than to<lb/>spend a little time in setting them to rights.<lb/>But they
+                    are under a great mistake: where<lb/>dirt is not removed, and weekly earnings
+                    are<lb/>not properly laid out, there must be hardships<lb/>and frequently
+                    sickness in the family. The<lb/>elder Lawley was not worse than others of
+                    his<lb/>class; he did not know that it was his duty to<lb/>send his children to
+                    school, and believed he<lb/>was doing no more than fair when he went <pb n="7"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">7</fw>
+                    <lb/> every evening to the public house to drink,<lb/>and sing songs with other
+                    nailers of the neigh&ndash;<lb type="inWord"/>bourhood.</p>
+                <p rend="align(justify) first-indent(3)">Peter, as we have said, was inclined to
+                    be<lb/>thoughtful. Not far from where he lived<lb/>there was a large school, and
+                    Peter had often<lb/>peeped in at the door as he passed, wondering<lb/>what so
+                    many boys could find to do sitting<lb/>for two or three hours upon long forms,
+                    and<lb/>what they wanted with books and slates.<lb/>Among the scholars were two
+                    or three boys<lb/>and girls with whom he was acquainted, and<lb/>he could not
+                    help noticing that they were<lb/>always cleanly dressed, their hair was
+                    combed,<lb/>and hands and faces washed every morning<lb/>before they went to
+                    school, and they were not<lb/>rude and quarrelsome in the streets, as
+                    many<lb/>are who had not been taught better. One day<lb/>when work was rather
+                    slack, Peter got leave<lb/>to go home with these children, and then he<lb/>was
+                    astonished to see how clean and tidy the<lb/>house was, so different from his
+                    own home.<lb/>Every thing was clean and in its place; the<lb/>floor was swept,
+                    the fire&ndash;place was bright, and<lb/>there was no heap of ashes under the
+                    grate.<lb/>A few books lay on the mantel&ndash;piece, and the<lb/>eldest boy and
+                    girl used to read aloud when<lb/>their father came in from his work, and
+                    their<lb/>mother was busy with her sewing. Peter lis&ndash;<lb type="inWord"
+                    />tened to the reading with great pleasure, he<lb/>liked to look at the pictures
+                    in the books, and<lb/>was never tired of asking questions about<lb/>them. He
+                    began to think it would be a very<lb/>nice thing to know how to read, and
+                    talk<lb/>about lessons and pictures to his little lame<lb/>brother and his
+                    sisters.</p>
+                <pb n="8"/>
+                <fw type="pagenumber">8</fw>
+                <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                <lb/>
+
+                <p rend="align(justify) first-indent(3)">Not long afterwards, Peter was helping
+                    his<lb/>father as usual, when all at once he let his<lb/>hammer rest upon the
+                    anvil, and looking up<lb/>into his father's face, said, &lsquo;Father, I
+                    should<lb/>like to go to school.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;What do you want to go there
+                    for?&rsquo; asked<lb/>the parent in reply.</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;Oh, father,&rsquo; answered Peter
+                    timidly, &lsquo;Mary<lb/>and Billy Jackson go; and they have got<lb/>books, and
+                    they know all about a great many<lb/>things. Do let me go, father.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;What's put that into the boy's
+                    head!&rsquo;<lb/>said the elder Lawley; &lsquo;but it's no bad thing<lb/>to be
+                    able to read a bit. I'll talk to your<lb/>mother about it.&rsquo; At this Peter
+                    plied his<lb/>hammer harder than ever, and went to sleep<lb/>that night
+                    bewildered with hopes and fears<lb/>about what his parents would decide.</p>
+                <p rend="align(justify) first-indent(3)">When the children were all in bed, Mr.
+                    and<lb/>Mrs. Lawley talked the matter over; they<lb/>were both willing that
+                    Peter should get a little<lb/>learning, but did not know how to spare
+                    him<lb/>from the anvil, where he helped to earn the<lb/>weekly wages, and they
+                    could not afford to<lb/>give up any portion of the sum which never<lb/>seemed
+                    enough to last from one Saturday to<lb/>another. At last it was settled that the
+                    eldest<lb/>girl should help her father at the forge, and<lb/>that the next
+                    Monday morning Peter should<lb/>go to school.</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <pb n="9"/>
+            <div type="section">
+                <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw>
+                <lb/>
+                <head type="main" rend="align(centre)">CHAPTER <num type="roman numeral"
+                    >II</num>.</head>
+                <lb/>
+
+                <p rend="align(justify)">BEFORE her marriage Mrs. Lawley had been
+                    a<lb/>neat&ndash;handed, active servant&ndash;maid at a farm&ndash;<lb
+                        type="inWord"/>house, but living for some, years in a dirty and<lb/>smoky
+                    street, and the hardships she was obli&ndash;<lb type="inWord"/>ged to bear when
+                    her husband was out of work,<lb/>had broken her temper and made her
+                    careless<lb/>and fretful. Where everything was so dirty<lb/>out of doors, it
+                    seemed to be of no use to try<lb/>to keep the indoors clean. The windows
+                    at<lb/>one time used to look clear and bright, with a<lb/>clean blind stretched
+                    across the inside; and<lb/>the floor was clean swept and the house put
+                    to<lb/>rights once or twice every day; but now you<lb/>could not see through the
+                    windows for smoke<lb/>and dirt, many of the panes were broken and<lb/>stopped
+                    with paper or old rags, giving the out&ndash;<lb type="inWord"/>side of the
+                    house a most wretched appearance,<lb/>and the inside, as we said before, was
+                    left to<lb/>go dirty and untidy from one week's end to<lb/>another. Perhaps if
+                    any kind person had<lb/>called on Mrs. Lawley in a friendly way,
+                    and<lb/>reminded her of the pleasant days she used to<lb/>have when living at
+                    the farm&ndash;house, where all<lb/>was so clean, with a place for every thing,
+                    and<lb/>every thing in its place, she would have felt<lb/>how much easier it is
+                    to be clean than dirty,<lb/>and have understood, that even in the
+                    worst<lb/>circumstances, if people have only the will to<lb/>do right, they are
+                    pretty nearly sure to find<lb/>out a way. The cottages of many of
+                    the<lb/>Staffordshire coal&ndash;miners shew that it is possi&ndash;<pb n="10"
+                        type="inWord"/>
+                    <fw type="pagenumber">10</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OP</fw>
+                    <lb/>ble to work at a dirty business and yet keep<lb/>the dwelling in a state of
+                    cleanliness.</p>
+                <p rend="align(justify) first-indent(3)">As the time came on for Peter to go
+                    to<lb/>school, his mother began to think she should<lb/>not like to see him go
+                    out with ragged clothes,<lb/>and black face and hands, as when he worked<lb/>at
+                    the forge. She, therefore, set to work and<lb/>patched and darned his jacket,
+                    and contrived<lb/>to buy him a pair of fustian trowsers
+                    and<lb/>second&ndash;hand shoes, before the end of the week.<lb/>Monday morning
+                    came ; Peter was up early,<lb/>and when he saw his sister trying to work
+                    with<lb/>the hammer he had used so long, he half wish&ndash;<lb type="inWord"
+                    />ed that&ndash; he were not going to school; but then<lb/>again the thought
+                    came into his mind, that he<lb/>would not be long in learning to read,
+                    when<lb/>he might come back and take his old place at<lb/>the anvil. His mother
+                    washed his face and<lb/>combed his hair, and could not help thinking<lb/>how
+                    much better her litte boy looked with<lb/>clothes and skin clean than ragged and
+                    dirty.<lb/>Any one would have thought that Peter was<lb/>going away on a long
+                    journey, for his mother<lb/>kissed him, his two sisters ran up and
+                    kissed<lb/>him in turn, and then, after saying good&ndash;bye<lb/>to his father
+                    and stooping to kiss his little<lb/>lame brother, Peter set off for the
+                    school.</p>
+                <p rend="align(justify) first-indent(3)">At first he felt a little afraid when he
+                    found<lb/>himself in the large room among nearly two<lb/>hundred boys, and he
+                    hardly knew what to do<lb/>for some minutes, until the master caught
+                    sight<lb/>of him, and called him up to the desk. After<lb/>taking down Peter's
+                    name, and asking him the<lb/>usual questions about his parents and where<lb/>he
+                    lived, he showed him to his place in the <pb n="11"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">11</fw>
+                    <lb/>lowest class, where the little boys were learn&ndash;<lb type="inWord"/>ing
+                    their A, B, C, under one of the older boys<lb/>as teacher. Every thing looked
+                    strange to<lb/>Peter; he could not well make out what was<lb/>going on, so many
+                    voices were saying lessons<lb/>at the same time ; and when he saw what
+                    hard<lb/>letters he had to learn, he almost wished him&ndash;<lb type="inWord"
+                    />self back again in the forge. Presently, how&ndash;<lb type="inWord"/>ever, he
+                    heard boys younger than himself go<lb/>through their lessons without any
+                    trouble,<lb/>which made him think he should soon be able<lb/>to do as well, and
+                    when it came to his turn,<lb/>he said the letters, one after the other, as
+                    they<lb/>were called out by the teacher, without making<lb/>any mistakes. When
+                    he went home, he had<lb/>many things to talk about, and he tried to re&ndash;<lb
+                        type="inWord"/>collect the names of the letters in his lesson,<lb/>and say
+                    them over to his little brother who sat<lb/>in his usual place on the floor.
+                    This went on<lb/>for some time, and before many weeks Peter<lb/>had got over the
+                    first difficulties,, and knew<lb/>the names of all the letters. But this was
+                    not<lb/>the best of it; his mother kept up the habit<lb/>of sending him to
+                    school, with hands and face<lb/>clean, and his clothes as tidy as possible.
+                    A<lb/>good habit in one thing often leads to a good<lb/>habit in another, and
+                    after a time the Lawleys'<lb/>house began to look cleaner ; the ashes
+                    were<lb/>not let to lie for a week under the grate, and<lb/>the chairs and
+                    stools, and pots and pans were<lb/>sometimes set away in their right places.
+                    The<lb/>clothes of the two girls and the little lame<lb/>boy did not look so
+                    ragged as formerly, and<lb/>if they were patched, they were at least
+                    cleaner<lb/>than they used to be. At times too the win&ndash;<pb n="12"
+                        type="inWord"/>
+                    <fw type="pagenumber">12</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>dows were washed, and although Mrs. Lawley<lb/>would now and then still
+                    waste her time sit&ndash;<lb type="inWord"/>ting on the door step or gossiping
+                    with the<lb/>neighbours, yet there was a general improve&ndash;<lb type="inWord"
+                    />ment in the whole family.</p>
+                <p rend="align(justify) first-indent(3)">We need not follow Peter through all his
+                    little<lb/>trials and troubles in beginning to read, write,<lb/>and spell. He
+                    found out what every one is<lb/>sure to find out if he makes the attempt,
+                    that<lb/>things are not half so difficult as we think, if<lb/>we only keep a
+                    good heart and make up our<lb/>minds to master them. He was not a
+                    slow<lb/>learner, and was soon able to understand most<lb/>things that were said
+                    to him. He was also<lb/>careful to make the most of his time, and
+                    in&ndash;<lb/>stead of playing about the streets, contrived<lb/>to be one of the
+                    first at the school, both morn&ndash;<lb type="inWord"/>ing and afternoon. It is
+                    not to be supposed<lb/>that Peter became a very good boy all at
+                    once,<lb/>sometimes he neglected to keep himself clean,<lb/>or forgot to tell
+                    the truth; but he was willing<lb/>to be taught, and by making the most of
+                    his<lb/>time got on quite as fast as many boys who<lb/>were older, and could
+                    learn quicker, but did<lb/>not think so much of the real use of know&ndash;<lb
+                        type="inWord"/>ledge. By the end of a year, Peter was up in<lb/>the same
+                    class with Billy Jackson, whose read&ndash;<lb type="inWord"/>ing had first set
+                    him to think of going to<lb/>school, and he could read and write as well
+                    as<lb/>any of the boys around him.</p>
+                <p rend="align(justify) first-indent(3)">From the day he first went to school,
+                    Peter<lb/>Had never failed to do what he could towards<lb/>teaching his little
+                    lame brother David, and as<lb/>soon as he could read and write pretty
+                    well,<lb/>he wished for a slate and books, to be able to <pb n="13"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">13</fw>
+                    <lb/>give his brother better lessons in the evenings.<lb/>But Peter's father
+                    could hardly earn enough<lb/>to buy food and clothing, and pay rent, and<lb/>the
+                    boy was much puzzled to know how to get<lb/>a little money for what he wanted.
+                    At last a<lb/>thought struck him: he had often felt sorry<lb/>at seeing his
+                    sister in the forge, and made up<lb/>his mind to go to work again at
+                    nail&ndash;making<lb/>every evening, by which his sister would have<lb/>a few
+                    hours' rest, and he would perhaps be<lb/>able to get together a few pence to buy
+                    the<lb/>books and slate. His father agreed to let him<lb/>have part of what he
+                    could earn in this way,<lb/>and Peter went to work with right good will,<lb/>and
+                    made nails faster than ever. In a few<lb/>weeks, he had saved enough to buy a
+                    reading<lb/>book, and the first thing he did on going home<lb/>from school was
+                    to give his brother a lesson.<lb/>Little David, who could not run about
+                    and<lb/>amuse himself as other children, seemed very<lb/>glad to have something
+                    to do, and very soon<lb/>knew all his letters, and began to read
+                    short<lb/>words. Peter felt the pleasure of doing good,<lb/>and was so delighted
+                    with his brother's read&ndash;<lb type="inWord"/>ing, that he never repented the
+                    trouble he had<lb/>taken in teaching him. He could, however,<lb/>only spare an
+                    hour every evening for his sup&ndash;<lb type="inWord"/>per and the lesson,
+                    after which he went to the<lb/>forge and made nails until it was time to
+                    go<lb/>to bed. The next thing he bought was a slate<lb/>and pencil; this was a
+                    new pleasure for little<lb/>David, who tried to make strokes, and
+                    amuse<lb/>himself all day with the slate while Peter was<lb/>at school.</p>
+                <p rend="align(justify) first-indent(3)">As Peter grew older he began to think of
+                        <pb n="14"/>
+                    <fw type="pagenumber">14</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>plans for making the house more comfortable.<lb/>If ever he went home with
+                    Billy Jackson in<lb/>the evening, he was sure to see the father and<lb/>mother
+                    and all the family sitting down after<lb/>work was over in a clean swept room,
+                    while<lb/>Billy, or one of his sisters, read aloud from<lb/>some book, Peter
+                    thought it would be a very<lb/>good thing if he could get his father
+                    and<lb/>mother to do the same, and he detremined to<lb/>talk to them about it.
+                    For some time, Law&ndash;<lb type="inWord"/>ley would not listen to anything his
+                    son had to<lb/>say on the subject; if ever he had a spare<lb/>hour he went out
+                    to a public&ndash;house, where he<lb/>would sometimes spend half a week's
+                    earnings<lb/>in one night, and this wastefulness caused so<lb/>much trouble and
+                    suffering, that his wife often<lb/>thought there was no use in trying to keep
+                    a<lb/>tidy house. She listened, however, to Peter,<lb/>and one evening the room
+                    was nicely swept,<lb/>there was a bright fire burning in the clean<lb/>grate,
+                    and a chair standing in the warmest<lb/>corner. About an hour before the usual
+                    time<lb/>of leaving off, Peter dropped his hammer, and<lb/>begged his father to
+                    go indoors. Lawley was<lb/>in a pretty good humour that evening, he<lb/>stood
+                    thinking for a minute or two, and then<lb/>followed his son, who hurried to
+                    clean himself<lb/>before sitting down. The father seemed<lb/>pleased at finding
+                    the room so cheerful&ndash;look&ndash;<lb type="inWord"/>ing, his wife was
+                    darning a stocking, the<lb/>youngest girl and little David had gone to
+                    bed,<lb/>and he sat down without speaking in the<lb/>empty chair by the fire.
+                    Peter took his seat<lb/>on a low stool in front of his mother, so as to<lb/>be
+                    near the candle on the table; he waited for <pb n="15"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">15</fw>
+                    <lb/>a few minutes, looking as though he had some&ndash;<lb type="inWord"/>thing
+                    very important to talk about, and then,<lb/>bringing his hand from behind him,
+                    held up a<lb/>small printed sheet:&mdash;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;What newspaper's that, Peter?&rsquo;
+                    asked his<lb/>father.</p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>42A571</name>
+                        <desc>child running errands</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&lsquo;'T isn't a newspaper father,&rsquo;
+                    answered the<lb/>boy, &lsquo;it's the first number of the Penny Mag&ndash;<lb
+                        type="inWord"/>azine; I saw it in a shop as I was coming<lb/>home from
+                    school; I had a penny in my<lb/>pocket, and bought it to see what it's
+                    all<lb/>about.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;Oh! Peter,&rsquo; said his eldest
+                    sister, &lsquo;there's<lb/>some pictures: do tell us what they be
+                    for.&rsquo;</p>
+                <pb n="16"/>
+                <fw type="pagenumber">16</fw>
+                <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&lsquo;Shall I read it, father,&rsquo;
+                    inquired Peter,<lb/>looking from one parent to the other.</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;Ay, boy, read a bit if you
+                    will,&rsquo; was the<lb/>answer.</p>
+                <p rend="align(justify) first-indent(3)">Peter did not wait to be told twice; he
+                        be&ndash;<lb type="inWord"/>gan, and read the parts of the magazine
+                    that<lb/>he thought would most please his father,<lb/>mother, and sister. There
+                    was something<lb/>about books and buildings, foreign countries<lb/>and animals,
+                    useful discoveries, and good men.<lb/>Every body seemed pleased to hear him
+                    read,<lb/>and after he had kept on about half&ndash;an&ndash;hour<lb/>his father
+                    said all at once:&mdash;</p>
+                <p rend="align(justify) first-indent(3)">'That's a niceish sort of a book,
+                    Peter:<lb/>I'll stop at home to&ndash;night, and hear a little<lb/>more of
+                    it.</p>
+                <lb/>
+            </div>
+            <div type="section">
+                <head type="main" rend="align(centre)">&rule;<lb/>CHAPTER <num type="roman numeral"
+                        >III</num>.</head>
+                <lb/>
+                <p rend="align(justify)">A look of pleasure passed over Mrs. Lawley's<lb/>face, as
+                    she heard her husband declare his in&ndash;<lb type="inWord"/>tention of staying
+                    at home, instead of going<lb/>out, as he was accustomed, to the
+                    public&ndash;<lb/>house, and Peter thought he had never seen<lb/>her look so
+                    happy; and he felt happy him&ndash;<lb type="inWord"/>self at being able to
+                    amuse his father. He<lb/>sat down again to the magazine, and read<lb/>until
+                    bed&ndash;time; and when he had put away<lb/>his book, and his mother kissed him
+                    before<lb/>going up stairs, Peter believed himself to be<lb/>the happiest boy in
+                    the world, and felt<lb/>glad and thankful that he had learned to read.<lb/>He
+                    lay awake for some time, thinking about <pb n="17"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">17</fw>
+                    <lb/>his new magazine: what a nice thing it was<lb/>to have books to read; how
+                    they served to fill<lb/>up the time usefully, especially on dark and<lb/>wet
+                    evenings, when there was no going out of<lb/>doors; by and by too, little David
+                    would be<lb/>able to take his turn at the book, and with this<lb/>thought in his
+                    head Peter fell asleep.</p>
+                <p rend="align(justify) first-indent(3)">After this the boy paid more attention
+                    than<lb/>ever to his school lessons; the pleasure he had<lb/>felt in his
+                    evening's reading encouraged him to<lb/>go on, and it seemed to him that he now
+                        posses&ndash;<lb type="inWord"/>sed a new power of being useful and
+                    making<lb/>others happy. The cheap magazine was pub&ndash;<lb type="inWord"
+                    />lished every Saturday, and Peter hoped to be<lb/>able to read something new
+                    week after week,<lb/>and have as comfortable evenings as he had<lb/>witnessed at
+                    the Jacksons'. But like many<lb/>others, Peter's hopes were
+                    disappointed:<lb/>things do not always turn out as we wish at<lb/>the first
+                    trial; and a great many evenings pas&ndash;<lb type="inWord"/>sed by before his
+                    father could be again per&ndash;<lb type="inWord"/>suaded to stay at home and
+                    listen to the read&ndash;<lb type="inWord"/>ing. There was, besides, another
+                    trouble:<lb/>Peter had heard Billy Jackson talk of the<lb/>Sunday&ndash;school,
+                    and the pleasure of learning<lb/>and singing hymns, and the books lent to
+                    the<lb/>scholars to take home to read, and he wished<lb/>very much to go to the
+                    school. But his father<lb/>was used to work on Sundays, as well as on<lb/>any
+                    other day; he made Peter work too, and<lb/>said the boy had schooling enough all
+                    the week,<lb/>without losing Sunday into the bargain. The<lb/>Sabbath, which
+                    ought to be a day of rest for<lb/>all, was no day of rest for the Lawleys.
+                    Peter<lb/>tried to keep up a good heart, hoping that a <pb n="18"/>
+                    <fw type="pagenumber">18</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>change for the better would soon come; and<lb/>one evening when there was
+                    no work to be<lb/>done, he went to talk about the Sunday&ndash;school<lb/>to
+                    Mrs. Jackson.</p>
+                <p rend="align(justify) first-indent(3)">A few days afterwards, Mrs. Lawley was
+                    a<lb/>good deal surprised at seeing some one walk<lb/>into the house: it was
+                    Mrs. Jackson, who said<lb/>that although it was her first call she did
+                    not<lb/>feel like a stranger, from her acquaintance with<lb/>Peter. When Mrs.
+                    Lawley saw how neatly<lb/>and comfortably her visitor was dressed, she<lb/>felt
+                    a little ashamed at not being dressed in<lb/>the same manner. Mrs. Jackson sat
+                    down,<lb/>and began to speak of Peter's perseverance,<lb/>and the good use he
+                    was making of his school&ndash;<lb type="inWord"/>ing, in a way that made Mrs.
+                    Lawley feel proud<lb/>of her boy. She then went on to talk of
+                    the<lb/>Sunday&ndash;school, and the good her children got<lb/>there, and the
+                    pleasure there was at hearing<lb/>them sing their hymns at home in the
+                    evenings.<lb/>Mrs. Jackson was not a learned woman, but<lb/>she made the most of
+                    her good sense, and<lb/>spoke in such a plain and friendly manner<lb/>about the
+                    Sunday&ndash;school, and a place of wor&ndash;<lb type="inWord"/>ship, that Mrs.
+                    Lawley felt more than half<lb/>inclined to agree with her. Presently,
+                        how&ndash;<lb type="inWord"/>ever, she asked&mdash;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;But what's the use of going to
+                    church or<lb/>chapel?&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;Well, I can't tell you all the good
+                    at once,&rsquo;<lb/>answered Mrs. Jackson; &lsquo;but we feel all the<lb/>better
+                    and happier for it; and, as my husband<lb/>says, no harm can come of being
+                    reminded of<lb/>our duties and having good thoughts put into<lb/>our minds once
+                    a week.</p>
+                <pb n="19"/>
+                <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                <fw type="pagenumber" rend="align(right)">19</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&lsquo;True enough,&rsquo; said Mrs.
+                    Lawley; &lsquo;but<lb/>what's the likes of us to do, who havn't got<lb/>decent
+                    clothes?&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">Some further conversation took place
+                        be&ndash;<lb type="inWord"/>tween the two; and when half&ndash;an&ndash;hour
+                        after&ndash;<lb type="inWord"/>wards Mrs. Jackson rose to go, Mrs.
+                    Lawley<lb/>felt that something might be done if set about<lb/>in the right way.
+                    She talked the matter over<lb/>with her husband, and he at last consented
+                    to<lb/>let Peter go to the Sunday&ndash;school, though, as<lb/>he said, he did
+                    not see how they were to<lb/>live if nobody worked. This permission was<lb/>a
+                    new pleasure for Peter, who went to the<lb/>school on the very next Sunday. He
+                    wondered<lb/>at the patience of the teachers, and heard of<lb/>things which he
+                    had not known before; and<lb/>when the children stood up to sing, he
+                    thought<lb/>he had never heard anything so delightful.<lb/>After two or three
+                    Sundays, he found out that<lb/>the teachers would be very glad to have
+                    his<lb/>sisters and little lame brother at the school.<lb/>He ran home with a
+                    full heart to tell his<lb/>mother, and ask her consent. This time his<lb/>father
+                    made no objection; the two girls were<lb/>willing to go; Peter said he would
+                    carry little<lb/>David on his back, and in this way the whole<lb/>family went to
+                    the Sunday&ndash;school, as soon as<lb/>their mother could prepare some tidy
+                    clothes.</p>
+            </div>
+            <div type="section">
+                <head rend="align(centre)">&rule;<lb/>CHAPTER <num type="roman numeral"
+                    >IV</num>.</head>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&lsquo;UPON my word wife, you do look quite
+                    young<lb/>again; it quite reminds me of old times!<lb/>Who could have thought
+                    it?&rsquo;</p>
+                <pb n="20"/>
+                <fw type="pagenumber">20</fw>
+                <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&lsquo;A contented mind works
+                    wonders,&rsquo; was<lb/>the answer, &lsquo;and then you know, as Peter<lb/>says,
+                    when people try to do what is right, they<lb/>are pretty sure to feel the better
+                    for it.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;True enough that, but who would
+                    have<lb/>believed our Peter had so much sense in him?<lb/>And to think that I
+                    was against his going to<lb/>school, when we have been doing better
+                    and<lb/>better ever since. If it hadn't been for Peter's<lb/>reading we should
+                    never have had that nice<lb/>row of geraniums on the ledge there, making<lb/>the
+                    room look so pleasant,&mdash;and besides, look<lb/>at the lot of books on the
+                    shelf.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;And the two or three pictures,
+                    husband,&rsquo;<lb/>added the wife, &lsquo;how nice they look hanging<lb/>on the
+                    clean wall; and up stairs too, since<lb/>Peter persuaded us to open the
+                    bed&ndash;room win&ndash;<lb type="inWord"/>dows, and let plenty of fresh air
+                    in, the house<lb/>isn't like the same. When the boy first pro&ndash;<lb/>posed
+                    it, I asked him if he wanted to give us<lb/>all our death of cold&mdash;but
+                    instead of that we<lb/>never slept so well in our lives: he is quite<lb/>a
+                    blessing to us.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">This conversation took place between
+                        Law&ndash;<lb type="inWord"/>ley and his wife one fine summer
+                    evening,<lb/>about three years after the events recorded in<lb/>the foregoing
+                    chapter. They had not long<lb/>come in from a walk to the fields beyond
+                    the<lb/>smoky outskirts of the town, where they sat<lb/>under a tree, on a
+                    hedgerow bank, while the<lb/>children played about and enjoyed themselves.</p>
+                <p rend="align(justify) first-indent(3)">It was very true, as Lawley remarked,
+                    his<lb/>wife did appear quite young again. From a<lb/>sloven she had become a
+                    pattern of neatness;<lb/>the careworn miserable look which once clouded <pb
+                        n="21"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">21</fw>
+                    <lb/><unclear reason="illegilble">h</unclear>er face, seeming doubly wretched
+                    from dirt,<lb/><unclear reason="illegible">ha</unclear>d disappeared, and given
+                    place to a cheerful<lb/>and happy expression which gladdened all<lb/>around her.
+                    To the children the mother's eye<lb/>was as a sunshiny day. The house no
+                    longer<lb/>appeared the same, every room was as clean as<lb/>sweeping, scouring,
+                    and whitewash could make<lb/>it. There were no broken panes in the win&ndash;<lb
+                        type="inWord"/>dows filled with old rags, or patched with<lb/>paper, all was
+                    sound and tight, and the house,<lb/>though in a dirty neighbourhood, had an
+                        or&ndash;<lb type="inWord"/>derly and well&ndash;to&ndash;do air about it.
+                    The neigh&ndash;<lb type="inWord"/>bours used to twit Mrs. Lawley with
+                    being<lb/>over&ndash;particular, but she heard their remarks<lb/>with good
+                    humour, and though trials of some<lb/>sort would still come, yet she showed how
+                    much<lb/>could be done by perseverance. Lawley, too,<lb/>was much changed; his
+                    temper was not so<lb/>hasty as formerly, and the gloomy scowl was<lb/>now very
+                    seldom seen on his features. But<lb/>what most tended to the comfort and
+                        pros&ndash;<lb type="inWord"/>perity of the whole family was, that he
+                    never<lb/>went out to the public house, but passed his<lb/>evenings at home,
+                    where, as he often said, he<lb/>found a thousand times more pleasure than
+                    he<lb/>ever had in the tap&ndash;room. Peter had kept on<lb/>through all the
+                    discouragements thrown in his<lb/>way, until his father wished to be able to
+                    read<lb/>as well as the others; his son worked hard to<lb/>teach him, and in
+                    time Lawley could take his<lb/>turn in reading aloud, or in the singing,
+                        which&ndash;<lb type="inWord"/>ever it might be that was going on after
+                    the<lb/>day's work was over. The money that he<lb/>earned was properly laid out:
+                    instead of buy&ndash;<lb type="inWord"/>ing provisions from hand to mouth,
+                    always the <pb n="22"/>
+                    <fw type="pagenumber">22</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>dearest way, enough was bought on the Satur&ndash;<lb type="inWord"/>day or
+                    Monday to last the week, and cooked<lb/>without waste. Now that nothing went
+                    for<lb/>beer, it was found possible at times to lay by<lb/>a few shillings, and
+                    by&ndash;and&ndash;by there was a nest&ndash;<lb type="inWord"/>egg of eight or
+                    ten pounds in the sayings&rsquo;<lb/>bank. The elder girl no longer worked in
+                    the<lb/>forge; Lawley found that with steady habits<lb/>he could earn enough
+                    without putting his<lb/>daughter to work at what was not fitted for<lb/>her. She
+                    had learned to sew, and do many<lb/>other useful things about a house, and was
+                    of<lb/>great service to her mother. The younger<lb/>girl seemed unwilling to
+                    leave her old ways,<lb/>and profit by the good example before her, and<lb/>often
+                    caused much trouble to her parents;<lb/>but on the other hand they rejoiced to
+                    see the<lb/>improvement in little David, who, now that<lb/>he was taken
+                    regularly and often into the open<lb/>air, gained strength in his limbs, and
+                    could<lb/>walk a little on crutches. He was fonder of<lb/>books than ever; and
+                    learned lessons as fast<lb/>as Peter could teach him.</p>
+                <p rend="align(justify) first-indent(3)">About this time, Lawley became deeply
+                        im&ndash;<lb type="inWord"/>pressed with the sudden death of a
+                    neighbour<lb/>and companion. This man was a habitual<lb/>visitor at the ale
+                    house and gin shop, and had<lb/>carried his drinking propensities so far that
+                    at<lb/>length a very dreadful disease, common to<lb/>great drunkards, seized
+                    him. He was taken<lb/>with it in the presence of Lawley, who assisted<lb/>to
+                    carry him home, where he shortly afterwards<lb/>expired in the most awful
+                    agonies of both mind<lb/>and body.</p>
+                <p rend="align(justify) first-indent(3)">This shocking event made a great
+                    impression<lb/>on Lawley; what had happened to his neigh&ndash;<pb n="23"
+                        type="inWord"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">23</fw><lb/> bour might happen to him.
+                    He remained very<lb/>thoughtful for some days; and the evening<lb/>after the
+                    funeral, while Peter was reading, he<lb/>stopped him short, and declared his
+                        determi&ndash;<lb type="inWord"/>nation to drink no more strong liquor as
+                    long<lb/>as he lived.</p>
+                <p rend="align(justify) first-indent(3)">But his resolution was put to a severe
+                    trial:<lb/>all the nailers of the neighbourhood, when<lb/>they saw him in the
+                    street, came to their doors<lb/>to laugh and jeer at him. They called
+                    him<lb/>&lsquo;coward and sneak, afraid of his wife, wouldn't<lb/>be a man, and
+                    drink a jug of beer,&rsquo; besides<lb/>many more ill&ndash;natured speeches.
+                    Lawley's<lb/>obstinacy, which had often caused him to be<lb/>severe and unjust,
+                    now stood him good part,<lb/>for it made him firm in doing right,
+                    and<lb/>although he did not like to be laughed at, he<lb/>determined not to give
+                    up. At times he felt<lb/>such a strong inclination for beer that he
+                    was<lb/>tempted to send Peter for a pint, and drink it<lb/>at home, but his wife
+                    encouraged him to per&ndash;<lb type="inWord"/>severe in the good cause, and
+                    when he felt<lb/>tired made him a nice cup of coffee to cheer<lb/>him. Before
+                    long he found that there was a<lb/>little money to spare at the end of the
+                    week,<lb/>which put them all beyond the fear of being<lb/>pinched for want of
+                    food. This settled the<lb/>question: let his neighbours laugh as much
+                    as<lb/>they liked, his beer&ndash;drinking days were over.</p>
+                <p rend="align(justify) first-indent(3)">But what was Peter doing all this
+                    time!<lb/>He was now nearly thirteen years old, and had<lb/>often expressed a
+                    wish to learn some regular<lb/>trade. His schooling, though not much
+                    more<lb/>than enabled him to read, write, and cast ac&ndash;<lb type="inWord"
+                    />counts, was made the most of. He did not <pb n="24"/>
+                    <fw type="pagenumber">24</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>content himself with just doing his lessons in<lb/>school, he thought about
+                    them at other times,<lb/>and used them as means towards gaining
+                    more<lb/>knowledge. His teacher at the Sunday&ndash;school<lb/>took much pains
+                    to make him understand the<lb/>Bible stories and lessons which were read
+                    in<lb/>the school; and this he did in so simple but<lb/>forcible a manner as to
+                    make enduring impres&ndash;<lb type="inWord"/>sions of truth and goodness on
+                    young Peter's<lb/>mind. He learned of this affectionate
+                    and<lb/>earnest&ndash;hearted teacher that religion is not<lb/>that dull and
+                    tiresome path, which some who<lb/>have never walked therein say it is, but
+                    that<lb/>its ways are pleasantness and peace. He<lb/>learned also that religion
+                    is something better<lb/>than mere talk&mdash;that those who are really
+                        un&ndash;<lb type="inWord"/>der its power are greatly changed in heart
+                    and<lb/>life&mdash;that the soul grows more lovely and<lb/>beautiful the more it
+                    is fed with heavenly<lb/>truth. Peter not only learned these things in<lb/>his
+                    head, but he felt and enjoyed them in<lb/>his heart, and though not outwardly
+                    vicious<lb/>before, his conduct towards his parents and<lb/>little brothers and
+                    sisters became still more<lb/>dutiful and affectionate, attentive, and
+                        oblig&ndash;<lb type="inWord"/>ing. The alteration which Peter himself
+                    was<lb/>most conscious of was, that he felt so much<lb/>happier now than
+                    formerly. His labours at<lb/>the forge, and the trials of patience and
+                        tem&ndash;<lb type="inWord"/>per which he had to put up with at
+                    home&mdash;<lb/>for it was not all holiday and sunshine with<lb/>Peter any more
+                    than with you, my little reader<lb/>&mdash;well, these small trials, I say, were
+                    now<lb/>borne with the utmost cheerfulness and good<lb/>temper. Like another
+                    boy&mdash;a very poor and <pb n="25"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">25</fw>
+                    <lb/>miserable little fellow to look upon,&mdash;who<lb/>was once asked whether
+                    the extreme poverty<lb/>he endured did not make him very unhappy,<lb/>he could
+                    reply, &lsquo;I love the Lord Jesus Christ<lb/>and that is the salt that
+                    seasons, and the sugar<lb/>that sweetens the ills of life.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">Amongst other valuable lessons Peter
+                        learn&ndash;<lb type="inWord"/>ed at the Sunday School, the importance
+                    of<lb/>always telling the truth was a prominent one,<lb/>of not only avoiding
+                    positive lies, but also<lb/>breaking off the disposition to excuse
+                    and<lb/>wriggle out of a fault, instead of confessing it<lb/>in a frank and open
+                    manner. Peter was some<lb/>time before he could clearly make this
+                    out&mdash;it<lb/>had always appeared so easy to make some<lb/>excuse to hide a
+                    fault, without caring whether<lb/>it were true or not. But by and by his
+                    own<lb/>observation began to confirm the truth of his<lb/>Sabbath lessons, for
+                    he saw that those who<lb/>spoke the truth were the most trusted,
+                    that<lb/>however humble their station they were always<lb/>believed and
+                    respected, and so much more con&ndash;<lb/>tented in mind than those who cheated
+                    or told<lb/>lies. At last he made up his mind to try for<lb/>the best; and
+                    happen what would from that<lb/>time he never uttered a falsehood. He was
+                    very<lb/>industrious; got up early in the morning and<lb/>worked in the forge
+                    till breakfast time; this<lb/>gave him money for various things which
+                    he<lb/>wanted to improve himself with. He bought<lb/>paper and pencils, and
+                    learned to draw; at<lb/>first he tried to copy the pictures in his mag&ndash;<lb
+                        type="inWord"/>azines, and afterwards met with an old draw&ndash;<lb
+                        type="inWord"/>ing book for a few pence, which was very useful<lb/>to him,
+                    and by keeping on with a determina&ndash;<pb n="26" type="inWord"/>
+                    <fw type="pagenumber">26</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>tion to succeed, he at last could copy buildings,<lb/>machinery, almost
+                    everything that he saw.<lb/>He contrived little machines for
+                    play&ndash;things<lb/>made of iron, drawing the plans first on<lb/>paper; and by
+                    his reading had picked up so<lb/>much information, as to be quite a handy
+                    boy<lb/>about the house. He fitted up shelves, fixed<lb/>pegs, mended the floor;
+                    in short, all sorts of<lb/>little jobs to please his mother and make
+                    the<lb/>house comfortable. Sometimes the things he<lb/>bought were wrapped up in
+                    pieces of old<lb/>newspapers, in which he generally found some<lb/>scraps worth
+                    cutting out, these were then<lb/>pasted in a book made of a few quires
+                    of<lb/>wrapping&ndash;paper, and in this way he got<lb/>together many useful
+                    facts which otherwise<lb/>would have been lost. Peter, however, did<lb/>not like
+                    the thought of continuing to be a<lb/>nailer, as he said to his father, he could
+                    turn<lb/>to nail&ndash;making at any time if other work failed.<lb/>He wanted to
+                    get forward in the world, and<lb/>thought that a trade requiring more
+                    skill<lb/>would be the most likely means. He wished<lb/>to be a
+                    lock&ndash;smith, and after some trouble and<lb/>inquiry, a master was found
+                    willing to take<lb/>him, who lived about ten miles from Birming&ndash;<lb
+                        type="inWord"/>ham, at one of the manufacturing villages<lb/>common in that
+                    part of the country. His<lb/>mother felt sorry at parting with her boy,
+                    who<lb/>was such a comfort to the whole family, but<lb/>Peter reminded her that
+                    it was all for the best,<lb/>and some day she would rejoice to see him<lb/>come
+                    back a skilful workman. And it was<lb/>with a determination to try to do what
+                    was<lb/>right, that he said good&ndash;bye to his father, who<lb/>had walked
+                    over with him to his new place.</p>
+            </div>
+            <pb n="27"/>
+            <div type="section">
+                <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                <fw type="pagenumber" rend="align(right)">27</fw>
+                <lb/>
+                <head type="main" rend="align(centre)">CHAPTER <num type="roman numeral"
+                    >V</num>.</head>
+                <lb/>
+                <p rend="align(justify)">IT is a fine thing to go out into the world, to<lb/>see new
+                    places, make new acquaintances, and<lb/>learn a trade by which we may raise
+                    ourselves<lb/>to independence, if not to fortune. With<lb/>skill in the hand and
+                    knowledge in the head,<lb/>every man possesses a power of advancement<lb/>of
+                    which he cannot be deprived; it always re&ndash;<lb/>mains as part of himself.
+                    So thought and felt<lb/>Peter for the first day or two after going to<lb/>the
+                    place which was to be for a time a new<lb/>scene of labour for him; but things
+                    turned<lb/>out very different from his expectation.<lb/>Peter's father had
+                    either been deceived as to<lb/>the character of the man with whom he
+                        ap&ndash;<lb type="inWord"/>prenticed his son, or he had not attached
+                        suffi&ndash;<lb type="inWord"/>cient importance to the subject. For
+                    this<lb/>poor Peter had to suffer. Instead of the<lb/>clean and cheerful home to
+                    which he had of<lb/>late been accustomed, his master's house was<lb/>always in a
+                    state of confusion; all the house&ndash;<lb type="inWord"/>hold duties seemed to
+                    be carried on in a gene&ndash;<lb type="inWord"/>ral scramble. It was only in
+                    the work&ndash;shop<lb/>that any thing like order prevailed, and there<lb/>not
+                    constantly, for whenever the employer was<lb/>absent, the workmen and
+                    apprentices took care<lb/>to work as little as possible. Beyond their<lb/>trade
+                    they knew nothing, and Peter soon<lb/>found that his prospect of adding to his
+                    stock<lb/>of knowledge was not so promising as he had<lb/>looked forward to; and
+                    had it not been that<lb/>there was one steady man among them, his <pb n="28"/>
+                    <fw type="pagenumber">28</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/> situation would have been very discouraging.<lb/>The master was a coarse,
+                    uneducated man,<lb/>who, provided that the work was done to time,<lb/>cared for
+                    little besides. He was one of those<lb/>who thought that learning made
+                    working&ndash;men<lb/>dangerous and dishonest, or set them above<lb/>their
+                    business; and one day that he saw Peter<lb/>reading during part of the time
+                    allotted for<lb/>dinner, he snatched the book from the boy's<lb/>hand, and with
+                    an angry threat, forbade him<lb/>ever to read again in his presence. This
+                    was<lb/>a heavy trial for Peter; at first he felt as<lb/>though the brightest
+                    part of his life had be&ndash;<lb type="inWord"/>come suddenly clouded, but he
+                    was not easily<lb/>cast down, and instead of giving way to dis&ndash;<lb
+                        type="inWord"/>contented thoughts, worked on as though no&ndash;<lb
+                        type="inWord"/>thing had happened. But where there is a<lb/>will there is a
+                    way: and by getting up at four<lb/>o'clock while mornings were light,
+                    Peter<lb/>gained two hours for reading, without disturb&ndash;<lb type="inWord"
+                    />ing any one in the house.</p>
+                <p rend="align(justify) first-indent(3)">It was now that Peter felt the value of
+                    the<lb/>habit of steady perseverance, of turning small<lb/>opportunities to
+                    account, which he had been<lb/>silently acquiring at home. The few
+                    books<lb/>which he had brought with him supplied him<lb/>with matter for
+                    thinking about while he was<lb/>at work. Not that he was a dull boy; on
+                    the<lb/>contrary, when the time for play came, he was<lb/>always ready to take
+                    part in a hearty game of<lb/>leapfrog, cricket, prisoners' base, or any
+                    other<lb/>sport. And this healthful exercise in the open<lb/>air, while
+                    affording real diversion to Peter and<lb/>the other boys, removed any ill
+                    effects of con&ndash;<lb type="inWord"/>finement in the workshop. Oftentimes,
+                        how&ndash;<pb n="29" type="inWord"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">29</fw>
+                    <lb/>ever, the sport grew mischievous, and ended<lb/>in trespass or depredation
+                    on the neighbours'<lb/>property. With this Peter would have no&ndash;<lb
+                        type="inWord"/>thing to do; on such occasions he walked out<lb/>by himself,
+                    and wherever there was a steam&ndash;<lb/>engine to be seen in the
+                    neighbourhood, he<lb/>contrived his walks so as to visit them all one<lb/>after
+                    the other. Parker, the steady workman,<lb/>took a great liking for Peter, and
+                    taught him<lb/>how to go through his work in the best man<lb/>ner, and knowing
+                    the boy's fondness for read&ndash;<lb type="inWord"/>ing, frequently invited him
+                    to his house in the<lb/>evenings, and lent him such books as he had.<lb/>Among
+                    these was a work on the steam&ndash;engine,<lb/>with which Peter was delighted;
+                    the same<lb/>love for ingenious contrivances which led him<lb/>to choose the
+                    trade of a locksmith, now made<lb/>him feel pleasure in studying machinery;
+                    and<lb/>thus it was that, after reading about steam&ndash;<lb/>engines, he
+                    walked out to see them at work,<lb/>and made drawings of them, the better to
+                        un&ndash;<lb type="inWord"/>derstand and remember the differences in
+                    their<lb/>construction. In this way he gained a toler&ndash;<lb type="inWord"
+                    />able knowledge of machinery, without at all<lb/>neglecting his trade of
+                    lockmaking, and he was<lb/>not long in finding out the truth of what
+                        Par&ndash;<lb type="inWord"/>ker often said, that the more a man knew
+                    the<lb/>better workman was he likely to be.</p>
+                <p rend="align(justify) first-indent(3)">Peter profited so well by the
+                    instructions<lb/>given him, and worked so diligently as to be<lb/>able in the
+                    course of a few months to make all<lb/>the parts of a lock in a very creditable
+                        man&ndash;<lb type="inWord"/>ner. Notwithstanding his steadiness, and
+                        be&ndash;<lb type="inWord"/>ing always true to time in the workshop,
+                    his<lb/>master often said the boy was too quiet to be <pb n="30"/>
+                    <fw type="pagenumber">30</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>good for much. Peter, however, though often<lb/>wondering at his employer's
+                    harshness, knew<lb/>nothing of these suspicions; but he under&ndash;<lb
+                        type="inWord"/>went much annoyance from another quarter.<lb/>Among the
+                    apprentices, there were two or<lb/>three who disliked and envied him on
+                    account<lb/>of his skill and general good character; they<lb/>could not
+                    understand why he should refuse to<lb/>join in their brutal sports or ribald
+                    talk, and<lb/>they persecuted him accordingly. Peter did<lb/>not feel inclined
+                    to quarrel with persons in<lb/>whose company he would have to work
+                        proba&ndash;<lb type="inWord"/>bly for several years; he reasoned with
+                    the<lb/>other boys, and endeavoured to make them<lb/>comprehend that
+                    ill&ndash;nature and strife were<lb/>more likely to injure those who displayed
+                    such<lb/>feelings, than the person against whom they<lb/>were directed.
+                    &lsquo;Study your master's interest,&rsquo;<lb/>he would say to them, &lsquo;and
+                    you will best serve<lb/>your own; he who will not do his duty for<lb/>another,
+                    will hardly be able to do it for him&ndash;<lb type="inWord"/>self.&rsquo; One
+                    or two of the boys would perhaps<lb/>have listened to Peter, but they were
+                    afraid<lb/>of being laughed at by the others, and where<lb/>people stand in fear
+                    of ridicule for taking<lb/>pains to improve themselves, it is a difficult
+                    and<lb/>almost hopeless task for them to do right.</p>
+                <p rend="align(justify) first-indent(3)">Among the apprentices, there was one
+                    boy<lb/>for whom Peter felt much compassion. He<lb/>was a poor little fellow, an
+                    orphan, without<lb/>any one to care for him, and he was made the<lb/>drudge of
+                    all the shop. In fact, as is often<lb/>the case, what with running here and
+                    there,<lb/>bringing this and fetching that, Bob worked a<lb/>great deal harder
+                    than many of the men. <pb n="31"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">31</fw>
+                    <lb/>And if, when worn out by fatigue, he ventured<lb/>to complain, he was
+                    answered by a blow, or<lb/>some equally severe punishment. Peter often<lb/>felt
+                    his blood tingle as he saw this treatment,<lb/>but he kept his temper down, and
+                    one day in&ndash;<lb type="inWord"/>terfered in the youngster's behalf.
+                    Nearly<lb/>every voice was raised against him, but Peter<lb/>stood firm, and
+                    spoke so feelingly on the sub&ndash;<lb type="inWord"/>ject, as to silence, if
+                    not convince, the opposi&ndash;<lb type="inWord"/>tion. It was a work of time,
+                    but he suc&ndash;<lb type="inWord"/>ceeded at last, and the poor little boy,
+                    who<lb/>came to look upon Peter as his best friend,<lb/>when relieved from the
+                    persecution under<lb/>which he had so long suffered, proved to be<lb/>not less
+                    expert in such work as he was able to<lb/>perform than the others. So true it is
+                    that<lb/>oppression tends to blunt the natural faculties<lb/>and make people
+                    appear vicious and stupid.</p>
+                <p rend="align(justify) first-indent(3)">If change of situation brings new
+                    pleasures<lb/>and opportunities of improvement, so does it<lb/>bring new trials
+                    and temptations. Peter's<lb/>greatest want was useful and instructive<lb/>books;
+                    as an apprentice he received no wages,<lb/>and the only money he had was the few
+                        shil&ndash;<lb type="inWord"/>lings given to him, from time to time, by
+                    his<lb/>mother, when he had a holiday and went<lb/>home. He had read his own
+                    books, and those<lb/>lent him by Parker, over and over again, until<lb/>he knew
+                    them nearly by heart, and he could<lb/>borrow no others in the village, so
+                    little did<lb/>the people around him care for reading. Peter<lb/>often said to
+                    himself, that if he had a little<lb/>more money, he would then be able to
+                    buy<lb/>such books as he wanted, for he could not<lb/>stop short in his pursuit
+                    after knowledge. <pb n="32"/>
+                    <fw type="pagenumber">32</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/> He only felt what many others have felt, that<lb/>when we once get a
+                    little knowledge, it gives<lb/>us a desire for more, and we cannot rest
+                        satis&ndash;<lb type="inWord"/>fied until we have gained more. He
+                    noticed<lb/>that several of the apprentices who, as he, re&ndash;<lb
+                        type="inWord"/>ceived no wages, yet appeared to have always<lb/>plenty of
+                    money, and one day he asked them<lb/>in what way they obtained it. At first
+                    they<lb/>laughed, and refused to tell, thinking he could<lb/>not be ignorant of
+                    their practice of appropri&ndash;<lb type="inWord"/>ating and carrying off
+                    whatever they could lay<lb/>their hands on any where in the neighbour&ndash;<lb
+                        type="inWord"/>hood. One of them, however, called Peter a<lb/>fool for not
+                    taking care of himself; it was all<lb/>fair, he urged, to cheat a master who did
+                    not<lb/>do much for his apprentices. Besides, it was<lb/>so easy to get a little
+                    money in this way, and<lb/>nobody would be the wiser. For a moment<lb/>Peter was
+                    tempted to believe that the circum&ndash;<lb type="inWord"/>stances in which he
+                    was placed would justify<lb/>him in following this advice, and the
+                    thought<lb/>of getting new books made it appear less<lb/>blameable. It was,
+                    however, but for a mo&ndash;<lb type="inWord"/>ment: the lessons he had learned
+                    and treasured<lb/>in his heart years before at the Sunday School<lb/>came to
+                    mind; the love of truth prevailed,<lb/>and happen what would, he would not give
+                    way<lb/>to the temptation. Just at this time, Parker,<lb/>who had been to
+                    Birmingham, brought back<lb/>with him a few second&ndash;hand books.
+                    Among<lb/>these was one on arithmetic; Peter had long<lb/>wished to make himself
+                    acquainted with some<lb/>of the higher rules which he had not learned<lb/>at
+                    school, and with this book he filled up his<lb/>leisure hours during several
+                    months.</p>
+                <pb n="33"/>
+                <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                <fw type="pagenumber" rend="align(right)">33</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Time went on: Peter's way of life
+                    remained<lb/>much the same as we have here described it, up<lb/>to the end of
+                    his second year of apprenticeship.<lb/>His persevering steadiness was not
+                    altogether<lb/>lost upon his master; the latter had begun to<lb/>think that the
+                    youth was what he appeared to<lb/>be, and now that Peter asked for a holiday,
+                    to<lb/>go home and see his parents, he obtained leave<lb/>with less demur than
+                    formerly. It was on a<lb/>fine Saturday evening that Peter started with<lb/>a
+                    bundle hanging to a stick on his shoulder.<lb/>Being summer, there were several
+                    hours of<lb/>daylight before him, and he walked on, glad to<lb/>leave the black
+                    village behind, and to find him&ndash;<lb type="inWord"/>self under green hedges
+                    and leafy trees, undis&ndash;<lb type="inWord"/>figured by smoke. With what
+                    pleasure he<lb/>looked forward to meeting his father and<lb/>mother, his sisters
+                    and little David, how much<lb/>they would be grown, how many things
+                    there<lb/>would be to talk, about, something worth tel&ndash;<lb type="inWord"
+                    />ling since last they met. The Jacksons, too;<lb/>he would not fail to call
+                    upon them before he<lb/>returned on Monday morning. Animated by<lb/>these
+                    thoughts, Peter stepped briskly forwards<lb/>until he came to a
+                    steam&ndash;engine factory, which<lb/>had not long been built, standing a little
+                    way<lb/>out of the road. There was an engine at work<lb/>at one side of the
+                    building, of a construction<lb/>different to any that he had before seen,
+                    and<lb/>he went up to get a nearer view of it. His<lb/>book and pencil were in
+                    his bundle, and Peter<lb/>determined on adding the one he now saw to<lb/>the
+                    number of those which he had already<lb/>copied. While he was drawing, a
+                    gentleman<lb/>who had come quietly up without being seen <pb n="34"/>
+                    <fw type="pagenumber">34</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>by Peter, stopped and looked over his shoul&ndash;<lb type="inWord"/>der.
+                    After watching the movements of the<lb/>pencil for a minute or two, he said,
+                    &lsquo;Well<lb/>done, my boy, that is a very creditable draw&ndash;<lb
+                        type="inWord"/>ing.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">Peter started and looked round, and
+                    when<lb/>he saw who had addressed him, replied, &lsquo;It is<lb/>kind of you,
+                    sir, to say so; but I am only a<lb/>learner.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;And a very promising one. Where
+                    did<lb/>you learn to draw?&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">In a few words Peter explained that
+                    his<lb/>knowledge of drawing was self&ndash;acquired, and<lb/>that the book lent
+                    him by Parker had first led<lb/>him to think about steam&ndash;engines and
+                    how<lb/>they were put together. He opened his book,<lb/>and showed the drawings
+                    which he had made<lb/>during his apprenticeship. The gentleman<lb/>turned over
+                    the leaves, and commended the<lb/>youth for the correct and workmanlike
+                    style<lb/>in which they were executed, and after some<lb/>further questions as
+                    to his position and pros&ndash;<lb type="inWord"/>pects, inquired whether he
+                    would like to be a<lb/>draughtsman in a manufactory of steam&ndash;en&ndash;<lb
+                        type="inWord"/>gines.</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;I should like it better than any
+                    thing else,&rsquo;<lb/>answered Peter, &lsquo;but I have another year of<lb/>my
+                    time to serve.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;It would be a pity that your
+                    abilities<lb/>should not be brought out,&rsquo; said the gentle&ndash;<lb
+                        type="inWord"/>man, &lsquo;have you no friends who can bring
+                    you<lb/>forwards?&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;I have only myself to trust
+                    to,&rsquo; returned<lb/>Peter, &lsquo;and if blessed with health and
+                    strength<lb/>I hope to make my way yet.&rsquo;</p>
+                <pb n="35"/>
+                <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                <fw type="pagenumber" rend="align(right)">35</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">That is well spoken,&rsquo; added the
+                    stranger,<lb/>who then, to Peter's surprise, informed him<lb/>that he was the
+                    owner of the factory, and in&ndash;<lb type="inWord"/>vited him to go in and
+                    look at the works.</p>
+                <p rend="align(justify) first-indent(3)">While the delighted youth is thus
+                    employed,<lb/>a strange uproar breaks out at his master's, the<lb/>locksmith.
+                    The time for paying the men's<lb/>wages had come, and a small bag,
+                    containing<lb/>between two and three pounds in silver, was<lb/>missing. The
+                    master was positive that he had<lb/>locked it safely in the small closet where
+                    he<lb/>usually kept his money, only the day before,<lb/>and now, after searching
+                    in every hole and<lb/>corner, it could not be found. The alarm of<lb/>the
+                    robbery soon spread; all the men and<lb/>boys were called in from the workshop,
+                    and<lb/>questioned concerning the lost money. They<lb/>all professed entire
+                    ignorance, except the two<lb/>boys, who regarded Peter with particular
+                    dislike.<lb/>One of them said, that he was wakened that<lb/>morning by a noise
+                    in the room, where he and<lb/>some other of the apprentices slept, and
+                    saw<lb/>Lawley dress himself, and go quietly down<lb/>stairs. He then woke his
+                    companion, and<lb/>after a little while, they both saw Peter come<lb/>up again
+                    and put something into his box,<lb/>which he locked, and then sat down to
+                    read,<lb/>until the hour came for beginning to work.<lb/>They had almost
+                    forgotten the circumstance,<lb/>but now, on being questioned, it had
+                    come<lb/>back to their memory.</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;I always thought that
+                    smooth&ndash;spoken Law&ndash;<lb type="inWord"/>ley to be no better than he
+                    should be!&rsquo; ex&ndash;<lb/>claimed the master when he heard this,
+                    and<lb/>gave orders that Peter's box should be <pb n="36"/>
+                    <fw type="pagenumber">36</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>brought down. In a locksmith;s house there<lb/>is no lack of keys, and, in
+                    less time than is<lb/>required to describe it, the box was opened,<lb/>and
+                    there, sure enough, lay the bag with the<lb/>money, concealed under a shirt in
+                    one of the<lb/>corners.</p>
+                <p rend="align(justify) first-indent(3)">Peter's having asked for a holiday was
+                        look&ndash;<lb type="inWord"/>ed upon as an additional proof of guilt;
+                    the<lb/>locksmith broke out in a furious rage, and<lb/>swore, that if law could
+                    be had, the skulking<lb/>thief should smart for it. He sent one of the<lb/>boys
+                    to summon the constable, and mounting<lb/>into a cart, both started in pursuit,
+                    hoping to<lb/>overtake the culprit before he reached home.</p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>33B14</name>
+                        <desc>threatening behaviour, challenging</desc>
+                    </ic:iconClass>
+                </figure>
+                <pb n="37"/>
+                <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                <fw type="pagenumber" rend="align(right)">37</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Under the guidance of the kind
+                    stranger,<lb/>Peter had walked from floor to floor, and from<lb/>one end of the
+                    factory to the other, meeting<lb/>with something at every step to excite
+                    his<lb/>curiosity and astonishment, and his hope of<lb/>being one day able to
+                    comprehend all that he<lb/>saw. His conductor seemed pleased at wit&ndash;<lb
+                        type="inWord"/>nessing his enthusiasm, and when the youth<lb/>took his
+                    leave, spoke a few words of encour&ndash;<lb type="inWord"/>agement to him.
+                    Peter was soon in the road<lb/>again, happy at the thought of having so<lb/>much
+                    additional news for his friends at home.<lb/>All at once the noise of a vehicle
+                    was heard rap&ndash;<lb type="inWord"/>idly approaching; when close to him it
+                    stopped,<lb/>two men jumped out, and before he could well<lb/>recover from the
+                    surprise caused by the sight<lb/>of the locksmith, he found himself
+                    handcuffed<lb/>and seated in the cart between his master and<lb/>the constable,
+                    driving back at a hurried pace.</p>
+                <lb/>
+            </div>
+            <div type="section">
+                <head type="main" rend="align(centre)">&rule;<lb/>CHAPTER <num type="roman numeral"
+                        >VI</num>.</head>
+                <lb/>
+                <p rend="align(justify)">It would be hard to describe Peter&rsquo;s feelings
+                    at<lb/>this sudden change in his prospects: a few<lb/>minutes before he was
+                    walking along with the<lb/>cheering expectation of soon seeing his
+                    parents,<lb/>brother and sisters&mdash;of having a talk with the<lb/>Jacksons.
+                    They did not know that he was on<lb/>his way to see them, so there would be
+                    the<lb/>additional gratification of a surprise: his walk<lb/>round the
+                    engine&ndash;factory, too, had been a new<lb/>and unexpected pleasure, and all
+                    these circum&ndash;<lb type="inWord"/>stances made the anguish of his mind the
+                        <pb n="38"/>
+                    <fw type="pagenumber">38</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>greater. He was so bewildered as to be for a<lb/>time unable to speak; at
+                    last, certain that he<lb/>bad done nothing which deserved punishment,<lb/>he
+                    looked up and inquired, &lsquo; Master, what have<lb/>I done; why am I treated
+                    in this way?&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;You'll see that soon enough, you
+                    sneaking<lb/>villain,&rsquo; was the answer, &lsquo;I thought we should<lb/>find
+                    you out some day;&rsquo; after which, not<lb/>another word was spoken during the
+                    remainder<lb/>of the ride.</p>
+                <p rend="align(justify) first-indent(3)">The boys and men were waiting for the
+                    cart's<lb/>return: they wanted to see how Peter would<lb/>look when brought back
+                    a prisoner. As the<lb/>vehicle drove up and the unfortunate lad was<lb/>led
+                    towards the house between his master and<lb/>the constable, some of the lads
+                    cried out, &lsquo;there<lb/>goes the thief.&rsquo; Bob, who was standing
+                    with<lb/>a sorrowful face by Parker's side, asked him if<lb/>he thought Peter
+                    were guilty. &lsquo;I can't think<lb/>he is,&rsquo; answered the man,
+                    &lsquo;poor boy: time<lb/>will shew.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">When within the house, the locksmith
+                    set<lb/>Peter's hands at liberty, and questioned him<lb/>about the missing
+                    money. The boy, although<lb/>at a loss to understand what was meant,
+                        pos&ndash;<lb type="inWord"/>itively denied all knowledge of it, and
+                    when<lb/>the charge against him was repeated, persisted<lb/>in his denial,
+                    appealing to his past conduct<lb/>whether such a change in his character
+                    would<lb/>be likely to take place all at once. &lsquo;It's all<lb/>very well to
+                    talk,&rsquo; replied his master, &lsquo;but the<lb/>money was found in your box;
+                    I suppose you'll<lb/>say you didn't put it there.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">On hearing this, Peter was in greater
+                        con&ndash;<lb type="inWord"/>sternation than ever: grief and indignation <pb
+                        n="39"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">39</fw>
+                    <lb/>overcame him by turns; he did all that he<lb/>could, however, and
+                    vehemently denied the<lb/>accusation, and insisted that his father, or
+                        Par&ndash;<lb type="inWord"/>ker, or some one should be sent for to
+                    speak<lb/>in his behalf.</p>
+                <p rend="align(justify) first-indent(3)">&lsquo;All in good time my lad,&rsquo;
+                    rejoined the<lb/>locksmith, &lsquo;come constable, we'll lock him up<lb/>till
+                    Monday in the little back room at the top<lb/>of the house.&rsquo;</p>
+                <p rend="align(justify) first-indent(3)">It was with some difficulty that Peter
+                    re&ndash;<lb/>strained his impatience at this unjust treat&ndash;<lb
+                        type="inWord"/>ment; he walked up and down bis narrow<lb/>chamber in a state
+                    of mingled doubt and indig&ndash;<lb type="inWord"/>nation. How could the money
+                    have got into<lb/>his box? It must have been put there by<lb/>some one who owed
+                    him a spite; beyond<lb/>that all was a mystery. But his conscience<lb/>was clear
+                    in the matter, and he could and<lb/>did look up with cheerful confidence to
+                    Him<lb/>who hears the prisoner's sigh, and breaks the<lb/>oppressor's rod. He
+                    re&ndash;called to memory many<lb/>cheering promises of Holy Writ;
+                    &lsquo;Weeping<lb/>may endure for a night, but joy cometh in
+                    the<lb/>morning.&rsquo; And the verse <lg>
+                        <l rend="indent(6)">&lsquo;With cheerful heart I close my eyes,</l>
+                        <l rend="indent(8)">Since thou wilt not remove,</l>
+                        <l rend="indent(6)">And in the morning let me rise,</l>
+                        <l rend="indent(8)">Rejoicing in thy love,&rsquo;</l>
+                    </lg>
+                    <lb/>was still pleasant and suitable. The night<lb/>passed away: the next day as
+                    he was looking<lb/>from his window to the fields beyond the vil&ndash;<lb
+                        type="inWord"/>lage, he saw Bob walking in the bright sun&ndash;<lb
+                        type="inWord"/>shine, and his own imprisonment seemed the<lb/>more irksome
+                    from the contrast. Monday <pb n="40"/>
+                    <fw type="pagenumber">40</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>morning came: he was again placed in the<lb/>cart between his master and
+                    the constable, and<lb/>driven to the magistrate's residence, about
+                    three<lb/>miles distant. On arrival here they were shewn<lb/>into an apartment
+                    where two gentleman were<lb/>sitting engaged in conversation at a table
+                        cov&ndash;<lb type="inWord"/>ered with papers. Peter started, and felt
+                    ready<lb/>to drop for shame and sorrow, when he recog&ndash;<lb type="inWord"
+                    />nised in one of them the stranger who had so<lb/>kindly shewn him over the
+                    engine&ndash;factory only<lb/>two days before, and the gentleman
+                    himself<lb/>seemed much astonished to see Peter come in<lb/>as a prisoner. The
+                    magistrate turned round;<lb/>the locksmith proceeded to state his
+                    complaint,<lb/>and brought forward the two boys as witnesses,<lb/>who, as we
+                    have seen in the previous chapter,<lb/>declared Peter to be the thief. The
+                    constable<lb/>in turn deposed that he had been sent for in<lb/>great haste on
+                    discovery of the robbery, and<lb/>explained in what way the culprit had
+                    been<lb/>pursued and captured, and ended by saying,<lb/>&lsquo;he didn't think
+                    the boy was any better than<lb/>he should be.&rsquo; The case seemed clear
+                    enough<lb/>against Peter, and when called upon for what<lb/>he had to say, he
+                    was so confused by the evi&ndash;<lb type="inWord"/>dence brought forward, and
+                    the disgraceful<lb/>situation in which he was placed, as to have all<lb/>the
+                    appearance of a guilty person. He began,<lb/>however, by stating that on the
+                    Saturday morn&ndash;<lb type="inWord"/>ing he had as usual risen early, and
+                    having for&ndash;<lb/>gotten the night before to bring up with him<lb/>two books
+                    winch he had placed in a corner of<lb/>the kitchen to be out of the way, he
+                    crept down<lb/>stairs so as not to disturb any one, and on<lb/>coming up again
+                    put one of the books into his <pb n="41"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">41</fw>
+                    <lb/>box, on which he sat down and read until it<lb/>was time to go to work. He
+                    positively denied<lb/>having been near the room in which the money<lb/>was kept,
+                    but was quite unable to account for<lb/>the bag of silver found in his box. He
+                    ended<lb/>by saying, that as he was alone, he hoped<lb/>time would be given for
+                    his father to be sent<lb/>for.</p>
+                <p rend="align(justify) first-indent(3)">As Peter ceased, the stranger who had
+                        lis&ndash;<lb type="inWord"/>tened attentively while he was speaking
+                    leaned<lb/>across the table and said a few words in a low<lb/>tone to the
+                    magistrate. The latter nodded,<lb/>and after a pause observed, &lsquo;Peter
+                    Lawley,<lb/>appearances are certainly against you. Here<lb/>are two boys who
+                    swear as to your having gone<lb/>down stairs at an early hour, before any of
+                    the<lb/>household were stirring, and that you came<lb/>softly up again, and
+                    locked something in your<lb/>box. But why you should have left the
+                    silver<lb/>there, instead of taking it with you, I cannot<lb/>understand. This
+                    gentleman tells me he met<lb/>you by chance on Saturday, and formed a
+                        favour&ndash;<lb type="inWord"/>able opinion of you; I trust he may not
+                    be<lb/>deceived, but for the present I can only say<lb/>that you must be
+                    detained. It is, however,<lb/>desirable that your father should be sent
+                    for;<lb/>meantime, you will be left in charge of the<lb/>constable who will
+                    bring you up again on<lb/>Wednesday. I will take care that your father<lb/>shall
+                    see you before that time.&rsquo; The magistrate<lb/>spoke in so kind a tone as
+                    to make Peter feel<lb/>a little more at ease in his mind; the party
+                    were<lb/>just leaving the room when the door opened,<lb/>and Parker and Bob
+                    entered; they both looked<lb/>hot and dusty, and were out of breath with <pb
+                        n="42"/>
+                    <fw type="pagenumber">42</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>running. Parker took off his cap, and stepping<lb/>towards the magistrate,
+                    said:&mdash;&lsquo;Please your<lb/>honour, don't let them go away, I've got
+                        some&ndash;<lb type="inWord"/>thing to say in the matter.&rsquo; The
+                    locksmith,<lb/>however, was in no hurry to depart, for he<lb/>thought some
+                    further evidence was coming out<lb/>against Peter. According to Parker's
+                        state&ndash;<lb type="inWord"/>ment, Bob had told him on going to work
+                    in<lb/>the morning, that the day before he went out<lb/>to walk in the fields,
+                    feeling a good deal troub&ndash;<lb type="inWord"/>led about what had happened.
+                    Coming to the<lb/>edge of an old stone quarry, he lay down in<lb/>the grass, and
+                    soon after hearing voices in con&ndash;<lb type="inWord"/>versation about Peter,
+                    he peeped over, and<lb/>saw the two boys who had been brought for&ndash;<lb
+                        type="inWord"/>ward as witnesses, sitting in the hollow beneath.</p>
+                <p rend="align(justify) first-indent(3)">They were talking and laughing about
+                    the<lb/>clever way in which they had contrived to<lb/>steal the bag of money and
+                    place it in Peter's box.<lb/>Something more was said about the pleasure<lb/>of
+                    seeing him punished, but this was enough<lb/>for Bob, he stole quietly away; yet
+                    for some<lb/>time he could not make up his mind what to<lb/>do as he was
+                    &lsquo;put upon&rsquo; by the other hands<lb/>in the workshop, and feared the
+                    effects of their<lb/>displeasure. On seeing Parker, however, he<lb/>at once told
+                    him what he had heard: Parker<lb/>said not a minute was to be lost, and
+                    both<lb/>started hoping to arrive in time to clear up the<lb/>case. Bob was
+                    called forward and questioned;<lb/>while he was speaking a change came
+                    over<lb/>Peter's face, the look of shame disappeard, his<lb/>eye brightened, and
+                    he stood up in proved in&ndash;<lb type="inWord"/>tegrity. The locksmith and
+                    constable seemed<lb/>puzzled at the unexpected turn of affairs, and <pb n="43"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">43</fw>
+                    <lb/>the two boys who had sworn to the robbery<lb/>tried to brave it out, but
+                    their confusion was<lb/>such as to prove them guilty even before ex&ndash;<lb
+                        type="inWord"/>amination: it was now their turn to be placed<lb/>under
+                    charge of the constable.</p>
+                <p rend="align(justify) first-indent(3)">The stranger who sat by the table
+                    appeared<lb/>to be pleased at this result, and speaking again<lb/>to the
+                    magistrate, the latter asked the lock&ndash;<lb type="inWord"/>smith, if he were
+                    aware that Peter deserved<lb/>some compensation for the grief and
+                    disgrace<lb/>he had been made to suffer. The locksmith<lb/>demurred to this;
+                    some further conversation<lb/>took place, which ended by the stranger
+                    telling<lb/>Peter to go and make himself happy at home<lb/>for a week, at the
+                    end of which he would hear<lb/>something further. Peter's joy at being
+                    ad&ndash;<lb/>dressed in this way may be imagined; he<lb/>shook hands with
+                    Parker, and started off<lb/>homewards brimful of news of all that
+                    had<lb/>happened to him.</p>
+                <p rend="align(justify) first-indent(3)">There are times when what appears to be
+                    a<lb/>hopeless misfortune, proves in the end a last&ndash;<lb type="inWord"/>ing
+                    benefit. So it was in the present case;<lb/>before the week was over, the
+                    Lawleys were<lb/>visited by the gentleman according to promise.<lb/>The
+                    well&ndash;ordered arrangements of the little<lb/>household made a favourable
+                    impression on<lb/>him: after talking sometime with the parents,<lb/>he asked
+                    Peter, if he were willing to go and<lb/>work at the factory, the sight of which
+                    had<lb/>pleased him so much a few days previously.<lb/>Peter jumped at the
+                    offer; his father and<lb/>mother expressed their thanks for their
+                    visitor's<lb/>kindness; and at the end of the week the boy<lb/>entered his new
+                    situation. Here his pleasure <pb n="44"/>
+                    <fw type="pagenumber">44</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>was complete: on taking possession of a little<lb/>bed&ndash;room in the
+                    foreman's house, in which it<lb/>was arranged that he should live, he found
+                    his<lb/>box and the books which had been left at the<lb/>locksmith's; and in
+                    addition a good stock of<lb/>clothes.</p>
+                <p rend="align(justify) first-indent(3)">Peter's industry and perseverance in
+                    self&ndash;<lb/>education now met with their reward; he was<lb/>at once placed
+                    in the draughtsman's office,<lb/>where several young men were always at
+                    work<lb/>upon drawings of machinery. In the course<lb/>of his studies he had met
+                    with many things<lb/>which he thought would never be of any use<lb/>to him, but
+                    now he found out their value;<lb/>these odds and ends of knowledge enabled
+                    him<lb/>to understand many things about which he<lb/>would have been at a loss,
+                    and so helped him<lb/>forward in his daily tasks. Above all, he felt<lb/>the
+                    benefit of his arithmetic, for there is no<lb/>business in which a knowledge of
+                    calculation<lb/>will not be useful. The factory was a very<lb/>busy one; engine
+                    after engine was turned out<lb/>as fast as they could be made, so that
+                    there<lb/>was always plenty of work for those who made<lb/>the drawings. Peter
+                    exerted himself to the<lb/>utmost, to show that he was not ungrateful<lb/>for
+                    the kindness which had placed him in such<lb/>an improving situation. He was
+                    never tired<lb/>of admiring the order that prevailed through<lb/>the whole of
+                    the works; every man and boy<lb/>about the place was bound by a system
+                    of<lb/>punctuality, very different from the loose way<lb/>in which work had been
+                    carried on at the<lb/>locksmith's. Although Peter worked dili&ndash;<lb
+                        type="inWord"/>gently at his own part of the business, he <pb n="45"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">45</fw>
+                    <lb/>found opportunities of getting an insight into<lb/>the way of constructing
+                    machinery, and at<lb/>last knew how to put, a steam&ndash;engine
+                    together<lb/>from beginning to end. </p>
+                <p rend="align(justify) first-indent(3)">When Peter first went to the factory,
+                    he<lb/>thought he had reached the height of his<lb/>wishes, but as he advanced
+                    in knowledge and<lb/>skill, so did he aim higher and higher. He<lb/>saw no
+                    reason why he should remain a third&ndash;<lb/>rate draughtsman, when he might
+                    rise to be<lb/>second, or perhaps first. At all events, there<lb/>was nothing
+                    like trying, and this thought en&ndash;<lb type="inWord"/>couraged him to
+                    conquer many a difficulty.<lb/>Among the numerous workmen employed at<lb/>the
+                    factory, there were many about his own<lb/>age, with some of whom, as was
+                    natural, he<lb/>became acquainted. Notwithstanding the re&ndash;<lb
+                        type="inWord"/>gular hours they were obliged to keep through<lb/>the day, no
+                    sooner was work over than their<lb/>spare time was altogether wasted. They
+                    never<lb/>thought of the morrow, made no attempt to im&ndash;<lb type="inWord"
+                    />prove their minds, or to better their condition.<lb/>Peter, after a little
+                    talk, succeeded in persuad&ndash;<lb type="inWord"/>ing some of them to meet in
+                    the evenings two<lb/>or three times a week, and try what could be<lb/>done
+                    towards gaining knowledge. The fore&ndash;<lb/>man promised his assistance, and
+                    a small spare<lb/>room at one end of the building, was lent for<lb/>the
+                    meetings. Some of the young men could<lb/>not read, those who could took it in
+                    turn to<lb/>be teachers, and Peter was always present to<lb/>give his help
+                    wherever it was wanted. The<lb/>principal of the establishment took notice
+                    of<lb/>their proceedings, and after a time, finding them<lb/>determined to keep
+                    on, he supplied the school&ndash;<pb n="46" type="inWord"/>
+                    <fw type="pagenumber">46</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF</fw>
+                    <lb/>room, as it came to be called, with books,<lb/>maps, slates, and drawing
+                    materials. In this<lb/>way a class of improving young workmen rose<lb/>up, and
+                    they found the truth of what Peter<lb/>had often declared, that the more
+                    knowledge<lb/>they gained, the better would they be able to<lb/>perform their
+                    work, and as they obtained a<lb/>clearer knowledge of their duties, so did
+                    they<lb/>become more trustworthy, by which they pro&ndash;<lb type="inWord"
+                    />fited in more ways than one. Peter, in turn,<lb/>felt that doing good to
+                    others was one of the<lb/>best means of getting on in the world. It is<lb/>not
+                    to be supposed that he was without his<lb/>trials, difficulties, or temptations;
+                    but he had<lb/>made up his mind to do his duty whatever<lb/>might happen. He was
+                    not above asking for<lb/>information on subjects with which he might<lb/>be
+                    unacquainted; what he lacked in genius he<lb/>made up by industry. Before the
+                    end of two<lb/>years, he was the most able draughtsman in<lb/>the establishment,
+                    and in the absence of the<lb/>principal, took the management of the
+                    office,<lb/>where his unassuming manners and cheerful<lb/>disposition gained him
+                    the esteem of every<lb/>one.</p>
+                <p rend="align(justify) first-indent(3)">At one of the evening meetings, a
+                    young<lb/>man from the finishing shop, whom Peter was<lb/>encouraging to
+                    persevere with his arithmetic,<lb/>as a means of getting forward, replied,
+                    &lsquo;It's<lb/>all very well to talk about getting on, but 'tis<lb/>luck that
+                    does it after all.&rsquo; In answer to this<lb/>remark, Peter gave to the class
+                    a short state&ndash;<lb type="inWord"/>ment of his own history, such as the
+                    reader is<lb/>already acquainted with, and concluded&mdash;&lsquo;thus<lb/>you
+                    see, I was left to make my own way. I <pb n="47"/>
+                    <fw type="header" rend="align(centre)">PETER LAWLEY.</fw>
+                    <fw type="pagenumber" rend="align(right)">47</fw>
+                    <lb/>could not well be poorer than when I started,<lb/>yet little by little I
+                    got on, adding one scrap<lb/>of knowledge to another, and making the most<lb/>of
+                    every opportunity for improvement. Had<lb/>I not made up my mind to go to school
+                    when<lb/>a boy, I might now have been a drunken nailer.<lb/>Had I not persevered
+                    in learning to draw, I<lb/>should not have been taken notice of by
+                    our<lb/>generous employer: there was no luck in that.<lb/>We cannot hope to get
+                    good situations unless<lb/>we qualify ourselves for them. And even had<lb/>I not
+                    risen into my present place, I should<lb/>have been more skilful, better able to
+                    fulfil all<lb/>my duties, and more contented as a locksmith,<lb/>with knowledge,
+                    than without it. The means<lb/>that I made use of are within the reach
+                    of<lb/>every one: have a real desire to get on in the<lb/>world, and you will
+                    soon find out the way.&rsquo;<lb/>Here our story may properly be said
+                    to<lb/>end: we have followed Peter long enough to<lb/>know that with trust in
+                    Providence, and the<lb/>exercise of such principles he had every hope<lb/>of a
+                    prosperous and successful career. But<lb/>as some of our readers may wish to
+                    know<lb/>something more of his after history, we shall<lb/>by way of conclusion,
+                    relate in a few words<lb/>what came to our knowledge respecting him,<lb/>on a
+                    recent visit to the scene of his labours.<lb/>&lsquo;Young Lawley,&rsquo; said
+                    our informant, &lsquo;is now<lb/>first draughtsman, and for activity and
+                        in&ndash;<lb type="inWord"/>telligence no better is to be found in
+                    the<lb/>neighbourhood. His salary is &pound;300 a year,<lb/>and it is not
+                    unlikely that he will work him&ndash;<lb type="inWord"/>self into a still better
+                    position, for he is a<lb/>most persevering fellow; success has not spoiled <pb
+                        n="48"/>
+                    <fw type="pagenumber">48</fw>
+                    <fw type="header" rend="align(centre)">THE STORY OF PETER LAWLEY.</fw>
+                    <lb/>him; in fact he never seems to be happier than<lb/>when he is lending a
+                    hand to help others for&ndash;<lb type="inWord"/>ward. That is his house there
+                    by the side<lb/>of the foreman's, and a comfortable place it<lb/>is, under the
+                    care of his wife. She is of an<lb/>excellent disposition and quite worthy of
+                    him;<lb/>her name was Mary Jackson; they had I be&ndash;<lb type="inWord"/>lieve
+                    been acquainted with each other many<lb/>years; a happier couple you will hardly
+                    find.<lb/>Lame David now keeps a school in the village<lb/>where Peter went to
+                    learn lock&ndash;making, and<lb/>his youngest sister lives with him to look
+                    after<lb/>his house. The rest of the family still reside<lb/>in Birmingham, the
+                    father and the mother are<lb/>getting into years, and not so well able to
+                    work<lb/>as formerly; but as they often say, they have<lb/>enough to keep them
+                    above want. It is no<lb/>small pleasure to Peter to reflect on all
+                    this<lb/>prosperity, the result of a trustful determina&ndash;<lb type="inWord"
+                    />tion to overcome difficulties.&rsquo;</p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25I9</name>
+                        <desc>landscape with ruins</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+            <div type="colophon" rend="align(centre)">
+                <p>&rule;<lb/>GROOMBRIDGE AND SONS, PATERNOSTER ROW.</p>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI>

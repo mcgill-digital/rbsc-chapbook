@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-09-26"/>
+                <label>Initial TEI Markup</label>
+                <name/>Kara Garvey<note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-10-17"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+            <change>
+                <date when="2013-03-05"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover"/>
+            <pb n="2"/>
+            <div type="frontispiece">
+                <figure rend="landscape">
+                    <ic:iconClass>
+                        <name>25I241</name>
+                        <desc>village street</desc>
+                    </ic:iconClass>
+                    <head>Little Tim seized by Uncle Tom</head>
+                </figure>
+            </div>
+            <pb n="3"/>
+            <titlePage>
+
+                <docTitle>
+                    <titlePart type="main">LITTLE TIM<lb/>And his Friend<lb/>THE
+                        COBBLER.</titlePart>
+                </docTitle>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>44G311</name>
+                        <desc>prison, jail</desc>
+                    </ic:iconClass>
+                    <head>Little Tim in Prison. </head>
+                </figure>
+
+
+                <docImprint>
+                    <pubPlace>&rule;<lb/>LONDON:</pubPlace>
+                    <publisher rend="align(centre)">GROOMBRIDGE AND SONS, PATERNOSTER
+                        ROW.</publisher>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="4"/>
+            <p rend="align(centre)">Little Tim<lb/>AND HIS<lb/>Friend the Cobbler.<lb/>&rule;</p>
+
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAPTER I</head>
+                <head type="sub" rend="align(centre)">INTRODUCES US TO THE HERO OF THE STORY.</head>
+
+                <p rend="align(justify)">I HAVE a simple story to tell you, dear young<lb/>readers,
+                    which I think will please you. But I<lb/>wish it to do more than this: I hope it
+                    will<lb/>make you feel thankful for the blessings you<lb/>enjoy,&mdash;those
+                    blessings that are too often little<lb/>thought of by those who possess them,
+                    but<lb/>which are sadly missed when sometimes they<lb/>are lost. I mean the
+                    blessings of comfortable<lb/>homes, kind parents and friends, plain
+                        whole&ndash;<lb type="inWord"/>some food and enough of it, and good
+                        instruc&ndash;<lb type="inWord"/>tion.</p>
+                <p rend="first-indent(2) align(justify)">It may be that you have heard of the city
+                    of<lb/>Westminster, and know that it is close to<lb/>London; and that in this
+                    city are the Queen's<lb/>palace, the houses of parliament, and many<lb/>great
+                    and noble buildings besides. You may<lb/>have been told, too, that there are
+                    many fine<lb/>streets and squares in Westminster. And so <pb n="5"/>
+                    <fw type="header" rend="align(centre)">LITTLE TIM.</fw>
+                    <fw type="pagenumber" rend="align(right)">5</fw> there are; but if this be all
+                    you know of that<lb/>city, you have yet much to learn; for in no<lb/>place in
+                    England can greater poverty, wretch&ndash;<lb type="inWord"/>edness, and vice be
+                    found. Behind the fine<lb/>streets, and around the beautiful buildings,
+                    are<lb/>lanes and courts, where dwell hundreds of<lb/>miserable creatures,
+                    crowded together in old<lb/>filthy houses, which look ready to tumble
+                    down;<lb/>&mdash;and they live there in fearful ignorance, and<lb/>in the
+                    practice of almost every kind of sin,<lb/>without hope and without shame.</p>
+                <p rend="first-indent(2) align(justify)">One cold, dreary, gusty, rainy day in
+                    March,<lb/>a great many years ago,&mdash;in one of the most<lb/>wretched of
+                    those filthy courts of Westminster,<lb/>and in one of the dirtiest old houses in
+                    that<lb/>court, was a strange and motley assemblage to<lb/>be seen. From the
+                    cellar up to the third<lb/>storey of the house, every room was crowded<lb/>with
+                    living creatures. To begin at the cellar,<lb/>which opened into the court by a
+                    sort of trap&ndash;<lb type="inWord"/>door and a flight of broken
+                    steps,&mdash;to begin<lb/>there, I say, might be seen a group of two
+                    or<lb/>three families of gipsies, with their poor ill&ndash;<lb type="inWord"
+                    />used and half&ndash;starved asses, their ugly and<lb/>savage dogs, and their
+                    baskets and luggage all<lb/>scattered about in confusion on the
+                    floor.<lb/>Children were crying, women were scolding,<lb/>and the men, seated
+                    lazily on their dirty bun&ndash;<lb type="inWord"/>dles, were smoking their
+                    short black pipes, and<lb/>occasionally, commanding silence by angry
+                    and<lb/>fierce threatenings, mixed with awful oaths.<lb/>These gipsies had
+                    probably just returned from<lb/>some country excursion, and were making
+                    up,<lb/>in idleness, for the fatigues of the journey,<lb/>while they were
+                    spending their gains in indulg&ndash;<lb type="inWord"/>
+                    <pb n="6"/>
+                    <fw type="pagenumber" rend="align(left)">6</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> ing their appetites: for,
+                    miserable as they<lb/>seemed, there was no want of provisions, such<lb/>as
+                    loaves of white bread, rashers of bacon frying<lb/>on the fire&mdash;for the
+                    cellar had the comfort of<lb/>a fire&ndash;place&mdash;and broken jugs of strong
+                    beer,<lb/>which were being passed quickly round from<lb/>men to women, and from
+                    women to children,<lb/>amidst all the crying, scolding, and profanity<lb/>of the
+                    horrible place.</p>
+                <p rend="first-indent(2) align(justify)">In the higher portion of the house,
+                    other<lb/>scenes of wretchedness, wickedness, and pov&ndash;<lb type="inWord"
+                    />erty might have been witnessed. Here was a<lb/>room in which, stretched on
+                    some dirty straw,<lb/>and covered only with a ragged quilt, lay a<lb/>woman in
+                    great pain and sickness, apparently<lb/>near dying, with no one to attend to her
+                    wants,<lb/>but surrounded by a group of noisy, dirty<lb/>children, who disturbed
+                    the poor suffering<lb/>mother with their uproar. In another apart&ndash;<lb
+                        type="inWord"/>ment, were half&ndash;a&ndash;dozen men, drinking,
+                        smok&ndash;<lb type="inWord"/>ing, and playing at cards, which game
+                    presently<lb/>led to wrangling, till they all rushed from the<lb/>house to fight
+                    out their quarrel in the court<lb/>below. Another room, nearly at the top of
+                    the<lb/>house, was closely shut, and barred withinside;<lb/>and there, if any
+                    one could have obtained a<lb/>peep, might probably have been seen a gang
+                    of<lb/>thieves, dividing the fruits of their wickedness,<lb/>or a gang of
+                    coiners, melting base metal, and<lb/>casting it into moulds, that it might be
+                    passed<lb/>for real silver money.</p>
+                <p rend="first-indent(2) align(justify)">Above all this din, and confusion, and
+                    crime,<lb/>there was a miserable loft which had only one<lb/>occupant on the day
+                    of which I am writing.<lb/>The only way to get into this loft was by a <pb n="7"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">7</fw> broken step&ndash;ladder, which
+                    led to a low door,<lb/>just beneath the roof of the house; but though<lb/>there
+                    is some danger in climbing a broken lad&ndash;<lb type="inWord"/>der in the
+                    dark&mdash;for dark it was&mdash;we must<lb/>venture&mdash;in fancy, that
+                    is&mdash;to ascend it: for<lb/>the occupant of that comfortless abode is
+                    the<lb/>hero of my history.</p>
+                <p rend="first-indent(2) align(justify)">Well, here we are, at the top of the
+                    ladder,<lb/>and here is the door:&mdash;we can feel the latch:<lb/>but we lift
+                    the latch in vain: the door will not<lb/>open. Ah, we have found out the
+                    mystery<lb/>now: just above the latch is a strong nail<lb/>driven into the door,
+                    and the fellow to it is<lb/>driven into the door&ndash;post, and a strong cord
+                    is<lb/>tied tight from one nail to another. Ho, ho!<lb/>we have a prisoner,
+                    then, in this sad hole of a<lb/>garret.</p>
+                <p rend="first-indent(2) align(justify)">Even so, young friend. Well, we will
+                    not<lb/>disturb the cord that fastens the door; for our<lb/>thoughts and fancies
+                    can enter where our<lb/>bodies cannot: and so here we are, on the<lb/>broken
+                    floor of that dismal prison. There is<lb/>no window; but light enough passes
+                    through<lb/>the broken tiling of the roof, to let us see all<lb/>that is to be
+                    seen.</p>
+                <p rend="first-indent(2) align(justify)">And little enough that is. At one end
+                    of<lb/>the place, just behind a stack of chimneys,<lb/>which goes through the
+                    loft without affording<lb/>it a fire&ndash;place, is a scanty heap of
+                    shavings,<lb/>which, no doubt, is intended for a bed. In<lb/>another place, is
+                    an old tin kettle without han&ndash;<lb type="inWord"/>dle or lid, and a broken
+                    basket without a bot&ndash;<lb type="inWord"/>tom, a bundle of rags, and a
+                    thick, strong<lb/>walking&ndash;stick. This is all. You may look<lb/>around in
+                    vain for any other furniture. There<lb/>is neither chair, table, nor
+                    cupboard.</p>
+
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">LITTLE TIM</fw>
+                <p rend="first-indent(2) align(justify)">There are no walls to the room, except
+                    at<lb/>the end where the chimney&ndash;stack is: every<lb/>other side of it is
+                    formed of the thin, broken<lb/>roof; and the cold wind, and the drifting
+                    rain<lb/>of the miserable March day on which I am<lb/>supposing our visit to be
+                    made, enters so freely<lb/>through the hundreds of cracks and crevices<lb/>that
+                    one had need to have on a thick great&ndash;<lb type="inWord"/>coat, and to
+                    spread open a stout umbrella, to<lb/>keep, under such a broken roof, either
+                    warm<lb/>or dry.</p>
+                <p rend="first-indent(2) align(justify)">And on the middle of that floor sits a
+                    little<lb/>parcel of humanity, in the shape of a boy,<lb/>whose face looks at
+                    least twelve or fourteen<lb/>years old; but whose size and apparent<lb/>strength
+                    would be puny for a child of seven or<lb/>eight. We shall be about right,
+                    probably, if<lb/>we make a guess between the two accounts,<lb/>and set him down
+                    at ten. Sad and sulky does<lb/>the boy look, as he sits bare&ndash;headed,
+                        bare&ndash;<lb type="inWord"/>footed, and half&ndash;naked besides, on the
+                    damp,<lb/>rotten floor. His hair is matted to his head,<lb/>and grim and dirty
+                    are his features; and yet<lb/>there is a pleasant twinkle in that bright
+                    blue<lb/>eye of his, and when he opens his lips to mut&ndash;<lb type="inWord"
+                    />ter to himself, those lips seem as though they<lb/>could smile in the happy
+                    sunshine, though they<lb/>are far enough from smiles now. Ah, young<lb/>reader,
+                    you little know how many bright<lb/>glances and sunny smiles are quenched by
+                    the<lb/>sorrow and suffering that sin brings.</p>
+                <p rend="first-indent(2) align(justify)">And our little prisoner&mdash;there he
+                    sits;&mdash;and<lb/>there he has been sitting for hours and hours:<lb/>hungry
+                    for want of food, and wretched for<lb/>want of everything that can make young
+                    life<lb/>happy.</p>
+
+                <pb n="9"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>44G313</name>
+                        <desc>prisoner in cell or locked place</desc>
+                    </ic:iconClass>
+                </figure>
+                <p rend="first-indent(2) align(justify)">Well, you have seen, in fancy, the
+                    prison<lb/>and the prisoner. Now let us descend from<lb/>the wretched loft, and
+                    tell our story as though<lb/>sitting at our own cheerful fire&ndash;side, and
+                        talk&ndash;<lb type="inWord"/>ing of things long past.</p>
+                <p rend="first-indent(2) align(justify)">The rain continued to pour down with
+                        in&ndash;<lb type="inWord"/>creasing violence on that dreary March
+                    day;<lb/>and the wind rose higher and higher every<lb/>hour, loosening the
+                    rotten tiles from the more<lb/>rotten laths to which they were hung.
+                    The<lb/>damp floor of that garret became more damp<lb/>every minute, and the
+                    cold more piercing; and<lb/>still the boy moved not from his position.<lb/>His
+                    only serious employment through the<lb/>long hours of that day was to feel in
+                    the pock&ndash;<lb type="inWord"/>
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(left)">10</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> ets of the old ragged
+                    coat, which was almost<lb/>the only garment he had on, for a few
+                    stray<lb/>crumbs which they might contain, and which,<lb/>when he had caught
+                    with his benumbed<lb/>hands, he devoured, dirt and all, with the<lb/>eagerness
+                    of ravenous hunger. And his only<lb/>amusement was that of breaking the stem of
+                    a<lb/>dirty tobacco&ndash;pipe into an inconceivable num&ndash;<lb type="inWord"
+                    />ber of little bits, which he afterwards tossed<lb/>up in the air&mdash;and a
+                    brisk air too&mdash;catching<lb/>them in his mouth as they fell.</p>
+                <p rend="first-indent(2) align(justify)">The longest day will have an end; and as
+                    a<lb/>wet March day, in London, is not one of the<lb/>longest in the year,
+                    especially in a windowless<lb/>garret, the boy, after a time, began to
+                    believe,<lb/>from the darkness that gathered round him,<lb/>that night was
+                    coming on. He was right: it<lb/>grew darker and darker, as well as wetter
+                    and<lb/>more windy. And then, how eagerly did the<lb/>little
+                    fellow&mdash;shivering with cold, and trem&ndash;<lb type="inWord"/>bling with
+                    fear&mdash;listen to every noise he heard<lb/>below. At last, voices of a man
+                    and woman<lb/>approached the bottom of the broken ladder;<lb/>then there was a
+                    rattling at the door; and be&ndash;<lb type="inWord"/>fore it was opened, the
+                    young prisoner had<lb/>darted from his uneasy resting place, and
+                    was<lb/>crouching on the heap of shavings behind the<lb/>chimney stack.</p>
+            </div>
+
+            <pb n="11"/>
+            <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+            <fw type="pagenumber" rend="align(right)">11</fw>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAPTER II.</head>
+                <head type="sub" rend="align(centre)">SHOWS THAT AS THE GARDENER IS, SO IS<lb/>THE
+                    GARDEN.</head>
+
+                <p rend="align(justify)">MARCH has sunshine as well as showers, and<lb/>calm days as
+                    well as windy ones, so much so,<lb/>you know, reader, that it has got the
+                    nickname<lb/>of &lsquo;many weathers;&rsquo; though, for my part, I<lb/>think
+                    that name is as justly due to any other<lb/>month in the year as poor March.</p>
+                <p rend="first-indent(2) align(justify)">But, however that may be, it was a
+                    warm<lb/>pleasant afternoon, a few days later than the<lb/>cold wet one of which
+                    I told you in the last<lb/>chapter; and the sun shone cheerily full on
+                    a<lb/>bright painted board over a little shop in that<lb/>populous highway of
+                    Chelsea, known as the<lb/>King's road. And on that board was inscribed<lb/>in
+                    yellow letters, to resemble gold, &ldquo;Joseph<lb/>Brunton: shoes and boots
+                    neatly, expeditiously,<lb/>and cheaply repaired.&rdquo; In other words,
+                    dear<lb/>reader, you must know that Joseph Brunton<lb/>was what is generally
+                    called a cobbler; and<lb/>a cheerful, good&ndash;humoured, kind, and
+                    diligent<lb/>cobbler he was too, withal. But cobbling<lb/>was not the only trade
+                    carried on in Joseph<lb/>Brunton's shop. He added green&ndash;grocery to<lb/>his
+                    ways and means of getting an honest living<lb/>but this was his wife's part of
+                    the business<lb/>for while the industrious tradesman was thump<lb/>thumping away
+                    on his lapstone; or stitching<lb/>with all his might, with his coat off, and his
+                        <pb n="12"/>
+                    <fw type="pagenumber" rend="align(left)">12</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> arms partly bare, in one
+                    corner of the little<lb/>shop, just under the window, Martha Brunton<lb/>was
+                    always at hand, to answer the shop bell,<lb/>and ready to sell a pound of
+                    potatos or a bun&ndash;<lb type="inWord"/>dle of turnips, or anything else her
+                    stock afford&ndash;<lb type="inWord"/>ed, to <hi rend="italic">her</hi>
+                    customers. And what with shoe&ndash;<lb type="inWord"/>mending and
+                    green&ndash;grocery, it was believed<lb/>that Joseph Brunton and his wife were
+                    getting<lb/>on in the world.</p>
+                <p rend="first-indent(2) align(justify)">Joseph was by no means an old man,
+                    and<lb/>you are not to fancy him with a dirty paper<lb/>cap on his head, a gray
+                    beard of three or four<lb/>days growth on his chin, and a pair of
+                    huge<lb/>spectacles mounted on his nose. Nor was his<lb/>wife any other than a
+                    neat&mdash;very neat, sharp<lb/>and active little woman of thirty years,
+                    or<lb/>thereabout. Her cap, see her when you would,<lb/>looked as though it had
+                    just been taken out of<lb/>a bandbox, to be put upon her head, and under<lb/>it
+                    were no disagreeable looking curl papers to<lb/>be seen, even at the earliest
+                    dawn of day, but<lb/>smooth, glossy brown hair, nicely parted over<lb/>a
+                    forehead, clear and white as cheerfulness,<lb/>and soap, water, and towel, could
+                    make it. Her<lb/>other garments were all of a piece with
+                    her<lb/>head&ndash;dress,&mdash;so clean and tidy,&mdash;down to her<lb/>very
+                    shoe&ndash;sole ; and as she tripped in and out<lb/>of her little parlour behind
+                    the shop, and across<lb/>and across the shop floor, and out upon the<lb/>broad
+                    pavement, where she kept, both for show<lb/>and convenience, much of her stock
+                    in trade,<lb/>you might think of the fancy of some poet,&mdash;</p>
+                <p rend="align(centre) indent(6)">&rdquo;Her little feet peeped in and out,<lb/>Like
+                    mice beneath her petticoat.&ldquo;</p>
+
+                <pb n="13"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw>
+                <p rend="first-indent(2) align(justify)">One little failing Martha Brunton had.
+                    Her<lb/>temper was apt to be rather quick, like all her<lb/>other movements; and
+                    she was perhaps a little<lb/>too fond of having her own way. But
+                    then,<lb/>Joseph, her husband, was so very willing, in<lb/>general, that she
+                    should have her own way, that<lb/>this was not of so much consequence as
+                    it<lb/>might otherwise have been.</p>
+                <p rend="first-indent(2) align(justify)">And Joseph Brunton,&mdash;I have said what
+                    he<lb/>was not in age and appearance; now for what<lb/>he was. He was, then, a
+                    pleasant, curly&ndash;haired,<lb/>rather stout and tall middle&ndash;aged man,
+                    about<lb/>ten years older than his little wife. His ap&ndash;<lb type="inWord"
+                    />parel was always scrupulously clean, although<lb/>he was a cobbler. His shirt
+                    sleeves, so much<lb/>as you could see of them,&mdash;for when he was
+                    at<lb/>work, he always tucked them up,&mdash;were white<lb/>almost as driven
+                    snow; and his good leather<lb/>apron kept all the rest of his dress from
+                    being<lb/>soiled. To see him on Sundays, or on any<lb/>day of the week besides,
+                    when not at his work,<lb/>you would not guess at his trade, except
+                    by<lb/>looking at his hands, which he could not quite<lb/>keep clear from the
+                    stains of leather and wax.</p>
+                <p rend="first-indent(2) align(justify)">In his earlier life, Joseph had been
+                    brought<lb/>up in a family of Friends&mdash;Quakers, as some<lb/>call the good
+                    people who prefer rather to call<lb/>themselves Friends&mdash;and although he
+                    was not<lb/>exactly one of that society, he had been so ac&ndash;<lb
+                        type="inWord"/>customed to their habits and manners, that his<lb/>general
+                    way of talking seemed rather peculiar<lb/>to those who were not used to it. This
+                    will<lb/>soon appear. And now I have done all that<lb/>is needful in the way of
+                        description,&mdash;ex&ndash;<lb type="inWord"/>cept that I should say,
+                    Joseph Brunton's<lb/>house was as much a picture of neatness as <pb n="14"/>
+                    <fw type="pagenumber" rend="align(left)">14</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> himself and his wife and
+                    his little shop, and<lb/>the sign board over it, on which we left the<lb/>sun
+                    cheerfully shining, a page or two back.</p>
+                <p rend="first-indent(2) align(justify)">One thing more though:&mdash;there were
+                    no<lb/>children in the house to disturb its neatness.<lb/>One little boy, this
+                    pleasant couple had had;<lb/>but he had been taken from them by death<lb/>some
+                    years before, when only two or three<lb/>years old. Perhaps it was partly to
+                    amuse<lb/>himself as he sat at work, and to take off his<lb/>thoughts from
+                    dwelling too much on the loss<lb/>he had sustained, or it might be to
+                    attract<lb/>customers to his green&ndash;grocery stores, that<lb/>Joseph Brunton
+                    kept, in a pretty cage, just<lb/>behind where he sat, a superb goldfinch,
+                    which<lb/>made the shop ring with one continual melody<lb/>of sweet sounds from
+                    morning to night. Very<lb/>fond, I assure you, was Joseph Brunton of
+                    his<lb/>goldfinch; and so was Martha.</p>
+                <p rend="first-indent(2) align(justify)">Well, it was on the afternoon of that
+                    sunny<lb/>day in March; and Joseph Brunton sat in his<lb/>snug corner, with the
+                    window open before<lb/>him, on the sill of which was lying a pair of<lb/>boots,
+                    which having just been &ldquo;neatly, expe&ndash;<lb type="inWord"/>ditiously,
+                    and cheaply repaired,&rdquo; according to<lb/>the announcement of his sign
+                    board, he had<lb/>placed there to be out of his way, or for some<lb/>other
+                    reason. Now and then, as an acquaint&ndash;<lb type="inWord"/>ance passed by, he
+                    just lifted his head and<lb/>opened his mouth to say with a cheerful
+                    smile,<lb/>&lsquo;How dost thee do?&rsquo; but these pleasant greet&ndash;<lb
+                        type="inWord"/>ings hindered no time.</p>
+                <p rend="first-indent(2) align(justify)">I cannot say as much for poor dicky,
+                    the<lb/>goldfinch; who, just as the last gleam of sun&ndash;<lb type="inWord"
+                    />shine was gently gliding off the sign&ndash;board,<lb/>pleased to give notice
+                    to his master, by two or <pb n="15"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">15</fw> three well understood chirps,
+                    that a little fresh<lb/>food would be agreeable, or that, at any rate,<lb/>a
+                    little kindly notice was expected for his last<lb/>fine song.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Poor little dicky,&rsquo; said
+                    Joseph Brunton,<lb/>putting down his awl, which he was at that<lb/>moment
+                    sharpening, and rising from his seat,<lb/>&mdash;&lsquo;it would be ungrateful
+                    to neglect thee;&rsquo; and<lb/>saying this, he turned round, and taking a
+                    root<lb/>of fresh groundsel, he employed himself in<lb/>twisting its stalks
+                    among the wires of the<lb/>little cage.</p>
+                <p rend="first-indent(2) align(justify)">It was but a minute,&mdash;nay, not more
+                    than<lb/>half a minute, he was sure,&mdash;that Mr. Brunton<lb/>was thus
+                    occupied; but, whether longer or<lb/>shorter, his quick eye, ere he settled
+                    himself to<lb/>work again, perceived that the boots had unac&ndash;<lb
+                        type="inWord"/>countably disappeared from the window sill.<lb/>For a moment,
+                    the honest shoe&ndash;mender felt<lb/>mightily puzzled. The boots were
+                    there,&mdash;no<lb/>question of that&mdash;when goldy piped for food:<lb/>and
+                    now, the boots were not there,&mdash;no ques&ndash;<lb type="inWord"/>tion of
+                    that either. A sudden thought came<lb/>into the mind of Joseph
+                    Brunton.&mdash;&lsquo;They<lb/>have been stolen;&mdash;that poor little wretch
+                    of<lb/>a beggar boy that&mdash;yes, yes, I perceive,&rsquo;&mdash;and<lb/>in an
+                    instant, with greater quickness than<lb/>usual, Mr. Brunton was out of his
+                    shop&ndash;door,<lb/>and looking sharply up and down the pavement.</p>
+                <p rend="first-indent(2) align(justify)">He did not stand there long. Thirty
+                    yards<lb/>or more from the shop door, he saw, shuffling<lb/>away as fast as his
+                    legs could move, a little<lb/>bare&ndash;headed and bare&ndash;footed fellow,
+                    wrapped<lb/>up, so to speak, in an old ragged coat which<lb/>had once done
+                    service to a man, and which <pb n="16"/>
+                    <fw type="pagenumber" rend="align(left)">16</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> now draggled at least
+                    half of its skirts in the<lb/>dust and dirt behind the puny wearer.
+                    In<lb/>another moment, Mr. Brunton was in full<lb/>chase of the delinquent, as
+                    he believed the<lb/>beggar boy to be. Quickly the boy ran as he<lb/>found
+                    himself pursued; but more quickly did<lb/>the pursuer follow. Down a narrow lane
+                        <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>42A5521</name>
+                            <desc>searching and finding of runaway child</desc>
+                        </ic:iconClass>
+                    </figure> darted the boy; down the narrow lane also<lb/>darted the man, and in
+                    two minutes, the power&ndash;<lb type="inWord"/>ful grasp of the worthy
+                    shoe&ndash;mender had<lb/>secured the culprit. Yes, he was the
+                    culprit;<lb/>there could be no denying it: for in one of<lb/>the capacious
+                    pockets of the old coat, the<lb/>newly&ndash;mended boots were found
+                    concealed.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo; Thee must come back with me;&rsquo;
+                    said Mr.<lb/>Brunton</p>
+
+                <pb n="17"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">17</fw>
+                <p rend="first-indent(2) align(justify)">&lsquo;I shan't,&rsquo; shouted the boy:
+                    and then as he<lb/>found his struggles were useless, he changed<lb/>his tone
+                    &mdash;&lsquo;Please let me go, sir: I won't do<lb/>so any more.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Thee must come with me, I
+                    say,&rsquo; returned<lb/>Joseph Brunton; and thus saying, he led the<lb/>boy
+                    towards the shop.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Now, sit thee down, my boy,&rsquo;
+                    said the kind&ndash;<lb type="inWord"/>hearted man, in a serious, but
+                    encouraging<lb/>tone; &lsquo;sit thee down, I say; I must have a<lb/>little talk
+                    with thee.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">The boy obeyed; but he looked at the
+                        door&ndash;<lb type="inWord"/>way as if projecting a speedy escape as soon
+                    as<lb/>possible. Mr. Brunton observed this, and<lb/>calmly shut and fastened the
+                    door. &lsquo;Thee must<lb/>sit still,&rsquo; he said.</p>
+                <p rend="first-indent(2) align(justify)">The boy looked at him
+                    uneasily.&mdash;&lsquo;You are<lb/>going to beat me,&rsquo; he said; &lsquo;but
+                    you had<lb/>better not, I tell you.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And why had I better not?&rsquo;
+                    said Joseph<lb/>with a smile: &lsquo;or why should I beat thee, poor<lb/>boy?
+                    What good would that do?&mdash;None to<lb/>me, I know; and none to thee, I
+                    think. No,<lb/>no, I shall not beat thee.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">The boy brightened up, and there was
+                    a<lb/>pleasant twinkle in his blue eye that caught<lb/>Joseph Brunton's
+                    attention. He looked more<lb/>closely at the little prisoner, and, in spite
+                    of<lb/>dirt and rags, and in spite too of matted hair,<lb/>and cheeks pinched
+                    in, perhaps with hunger,<lb/>there were marks of openness and even beauty<lb/>in
+                    the face of the little thief. &lsquo;Alas!&rsquo; muttered<lb/>Joseph to
+                    himself; &lsquo;if this poor boy had had<lb/>good parents and good instruction
+                    and a happy<lb/>home, how different would he seem. Many a <pb n="18"/>
+                    <fw type="pagenumber" rend="align(left)">18</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> proud mother would be
+                    glad to have a son with<lb/>such a face, to pet, and perhaps to ruin by
+                        indul&ndash;<lb type="inWord"/>gence, as this poor boy is likely to be
+                    ruined by<lb/>penury and ill&ndash;teaching.&rsquo;&mdash;&lsquo;Boy,&rsquo; he
+                    said aloud;<lb/>holding in his hand the rescued boots; &lsquo;dost<lb/>thee know
+                    what I could do with thee, for<lb/>stealing these boots?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;You did not see me,&rsquo; said the
+                    boy.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Nay; but I found them on thee; and I
+                    could<lb/>send thee to prison for thy misdeed. Dost hear?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">The boy heard but he did not answer.
+                    &lsquo;What<lb/>is thy name, boy?&rsquo; continued Mr. Brunton.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;It's no odds&rsquo; said the boy,
+                    who had been<lb/>taught not to commit himself unnecessarily by<lb/>giving up his
+                    name.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Well, my child;&rsquo; said the
+                    kind&ndash;hearted<lb/>man; &lsquo;it is, as you say, of little
+                    consequence.<lb/>I suppose you will not tell me where you
+                    live?&rsquo;<lb/>&lsquo;Oh, any where,&rsquo; the boy answered.</p>
+                <p rend="first-indent(2) align(justify)">And have you parents?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">The boy shook his head.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And dost thee not know it is very
+                    wicked<lb/>to steal?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;They make me,&rsquo; said the
+                    boy.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;They?&mdash;who?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Uncle Tom and Mammy.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;But they dare not make thee do
+                    wrong,<lb/>surely?&rsquo; continued Joseph Brunton. &lsquo;Thee<lb/><hi
+                        rend="italic">must</hi> not steal.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I must,&rsquo; replied the boy
+                    stoutly. &lsquo;They<lb/>shut me up three days last week, with nothing<lb/>to
+                    eat, because I did not take anything to<lb/>them at night, and they beat me
+                    wicked&mdash;look<lb/>here:&rsquo;&mdash;and the little boy stripped up
+                    his<lb/>sleeve, and showed that his arm was blackened<lb/>and bruised with heavy
+                    blows.</p>
+
+                <pb n="19"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">19</fw>
+                <p rend="first-indent(2) align(justify)">&lsquo;Poor boy&mdash;poor boy! what can I
+                    do with<lb/>thee?&rsquo; said Joseph. &lsquo;It were best, surely for<lb/>thee
+                    and for me to take thee at once before<lb/>the magistrate. But I have not the
+                    heart to<lb/>do it. Besides,&rsquo; he muttered to himself, &lsquo;if<lb/>sent
+                    to prison, he would mix with older offen&ndash;<lb type="inWord"/>ders, and
+                    learn more wickedness.&rsquo; &mdash;&lsquo;Boy,&rsquo;<lb/>he continued
+                    aloud;&rsquo; hast thee ever heard of<lb/>the great God who made
+                    thee?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Uncle Tom says God very
+                    often,&rsquo; the boy<lb/>replied; &lsquo;and so does every body I ever
+                    see.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;But,&rsquo; asked Joseph,
+                    &lsquo;dost thee know what<lb/>that word means? Dost thee know whose<lb/>name it
+                    is?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">The boy shook his head.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Hast thee heard of Jesus
+                    Christ&mdash;of hea&ndash;<lb type="inWord"/>ven&mdash;of hell? but I need not
+                    ask thee. I see<lb/>thou dost not understand me. Canst thee<lb/>read?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;No,&rsquo; said the
+                    boy&mdash;&lsquo;but please do let me<lb/>go Sir,&rsquo; he cried. &lsquo;I
+                    shall catch it cruel again<lb/>when I get home.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And where is thine home?&rsquo;
+                    again asked the<lb/>shoe&ndash;mender.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Oh, anywheres,&rsquo; repeated the
+                    boy.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Boy,&rsquo; said Joseph Brunton,
+                    changing his<lb/>tone, and his subject, &lsquo;canst thee
+                    eat&mdash;art<lb/>hungry?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;O yes, please Sir, yes,&rsquo;
+                    exclaimed the boy<lb/>eagerly. &lsquo;I hav'nt had anything to eat
+                    since&mdash;.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I do not ask thee when thee didst
+                    eat last,&rsquo;<lb/>said Mr. Brunton. &lsquo;Thee canst speak falsely<lb/>I
+                    fear, as well as steal; but thou shalt have a<lb/>meal now at any
+                    rate.&mdash;Martha,&rsquo; he called.</p>
+
+                <pb n="20"/>
+                <fw type="pagenumber" rend="align(left)">20</fw>
+                <fw type="header" rend="align(centre)">LITTLE TIM</fw>
+                <p rend="first-indent(2) align(justify)">And Martha came from the little
+                    parlour<lb/>behind the shop,&mdash;wondering, perhaps, when<lb/>she saw the
+                    ragged boy, what sort of a customer<lb/>she was wanted for.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Martha,&rsquo; continued Joseph;
+                    &lsquo;this poor<lb/>boy&mdash;have we a plate of broken food to give<lb/>in
+                    charity?&mdash;I do verily believe he is greatly<lb/>pinched with
+                    hunger.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Martha looked doubtfully at the little
+                    object<lb/>before her; but as she looked her scruples<lb/>disappeared.
+                    &lsquo;Poor child,&rsquo; she said; &lsquo;he does<lb/>look hungry,&mdash;and
+                    pretty too,&rsquo; she added to<lb/>herself,&mdash;&lsquo;if it were not for the
+                    dirt.&rsquo; In a<lb/>minute or two, a plate of meat and bread and<lb/>cold
+                    potatos was put into the boy's hand.<lb/>He devoured the food ravenously.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Poor boy, thee wast hungry,&rsquo;
+                    said the com&ndash;<lb type="inWord"/>passionate cobbler, when the meal was
+                    over.<lb/>&lsquo;It is sad to see thee, and such as thee, going<lb/>the broad
+                    road to ruin and perdition: but what<lb/>can such as I do?&rsquo; and Joseph
+                    shook his head<lb/>despondingly. &lsquo;Well, my boy, I cannot do<lb/>more for
+                    thee. Thou hast bad teachers I fear,<lb/>and wilt soon come to a shameful end.
+                    But<lb/>boy, thee must not steal. It will bring thee<lb/>to shame:&mdash;now
+                    listen: if thee will promise<lb/>not to take what is not thine, thou
+                    mayst<lb/>come:&mdash;but why ask thee for a promise which<lb/>I fear thou
+                    wouldst break. Without a pro&ndash;<lb type="inWord"/>mise, thee mayst come
+                    again to&ndash;morrow, and<lb/>the next day, and the next, if thee likes,
+                    and<lb/>I will give thee a dinner. Dost understand?&rsquo;<lb/></p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Yes sir. Thank ye sir,&rsquo; said
+                    the boy<lb/>heartily.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And now, thee mayst go: but stay,
+                    thee<lb/>wilt tell me thy name now?&rsquo;</p>
+
+                <pb n="21"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">21</fw>
+                <p rend="first-indent(2) align(justify)">The boy pondered, as though calculating
+                    the<lb/>danger of such u nwonted confidence. At<lb/>length he
+                    said&mdash;&lsquo;They call me Tim. My name<lb/>is Timothy Smith:&mdash;thank'ee
+                    sir. I'll come<lb/>to&ndash;morrow:&rsquo; and in another minute the
+                    shop<lb/>was left to Joseph, Martha, and the goldfinch,<lb/>the unconscious
+                    cause of this unusual scene.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;You might have been satisfied, I
+                    think,&rsquo;<lb/>said Martha, when they were thus left, &lsquo;with<lb/>giving
+                    one dinner, without promising more.<lb/>But poor boy, he was hungry; and we
+                    shall<lb/>not miss a few scraps any how. But how did<lb/>you get acquainted with
+                    him Joseph?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Mr. Brunton smiled:&mdash;&lsquo;He tried
+                    to rob me,<lb/>first of all, Martha.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;What?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;He ran away with these boots, my
+                    dear.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I wish I had known that just
+                    now,&rsquo; replied<lb/>Mrs. Brunton, rather sharply; &lsquo;I would
+                    not<lb/>have given him a scrap of food&mdash;no.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I think thee would, Martha. I know
+                    thee<lb/>too well to believe thee unkind and unforgiving.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;But a thief, Joseph! He will rob us
+                    every<lb/>day.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Nay, Martha, we will take care that
+                    he<lb/>shall not.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I don't like it,&rsquo; said Martha;
+                    for she would<lb/>not give up her point; &lsquo;I wonder you should<lb/>be so
+                    silly as to feed a young thief for trying<lb/>to rob you.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;The bible, Martha, tells you and me
+                    to recom&ndash;<lb type="inWord"/>pense no one evil for evil, but <hi
+                        rend="italic">contrariwise</hi> .&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;So it does,&rsquo; replied Martha
+                    thoughtfully,<lb/>and there the matter ended for that day.</p>
+            </div>
+
+            <pb n="22"/>
+            <fw type="pagenumber" rend="align(left)">22</fw>
+            <fw type="header" rend="align(centre)">LITTLE TIM</fw>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAPTER III.</head>
+                <head type="sub" rend="align(centre)">GIVES THE PAST, AND CONTINUES THE
+                        PRE&ndash;<lb type="inWord"/>SENT HISTORY OF TIMOTHY SMITH.</head>
+
+                <p rend="align(justify)">THE next day, punctually, but timidly, did the<lb/>little
+                    culprit&mdash;bareheaded, barefooted, and big&ndash;<lb type="inWord"/>coated,
+                    as before, present himself to the kind&ndash;<lb type="inWord"/>hearted Joseph
+                    Brunton; and day after day,<lb/>for many days in succession, was he to be
+                    seen<lb/>seated on a basket turned bottom upwards,<lb/>opposite the industrious
+                    mender of shoes, de&ndash;<lb type="inWord"/>vouring, rather than eating, his
+                    plateful of bits<lb/>and scraps. And it was curious to remark how<lb/>soon, and
+                    yet how gradually, the honest man<lb/>and the roguish child began to
+                    understand<lb/>each other, and to slide into each other's confi&ndash;<lb
+                        type="inWord"/>dence. On the first day, little passed between<lb/>them worth
+                    noting; but before a week was<lb/>over, the little fellow had found time to
+                    linger<lb/>over his meal, and to hold something like con&ndash;<lb type="inWord"
+                    />fidential intercourse with his friend&mdash;the first,<lb/>the very first real
+                    and true one he had ever<lb/>known.</p>
+                <p rend="first-indent(2) align(justify)">During these conversations, Martha
+                        Brun&ndash;<lb type="inWord"/>ton rarely appeared in the little shop.
+                    For<lb/>one thing, her customers were generally either<lb/>morning or evening
+                    ones, and as Timothy's<lb/>usual dinner hour was three or four o'clock
+                    in<lb/>the afternoon, she had seldom any occasion to<lb/>break in upon the
+                    conference. But another<lb/>reason was that she did not altogether
+                    approve<lb/>of Joseph's extreme regard and kindness for<lb/>this dirty little
+                    thief&mdash;good&ndash;looking though she <pb n="23"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">23</fw>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>41C11</name>
+                            <desc>eating</desc>
+                        </ic:iconClass>
+                    </figure> allowed him to be. He had taken this affair<lb/>in hand without much
+                    consulting her opinion,<lb/>and she knew it would not end
+                    well;&mdash;&lsquo;no,<lb/>that it would not, she knew.&rsquo; And
+                    though,<lb/>day after day, she laid by the plate of broken<lb/>food, it was with
+                    a shake of her tidy and<lb/>comely little head, which plainly
+                    said&mdash;more<lb/>than she cared to express in words.</p>
+                <p rend="first-indent(2) align(justify)">But, for once, Joseph chose to have his
+                    own<lb/>way; and when that was the case with her<lb/>generally obedient husband,
+                    Martha knew it<lb/>was useless to resist.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Timothy,&rsquo; said Mr. Brunton to
+                    his little<lb/>pensioner, one day, about a week after their<lb/>first
+                    acquaintance; &lsquo;thine is a good and happy<lb/>name. I wish thee wert like
+                    another Timothy<lb/>of whom I have read, and that thou didst <pb n="24"/>
+                    <fw type="pagenumber" rend="align(left)">24</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> know the Holy Scriptures
+                    in this thy youth.<lb/>But, alas! thou hast no kind and tender<lb/>mother and
+                    grandmother to teach them to<lb/>thee, as he had.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Granny's dead;&mdash;she died last
+                    hopping:&rsquo;<lb/>said the boy; and Mr. Brunton thought he<lb/>saw a tear or
+                    two in his bright eyes as he said<lb/>it. But they did not fall.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Then thee hadst a friend in thy
+                        grand&ndash;<lb type="inWord"/>mother,&rsquo; inquired Joseph: &lsquo;come
+                    now, tell<lb/>me all about it,&rsquo; he continued, in a soothing<lb/>tone.</p>
+                <p rend="first-indent(2) align(justify)">It was not a long story that Timothy
+                    had<lb/>o tell; nor was it a very happy one. I shall<lb/>not attempt to give it
+                    in his own words; but<lb/>here it is in mine,&mdash;as much of it, at least,
+                    as<lb/>Joseph Brunton could gather from him.</p>
+                <p rend="first-indent(2) align(justify)">As long ago as Timothy's memory
+                    could<lb/>take him back on the stream of life, his resting<lb/>place at night
+                    used to be under cover of an old<lb/>blanket tent, beneath the hedges of Kent
+                    and<lb/>Sussex; and his home by day, a donkey cart,<lb/>which contained, besides
+                    himself, all the<lb/>worldly goods of his &lsquo;granny and
+                    mammy,&rsquo;<lb/>including a collection of rags, rabbit skins<lb/>and hare
+                    skins, and old metal, which they tra&ndash;<lb type="inWord"/>velled the country
+                    to gather, either honestly<lb/>or dishonestly, and which, as often as
+                    they<lb/>could, they disposed of in pedlary shops, in<lb/>exchange for money or
+                    goods. This was the<lb/>pleasantest part of Timothy's life; for though<lb/>he
+                    then suffered much neglect and some<lb/>cruelty, his &lsquo;granny&rsquo; was
+                    generally kind to<lb/>him; and so was his &lsquo;mammy&rsquo; when in a
+                    good<lb/>temper; but at other times she used to beat<lb/>him without mercy.</p>
+
+                <pb n="25"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <p rend="first-indent(2) align(justify)">He knew nothing about a
+                    father:&mdash;perhaps<lb/>he had one, he did not know; and at that<lb/>time he
+                    knew nothing about uncle Tom.</p>
+                <p rend="first-indent(2) align(justify)">His life continued with little change,
+                    except<lb/>that of scene and seasons, until little Timothy<lb/>could run by the
+                    side of the donkey, instead<lb/>of continually riding in the cart. Then
+                    he<lb/>was taught to beg, to lie, and to steal, and was<lb/>often beaten for
+                    want of success. At times he<lb/>used to accompany his granny and mammy
+                    to<lb/>country fairs, where they made a stall with<lb/>their tent blanket and
+                    donkey cart, and sold a<lb/>few toys, while he&mdash;poor little
+                    wretch&mdash;was<lb/>sent into the crowd, in his rags and dirt, to<lb/>beg or to
+                    pick up dishonestly anything that<lb/>came in his way. At one of these
+                    places,<lb/>uncle Tom made his appearance, and Timothy<lb/>was told he was his
+                    father's brother. This<lb/>was &lsquo;the summer before last,&rsquo; Tim said;
+                    and<lb/>since then he had travelled the country with<lb/>them, or else lived in
+                    a mud hut by the road&ndash;<lb type="inWord"/>side, which they hired for a
+                    single winter, be&ndash;<lb type="inWord"/>cause &lsquo;granny was getting old
+                    and lame&rsquo;; and<lb/>also because the poor donkey fell down one<lb/>day and
+                    broke its leg, and was killed by uncle<lb/>Tom. In this miserable place they
+                    lived a sad<lb/>life; for Uncle Tom used to beat his mammy<lb/>and his granny
+                    every day, and himself too;<lb/>but they bore through all this bad usage,
+                    and<lb/>the poor boy began to find that the more<lb/>cruelly uncle Tom used his
+                    mammy, the more<lb/>cruelly he himself was treated by her. At<lb/>this time,
+                    they all lived by begging and thiev&ndash;<lb type="inWord"/>ing; and very sadly
+                    the poor boy seemed to<lb/>have fared.</p>
+
+                <pb n="26"/>
+                <fw type="pagenumber" rend="align(left)">26</fw>
+                <fw type="header" rend="align(centre)">LITTLE TIM</fw>
+                <p rend="first-indent(2) align(justify)">Then spring came, the last spring, and
+                        sum&ndash;<lb type="inWord"/>mer, and they travelled the country
+                    again,<lb/>lodging under the old tent by night, and mak&ndash;<lb type="inWord"
+                    />ing and selling matches, or begging by day,<lb/>catching up, as they went
+                    along, all they could<lb/>lay their hands on, of any sort of property.<lb/>Then
+                    autumn came; and they went picking<lb/>hops for a farmer in Kent. In the hop
+                        gar&ndash;<lb type="inWord"/>den, poor granny was taken bad, and
+                    died<lb/>under a hedge; and then it was that, with his<lb/>uncle Tom and his
+                    mammy, Timothy first<lb/>came to London, and had lived, &lsquo;just
+                        any&ndash;<lb type="inWord"/>wheres,&rsquo; as he expressed himself, and
+                    where he<lb/>had been trained, by constant ill&ndash;treatment, to<lb/>shift for
+                    himself in any way he could, and had<lb/>never escaped punishment if he did not
+                    take<lb/>home money, or money's worth, at night to<lb/>his mammy and uncle, who
+                    shifted likewise<lb/>for themselves, Timothy would not say, or<lb/>did not know
+                    how; and who were, both of<lb/>them, more often beside themselves with
+                    strong<lb/>drink, than they were sober.</p>
+                <p rend="first-indent(2) align(justify)">This was Timothy's story of his past
+                    life,<lb/>told indeed, in very different words, but told<lb/>so as to cause the
+                    kind&ndash;hearted Joseph Brun&ndash;<lb type="inWord"/>ton many a sigh. He had
+                    no reason to doubt<lb/>that the story was pretty nearly a true and<lb/>faithful
+                    one; for as I just now said, the honest<lb/>shoe&ndash;mender and the little
+                    rogue began to have<lb/>confidence in each other.</p>
+                <p rend="first-indent(2) align(justify)">And if Joseph Brunton was affected by
+                    the<lb/>story of his daily pensioner, so was he shocked<lb/>by his entire
+                    ignorance of all that is most fit&ndash;<lb type="inWord"/>ting for a child to
+                    know. Of God, and heaven,<lb/>he had never heard but in the language of <pb
+                        n="27"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">27</fw> blasphemy and profanity. Of
+                    the Bible he<lb/>had never heard. Of what was right or what<lb/>was wrong he had
+                    but a faint idea:&mdash;stealing<lb/>and lying, for instance, he thought, were
+                    quite<lb/>fair and proper when not found out; and<lb/>those were the best and
+                    cleverest people who<lb/>could most successfully deceive. As to beg&ndash;<lb
+                        type="inWord"/>ging, that was his business, and his birthright,<lb/>as it
+                    seemed to be that of almost everybody<lb/>he knew;&mdash;But I will not distress
+                    you, rea&ndash;<lb type="inWord"/>der, by speaking any more of this poor
+                    boy's<lb/>ignorance. Only let me say: Be thankful for<lb/>your happier lot, and
+                    remember if you do not<lb/>profit by the instructions you receive, your
+                    sin<lb/>will be greater than that of such poor children<lb/>as little Timothy,
+                    of whom, I fear and know<lb/>there are hundreds,&mdash;ay, thousands,&mdash;in
+                        Eng&ndash;<lb type="inWord"/>land&mdash;happy England.</p>
+                <p rend="first-indent(2) align(justify)">It was but about half an hour each day
+                    that<lb/>Joseph Brunton saw anything of the little<lb/>ragged fellow; and it was
+                    not much that he<lb/>attempted to do in the way of teaching him.<lb/>But now and
+                    then he thought he saw an<lb/>inquiring glance in the boy's bright eye, and
+                    a<lb/>quivering of his lips, when he spoke a few<lb/>words of good instruction
+                    in his ears, which<lb/>encouraged him to say, the day after he had<lb/>heard the
+                    history of the little vagabond's life,&mdash;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Timothy, would thee like to learn to
+                    read?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I dunno;&rsquo; said Timothy;
+                    &lsquo;what is it?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Mr. Brunton took a book from a shelf
+                    by<lb/>his side, and opening it, explained to the boy<lb/>that the marks which
+                    he saw stood for the<lb/>words which are spoken; and that by learning<lb/>to
+                    understand those marks, he would be in the <pb n="28"/>
+                    <fw type="pagenumber" rend="align(left)">28</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> way to get wisdom, power,
+                    and perhaps money.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Yes,&rsquo; said Timothy, starting
+                    up; &lsquo;I should<lb/>like.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Well, then,&rsquo; replied Mr.
+                    Brunton; &lsquo;to&ndash;<lb type="inWord"/>morrow I will begin to teach thee. I
+                    suppose<lb/>thee art going now?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Yes,&rsquo; the boy answered, wiping
+                    his mouth<lb/>with his coat sleeve; &lsquo;I must not stop
+                    any<lb/>longer.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And Timothy, where wilt thee go
+                    from<lb/>hence?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Oh, anywheres,&rsquo; said Timothy;
+                    this was<lb/>his usual answer when pressed by Joseph<lb/>as to his places of
+                    resort.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And what wilt thee do the rest of
+                    this<lb/>evening, Timothy?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Oh, nothing,&mdash;it does not
+                    signify,&rsquo; said he,<lb/>and darted from the shop.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Poor child,&rsquo; said Joseph
+                    Brunton to his<lb/>wife, who came out of the neat little parlour<lb/>as the boy
+                    departed: &lsquo;I fear he gets into much<lb/>evil, day by day. I cannot get him
+                    to tell me<lb/>how he passes his time. I doubt he continues<lb/>to steal when he
+                    can.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;To be sure he does,&rsquo; replied
+                    Martha. You<lb/>are strangely bewitched with that boy, I
+                    think,<lb/>Joseph.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Martha,&rsquo; said Joseph, solemnly
+                    but kindly; &lsquo;how old would our little Joseph have been<lb/>had he lived
+                    until this day?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">It was a tender subject. The little
+                    woman<lb/>burst into tears, and said nothing. There was<lb/>no need for it. She
+                    understood Joseph&mdash;quite.</p>
+            </div>
+
+            <pb n="29"/>
+            <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+            <fw type="pagenumber" rend="align(right)">29</fw>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAPTER IV.</head>
+                <head type="sub" rend="align(centre)">TIMOTHY GETS INTO TROUBLE; GETS OUT<lb/>AGAIN;
+                    AND LEARNS TO UNLEARN WHAT<lb/>HE HAD LEARNED AMISS.</head>
+                <p rend="align(justify)">BUT Martha, at that time, could not,&mdash;no that<lb/>she
+                    could not,&mdash;she could not if she would,<lb/>and she would not if she could,
+                    approve of her<lb/>husband's whim, as she called it; and very<lb/>glad was she
+                    when the next day came, and the<lb/>next, and the next besides, and the
+                    ragged<lb/>dirty boy failed to make his appearance.<lb/>Joseph Brunton, on the
+                    other hand, was<lb/>sorry. He had become used to the boy,<lb/>there was
+                    something in him that he liked,<lb/>notwithstanding his repulsive outward
+                        appear&ndash;<lb type="inWord"/>ance; he wished, too, to do something, if
+                    but<lb/>a little, towards rescuing the poor little fellow<lb/>from ruin, by
+                    putting him in the way of learn&ndash;<lb type="inWord"/>ing something
+                    better;&mdash;and Joseph had a cer&ndash;<lb type="inWord"/>tain book by his
+                    side, the same that he opened<lb/>to Timothy, in which he had strong faith,
+                    and<lb/>he had thought, &lsquo;If I could but teach him to<lb/>read that
+                    book&mdash;.&rsquo; In short, he felt strangely<lb/>uneasy at the boy's
+                    unaccountable absence.</p>
+                <p rend="first-indent(2) align(justify)">It was not long unaccountable.</p>
+                <p rend="first-indent(2) align(justify)">Tinkle&mdash;tinkle&mdash;tink&mdash;
+                    sounded the little<lb/>shop bell one morning, in the third week of<lb/>March;
+                    and in came a customer for a bundle<lb/>of greens, and a five&ndash;minute's
+                    chat with her ac&ndash;<lb type="inWord"/>quaintance, Mrs. Brunton.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;&mdash;And such a to&ndash;do we had
+                    a few days <pb n="30"/>
+                    <fw type="pagenumber" rend="align(left)">30</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> ago,&mdash;and do you
+                    know I had to go to the<lb/>police office, all about a little dirty wretch of
+                    a<lb/>boy, who came into my shop, and when my<lb/>back was turned, ran off with
+                    a great piece<lb/>of cheese that was on the counter.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Ah,&rsquo; said Martha, eagerly,
+                    &lsquo;what sort of a<lb/>boy was it? Do tell me.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;A little fellow of his age, I should
+                    think,&rsquo;<lb/>was the reply; &lsquo;but I didn't mind much what<lb/>sort of
+                    one, only I pretty soon handed him over to the policeman; and he has got
+                    a<lb/>month of it.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;But how was he drest,&rsquo;
+                    inquired Mrs.<lb/>Brunton, &lsquo;I want to know. I fancy I have<lb/>seen
+                    something of the young urchin.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Why, as to dress; he had not much
+                    to<lb/>boast of, besides an old ragged coat that had<lb/>been a man's
+                    once&mdash;&rsquo; I need not record any<lb/>more of this conversation.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;There, Joseph, did you hear?&rsquo;
+                    said Mar&ndash;<lb type="inWord"/>tha, when her customer was gone.
+                    &lsquo;There's<lb/>an end of your fancy, I should think.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Yes, Martha, I hear. Doubtless, it
+                    is<lb/>little Timothy. I grieve for the poor boy,&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Well, it is a bad thing for him, to
+                    be sure,&rsquo;<lb/>replied Martha, softening a little: &lsquo;but it is<lb/>no
+                    use grieving, Joseph. You had better for&ndash;<lb type="inWord"/>get the boy.
+                    It is all done with now, at any<lb/>rate.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">But Joseph Brunton could not forget
+                    the<lb/>boy so easily. Thump, thump, thump, went<lb/>his hammer on the bit of
+                    sole leather he was<lb/>fashioning and hardening, &mdash; thump,
+                    thump,<lb/>thump, he went again; but it would not do.<lb/>He could not thump
+                    poor Timothy out of his<lb/>mind. Long he pondered: at length, when <pb n="31"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">31</fw> he could bear his thoughts no
+                    longer, he<lb/>washed his hands, pulled down his shirt<lb/>sleeves, took off his
+                    apron, put on his coat<lb/>and hat, and walked out of the little
+                    shop,<lb/>telling Martha he had business abroad.</p>
+                <p rend="first-indent(2) align(justify)">And so he had; and day after day, for
+                    a<lb/>whole month, did Joseph Brunton, at a cer&ndash;<lb type="inWord"/>tain
+                    hour of the day, and for a certain time,<lb/>find business to do abroad. And
+                    whatever<lb/>that business was, he ever put, before he went,<lb/>a certain book
+                    into his pocket,&mdash;that book in<lb/>which he had such strong faith; and
+                    daily<lb/>when he returned, did he wear a cheerful as&ndash;<lb type="inWord"
+                    />pect, and had a kind word for his pretty gold&ndash;<lb type="inWord"/>finch,
+                    which acknowledged his attention with<lb/>a happy chirp and a thankful song.</p>
+                <p rend="first-indent(2) align(justify)">And Martha knew well enough the
+                    business<lb/>that called him abroad during that month, for<lb/>Joseph Brunton
+                    did not approve of secrets<lb/>between man and wife. I fear she did not
+                    at<lb/>first like his daily absences, but she was a kind<lb/>little body after
+                    all, though too hasty&mdash;rather<lb/>too hasty.</p>
+                <p rend="first-indent(2) align(justify)">The days were lengthening, Spring
+                    had<lb/>come, and April showers were soon to shew<lb/>their good effects in May
+                    flowers. The month<lb/>of little Timothy's imprisonment had all but<lb/>passed
+                    away.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;He comes out to&ndash;morrow,
+                    Martha,&rsquo; said<lb/>Joseph, as he sat at tea with his little wife.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Yes,&rsquo; replied
+                    Martha,&mdash;that was all.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Thee would not know him now,
+                    Martha;<lb/>he is quite another being,&mdash;so neat and clean,<lb/>thanks to
+                    thy kindness, Martha, for the nice<lb/>shirt thee made him, and to the prison
+                        disci&ndash;<lb type="inWord"/>
+                    <pb n="32"/>
+                    <fw type="pagenumber" rend="align(left)">32</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> pline, which, if it be
+                    not all we could wish, is<lb/>better than I thought.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Martha felt pleased.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And so grateful, Martha; so much
+                        im&ndash;<lb type="inWord"/>proved; and so rapidly has he made
+                    progress.<lb/>He will soon be able to read. Thee will be<lb/>pleased to see him,
+                    I am sure.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Martha was softened out&ndash;right. She
+                    had<lb/>felt for little Timothy more than she cared to<lb/>express; and she had
+                    yielded to her husband's<lb/>wish, and made up a little bundle of
+                    clothing<lb/>for the destitute boy; and she now felt how<lb/>much more blessed
+                    it is to give than to receive.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;And Martha,&rsquo; continued the
+                    benevolent<lb/>cobbler: &lsquo;thee canst not know, unless thee<lb/>were to see,
+                    how loth he is to go back to his<lb/>wicked relations, and to his sinful
+                    practices.<lb/>Martha, he wishes to be honest now he knows<lb/>what honesty
+                    really is.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;But he must go to them, I
+                    suppose,&rsquo; re&ndash;<lb type="inWord"/>plied Mrs. Brunton; &lsquo;it is a
+                    sad pity, though.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I have thought about it,&rsquo; said
+                    Mr. Brun&ndash;<lb type="inWord"/>ton, hesitatingly. &lsquo;I have,
+                    to&ndash;day, thought<lb/><hi rend="italic">much</hi> about it, and have fancied
+                    if we were but<lb/>to save the poor child from ruin, how happy<lb/>we should
+                    be.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;But how can we, Joseph? We
+                    cannot<lb/>take him into our house, you know.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;We need not do that exactly: but I
+                    have<lb/>been thinking,&mdash;could we not give him em&ndash;<lb type="inWord"
+                    />ployment? He would soon learn my trade, I<lb/>do think: and that would be no
+                    loss to us,<lb/>you know; and he might be useful to you, in<lb/>your business,
+                    Martha, which would sometimes<lb/>save my shoe&ndash;leather,&rsquo; said
+                    Joseph; &lsquo;and then <pb n="33"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">33</fw> as to lodging him, why, there
+                    is the little<lb/>storehouse in our garden&mdash;it might be made<lb/>warm and
+                    tight.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Martha was now fairly in for it: and
+                    she<lb/>soon entered as warmly even as Joseph could<lb/>desire, into all his
+                    plans. There was a little<lb/>bedstead to be got, and a mattress, and
+                    a<lb/>blanket or two, and some coarse sheets; and a<lb/>window to be mended, and
+                    the place to be<lb/>cleaned and scoured, and a new jacket to be<lb/>made for
+                    little Timothy out of one of Joseph<lb/>Brunton's old coats; and trousers, and
+                    shoes,<lb/>and stockings;&mdash;it was a pleasant scheme, and<lb/>these were
+                    pleasant calculations, for they were<lb/>kind and generous ones. &lsquo;And
+                    why,&rsquo; asked Mar&ndash;<lb type="inWord"/>tha, quite boldly too, &lsquo;why
+                    should the rich<lb/>have all such pleasures to themselves? Not<lb/>that we are
+                    so <hi rend="italic">very</hi> poor either, Joseph, eh?&rsquo;<lb/>and the
+                    little woman laughed with pleasure at<lb/>the very idea.</p>
+                <p rend="first-indent(2) align(justify)">But a damping thought crossed
+                    Martha's<lb/>mind at this moment. What right had they<lb/>to take a child from
+                    his relations, bad though<lb/>they were; and would they like to give him<lb/>up,
+                    if they were asked? or would they not<lb/>contrive, by Timothy's means, to rob
+                    the<lb/>shop and the house?</p>
+                <p rend="first-indent(2) align(justify)">But Joseph Brunton had thought of
+                    this<lb/>too, before he formed his plans. He had<lb/>found out, from the boy's
+                    description of the<lb/>locality, the very court and house in Westmin&ndash;<lb
+                        type="inWord"/>ster, where we, my young readers, you remem&ndash;<lb
+                        type="inWord"/>ber, first became acquainted with Timothy, on<lb/>that cold,
+                    dreary, gusty, rainy day, in March;<lb/>and he had discovered that uncle Tom and
+                        <pb n="34"/>
+                    <fw type="pagenumber" rend="align(left)">34</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> Timothy's mother had
+                    disappeared&mdash;gone no<lb/>one knew whither. They had, in fact,
+                    hastily<lb/>departed on the day that Timothy was sent to<lb/>prison, evidently
+                    intending to desert the poor<lb/>helpless boy, and get rid of him as a
+                    useless<lb/>burden.</p>
+                <p rend="first-indent(2) align(justify)">And when Martha heard this, she
+                    smiled<lb/>again: but there were tears in her eyes too, as<lb/>she
+                    said,&mdash;&lsquo;I wonder how a mother can be so<lb/>wicked and cruel.&rsquo;
+                    And others, my young<lb/>readers, have wondered about the same thing;<lb/>but
+                    there are such mothers in the world, nev&ndash;<lb type="inWord"/>ertheless. Be
+                    thankful, I again say, that you<lb/>have a happy home, and loving parents
+                    and<lb/>friends.</p>
+                <p rend="first-indent(2) align(justify)">The next day came, and Timothy came
+                    also,<lb/>hand&ndash;in&ndash;hand with the benevolent shoe&ndash;mender.<lb/>It
+                    was quite true, though any other besides<lb/>Joseph Brunton had said
+                    it,&mdash;Martha would<lb/>not have known the young rogue again, so<lb/>changed
+                    for the better did he seem. He was<lb/>clean as soap and water, and plenty of
+                    it, could<lb/>make him, and his skin was clear and fair:<lb/>his face had lost
+                    much of the aged look which<lb/>dirt, and dread, and starvation had
+                    before<lb/>spread over it, and it was no longer shaded<lb/>and disfigured by the
+                    long, filthy, and matted<lb/>hair of former days; this had been closely
+                        cut<lb/>off&mdash;<hi rend="italic">rather</hi> too close, thought Martha;
+                    but<lb/>never mind, it will grow again,&mdash;and was as<lb/>smooth and neat as
+                    even Martha could desire<lb/>to see it. Then the bright blue eyes,
+                    the<lb/>brighter for the tears with which they over&ndash;<lb type="inWord"
+                    />flowed, and the filled&ndash;out cheeks and the happy<lb/>smile that dimpled
+                    them&mdash;for Timothy could</p>
+
+                <pb n="35"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">35</fw>
+                <p rend="first-indent(2) align(justify)">smile now;&mdash;who could have dreamt this
+                    to<lb/>be the same boy? Not Martha, certainly.<lb/>The ragged, dirty, misfitting
+                    old coat, that was<lb/>gone too,&mdash;&lsquo;burned up for good and
+                    all,&rsquo;<lb/>Martha trusted; and instead of this universal<lb/>covering,
+                    Timothy had on a clean new shirt,<lb/>of Martha's own making, and a decent suit
+                    of<lb/>fustian, of Joseph's careful providing.</p>
+                <p rend="first-indent(2) align(justify)">But if I go on at this rate, I shall be
+                    long<lb/>in finishing my story; and I have yet to tell<lb/>the result of Joseph
+                    Brunton's experiment.</p>
+                <p rend="first-indent(2) align(justify)">A year passed away, and the third month
+                    of<lb/>the second year of this experiment was close at<lb/>hand, and never, for
+                    one moment, had either<lb/>Joseph or Martha been sorry for having ven&ndash;<lb
+                        type="inWord"/>tured upon it. And there was Timothy, sur&ndash;<lb
+                        type="inWord"/>prisingly grown, but otherwise looking more<lb/>youthful than
+                    when we first met with him.<lb/>Not a more useful, active, and obedient
+                    errand<lb/>boy or shoemaker's apprentice could scarcely<lb/>have been found, had
+                    all Chelsea been searched<lb/>&mdash;to say nothing of the King's&ndash;road. At
+                    dawn<lb/>of day, it was he who took down the shop&ndash;<lb type="inWord"
+                    />shutters, and swept the shop, and swept the<lb/>pavement, and fed the
+                    goldfinch, and set out<lb/>the green&ndash;grocery stock to the best
+                    advantage.<lb/>It was Timothy who was presently seen seated<lb/>on another seat,
+                    by the side of Joseph Brun&ndash;<lb type="inWord"/>ton, diligently profiting by
+                    his instructions in<lb/>the art and mystery of cobbling, and talking of<lb/>a
+                    hundred things besides. It was Timothy,<lb/>too, who was ready to clean knives,
+                    and per&ndash;<lb type="inWord"/>form a dozen sundry household works, and
+                    to<lb/>run on errands, and to take baskets or barrows<lb/>of vegetables to Mrs.
+                    Brunton's customers, and <pb n="36"/>
+                    <fw type="pagenumber" rend="align(left)">36</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> to bring home the money,
+                    too, with which he<lb/>was sometimes intrusted, without the mistake<lb/>of a
+                    single farthing.</p>
+                <p rend="first-indent(2) align(justify)">But how came all this about? Did
+                    the<lb/>little idle, cunning thief,&mdash;trained from his<lb/>very babyhood to
+                    all that was evil,&mdash;take na&ndash;<lb type="inWord"/>turally to these
+                    altered courses? Is this at<lb/>all likely?</p>
+                <p rend="first-indent(2) align(justify)">I will tell you how it came
+                    about,&mdash;and how<lb/>such unlikely things do sometimes come to<lb/>pass, so
+                    that older thieves than Timothy, learn<lb/>to steal no more, and wicked swearers
+                    to fear<lb/>an oath, and constant drunkards to become<lb/>sober, while those who
+                    were no better than<lb/></p>
+                <p rend="align(centre) indent(6)">&rdquo;Lions and beasts of savage name,<lb/>Put on
+                    the nature of the lamb:&ldquo; &mdash;</p>
+                <p rend="first-indent(2) align(justify)">I say, such things as these are not
+                    likely<lb/>nor natural; but they are true for all that.<lb/>Now listen.</p>
+                <p rend="first-indent(2) align(justify)">I have told you that Joseph Brunton had
+                    a<lb/>certain book, which he kept constantly by his<lb/>side, and in which he
+                    had great faith, and I<lb/>think you, my intelligent reader, can guess<lb/>what
+                    that book was: or shall I at once avoid<lb/>all mystery by saying it was the
+                    Bible. It was<lb/>from this book that he himself had learned<lb/>all that had,
+                    with God's blessing on its teach&ndash;<lb type="inWord"/>ing, made him what he
+                    himself was; and this<lb/>same book, he believed, &ldquo;was able to
+                    make&rdquo;<lb/>even his little rogue of a Timothy,&mdash;widely<lb/>different
+                    though he seemed from the Timothy<lb/>of Scripture&mdash;&ldquo;wise unto
+                    salvation, through<lb/>faith which is in Christ Jesus;&rdquo; and to teach <pb
+                        n="37"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">37</fw> him that &ldquo;denying
+                    ungodliness and worldly<lb/>lusts, he should live soberly, righteously,
+                    and<lb/>godly, in the present world.&rdquo;</p>
+                <p rend="first-indent(2) align(justify)">It was not, however, the work of an
+                    hour,<lb/>nor a day, nor a week, nor even a month. No,<lb/>no. If you, my young
+                    readers, have&mdash;as some<lb/>children have&mdash;a little patch of
+                    garden&ndash;ground<lb/>for your own, to work in and cultivate, you<lb/>know
+                    very well, that though, at one time, just<lb/>after you have cleared it, your
+                    garden may<lb/>seem free from weeds, yet they soon spring up<lb/>again, and need
+                    pulling up, one by one, or they<lb/>would spoil the look of your ground, and
+                    make<lb/>your cultivated flowers look less beautiful than<lb/>they really are.
+                    Well, Timothy was to Joseph<lb/>Brunton what your little garden is to
+                    you.<lb/>Many weeds of bad principles had been sown<lb/>in his mind, and time,
+                    and patience, and watch&ndash;<lb type="inWord"/>ing were necessary, before the
+                    weeds could be<lb/>overcome. But faith, and love, and persever&ndash;<lb
+                        type="inWord"/>ance, do wonders, wherever they are set to<lb/>work.</p>
+                <p rend="first-indent(2) align(justify)">But I must not attempt to follow, step
+                    by<lb/>step, little Timothy and his kind teacher, in<lb/>their onward progress
+                    through the year and<lb/>two months of which I have spoken. I shall<lb/>only say
+                    that, in due time, and a short time<lb/>too,&mdash;for never surely was a boy
+                    quicker at<lb/>learning than Timothy&mdash;he had learned not<lb/>only to spell,
+                    but to read; he began, also, to<lb/>write a tolerable hand, and to master
+                    the<lb/>difficulties of arithmetic. These were the<lb/>employments of the long
+                    winter evenings, and<lb/>the fine summer mornings, and did not inter&ndash;<lb
+                        type="inWord"/>fere with the labours of the day.</p>
+
+                <pb n="38"/>
+                <fw type="pagenumber" rend="align(left)">38</fw>
+                <fw type="header" rend="align(centre)">LITTLE TIM</fw>
+                <p rend="first-indent(2) align(justify)">But how shall I describe the wonders
+                    which<lb/>burst in upon the little fellow's mind, like a<lb/>flood of light
+                    entering a dark, dark place,<lb/>when Joseph Brunton, as he sat at work,
+                    or<lb/>at night, in the little parlour, when work was<lb/>over,&mdash;or at
+                    other times, when the bible was<lb/>open before them,&mdash;told him in his
+                    serious but<lb/>loving way, of the first fall of man, and his<lb/>heavy guilt,
+                    of the hatred of the holy God to<lb/>sin, and of his great love to sinners, of
+                    the<lb/>coming of God's son into the world to be<lb/>the Saviour of men, of his
+                    life of love, his<lb/>death on the cross, his resurrection, his return<lb/>to
+                    heaven, and his great work there. O, it<lb/>was
+                    wonderful&mdash;astonishing!&mdash;and to think<lb/>that all this was so
+                    new,&mdash;that he had never<lb/>heard anything like it before! Poor
+                    little<lb/>Timothy was melted. He could see at once,<lb/>then, how sad and
+                    wretched and wicked his<lb/>former life had been, how unworthy he was.<lb/>And
+                    to be able to believe that all this good<lb/>news of God's gospel was for him! I
+                    tell you,<lb/>my young friends, that you who have known<lb/>these things from
+                    your infancy, and, perhaps,<lb/>think too much of yourselves because of
+                    your<lb/>bible knowledge, while yet that knowledge is<lb/>only in your heads and
+                    not in your hearts,&mdash;I tell you that you cannot conceive how pre&ndash;<lb
+                        type="inWord"/>cious these tidings were to little Timothy, and<lb/>what a
+                    difference they made in him. God's<lb/>blessing rested upon Joseph Brunton's
+                        expe&ndash;<lb type="inWord"/>riment, and his exertions, ay, and his
+                    prayers:<lb/>Timothy&mdash;the little pilfering, ignorant, idle,<lb/>and
+                    untrustful wanderer, became a new crea&ndash;<lb type="inWord"/>ture, Old things
+                    passed away from his heart <pb n="39"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">39</fw> and his affections. He hated
+                    sin because<lb/>God hates it. He loved the bible and all its<lb/>blessed truths.
+                    And he loved&mdash;ah, I cannot<lb/>tell you how much he loved his kind
+                    friends&mdash;<lb/>his more than parents&mdash;Joseph and Martha,<lb/>for their
+                    mercy to him, a poor little wretched<lb/>thief as he once was.</p>
+                <p rend="first-indent(2) align(justify)">And when, at the end of a year, and he
+                    could<lb/>read for himself, Joseph put into his hands a<lb/>New Testament, for
+                    his own, with his own<lb/>name written in it by Joseph Brunton
+                    himself,<lb/>&mdash;let the other be who he might, I believe that<lb/>Timothy
+                    Smith was, to say the least, one of<lb/>the happiest beings within a mile of
+                    King's<lb/>road, Chelsea.</p>
+                <p>&rule;</p>
+            </div>
+
+            <div type="chapter">
+                <head type="main" rend="align(centre)">CHAPTER V.</head>
+                <head type="sub" rend="align(centre)">IN WHICH SOME IMPORTANT EVENTS ARE TO<lb/>BE
+                    RECORDED.</head>
+                <p rend="align(justify)">TOO happy to last. There was a black cloud<lb/>in the
+                    horizon, which neither Joseph, Martha,<lb/>nor Timothy could have foreseen.</p>
+                <p rend="first-indent(2) align(justify)">It was in the beginning of July; the
+                    day<lb/>had been most sultry hot; but with the twi&ndash;<lb type="inWord"
+                    />light of nine o'clock came a refreshing breeze,<lb/>which pleasantly fanned
+                    Joseph Brunton's<lb/>face as he stood, bare&ndash;headed, at the outside
+                    of<lb/>his door, anxiously looking up the King's road<lb/>in the direction of
+                    London. 'It is strange<lb/>what keeps him so late,&rsquo; he said; and
+                    Martha,<lb/>who was also standing at the shop door,<lb/>thought it strange too,
+                    that Timothy, so <pb n="40"/>
+                    <fw type="pagenumber" rend="align(left)">40</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> punctual as he always had
+                    been, should loiter<lb/>so sadly on this occasion.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Had it been the first time of
+                    sending the<lb/>boy to London,&rsquo; continued Joseph, &lsquo;I should<lb/>have
+                    feared he had lost himself; but he well<lb/>knows his way.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Ten o'clock came, and eleven;&mdash;but
+                        Timo&ndash;<lb type="inWord"/>thy returned not; and, in short, he came
+                    not<lb/>back at all. Great was the grief which Joseph<lb/>and Martha felt when,
+                    after days of vain in&ndash;<lb type="inWord"/>quiries and numberless efforts to
+                    discover what<lb/>had become of the poor boy, they were com&ndash;<lb
+                        type="inWord"/>pelled to conclude that, notwithstanding all<lb/>hopeful
+                    appearances, Timothy had fallen in<lb/>with evil companions, and returned to his
+                    old<lb/>habits, &ldquo;as a sow that is washed returns to<lb/>her wallowing in
+                    the mire.&rdquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;My hopeful experiment hath
+                    failed,&rsquo;&mdash;<lb/>sighed Joseph Brunton, as, in course of time,<lb/>he
+                    settled down again in solitary state, to his<lb/>seat. And thump, thump, thump,
+                    went his<lb/>hammer, upon leather and lapstone; but<lb/>thump as he might, he
+                    could not, any more<lb/>than he had done a year and a quarter
+                    before,<lb/>&mdash;he could not thump little Timothy out of<lb/>his mind.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;But I cannot believe,&rsquo; said
+                    Martha, crying<lb/>with renewed energy,&mdash;&lsquo;that the
+                    boy&mdash;poor<lb/>little fellow&mdash;has run away from us of his own<lb/>will.
+                    I am sure he has taken nothing but the<lb/>clothes he had on, and they were not
+                    his best.<lb/>If he had meant to run away, would he not<lb/>have taken more with
+                    him? To be sure, I<lb/>cannot find the little Testament you gave him,<lb/>among
+                    his other things; but I don't think his <pb n="41"/>
+                    <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                    <fw type="pagenumber" rend="align(right)">41</fw> running away with that proves
+                    him bad, do<lb/>you, Joseph?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">Thump, thump, thump, went the ham&ndash;<lb
+                        type="inWord"/>mer again. Joseph's heart was too full to let<lb/>him
+                    speak.</p>
+                <p rend="first-indent(2) align(justify)">But what had become of little
+                    Timothy?<lb/>Come with me, reader, and I will show him to<lb/>you.</p>
+                <p rend="first-indent(2) align(justify)">Here we are in Westminster:&mdash;and
+                    look,&mdash;<lb/>do you remember this filthy court, and that<lb/>house in
+                    particular,&mdash;the dirtiest of all the<lb/>houses in the place? The cellar,
+                    too, with<lb/>the trap door and broken steps? And the<lb/>garret or loft at the
+                    top of the house, just<lb/>under the tiles, with the broken ladder?</p>
+                <p rend="first-indent(2) align(justify)">Now, open your eyes wide. On that
+                        self&ndash;<lb type="inWord"/>same spot where first we saw him, sits
+                        Timo&ndash;<lb type="inWord"/>thy, sad and disconsolate, again a
+                    prisoner.<lb/>His eyes are red with weeping, and yet there<lb/>are hope and
+                    courage and manly fortitude, and<lb/>brave endurance, sparkling in them as, in
+                        soli&ndash;<lb type="inWord"/>tary musing he turns over the leaves of
+                    the<lb/>little book upon his knee, and reads,&mdash;&ldquo;Fear<lb/>not them
+                    which kill the body, but are not able<lb/>to kill the soul; but rather fear him
+                    which is<lb/>able to destroy both soul and body in hell.&rdquo;</p>
+                <p rend="first-indent(2) align(justify)">&mdash;&lsquo;Yes,&rsquo; he says, starting
+                    up with new</p>
+                <p rend="first-indent(2) align(justify)">life; &lsquo;they may kill me if they like;
+                    but I will<lb/>never steal for them again&mdash;never.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">But though strong in spirit, his body
+                    is<lb/>weak. He has been three days shut in that<lb/>dismal loft, with only a
+                    scanty meal a day to<lb/>keep him from starving. And besides that,
+                    in<lb/>struggling to get away from his uncle Tom,<lb/>who had caught sight of
+                    and recognized him, <pb n="42"/>
+                    <fw type="pagenumber" rend="align(left)">42</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> and laid hold of him, as
+                    he was returning from<lb/>his errand, he had received a violent blow<lb/>which
+                    stunned him for the time, and from<lb/>which he only recovered to find himself
+                    in the<lb/>power of his old evil teacher, without even a<lb/>mother's influence
+                    to soften his lot; for she,<lb/>as his uncle informed him, in answer to
+                    his<lb/>earnest inquiries, had been some months dead.<lb/>&mdash;Poor
+                    Timothy.</p>
+                <p rend="first-indent(2) align(justify)">It was towards the end of August.
+                    The<lb/>day had been gloomy, and now, as evening<lb/>drew on, a drizzling rain
+                    began to fall, and to<lb/>moisten into mud, as it fell, the street dust
+                    of<lb/>the old city of Bristol; and to glisten in the<lb/>gas lights of its
+                    multitude of busy shops.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;What do you want, my boy?&rsquo;
+                    asked the<lb/>owner of one of these shops (a bookseller's) in<lb/>rather a sharp
+                    tone, of a lad who had just en&ndash;<lb type="inWord"/>tered, and stood
+                    hesitatingly in the door&ndash;way.<lb/>&mdash;&lsquo;What do you want,
+                    there?&rsquo; he repeated, as<lb/>the former question was yet unanswered.</p>
+                <p rend="first-indent(2) align(justify)">What indeed could such a boy want in
+                    a<lb/>bookseller's shop,&mdash;drenched to the skin as he<lb/>must have been,
+                    through his ragged jacket and<lb/>scanty trousers,&mdash;bareheaded and
+                    barefooted<lb/>as he was besides,&mdash;what could he want there,<lb/>but to
+                    beg?</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I have come many miles to&ndash;day,
+                    sir,&rsquo; said<lb/>the boy, as he tremblingly approached
+                    the<lb/>counter:&mdash;&lsquo;and I am not used to beg of late;<lb/>but I have
+                    no food and no friends, and&mdash;&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;There, that will do, that will
+                    do,&rsquo; replied<lb/>the man bluntly; &lsquo;I have nothing for you
+                    my<lb/>man.&rsquo;</p>
+
+                <pb n="43"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">43</fw>
+                <p rend="first-indent(2) align(justify)">The petitioner meekly withdrew, and
+                    was<lb/>leaving the shop.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Stop, you sir,&rsquo; shouted the
+                    bookseller;<lb/>&lsquo;what is that I see in your trousers pocket?<lb/>You have
+                    been stealing one of my books, sir.<lb/>Come here, I say, this
+                    instant,&rsquo;&mdash;and at the<lb/>same time, he jumped over the counter,
+                    and<lb/>hastened to secure the supposed thief.</p>
+                <p rend="first-indent(2) align(justify)">But the boy was in no hurry to
+                    escape.<lb/>Putting his hand into his pocket, he drew from<lb/>it a book, which,
+                    small as it was, had betrayed<lb/>its presence&mdash;for the pocket was small
+                    also,&mdash;<lb/>and quietly put it into the tradesman's hands.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;It is my book, sir,&rsquo; said the
+                    boy, &lsquo;not<lb/>yours.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Um,&rsquo; exclaimed the man,
+                    glancing at the<lb/>book, and speaking in a milder
+                    tone;&mdash;&lsquo;You<lb/>are right. It is not mine. A Testament, I<lb/>see.
+                    Rather a curious book for a boy like you<lb/>to carry about with him. Come now,
+                    if you<lb/>are in want of a few pence for lodgings and so<lb/>forth, you had
+                    better sell the book.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;No,&rsquo; exclaimed the boy,
+                    vehemently, &lsquo;no;<lb/>I can starve, but I cannot sell that book; no
+                    <lb/>never.&rsquo;&mdash;and he held out his hand eagerly to<lb/>reclaim the
+                    property.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;What is all this about, friend
+                    Harrison?&rsquo;<lb/>said an elderly person in a very
+                    broad&ndash;brimmed<lb/>hat, and a very plain, broad&ndash;skirted and
+                        com&ndash;<lb type="inWord"/>fortable&ndash;looking drab coat,&mdash;who had
+                    been <lb/>standing at another counter, reading&mdash;and<lb/>listening also, it
+                    seemed.</p>
+                <p>&lsquo;Rather strange, sir,&rsquo; replied the bookseller.<lb/>&lsquo;Here is a
+                    young lad begging, with a Testa&ndash;<lb type="inWord"/>ment in his pocket that
+                    he wont sell at any<lb/>price.&rsquo;</p>
+
+                <pb n="44"/>
+                <fw type="pagenumber" rend="align(left)">44</fw>
+                <fw type="header" rend="align(centre)">LITTLE TIM</fw>
+                <p rend="first-indent(2) align(justify)">&lsquo;Let me look at it, if thee
+                    please,&rsquo; said the<lb/>stranger.</p>
+                <p rend="first-indent(2) align(justify)">He took it in his hand.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Is this thy name, boy, written on
+                    the fly<lb/>leaf, &lsquo;Timothy Smith, given him by Joseph<lb/>and Martha
+                    Brunton.&rsquo; Is Timothy Smith thy<lb/>name, I ask thee?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Yes, sir, yes it is,&rsquo; said the
+                    boy eagerly:<lb/>and at the sound of the well remembered
+                    &lsquo;thees&rsquo;<lb/>and &lsquo;thys,&rsquo; so like his kind friend, he
+                    burst<lb/>into tears.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>49M7</name>
+                        <desc>book-shop, bookseller</desc>
+                    </ic:iconClass>
+                </figure>
+                <p rend="first-indent(2) align(justify)">&lsquo;And Joseph Brunton,&rsquo; continued
+                    the<lb/>Friend; &lsquo;what dost thou know of Joseph<lb/>Brunton&mdash;and
+                    Martha?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo; They are my only friends on
+                    earth;&rsquo; replied<lb/>the still sobbing boy.</p>
+
+                <pb n="45"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">45</fw>
+                <p rend="first-indent(2) align(justify)">&lsquo;Then why didst thou leave thine
+                    only<lb/>friends?&mdash;and stop;&mdash;why is this leaf of thy<lb/>Testament
+                    turned down? Hast thou a partic&ndash;<lb type="inWord"/>ular regard for any
+                    passage of Scripture in this<lb/>tenth chapter of Matthew's gospel?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Yes, sir,&rsquo; replied
+                    Timothy.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;Perhaps, then, thou canst repeat it?
+                    If<lb/>thou canst, do.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">&ldquo;Fear not them which kill the
+                    body,&rdquo; said<lb/>Timothy; &ldquo;but are not able to kill the soul;<lb/>but
+                    rather fear him which is able to destroy<lb/>both soul and body in
+                    hell.&rdquo;</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;There is something extraordinary in
+                    this,<lb/>friend Harrison,&rsquo; remarked the wearer of
+                    the<lb/>broad&ndash;brimmed hat, turning to the shop&ndash;keeper:</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I know Joseph Brunton well; he lived
+                    in<lb/>our family many years, and was a trusty, valued<lb/>servant; and I can
+                    vouch for this being his<lb/>own hand&ndash;writing. Boy,&rsquo; he said,
+                    speaking to<lb/>poor Timothy; &lsquo;wilt thou walk with me to<lb/>my house in
+                    the next street. I can then hear<lb/>thy story at more leisure. There is that
+                    in<lb/>thy looks that pleads for thee. Come, walk<lb/>under my umbrella, there
+                    is room beneath it<lb/>for thee and me.&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">And nothing loth, but thankful to Him
+                    who<lb/>had said to him in his word&mdash;&ldquo;the very hairs<lb/>of your head
+                    are all numbered,&rsquo; Timothy<lb/>walked by the side of his new protector,
+                    until<lb/>reaching a large house in a fine and broad<lb/>street, and seated by
+                    the kitchen fire, be told<lb/>his simple history to the approving friend.
+                    To<lb/>my readers there is nothing new in it, except<lb/>that after a few days
+                    detention in the garret<lb/>at Westminster, Timothy had been compelled <pb
+                        n="46"/>
+                    <fw type="pagenumber" rend="align(left)">46</fw>
+                    <fw type="header" rend="align(centre)">LITTLE TIM</fw> to accompany his uncle
+                    Tom far into a part of<lb/>the country he had never before been; and<lb/>that
+                    after many days, he had succeeding in<lb/>making his escape, and wandered he
+                    knew not<lb/>whither until, guided by Providence, he had<lb/>reached the city of
+                    Bristol</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;I believe thy story,&rsquo; said the
+                    gentleman,<lb/>when it was ended; &lsquo;the more so that thou<lb/>hast not
+                    concealed thy former life, and hast<lb/>given me a faithful description of my
+                    friend<lb/>Joseph. And now, I tell thee what I will do<lb/>for thee. I have a
+                    ship now in port, about to<lb/>take the voyage to America. If thou wilt,
+                    I<lb/>will clothe thee, put thee on board, under the<lb/>care of the captain,
+                    who is a kind man and a<lb/>christian, and I will give thee a letter to
+                    my<lb/>agents abroad who shall provide thee with a<lb/>situation, and put thee
+                    in the way to be useful,<lb/>honorable, and it may be prosperous in
+                    the<lb/>world. I will also write to friend Brunton,<lb/>to inform him of thy
+                    welfare. In the mean&ndash;<lb type="inWord"/>time thou shalt lodge in my house,
+                    and be fed<lb/>from my table. What sayest thou?&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">And the kind friend did what he had
+                        pro&ndash;<lb type="inWord"/>mised; and on parting with Timothy a day
+                    or<lb/>two later, on board the ship that was to con&ndash;<lb type="inWord"/>vey
+                    him to his destination, he slipped into his<lb/>hand a small purse of money,
+                    saying, &lsquo;Keep<lb/>fast hold Timothy, of thy shield and buckler,<lb/>the
+                    Holy Scriptures, and it shall go well with<lb/>thee in the life that now is, and
+                    in that which<lb/>is to come.&rsquo;</p>
+
+                <pb n="47"/>
+                <fw type="header" rend="align(centre)">AND HIS FRIEND THE COBBLER.</fw>
+                <fw type="pagenumber" rend="align(right)">47</fw>
+                <p rend="first-indent(2) align(justify)">Many years passed away, and nothing
+                    more<lb/>was seen of Timothy Smith. But one day, as<lb/>Joseph Brunton sat at
+                    work in his accustomed<lb/>seat, he heard the tinkle, tinkle, tink of
+                    his<lb/>shop bell, and lifting his face, he met the ear&ndash;<lb type="inWord"
+                    />nest gaze of a pleasant looking stranger&mdash;well&ndash;<lb type="inWord"
+                    />dressed, and in other respects, respectable and<lb/>gentlemanly in his
+                    appearance,&mdash;who having<lb/>entered the shop, seemed to be waiting
+                    for<lb/>Joseph to speak.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;What can I do for thee, sir?&rsquo;
+                    asked Joseph.</p>
+                <p rend="first-indent(2) align(justify)">&lsquo;You do not know me, then, my dear,
+                    my<lb/>best friend!&rsquo; returned the stranger, whose<lb/>bright blue eyes
+                    filled with tears as he spoke.&mdash;<lb/>&lsquo;Perhaps, however,&rsquo;
+                    continued he, &lsquo;you will<lb/>remember this?&rsquo; and he took from his
+                    pocket a<lb/>well&ndash;worn book, and opened it at the first page.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46B133</name>
+                        <desc>counter ~ shop</desc>
+                    </ic:iconClass>
+                </figure>
+
+                <pb n="48"/>
+                <fw type="pagenumber" rend="align(left)">48</fw>
+                <fw type="header" rend="align(centre)">LITTLE TIM</fw>
+                <p rend="first-indent(2) align(justify)">Wonderingly, Joseph took the book;
+                    but<lb/>before he could adjust his spectacles&mdash;(he wore<lb/>spectacles
+                    now)&mdash;the voice of Martha was<lb/>heard&mdash;&lsquo;It is
+                    Timothy&mdash;little Timothy&mdash;<lb/>dear little Timothy!&rsquo;</p>
+                <p rend="first-indent(2) align(justify)">And so it was. He had prospered
+                    in<lb/>America; and America was still his home;<lb/>but amidst all his
+                    prosperity, he could not<lb/>forget his first protectors; and for the
+                        happi&ndash;<lb type="inWord"/>ness of embracing them once more, and
+                    thanking<lb/>them for their kindness to the little untaught,<lb/>and ragged
+                    thief, he had travelled four thou&ndash;<lb type="inWord"/>sand miles: and had
+                    the distance been ten<lb/>times greater, he would have still travelled it.</p>
+                <p rend="first-indent(2) align(justify)">And now my story is ended; and
+                    Joseph<lb/>Brunton's experiment, you see, succeeded.<lb/>And what more shall I
+                    say, but&mdash;Success<lb/>to all who, like Joseph Brunton, whether
+                    in<lb/>ragged&ndash;schools, or any other way, &ldquo;Cast their<lb/>bread upon
+                    the waters,&rdquo; in the full faith that<lb/>they will again &ldquo;find it,
+                    after many days.&rdquo;</p>
+            </div>
+        </body>
+        <!-- Should I code the following section as 'back' even though it shares the same page as the final page of text?-->
+        <back>
+            <div type="colophon">
+                <p>&orn;</p>
+                <p>&rule;</p>
+                <p>GROOMBRIDGE BROTHERS, Printers, Exeter&ndash;street, Strand.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

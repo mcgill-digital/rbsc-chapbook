@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="ProseFiction">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="brown coloured pictorial wrappers">
+                <figure type="borderornament">
+                    <bibl rend="align(centre)">
+                        <title>THE<lb/>BLACKBIRD'S NEST.</title><lb/>
+                        <title>A TALE FOR YOUTH.</title>
+                        <lb/>
+                        <figure>
+                            <ic:iconClass>
+                                <name/>
+                                <desc/>
+                            </ic:iconClass>
+                        </figure>
+                        <pubPlace rend="italic">PHILADELPHIA :</pubPlace><lb/>
+                        <publisher>Published by Johnson and Warner,</publisher><lb/>
+                        <pubPlace>No. 147, Market Street.<lb/>&rule;</pubPlace><lb/>
+                        <date>1812</date>
+                    </bibl>
+                </figure>
+            </div>
+            <pb n="2"/>
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <titlePart>THE<lb/>Blackbird's Nest.<lb rend="italic"/>A TALE</titlePart>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace rend="italic">PHILADELPHIA</pubPlace><lb/>
+                    <publisher><hi rend="italic">Published by</hi><lb/>JOHNSON &amp;
+                        WARNER.</publisher><lb/>
+                    <date rend="withinborderornament">1812.</date>
+                </docImprint>
+            </titlePage>
+            <pb n="4"/>
+        </front>
+        <body>
+            <pb n="5"/>
+            <head type="work" rend="align(centre)">THE<lb/>Blackbird's Nest</head>
+            <lb/>
+            <p>&crule;</p>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">HENRY and George were<lb/>two very engaging
+                children.<lb/>They had formed so strong an<lb/>attachment to each other, that<lb/>if
+                Henry had fruit or cakes, he<lb/>ran to offer them to George;<lb/>and when George
+                had any<lb/>thing given him that was nice,<lb/>he nev r touched it till he
+                had<lb/>carried half of it to Henry.<lb/>Their playthings seemed to be&ndash;<lb
+                    type="inWord"/>long as much to one as to the<lb/>other: in short, any one
+                would<lb/>have suppossd that they had<lb/>
+                <fw type="signature" rend="align(centre)">A 2</fw>
+                <pb n="6"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>been brothers, rather than mere<lb/>playfellows.</p>
+            <p rend="first-indent(2) align(justify)">As a close intimacy subsisted<lb/> between
+                their parents, they<lb/>were much pleased to observe<lb/>the progress of this early
+                    friend&ndash;<lb type="inWord"/>ship, George never failed, as<lb/>he went to
+                school, to call for<lb/>Henry; and Henry always de&ndash;<lb type="inWord"/>layed
+                his return, till George<lb/>
+                <pb n="7"/>
+                <fw type="pagenumber" rend="align(centre)">5</fw>
+                <lb/>was ready to accompany him.<lb/>They learnt their lessons toge&ndash;<lb
+                    type="inWord"/>ther, and had no disputes, ex&ndash;<lb type="inWord"/>cept who
+                should be the best<lb/>scholar.</p>
+            <p rend="first-indent(2) align(justify)">On holidays, they amused<lb/>themselves with
+                walking in the<lb/>fields, where they gathered<lb/>nosegays of wild flowers
+                for<lb/>their sisters, or sat on the grass<lb/>to tell each other
+                entertaining<lb/>stories or repeat some pretty<lb/>verses that their mammas
+                had<lb/>taught them.</p>
+            <p rend="first-indent(2) align(justify)">It happened, one day, that<lb/>Henry being gone
+                out with his<lb/>father, George, in order to pass<lb/>away the lonesome hours,
+                    strol&ndash;<lb type="inWord"/>led by himself into the coun&ndash;<lb/>
+                <fw type="signature" rend="align(centre)">A 3</fw>
+                <pb type="inWord" n="8"/>
+                <fw type="pagenumber" rend="align(centre)">6</fw>
+                <lb/>try. As he was walking along<lb/>the side of a hedge, he disco&ndash;<lb
+                    type="inWord"/>vered a blackbird's nest, con&ndash;<lb type="inWord"/>cealed in
+                the thickest part of<lb/>the bushes. He was not one<lb/>of those cruel children,
+                who<lb/>take a malicious pleasure in<lb/>depriving a poor bird of her<lb/>dear
+                little ones. He determin&ndash;<lb type="inWord"/>ed to wait till they should
+                no<lb/>longer want the assistance of<lb/>their mother, or she feel
+                any<lb/>attachment to them. How&ndash;<lb type="inWord"/>ever, he did not neglect,
+                the<lb/>next day, to communicate the<lb/>news of his treasure to Henry,<lb/>and
+                promised to take him to<lb/>see the nest; proposing that<lb/>they should go every
+                day to<lb/>visit the birds, till their wings<lb/>
+                <pb n="9"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>were grown, and that then,<lb/>they should be divided between<lb/>them. Henry
+                waited impa&ndash;<lb type="inWord"/>tiently till school was over, that<lb/>George
+                might show him the<lb/>nest, and they went together<lb/>several succeeding days, to
+                    ob&ndash;<lb type="inWord"/>serve the progress of the nest&ndash;<lb
+                    type="inWord"/>lings.</p>
+            <fw type="signature" rend="align(centre)">B</fw>
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(centre)">8</fw>
+
+            <p rend="first-indent(2) align(justify)">From the first moment that<lb/>Henry beheld the
+                nest, he con&ndash;<lb type="inWord"/>ceived the idea of taking pos&ndash;<lb
+                    type="inWord"/>session of it. It is difficult to<lb/>imagine whence such an
+                    un&ndash;<lb type="inWord"/>worthy thought could arise,<lb/>for his friend had
+                already vo&ndash;<lb type="inWord"/>luntarily offered to share the<lb/>spoils with
+                him. Evil thoughts<lb/>insinuate themselves so easily<lb/>into the hearts of men,
+                that<lb/>they have need to be always on<lb/>their guard against their ap&ndash;<lb
+                    type="inWord"/>proaches. Children, especially,<lb/>should be watchful of the
+                first<lb/>impulse to do wrong, as from<lb/>their weakness they are prone<lb/>to
+                error. This attention to<lb/>themselves is an easy task, be&ndash;<lb type="inWord"
+                />cause they have their parents,<lb/>
+                <pb n="11"/>
+                <fw type="pagenumber" rend="align(centre)">9</fw>
+                <lb/>
+                <lb/>or teachers, at hand, to assist<lb/>them with their advice. Nei&ndash;<lb
+                    type="inWord"/>ther are they sufficiently aware,<lb/>that a small fault in the
+                    begin&ndash;<lb type="inWord"/>ning, may increase to an odious<lb/>vice, which
+                will corrupt their<lb/>hearts, and debase their cha&ndash;<lb type="inWord"/>racters
+                as long as they live.</p>
+            <p rend="first-indent(2) align(justify)">Henry took the opportunity,<lb/>one morning,
+                before the time<lb/>that George usually called up&ndash;<lb type="inWord"/>on him,
+                of going to the place<lb/>where the nest was: he found<lb/>the little ones pretty
+                well<lb/>fledged, and forgetting at once<lb/>the ties of friendship, and
+                the<lb/>generosity of George, he seized<lb/>his prey and carried it away<lb/>with a
+                trembling hand.</p>
+            <fw type="signature" rend="align(centre)">B 2</fw>
+
+            <pb n="12"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(2) align(justify)">When he had got half way<lb/>home, he sat down
+                under a tree<lb/>to look at the young birds, and<lb/>to hear them chirp. Then,
+                for<lb/>the first time, he was struck by<lb/><hi rend="italic">the &lsquo; still
+                    small voice' of con&ndash;<lb type="inWord"/>science</hi>, reproaching him
+                for<lb/>the base action he had just com&ndash;<lb type="inWord"/>mitted. He felt
+                greatly per&ndash;<lb type="inWord"/>plexed what course to pursue.<lb/>
+                <pb n="13"/>
+                <fw type="pagenumber" rend="align(centre)">11</fw>
+                <lb/>
+                <lb/>If he carried the nest secretly<lb/>home, he was certain of
+                being<lb/>discovered in a short time ; and<lb/>his father would punish
+                him<lb/>severely for having deceived<lb/>his playfellow, whose friend&ndash;<lb
+                    type="inWord"/>ship he would lose besides. If<lb/>he carried the nest back to
+                its<lb/>place, he was afraid of meeting<lb/>George in his way thither. At<lb/>last
+                it came into his head, that<lb/>he would throw the nest into<lb/>a pond at no great
+                distance,<lb/>and make it sink to the bottom<lb/>by loading it with stones.</p>
+            <p rend="first-indent(2) align(justify)">Whilst he was balancing up&ndash;<lb
+                    type="inWord"/>on these different projects, a<lb/>boy from a neighbouring
+                    vil&ndash;<lb type="inWord"/>lage happened to pass by, who<lb/>
+                <fw type="signature" rend="align(centre)">B 3</fw>
+                <pb n="14"/>
+                <fw type="pagenumber" rend="align(centre)">12</fw>
+                <lb/>
+                <lb/>having seen the nest in his<lb/>possession, offered him a dozen<lb/>marbles in
+                a bag, in exchange<lb/>for it. This proposal seemed<lb/>to him a lucky means of
+                    extri&ndash;<lb type="inWord"/>cating himself from his diffi&ndash;<lb
+                    type="inWord"/>culties : he accepted it without<lb/>hesitation, and afterwards
+                went<lb/>to school, assuming a counte&ndash;<lb type="inWord"/>nance of as much
+                tranquillity,<lb/>as if he had done nothing to<lb/>deserve reproach. He was
+                still<lb/>at a loss to know what excuse<lb/>to make to his friend for not<lb/>having
+                waited for him as usual<lb/>in the morning. George, who<lb/>had no suspicion, was
+                easily sa&ndash;<lb type="inWord"/>tisfied with such excuses as he<lb/>was able to
+                feign; and after<lb/>remarking that the afternoon<lb/>
+                <pb n="15"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>was a half holiday, proposed<lb/>taking that opportunity of go&ndash;<lb
+                    type="inWord"/>ing to take their birds, and<lb/>amusing themselves with
+                them<lb/>the rest of the day.</p>
+            <p rend="first-indent(2) align(justify)">They set out together as<lb/>soon as they had
+                finished their<lb/>dinner. George had already<lb/>planned the disposal of their<lb/>
+                <fw type="signature" rend="align(centre)">C</fw>
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(centre)">14</fw>
+                <lb/>
+                <lb/>little family. What then was<lb/>his concern, to see all his
+                hopes<lb/>disappointed! ---when they ar&ndash;<lb type="inWord"/>rived at the bush,
+                some plun&ndash;<lb type="inWord"/>derer had been there before<lb/>them. Henry
+                pretended equal<lb/>surprise and vexation. After<lb/>having spent some time in
+                    fruit&ndash;<lb type="inWord"/>less lamentations, they return&ndash;<lb
+                    type="inWord"/>ed home much out of spirits.<lb/>With the design of
+                    withdraw&ndash;<lb type="inWord"/>ing George's attention from
+                his<lb/>misfortune, Henry showed him<lb/>his marbles, telling him that<lb/>he had
+                found them as he was<lb/>going to school; and that now,<lb/>the best thing they
+                could do<lb/>was to play them.</p>
+            <p rend="first-indent(2) align(justify)">Here, my dear young friends,<lb/>let us pause a
+                few moments, to<lb/>
+                <pb n="17"/>
+                <fw type="pagenumber" rend="align(centre)">15</fw>
+                <lb/>consider how much the num&ndash;<lb type="inWord"/>ber of Henry's crimes
+                increased<lb/>in one day.&mdash;In the morning<lb/>he robbed his friend, by
+                taking<lb/>possession of that nest he had<lb/>generously agreed to share
+                with<lb/>him. That action was follow&ndash;<lb type="inWord"/>ed by the cruel
+                thought of sub&ndash;<lb type="inWord"/>mitting the harmless birds to a<lb/>painful
+                death ; in order to con&ndash;<lb type="inWord"/>ceal his fault afterwards,
+                he<lb/>had recourse to deceit and<lb/>falsehood to prevent suspicion,<lb/>and
+                lastly, he told a lie, by<lb/>saying that he had found the<lb/>marbles, when in fact
+                he had<lb/>received them in exchange for<lb/>the birds.</p>
+            <p rend="first-indent(2) align(justify)">Such is the rapid progress<lb/>
+                <fw type="signature" rend="align(centre)">C 2</fw>
+                <pb n="18"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>of vice. Do not deceive your&ndash;<lb type="inWord"/>selves : detection is
+                certain:<lb/>though you may conceal your<lb/>faults for some time, yet there<lb/>is
+                a Power from which they<lb/>cannot be hid, and which will<lb/>not fail to bring them
+                to light.<lb/>However cautious you may be,<lb/>you will betray yourselves,
+                for<lb/>you will not be able to invent<lb/>
+                <pb n="19"/>
+                <fw type="pagenumber" rend="align(centre)">17</fw>
+                <lb/>so many falsehoods as will he<lb/>requisite to hide your dissimu&ndash;<lb
+                    type="inWord"/>lation from your companions.<lb/>The first slip of your
+                memory<lb/>will throw you into such con&ndash;<lb type="inWord"/>fusion, as will
+                naturally lead<lb/>to discovery; then follow dis&ndash;<lb type="inWord"/>grace,
+                shame, and the punish&ndash;<lb type="inWord"/>ments you justly deserve.</p>
+            <p rend="first-indent(2) align(justify)">Let us now return to the<lb/>story: George,
+                whose chief gra&ndash;<lb type="inWord"/>tification in finding the nest, was<lb/>the
+                expected pleasure of enjoy&ndash;<lb type="inWord"/>ing the prize with his
+                friend,<lb/>grew reconciled to the disap&ndash;<lb type="inWord"/>pointment when he
+                saw that he<lb/>no longer regretted it; therefore<lb/>they began to play
+                together<lb/>at marbles, and for some time<lb/>
+                <fw type="signature" rend="align(centre)">C 3</fw>
+                <pb n="20"/>
+                <fw type="pagenumber" rend="align(centre)">18</fw>
+                <lb/>the game went on very smooth&ndash;<lb type="inWord"/>ly ; but at length, some
+                other<lb/>boys who were going that way,<lb/>stopped to see them play;
+                one<lb/>amongst these, after having<lb/>looked attentively at the mar&ndash;<lb
+                    type="inWord"/>bles, claimed them as his pro&ndash;<lb type="inWord"/>perty ;
+                and declared that he had<lb/>lost them that very morning,<lb/>tied up in a little
+                bag. Henry<lb/>laughed at his pretensions, and<lb/>boldly maintained that he
+                had<lb/>bought them. But George,<lb/>who had just heard him say<lb/>that he had
+                found them, re&ndash;<lb type="inWord"/>proved him for denying the<lb/>truth, and
+                entreated him to re&ndash;<lb type="inWord"/>store them to their owner.<lb/>Henry
+                refused to do so, and<lb/>repeated that he had found<lb/>them, saying, that now they<lb/>
+                <pb n="21"/>
+                <fw type="pagenumber" rend="align(centre)">19</fw>
+                <lb/>were his, and he would keep<lb/>them. In this, however, he<lb/>was mistaken,
+                for the little<lb/>stranger attacked him roughly,<lb/>gave him a blow on the
+                nose<lb/>with his fist, took the marbles<lb/>from him, and walked off, leav<lb/>ing
+                him to make painful reflec<lb/>tions on the first consequences<lb/>of his bad
+                conduct.</p>
+            <p rend="first-indent(2) align(justify)">It becomes necessary to in&ndash;<lb
+                    type="inWord"/>form my readers, that the little<lb/>boy who claimed the
+                marbles<lb/>had really lost them, as he said;<lb/>and that he who had given<lb/>them
+                to Henry in exchange for<lb/>the birds had found them. But<lb/>as he thought he
+                could make a<lb/>greater advantage of the birds<lb/>than of the marbles, he
+                had<lb/>consented to the bargain as<lb/>
+                <pb n="22"/>
+                <fw type="pagenumber" rend="align(centre)">20</fw>
+                <lb/>mentioned before. This boy<lb/>was the son of very honest pa&ndash;<lb
+                    type="inWord"/>rents, though they were ex&ndash;<lb type="inWord"/>tremely poor.
+                His name was<lb/>Lubin, and he was well known<lb/>for many miles round the
+                    coun&ndash;<lb type="inWord"/>try, being employed in serving<lb/>the
+                neighbourhood with fag&ndash;<lb type="inWord"/>gots, which he made himself<lb/>of
+                the dead wood that he was<lb/>allowed to pick up in the fo&ndash;<lb type="inWord"
+                />rest. The money he earned in<lb/>this manner, he carried to his<lb/>mother,
+                towards the support<lb/>of the family. As his parents<lb/>could not afford to send
+                him<lb/>to school, he had plenty of lei&ndash;<lb type="inWord"/>sure to manage his
+                little trade,<lb/>which he carried on with great<lb/>industry and activity.
+                Little<lb/>Lubin having become master<lb/>
+                <pb n="23"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>of the nest, examined the birds;<lb/>and finding them strong and<lb/>well
+                grown, ran with them to&ndash;<lb type="inWord"/>wards the village where
+                Henry<lb/>and George lived, in order to<lb/>try to dispose of the whole nest<lb/>at
+                some gentleman's house.</p>
+            <p rend="first-indent(2) align(justify)">It happened, that the first<lb/>person to whom
+                he offered<lb/>them was the father of Henry,<lb/>who knowing that, notwith&ndash;<lb/>
+                <pb type="inWord" n="24"/>
+                <fw type="pagenumber" rend="align(centre)">22</fw>
+                <lb/>standing his poverty, he had<lb/>established a good character<lb/>for honesty,
+                took the nest, and<lb/>gave him half a crown. Lubin,<lb/>who never before had so
+                much<lb/>money at once, ran with haste<lb/>to carry it to his mother,
+                who<lb/>received it with great joy.</p>
+            <p rend="first-indent(2) align(justify)">Henry was not long before<lb/>he returned home,
+                holding his<lb/>still bleeding nose with his<lb/>handkerchief. When the fa&ndash;<lb
+                    type="inWord"/>mily enquired what had hap&ndash;<lb type="inWord"/>pened him, he
+                replied, that<lb/>a great boy had thrown a stone<lb/>at him, because he had
+                    endea&ndash;<lb type="inWord"/>voured to hinder him from<lb/>beating another who
+                was but<lb/>a little child. Behold a new<lb/>falsehood added to the list,
+                    al&ndash;<lb type="inWord"/>ready too long! &mdash;His father,<lb/>
+                <pb n="25"/>
+                <fw type="pagenumber" rend="align(centre)">23</fw>
+                <lb/>by way of consolation for his<lb/>misfortune, hastened to show<lb/>him the nest
+                of young black&ndash;<lb type="inWord"/>birds, which he had just pur&ndash;<lb
+                    type="inWord"/>chased. Never was astonish&ndash;<lb type="inWord"/>ment greater
+                than that of Hen&ndash;<lb type="inWord"/>ry, when he saw that it was<lb/>the same
+                nest that he had stolen<lb/>from his friend George, and<lb/>that he had exchanged
+                for the<lb/>marbles, which had just been<lb/>taken from him, and a good<lb/>beating
+                given him into the bar<lb/>gain.</p>
+            <p rend="first-indent(2) align(justify)">It must be confessed that<lb/>Divine justice
+                was evident in<lb/>the succession of these occur&ndash;<lb type="inWord"/>rences,
+                and that it pointed out<lb/>the direct means of punishing<lb/>the criminal. Henry
+                became<lb/>instantly sensible that his first<lb/>
+                <pb n="26"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>breach of faith towards his<lb/>friend, had led him into all the<lb/>sorrowful
+                circumstances and<lb/>embarrassments in which he<lb/>was involved, and that he
+                had<lb/>told a number of falsehoods<lb/>only to increase his own per&ndash;<lb
+                    type="inWord"/>plexity. The sight of the nest<lb/>made him shed a greater
+                    tor&ndash;<lb type="inWord"/>rent of tears than the blow on<lb/>his nose.</p>
+            <pb n="27"/>
+            <fw type="pagenumber" rend="align(centre)">25</fw>
+            <p rend="first-indent(2) align(justify)">His father was at a loss<lb/>what measure to
+                pursue to ap&ndash;<lb type="inWord"/>pease him: &quot;Take courage, my<lb/>dear
+                son,&rdquo; said he, &quot;it is only<lb/>a swelled nose; you are not hurt<lb/>in
+                any other part, and I have<lb/>something to show you that<lb/>surely will give you
+                pleasure.<lb/>You have told me that your<lb/>friend George has promised to<lb/>share
+                the nest that he has found<lb/>between you: you,shall not be<lb/>inferior to him in
+                generosity:<lb/>to&ndash;morrow, before you go to<lb/>school, you shall carry him
+                two<lb/>of these birds, that I have just<lb/>bought of a poor boy, and he<lb/>will
+                be glad to see that your<lb/>affection for him is as strong<lb/>as his towards you.
+                This pro&ndash;<lb/>
+                <pb type="inWord" n="28"/>
+                <fw type="pagenumber" rend="align(centre)">26</fw>
+                <lb/>posal was a new thunder&ndash;stroke<lb/>for Henry. He perceived that<lb/>it
+                would be the surest means<lb/>of exposing him to disgrace.<lb/>This thought heavily
+                    oppress&ndash;<lb type="inWord"/>ed him : he gave himself up to<lb/>despair: he
+                could not utter a<lb/>word, and was every instant<lb/>on the point of fainting.</p>
+            <p rend="first-indent(2) align(justify)">His father seeing him in this<lb/>situation,
+                imagined that he was<lb/>more seriously hurt than at first<lb/>appeared. He ordered
+                him to<lb/>be put to bed, and gave him<lb/>such medicines as he judged<lb/>proper.
+                Henry was ill with&ndash;<lb type="inWord"/>out pretence; he could not
+                sleep<lb/>during the night, and he was<lb/>burnt up with a scorching fever.<lb/>His
+                father and mother began<lb/>to be apprehensive for the con&ndash;<lb/>
+                <pb type="inWord" n="29"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>sequences: they earnestly be&ndash;<lb type="inWord"/>sought him to tell where
+                he felt<lb/>the pain, but he obstinately de&ndash;<lb type="inWord"/>termined never
+                to discover the<lb/>cause of his indisposition, even<lb/>if it cost him his
+                life,</p>
+            <p rend="first-indent(2) align(justify)">The next day George com&ndash;<lb type="inWord"
+                />ing, according to his accustom&ndash;<lb type="inWord"/>ed habit, to accompany him
+                to<lb/>school, he was told that Henry<lb/>kept his bed with a high fever.<lb/>
+                <pb n="30"/>
+                <fw type="pagenumber" rend="align(centre)">28</fw>
+                <lb/>This news filled his tender<lb/>heart with sorrow. He entreat&ndash;<lb
+                    type="inWord"/>ed permission to be admitted in&ndash;<lb type="inWord"/>to the
+                chamber of his friend,<lb/>which was readily granted.<lb/>As soon as Henry saw him
+                    en&ndash;<lb type="inWord"/>ter the room, he was seized<lb/>with a violent
+                palpitation of<lb/>the heart, because he imagined<lb/>that he had already seen
+                the<lb/>nest, and was come to reproach<lb/>him for his ill&ndash;conduct. What<lb/>a
+                dreadful picture of a guilty<lb/>conscience ? Who would be so<lb/>mad as to commit a
+                criminal<lb/>action, if they could foresee the<lb/>pangs that follow vice with
+                    un&ndash;<lb type="inWord"/>erring certainty! Who would<lb/>dare to utter a
+                falsehood, if<lb/>they could be made sensible<lb/>that, sooner or later, truth will<lb/>
+                <pb n="31"/>
+                <fw type="pagenumber" rend="align(centre)">29</fw>
+                <lb/>be made known, and detect the<lb/>imposture with disgrace.</p>
+            <p rend="first-indent(2) align(justify)">I only ask my readers to<lb/>bring home to
+                their own bo&ndash;<lb type="inWord"/>soms, for one moment, the<lb/>shame and
+                remorse that over&ndash;<lb type="inWord"/>whelmed enry, and I think I<lb/>may be
+                certain that they will<lb/>never be guilty of any action<lb/>that can deserve a
+                blush.</p>
+            <p rend="first-indent(2) align(justify)">George, after having endea&ndash;<lb
+                    type="inWord"/>voured to comfort his friend,<lb/>left him to go to school. As
+                he<lb/>was leaving the house, he saw<lb/>Henry's father in the parlour,<lb/>who
+                showed him the four<lb/>birds, and said that he should<lb/>feel pleasure in giving
+                him the<lb/>choice of two of the prettiest.<lb/>George knew the nest at the<lb/>
+                <pb n="32"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>first glance, and on the sudden<lb/>impulse cried out, &ldquo; Oh,
+                how<lb/>unworthy of Henry, to take<lb/>away my nest, and then so<lb/>shamefully
+                maintain that he<lb/>knew not what was become of<lb/>it.&rdquo; &quot;Fie,
+                George,&rdquo; said Hen&ndash;<lb type="inWord"/>ry's father; &ldquo; do you dare
+                to<lb/>accuse my son of so bad an<lb/>action ? He is not capable of it,<lb/>I assure
+                you. &ndash;&ndash;&ndash;I bought the<lb/>
+                <pb n="33"/>
+                <fw type="pagenumber" rend="align(centre)">31</fw>
+                <lb/>nest yesterday myself, of a lit&ndash;<lb type="inWord"/>tle boy named
+                Lubin.</p>
+            <p rend="first-indent(2) align(justify)">It rejoiced the heart of<lb/>George, to hear
+                that Henry<lb/>was innocent....That it was his<lb/>nest, he was certain, but it
+                was<lb/>possible that another might<lb/>have taken it. He made an<lb/>apology for
+                his precipitation,<lb/>and acknowledged that he had<lb/>judged his friend too
+                rashly.<lb/>Henry's father then enquired<lb/>whether he was with his son<lb/>when he
+                received such a vio&ndash;<lb type="inWord"/>lent blow on the nose.
+                &quot;Yes,<lb/>Sir, we were together at the<lb/>time.&rdquo; &ldquo; Well, what had
+                he<lb/>done, to draw upon himself<lb/>such rough treatment? George<lb/>made no
+                reply:...he would not<lb/>tell a falsehood, and he was<lb/>
+                <pb n="34"/>
+                <fw type="pagenumber" rend="align(centre)">32</fw>
+                <lb/>afraid, by a faithful recital, of<lb/>exposing his friend, who he<lb/>knew was
+                guilty, at least, on<lb/>that subject. Henry's father,<lb/>surprised at George's
+                confusion<lb/>insisted the more earnestly on<lb/>an exact answer to his
+                question;<lb/>and George, perceiving that he<lb/>could not elude his
+                enquiries,<lb/>thought it most adviseable to<lb/>relate what had happened
+                with<lb/>respect to the marbles, and the<lb/>blow on the nose, which the<lb/>little
+                boy had given Henry.</p>
+            <p rend="first-indent(2) align(justify)">At this recital the father cri<lb/>ed out,
+                &ldquo; Is it possible, then<lb/>that my son has deceived me!<lb/>...He told me that
+                it was a<lb/>great boy, who flung the stone<lb/>at him because he tried to
+                pre<lb/>vent<lb/>him from striking a little<lb/>
+                <pb n="35"/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>one. Come with me, George,<lb/>I will&mdash;&mdash; &mdash;&mdash;&rdquo; </p>
+            <p rend="first-indent(2) align(justify)">As he was saying these words<lb/>he heard a
+                knock at the door.<lb/>He opened it. It was Lubin,<lb/>who had brought him a
+                    nose&ndash;<lb type="inWord"/>gay of field flowers, as a mark<lb/>of gratitude.
+                &quot;Ah, is it you,<lb/>my good fellow?&rdquo; cried Hen&ndash;<lb type="inWord"
+                />ry's father; &ldquo; I am glad you<lb/>are come at this critical mo&ndash;<lb/>
+                <pb type="inWord" n="36"/>
+                <fw type="pagenumber" rend="align(centre)">34</fw>
+                <lb/>ment. This is the boy (turn&ndash;<lb type="inWord"/>ing to George) of whom
+                I<lb/>purchased the nest.&rdquo; &ldquo; Yes,<lb/>I certainly sold it to you,&rdquo;
+                said<lb/>Lubin. &quot;How did you hap&ndash;<lb type="inWord"/>pen to find it
+                ?&rdquo; said George.<lb/>&ldquo; I did not take it,&rdquo; replied the<lb/>other;
+                &quot;I had it in barter, with<lb/>a young gentleman in a scarlet<lb/>coat, for a
+                dozen marbles that I<lb/>found in a bag.&rdquo; This reply<lb/>explained the whole
+                matter to<lb/>George in a moment. It was<lb/>sufficient also to convince
+                the<lb/>father of Henry of his son's<lb/>misconduct. He desired the<lb/>two boys to
+                accompany him to<lb/>the chamber.</p>
+            <p rend="first-indent(2) align(justify)">Henry no sooner saw all<lb/>three enter the
+                room together,<lb/>than he supposed that his de&ndash;<lb/>
+                <pb type="inWord" n="37"/>
+                <fw type="pagenumber" rend="align(centre)">35</fw>
+                <lb/>ceit was detected: he jumped<lb/>hastily out of bed, fell on his<lb/>knees
+                before his father, related<lb/>the circumstances as they had<lb/>really happened,
+                and entreated<lb/>forgiveness with tears and sobs.<lb/>His father was too
+                indignant<lb/>to speak. George, touched to<lb/>the quick to see the distress
+                of<lb/>one he had so dearly loved,<lb/>threw his arms around his<lb/>neck, saying,
+                &ldquo; My dear com&ndash;<lb type="inWord"/>panion, I forgive you.----I
+                see<lb/>that you are sufficiently pu&ndash;<lb type="inWord"/>nished by the
+                sufferings of<lb/>your mind.&rdquo; &quot;Ah,&rdquo; cried<lb/>Henry, &quot;I would
+                not en&ndash;<lb type="inWord"/>dure them a second time for<lb/>the whole universe.
+                George<lb/>united with him in beseeching<lb/>his father to grant him forgive&ndash;<lb/>
+                <pb type="inWord" n="38"/>
+                <fw type="pagenumber" rend="align(centre)">36</fw>
+                <lb/>ness, which he could not re<lb/>fuse to their earnest entreaties.</p>
+            <p rend="first-indent(2) align(justify)">He was satisfied with giving<lb/>his son the
+                best instructions<lb/>for correcting his faults, and<lb/>for guarding himself
+                against the<lb/>danger of committing anything<lb/>of a similar nature in
+                future.<lb/>His advice had all the effect he<lb/>could desire. Henry, after
+                this<lb/>memorable lesson, was dis&ndash;<lb type="inWord"/>tinguished for noble and
+                    gene&ndash;<lb type="inWord"/>rous sentiments, and became<lb/>worthy of the
+                friendship that<lb/>George continued to feel for<lb/>him the remainder of his
+                life.</p>
+            <lb/>
+            <p rend="align(centre)">THE END,</p>
+            <pb n="39"/>
+        </body>
+        <back>
+            <pb n="40"/>
+            <div type="cover" rend="brown coloured pictorial wrappers">
+                <div type="advertisement">
+                    <figure type="borderornament"/>
+                    <head rend="align(centre)">JUST PUBLISHED,<lb/>AND FOR SALE AT<lb/><hi
+                            rend="italic">JOHNSON &amp;WARNER'S BOOK&ndash;STORE:</hi></head>
+                    <lb/>
+                    <list rend="align(centre)">
+                        <item>Virtue and Innocence ;<lb/>A POEM FOR CHILDREN.<lb/>&rule;</item>
+                        <item>URSULA,<lb/>OR THE<lb/>INSUFFICIENCY<lb/>OF<lb/>Human
+                            Attainments.</item>
+                        <item>Village Orphan,<lb/>WITH CUTS.</item>
+
+                    </list>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>

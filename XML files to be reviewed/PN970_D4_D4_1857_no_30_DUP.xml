@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013-01-21"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Religious">
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S <lb/>Illustrated Farthing Books. <lb/>&rule;</title>
+                    <lb/>
+                    <title level="m">THE BROTHERS; <lb/>OR<lb/>SELF&ndash;DENIAL.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>31BB19</name>
+                            <desc>resting - BB - out of doors</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <pubPlace>LONDON:</pubPlace><publisher>DEAN &amp; SON, <lb/>11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">30</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <head rend="align(centre)">THE BROTHERS: OR. SELF&ndash;DENIAL.</head>
+            <lb/>
+
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31A27113</name>
+                    <desc>strolling</desc>
+                </ic:iconClass>
+            </figure>
+
+            <p rend="align(justfify)">RICHARD JONES was a great admirer of<lb/>pictures, and he saw
+                one which he ar&ndash;<lb type="inWord"/>
+                <pb n="3"/>
+                <fw type="header" rend="align(centre)">THE BROTHERS.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> dently desired to purchase.
+                Its price was<lb/>only &pound;6. The artist was in haste to raise<lb/>a certain sum
+                of money, and, in conse&ndash;<lb type="inWord"/>quence, wished to dispose of
+                several of his<lb/>best pictures at a low price.</p>
+            <p rend="first-indent(2) align(justify)">Richard had a brother, James, who
+                was<lb/>unfortunate in many ways. Everything<lb/>seemed to go against him. His
+                health<lb/>was shattered, and his wife, a well&ndash;mean&ndash;<lb type="inWord"
+                />ing and industrious woman, was always<lb/>ailing. Now this brother, whose
+                family<lb/>were on the verge of starvation, had<lb/>requested the loan of &pound;6
+                from Richard.<lb/>He and his wife and children were almost<lb/>in rags: they could
+                not go to church;<lb/>they were not fit to be seen anywhere.</p>
+            <p rend="first-indent(2) align(justify)">&lsquo; I will try hard to pay you,
+                Richard,&rdquo;<lb/>said the poor discouraged man.</p>
+            <p rend="first-indent(2) align(justify)">But Richard knew very well that James<lb/>never
+                could pay. He had tried putting<lb/>money into that vessel too many times to<lb/>be
+                deceived now with any notion that there<lb/>was a bottom to it.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; I'll see about it,&rdquo; he replied ;
+                &ldquo; wait<lb/>until to&ndash;morrow;&rdquo;and rather moodily<lb/>walked towards
+                his office. The picture&ndash;<lb type="inWord"/>
+                <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">THE BROTHERS.</fw><lb/> dealer's was in his
+                way, and there he<lb/>stopped.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; I wonder if it is a man's duty to
+                deny<lb/>himself of the <hi rend="italic">necessities of taste</hi>, when<lb/>he has
+                fairly earned the means of procur&ndash;<lb type="inWord"/>ing them, because other
+                men are poorer<lb/>than he ? I think it hard that it should<lb/>be so. I think it
+                cannot be right, and I<lb/>declare I will have that picture.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Richard took two steps towards the<lb/>door,
+                for he had been all this while stand&ndash;<lb type="inWord"/>ing outside at the
+                window where hung the<lb/>beautiful picture.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; But your brother!&rdquo; said
+                something,<lb/>giving Richard a twinge at the vitals,<lb/>&ldquo; what will he do
+                ?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; I can't be helping him for ever.
+                He<lb/>ought to have done as I did, when he was<lb/>a boy. I studied ; he would not.
+                Now,<lb/>because he is reaping the fruits of his<lb/>idleness, must I, too, suffer,
+                when I strove<lb/>day and night for the knowledge which<lb/>should fit me for a high
+                stand in life ?&rdquo;<lb/>Again Richard advanced towards the<lb/>gallery door.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; If a man seeth his brother have need,
+                    <pb n="5"/>
+                <fw type="header" rend="align(centre)">THE BROTHERS.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> and shutteth up his bowels of
+                compassion<lb/>against him, how dwelleth the love of God<lb/>in him
+                ?&rdquo;<lb/>Richard had reached the door, but the<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>33A7</name>
+                        <desc>neighbour</desc>
+                    </ic:iconClass>
+                </figure> sudden darting into his mind of that pas&ndash;<lb type="inWord"/>sage
+                sent him past it on his way to the<lb/>office.</p>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">THE BROTHERS.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">&ldquo; It's no use,&rdquo; he said, &ldquo;
+                Jim must<lb/>have this money. I must give it up.<lb/>Yes, and I must work, and work,
+                year in<lb/>and year out, and all my surplus funds<lb/>must go to keep his family
+                from starvation<lb/>and want. I, meantime, who am mingling<lb/>in society which
+                knows that my means for<lb/>living are as good as any man's need be,<lb/>must live
+                in a style which shall appear<lb/>parsimonious in the extreme; and all<lb/>because
+                of this sinking fund, of which I<lb/>must never speak. I declare it's a
+                hard<lb/>case!&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Richard was very angry. His
+                partner<lb/>wondered to see his usually placid mate in<lb/>such an excited frame of
+                mind. But he<lb/>wisely refrained from making any remark.</p>
+            <p rend="first-indent(2) align(justify)">By&ndash;and&ndash;by Richard asked, feeling as
+                if<lb/>he <hi rend="italic">must</hi> say something, &ldquo; What was
+                the<lb/>subject of yesterday morning's sermon? I<lb/>was not out till
+                evening.&rdquo; It was now<lb/>Monday morning.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; The text was, &lsquo; Bear one
+                another's<lb/>burdens,&rsquo;&rdquo; said Richard's partner, not<lb/>observing the
+                sudden colour which flushed<lb/>the face of his hearer ; &ldquo;and the minister 
+                <pb n="7"/>
+                <fw type="header" rend="align(centre)">THE BROTHERS.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> very clearly explained and
+                enforced the<lb/>duty of doing good to our fellow&ndash;creatures,<lb/>not only to
+                the good and thankful, but<lb/>also to the unworthy. He said men often<lb/>feel that
+                it is very hard that they should<lb/>be required to deny themselves, and
+                work<lb/>for and care for those who, if they would<lb/>wisely and carefully do their
+                own duty,<lb/>might get along without help. But when<lb/>a man from sincere love for
+                his brother<lb/>does, to his own cost and wearing, bear<lb/>the brother's burdens,
+                and do him all the<lb/>good he can, he is exhibiting <hi rend="italic">the
+                    very<lb/>spirit of Christ</hi>. What we would not do<lb/>for our brother's sake,
+                because we think<lb/>he don't deserve it, let us do for Christ's<lb/>sake, who is
+                ever doing for us what we<lb/>don't deserve.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; There, sir, I've given you a
+                pretty<lb/>good abstract of the morning's discourse,<lb/>and I hope you'll try and
+                do as much for<lb/>me when I am detained from church.<lb/>There must be something
+                the matter with<lb/>me, surely, for I never was able to re&ndash;<lb type="inWord"
+                />member or to repeat so much of any<lb/>other sermon in my life.&rdquo;</p>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+            <fw type="header" rend="align(centre)">THE BROTHERS.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">&ldquo; Yes, something <hi rend="italic"
+                    >is</hi> the matter, sure<lb/>enough. God has been speaking through<lb/>your
+                lips, to my selfish and murmuring<lb/>soul.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Richard did not say this, but he
+                thought<lb/>it; and the &pound;6 was soon after placed in<lb/>the hand of James; and
+                many another<lb/>&pound;6 went the same way. The walls of<lb/>Richard's house never
+                gained many more<lb/>paintings to ornament them ; by&ndash;and&ndash;by,<lb/>when
+                the time came when, in that dim<lb/>and cheerless office James was to work
+                no<lb/>more&mdash;when he was no longer to know<lb/>anxiety or hunger&mdash;when his
+                discouraged<lb/>heart, and weary, aching frame, were to<lb/>find repose, and when
+                Richard was called<lb/>to look upon the hollow and wasted face of<lb/>his brother,
+                as it lay in the coffin, do you<lb/>think that he regretted that he had
+                not<lb/>bought pictures, or any other elegant and<lb/>costly things for himself,
+                instead of devot&ndash;<lb type="inWord"/>ing the price of them to the service of
+                his<lb/>over&ndash;worked and sad&ndash;hearted brother?</p>
+        </body>
+        <back/>
+    </text>
+</TEI>

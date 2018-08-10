@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-20"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="pink coloured pictorial wrappers">
+                <bibl>
+                    <figure type="borderornament"/>
+                    <title level="m">THE<lb/>HONEST<lb/>CABIN BOY.<lb/>&rule;<lb/></title>
+                    <publisher>RELIGIOUS TRACT SOCIETY ;<lb/>56, Paternoster&ndash;row; 164,
+                        Piccadilly,<lb/>LONDON.</publisher>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>49N1</name>
+                            <desc>reading to somebody</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <head type="work" rend="align(centre)">THE HONEST CABIN BOY.</head>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>43B51</name>
+                    <desc>in or beside the water (on the beach)</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>SOME years ago, a fisherman died,<lb/>and left a widow, and a son named<lb/>John. The
+                widow had now lost<lb/>her support : and it was thought<lb/>that the boy should go
+                to sea. <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">2</fw>
+                <fw type="header" rend="align(centre)">THE HONEST CABIN BOY.</fw><lb/> A little
+                bundle of clothes was<lb/>made up, and John was soon on<lb/>his way to the
+                sea&ndash;beach at Yar&ndash;<lb type="inWord"/>mouth. &ldquo; Do you want a
+                    cabin&ndash;<lb type="inWord"/>boy ?&rdquo; asked John. &ldquo;No, I
+                have<lb/>boys enough,&rdquo; said one captain.<lb/>&ldquo;You are too small,&rdquo;
+                said another.<lb/>He found that nobody would<lb/>take him. As he could not
+                bear<lb/>the thought of going back to his<lb/>mother, he lay down on the
+                shore,<lb/>and wept himself to sleep.</p>
+            <p rend="first-indent(2) align(justify)">After some hours the poor boy<lb/>awoke. There
+                was not far off the<lb/>captain of a ship that traded to<lb/>St. Petersburg. John
+                went up<lb/>to him, and asked if a boy was<lb/>wanted on board his vessel.
+                &ldquo;Yes,<lb/>I do want one; but I never take<lb/>boy or man without a
+                character.&rdquo;<lb/>John thought for a moment, and <pb n="5"/>
+                <fw type="header" rend="align(centre)">THE HONEST CABIN BOY.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> looked about very sadly.
+                He<lb/>knew not what to do, when put&ndash;<lb type="inWord"/>ting his hand into his
+                    jacket&ndash;<lb type="inWord"/>pocket, he pulled out his small<lb/>Bible.
+                &ldquo; I suppose this will not<lb/>do?&rdquo; said he, as he held it out to<lb/>the
+                captain. The captain opened<lb/>it, and saw written on the first<lb/>leaf, &ldquo;
+                John R&mdash;&mdash;, given as a<lb/>reward for diligence and good<lb/>conduct at
+                his sabbath school.&rdquo;<lb/>&ldquo; Yes, my boy,&rdquo; said the
+                captain,<lb/>&ldquo; <hi rend="italic">this will do</hi>; I would rather
+                have<lb/>this character than any other.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">With his little bundle under<lb/>his arm, John
+                was soon on the<lb/>ship. For some time the sky was<lb/>bright, and the wind was
+                fair.<lb/>But when the vessel got a little<lb/>further a storm came on.
+                They<lb/>tried hard to save the ship, but <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">THE HONEST CABIN BOY.</fw><lb/> the captain
+                began to think that<lb/>the whole of the crew would be<lb/>lost. In the midst of
+                their dis&ndash;<lb type="inWord"/>tress, John was seen to come on<lb/>deck with his
+                school Bible in his<lb/>hand. He then knelt down and<lb/>read the 60th and 61st
+                Psalms,<lb/>while the captain and men stood<lb/>around listening to him.</p>
+            <p rend="first-indent(2) align(justify)">God had mercy on those in the<lb/>ship, for
+                soon the storm ceased,<lb/>and in due time they got safely<lb/>to St.
+                Petersburg.</p>
+            <p rend="first-indent(2) align(justify)">One day while in the Russian<lb/>port, John
+                went on shore: it<lb/>was the birthday of one of the<lb/>royal family. The city was
+                very<lb/>gay, and rich gentlemen and ladies<lb/>were seen in sledges, or fancy
+                cars,<lb/>racing over the ice and snow.<lb/>John was filled with wonder at <pb n="7"/>
+                <fw type="header" rend="align(centre)">THE HONEST CABIN BOY.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> the fine sight before him.
+                While<lb/>looking at it, he saw a bracelet<lb/>fall from the arm of a lady.
+                He<lb/>rushed forward to pick it up, and<lb/>called after the owner, but she<lb/>was
+                quickly out of sight.</p>
+            <p rend="first-indent(2) align(justify)">John ran to the ship to ask<lb/>what he ought
+                to do, when the<lb/>captain said, &ldquo;Why, Jack, your<lb/>fortune is made: these
+                are all<lb/>diamonds on the bracelet; I will<lb/>sell them for you when we
+                get<lb/>home.&rdquo; &ldquo; But they belong to<lb/>the lady,&rdquo; said he. The
+                captain<lb/>replied, &ldquo; Oh, you picked it up,<lb/>and you cannot find the
+                lady&mdash;it<lb/>belongs to you.&rdquo; &ldquo; If we should<lb/>have a storm at
+                sea, captain, as<lb/>we go back, what would become<lb/>of us?&rdquo; &ldquo;Ah,
+                John,&rdquo; said the<lb/>captain, who perhaps was only <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">THE HONEST CABIN BOY.</fw><lb/> trying to see
+                if he had got an<lb/>honest cabin&ndash;boy, &ldquo;you are right.<lb/>I will go on
+                shore, and try to<lb/>find the owner.&rdquo; After some<lb/>trouble she was found,
+                and as a<lb/>reward she gave the boy a large<lb/>sum of money. By the
+                captain's<lb/>advice it was laid out in hides<lb/>and furs, which when the
+                ship<lb/>came to England were sold for<lb/>nearly double the price they cost.</p>
+            <p rend="first-indent(2) align(justify)">As soon as John landed, he<lb/>set off for his
+                mother's cottage.<lb/>But when he got to it, he found<lb/>it shut up, and the grass
+                was<lb/>growing about the door. &ldquo; Oh,&rdquo;<lb/>thought he, &ldquo; my poor
+                mother<lb/>has died of want!&rdquo; He looked<lb/>about him in the greatest
+                grief,<lb/>when he heard some one call to<lb/>him. &ldquo; John, is that you
+                ?&rdquo; It <pb n="9"/>
+                <fw type="header" rend="align(centre)">THE HONEST CABIN BOY.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> was a woman of the village
+                who<lb/>spoke to him. She then told<lb/>him that his poor mother had<lb/>gone into
+                the workhouse.</p>
+            <p rend="first-indent(2) align(justify)">John was soon at the work&ndash;<lb
+                    type="inWord"/>house gate, ringing the bell.<lb/>&ldquo;What do you want?&rdquo;
+                said the<lb/>porter. &ldquo; I want my mother,&rdquo;<lb/>said John. The porter said
+                she<lb/>must not go out without an<lb/>order; but John went in, fell<lb/>on his
+                mother's neck, then put&ndash;<lb type="inWord"/>ting her arm under his arm,
+                he<lb/>marched out with her on the way<lb/>to the old cottage. There he saw<lb/>her
+                placed in comfort, and leaving<lb/>her some money to keep her while<lb/>he was gone
+                on another voyage,<lb/>he went again to his ship. It is<lb/>said that John was a
+                pious son<lb/>to his mother from that day, and <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">THE HONEST CABIN BOY.</fw><lb/> that he
+                afterwards became the<lb/>mate of the same vessel in which<lb/>he first left the
+                shores of Yar&ndash;<lb type="inWord"/>mouth as an orphan cabin&ndash;boy.</p>
+            <p rend="first-indent(2) align(justify)">We have now seen the good<lb/>the Bible does
+                with God's bless&ndash;<lb type="inWord"/>ing. It was this book that<lb/>gave John
+                courage in a storm; it<lb/>taught him to resist temptation<lb/>and to be honest; it
+                made<lb/>him kind to his mother ; and<lb/>we hope, it led him to know our<lb/>Lord
+                Jesus Christ as his Saviour,<lb/>young reader : this holy book<lb/>speaks to you. It
+                directs you<lb/>to repent, and to forsake all sin.<lb/>It points you to Jesus, the
+                    sin&ndash;<lb type="inWord"/>ner's Friend. If you pray to God<lb/>for his Holy
+                Spirit, he will bless<lb/>the reading of it to your hearts.</p>
+
+            <p>&rule;</p>
+            <div type="colophon">
+                <p>Benjamin Pardon, Printer, Paternoster&ndash;row</p>
+            </div>
+        </body>
+
+        <back>
+            <pb n="11"/>
+
+            <pb n="12"/>
+            <figure type="borderornament"/>
+            <epigraph>
+                <lg rend="align(left)">
+                    <l>MAY a helpless child approach Thee,</l>
+                    <l rend="indent(1)">And thy tender pity crave?</l>
+                    <l>Lord, will it not be encroaching?</l>
+                    <l rend="indent(1)">Wilt thou such a sinner save ?</l>
+                    <lb/>
+
+                    <l>Yes ; for with compassion beaming</l>
+                    <l rend="indent(1)">From thy kind and tender eye,</l>
+                    <l>While with love thy words are teeming</l>
+                    <l rend="indent(1)">I hear my blessed Saviour cry:&mdash;</l>
+                    <lb/>
+
+                    <l>&ldquo;Come and welcome, 'tis my pleasure</l>
+                    <l rend="indent(1)">Little children to receive ;</l>
+                    <l>Those who seek me find a treasure</l>
+                    <l rend="indent(1)">Which this world can never give.&rdquo;</l>
+                    <lb/>
+
+                    <l>Lord, I come, and would surrender</l>
+                    <l rend="indent(1)">All I am and have to thee ;</l>
+                    <l>While I cry, &ldquo;What shall I render</l>
+                    <l rend="indent(1)">To the Lord for calling me?&rdquo;</l>
+                </lg>
+            </epigraph>
+        </back>
+    </text>
+</TEI>

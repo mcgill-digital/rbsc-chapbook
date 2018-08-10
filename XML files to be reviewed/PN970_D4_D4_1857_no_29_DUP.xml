@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013-01-08"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S <lb/>Illustrated Farthing Books. <lb/>&rule;</title><lb/>
+                    <title level="m">ANGER. <lb/>A STORY FOR BOYS.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>71H14</name>
+                            <desc>story of David and Goliath (1 Samuel 17)</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <pubPlace>LONDON</pubPlace>:<publisher>DEAN &amp; SON,<lb/>11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">29</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <head rend="align(centre)">ANGER.&mdash;A STORY FOR BOYS.</head>
+            <lb/>
+
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42B741</name>
+                    <desc>father and child(ren), man and child(ren) (family group)</desc>
+                </ic:iconClass>
+            </figure>
+            <!-- &ldquo; positioned a line below where the &rdquo; should be - how should I indicate this?-->
+            <p rend="align(justfify)">&rdquo; UNCLE, please tell us a story ?&rdquo; The old <pb
+                    n="3"/>
+                <fw type="header" rend="align(centre)">ANGER.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> man thus addressed, started as
+                if he had<lb/>been awakened from a dream, and, look&ndash;<lb type="inWord"/>ing
+                round at the young faces which were<lb/>gazing eagerly at him, he said
+                pleasantly,<lb/>&ldquo;And what shall the story be about?&rdquo;<lb/>&ldquo; Oh,
+                about something that happened to<lb/>you when you were a boy, uncle&mdash;a
+                real,<lb/>true story.&rdquo; &ldquo; I think that kind is always<lb/>the
+                nicest,&rdquo; said a sweet, gentle&ndash;looking<lb/>little girl. An expression of
+                sorrow passed<lb/>over the old man's face; then, after<lb/>a pause, he said :
+                &ldquo; Well, children, I <hi rend="italic">will</hi><lb/>tell you something that
+                happened to me in<lb/>my youth ; it was that which brought<lb/>these gray hairs
+                before their time, and<lb/>robbed me of the joy of youth for ever.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; I once had a sister. She was a
+                sweet,<lb/>loving child ; timid and retiring, and of a<lb/>most yielding
+                disposition, except where<lb/>right and wrong were concerned, and then<lb/>her
+                firmness was remarkable in one so<lb/>young. I loved her better than anything<lb/>in
+                the world, though I was exactly her<lb/>opposite in all respects Headstrong
+                and<lb/>impetuous, irritable and passionate, while<lb/>my dear mother lived it was
+                all my deep <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">ANGER.</fw><lb/> love for her could do to
+                keep me even in<lb/>partial restraint; but about three years<lb/>before, she had
+                died, leaving Lucy, myself,<lb/>and an infant brother, under the care of<lb/>an
+                uncle. This uncle, though I believe a<lb/>good man, and sincerely desirous of
+                doing<lb/>his duty towards us, had yet but little<lb/>influence over me, for I was
+                always more<lb/>easily influenced by love than by harsh&ndash;<lb type="inWord"
+                />ness.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Like most boys, I was fond of
+                fishing,<lb/>and I had a fine opportunity for enjoying<lb/>this pastime. At the foot
+                of my uncle's<lb/>garden was a very large pond, plentifully<lb/>stocked with fish ;
+                here I was permitted<lb/>to amuse myself at liberty, with but one<lb/>restriction.
+                There was a certain part of<lb/>the pond where Lucy and I had been<lb/>forbidden to
+                go ; my uncle had marked it<lb/>by putting a few stakes at each end of
+                the<lb/>place. This idea vexed me extremely, for<lb/>boys about twelve years old do
+                not like to<lb/>have it supposed that they cannot take<lb/>care of themselves.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;Lucy was generally my
+                companion<lb/>while fishing: not that she liked it, for <pb n="5"/>
+                <fw type="header" rend="align(centre)">ANGER.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> she sometimes betrayed an
+                unwillingness<lb/>to accompany me, which, compared with<lb/>her delight in being
+                with me on every<lb/>other occasion, and her desire to please<lb/>me, might have
+                shown me, had I chosen<lb/>to see it, how much she disliked it.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; One afternoon, I took my rod,
+                and<lb/>called to Lucy to put on her bonnet, and<lb/>come. I think she was not very well<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C73</name>
+                        <desc>child and nature (games and plays)</desc>
+                    </ic:iconClass>
+                </figure> that day, for she hesitated more than<lb/>usual, and at last said timidly,
+                &lsquo; Would <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">ANGER.</fw><lb/> you mind very much, Arthur,
+                if I didn't<lb/>go with you to&ndash;day ?&rsquo; I looked at her<lb/>surprised.
+                &lsquo; Not mind,&rsquo; I interrupted,<lb/>&lsquo; why, of course you know I want
+                your<lb/>help, Lucy ; but if you choose to be ill&ndash;<lb type="inWord"/>natured
+                about it, I don't care ; you may<lb/>stay at home.&rsquo; And I turned
+                abruptly<lb/>away, and walked off, pretty sure, how&ndash;<lb type="inWord"/>ever,
+                that Lucy would not be far behind<lb/>me. I was right. A minute after, I<lb/>heard
+                the patter of little feet upon the<lb/>garden walk, and she was by my side.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;We walked on in silence, and when
+                we<lb/>arrived at the pond, I baited my hook, and<lb/>threw it into the water. But
+                it was a<lb/>bad day for fishing ; and after waiting a<lb/>long time, I grew tired
+                and impatient. I<lb/>felt cross and irritable ; angry with my&ndash;<lb
+                    type="inWord"/>self&mdash;angry too with Lucy : for there is<lb/>nothing
+                irritates one more against a per&ndash;<lb type="inWord"/>son, than a sense of
+                having injured them.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Just about the middle of the spot
+                we<lb/>had been forbidden, and standing a little<lb/>way out in the water, was a
+                large tree<lb/>whose spreading branches cast a deep<lb/>shadow all around it. I had
+                often looked <pb n="7"/>
+                <fw type="header" rend="align(centre)">ANGER.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> at this place with
+                longing&mdash;it was so<lb/>admirably adapted for fishing; but had<lb/>never yet
+                seriously thought of disobeying<lb/>my uncle's express commands. Now,<lb/>however, I
+                was in no mood to withstand<lb/>temptation. I paused but one moment<lb/>after the
+                idea presented itself&mdash;the next I<lb/>was within the boundary stakes.
+                Without<lb/>stopping to think, I threw the line, and<lb/>the hook catching on one of
+                the trees, the<lb/>rod was jerked out of my hands, and to<lb/>my horror I saw it
+                hanging just out of my<lb/>reach. I looked at it fur a moment in<lb/>consternation,
+                then an idea struck me.<lb/>Hastily feeling in my pockets, I pulled<lb/>out a ball
+                of twine ; then picking up a<lb/>stone which lay at my feet, I tied it to
+                the<lb/>end of the cord.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Seeing I would need some help in
+                my<lb/>endeavours to get at the rod, I glanced<lb/>round for Lucy. She was standing
+                just<lb/>outside the stakes, gazing at me with a<lb/>look of surprise and terror
+                which I shall<lb/>never forget. &lsquo; Lucy,&rsquo; I called out, &lsquo;I<lb/>want
+                you to help me ; come quick?&rsquo; She<lb/>did not move, and I called again,
+                    impa&ndash;<lb type="inWord"/>
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">ANGER.</fw><lb/> tient: &lsquo;Be quick,
+                Lucy; I can't wait.&rsquo;<lb/>&lsquo;You know I can't go there,
+                Arthur.&rsquo;<lb/>Her reply sounded so calm that it irritated<lb/>me more than
+                ever. &lsquo; But you must<lb/>come, Lucy. You shall help me,&rsquo; I ex&ndash;<lb
+                    type="inWord"/>claimed violently&mdash;&lsquo; I'll make you do
+                it.&rsquo;<lb/>She did not stir. &lsquo; Will you come ?&rsquo; I<lb/>added
+                passionately. &lsquo; No, Arthur.&rsquo; Oh,<lb/>I knew not what I did ; but lifting
+                the<lb/>hand that still held the stone, with all my<lb/>force I hurled it at her. I
+                cannot tell<lb/>what followed. I remember seeing her<lb/>fall&mdash;a little coffin
+                in a darkened room,<lb/>kissing clay&ndash;cold lips that had never,<lb/>never
+                spoken one harsh word, and a new&ndash;<lb type="inWord"/>made grave. &lsquo; No
+                tears for her :&rsquo; her eyes<lb/>had seen the King in his beauty ; her
+                feet<lb/>have trod the golden streets of Heaven&mdash;<lb/>but for <hi rend="italic"
+                    >me</hi>&mdash;never, shall I forget that<lb/>awful scene.&rdquo;</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C21</name>
+                    <desc>ships (in general)</desc>
+                </ic:iconClass>
+            </figure>
+        </body>
+        <back/>
+    </text>
+</TEI>

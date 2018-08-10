@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-26"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="NurseryRhymes">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="pink coloured pictorial wrappers">
+                <bibl>
+                    <figure type="borderornament"/>
+                    <note type="handwritten" rend="align(right)">$25</note>
+                    <title level="m">LITTLE<lb/>TOM TUCKER.</title>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>43C7433</name>
+                            <desc>children singing</desc>
+                        </ic:iconClass>
+                        <!-- had to remove line break from figDesc -->
+                        <head>THIS IS LITTLE TOM TUCKER THAT SUNG FOR HIS SUPPER</head>
+                    </figure><lb/>
+                    <publisher>LONDON: PRINTED BY J. CATNACH<lb/>2 &amp;3, MONMOUTH COURT, 7
+                        DIALS</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+            <pb n="3"/>
+            <titlePage>
+                <note type="handwritten" rend="align(right)">25.00</note>
+                <docTitle>
+                    <titlePart type="main">LITTLE<lb/>TOM TUCKER.</titlePart>
+                    <titlePart type="sub"/>
+                </docTitle>
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>43C7433</name>
+                        <desc>children singing</desc>
+                    </ic:iconClass>
+                    <!-- had to remove line break from figDesc -->
+                    <head>THIS IS LITTLE TOM TUCKER THAT SUNG FOR HIS SUPPER</head>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace>LONDON</pubPlace>
+                    <publisher>PUBLISHED BY RYLE &amp;PAUL 2 &amp;3 MONMOUTH COURT</publisher>
+                </docImprint>
+            </titlePage>
+        </front>
+
+        <body>
+            <pb n="4"/>
+            <figure type="borderornament"/>
+            <head rend="align(centre)">TOM TUCKER.<lb/>&rule;</head>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>41C43</name>
+                    <desc>evening meal, dinner, supper</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="align(left)">
+                <l>LITTLE Tom Tucker,</l>
+                <l rend="indent(2)">Sing for your supper.</l>
+                <l rend="indent(2)">What shall I sing for?</l>
+                <l rend="indent(2)">White bread and butter.</l>
+                <l>How shall I cut it</l>
+                <l rend="indent(2)">Without a knife ?</l>
+                <l>And how shall I marry</l>
+                <l rend="indent(2)">Without a wife ?</l>
+
+                <pb n="5"/>
+                <fw type="header" rend="align(centre)">TOM TUCKER.</fw>
+                <fw type="pagenumber" rend="align(right)">3<lb/>&rule;</fw>
+                <lb/>
+                <l>Though little Tom Tucker</l>
+                <l>Lov'd white bread and butter,</l>
+                <l>He did not love learning his book</l>
+                <l>So when he went to school,</l>
+                <l>They drest him like a fool, (look.</l>
+                <l>With the cap on his head, only</l>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>49B25</name>
+                        <desc>punishment at school</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <l>Tom lov'd playing at top,</l>
+                <l>And often would stop,</l>
+                <l>For to have a game in the street;</l>
+                <l>Though he knew 'twas a fault.</l>
+                <l>And if he was caught,</l>
+                <l>He well might expect to be beat.</l>
+
+                <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">TOM TUCKER<lb/>&rule;</fw>
+                <lb/>
+                <l>A man from the fair,</l>
+                <l>Came by with a bear,</l>
+                <l>And a monkey that rode upon</l>
+                <l>Tom followed to see, (Bruin ;</l>
+                <l>More blockhead was he,</l>
+                <l>It caused him to play the truant.</l>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43A3743</name>
+                        <desc>bears (circus performance)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <l>Says Tom, this won't do,</l>
+                <l>I'm a dunce, it is true,</l>
+                <l>All boys that can read are my</l>
+                <l>So he learn'd A,B,C, (betters,</l>
+                <l>And D, E, F, G,</l>
+                <l>And so all the rest of the letters.</l>
+
+                <pb n="7"/>
+                <fw type="header" rend="align(centre)">TOM TUCKER.</fw>
+                <fw type="pagenumber" rend="align(right)">5<lb/>&rule;</fw>
+                <lb/>
+                <l>Then Tom learned to spell,</l>
+                <l>And went to school well,</l>
+                <l>With satchell and books at his</l>
+                <l>No more would he stay, (back,</l>
+                <l>To play by the way,</l>
+                <l>With Tim, Bill, Harry, or Jack.</l>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>49B2</name>
+                        <desc>elementary school; class, form</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <l>Then Tom learned to read, </l>
+                <l>Quite pretty indeed,</l>
+                <l>And very soon after to write,</l>
+                <l>Now Tom was so good,</l>
+                <l>He might play when he would,</l>
+                <l>Without being put to a fright</l>
+
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">TOM TUCKER.<lb/>&rule;</fw>
+                <lb/>
+                <l>He learned to play,</l>
+                <l>By night or by day, (well;</l>
+                <l>He could trundle his hoop very</l>
+                <l>But thought he knew better,</l>
+                <l>Than to learn one letter(to spell</l>
+                <l>For fear they should learn him</l>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C7</name>
+                        <desc>children's games and plays</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <l>At home he got blame,</l>
+                <l>When next morning came,</l>
+                <l>To school he went creeping so</l>
+                <l>Where his master did flog,(sad,</l>
+                <l>And chain him to a log,</l>
+                <l>For being so naughty a lad.</l>
+
+                <pb n="9"/>
+                <fw type="header" rend="align(centre)">TOM TUCKER.</fw>
+                <fw type="pagenumber" rend="align(right)">7<lb/>&rule;</fw>
+                <lb/>
+                <l>Tom kept learning his book,</l>
+                <l>And cheerful did look,</l>
+                <l>Of the fool's cap no longer in</l>
+                <l>Got his master's good word (fear</l>
+                <l>Was head scholar preferr'd,</l>
+                <l>And a very fine medal to wear.</l>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>49B2</name>
+                        <desc>elementary school; class, form</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <l>He had a whip and a top,</l>
+                <l>Bought for him at the shop,</l>
+                <l>And a great many playthings</l>
+                <l>And his father with joy, (beside,</l>
+                <l>Bid him keep a good boy,(ride,</l>
+                <l>And he should have a horse to</l>
+
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">TOM TUCKER.<lb/>&rule;</fw>
+                <lb/>
+                <l>A horse he soon got,</l>
+                <l>That would amble and trot,</l>
+                <l>Only see how he gallops along,</l>
+                <l>He is always at ease,</l>
+                <l>And does what he please,</l>
+                <l>But still he never does wrong.</l>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C131</name>
+                        <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <l>One day he went out.</l>
+                <l>And walking about,</l>
+                <l>Hemet anold woman quite poor</l>
+                <l>He gave her all his pence,</l>
+                <l>She returned him thanks (more.</l>
+                <l>And hop'd he would soon have</l>
+
+                <pb n="11"/>
+                <fw type="header" rend="align(centre)">TOM TUCKER.<lb/>&rule;</fw>
+                <lb/>
+                <l>One Midsummer day,</l>
+                <l>He met a lady gay,</l>
+                <l>And he being grown a young</l>
+                <l>He ask'd her to marry, (man,</l>
+                <l>Nor long did she tarry, (done.</l>
+                <l>As Tom's father before him had</l>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>41C43</name>
+                        <desc>evening meal, dinner, supper</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <l>Now Tom's got a wife,</l>
+                <l>And Tom's got a knife,</l>
+                <l>And Tom can sit down to his</l>
+                <l>As blest as a king, (supper,</l>
+                <l>And each night can sing,(butter.</l>
+                <l>After eating his white bread and</l>
+            </lg>
+        </body>
+        <back/>
+    </text>
+</TEI>

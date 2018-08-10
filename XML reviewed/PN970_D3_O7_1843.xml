@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-11-30"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-07-11"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="Blue pictorial wrappers align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">ORPHAN RACHEL,<lb/>OR<lb/>FRUITS OF PERSEVERANCE.</title><lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25F26(SQUIRREL)</name>
+                            <desc>rodents: squirrel</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>Embellished with Cuts.<lb/>&rule;
+                        <lb/><pubPlace>PROVIDENCE:</pubPlace><lb/><publisher>GEO. P.
+                        DANIELS.</publisher><lb/><date>1845.</date>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+            <pb n="3"/>
+            <titlePage type="halftitle">
+                <note type="handwritten">A I Norton Iba</note>
+                <fw/>
+                <docTitle>
+                    <titlePart type="main">&drule;<lb/>ORPHAN RACHEL ;</titlePart>
+                    <titlePart type="sub">OR<lb/>FRUITES OF PERSEVERANCE.<lb/>&drule;</titlePart>
+                </docTitle>
+                <note type="handwritten">Presented by L. C. Walker <lb/>Jan 1848<lb/></note>
+            </titlePage>
+
+            <pb n="4"/>
+            <div type="frontispiece" rend="landscape">
+                <head rend="align(centre)">FRONTISPIECE.<lb/>&orn;<lb/></head>
+           
+                <figure rend="align(centre) landscape">
+                    
+                    <ic:iconClass>
+                        <name>47I4131</name>
+                        <desc>picking fruit</desc>
+                    </ic:iconClass>
+                </figure>
+                <p>&orn;</p>
+            </div>
+
+            <pb n="5"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart type="main">ORPHAN RACHEL ;</titlePart>
+                    <titlePart type="sub">OR<lb/>FRUITES OF PERSEVERANCE.</titlePart>
+                </docTitle>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>7</name>
+                        <desc>Bible</desc>
+                    </ic:iconClass>
+                </figure>
+                <note>&rule;<lb/>Embellished with Cuts.<lb/>&rule;</note>
+                <docImprint>
+                    <pubPlace>PROVIDENCE :</pubPlace>
+                    <publisher>PUBLISHED BY GEO. P. DANIELS.</publisher>
+                    <date>1843.</date>
+                </docImprint>
+            </titlePage>
+            <pb n="6"/>
+        </front>
+        <body>
+            <pb n="7"/>
+            <head type="work" rend="align(centre)">ORPHAN RACHEL;<lb/>OR, FRUITS OF
+                PERSEVERANCE.<lb/>&rule;</head>
+            <lb/>
+            <p>&ldquo; The fear of the Lord is the beginning of wisdom,<lb/>and the knowledge of the
+                Holy One is understand&ndash;<lb type="inWord"/>ing.&mdash;PROVERBS <num
+                    type="roman numeral">ix</num>. <num type="cardinal">10.</num></p>
+            <p rend="first-indent(2) align(justify)">RACHEL MAITLAND was sitting beside<lb/>her
+                blind grandfather, knitting warm<lb/>woollen stockings for his use against
+                the<lb/>ensuing winter; a book lay open before<lb/>her, from which she was
+                endeavoring to<lb/>acquire the French language without the<lb/>assistance of a
+                master.</p>
+            <p rend="first-indent(2) align(justify)">Now, some of my readers may feel a<lb/>little
+                incredulous respecting the possibili&ndash;<lb type="inWord"/>ty of this double
+                employment ; but knit&ndash;<lb type="inWord"/>ting forms one of the easiest
+                amusements<lb/>of the blind ; consequently, those who<lb/>enjoy the blessings of
+                sight, can knit and<lb/>read at the same time, with the greatest<lb/>facility, if
+                they possess any skill in that<lb/>useful art.</p>
+            <p rend="first-indent(2) align(justify)">Still Rachel was pursuing a dry study <fw
+                    type="signature">A 3</fw><lb/>
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> of her own accord,
+                which too many learn<lb/>only as a task ; but then she possessed an<lb/>inquiring
+                mind, and the straitened cir&ndash;<lb type="inWord"/>cumstances of her grandfather,
+                denied her<lb/>the advantages of a liberal education.<lb/>Thus, with an ardent
+                desire to obtain in&ndash;<lb type="inWord"/>formation, she was left entirely to
+                her<lb/>own resources for its acquirement.</p>
+            <p rend="first-indent(2) align(justify)">The recent death of her good and
+                pious<lb/>grandmother had engaged Rachel, at the<lb/>early age of fifteen, in those
+                active duties<lb/>which the mistress of a family is always<lb/>called upon to
+                perform. The time she<lb/>had hitherto spent in endeavoring to ac&ndash;<lb
+                    type="inWord"/>quire knowledge, was now devoted to the<lb/>comforts of her aged
+                grandfather; for Ra&ndash;<lb type="inWord"/>chel had been early taught to
+                discriminate<lb/>between what was right, and what only<lb/>appeared to be so from
+                the inclination she<lb/>felt to pursue it. She knew there was no<lb/>absolute
+                necessity for her becoming an<lb/>accomplished woman, while an actual<lb/>reason
+                existed for her becoming a useful<lb/>one.</p>
+            <p rend="first-indent(2) align(justify)">This afternoon, however, she did not <pb n="9"/>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> feel so happy and contented as
+                usual.<lb/>Was it that the autumnal sun was fling&ndash;<lb type="inWord"/>ing his
+                bright beams through the case&ndash;<lb type="inWord"/>ment, and that she pined to
+                share the<lb/>pure bracing air of a September afternoon<lb/>with some companions of
+                her own age ?<lb/>No! for the same gay sunbeams glittered<lb/>upon the silver hair
+                of her grandfather,<lb/>who was sleeping in his easy chair, and<lb/>whose afternoon
+                slumbers she was accus&ndash;<lb type="inWord"/>tomed to watch. His infirmities
+                had<lb/>doubly endeared him to Rachel, and she<lb/>loved him too well ever to wish
+                to leave 
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>42B751</name>
+                        <desc>grandparent(s) with grandchild(ren) (family group)</desc>
+                    </ic:iconClass>
+                    <head>Rachel in Trouble.</head>
+                    <lb/>
+                </figure>
+                <fw type="signature">A 4</fw><lb/>
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> him. What then could
+                occasion the dis&ndash;<lb type="inWord"/>content now visibly painted on the
+                    ex&ndash;<lb type="inWord"/>pressive countenance of the orphan? The<lb/>fact
+                was, that she experienced some new<lb/>difficulty in learning the French
+                    lan&ndash;<lb type="inWord"/>guage, and she wanted some one to ex&ndash;<lb
+                    type="inWord"/>plain the meaning of the words that puz&ndash;<lb type="inWord"
+                />zled her.</p>
+            <p rend="first-indent(2) align(justify)">At this moment she dropped her knit&ndash;<lb
+                    type="inWord"/>ting, and leaning her aching head on her<lb/>hands, pushing the
+                book from her, half<lb/>determined to give up the attempt alto&ndash;<lb
+                    type="inWord"/>gether. This state of mind was followed<lb/>by discontent and
+                repining, and she began<lb/>to contrast her situation and all its disad&ndash;<lb
+                    type="inWord"/>vantages, with the opportunities for in&ndash;<lb type="inWord"
+                />struction enjoyed by many others.</p>
+            <p rend="first-indent(2) align(justify)">Rachel's conscience, however, soon re&ndash;<lb
+                    type="inWord"/>proached her for her ingratitude to Him<lb/>who had provided her
+                with food and rai&ndash;<lb type="inWord"/>ment, and who had given her a book
+                of<lb/>instruction, whose knowledge was able to<lb/>make her wise unto salvation ;
+                and she<lb/>felt that the learning to be acquired there,<lb/>would endure
+                &ldquo;when tongues should <pb n="11"/>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw><lb/> fail,&rdquo; and all other
+                things should be for&ndash;<lb type="inWord"/>gotten. She wept, while she thought
+                of<lb/>these unthanked&ndash;for mercies, and taking<lb/>down the bible, resolved to
+                compose her<lb/>mind with reading a chapter, before she<lb/>continued her work.</p>
+            <p rend="first-indent(2) align(justify)">It happened that she opened at these<lb/>words:
+                &ldquo;The fear of the Lord is the<lb/>beginning of wisdom ; and the knowl&ndash;<lb
+                    type="inWord"/>edge of the Holy One is understanding;&rdquo;<lb/>and this
+                sentence seemed to reprove her<lb/>repinings, and to carry conviction
+                and<lb/>consolation to her heart.</p>
+            <p rend="first-indent(2) align(justify)">Rachel then resumed her employment,<lb/>and
+                soon overcame the difficulty that per&ndash;<lb type="inWord"/>plexed her so much ;
+                indeed, the time we<lb/>often spend in vain lamentation, when any<lb/>little trouble
+                befalls us, would generally<lb/>set every thing right again, if we applied<lb/>it
+                properly.</p>
+            <p rend="first-indent(2) align(justify)">Rachel's grandfather had spent a great<lb/>part
+                of his life on the sea, and after he<lb/>had gained a genteel competence, had
+                    re&ndash;<lb type="inWord"/>tired to his native place, and married an<lb/>
+                amiable woman, with whom he hoped to <fw type="signature">A 5</fw><lb/>
+                <pb n="12"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> have spent the rest
+                of his days in peace.<lb/>By this lady Mr. Maitland had a son,<lb/>whom he regarded
+                with an affection that<lb/>rendered him completely blind to his<lb/>faults. Yet
+                Michael Maitland was of a<lb/>temper that required to be controlled ;
+                his<lb/>uncorrected faults, as he grew older,
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25I2</name>
+                        <desc>village</desc>
+                    </ic:iconClass>
+                    <head>The Village.</head>
+                    <lb/>
+                </figure> strengthened into crimes, and his unhap&ndash;<lb type="inWord"/>py father
+                soon found that the ill habits<lb/>his son had acquired in childhood, were<lb/>not
+                easily to be eradicated in maturer<lb/>years. He often regretted that he
+                had<lb/>neglected to keep a proper government <pb n="13"/>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">11</fw><lb/> over his child ; but his
+                self&ndash;upbraidings<lb/>came too late, for Michael's most extrav&ndash;<lb
+                    type="inWord"/>agant courses led him to commit a breach<lb/>of trust, and he was
+                compelled to be ab&ndash;<lb type="inWord"/>sent from his country for a number
+                of<lb/>years. The unhappy parents changed<lb/>their place of abode, and retired to a
+                    cot&ndash;<lb type="inWord"/>tage, in an obscure country village, where<lb/>they
+                lived on the small property that Mi&ndash;<lb type="inWord"/>chael's extravagance
+                had left them.</p>
+            <p rend="first-indent(2) align(justify)">Time passed on, and the term of Mi&ndash;<lb
+                    type="inWord"/>chael's wanderings was ended. But dur&ndash;<lb type="inWord"
+                />ing its continuance, absence and suffering<lb/>had been the means of leading him
+                to feel<lb/>the need of a Saviour. The penitent son<lb/>returned to his own home,
+                and on first<lb/>meeting his father, he addressed him in<lb/>the language of the
+                prodigal in the Gos&ndash;<lb type="inWord"/>pel, &ldquo;Father, I have sinned
+                against hea&ndash;<lb type="inWord"/>ven and against thee, and am no more<lb/>worthy
+                to be called thy son.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">At these affecting words, the heart of<lb/>the
+                parent melted, &ldquo;and he fell on his<lb/>son's neck and kissed him.&rdquo;
+                Michael's<lb/>story was soon told, for he passed over <fw type="signature">A 6</fw><lb/>
+                <pb n="14"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> the sufferings he
+                had undergone as a con&ndash;<lb type="inWord"/>vict, and only spoke of his
+                repentance and<lb/>consequent reconciliation with his offend&ndash;<lb type="inWord"
+                />ed God. &ldquo;He had married the virtuous<lb/>daughter of a Scotch
+                settler,&rdquo; he said,<lb/>&ldquo;but death had taken his Anne, and all<lb/>the
+                pledges of her love, excepting little<lb/>Rachel ; but that heavy affliction
+                had<lb/>been the means of leading him to feel the 
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>42A553</name>
+                        <desc>return of runaway child</desc>
+                    </ic:iconClass>
+                    <head>The Prodigal's Return.</head>
+                    <lb/>
+                </figure> need of a Redeemer. His heart yearned<lb/>for home, and he sold all his
+                effects and<lb/>embarked for America, taking with him<lb/>the child, for whose sake
+                alone he wished <pb n="15"/>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw><lb/> to live ; but he had suffered
+                shipwreck,<lb/>and lost every thing but her.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">The kind parents forgot all the
+                sorrow<lb/>their son had caused them, in their joy<lb/>for his unexpected return ;
+                but Michael<lb/>did not long survive this happy meeting,<lb/>for the first spring
+                flowers were scattered<lb/> on the wanderer's grave, and he slept in<lb/>peace.</p>
+            <p rend="first-indent(2) align(justify)">Little Rachel was only three years old<lb/>at
+                the time of her father's death, and was<lb/>extremely delicate in her
+                constitution;<lb/>but, under the judicious management of<lb/>her grandmother, she
+                soon grew healthy<lb/>and beautiful. Perhaps in any other fam&ndash;<lb
+                    type="inWord"/>ily, the little orphan might have been in&ndash;<lb type="inWord"
+                />jured by too much indulgence ; but Mrs.<lb/>Maitland had suffered too much from
+                that<lb/>error, in the after conduct of her son, to<lb/>fall into it again in the
+                education of her<lb/>grand daughter.</p>
+            <p rend="first-indent(2) align(justify)">The blindness of her grandfather, and<lb/>the
+                sudden death of her excellent grand&ndash;<lb type="inWord"/>mother, were the first
+                sorrows Rachel had<lb/>ever known, and they were severe ones; <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> yet she met them
+                with surprising forti&ndash;<lb type="inWord"/>tude, for her grandmother had taught
+                her<lb/>to bear troubles with patience, and thus<lb/>had fitted her to meet trials
+                with firmness<lb/>and resignation to the divine will.</p>
+            <p rend="first-indent(2) align(justify)">Rachel, as I have said, possessed
+                an<lb/>inquiring mind, and this had led her to<lb/>attempt learning French, as she
+                wished<lb/>to read some books that belonged to her<lb/>father, and which were in
+                that language ;<lb/>besides, she had a wish to become an in&ndash;<lb type="inWord"
+                />structress, for she knew that her grand&ndash;<lb type="inWord"/>father could
+                leave her but little, having<lb/>lost a large proportion of the property he<lb/>had
+                formerly possessed, and she was very<lb/>desirous of being able to gain a
+                    respecta&ndash;<lb type="inWord"/>ble livelihood when death should
+                have<lb/>removed her venerable relative.</p>
+            <p rend="first-indent(2) align(justify)">God never deserts those who put their<lb/>trust
+                in him, and he raised up a friend to<lb/>the orphan in time of need.</p>
+            <p rend="first-indent(2) align(justify)">The mild air of Virginia is
+                generally<lb/>considered very beneficial to invalids, and<lb/>the physician employed
+                by Mrs. Somer&ndash;<lb type="inWord"/>ville, a lady of great wealth, had
+                recom&ndash; <pb n="17" type="inWord"/>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">15</fw><lb/> mended her to take her
+                daughter into<lb/>that State, for the benefit of her health,<lb/>and she brought her
+                to the beautiful and<lb/>retired village where Rachel dwelt, in<lb/>the hope that
+                quietness and good nursing<lb/>might restore her child again to health.<lb/>The fond
+                hopes of the parent were all<lb/>centered in this only and beloved daugh&ndash;<lb
+                    type="inWord"/>ter, whose virtues and early piety in the<lb/>tender morning of
+                her youth gave a bright<lb/>promise for maturer years, if God should<lb/>please to
+                extend their number.</p>
+            <p rend="first-indent(2) align(justify)">Rachel had been accustomed from
+                her<lb/>childhood to assist her fellow&ndash;creatures,<lb/>and though her means
+                were small, her<lb/>grandmother had taught her that even<lb/>kind words were
+                valuable to the afflicted;<lb/>and that if she had no money to give, she<lb/>could
+                impart the knowledge of the word<lb/>of God to those who could not read it
+                for<lb/>themselves. The ophan never left her<lb/>grandmother for the sake of
+                pleasure, but<lb/>sometimes she stole a few minutes to de&ndash;<lb type="inWord"
+                />vote to the sick, whose sufferings she<lb/>strove to alleviate by directing their
+                    <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> thoughts to the only
+                true source of conso&ndash;<lb type="inWord"/>lation.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>33A35</name>
+                    <desc>conversation, dialogue; conversation piece</desc>
+                </ic:iconClass>
+                <head>Miss Somerville and Rachel.</head>
+                <lb/>
+            </figure>
+            <p rend="first-indent(2) align(justify)">During one of these compassionate vis&ndash;<lb
+                    type="inWord"/>its, Rachel met Miss Somerville; and if<lb/>the orphan was struck
+                with the elegant<lb/>manners of the high&ndash;bred heiress, that<lb/>amiable young
+                lady was equally charmed<lb/>with the candor and good sense that<lb/>marked the meek
+                and lowly<choice>
+                    <orig>rachel</orig>
+                    <corr>Rachel</corr>
+                </choice>; and,<lb/>with the permission of her excellent moth&ndash;<lb
+                    type="inWord"/>, she formed an intimate acquaintance<lb/>with her.</p>
+
+            <pb n="19"/>
+            <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+            <fw type="pagenumber" rend="align(right)">17</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">Rachel had never had a companion of<lb/>her own
+                age before, und she returned<lb/>Miss Somerville's regard with the warm&ndash;<lb
+                    type="inWord"/>est affection.</p>
+            <p rend="first-indent(2) align(justify)">The young lady found her humble<lb/>friend
+                engaged one afternoon in knitting<lb/>and learning French, according to her
+                    us&ndash;<lb type="inWord"/>ual custom ; and praising her industry<lb/>and
+                perseverance, declared her readiness<lb/>to become her preceptress, and from
+                that<lb/>time used to devote two hours daily to<lb/>Rachel's instruction. The docile
+                pupil<lb/>rapidly improved under her friend's tui&ndash;<lb type="inWord"/>tion, and
+                the fair path of knowledge grad&ndash;<lb type="inWord"/>ually opened on her view.
+                She related<lb/>to Miss Somerville the perplexity of mind<lb/>she had formerly
+                endured, and from what<lb/>source she had obtained relief from the<lb/>trouble that
+                beset her at that time. Miss<lb/>Somerville was much pleased with the<lb/>anecdote.
+                &ldquo; Oh ! dear Rachel,&rdquo; said she,<lb/>&ldquo;I can indeed bear witness to
+                the truth of<lb/>those words that so sweetly counselled<lb/>you; for what knowledge
+                but His can<lb/>sustain me in the time of sickness and de&ndash; <pb n="20"
+                    type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">18</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> cay ? what wisdom
+                but His can give me<lb/>light at that hour when my dim eyes shall<lb/>close upon all
+                earthly objects ?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Rachel looked at her friend, and
+                the<lb/>conviction rushed on her mind that the<lb/>lips that uttered these words
+                would soon<lb/>indeed be mute; yet those fair cheeks<lb/>were tinted with the
+                brightest dyes of the<lb/>rose, and the coral might vainly have vied<lb/>in color
+                with that mouth, and those eyes<lb/>beamed brilliantly on every object
+                around<lb/>her; could death indeed assume the ap&ndash;<lb type="inWord"/>pearance
+                of such beauty ? Yet she feared<lb/>the foe was within, for she had heard
+                the<lb/>experienced village matrons say, that the<lb/>blush of consumption was more
+                bright<lb/>than the hues of health; and the orphan<lb/>watched her young preceptress
+                with the<lb/>most painful interest, and every day be&ndash;<lb type="inWord"/>held
+                her fragile form become more thin,<lb/>and her slender hand more white
+                and<lb/>slender still, with a grief she could scarce&ndash;<lb type="inWord"/>ly
+                conceal.</p>
+            <p rend="first-indent(2) align(justify)">The noble mother saw the change
+                with<lb/>feelings of agony, for though religion <pb n="21"/>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">19</fw><lb/> could soften, it could not
+                wholly subdue ;<lb/>she would have lost no time in conveying<lb/>her to Saratoga,
+                only Miss Somerville im&ndash;<lb type="inWord"/>plored her to permit her to remain
+                where<lb/>she was.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>11Q2112</name>
+                    <desc>prayer at going to bed, or at getting up</desc>
+                </ic:iconClass>
+                <head>Rachel at Prayer.</head>
+                <lb/>
+            </figure>
+            <p rend="first-indent(2) align(justify)">No human power indeed could preserve<lb/>the
+                young lady from the stroke of death,<lb/>and with a firmness and a hope full
+                of<lb/>immortality she meekly bowed herself to<lb/>meet the coming blow.</p>
+            <p rend="first-indent(2) align(justify)">How happy would poor Rachel have<lb/>felt, if
+                she could have attended on her <pb n="22"/>
+                <fw type="pagenumber" rend="align(left)">20</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> sick friend during
+                her illness; she would<lb/>have experienced a holy consolation in<lb/>watching her
+                sick bed, and smoothing her<lb/>restless pillow; but Rachel had other<lb/>duties to
+                perform, for her aged grandfa&ndash;<lb type="inWord"/>ther declined hourly, and
+                required all her<lb/>care.</p>
+            <p rend="first-indent(2) align(justify)">Under all these trials, Rachel
+                sought<lb/>assistance from above, and when her<lb/>health and patience were likely
+                to give<lb/>way, she used to implore health and<lb/>strength from Him whose mercy
+                never<lb/>fails, and He did not forsake her in her<lb/>affliction and trouble.</p>
+            <p rend="first-indent(2) align(justify)">The feeble lamp of life at length be&ndash;<lb
+                    type="inWord"/>came extinct, and Rachel closed the eyes<lb/>of her last
+                relative, and wept over him,<lb/>although the consciousness of having done<lb/>her
+                duty by him greatly softened her grief.</p>
+            <p rend="first-indent(2) align(justify)">Scarcely had Rachel followed the re&ndash;<lb
+                    type="inWord"/>mains of her grandfather to the grave&mdash;<lb/>scarcely had she
+                time to remember that<lb/>she was a portionless and friendless or&ndash;<lb
+                    type="inWord"/>phan, whose future support must depend<lb/>upon her own
+                exertions&mdash;before she was</p>
+
+            <pb n="23"/>
+            <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+            <fw type="pagenumber" rend="align(right)">21</fw>
+            <lb/>
+            <p>summoned to witness the closing scene of<lb/>her amiable and high&ndash;born
+                preceptress.</p>
+            <p rend="first-indent(2) align(justify)">Holy hope and peace cheered that bed<lb/>of
+                death. The meek child of prosperity,<lb/>who had withstood the deceits of
+                the<lb/>world, who had despised vain pomps, and<lb/>had fixed her mind on true
+                riches, was<lb/>about to render up her soul into her Re&ndash;<lb type="inWord"
+                />deemer's hands. Yet the Christian's war&ndash;<lb type="inWord"/>fare was not yet
+                over; earthly ties, and<lb/>earthly love and friendship, still struggled<lb/>in that
+                dying heart ; Miss Somerville look&ndash;<lb type="inWord"/>ed on her mother, and
+                felt that it was hard<lb/>to part with that beloved friend.&mdash;The<lb/>cold hand
+                of Rachel trembled in her<lb/>grasp, and she was very dear to her soul ;<lb/>tears
+                rushed into her eyes, but piety, and<lb/>a firm trust in God, gained the
+                victory<lb/>over those sharpest stings of death.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;Weep not for me, dear mamma ;
+                mine<lb/>is an early and a happy death ! Ah ! father,<lb/>rejoice that your daughter
+                is spared the<lb/>temptations and trials of longer life ! The<lb/>cares of this
+                world, the deceitfulness of<lb/>riches, might have stolen my heart from <pb n="24"/>
+                <fw type="pagenumber" rend="align(left)">22</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> God : He has called
+                me to him in youth,<lb/>and will take me away from the evil to<lb/>come.&rdquo; She
+                then took Rachel's hand<lb/>and put it into her mother's : &ldquo;See,
+                my<lb/>mother, this is your daughter ; and, Ra&ndash;<lb type="inWord"/>chel, this
+                is your mother; yield her a<lb/>daughter's love, for you must now take<lb/>my place
+                in her affections; now I have<lb/>made my last bequest; join with me
+                in<lb/>prayer.&rdquo;</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42E131</name>
+                    <desc>mourning the dead</desc>
+                </ic:iconClass>
+                <head>Mourning.</head>
+                <lb/>
+            </figure>
+            <p rend="first-indent(2) align(justify)">In united prayer, the afflicted parent,<lb/>the
+                attached and grateful friend, and all<lb/>the attendants of that bed of death,
+                joined, <pb n="25"/>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw>
+                <fw type="pagenumber" rend="align(right)">23</fw><lb/> and Miss Somerville expired
+                with the<lb/>holy name of Him on her lips, whose<lb/>footsteps she had humbly
+                followed during<lb/>her short earthly sojourn.</p>
+            <p rend="first-indent(2) align(justify)">Mrs. Somerville and Rachel mingled<lb/>their
+                tears together, yet they both felt<lb/>that it would be criminal even to wish<lb/>to
+                recal the blessed spirit that had just<lb/>broken its earthly bonds asunder.</p>
+            <p rend="first-indent(2) align(justify)">In the affection of her adopted child,<lb/>the
+                bereaved mother found much comfort<lb/>and consolation. Rachel resembled
+                Miss<lb/>Somerville in person, and Mrs. Somerville<lb/>now took a melancholy
+                pleasure in in&ndash;<lb type="inWord"/>structing her in those things which
+                she<lb/>had been accustomed to teach her daugh&ndash;<lb type="inWord"/>ter, and in
+                a little time she used to think<lb/>that it was indeed her own
+                lamented<lb/>daughter, whose duteous care prevented<lb/>her every wish ; Rachel
+                became, in fact,<lb/>the perfect counterpart of that fair blos&ndash;<lb
+                    type="inWord"/>som, and her adopted parent loved her <lb/>with the same
+                affection as if she had been<lb/>her own child.</p>
+            <p rend="first-indent(2) align(justify)">The orphan became a very accomplish&ndash; 
+                <pb n="26" type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">24</fw>
+                <fw type="header" rend="align(centre)">ORPHAN RACHEL.</fw><lb/> ed and superior
+                woman, and formed a high<lb/>alliance ; but she never forgot to praise<lb/>Him in
+                prosperity, who had been her<lb/>support and refuge in her low estate, and<lb/>early
+                taught her children, &ldquo;that the fear<lb/>of the Lord is the beginning of
+                wisdom,<lb/>and the knowledge of the Holy One is<lb/>understanding.&rdquo;</p>
+        </body>
+        <back>
+            <pb n="27"/>
+            <pb n="28"/>
+            <div type="advertisement">
+                <figure type="borderornament"/>
+                <head rend="align(centre)">CHILDREN'S BOOKS,</head>
+                <lb/>
+                <p rend="align(centre)">Containing instructive and interesting Stories,<lb/>and
+                    illustrated with beautiful Engravings,<lb/><hi rend="italics">Published and for
+                        sale, wholesale and retail, by</hi><lb/>GEO. P. DANIELS,<lb/>PROVIDENCE, R.
+                    I.</p>
+                <p rend="align(centre)">&rule;<lb/>PRICE <measure type="price"><num type="cardinal">6 </num>
+                    <num type="fraction">1/4</num>;
+                        CENTS.</measure><lb/>&rule;</p>
+                <list>
+                <item>1. Orphan Rachel ; or, Fruits of Persever&ndash;<lb type="inWord"/>ance.</item>
+                <item>2. The Two Yellow&ndash;Birds.</item>
+                <item>3. Boy's Own Book of Amusement and In&ndash;<lb type="inWord"/>struction.</item>
+                <item>4. Boy's and Girl's Book of Sports.</item>
+                <item>5. The Ninepenny&ndash;Piece ; and the Little Bas&ndash;<lb type="inWord"/>ket
+                    Maker.</item>
+                <item>6. The Idle Boy; and the Menagerie.</item>
+                <item>7. Girl's Own Book of Amusing and Instruc&ndash;<lb type="inWord"/>tive
+                    Stories.</item>
+                <item>8. James and Charles; and other Tales for<lb/>Children.</item>
+                <item>9. The Two Cousins; and the Water&ndash;Cress<lb/>Girl.</item>
+                <item>10. The Morning Walk; with other Stories<lb/>for Girls and Boys.</item>
+                <item>11. The Flower Basket; or, Poetry for Chil&ndash;<lb type="inWord"/>dren. </item>
+                <item>12. Mamma's Lessons for her little Boys and<lb/>Girls. Chiefly in words of one
+                    syllable.</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>

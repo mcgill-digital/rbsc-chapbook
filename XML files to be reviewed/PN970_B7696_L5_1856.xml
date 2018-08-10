@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-12-07"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-07-11"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="MetricalTales">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="yellow coloured pictorial wrappers">
+                <bibl>
+                    <title level="s">NEW COLORED TOYS.</title>
+                    <figure type="borderornament"/>
+                    <title level="m">LITTLE<lb/>POEMS,<lb/>FROM THE GERMAN.<lb/>&rule;<lb/>Part
+                        First.</title>
+                    <publisher>BOSTON: BROWN, TAGGARD &amp;CHASE, 24 CORNHILL.</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+            <note rend="align(left)" type="handwritten">3&mdash;19&mdash;<lb/>KV&mdash;2.00</note>
+
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <fw type="pagenumber" rend="align(centre)">1</fw>
+            <lb/>
+            <head type="work" rend="align(centre)">LITTLE POEMS.<lb/>&rule;</head>
+            <div type="section">
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>25F26(MOUSE)(+451)</name>
+                        <desc>rodents: mouse (+ animal in search of food)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+              
+                    <head type="main" rend="align(centre)">THE MOUSE AND LADY.</head>
+                 
+                 <sp>
+                        <speaker rend="align(centre)">LADY.</speaker>
+                        <lg rend="align(left)">
+                        <l>MOUSEY, what are you doing there ?</l>
+                        <l>Stealing my sugar ?&mdash;Ah, mousey, take care;</l>
+                        <l>Pussy&ndash;cat sits on the garden wall,</l>
+                        <l>And she will come if she hears me call.</l>
+                        </lg>
+                    </sp>
+
+                    <pb n="4"/>
+                    <fw type="pagenumber" rend="align(centre)">2</fw>
+                    <lb/>
+                    <sp>
+                        <speaker rend="align(centre)">MOUSE.</speaker>
+                        <lg rend="align(left)">
+                        <l>Dear, kind lady, forgive me, I pray</l>
+                        <l>My four little children are starving to&ndash;day.</l>
+                        <l>I've nothing to give them&mdash;believe me, 'tis</l>
+                        <l rend="indent(4)">true,</l>
+                        <l>O, give me the sugar ' kind lady, do !</l>
+                        </lg>
+                    </sp>
+
+                    <sp>
+                        <speaker rend="align(centre)">LADY.</speaker>
+                        <lg rend="align(left)">
+                        <l>Run, run, little mouse, if your need is such,</l>
+                        <l>And keep the sugar&mdash;it is not much.</l>
+                        <l>I too came to the pantry here</l>
+                        <l>To get these pears for my children dear.</l>
+                        <l>Ah ! if they were starving, I dare not to say</l>
+                        <l>I should stop, first to beg, with the food in</l>
+                        <l rend="indent(4)">my way.</l>
+                        <l>Run! carry your children that sugar so fine,</l>
+                        <l>And I will carry this fruit to mine.</l>
+                        </lg>   
+                    </sp>
+                  
+                    <l rend="align(centre)">&rule;</l>
+                      <lg rend="align(left)">
+                    <l>The mouse, with her sugar, ran off like a</l>
+                    <l rend="indent(4)">dart,</l>
+                    <l>And the lady went back with a light, bound&ndash;<lb type="inWord"/></l>
+                    <l rend="indent(4)">ing heart.</l>
+                  </lg>
+            </div>
+
+            <pb n="5"/>
+            <fw type="pagenumber" rend="align(centre)">3</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>49N</name>
+                        <desc>reading</desc>
+                    </ic:iconClass>
+                </figure>
+                <head type="main" rend="align(centre)">THE LITTLE BOY AND BOOK.</head>
+               
+                    <lg>
+                    <l>DEAR little book,</l>
+                    <l>So small and gray,</l>
+                    <l>Are you as wise</l>
+                    <l>As people say ?</l>
+                    </lg>
+                    <lb/>
+                    
+                    <lg>
+
+                    <l>My father dear</l>
+                    <l>Would like it well,</l>
+
+                    <pb n="6"/>
+                    <fw type="pagenumber" rend="align(centre)">4</fw>
+                    <lb/>
+                    <l>If you some good</l>
+                    <l>To me would tell.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+
+                    <l>Come, little book,</l>
+                    <l>Close to my ear ! </l>
+                    <l>Now whisper, soft,</l>
+                    <l>And I will hear</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+
+                    <l>But, tell it quick,</l>
+                    <l>Dear book; you see</l>
+                    <l>My hoop and horse</l>
+                    <l>Stand still for me.</l>
+                    </lg>
+
+                    <l rend="align(centre)">&rule;</l>
+                    <lg>
+
+                    <l>Why ! what a naughty book are you</l>
+                    <l>You see how much I have to do,</l>
+                    <l>Yet not a single word you speak,</l>
+                    <l>But are as dumb as long&ndash;eared Jack.</l>
+                    <l>And now, I don't believe you know</l>
+                    <l>As much as people think you do.</l>
+                    <l>No, you're a stupid book, 'tis plain ;</l>
+                    <l>Go, lie in the corner there again</l>
+                    <l>My mother never serves me so,</l>
+                    <l>But tells me all I ask to know.</l>
+                </lg>
+            </div>
+
+            <pb n="7"/>
+            <fw type="pagenumber" rend="align(centre)">9</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>43C39612</name>
+                        <desc>fight between animals, e.g. a lion and a bear</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+             
+                    <head type="main" rend="align(centre)">DOG AND GOAT.</head>
+                    <sp>
+                        <speaker rend="align(centre)">DOG.</speaker>
+                        <lg rend="align(left)">
+                        <l>TAKE care, Nanny&ndash;goat, or perhaps I shall</l>
+                        <l rend="indent(3)">bite.</l>
+                        </lg>
+                    </sp>
+
+                   <sp>
+                        <speaker rend="align(centre)">GOAT.</speaker>
+                       <lg rend="align(left)">
+                        <l>Take care, little dog, or perhaps I shall</l>
+                        <l rend="indent(3)">smite.</l>
+                        </lg>
+                    </sp>
+
+                    <pb n="8"/>
+                    <fw type="pagenumber" rend="align(centre)">10</fw>
+                    <lb/>
+                    <sp>
+                        <speaker rend="align(centre)">DOG.</speaker>
+                        <lg rend="align(left)">
+                        <l>I have sharp teeth in my mouth, so red.</l>
+                        </lg>
+                    </sp>
+
+                    <sp>
+                        <speaker rend="align(centre)">GOAT.</speaker>
+                        <lg rend="align(left)">
+                        <l>I have sharp horns, on the top of my head.</l>
+                        </lg>
+                    </sp>
+
+                    <sp>
+                        <speaker rend="align(centre)">DOG.</speaker>
+                        <lg rend="align(left)">
+                        <l>I did not mean, Nanny, uncivil to be&mdash;</l>
+                        <l>Pray make up the quarrel, and play here</l>
+                        <l>with me.</l>
+                        </lg>
+                    </sp>
+
+                    <l rend="align(centre)">&rule;</l>
+                <lg rend="align(left)">
+
+                    <l>They played among the blooming heath,</l>
+                    <l>And o'er the grassy lawns,</l>
+                    <l>But Nanny thought of Jowler's teeth,</l>
+                    <l>And he, of Nanny's horns.</l>
+               
+                    <l>And though they raced the fields <choice>
+                            <orig>abo</orig>
+                        <corr>about</corr>
+                        </choice>, </l>
+                    <l>And bounded many a bound,</l>
+                    <l>He never vexed the butting goat,</l>
+                    <l>Nor she the biting hound.</l>
+                </lg>
+            </div>
+
+            <pb n="9"/>
+            <fw type="pagenumber" rend="align(centre)">11</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>34B231</name>
+                        <desc>doves, pigeons</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                
+                    <head type="main" rend="align(centre)">THE PIGEONS.</head>
+                    <sp>
+                        <speaker rend="align(centre)">BOY.</speaker>
+                        <lg rend="align(left)">
+                        <l>PRETTY pigeons, on the roof.</l>
+                        <l>What makes you bill and coo,</l>
+                        <l>And turn your heads this way and that,</l>
+                        <l>And change from red to blue ?</l>
+                        </lg>
+                    </sp>
+
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(centre)">12</fw>
+                    <lb/>
+                    <sp>
+                        <speaker>PIGEON.</speaker>
+                        <lg rend="align(left)">
+                        <l>'Tis because our Maker dear,</l>
+                        <l>Sends from heaven this sun&ndash;shine clear.</l>
+                        <l>When we shine, in colors bright,</l>
+                        <l>'Tis to thank him for his <hi rend="italic">light</hi>.</l>
+                        <l>When we coo and gaily move,</l>
+                        <l>'Tis to <hi rend="italic">thank him for his love</hi>.</l>
+                        </lg>
+                    </sp>
+
+                    <l rend="align(centre)">&rule;</l>
+                <lg rend="align(left)">
+
+                    <l>The doves again began to coo,</l>
+                    <l>And shine in colors bright;</l>
+                    <l>The boy began to play anew,</l>
+                    <l>And it must cheer each heart to view</l>
+                    <l>Their innocent delight:</l>
+                    <l>For every heart of man should know</l>
+                    <l>The source whence all their pleasures flow.</l>
+                    </lg>
+
+              
+            </div>
+
+            <pb n="11"/>
+            <fw type="pagenumber" rend="align(centre)">13</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>43C7372</name>
+                        <desc>(making a) snowman</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                
+                    <head type="main" rend="align(centre)">SNOW&ndash;MAN.</head>
+                <lg rend="align(left)">
+                    <l>SEE the white giant! how he stands,</l>
+                    <l>With upraised cudgel in his hands,</l>
+                    <l rend="indent(2)">And threatens all with blows.</l>
+                    <l>He threatens friend and foe alike,&mdash;</l>
+                    <l>But never fear&mdash;he cannot strike,</l>
+                    <l rend="indent(2)">Nor even guard his nose.</l>
+                </lg>
+
+                    <pb n="12"/>
+                    <fw type="pagenumber" rend="align(centre)">14</fw>
+                    <lb/>
+                <lg rend="align(left)">
+                    <l>Snow&ndash;man, I think you are unwise,</l>
+                    <l>With kimboed arm, and great coal eyes,</l>
+                    <l rend="indent(2)">To try to frighten folk</l>
+                    <l>For if the sun shines warm, to&ndash;day,</l>
+                    <l>You'll drop your club, and steal away</l>
+                    <l rend="indent(2)">Into a dirty brook.</l>
+                </lg>
+                    <lb/>
+                <lg rend="align(left)">
+                    <l>&ldquo; The man whose house is made of glass,</l>
+                    <l>Should not throw stones at those who pass,&rdquo;</l>
+                    <l rend="indent(2)">But make each man his friend:</l>
+                    <l>And you, poor, helpless, pelted elf,</l>
+                    <l>Who cannot run, nor guard <choice>
+                            <orig>yourse f</orig>
+                            <corr>yourself</corr>
+                        </choice>,</l>
+                    <l rend="indent(2)">Had better not offend.</l>
+                </lg>
+                
+            </div>
+
+            <pb n="13"/>
+            <fw type="pagenumber" rend="align(centre)">15</fw>
+            <lb/>
+            <div>
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>34B12</name>
+                        <desc>cat</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+             
+                    <head type="main" rend="align(centre)">THE FOUR KITTENS.</head>
+                <lg rend="align(left)">
+                    <l>KITTIES ! you are now so old,</l>
+                    <l rend="indent(2)">You must be named, you know.</l>
+                    <l>In each one's name it must be told</l>
+                    <l rend="indent(2)">What she loves best to do.</l>
+                </lg>
+                    <lb/>
+                <lg rend="align(left)">
+
+                    <l>You, my dear, are Velvet&ndash;fur,</l>
+                    <l rend="indent(2)">She is Stealthy&ndash;foot,</l>
+
+                    <pb n="14"/>
+                    <fw type="pagenumber" rend="align(centre)">16</fw>
+                    <lb/>
+                    <l>She shall Catch&ndash;mouse be, and her</l>
+                    <l rend="indent(2)">I call Miss Lick&ndash;the&ndash;pot.</l>
+                </lg>
+                    <lb/>
+                <lg rend="align(left)">
+
+                    <l>Velvet&ndash;fur, the cushion loves,</l>
+                    <l rend="indent(2)">And there she sits all day;</l>
+                    <l>Stealthy&ndash;foot, whene'er she can,</l>
+                    <l rend="indent(2)">Slips out, and steals away.</l>
+                </lg>
+                    <lb/>
+                <lg rend="align(left)">
+
+                    <l>Catch&ndash;mouse, slily round the house</l>
+                    <l rend="indent(2)">And corn&ndash;barn, loves to go ;</l>
+                    <l>See, she has caught a little mouse,</l>
+                    <l rend="indent(2)">And brought it in, to show.</l>
+                </lg>
+                    <lb/>
+                <lg rend="align(left)">
+
+                    <l>Lick&ndash;pot in the kitchen sits,</l>
+                    <l rend="indent(2)">With sly and greedy look;</l>
+                    <l>And ah ! I fear she often gets</l>
+                    <l rend="indent(2)">A whipping from the cook.</l>
+                </lg>
+                    <lb/>
+                <lg rend="align(left)">
+
+                    <l>A lesson wise is oft conveyed</l>
+                    <l rend="indent(2)">In trifles, play, or fun,</l>
+                    <l>And, pusses, with your names to aid</l>
+                    <l rend="indent(2)">I'll try your faults to shun.</l>
+                </lg>
+                    <lb/>
+                <lg rend="align(left)">
+
+                    <l>I will not be a greedy puss,</l>
+                    <l rend="indent(2)">Nor cruel in my play,</l>
+                    <l>Nor doze in sloth before the fire,</l>
+                    <l rend="indent(2)">Nor steal from work away.</l>
+                </lg>
+                
+            </div>
+
+            <pb n="15"/>
+            <fw type="pagenumber" rend="align(centre)">5</fw>
+            <lb/>
+            <div>
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>46C13141</name>
+                        <desc>horse</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+              
+                    <head type="main" rend="align(centre)">THE HORSE AND SPARROW.</head>
+                    <sp>
+                        <speaker rend="align(centre)">SPARROW.</speaker>
+                        <lg rend="align(left)">
+                        <l>GOOD horse, your crib is full, I see,</l>
+                        <l>So give a little grain to me!</l>
+                        <l>A corn, or may be three or four,</l>
+                        <l>You will not miss, good horse, I'm sure.</l>
+                        </lg>
+                    </sp>
+
+                    <pb n="16"/>
+                    <fw type="pagenumber" rend="align(centre)">6</fw>
+                    <lb/>
+                    <sp>
+                        <speaker rend="align(cenrre)">HORSE.</speaker>
+                        <lg rend="align(left)">
+                        <l>Bold sparrow, eat and be at home,</l>
+                        <l>And often as you like it, come.</l>
+                        <l>Here is enough for you and me,</l>
+                        <l>And well I like your company.</l>
+                        </lg>
+                    </sp>
+
+                    <l rend="align(centre)">&rule;</l>
+                <lg rend="align(left)">
+
+                    <l>If you had seen them, head to head,</l>
+                    <l>As there like brothers true they fed,</l>
+                    <l>I think you would have smiled, to see</l>
+                    <l>Two friends so different in degree;</l>
+                    <l>And would have thought no mates at all,</l>
+                    <l>The horse so large, and bird so small.</l>
+                    <l>But when the summer sun grew warm,</l>
+                    <l>And flies and gnats began to swarm,</l>
+                    <l>The sparrow plied his beak and wings,</l>
+                    <l>And saved his friend from many stings,</l>
+                    <l>Guarding by turns limbs, flanks, and head,</l>
+                    <l>By littleness more useful made.</l>
+                </lg>
+            </div>
+
+            <pb n="17"/>
+            <fw type="pagenumber" rend="align(centre)">7</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name>43B15</name>
+                        <desc>enjoying nature ~ animals</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+               
+                    <head type="main" rend="align(centre)">BOY AND DUCK.</head>
+                    <sp>
+                        <speaker rend="align(centre)">BOY.</speaker>
+                        <lg rend="align(left)">
+                        <l>DUCK ! good gray duck, now tell me true,</l>
+                        <l>How many small yellow duckies have you?</l>
+                        </lg>
+                    </sp>
+
+                    <sp>
+                        <speaker rend="align(centre)">DUCK</speaker>
+                        <lg rend="align(left)">
+                        <l>I cannot count them&mdash;I never learned how,</l>
+                        <l>But you would not steal one, my darling, I</l>
+                        <l rend="indent(4)">know.</l>
+                        </lg>
+
+                        <pb n="18"/>
+                        <fw type="pagenumber" rend="align(centre)">8</fw>
+                        <lb/>
+                        <lg rend="align(left)">
+                        <l>And here, as many as they may be.</l>
+                        <l>They all come waddling after me.</l>
+                        </lg>
+                    </sp>
+
+                    <l>rend="align(centre)">&rule;</l>
+                <lg rend="align(left)">
+                    <l>The gray duck paused, and looked fondly</l>
+                    <l rend="indent(4)">back,</l>
+                    <l>And hurried them on with a pleasant quack ;</l>
+                    <l>Then off they swam, through the clear blue</l>
+                    <l rend="indent(4)">pool,</l>
+                    <l>And the little boy went to the infant school.</l>
+                    </lg>
+               
+            </div>
+        </body>
+        <back>
+            <pb n="19"/>
+
+            <pb n="20"/>
+            <figure type="borderornament"/>
+
+        </back>
+    </text>
+</TEI>

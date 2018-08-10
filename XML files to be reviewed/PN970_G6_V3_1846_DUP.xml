@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2013-01-18"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="RomancesFairyFolk">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="orange coloured pictorial wrappers">
+                <bibl>
+                    <note type="handwritten" rend="align(left)">17<lb/>3090</note>
+                    <note type="handwritten" rend="align(right)"><unclear/></note>
+                    <figure type="borderornament"/>
+                    <title level="m">HISTORY OF<lb/>VALENTINE<lb/>AND<lb/>ORSON.</title>
+                    <figure>
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <publisher>LONDON : T. GOODE, 30,
+                        AYLESBURY&ndash;STREET,<lb/>CLERKENWELL.<lb/>Also, 2, Goode, Melbourne, Port
+                        Phillip.</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+            <pb n="3"/>
+            <figure type="borderornament"/>
+
+            <titlePage>
+                <docTitle>
+                    <titlePart type="main" rend="align(centre)">HISTORY
+                        OF<lb/>VALENTINE<lb/>AND<lb/>ORSON.</titlePart>
+                </docTitle>
+
+                <figure rend="align(centre) coloured">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <docImprint>
+                    <pubPlace>&rule;<lb/>LONDON :</pubPlace>
+                    <publisher>T. GOODE, 30, AYLESBURY&ndash;STREET,<lb/>CLERKENWELL.<lb/>Also, 2,
+                        Goode, Melbourne, Port Phillip.</publisher>
+                </docImprint>
+
+            </titlePage>
+
+            <pb n="4"/>
+        </front>
+
+        <body>
+            <pb n="5"/>
+            <head type="work" rend="align(centre)"
+                >THE<lb/>HISTORY<lb/>OF<lb/>VALENTINE<lb/>AND<lb/>ORSON.<lb/>&rule;</head>
+            <p rend="first-indent(2) align(justify)">Pepin, King of France, had a sister,
+                named<lb/>Bellisant, whose hand was demanded by several<lb/>kings and princes. Her
+                choice fell on Alexander,<lb/>Emperor of Constantinople, who came to the<lb/>court
+                of King Pepin to espouse her, and then es&ndash;<lb type="inWord"/>cort her home in
+                state as his bride.</p>
+            <p rend="first-indent(2) align(justify)">Alexander's Prime minister, and favourite,
+                was<lb/>a selfish and cruel arch&ndash;priest, who, fearing the<lb/>lovely empress
+                would soon usurp his influence<lb/>over the emperor, resolved to effect her
+                    destruc&ndash;<lb type="inWord"/>tion.</p>
+            <p rend="first-indent(2) align(justify)">The emperor, being of a suspicious
+                disposition,<lb/>the arch&ndash;priest worked upon it for some time, at<lb/>first;
+                and then one day, when the emperor was<lb/>alone, he entered his apartments, and
+                said;&mdash;<lb/>&ldquo; Mighty king, may heaven guard your majesty<lb/>from the
+                treacherous designs of your empress;<lb/>who, not content with faithlessness to your
+                sacred<lb/>person, now seeks to destroy even your life,&rdquo;</p>
+
+            <pb n="6"/>
+            <fw type="header" rend="align(centre)">VALENTINE AND ORSON.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">The emperor, implicitly believing the
+                priest,<lb/>could not restrain his fury; but rushing into his<lb/>wife's apartment,
+                he in a savage manner, dragged<lb/>her about by the hair, exclaiming, &ldquo;Base
+                wretch !<lb/>I am but too well informed of your infamous pro&ndash;<lb type="inWord"
+                />ceedings !&rdquo; Then dashing her on the ground, he<lb/>left her, desiring her to
+                prepare herself for death.</p>
+            <p rend="first-indent(2) align(justify)">The empress having by the help of her
+                    atten&ndash;<lb type="inWord"/>dants, somewhat recovered, sought the
+                emperor,<lb/>and falling on her knees thus addressed him,&mdash;<lb/>&ldquo; Oh take
+                pity on one who has ever faithfully<lb/>loved you ! I shall soon become a mother;
+                and I<lb/>implore your compassion on behalf of my child !<lb/>let me be imprisoned
+                until its birth ; and then, if<lb/>your anger be not appeased, do with me as
+                you<lb/>please; but, oh! save my child! The emperor<lb/>replied, &ldquo; Perish,
+                base woman, and the child of<lb/>your perfidy with you !&rdquo; when the courtiers,
+                    see&ndash;<lb type="inWord"/>ing any further appeal would but increase his
+                rage<lb/>removed Bellisant from his presence.</p>
+            <p rend="first-indent(2) align(justify)">Her faithful servant, Blandiman, now
+                threw<lb/>himself at her feet, imploring her to leave her<lb/>barbarous husband, and
+                suffer him to conduct her<lb/>to her brother's court, but she refused, as
+                that<lb/>would imply a confession of guilt.</p>
+            <p rend="first-indent(2) align(justify)">The emperor banished his queen, instead
+                of<lb/>putting her to death, but forbade all persons, ex&ndash;<lb type="inWord"
+                />cept her faithful attendant, Blandiman, to assist<lb/>her, on pain of death. Thus
+                accompanied, she<lb/>soon reached the forest of Orleans, when overcome<lb/>with
+                fatigue, she sank on a couch made up of<lb/>withered leaves and moss, prepared by
+                her devo&ndash;<lb type="inWord"/>ted servant, who then hastened away, to procure
+                    <pb n="7"/>
+                <fw type="header" rend="align(centre)"><choice>
+                        <orig>ALENTINE</orig>
+                        <corr>VALENTINE</corr>
+                    </choice> AND ORSON</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> some assistance. During
+                Blandiman's absence,<lb/>the poor lady gave birth to two beautiful boys,<lb/>when
+                just as she was pressing them to her bosom<lb/>a huge bear rushed upon her, and
+                snatching up<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure><lb/> one of the babes in its mouth, darted off into the<lb/>thickest of
+                the forest with it. The wretched<lb/>mother pursued, uttering the wildest
+                shrieks,<lb/>until exhausted by terror, she fell into a swoon,<lb/>at the mouth of
+                the monster's cave</p>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">VALENTINE AND ORSON.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">It chanced that King Pepin was that day
+                    hunt&ndash;<lb type="inWord"/>ing in the forest, and passing near the spot
+                where<lb/>the other infant laid, was surprised to see the lit&ndash;<lb
+                    type="inWord"/>tle beauty, who held out his tiny arms, as if to ask<lb/>for
+                protection. &ldquo;See, my lords,&rdquo; said King<lb/>Pepin, &ldquo;this lovely
+                infant appears to solicit my<lb/>favour; I will adopt it as my own.&rdquo; He
+                then<lb/>delivered the babe to one of the pages, who took<lb/>it to a nurse, and by
+                the royal command, it re&ndash;<lb type="inWord"/>ceived the name of Valentine.</p>
+            <p rend="first-indent(2) align(justify)">Scarcely had the page galloped off when
+                the<lb/>king met Blandiman, and demanded what news<lb/>from Constantinople, when
+                hearing that the arch&ndash;<lb type="inWord"/>priest had accused his royal sister
+                of plotting the<lb/>emperor's death, he declared his belief in its<lb/>truth, and
+                blamed the emperor for sparing her<lb/>life, adding, &ldquo;Let her beware how she
+                comes into<lb/>my power.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Blandiman now sought his mistress, whom
+                he<lb/>found half distracted with her accumulated mise&ndash;<lb type="inWord"
+                />ries. She related to him the birth and dreadful<lb/>loss of her infant, and
+                learning her brother's<lb/>unjust wrath against her, resolved to take shelter<lb/>in
+                a monastery.</p>
+            <p rend="first-indent(2) align(justify)">The bear that carried away the infant, took
+                it<lb/>to her cave, and laid it before her young; the<lb/>cubs, however, instead of
+                devouring it, fondled it<lb/>which the old one perceiving, gave it suck and<lb/>the
+                child grew strong and hearty. As he in&ndash;<lb type="inWord"/>creased in size and
+                strength, he ranged the forest<lb/>attacking the wild beast with such fury, that
+                they<lb/>dare not approach the cave in which he continued <pb n="9"/>
+                <fw type="header" rend="align(centre)">VALENTINE AND ORSON</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> to reside with the old bear
+                till his eighteenth<lb/>year, when his strength was so amazing, and the<lb/>terror
+                he caused in all the country round, so<lb/>great, that his renown spread all over
+                France. He<lb/>was called Orson, from having been nurtured by<lb/>a bear.</p>
+            <p rend="first-indent(2) align(justify)">Valentine, meanwhile, had been brought
+                up<lb/>with the king's daughter, Eglantine, to whom<lb/>he was passionately
+                attached. He was highly<lb/>accomplished and brave, having greatly distin&ndash;<lb
+                    type="inWord"/>guished himself against the Saracens whom he<lb/>conquered ; and
+                the favours showered on him ex&ndash;<lb type="inWord"/>citing the hatred of the
+                king's sons, Henry and<lb/>Haufrey, they plotted to destroy him. A petition<lb/>from
+                the peasants, praying protection against<lb/>Orson, being shortly after presented to
+                the king,<lb/>he issued a proclamation in which he offered a<lb/>thousand marks of
+                gold to whoever should bring<lb/>Orson, dead or alive, on which Henry told
+                his<lb/>royal sire, that he thought no one so qualified to<lb/>undertake this
+                hazardous enterprise as the found&ndash;<lb type="inWord"/>ling Valentine, adding,
+                &ldquo; and perhaps, if he<lb/>conquers the savage, you will reward him with<lb/>the
+                hand of our sister, Eglantine.&rdquo; The king,<lb/>seeing their envy, frowned
+                displeasure; but Va&ndash;<lb type="inWord"/>lentine, hinting that the advice was
+                given in the<lb/>hope of encompassing his death, declared that it<lb/>concerned his
+                honor, and he would brave the<lb/>danger willingly, to preserve it unsullied.</p>
+            <p rend="first-indent(2) align(justify)">At the first dawn of morning, Valentine
+                arose<lb/>and putting on his armour, took a shield, po&ndash;<lb type="inWord"
+                />lished like a mirror, and having arrived at<lb/>the forest, he climbed a high tree
+                near the <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">VALENTINE AND ORSON</fw><lb/> bear's cave.
+                Presently he heard Orson, who<lb/>had a buck with him which he had just
+                killed<lb/>come roaring by ; and he could not help ad&ndash;<lb type="inWord"
+                />miring the beauty of his make, and his agility,<lb/>wishing it were possible to
+                tame him. He then<lb/>tore off the branch of a tree, and threw it at<lb/>Orson, who,
+                looking up, uttered a furious howl<lb/>and darted up the tree like lightning.
+                    Valen&ndash;<lb type="inWord"/>tine descended, and Orson, seeing him on
+                the<lb/>ground, rushed down, when Valentine, holding<lb/>up his shield, Orson,
+                evidently surprised and de&ndash;<lb type="inWord"/>lighted, beheld his own image.
+                Valentine then<lb/>lowered the shield, when Orson, tearing up a<lb/>huge tree by the
+                roots, attacked him, and a<lb/>dreadful fight ensued, Orson receiving
+                many<lb/>wounds. The bear, hearing Orson's cries, now<lb/>rushed forth, when
+                Valentine aimed a blow,<lb/>which would have killed her, had not Orson<lb/>rushed
+                forward and throwing one arm round its<lb/>neck, with supplicating gestures seemed
+                to beg<lb/>that he would not hurt her. Valentine, in token<lb/>of kindness, then
+                offered Orson some grapes, and<lb/>a bottle of strong liquor, which he no
+                sooner<lb/>tasted, then he gave them to the bear, throwing<lb/>his arms round her
+                whilst she devoured them,<lb/>and she uttering a gentle growl, to express
+                her<lb/>satisfaction. The strong liquor, however, soon<lb/>caused her death; on
+                which Orson stood for a few<lb/>moments motionless, supposing her to be
+                only<lb/>asleep; he then endeavoured to rouse her, but<lb/>finding all his efforts
+                ineffectual, his grief was<lb/>scarcely to be described, uttering the
+                most<lb/>piercing shrieks and moans. At length, ap&ndash; <pb n="11" type="inWord"/>
+                <fw type="header" rend="align(centre)">VALENTINE AND ORSON</fw>
+                <lb/> proaching Valentine, he made signs that he would<lb/>now become his ; and
+                tears running down his<lb/>cheeks meanwhile, he suffered him to bind his<lb/>hands,
+                and then followed him.</p>
+            <p rend="first-indent(2) align(justify)">Valentine took his way towards the palace,
+                    fol&ndash;<lb type="inWord"/>lowed by crowds, anxious to see this
+                celebrated<lb/>wonder; but when he came to the gate of the<lb/>palace, the porter,
+                affrighted, barred it and fled<lb/>Valentine made a sign to Orson, who tearing
+                up<lb/>a huge stone post, battered the gate to pieces,<lb/>which so alarmed the king
+                and the princess, that<lb/>they would have fled for safety had not
+                Valentine<lb/>called to them, and assured them that Orson<lb/>was no longer a savage
+                ; on which the king per&ndash;<lb type="inWord"/>mitted him to be brought, and the
+                whole court<lb/>were delighted at him, especially when, on Valen&ndash;<lb
+                    type="inWord"/>tine's making signs, he kissed the hand of the fair<lb/>Princess
+                Eglantine.</p>
+            <p rend="first-indent(2) align(justify)">Soon after, a herald from the Duke of
+                    Acqui&ndash;<lb type="inWord"/>tan summonsed all true knights to avenge
+                the<lb/>cause of the Lady Fezon, whom the Green<lb/>Knight held in captivity,
+                proclaiming, that who&ndash;<lb type="inWord"/>ever conquered him should receive her
+                hand in<lb/>marriage.</p>
+            <p rend="first-indent(2) align(justify)">This knight was so famous, that all
+                except<lb/>Valentine refused to engage with him, and the<lb/>princess resolved, if
+                possible, to save him by<lb/>combatting the Green Knight herself, contrived<lb/>to
+                steal his armour, whilst he slept, and galloped<lb/>off. Valentine hearing this when
+                he awoke, set<lb/>out, attended by Orson, and arrived just as she<lb/>was almost
+                overpowered, when he rushed with<lb/>fury on the Green Knight, who, demanding a <pb
+                    n="12"/>
+                <fw type="header" rend="align(centre)">VALENTINE AND ORSON.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw><lb/> parley, said, &ldquo; Brave
+                Knight, in pity to thy<lb/>youth, I tell thee, unless thou canst remove
+                    yon&ndash;<lb type="inWord"/>der shield thou ne'er canst conquer me.&rdquo;
+                    Valen&ndash;<lb type="inWord"/>tine flew to it, but could not stir it, when the<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure><lb/> Green Knight exclaimed, &ldquo;Know that none<lb/>living can subdue
+                me, except he was suckled<lb/>by a wild beast,&rdquo; Valentine ran to Orson,
+                who<lb/>seizing the enchanted shield, instantly loosened <pb n="13"/>
+                <fw type="header" rend="align(centre)">VALENTINE AND ORSON</fw>
+                <fw type="pagenumber" rend="align(right)">11</fw><lb/> it, and it fell to the
+                ground. The Green Knight<lb/>sprang upon Orson, but he dashed him to the<lb/>ground,
+                and would have destroyed him, but for<lb/>Valentine. Thus subdued, he said, This is
+                a<lb/>mystery ; haste to my brother's castle, where the<lb/>Brazen Head will explain
+                to you who my con&ndash;<lb type="inWord"/>queror is.&rdquo; They proceeded thither
+                at once,<lb/>finding the castle guarded by two lions, who, at<lb/>Orson's approach,
+                crouched down, when a dwarf<lb/>came forth and conducted them to the
+                Brazen<lb/>Head, which then spoke as follows;&mdash;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Thou Valentine the brave, art son to
+                the Em&ndash;<lb type="inWord"/>peror Alexander, by Bellisant, his queen, who
+                was<lb/>unjustly banished ; and the wild man, Orson, is<lb/>thy brother. You were
+                both born in the forest<lb/>of Orleans; you was found, and brought up by<lb/>your
+                uncle, King Pepin, but Orson was stolen,<lb/>and nurtured by a bear. Proceed home,
+                where<lb/>you will find your hapless mother, and as soon<lb/>as she embraces your
+                brother, his speech will be<lb/>given to him.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">The Brazen Head then fell; the castle
+                    tot&ndash;<lb type="inWord"/>tered ; darkness enshrouded them ; and when
+                the<lb/>light was restored, no traces of the castle were to<lb/>be seen. Then,
+                having embraced each other,<lb/>they proceeded to the court of France.</p>
+            <p rend="first-indent(2) align(justify)">The wicked arch priest, on his death bed,
+                    con&ndash;<lb type="inWord"/>fessed he had basely slandered the empress,
+                when<lb/>the emperor set off for France, and releasing her<lb/>from the monastery,
+                they repaired to the palace<lb/>of her brother, who, together with her
+                husband,<lb/>implored her for giveness.</p>
+            <p rend="first-indent(2) align(justify)">The noble youths now presented themselves <pb
+                    n="14"/>
+                <fw type="header" rend="align(centre)">VALENTINE AND ORSON</fw>
+                <fw type="pagenumber" rend="align(right)">12</fw><lb/> and no sooner had the empress
+                thrown her arms<lb/>round Orson than speech was given to him; when<lb/>the Duke of
+                Acquitain, taking his hand presented<lb/>him to the Lady Fezon as her future
+                husband,<lb/>and King Pepin, at the same time, joined the<lb/>hands of Valentine and
+                the Princess Eglantine.</p>
+            <p rend="first-indent(2) align(justify)">Splendid preperations were immediately set
+                on<lb/>foot for the celebration of their nuptials, and no&ndash;<lb type="inWord"
+                />thing was to be heard throughout the empire for<lb/>a considerable time, but
+                feasts and balls, fire&ndash;<lb type="inWord"/>works and illuminations, with every
+                other kind of<lb/>gorgeous and magnificent entertainment and re&ndash;<lb
+                    type="inWord"/>joicing.</p>
+            <p rend="align(centre)">FINIS.</p>
+        </body>
+        <back>
+            <pb n="15"/>
+
+            <pb n="16"/>
+        </back>
+    </text>
+</TEI>

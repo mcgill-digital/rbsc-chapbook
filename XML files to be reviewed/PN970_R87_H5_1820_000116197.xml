@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+<!ENTITY ctlig "ct-ligature">
+<!ENTITY brace "&#x7d;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Annika Robbins</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="NurseryRhymes">
+        <front>
+            <pb n="1"/>
+            <titlePage rend="align(centre)">
+                <titlePart type="main">THE<lb/>RENOWNED HISTORY<lb/>OF<lb/>DAME TROT<lb/>AND<lb/>HER
+                    CAT.</titlePart>
+                <lb/>
+                <figure rend="coloured">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>&mdash;<hi rend="italic"
+                        >ooo</hi>&mdash;<lb/><pubPlace>BANBURY</pubPlace>:<lb/>PRINTED BY
+                        <publisher>J. G. RUSHER</publisher>.</docImprint>
+            </titlePage>
+
+        </front>
+        <body>
+            <pb n="2"/>
+            <fw type="pagenumber" rend="align(centre)">2</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>Dame Trot in her cottage,</l>
+                <lb/>
+                <l rend="indent(2)">And her heroine view;</l>
+                <lb/>
+                <l>The dame says, &ldquo;Your servant!&rdquo;</l>
+                <lb/>
+                <l rend="indent(2)">Her pet favourite&mdash;&ldquo; Mew ! &rdquo;</l>
+            </lg>
+            <lg>
+                <l>Dame Trot was the speaker,</l>
+                <lb/>
+                <l rend="indent(2)">Pussy sat in the chair;</l>
+                <lb/>
+                <l>She talk'd of their travels,</l>
+                <lb/>
+                <l rend="indent(2)">Just to drive away care.</l>
+            </lg>
+
+
+            <pb n="3"/>
+            <fw type="pagenumber" rend="align(centre)">3</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>The comical goody</l>
+                <lb/>
+                <l rend="indent(2)">Was no more and no less</l>
+                <lb/>
+                <l>Than Grimalkin's teacher,</l>
+                <lb/>
+                <l rend="indent(2)">The feline governess:</l>
+            </lg>
+            <lg>
+                <l>Tho' the cat was oft deaf,</l>
+                <lb/>
+                <l rend="indent(2)">When most kindly Trot spoke,</l>
+                <lb/>
+                <l>Leap'd on tables and shelves,</l>
+                <lb/>
+                <l rend="indent(2)">Plates and China&ndash;ware broke:</l>
+            </lg>
+
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(centre)">4</fw>
+            <lb/>
+            <lg>
+                <l>And she lapp'd up her milk,</l>
+                <lb/>
+                <l rend="indent(2)">And she laughed at all rule,</l>
+                <lb/>
+                <l>Till Dame Trot was obliged</l>
+                <lb/>
+                <l rend="indent(2)">To send pussy to school.</l>
+            </lg>
+            <lg>
+                <l>Where at length the dame called,</l>
+                <lb/>
+                <l rend="indent(2)">And said&mdash;&ldquo; How do you do ? &rdquo;</l>
+                <lb/>
+                <l>Grimalkin gave answer</l>
+                <lb/>
+                <l rend="indent(2)">To the friendly dame&mdash;&ldquo; Mew !&rdquo;</l>
+            </lg>
+            <lg>
+                <l>Dame took her to market</l>
+                <lb/>
+                <l rend="indent(2)">Where puss rode pick&ndash;a&ndash;back,</l>
+                <lb/>
+                <l>To purchase their dinners,</l>
+                <lb/>
+                <l rend="indent(2)">'Fore to school puss went back.</l>
+            </lg>
+            <lg>
+                <l>The dame chose pigeon&ndash;pie,</l>
+                <lb/>
+                <l rend="indent(2)">And for puss milk and lights,</l>
+                <lb/>
+                <l>And she bought ale and wine,</l>
+                <lb/>
+                <l rend="indent(2)">And they view'd all the sights.</l>
+            </lg>
+
+
+            <pb n="5"/>
+            <fw type="pagenumber" rend="align(centre)">5</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>Puss learned better manners</l>
+                <lb/>
+                <l rend="indent(2)">At the school, by degrees;</l>
+                <lb/>
+                <l>Pupils stitched, learnt lessons,</l>
+                <lb/>
+                <l rend="indent(2)">Were as busy as bees.</l>
+            </lg>
+            <lg>
+                <l>Dame pleased, once invited</l>
+                <lb/>
+                <l rend="indent(2)">All the scholars to dine,</l>
+                <lb/>
+                <l>Off a dish of fine fish</l>
+                <lb/>
+                <l rend="indent(2)">And some gooseberry wine.</l>
+            </lg>
+
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(centre)">6</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>The toast that she gave them,</l>
+                <lb/>
+                <l>As they gobbled the sprats,</l>
+                <lb/>
+                <l>Was&mdash;&ldquo; Good health and long life</l>
+                <lb/>
+                <l>To the nation of cats ! &rdquo;</l>
+            </lg>
+            <lg>
+                <l>But one respectable</l>
+                <l>Grey&ndash;whiskered fine cat,</l>
+                <l>In the midst of the feast,</l>
+                <l>Smelt a mouse or a rat.</l>
+            </lg>
+
+
+            <pb n="7"/>
+            <fw type="pagenumber" rend="align(centre)">7</fw>
+            <lb/>
+            <lg>
+                <l>So, without asking leave,</l>
+                <lb/>
+                <l>To the garden she ran,</l>
+                <lb/>
+                <l>And received a fat mouse</l>
+                <lb/>
+                <l>From the hand of a man.</l>
+            </lg>
+            <lg>
+                <l>Milk and fish were removed,</l>
+                <lb/>
+                <l>They then left in a trice;</l>
+                <lb/>
+                <l>For diversion and fun,</l>
+                <lb/>
+                <l>Pussy fiddled to mice.</l>
+            </lg>
+
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(centre)">8</fw>
+            <lb/>
+            <lg>
+                <l>Taught kittens quick hornpipes,</l>
+                <l>Quadrilles, polkas, and reels,</l>
+                <l>They danced to the music</l>
+                <l>On their toes and their heels.</l>
+            </lg>
+            <lg>
+                <l>Then they frolick'd and played,</l>
+                <l>And they took a long walk ;</l>
+                <l>And returned home to tea :&mdash;</l>
+                <l>Cats did mew and dame talk.</l>
+            </lg>
+            <lg>
+                <l>Said a knowing old mouse,</l>
+                <l>&quot; Now the cats are away,</l>
+                <l>As the old saying is,</l>
+                <l>All the mice go to play : &rdquo;&mdash;</l>
+            </lg>
+            <lg>
+                <l>A cat and her kittens</l>
+                <l>Crept slily around,</l>
+                <l>And carried poor mousey</l>
+                <l>From her sport at a bound.</l>
+            </lg>
+
+            <pb n="9"/>
+            <fw type="pagenumber" rend="align(centre)">9</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>Then puss mounted Dog Ball,</l>
+                <lb/>
+                <l rend="indent(2)">And she had a long ride,</l>
+                <lb/>
+                <l>Through the park and the grove,</l>
+                <lb/>
+                <l rend="indent(2)">Without bridle to guide.</l>
+            </lg>
+            <lg>
+                <l>Saw the Queen and the Prince,</l>
+                <lb/>
+                <l rend="indent(2)">Heard the Princesses scoff;</l>
+                <lb/>
+                <l>But all of 'em wondered</l>
+                <lb/>
+                <l rend="indent(2)">Pussy was not thrown off.</l>
+            </lg>
+
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(centre)">10</fw>
+            <lb/>
+            <lg>
+                <l>A neighbouring farmer</l>
+                <lb/>
+                <l rend="indent(2)">Was much troubled with mice;</l>
+                <lb/>
+                <l>Says the dame &ldquo;We will clear</l>
+                <lb/>
+                <l rend="Indent(2)">Them away in a trice.&rdquo;</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>From the school all the cats</l>
+                <lb/>
+                <l rend="indent(2)">Went in haste to the house;</l>
+                <lb/>
+                <l>And at night they returned,</l>
+                <lb/>
+                <l rend="indent(2)">Each one bearing a mouse:</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>The farmer was pleased</l>
+                <lb/>
+                <l rend="indent(2)">That the mice were all gone;</l>
+                <lb/>
+                <l>And he said&mdash;&ldquo; My fine cats,</l>
+                <lb/>
+                <l rend="indent(2)">For what you have done,</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>Here take home a fine ham,</l>
+                <lb/>
+                <l rend="indent(2)">I will send you some game ;</l>
+                <lb/>
+                <l>And give my best respects</l>
+                <lb/>
+                <l rend="indent(2)">To the worthy old dame.&rdquo;</l>
+                <lb/>
+            </lg>
+
+
+            <pb n="11"/>
+            <fw type="pagenumber" rend="align(centre)">11</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>When Hodge and his waggon</l>
+                <lb/>
+                <l rend="indent(2)">Near dame's cot were espied,</l>
+                <lb/>
+                <l>She determined to give</l>
+                <lb/>
+                <l rend="indent(2)">All the cats a fine ride:</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>Grimalkin and ladies</l>
+                <lb/>
+                <l>In the waggon, of course,</l>
+                <lb/>
+                <l>While the gentlemen cats</l>
+                <lb/>
+                <l>Mounted each his own horse;</l>
+                <lb/>
+            </lg>
+
+
+
+            <pb n="12"/>
+            <fw type="pagenumber" rend="align(centre)">12</fw>
+            <lb/>
+            <lg>
+                <l>Went to visit the farm,</l>
+                <l rend="indent(2)">And to smell the new hay:</l>
+                <l>Men, dame, and the farmer,</l>
+                <l rend="indent(2)">Gave a hearty huzza!</l>
+            </lg>
+            <lg>
+                <l>Said he, &ldquo; Dame, lets treat them,</l>
+                <lb/>
+                <l>Milk and food that is nice;</l>
+                <lb/>
+                <l>For the cats have destroyed</l>
+                <lb/>
+                <l>All the rats and the mice.&rdquo;</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>They entered the dairy,</l>
+                <lb/>
+                <l>And each cat had her fill;</l>
+                <lb/>
+                <l>And cleared all the vermin</l>
+                <lb/>
+                <l>From the barn and the mill.</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>Grimalkin then mounted</l>
+                <lb/>
+                <l>Her high charger Dog Ball,</l>
+                <lb/>
+                <l>To shew to the farmer</l>
+                <lb/>
+                <l>How she'd ride round the hall.</l>
+                <lb/>
+            </lg>
+
+
+            <pb n="13"/>
+            <fw type="pagenumber" rend="align(centre)">13</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>While the cats began dancing,</l>
+                <lb/>
+                <l rend="indent(2)">And Grimalkin to play ;</l>
+                <lb/>
+                <l>As merry as kittens,</l>
+                <lb/>
+                <l rend="indent(2)">On a Midsummer day :</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>Master, mistress, and maids,</l>
+                <lb/>
+                <l rend="indent(2)">And the men 'gan to sing;</l>
+                <lb/>
+                <l>The sons and the daughters</l>
+                <lb/>
+                <l rend="indent(2)">Made the old farm&ndash;house ring.</l>
+                <lb/>
+            </lg>
+
+
+            <pb n="14"/>
+            <fw type="pagenumber" rend="align(centre)">14</fw>
+            <lb/>
+            <lg>
+                <l>In the midst of the mirth,</l>
+                <lb/>
+                <l rend="indent(2)">And the dance all around,</l>
+                <lb/>
+                <l>A most dreadful mishap</l>
+                <lb/>
+                <l rend="indent(2)">All their jolity drowned.</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>Puss at length was thrown off,</l>
+                <lb/>
+                <l rend="indent(2)">And this caused some high words:</l>
+                <lb/>
+                <l>Dog Ball and Grimalkin</l>
+                <lb/>
+                <l rend="indent(2)">Then both drew their swords ;</l>
+                <lb/>
+            </lg>
+
+            <lg>
+                <l>And a duel was fought,</l>
+                <lb/>
+                <l rend="indent(2)">And I cannot tell what,</l>
+                <lb/>
+                <l>Would have ended the strife,</l>
+                <lb/>
+                <l rend="indent(2)">But the stick of Dame Trot.</l>
+                <lb/>
+            </lg>
+            <lg>
+                <l>She scolded them soundly,</l>
+                <lb/>
+                <l rend="indent(2)">As to Trot&ndash;house were led ;</l>
+                <lb/>
+                <l>Good beating she gave them,</l>
+                <lb/>
+                <l rend="indent(2)">And she sent them to bed.</l>
+                <lb/>
+            </lg>
+
+
+            <pb n="15"/>
+            <fw type="pagenumber" rend="align(centre)">15</fw>
+            <lb/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>Next morning beg'd pardon,</l>
+                <lb/>
+                <l rend="indent(2)">Grimalkin and Dog Ball,</l>
+                <lb/>
+                <l>And peace and harmony</l>
+                <lb/>
+                <l rend="indent(2)">Reigned in Trot&ndash;house hall.</l>
+            </lg>
+            <lg>
+                <l>Good feeling continued,</l>
+                <lb/>
+                <l rend="indent(2)">And the dame could tell that</l>
+                <lb/>
+                <l>She went to the kitchen,</l>
+                <lb/>
+                <l rend="indent(2)">And saw Ball feed the cat.</l>
+            </lg>
+
+        </body>
+        <back rend="align(centre)">
+            <pb n="16"/>
+            <fw type="pagenumber">16</fw>
+            <lb/>
+            <figure rend="coloured">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+        </back>
+    </text>
+</TEI>

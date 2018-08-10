@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-10-17"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="ProseFiction">
+        <front>
+            <div type="cover" rend="Brown coloured pictorial wrappers align(centre)">
+                <pb n="1"/>
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">THE CHILD'S COLOURED <lb/>JUVENILE <lb/>READING AND PICTURE
+                        <lb/>BOOK.</title>
+                    <lb/>WITH MANY COLOURED ILLUSTRATIONS. <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25I241</name>
+                            <desc>village street</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/><pubPlace>LONDON:</pubPlace>
+                    <lb/><publisher>DEAN AND SON,</publisher>
+                    <pubPlace>11, LUDGATE HILL.</pubPlace>
+                    <lb/>Wholesale Bible and Prayer Book Warehouse. </bibl>
+            </div>
+        </front>
+        <body>
+            <pb n="2"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>31D14</name>
+                    <desc>adult man</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(justify)">This picture repre&ndash;<lb type="inWord"/>sents the
+                celebrated ar&ndash;<lb type="inWord"/>chitect, Sir Christopher Wren.<lb/>He was
+                born in the year 1632,<lb/>and grew up to be a very clever<lb/>man. He built the
+                Monument,<lb/>and also a great many churches,<lb/>in London; but his
+                principal<lb/>work of art, was St. Paul's Ca&ndash;<lb type="inWord"/>thedral, where
+                he was buried.</p>
+
+            <pb n="3"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>42A571</name>
+                    <desc>child running errands</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">Henry's papa gave him six&ndash;<lb
+                    type="inWord"/>pence, as a birth&ndash;day present, so<lb/>he got leave to buy a
+                slate, that<lb/>he might learn to draw, and off<lb/>he ran to the toy&ndash;shop,
+                and pur&ndash;<lb type="inWord"/>chased one. Henry took great<lb/>pains to learn,
+                and his papa not<lb/>only taught him to draw, but to<lb/>write, and also to do small
+                sums<lb/>on his new slate.</p>
+
+            <pb n="4"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>43C712</name>
+                    <desc>jumping games</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">John and Fred were rambling<lb/>through the
+                corn fields. They<lb/>came to a stile, and John jumped<lb/>over first; but Fred was
+                not quite<lb/>so nimble, and he tried to climb<lb/>over. Stiles are put up to
+                    pre&ndash;<lb type="inWord"/>vent cattle from getting among<lb/>the corn and
+                eating it.</p>
+
+            <pb n="5"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>42B742</name>
+                    <desc>mother and child(ren), woman and child(ren) (family group)</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">Mamma is taking a walk, and<lb/>John and his
+                sister, are with her,<lb/>and so are two of their cousins,<lb/>who are invited to
+                spend a few<lb/>days with them. It is a fine<lb/>day, and the flowers are in
+                full<lb/>bloom, and the trees and hedges<lb/>are covered with green leaves,
+                for<lb/>it is bright summer weather.</p>
+
+            <pb n="6"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>43B15</name>
+                    <desc>enjoying nature ~ animals</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">George has taken his sister<lb/>Ellen into the
+                Park, to see the<lb/>ducks, which are swimming on<lb/>the ornamental water, under
+                the,<lb/>drooping willow tree. They are<lb/>scrambling to catch the pieces
+                of<lb/>bread which George has thrown<lb/>in the water for them. I hope<lb/>the
+                children will not go too near,<lb/>for fear they should fall in.</p>
+
+            <pb n="7"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>46C131</name>
+                    <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">Hunting is a favourite sport<lb/>with some
+                gentlemen who live<lb/>in the country. They generally<lb/>go to the hunt, dressed in
+                red<lb/>coats. It is a very dangerous<lb/>sport, for their horses have to<lb/>jump
+                over every thing that comes<lb/>in their way, whether a hedge,<lb/>or a fence, or a
+                pond; and, if<lb/>they happen to fall, the rider is<lb/>thrown off, and perhaps
+                much<lb/>hurt.</p>
+
+            <pb n="8"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>33C23</name>
+                    <desc>couple of lovers</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">Mr. West has called<lb/>to see Miss Clara
+                Day;<lb/>indeed, he has fallen<lb/>in love with her, and he<lb/>is asking her to
+                become his wife,<lb/>I am sure he will make her a<lb/>good husband, for he is a
+                very<lb/>steady, sober, honest, and indus&ndash;<lb type="inWord"/>trious young man,
+                and pays great<lb/>attention to his business.</p>
+
+            <pb n="9"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>46C24</name>
+                    <desc>sailing-ship, sailing-boat</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">This is a ship in full sail It<lb/>is going in
+                search of Sir John<lb/> Franklin and his crew, in the<lb/>North seas, where it is so
+                very<lb/>cold, that the sea becomes frozen,<lb/> and the sailors are obliged to
+                cut<lb/>a passage through the ice, for<lb/>the ship to sail through; but<lb/>
+                sometimes they become so sur&ndash;<lb type="inWord"/>rounded with ice, that they
+                are<lb/>compelled to wait many months.</p>
+
+            <pb n="10"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>42G2222</name>
+                    <desc>sisters (second degree family relationships)</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">One day, when Jane<lb/>and Ellen were left
+                at<lb/>home, to take care of<lb/>the house, while their mamma<lb/>went for a walk,
+                it came on to<lb/>rain, and then to thunder, when<lb/>they were simple enough to
+                be<lb/>terrified at it. It was a dreadful<lb/>storm indeed, but it did not
+                last<lb/>very long.</p>
+
+            <pb n="11"/>
+            <figure rend="align(centre) coloured">
+                <ic:iconClass>
+                    <name>42D243</name>
+                    <desc>wedding reception</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">The happy day at length ar&ndash;<lb
+                    type="inWord"/>rived, when Clara was married<lb/>to Mr. West. They are
+                now<lb/>leaving the church, surrounded<lb/>by their parents and friends; and<lb/>the
+                little girls, dressed in white,<lb/>are strewing all sorts of pretty<lb/>flowers for
+                the bride and bride&ndash;<lb type="inWord"/>groom to walk over.</p>
+        </body>
+        <back>
+            <pb n="12"/>
+            <figure type="borderornament"/>
+            <div type="advertisement">
+                <p rend="align(justify)">REWARD and GIFT BOOKS, or, <lb rend="indent(5)"
+                    />Twenty&ndash;eight pretty Tales, for the Young, <lb rend="indent(5)"/>by Miss
+                    Sargeant; illustrated with nume&ndash; <lb type="inWord" rend="indent(5)"/>rous
+                    engravings; Set of Six in a Packet</p>
+                <p rend="align(justify)">REWARD and GIFT BOOKS, or, <lb rend="indent(5)"
+                    />Twenty&ndash;one Tales for the Young, by Miss <lb rend="indent(5)"/>Corner;
+                    embellished with numerous en&ndash; <lb type="inWord" rend="indent(5)"
+                    />gravings; the set of Six in One Packet .</p>
+                <p rend="align(justify)">EASY TALES, by Miss Corner and <lb rend="indent(5)"/>Mrs.
+                    BURDEN.&mdash;Mostly in short Words of <lb rend="indent(5)"/>ONE
+                    SYLLABLE,&mdash;with neat en&ndash; <lb type="inWord" rend="indent(5)"
+                    />gravings; Set of Twelve in One Packet</p>
+                <p rend="align(justify)">EASY TALES, by Miss Corner and <lb rend="indent(5)"/>Mrs.
+                    BURDEN,&mdash;Mostly in easy words of <lb rend="indent(5)"/>ONE
+                    SYLLABLE,&mdash;with neat en&ndash; <lb type="inWord" rend="indent(5)"
+                    />gravings; the Set of Six in One Packet</p>
+                <p rend="align(justify)">LITTLE TALES, by Miss Corner <lb rend="indent(5)"/>and Mrs.
+                    BURDEN;&mdash;mostly in words of <lb rend="indent(5)"/>>ONE SYLLABLE,&mdash;with
+                    numerous <lb rend="indent(5)"/>engravings, First series, bound in cloth</p>
+                <p rend="align(justify)">SHORT TALES, by Miss Corner, <lb rend="indent(5)"/>and Mrs.
+                    BURDEN;&mdash;Mostly in words of <lb rend="indent(5)"/>>ONE
+                    SYLLABLE,&mdash;withnamerous <lb rend="indent(5)"/>engravings; Second series,
+                    bound in cloth</p>
+                <p rend="align(centre)">UNTEARABLE TOY BOOKS, Coloured:</p>
+                <p rend="first-indent(5) align(justify)">Mounted on cloth; comprising 13 sorts, <lb
+                        rend="indent(5)"/>printed in good bold type, with large <lb rend="indent(5)"
+                    />coloured engravings. viz. each</p>
+                <p>The Lost Chicken, and how it was found, &amp;c.<lb/> The Adventures of a Little
+                    Sailor Boy,<lb/> Henry and his Pony, and John and his Sister.<lb/> The Young
+                    Mice, and what became of them all.<lb/> The Doll's Own Book of Pretty
+                    Pictures.<lb/> The Infant's First Book; or, first steps from ABC.<lb/> The Farm
+                    Yard, and what was seen in it.<lb/> The Little Child's Stories of Horses. Dogs,
+                    Cows, &amp;c.<lb/> Something to look at, and something to Read.<lb/> The
+                    Infant's First Book; or, A B C in large letters.<lb/> My Own Book of Tales and
+                    Pictures.<lb/> The Funny ABC, with Pretty Pictures.<lb/> My Picture Book.</p>
+                <p>1 0</p>
+                <p>1 0</p>
+                <p>1 0</p>
+                <p>0 6</p>
+                <p>0 9</p>
+                <p>0 9</p>
+                <p>0 6</p>
+            </div>
+            <fw type="footer" rend="align(left)">2000&mdash;8,59.</fw>
+            <lb/>
+        </back>
+    </text>
+</TEI>

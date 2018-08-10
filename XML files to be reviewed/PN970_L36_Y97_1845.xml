@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <figure type="borderornament"/>
+            <div type="cover" rend="blue coloured pictorial wrappers">
+                <bibl>
+                    <title level="m">YES! AND NO!</title><lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>42B742</name>
+                            <desc>mother and child(ren), woman and child(ren) (family group)</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <edition>REVISED BY THE EDITOR,<lb/>D. P. KIDDER.<lb/>&rule;<lb/></edition>
+                    <!-- should the pubplace, date etc below be put into separate elements within <bibl> - if so, which? -->
+                    <publisher>NEW&ndash;YORK:<lb/>PUBLISHED BY LANE &amp;TIPPETT,<lb/>FOR THE
+                        SUNDAY&ndash;SCHOOL UNION OF THE METHODIST<lb/>EPISCOPAL CHURCH, 200
+                        MULBERRY&ndash;ST.<lb/>J. Collord, Printer.<lb/>1845.</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C13192</name>
+                    <desc>horse throwing rider</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <head type="work" rend="align(centre)">YES ! AND NO !</head>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">It is of no use to puzzle young people<lb/>with
+                hard names of half a dozen syllables,<lb/>the meaning of which they cannot
+                make<lb/>out; it is better to use words which they<lb/>can all understand ;
+                therefore the title of<lb/>this little book shall be YES ! and NO !</p>
+            <p rend="first-indent(2) align(justify)">Yes and NO are very little words,
+                but<lb/>though small in size they are great in<lb/>importance; for on the use and
+                abuse of<lb/>them depends much of our hope and our <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">2</fw>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw><lb/> fear, our joy and
+                our sorrow. These two<lb/>words are in constant use; but as some<lb/>confusion might
+                arise from speaking of<lb/>them both at once, let us be content with<lb/>one of
+                them; let us see what can be said<lb/>of the word <hi rend="italic">yes</hi>.</p>
+            <p rend="first-indent(2) align(justify)">You may think it an odd subject to<lb/>speak
+                upon, but never mind that; for<lb/>many an odd thing is made useful, and<lb/>there
+                is no reason, that I know of, why<lb/>we should not make a good use of the<lb/>word
+                    <hi rend="italic">yes</hi>.</p>
+            <p rend="first-indent(2) align(justify)">Some say <hi rend="italic">yes</hi> when they
+                mean <hi rend="italic">no</hi>, and<lb/>others say <hi rend="italic">no</hi> when
+                they mean <hi rend="italic">yes</hi>, and<lb/>no doubt you may remember instances
+                of<lb/>this kind with regard to yourself. When<lb/>I was a boy, and the question was
+                asked<lb/>me if I liked school, I used to say <hi rend="italic">yes</hi> ;<lb/>but
+                though my tongue said <hi rend="italic">yes</hi>, my heart<lb/>said <hi
+                    rend="italic">no</hi>. Once, when on a visit, I was<lb/>asked by a gentleman if
+                I would eat a<lb/>mince pie. Now being uncommonly fond<lb/>of mince pie, the
+                prospect of having one<lb/>much pleased me, yet I answered, &ldquo; No,<lb/>thank
+                you, sir,&rdquo; foolishly expecting that<lb/>he would ask me again; this,
+                however,<lb/>he never did, and thus was I deservedly<lb/>punished for my
+                insincerity. Now, in<lb/>these two instances, I acted, to say the <pb n="5"/>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> least of it, a very silly
+                part; and my rea&ndash;<lb type="inWord"/>son for acknowledging it to you is,
+                that<lb/>you may be persuaded to act more wisely.<lb/>A straightforward,
+                open&ndash;hearted, and<lb/>sincere answer is better than all the<lb/>silly,
+                shuffling, insincere replies in the<lb/>world.</p>
+            <p rend="first-indent(2) align(justify)">But, perhaps, if I were to tell you<lb/>twenty
+                other instances wherein I acted a<lb/>silly part with regard to the word <hi
+                    rend="italic">yes</hi>,<lb/>you might not apply one of them to your&ndash;<lb
+                    type="inWord"/>self. Nay, for aught I know to the con&ndash;<lb type="inWord"
+                />trary, you might conclude that because<lb/>you had not committed the very
+                same<lb/>faults, you were free from the errors which<lb/>I had pointed out to you. I
+                will, there&ndash;<lb type="inWord"/>fore, soon leave off talking about
+                myself,<lb/>that I may, for a few minutes, talk about<lb/>you, and especially about
+                the manner in<lb/>which you ought to use the word <hi rend="italic">yes</hi>.</p>
+            <p rend="first-indent(2) align(justify)">It matters but little whether you are a<lb/>boy
+                or a girl; for boys and girls have<lb/>hearts in their bosoms made of the
+                very<lb/>same materials, and liable to the same<lb/>temptations.</p>
+            <lg rend="align(left)">
+                <l>There's not a pulse that throbs, that does not still</l>
+                <l>Obey at times some base, unbridled will;</l>
+                <l>And not a beating bosom but requires</l>
+                <l>A heavenly hand to quench its lawless fires.</l>
+            </lg>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">He who has been a child knows pretty<lb/>well <choice>
+                    <orig>whal</orig>
+                    <corr>what</corr>
+                </choice> enters into a child's heart; and<lb/>therefore, you must not be surprised
+                if I<lb/>should happen to know what is in yours.</p>
+            <p rend="first-indent(2) align(justify)">You know, too, that he who stands on<lb/>the
+                top of a mountain can see further<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25II3	farm or solitary house in landscape - II - ideal landscapes</name>
+                        <desc>farm or solitary house in landscape - II - ideal landscapes</desc>
+                    </ic:iconClass>
+                </figure><lb/> than he who walks about in the valley<lb/>below. As I am older than
+                you are, and<lb/>have seen more than you have seen, so I<lb/>may be likened to one
+                on the top of a<lb/>mountain, and may then describe to you<lb/>a few things of which
+                you are at present<lb/>ignorant.</p>
+            <p rend="first-indent(2) align(justify)">In every bosom there is a strong prin&ndash;
+                    <pb n="7" type="inWord"/>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> ciple of selfishness, which
+                continually<lb/>prompts us to follow out our own plea&ndash;<lb type="inWord"/>sures
+                and desires, without caring much<lb/>whether or not they dishonor God,
+                or<lb/>trespass on those around us; and unless<lb/>this principle is restrained by
+                divine<lb/>grace, we are continually dissatisfied,<lb/>running after glittering
+                bubbles, which,<lb/>the moment we touch them, burst and<lb/>disappear. If I ask you
+                whether you<lb/>feel this principle in your heart, I think<lb/>you will be compelled
+                to reply <hi rend="italic">yes</hi>. You<lb/>may love your parents, your
+                relations,<lb/>and your teachers ; but do you not love<lb/>yourself better? You know
+                you do, and<lb/>therefore must answer <hi rend="italic">yes</hi>. You obey<lb/>those
+                who have the care of you, or who<lb/>are placed in authority over you, but<lb/>would
+                not you, if you could, rather obey<lb/>your own heart? If you speak truly,
+                you<lb/>will again say <hi rend="italic">yes</hi>. Now, my object is to<lb/>point
+                out to you, that whatever this selfish<lb/>principle may say, whatever your
+                heart<lb/>may say, and whatever may be said by<lb/>the whole world, it is to your
+                real interest<lb/>and happiness never to say <hi rend="italic">yes</hi> to
+                what<lb/>God forbids, and always to say <hi rend="italic">yes</hi> to<lb/>what he
+                commands.</p>
+            <p rend="first-indent(2) align(justify)">We are told to love our parents, our <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw><lb/> neighbors, our
+                friends, and our enemies,<lb/>and especially to love God.</p>
+            <lg rend="indent(4) align(left)">
+                <l>Whene'er we think upon the skies,</l>
+                <l rend="indent(1)">Or read God's holy word,</l>
+                <l>This question in our hearts should rise,</l>
+                <l rend="indent(1)">&ldquo;Say, lovest thou the Lord?&rdquo;</l>
+                <lb/>
+
+                <l>And O more happy shalt thou be</l>
+                <l rend="indent(1)">Than language can express,</l>
+                <l>If, when the question's put to thee,</l>
+                <l rend="indent(1)">Thy heart shall answer <hi rend="italic">yes</hi> !</l>
+            </lg>
+            <p rend="first-indent(2) align(justify)">Now, do not be angry if I question
+                you<lb/>rather closely. Were you ever tempted<lb/>to deceive your parents by hiding
+                your<lb/>faults from them ? by behaving better be&ndash;<lb type="inWord"/>fore them
+                than when they were absent ?<lb/>by telling them that which was not true ?<lb/>or by
+                rebelling against their authority ?<lb/>If you have done any of these things,
+                did<lb/>you thereby make yourself more happy ?<lb/>You will not answer <hi
+                    rend="italic">yes</hi>. Did you ever<lb/>take what belonged to another, acting
+                the<lb/>part of a thief? If you have on any oc&ndash;<lb type="inWord"/>casion been
+                so wicked, did the thing stolen<lb/>add to your happiness ? You must not<lb/>answer
+                    <hi rend="italic">yes</hi>. Did you ever utter bad lan&ndash;<lb type="inWord"
+                />guage, bear false witness against your<lb/>playmates, backbite and slander
+                those<lb/>who had offended you ? If so, did you get<lb/>any addition to your peace?
+                You cannot <pb n="9"/>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> answer <hi rend="italic"
+                    >yes</hi>. Did you ever give way to ha&ndash;<lb type="inWord"/>tred, anger,
+                malice, and revenge, against<lb/>those whom you considered to be your<lb/>enemies ?
+                and did it add to your joy ?<lb/>You would be ashamed to answer <hi rend="italic"
+                    >yes</hi>.<lb/>Did you ever break the sabbath, mock at<lb/>holy things, or make
+                game of those who<lb/>profess to be followers of our Lord and<lb/>Saviour Jesus
+                Christ ? If these things<lb/>were ever committed, did they lighten<lb/>your heart,
+                or render you more satisfied<lb/>with yourself ? You dare not answer <hi
+                    rend="italic">yes</hi>.<lb/>In all these instances you well know that<lb/>you
+                have been your own enemy, and that<lb/>instead of gaining an advantage, you
+                have<lb/>sunk in your own estimation.</p>
+            <lg rend="align(left)">
+                <l>Though sin in its course may a season succeed,</l>
+                <l>The heart that does evil must sorrow and bleed.</l>
+            </lg>
+            <p rend="first-indent(2) align(justify)">But can you recall to mind any one in&ndash;<lb
+                    type="inWord"/>stance during the whole course of your<lb/>life, wherein you have
+                done good or re&ndash;<lb type="inWord"/>sisted evil, wherein you have
+                humbly<lb/>obeyed God's holy will, lovingly assisted<lb/>your young friends, or
+                forgiven your<lb/>enemies, without feeling a peace greater<lb/>than you before
+                enjoyed ? I do not think<lb/>that you are bold enough to answer <hi rend="italic"
+                    >yes</hi>.</p>
+            <p rend="first-indent(2) align(justify)">The thing then appears plain, that by <pb
+                    n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw><lb/> always saying <hi
+                    rend="italic">yes</hi> when God asks you to<lb/>obey him, and by never saying
+                    <hi rend="italic">yes</hi> when<lb/>your heart requires you to disobey
+                him,<lb/>you will secure much joy and avoid much<lb/>sorrow.</p>
+            <p rend="first-indent(2) align(justify)">More than one half the misery of the<lb/>world
+                is brought about by our saying <hi rend="italic">yes</hi>,<lb/>either with our
+                tongues, our hearts, or<lb/>our actions, to evil temptations. And<lb/>more than one
+                half of our mercies are<lb/>enjoyed by our being divinely enabled to<lb/>say <hi
+                    rend="italic">yes</hi> to all the merciful injunctions and<lb/>invitations of
+                our heavenly Father.</p>
+            <p rend="first-indent(2) align(justify)">What would you say to a silly com&ndash;<lb
+                    type="inWord"/>panion who in plain language should speak<lb/>thus to you :
+                &ldquo;Come along with me, and<lb/>let us get some of those bright red
+                berries<lb/>growing on yonder bushes. It is true we<lb/>may tear our clothes,
+                scratch our fingers<lb/>and faces with thorns, and tumble into the<lb/>bed of
+                nettles at the bottom of the ditch;<lb/>and, after all, most likely the berries
+                will<lb/>make us very sick, for they are poison;<lb/>yet never mind, come with me,
+                and let us<lb/>do as I have said.&rdquo; Why you would tell<lb/>him at once that you
+                would not go; you<lb/>would not say <hi rend="italic">yes</hi> to his invitation.
+                Now<lb/>all who invite you to do wrong, ask you to<lb/>act the same foolish part,
+                though they may <pb n="11"/>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw><lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>49B22</name>
+                        <desc>returning home from school</desc>
+                    </ic:iconClass>
+                </figure><lb/> only speak of the shining berries, and say<lb/>not one word about the
+                thorns, the nettles,<lb/>and the poison. Treat them, then, in the<lb/>same manner as
+                you would treat your silly<lb/>companion: be not so silly as to say <hi
+                    rend="italic">yes</hi>.</p>
+            <p rend="first-indent(2) align(justify)">You may, perhaps, think me very anx&ndash;<lb
+                    type="inWord"/>ious about this matter, but I cannot help<lb/>being so ;
+                therefore I say again, if even<lb/>those whom you believe to be the best<lb/>friends
+                that you have in the world, re&ndash;<lb type="inWord"/>quire you to do what you
+                believe to be<lb/>evil, they are asking you to be miserable:<lb/>turn away,
+                therefore, from their invitation.<lb/>But if they require you to do that which <pb
+                    n="12"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw><lb/> you know to be good,
+                they are asking you<lb/>to be happy, and with all your heart, your<lb/>soul, and
+                your strength, you may safely<lb/>answer <hi rend="italic">yes</hi>.</p>
+            <p rend="first-indent(2) align(justify)">And now, having said so much about<lb/>the word
+                    <hi rend="italic">yes</hi>, let us for a few minutes<lb/>consider the word <hi
+                    rend="italic">no</hi>.</p>
+            <p rend="first-indent(2) align(justify)">There are many young people who<lb/>would
+                hardly believe me if I were to tell<lb/>them that it is a hard matter to say <hi
+                    rend="italic">no</hi>;<lb/>and yet for all that, it is one of the
+                most<lb/>difficult things in the world. Hundreds<lb/>and thousands who are now
+                unhappy, who<lb/>are enduring the miseries of want, pain,<lb/>disgrace, and the
+                stings of an accusing<lb/>conscience, might have possessed a bright<lb/>eye and a
+                light heart&mdash;might have gone<lb/>rejoicing through the world, instead
+                of<lb/>being bowed down with calamity, if in<lb/>their youth they had learned to say
+                    <hi rend="italic">no</hi>.<lb/>It is a most important lesson, and well<lb/>will
+                it repay the trouble of attaining it.</p>
+            <lg rend="align(left)">
+                <l>In peace through the pathways of life would you go,</l>
+                <l>Hold the reins of your passions, and learn to say no.</l>
+            </lg>
+            <p rend="first-indent(2) align(justify)">I grant you that in some cases it is
+                an<lb/>easy thing to say <hi rend="italic">no</hi>. If you require many<lb/>young
+                people to do that which is dis&ndash;<lb type="inWord"/>agreeable, or to give up
+                something which <pb n="13"/>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+                <fw type="pagenumber" rend="align(right)">11</fw><lb/> gives them pleasure ; if you
+                ask them to<lb/>share their plum&ndash;cake with their compa&ndash;<lb type="inWord"
+                />nions, to bear patiently the rebuke of their<lb/>teachers, or to forgive a
+                playmate who has<lb/>offended them, the word <hi rend="italic">no</hi> will pop
+                out<lb/>of their mouths as suddenly and as sharp<lb/>as a paper wad out of a
+                pop&ndash;gun. In<lb/>these cases there is no difficulty; but it<lb/>is not to such
+                cases as these that I allude,<lb/>when I say that it is one of the
+                hardest<lb/>things in the world to say <hi rend="italic">no</hi>. I will
+                give<lb/>you a few examples.</p>
+            <p rend="first-indent(2) align(justify)">Joe Turner was a lively and
+                    good&ndash;tem&ndash;<lb type="inWord"/>pered lad, but with all his liveliness
+                and<lb/>good temper he had not learned to say <hi rend="italic">no</hi>,<lb/>a
+                neglect which he will have cause to<lb/>regret to his dying day. A
+                gentleman's<lb/>servant, who lived in the neighborhood,<lb/>was in the habit of
+                airing his master's<lb/>horses by galloping them a mile or two<lb/>along the common
+                every morning. One<lb/>day when he was riding a horse, and hold&ndash;<lb
+                    type="inWord"/>ing another by the halter, he met Joe,<lb/>and asked him if he
+                would have a ride.<lb/>Joe was not accustomed to horses; it<lb/>therefore was a very
+                foolish thing for<lb/>him to get on the back of a mettlesome,<lb/>high&ndash;bred
+                hunter; but as he could not<lb/>say <hi rend="italic">no</hi>, he mounted the horse,
+                and away <pb n="14"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw><lb/> he went, starting
+                off directly on a gallop,<lb/>not being able to keep his horse in.<lb/>Three minutes
+                had not passed before Joe<lb/>was thrown; his leg was broken in two<lb/>places, and
+                well it was for him that his<lb/>neck was not broken too. Ever since<lb/>then Joe
+                has been obliged to walk with a<lb/>stick, and he has no other prospect
+                than<lb/>that of limping to his grave.</p>
+            <p rend="first-indent(2) align(justify)">Harry Parker was a playmate of
+                Joe<lb/>Turner's, but he could no more say <hi rend="italic">no</hi><lb/>than Turner
+                could, and this circumstance<lb/>caused his ruin. On the whole, he was a<lb/>decent
+                lad, having many good points<lb/>about him, and every one said when he<lb/>was put
+                apprentice to Mr. Roberts, the<lb/>first grocer of a neighboring town, that<lb/>he
+                was on. the high road to make his<lb/>fortune. Harry soon got acquainted
+                with<lb/>some wild and extravagant young fellows,<lb/>who persuaded him to do as
+                they did. If<lb/>Harry could have flatly said <hi rend="italic">no</hi> when
+                they<lb/>asked him to act wickedly, he would have<lb/>been safe, but this he could
+                not do. He<lb/>robbed his master's till to enable him to<lb/>imitate his companions,
+                and was sent to<lb/>prison, losing his liberty and his character<lb/>at the same
+                time.</p>
+            <p rend="first-indent(2) align(justify)">John Locket was the first scholar in <pb n="15"/>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw><lb/> the Sunday school, and so far
+                as book<lb/>knowledge went, he knew more than<lb/>most of his companions; but,
+                though he<lb/>learned much that bade fair to be a bless&ndash;<lb type="inWord"/>ing
+                to him, he never could learn to say <hi rend="italic">no</hi><lb/>in a season of
+                temptation. This failing<lb/>first made him a sabbath breaker, after&ndash;<lb
+                    type="inWord"/>ward a rogue and vagabond, and, lastly,<lb/>occasioned his
+                transportation to Botany<lb/>Bay; thus, for the want of learning to<lb/>say <hi
+                    rend="italic">no</hi>, Joe Turner lost the proper use<lb/>of his limbs, and
+                Harry Parker and John<lb/>Locket lost their friends, their character,<lb/>and their
+                liberty.</p>
+            <p rend="first-indent(2) align(justify)">O it is indeed a hard thing to say <hi
+                    rend="italic">no</hi><lb/>when all around are wanting you to say<lb/>yes! and
+                yet until you can do this, you<lb/>cannot act with proper firmness, nor are<lb/>you
+                in a fit state to be trusted by others.<lb/>If I had twenty sons and twenty
+                    daugh&ndash;<lb type="inWord"/>ters, though it would be a pleasant thing<lb/>to
+                have them all well educated, one of the<lb/>very first lessons that I should wish
+                them<lb/>to learn would be to say <hi rend="italic">no</hi>.</p>
+            <p rend="first-indent(2) align(justify)">Did you ever see a purple&ndash;faced,
+                bloated<lb/>drunkard, staggering through the streets,<lb/>dirty, ragged, and
+                miserable ; a disgrace<lb/>to himself, and the jest of the thought&ndash;<lb
+                    type="inWord"/>less lads who were assembled around to <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw><lb/> laugh at him? What
+                was it, think you, that<lb/>made him so loathsome a being? It was<lb/>all brought
+                about by his not being able<lb/>to say <hi rend="italic">no</hi>. If he had resisted
+                the tempt&ndash;<lb type="inWord"/>ation of the glass; if, when enticed by<lb/>his
+                intemperate comrades, he could re&ndash;<lb type="inWord"/>solutely have said <hi
+                    rend="italic">no</hi>, he would never have<lb/>become a drunkard.</p>
+            <p rend="first-indent(2) align(justify)">Did you ever see a thief dragged off<lb/>to a
+                prison ? or a murderer led to the<lb/>gallows ? If so, I ask you again,
+                whether<lb/>you can guess what it was that occasioned<lb/>his ruin ? If you cannot,
+                I will tell you.<lb/>It was by his neglecting in the days of<lb/>his youth to learn
+                to say <hi rend="italic">no</hi>. Had he<lb/>stoutly and resolutely, looking to
+                God<lb/>for grace, resisted evil, had he with a firm<lb/>voice and a determined
+                heart said <hi rend="italic">no</hi> to<lb/>the temptations of his youth, he had
+                never<lb/>been led captive, the willing slave of sin, in<lb/>the gall of bitterness
+                and bonds of iniquity.</p>
+            <p rend="first-indent(2) align(justify)">Do you not think, then, if these things<lb/>are
+                true, that it is worth while to learn<lb/>to say <hi rend="italic">no</hi> ? Most
+                assuredly it is, and never<lb/>ought you to be satisfied till the lesson<lb/>has
+                been thoroughly learned.</p>
+            <p rend="first-indent(2) align(justify)">When a mouse, tempted by the smell<lb/>of a bit
+                of cheese, is caught in a trap;<lb/>when a fish seizes the worm fastened on a <pb
+                    n="17"/>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw>
+                <fw type="pagenumber" rend="align(right)">15</fw><lb/> fish&ndash;hook; when a bird,
+                lured by a few<lb/>crumbs of bread, alights on a twig covered<lb/>over with
+                bird&ndash;lime on purpose to catch<lb/>him; when these creatures thus run
+                into<lb/>trouble, and deprive themselves of their<lb/>lives or their liberty, they
+                do it in igno&ndash;<lb type="inWord"/>rance. There is no one to tell the
+                poor<lb/>bird that if he sets his foot on the twig<lb/>he will be caught; to inform
+                the poor fish<lb/>that a hook is beneath the worm that will<lb/>be fixed in his
+                jaws; or to make known<lb/>to the poor mouse that the moment he<lb/>puts his head
+                into the trap to touch the<lb/>cheese, he will be strangled to death: but<lb/>with
+                you it is different; you are told be&ndash;<lb type="inWord"/>forehand that every
+                evil deed will be sure<lb/>to be followed with its punishment; there&ndash;<lb
+                    type="inWord"/>fore you have no excuse.</p>
+            <lg rend="indent(4) align(left)">
+                <l>When lightnings flash along the sky</l>
+                <l>Be sure the thunder&ndash;clap is nigh:</l>
+                <l>Be certain too, each sinful deed</l>
+                <l>Will make the guilty bosom bleed,</l>
+            </lg>
+            <p rend="first-indent(2) align(justify)">On too many instances in my past life<lb/>can I
+                look back with bitter regret wherein<lb/>I did not say <hi rend="italic">no</hi>;
+                firmly, resolutely, un&ndash;<lb type="inWord"/>alterably <hi rend="italic">no</hi>;
+                for then should I have spared<lb/>myself many a useless sigh and
+                unavailing<lb/>tear. If you wish well to all around you,<lb/>and would willingly
+                keep trouble from <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">YES ! AND NO !</fw><lb/> your own heart,
+                again I say, do learn to<lb/>say <hi rend="italic">no</hi>. Do not hesitate, or
+                consider, or<lb/>say <hi rend="italic">no</hi> faintly, but if you feel that
+                there<lb/>would be sin in your not saying <hi rend="italic">no</hi>, say<lb/>it at
+                once; say it boldly, and say it un&ndash;<lb type="inWord"/>shrinkingly. Sometimes
+                temptations ap&ndash;<lb type="inWord"/>pear in a more harmless form than
+                at<lb/>others; but a wolf in sheep's clothing<lb/>is a wolf still, and perhaps the
+                more<lb/>dan serous on account of his disguise ;<lb/>therefore, if your dearest
+                friend, or your<lb/>worst enemy, asks you to do what you be&ndash;<lb type="inWord"
+                />lieve to be wrong, say <hi rend="italic">no</hi> in a manner that<lb/>will
+                convince him that you mean what you<lb/>say. Do this in your youth, your
+                manhood,<lb/>and your age, and you will never repent it.<lb/>The lesson is hard,
+                because our hearts are<lb/>sinful. Pray for the pardon of your sins<lb/>for Christ's
+                sake: he died to save the<lb/>lost, and those who believe on him shall<lb/>be saved,
+                and made strong by his strength.<lb/>Seek the influences of God the Holy<lb/>Spirit
+                to cleanse and guide your heart.</p>
+            <p rend="first-indent(2) align(justify)">He who has learned to say <hi rend="italic"
+                    >no</hi> in seasons<lb/>of temptation, cannot be ignorant; he who<lb/>has not
+                learned it, cannot be wise.</p>
+        </body>
+
+        <back>
+            <div type="colophon">
+                <p rend="align(centre)">&rule;<lb/>SUNDAY SCHOOL UNION OF THE M. E. CHURCH.</p>
+            </div>
+
+            <pb n="19"/>
+
+            <pb n="20"/>
+            <div type="advertisement" rend="align(centre)">
+                <figure type="borderornament"/>
+                <head>PUBLISHED BY LANE &amp;TIPPETT.</head>
+                <p>&rule;</p>
+                <p>JOURNEYS OF THE CHILDREN OF<lb/>ISRAEL.</p>
+                <p>Pp. 253. Price <measure type="price">26 cents</measure>.</p>
+                <p>&rule;</p>
+                <p>KINDNESS TO ANIMALS.</p>
+                <p>Pp. 128. Price <measure type="price">18 cents</measure>.</p>
+                <p>&rule;</p>
+                <p>LITTLE ANN.</p>
+                <p>Pp. 94. Price <measure type="price">16 cents</measure>.</p>
+                <p>&rule;</p>
+                <p>COTTAGE ON THE MOOR.</p>
+                <p>Pp. 126. Price <measure type="price">18 cents</measure>.</p>
+                <p>&rule;</p>
+                <p>BELOVED PHYSICIAN.</p>
+                <p>Pp. 179. Price <measure type="price">21 cents</measure>.</p>
+                <p>&rule;</p>
+                <p>SCRIPTURE CHARACTERS.</p>
+                <p>Pp. 245. Price <measure type="price">26 cents</measure>.</p>
+                <p>&rule;</p>
+            </div>
+        </back>
+    </text>
+</TEI>

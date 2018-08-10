@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+    
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Annika Robbins</name>
+                <note/>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>double checked</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+        
+        
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Religious">
+
+        <front>
+            <pb n="1"/>
+            <titlePage>
+                <docTitle><titlePart type="main">THE<lb/>SHEPHERDESS<lb/>OF THE<lb/>ALPS,</titlePart>
+                    <titlePart type="sub">A<lb/>VERY INTERESTING, PATHETIC<lb/>AND<lb/>MORAL
+                        TALE.</titlePart></docTitle><imprimatur>&rule;<lb/>PUBLISHED BY REQUEST.<lb/>&rule;</imprimatur><lb/><figure>
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <docImprint><publisher>J. Kendrew</publisher>, Printer, Collier&ndash;Gate, York</docImprint>
+            </titlePage>
+
+        </front>
+
+
+        <pb n="2"/>
+        <body rend="align(justify)">
+            <head type="main" rend="align(centre)">Shepherdess of the Alps.</head><lb/>
+            <div>
+                <head type="sub" rend="align(centre)">A MORAL TALE</head><lb/>
+                <p>IN that part of the Alps, amid&slong;t the high mountains of<lb/>Savoy, very near
+                    the road that leads from Briancon to<lb/>Modena, is a lonely valley, who&slong;e
+                    &slong;olitary a&slong;pect in&slong;tils<lb/>into the minds of all who travel
+                    through it, a &slong;ort of<lb/>plea&slong;ing melancholy. Three hills in the
+                    form of an<lb/>amphitheatre, on which &slong;ome &slong;hepherds huts are
+                    &slong;cattered<lb/>at &slong;everal di&slong;tances, inter&slong;per&slong;ed
+                    with chumps of lofty trees,<lb/>&slong;treams tumbling down the mountains in
+                    ca&slong;cades, and<lb/>pa&slong;tures ever green, compo&slong;e the beautiful
+                    land&slong;cape of<lb/>this natural &slong;cene.</p>
+                <p rend="first-indent(2)">Count Fonrose and his Lady were returning from<lb/>France
+                    to Italy, when their Coach broke down as they<lb/>were pa&slong;&slong;ing
+                    through the valley; and as the day was on<lb/>the decline, they were obliged to
+                    look for &slong;ome place of<lb/>cover, where to pa&slong;s the night.
+                    Whil&slong;t they advanced<lb/>towards one of the huts, they perceived a flock
+                    of &slong;heep,<lb/>drove by a &slong;hepherde&slong;s, who&slong;e walk and air
+                    filled them<lb/>with a&slong;toni&slong;hment, and their ears with the
+                    &slong;weet accents<lb/>of her melodious voice, which the echos repeated
+                    in<lb/>plaintive &slong;ounds.</p>
+                <lb/>
+                <lg rend="align(centre)">
+                    <l>How beautiful's the &slong;etting &slong;un!</l>
+                    <l>Its dailey cour&slong;e now almo&slong;t run,</l>
+                    <l>We can behold its charms,</l>
+                    <l>More plea&slong;ing are its fainter rays,</l>
+                    <l>Then when in full meridian blaze&mdash;</l>
+                    <l>It dazzles whil&slong;t it warms.</l>
+                </lg>
+                <lb/>
+                <p rend="first-indent(2)">Thus it will prove, &slong;aid &slong;he, when after a
+                    painful race<lb/>the wearied &slong;oul arrives at the wi&slong;h'd&ndash;for gaol,
+                    and<lb/>calmly drops into eternity, to renew its vigour in the<lb/>pure
+                    &slong;ource of immortality. But, alas how di&slong;tant is<lb/>the
+                    pro&slong;pect! how &slong;lowly it pa&slong;&slong;es away. In &slong;aying
+                    the&slong;e<lb/>words the &slong;hepherde&slong;s moved on; her head declined;
+                    with 
+                    
+                    
+                    <pb n="3"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps,</fw>
+                    <fw type="pagenumber" rend="align(right)">3</fw>
+                    <lb/>
+                    a &slong;upine&slong;s in
+                    her attitude which gave ea&slong;e and dignity to<lb/>her gait and mein. Struck
+                    with amazemeut at what<lb/>they &slong;aw, and more with what they heard, the
+                    Count<lb/>and Counte&slong;s redoubled their &slong;teps to overtake her.
+                    But<lb/>what was their &slong;upri&slong;e, when under her coar&slong;e
+                    &slong;lraw hat<lb/>and mean apparel, they met with every beauty,
+                    every<lb/>grace. Pray, child, &slong;aid the Counte&slong;s, (finding &slong;he
+                        en&ndash;<lb type="inWord"/>deavoured to &slong;hun them) be not alarmed: we
+                    are travel&ndash;<lb type="inWord"/>lers, that an accident obliges us to ask for
+                    &slong;helter until<lb/>the morning in one of yonder cabins: be &slong;o kind as
+                    to<lb/>be our guide. I am very &slong;orry madam an&slong;wered the
+                        &slong;hep&ndash;<lb type="inWord"/>herde&slong;s, blu&slong;hing, and
+                    ca&slong;ting down her eyes, that you<lb/>will be but, ill accomodated as
+                    the&slong;e huts belong to<lb/>very poor people. You live here, I &slong;uppose,
+                    &slong;aid the<lb/>Couute&slong;s; and &slong;urely, I may put up with the
+                        inconve&ndash;<lb type="inWord"/>niences for one night when you undergo them
+                        continual&ndash;<lb type="inWord"/>ly. There is a wide differerence
+                    (&slong;aid the mode&slong;t &slong;hep&ndash;<lb type="inWord"/>herde&slong;s)
+                    I am brought up to it. I cannot believe that<lb/>(interrupted Count
+                    Fonro&slong;e) not able any longer to hide<lb/>his emotion; no you were not
+                    formed for &slong;uch hard&slong;hips.<lb/>Fortune is nnju&slong;t, or how is it
+                    po&slong;&slong;ible that so lovely a<lb/>per&slong;on &slong;hould be reduced
+                    to live ob&slong;curely, in so low and<lb/>ordinary a dre&slong;s ? Fortune,
+                    replied Adelaide, ( &slong;o was the<lb/>&slong;hepherde&slong;s named ) is not
+                    to be blamed, but when &slong;he<lb/>deprives us of what &slong;he has given us
+                    before My condi&ndash;<lb type="inWord"/>tion has its &slong;weets from one that
+                    knows no other &slong;tate<lb/>in life. Cu&slong;tom and example create wants
+                    for the wealthy<lb/>which the poor are ignorant of. It may be &slong;o with
+                    tho&slong;e<lb/>that are born in this &slong;olitude, &slong;aid the Count; but
+                    for<lb/>you charming unknown, you are not what yon &slong;eem to<lb/>be; your
+                    air, voice, and language, all betray your<lb/>di&slong;guise. The&slong;e
+                    &slong;ew words which have fallen from your<lb/>lips, di&slong;cover a noble
+                    &slong;oul and a cultivated education. O!<lb/>tell us, lovely creature, what
+                    cruel turn of fate has low&ndash;<lb type="inWord"/>ered you to this condition ?
+                    A man under misfortune<lb/>replied Adelaide, has a thou&slong;and means to
+                    extricate him&ndash;<lb type="inWord"/>&slong;elf, but a woman in &slong;uch
+                    ca&slong;es has no re&slong;ource but &slong;er&ndash;<lb type="inWord"/>vitude,
+                    and the choice of a ma&slong;ter, methinks it is be&slong;t to<lb/>prefer the
+                    good and virtuous. You are going to &slong;ee 
+                    
+                    
+                    <pb n="4"/>
+                    <fw type="pagenumber" rend="align(left)">4</fw><fw type="header"
+                        rend="align(centre)">Shepherde&slong;s of the Alps.</fw><lb/>
+                    mine, and you
+                    will be delighted with the innocence of<lb/>their lives and the candid
+                    &slong;impltcity of their manners.</p>
+                <p rend="first-indent(2)">As &slong;he was &slong;peaking they arrived at the hut.
+                    It was<lb/>divided by a partition from the &slong;heepfold, into which
+                    the<lb/>&slong;hepherde&slong;s turned her flock, counting them over
+                    with<lb/>the mo&slong;t &slong;erious attention, heedle&slong;s of the
+                    &slong;trangers, who<lb/>beheld her with admiration. The old folks, &slong;uch
+                    as pre&ndash;<lb type="inWord"/>&slong;ented Baucis and Philemon, received their
+                    gue&slong;ts with<lb/>the hone&slong;t &slong;imple courte&slong;y which
+                    recalled the golden age,<lb/> We have nothing to offer you, &slong;aid the good
+                    woman but<lb/>clean &slong;traw for your bed, and a hearty welcome to
+                    &slong;uch<lb/>provisions as heaven affords us, milk, fruit and oaten<lb/>bread.
+                    On entering the cabin they were, amazed to &slong;ee<lb/> the order and
+                    neatne&slong;s that appeared every where in &slong;o<lb/> poor an habitation.
+                    Their table was a walnut board,<lb/>finely poli&slong;hed by frequent rubbing;
+                    their earthen di&slong;hes<lb/>and dairy pans &slong;hone with the nice&slong;t
+                    cleanline&slong;s; every<lb/>thing pre&slong;ented the image of contented
+                    poverty, proud to<lb/>have for to &slong;upply the real wants of nature. Tis
+                    our<lb/>dear daughter, &slong;aid the good old woman, who manages<lb/>all our
+                    little affairs. At break of day before &slong;he leads<lb/>her &slong;locks to
+                    the hills and dales, when they are nipping<lb/>about our hut the &slong;weet
+                    gra&slong;s, &slong;urcharged with the<lb/>morning dew, &slong;he employs that
+                    time in putting all things<lb/>in the neat order and manner you &slong;ee them
+                    placed&mdash;&mdash;<lb/> What ! &slong;aid the Counte&slong;s interruped her Is
+                    the &slong;hep&ndash;<lb type="inWord"/>herde&slong;s indeed your daughter!
+                    Would to heaven &slong;he<lb/>was, replied the good creature; &slong;he is the
+                    daughter of<lb/>my heart, and I have a mother's, fondne&slong;s for her:
+                    but<lb/> I am not &slong;o happy as to have brought &slong;uch perfections<lb/>
+                    into the world, nor are we worthy of &slong;uch honor Who<lb/>is &slong;he then
+                    ? Whence came &slong;he ? What misfortunes have<lb/>reduced her to fo low a
+                    &slong;tation? All that is a &slong;ecret to<lb/>us Three years ago &slong;he
+                    came here in the habit of a vil&ndash;<lb type="inWord"/>lager, and offered to
+                    nd our &slong;heep. She would have<lb/>been welcome to that our little without
+                    taking upon her<lb/>that painful task; &slong;o much the &slong;weetne&slong;s
+                    of her per&slong;on<lb/>behaviour engages our hearts. We could not be&ndash;<lb
+                        type="inWord"/> lieve &slong;he was bred in a cottage. Our questions made
+                    her 
+                    
+                    
+                    <pb n="5"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps</fw><lb/>
+                    unea&slong;y. We de&slong;i&slong;ted from father enquiry as they
+                        &slong;eem&ndash;<lb type="inWord"/>ed to di&slong;turb her. As our
+                    knowledge of her good qua&ndash;<lb type="inWord"/>lities encrea&slong;ed
+                    &slong;o did our re&slong;pect; but the more we<lb/>&slong;trove to &slong;hew
+                    her that re&slong;pect the more &slong;he humbled her&ndash;<lb type="inWord"
+                    />&slong;elf before us. No never had a child for its parents a<lb/>more tender
+                    regard, a more con&slong;tant care. She cannot<lb/>obey becau&slong;e it is
+                    impo&slong;&slong;ible for us to command; but &slong;he<lb/>dives into our
+                    hearts and prevents our wi&slong;hes before we<lb/>can almo&slong;t form them.
+                    She is an angel de&slong;cended from<lb/>heaven to be the comfort of our age.
+                    What is &slong;he do&ndash;<lb type="inWord"/>ing now in the &slong;heepfold ?
+                    asked the Counte&slong;s. She milks<lb/>the ewes and the &slong;he goats,
+                    fo&slong;ters the young kids and<lb/>lambs, and gives them fre&slong;h litter.
+                    The chee&slong;e &slong;he makes<lb/>is called delicious; no doubt for having
+                    been pre&slong;&slong;ed with<lb/>her neat hands. I carry it to the market and
+                    have not<lb/>near enough to furni&slong;h all tho&slong;e who would wi&slong;h
+                    to be<lb/>cu&slong;tomers. When the dear child is tending the &slong;heep
+                    in<lb/>the pa&slong;ture, &slong;he employs her&slong;elf in works of plaited
+                    &slong;traw,<lb/>which are univer&slong;ally admired. I wi&slong;h you were to
+                    &slong;ee<lb/>with what dexterity &slong;he weaves the plain o&slong;ier twigs,
+                    and<lb/>mats the tender flexible ru&slong;hes. There is nothing let
+                    it<lb/>appear ever &slong;o perfect but what &slong;he can improve upon.<lb/>You
+                    &slong;ee, madam, continued the old dame, in all<lb/> about you is the image of
+                    ea&slong;y, contented life; it was<lb/>&slong;he who procured it; it was
+                    &slong;he, this angelic creature<lb/>who&slong;e &slong;ole endeavour is to make
+                    us happy. But is &slong;he<lb/>happy ? &slong;aid the Counte&slong;s. &slong;he
+                    does all &slong;he can to make<lb/>us believe &slong;o, &slong;aid the old
+                    Pa&slong;tor: but I have made my<lb/>dame ob&slong;erved that &slong;he
+                    oftentimes returns from the pa&slong;ture<lb/>with a dejected look, her eyes
+                    &slong;till moi&slong;t with tears; but<lb/>as &slong;oon as &slong;he &slong;ee
+                    us she affects a &slong;mile. 'Tis ea&slong;y to per&ndash;<lb type="inWord"
+                    />ceive there is &slong;ome gnawing grief that preys upon her<lb/>heart; the
+                    cau&slong;e of which we dare not a&slong;k. And then, <lb/>&slong;aid the old
+                    Man, what concern does &slong;he not give me<lb/>when in &slong;pite of all our
+                    intreaties; in the &slong;evere&slong;t wea&ndash;<lb type="inWord"/>ther, the
+                    dear creature will lead abroad her bleating care,<lb/>A thou&slong;and times
+                    have I reque&slong;ted her, in the mo&slong;t ear&ndash;<lb type="inWord"
+                    />ne&slong;t manner, to let me now and then relieve her; but
+                    my<lb/>reque&slong;ts have never been complied with. She ri&slong;es with 
+                    
+                    
+                    <pb n="6"/>
+                    <fw type="pagenumber" rend="align(left)">6</fw>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                    <lb/>
+                    the &slong;un, conducts the flock and does not return till<lb/>it
+                    &slong;ets, often &slong;hivering with cold. How is it
+                    po&slong;&slong;ible,<lb/>&slong;he would &slong;ay, with all the
+                    tenderne&slong;s of a loving child,<lb/>how is it po&slong;&slong;ible that I
+                    &slong;hould con&slong;ent to let you leave<lb/>your fire &slong;ide, to be
+                    expo&slong;ed at your age to the inclemen&ndash;<lb type="inWord"/>cy of the
+                    &slong;ea&slong;on, which I young as I am can &slong;carce &slong;up&ndash;<lb
+                        type="inWord"/>port. At the &slong;ame time &slong;he comes loaded
+                    with<lb/>faggots, which &slong;he gathers in the wood; and when
+                    &slong;he<lb/>&slong;ees I am troubled at the fatigue &slong;he mu&slong;t
+                    undergo,<lb/>Don't be unea&slong;y, my dear mother, &slong;ays &slong;he,
+                    exerci&slong;e pro&ndash;<lb type="inWord"/>cures me warmth, and labour is fit
+                    for my age. In &slong;hort<lb/>Madam &slong;he is as good as &slong;he is
+                    beautiful. My hu&slong;band<lb/>and I never &slong;peak of her but with tears of
+                    affection.<lb/>What if you were deprived of her ? &slong;aid the
+                    Counte&slong;s.<lb/>Why an&slong;wered the old &slong;hepherd we &slong;hould be
+                    deprived<lb/>all that is dear to us in the world; but if &slong;he is to
+                    be<lb/>the happier for it, we &slong;hould die, and our misfortune<lb/>would be
+                    her comfort. Oh! may kind heaven heap<lb/>ble&slong;&slong;ings on her head.
+                    There are none &slong;o great, but<lb/>what &slong;he de&slong;erves. I was in
+                    hopes her dear hands would<lb/>have clo&slong;ed my eyes, for I love her much
+                    more than life.<lb/>Adelaide's coming put an end to the couver&slong;ation.
+                    One<lb/>hand held a pan of milk, the other a ba&slong;ket of fruit;<lb/>and
+                    after curt&slong;ying with a grace peculiar to her&slong;elf,
+                    &slong;he<lb/>&slong;et about the little</p>
+       <!--correct code for missing text?-->
+                <p><unclear reason="missing"/></p>
+
+                <p>st taken notice of. My dear child &slong;aid the Counte&slong;s,<lb/>you give
+                    your&slong;elf a deal of trouble. Not at all, madam;<lb/>I endeavour to fulfil
+                    the intention of the be&slong;t of people,<lb/>who&slong;e &slong;ervant I am,
+                    to treat you in the be&slong;t manner with<lb/>what their little can produce;
+                    but I am afraid, continued<lb/>she whil&slong;t she &slong;preading a
+                    coar&slong;e table cloth as white as<lb/>now, that you will make but a
+                    &slong;orry meal. The bread<lb/>if brown, but very &slong;avory; the eggs are
+                    new laid, the<lb/>milk fre&slong;h drawn, and the fruit ju&slong;t gathered,
+                    &slong;uch as <lb/>the &slong;ea&slong;on affords.</p>
+                <p rend="first-indent(2)">Diligence, attention and mode&slong;t deportment, in
+                    every<lb/> minute duty of hospitality, were con&slong;picuous in this<lb/>
+                    wonderful &slong;hepherde&slong;s. After the frugal repa&slong;t Count<lb/>
+                    Fonro&slong;e and his amiable Lady retired to reft on the bed, 
+                    
+                    
+                    <pb n="7"/>
+                    <fw type="header" rend="align(centre)">Shepherdess of the Alps.</fw><lb/>
+                    
+                    though
+                    but of &slong;traw, which Adelaide had prepared &slong;o<lb/>them. Is not our
+                    adventure &slong;urpri&slong;ing ? Let us endea&ndash;<lb type="inWord"/>vour to
+                    unraval the my&slong;tery of this pretended &slong;hepher&ndash;<lb
+                        type="inWord"/>de&slong;s, invite her to accompany us and make her
+                    happy<lb/>if we can. Early in the morning one of the Count's<lb/>&slong;ervants
+                    came to inform his ma&slong;ter he might proceed on<lb/>his journey as
+                    &slong;oon as his honour plea&slong;ed, for the coach<lb/>was &slong;ecurefy
+                    repaired. It was therefor ordered up; but<lb/>before they left the&slong;e
+                    hone&slong;t people, the Counte&slong;s defired<lb/>a moment's
+                    conver&slong;ation with the per&slong;on who &slong;tiled her<lb/>&slong;elf
+                    their &slong;ervant.</p>
+                <p rend="first-indent(2)">Adelaide came to receive her commands.
+                    Without<lb/>de&slong;iring to penetrate into the &slong;ecret of your birth,
+                    or<lb/>into whatever is the cau&slong;e of your di&slong;tre&slong;s, I feel
+                    &slong;en&slong;ibly<lb/>intere&slong;ted in all that concerns your welfare 'Tis
+                    evident<lb/>that your courage ri&slong;es &slong;uperior to your misfortunes,
+                    and<lb/>that you conform your behaviour &slong;uitable to your
+                    pre&slong;ent<lb/>circum&slong;tances. Tis true, the charms and virtues
+                    which<lb/>you po&slong;&slong;e&slong;s render your condition now as it is
+                    re&slong;pectable<lb/>but it is not a condition de&slong;igned for you. It is in
+                    my<lb/>power, amiable unknown, to alter it, as the Count's in&ndash;<lb
+                        type="inWord"/>tentions are quite agreeable to mine. I want a
+                    bo&slong;om<lb/>friend; and what I have &slong;een in you, I &slong;hall
+                    con&slong;ider my&ndash;<lb type="inWord"/>&slong;elf
+                    po&slong;&slong;e&slong;&slong;ed of an ine&slong;timable trea&slong;ure, if you
+                    con&slong;ent<lb/>to be my friend and companion. Drive from your mind<lb/>the
+                    lea&slong;t &slong;hadow of dependence. You were not formed<lb/>for
+                    &slong;ervitude; and &slong;hould my fond prejudice deceive me,<lb/>I would
+                    rather lift you above your birth, then leave you<lb/>below it. In &slong;hort, I
+                    &slong;eek a real friend, one that I can<lb/>confide in. Be not under any
+                    concern about the&slong;e good<lb/>people: I &slong;hall compen&slong;ate to
+                    them for their lo&slong;s; at<lb/>lea&slong;t &slong;o far as to enable them to
+                    pa&slong;s the remainder of their<lb/>lives in peace and comfort: and from your
+                    hands they<lb/>&slong;hall receive my con&slong;tant bounty. The poor old
+                    people,<lb/>who were pre&slong;ent, fell upon their knees and ki&slong;&slong;ed
+                    the<lb/>hand of the Counte&slong;s; then turning to Adelaide, they<lb/>conjured
+                    her in the mo&slong;t pre&slong;&slong;ing terms to accept the ge&ndash;<lb
+                        type="inWord"/>nerous propo&slong;al of the Counte&slong;s We cannot at our
+                        pe&ndash;<lb type="inWord"/>riod of life be far from the grave: and as it
+                    has been 
+                    
+                    
+                    
+                    <pb n="8"/>
+                    <fw type="pagenumber" rend="align(left)">8</fw>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw><lb/>
+                    
+                    your con&slong;tant &slong;tudy to render our lives happy, &slong;o
+                    mu&slong;t<lb/>our deaths leave you comfortle&slong;s in this &slong;olitary
+                    plaee.&mdash;<lb/>The he &slong;hepherde&slong;s embracing them, and mixinger
+                    tears<lb/>with theirs, returned a thou&slong;and thanks to their
+                    noble<lb/>gue&slong;ts, with a &slong;weetne&slong;s that increa&slong;ed her
+                    charms. I<lb/>cannot &slong;aid &slong;he accept of your favour; heaven has
+                    marked<lb/>my de&slong;tined lot; but I &slong;hall always, with the mo&slong;t
+                        grate&ndash;<lb type="inWord"/>ful heart acknowledge. your goodne&slong;s;
+                    and the name of<lb/>Fonro&slong;e will never be ab&slong;ent from my memory.
+                    Now<lb/>the only tiling I reque&slong;t of you is, to bury this adven&ndash;<lb
+                        type="inWord"/>ture in eternal &slong;ilence, and never to reveal the fate
+                    of an<lb/>unknown per&slong;on, who is determined to live and die
+                    in<lb/>oblivion. The Count and Counte&slong;s redoubled their &slong;o&ndash;<lb
+                        type="inWord"/>licitation, but all in vain&mdash;&slong;he was immoveable.
+                    The<lb/>travellers parted from their charming &slong;hepherde&slong;s in
+                        re&ndash;<lb type="inWord"/>tirement.</p>
+                <p rend="first-indent(2)">During, their journey their conver&slong;ation was
+                    engro&slong;&slong;ed<lb/>with this &slong;trange adventure, which appeared to
+                    them to<lb/>be like a romance. They arrived at Turin, their imma&ndash;<lb
+                        type="inWord"/>ginations full of it; and you may be &slong;ure their
+                    reque&slong;ted<lb/>&slong;ilence was not ob&slong;erved. The charms and virtues
+                    of<lb/>this unknown &slong;hepherde&slong;s where an inhau&slong;tible
+                    re&slong;ource of<lb/> reflection and conjecture, Young Fonro&slong;e, their
+                    only<lb/> &slong;on, was often pre&slong;ent at their conver&slong;ation, and
+                    never let<lb/>a &slong;ingle circum&slong;tance e&slong;cape his memory. He was
+                    of<lb/>that age when imagination is mo&slong;t, &slong;anguine, and
+                    the<lb/>heart mo&slong;t &slong;u&slong;ceptible of receiving tender
+                    impre&slong;&slong;ions;<lb/>but was of the character, of tho&slong;e who retain
+                    the feelings<lb/>of their &slong;en&slong;ibility within them&slong;elves; and
+                    which are &slong;o<lb/>much more violently agitated when they bur&slong;t from
+                    their<lb/>confinement, having never been relaxed by
+                    di&slong;&slong;ipation.<lb/>All the wonders he heard related of the valley of
+                    Savoy,<lb/>rai&slong;ed in his &slong;oul the mo&slong;t pa&slong;&slong;ionate
+                    de&slong;ire of &slong;erving her.<lb/>The object which his imagination had
+                    formed is ever in<lb/>his mind. He compares it to all he &slong;ees, and all he
+                    &slong;ees<lb/>is lo&slong;t in the compari&slong;on. The more his impatience
+                        in&ndash;<lb type="inWord"/>crea&slong;ed, the more he endeavoured to
+                    di&slong;gui&slong;e it. Turin<lb/>became in&slong;upportable; the Valley where
+                    the ine&slong;timable<lb/>jewel was hid, was the load&slong;tone that attracted
+                    his heart; 
+                    
+                    
+                    <pb n="9"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw><lb/>
+                    
+                    it is there he placed all happine&slong;s; but how to get<lb/>it? If his
+                    de&slong;igns are found out, what difficulties to<lb/>&slong;urmount ! His
+                    parents will never con&slong;ent to the jour&ndash;<lb type="inWord"/>ney he
+                    intends; it will not be looked upon as the mere<lb/>effects of curio&slong;ity,
+                    but be de,emed a youthful folly, that<lb/>may have bad con&slong;equences; and
+                    the &slong;hepherde&slong;s may be<lb/>alarmed at his pre&slong;ence, and
+                    &slong;hun his addre&slong;&slong;es; if it is<lb/>di&slong;covered he
+                    lo&slong;es her for ever. After three months<lb/>&slong;truggle, he determined
+                    to quit all for her alone , and<lb/>under the di&slong;guise of a
+                    &slong;hepherd, find her out in the &slong;e&ndash;<lb type="inWord"
+                    />que&slong;tered Vale, and there remain till death if he could<lb/>not prevail
+                    on her to leave it He di&slong;appeared. His<lb/>father and mother
+                    mi&slong;&slong;ed him with great con&slong;ternation,<lb/>and waited his return
+                    with the utmo&slong;t impatience. Their<lb/>apprehen&slong;ions increa&slong;ed
+                    more and more; and his ab&slong;ence<lb/>continuing the whole, family was
+                    plunged into de&slong;olation.<lb/>Their fruitle&slong;s &slong;earch and
+                    inquiries completed their dis&ndash;<lb type="inWord"/>tre&slong;s; untill at
+                    la&slong;t tho&slong;e unfortunate parents are reduced<lb/> to lament the
+                    lo&slong;s of their darling &slong;on. Whil&slong;t the<lb/>afflicted family of
+                    Fonro&slong;e was in this dejection, their<lb/>&slong;on arrived in the Vale
+                    which has been de&slong;cribed; and in<lb/>the habit of a pea&slong;ant
+                    pre&slong;ented him&slong;elf to &slong;ome of the<lb/>neighbouring cottagers,
+                    and offered his &slong;ervices. His<lb/>ambition is &slong;atisfied He is
+                    accepted of, and a flock is<lb/>committed to care. At fir&slong;t he did nothing
+                    but fol&ndash;<lb type="inWord"/>low the &slong;heep wherever they cho&slong;e
+                    to feed, in hopes that<lb/>chance would direct him to the &slong;ame
+                    pa&slong;tures where the<lb/>beautiful &slong;hepherde&slong;s fed her flock.
+                    The unhappy at<lb/>&slong;ometimes, thought he, may li&slong;ten to the voice of
+                    comfort,<lb/>It is an aver&slong;ion to the world, and de&slong;ire of a
+                    retired<lb/>quiet life that detains her here. She will experience
+                    <lb/>&slong;ome tedious hours, when &slong;he will not be di&slong;plea&slong;ed
+                    to<lb/>meet with a friendly intercour&slong;e, nor avoid a
+                    virtuous<lb/>conver&slong;ation. Should I prove &slong;o fortunate as to
+                    make<lb/>mine agreeable, I &slong;hall have great hopes of
+                    &slong;omething<lb/>more. Should I gain her friend&slong;hip, friend&slong;hip
+                    will fal&ndash;<lb type="inWord"/>low of cour&slong;e, and friend&slong;hip in
+                    different &slong;exes is nearly<lb/>allied to love.</p>
+
+
+                <pb n="10"/>
+                <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                <lb/>
+                <p rend="first-indent(2)">Whil&slong;t he induIged him&slong;elf with the&slong;e
+                    plea&slong;ing reflec&ndash;<lb type="inWord"/></p>
+                <p>tions his eyes wandered on the beautiful &slong;cenes of the</p>
+                <p>Valley; he heard at &slong;ome di&slong;tance the &slong;ound of that
+                        ra&ndash;<lb type="inWord"/></p>
+                <p>vi&slong;hing voice who&slong;e melody he had been &slong;o often told of,</p>
+                <p>which rai&slong;ed an emotion in his brea&slong;t, as great as if it</p>
+                <p>had been accident unexpected. She &slong;ung the follow&ndash;<lb type="inWord"
+                    />ing words</p>
+                <lg>
+                    <l> Sweet Solitude to which I fly,</l>
+                    <l>Of every bli&slong;s bere&slong;t; </l>
+                    <l>There Affliction's cup enjoy,</l>
+                    <l>The only boon that's left</l>
+                </lg>
+
+                <p rend="first-indent(2)">The&slong;e melancholy complaints pierced Fonro&slong;e's
+                    tender<lb/>heart. Ah! whence this grief that con&slong;umes her !
+                    what<lb/>plea&slong;ure to afford her comfort! He dur&slong;t not rai&slong;e
+                    his<lb/>hopes any higher as yet. It might perhaps alarm her, if<lb/>he yielded
+                    to his impatient longing to behold her: it<lb/>was &slong;ufficient for the
+                    fir&slong;t time to have heard the &slong;weet&ndash;<lb type="inWord"
+                    />le&slong;s of her voice. Next morning Fonro&slong;e went to
+                    the<lb/>pa&slong;tures, and having ob&slong;erved the path the fair
+                        &slong;hepher&ndash;<lb type="inWord"/>de&slong;s directed her flock, he
+                    &slong;at him&slong;elf at the foot of the<lb/>rock, which the day before had
+                    echoed with her<lb/>&slong;ounds, Fonro&slong;e, with all the grace of outward
+                    form<lb/>po&slong;&slong;e&slong;&slong;ed every talent, and each endowment that
+                    the nobi&ndash;<lb type="inWord"/>lity &slong;tudy to attain. He performed upon
+                    the hautboy<lb/>equal to Befuzzi of whom he had learned; and w<lb/>was at that
+                    time the delight of the courts of Europe.</p>
+                <p rend="first-indent(2)">Adelaide , ab&slong;orbed in melancholy, had not yet
+                    begun<lb/>her melodious &slong;trains. The echoes were &slong;ilent; when
+                    on<lb/>&slong;udden that &slong;ilence was interrupted by the &slong;weet notes
+                    of<lb/>Fonro&slong;e's hautboy. An harmony &slong;o uncommon, filled<lb/>her
+                    with amazement, mixed with &slong;ome emotion. Her ears had never there been
+                    &slong;truck before, but with the<lb/>&slong;hrill &slong;queak and buzzing hum
+                    of the ru&slong;tic bagpipe.<lb/>Motionle&slong;s, with deep attention,
+                    &slong;he ca&slong;t her eyes around<lb/>to find from whence proceeded
+                    &slong;uch divine mu&slong;ic. She<lb/>perceived at some di&slong;tance, a young
+                    &slong;hepherd &slong;itting in<lb/>the cavity of a rock, at the foot of which
+                    his &slong;heep were<lb/>feeding. She drew &slong;omewhat nearer, that &slong;he
+                    might<lb/>hear him more di&slong;tinctly. Behold, &slong;aid &slong;he, the
+                    effects 
+                    
+                    
+                    <pb n="11"/>
+                    <fw type="header" rend="align(centre)">Shephertde&slong;s of the Alps.</fw>
+                    <fw type="pagenumber" rend="align(right)">11</fw>
+                    <lb/>
+                    of in&slong;tinct ? the
+                    ear alone has given this &slong;hepherd all the<lb/>finene&slong;s of that
+                    charming art! What purity in the notes!<lb/>Variety in the modulations What fire
+                    and neatne&slong;s in<lb/>the execution ! Who then shall &slong;ay, that
+                    ta&slong;te is not the<lb/>gift of nature ?</p>
+                <p rend="first-indent(2)"> Adelaide, for the fir&slong;t time &slong;ince her
+                    retirement, felt<lb/>her grief in &slong;ome mea&slong;ure
+                    &slong;u&slong;pended. Fonro&slong;e who &slong;aw<lb/>her approach nearer and
+                    &slong;it down under a willow, to<lb/>li&slong;ten <choice>
+                        <orig>morv</orig>
+                        <corr>more</corr>
+                    </choice> conveniently, had given her no room to think<lb/>he had perceived her;
+                    he took the opportunity as &slong;oon<lb/>as &slong;he retired, to calculate the
+                    pace of her flock, &slong;o as<lb/>meet with her without affectation, at the
+                    bottom of the<lb/>hill, where the road that led to their different huts
+                        cro&slong;s&ndash;<lb type="inWord"/>ed each other. He gave her a look in an
+                    apparent care&ndash;<lb type="inWord"/>Ie&slong;s manner as if he was wholly
+                    taken up with the<lb/>guidance of the &slong;heep; but ah ! what beauties
+                    were<lb/>gazed on in that view. What eyes, what a mouth, what<lb/>divine
+                    features; &slong;o moving in their langour, how ravi&slong;h&ndash;<lb
+                        type="inWord"/>ing would they appear if animated with love.
+                        Afflicti&ndash;<lb type="inWord"/>on had added palene&slong;s, and faded, in
+                    &slong;ome degree, the<lb/>blooming carnation of her cheeks. But of all
+                    charms,<lb/>none &slong;truck with &slong;uch admiration, as did her
+                    elegant<lb/>&slong;hape and air. Her ea&slong;y motion was as that of a
+                    young<lb/>cedar who&slong;e &slong;traight and pliant &slong;tem yielded to the
+                    &slong;oft<lb/>impul&slong;e of the zephers. The charming language
+                    which<lb/>love engraves in his heart takes up his thoughts, and<lb/>fills his
+                    &slong;oul with irre&slong;istable pa&slong;&slong;ion. How faintly,
+                    &slong;aid<lb/>he, was &slong;he de&slong;cribed. The lovely beauty is unknown
+                    to<lb/>the world, who&slong;e admiration &slong;he de&slong;erves. She
+                    that<lb/>would grace a throne, lives under the thatch of a cottage<lb/>employed
+                    in the low occupation of feeding &slong;heep. In<lb/>what poor garments does
+                    &slong;he appear. But &slong;he embeli&slong;h&ndash;<lb type="inWord"/>es every
+                    thing, and nothing can demean her. What &slong;o<lb/>delicate a frame made for
+                    &slong;o laborious a life. Homely<lb/>food Straw her bed. O heavens ! She has
+                    the thorns<lb/>for whom do you pre&slong;erve the ro&slong;es ? Sleep put a stop
+                    <lb/>to the&slong;e flattering ideas; but did not bani&slong;h from him<lb/>her
+                    lovely image.</p>
+
+
+
+                <pb n="12"/>
+                <fw type="header" rend="align(centre)">Shepherdess of the Alps.</fw>
+                <lb/>
+                <p rend="first-indent(2)">Adelaide felt her&slong;elf &slong;omewhat touched with Fonro&slong;e<lb/> youth
+                    and comeline&slong;s, nor could &slong;he help reflecting on<lb/>the capricious
+                    turns of fortune. For what end, thought<lb/>&slong;he, has nature endowed this
+                    young &slong;hepherd with &slong;uch<lb/>talents, and formed him with &slong;uch
+                    graces ? Alas tho&slong;e<lb/>gifts, happily u&slong;ele&slong;s in his station
+                    of life, might prove<lb/>the &slong;ource of mi&slong;ery in a higher
+                    &slong;ituation. What is out&ndash;<lb type="inWord"/>ward form? What is beauty?
+                    Wretched as I am, is it<lb/>for me to fix their value? This reflection
+                    imbittered the<lb/>little rising plea&slong;ure &slong;he had indulged. She
+                    reproached<lb/>her&slong;elf with <choice>
+                        <orig>haviug</orig>
+                        <corr>having</corr>
+                    </choice> yielded to it and re&slong;olved never to<lb/>give way to it
+                    again.</p>
+                <p rend="first-indent(2)">Next day, Fonro&slong;e imagined that &slong;he affected to avoid<lb/> his coming
+                    near her. He was ca&slong;t down at the very<lb/>thought. Does &slong;he
+                    &slong;u&slong;pect my di&slong;gui&slong;e? Have I di&slong;&ndash;<lb
+                        type="inWord"/>covered my&slong;elf? The&slong;e uncertainties perplexed his
+                    mind.<lb/>His hautboy was neglected. Adelaide was not far dis&ndash;<lb
+                        type="inWord"/>tant, but could have heard the &slong;ounds, had he
+                    played<lb/>upon it. She could not gue&slong;s the meaning of its
+                    silence,<lb/>and began to sing in her old melodious &slong;trains.</p>
+                <lg>
+                    <l> Ye pretty birds who&slong;e pensive notes</l>
+                    <l>My lamentation join,</l>
+                    <l>Ah! what avails your warbling throats,</l>
+                    <l> Can they &slong;ooth woes like mine ?</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>All &slong;eem around to &slong;hare my grief,</l>
+                    <l>As if to assuage my pain;</l>
+                    <l>But mine admits of no relief,</l>
+                    <l> And comfort &slong;peaks in vain.</l>
+                </lg>
+                <p rend="first-indent(2)">Fonro&slong;e, moved to his inmo&slong;t &slong;oul with her complain&ndash;<lb
+                        type="inWord"/>ing, so melodiously expre&slong;&slong;ed, could not refrain
+                    from<lb/>taking up his hautboy. She continued; and he accom&ndash;<lb
+                        type="inWord"/>panied her &slong;weet voice.</p>
+
+
+                <pb n="13"/>
+                <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw>
+                <lb/>
+                <p rend="first-indent(2)">Never was a uni&slong;on more harmonious. Is this an
+                        en&ndash;<lb type="inWord"/>chantment? &slong;aid Adelaide. Can I believe my
+                    &slong;en&slong;es<lb/> 'Tis no mean &slong;hepherd; tis some &slong;upernatural
+                    being that I<lb/>being li&slong;tening to. Nature may give a bent; but
+                    great<lb/>ma&slong;ters and con&slong;tant practice alone can reach to
+                    &slong;uch per&ndash;<lb type="inWord"/>fection. As &slong;he was thus musing,
+                    the Vale re&slong;ounded<lb/>with a rural or rather a divine &slong;ymphony.
+                    Adelaide<lb/>imagined &slong;he &slong;aw realized the&slong;e prodiges, which
+                    poetry<lb/>attributes to mu&slong;ic, her brilliant &slong;i&slong;ter.
+                    A&slong;toni&slong;hed and<lb/>confu&slong;ed &slong;he could not determine
+                    whether to approach or<lb/>retire. Mean while the young &slong;hepherd was
+                    collecting<lb/>his flock, to lead it back to the cottage. He is
+                    not<lb/>con&slong;cious, &slong;aid &slong;he, of the plea&slong;ure he
+                    communicates<lb/>around; he is not the least vain of his perfection, he<lb/>does
+                    not expect the prai&slong;es I owe, which are &slong;o justly<lb/>his due. Such
+                    are the &slong;weets of music, it is the only<lb/>talent that finds enjoyment in
+                    it&slong;elf, all others must have<lb/>witne&slong;ses or el&slong;e partakers.
+                    Music was a gift from hea&ndash;<lb type="inWord"/>ven, bestowed upon man in h
+                    state of innocence, it is <lb/>the purest of all plea&slong;ure and the only one
+                    that I can<lb/>yield to, I look upon this &slong;hephered as an echo
+                    that<lb/>comes to repeat my grace.</p>
+                <p rend="first-indent(2)">Fonro&slong;e, in his turn, affected to avoid her.
+                    Adelaide<lb/>was concerned at it. Alas, &slong;ai &slong;he, I give my&slong;elf
+                    up<lb/>too ea&slong;ily to the little comfort I felt: I am deprived of<lb/>it
+                    for my puni&slong;hment. One day as they met, as if by<lb/>chance, Shepherd, do
+                    you lead your flocks to a great<lb/>di&slong;tance? The&slong;e words uttered
+                    from her &slong;weet lips, caus&ndash;<lb type="inWord"/>ed in Fonro&slong;e's
+                    heart &slong;uch an emotion as almo&slong;t deprived<lb/>him of his voice. I
+                    cannot tell, replied he, with he&slong;ita&ndash;<lb type="inWord"/>tion, it is
+                    not me who lead the sheep, it is the sheep thet<lb/>lead me: they are better
+                    acquainted then I am with the<lb/>pa&slong;tures. And I let them range wherever
+                    they plea&slong;e to<lb/>go. From whence came you ? &slong;aid Adelaide. I
+                    was<lb/>born on the other &slong;ide of the Alps. Were you brought<lb/>up to a
+                    shepherd's life? No doubt; &slong;ince I am one I<lb/>was de&slong;tined for it.
+                    That is what I can &slong;carce believe,<lb/>replied she, gazing on him with
+                    fixed attention. Your<lb/> talents, language, and air all convince to the
+                    contrary.</p>
+
+
+                <pb n="14"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                <lb/>
+                <p rend="first-indent(2)">You are very good, an&slong;wered Fonro&slong;e; does it
+                    become<lb/>you to tax nature of be&slong;towing her favours with a
+                        &slong;par&ndash;<lb type="inWord"/>ing hand on tho&slong;e of your
+                    condition&mdash; you whom &slong;he<lb/>has formed more for a queen than a
+                    &slong;hepherde&slong;s ? Ade&ndash;<lb type="inWord"/>laide blushed, and waved
+                    the di&slong;cour&slong;e The other day<lb/>&slong;aid &slong;he your hautboy
+                    accompanied my voice with &slong;uch<lb/>a ma&slong;terly art, as mu&slong;t
+                    &slong;eem a prodigy in one brought<lb/>up to feed &slong;heep. Tis to your
+                    &slong;inging, replied Fonro&slong;e,<lb/>that is &slong;o admirable in a
+                    &slong;hepherde&slong;s What were you<lb/>never in&slong;tructed? Like you I
+                    have no other guide than<lb/>my heart and my ear&ndash;&mdash;You &slong;ung; I was
+                    moved; what<lb/>my heart feels, my in&slong;trument expre&slong;&slong;es. I
+                    breathe it in&ndash;<lb type="inWord"/>to my very &slong;oul. That is all my
+                    &slong;ecret: nothing is more<lb/>natural. This is incredible &slong;aid
+                    Adelaide. I thought &slong;o<lb/>too, replied he, whil&slong;t li&slong;tening
+                    to your voice, and now<lb/>am convinced of it: though &slong;ometimes nature and
+                    love<lb/>will frolick&slong;omely be&slong;tow their choice&slong;t favours on
+                    the<lb/>meane&slong;t objects to &slong;hew there is no condition be it
+                    ever<lb/>&slong;o low, but what they can ennoble.</p>
+                <p rend="first-indent(2)">Whil&slong;t they thus di&slong;cour&slong;ed, advancing
+                    in the Valley,<lb/>Fonro&slong;e animated with a &slong;mall ray of hope, began
+                    to<lb/> make refound with rapturous notes what plea&slong;ure
+                    in&slong;pires.<lb/>Ah cease cried Adelaide, &slong;pare me the image of
+                    a<lb/>&slong;entiment I never more &slong;hall ta&slong;te. This &slong;olitude
+                    is con&ndash;<lb type="inWord"/>&slong;ecrated to grief; the&slong;e echoes are
+                    unu&slong;ed to repeat the<lb/>accents of joy; all here join with my
+                    lamentation. I<lb/>am not without woes, &slong;aid the young &slong;hepherd,
+                    without<lb/>woes, fetching a deep &slong;igh, which was followed by a<lb/>
+                    pau&slong;e of &slong;ilence. What has cau&slong;ed your afflictions;
+                    of<lb/>what do you complain ; is it of mankind; is it of fate;<lb/>I cannot tell
+                    All that I know is that I am not happy;<lb/>pray inquire no further into my
+                    &slong;ituation. Hear me, &slong;aid<lb/>Adelaide. heaven has made us acquainted
+                    to be a mu&ndash;<lb type="inWord"/>tual &slong;npport to each other's woes,
+                    mine are a burden<lb/>under which my heart sinks down with
+                    de&slong;pondency<lb/>whoever you be, though unhappy, you are
+                        compa&slong;&slong;ion&ndash;<lb type="inWord"/>ate. I believe you are
+                    worthy of the confidence I &slong;hall<lb/> repo&slong;e in you; but you
+                    mu&slong;t promi&slong;e me that the confi&ndash;<lb type="inWord"/>dence
+                    &slong;hall be reciprocal. Alas, &slong;aid Fonro&slong;e, my woes 
+                    
+                    
+                    <pb n="15"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                    <fw type="pagenumber" rend="align(right)">15</fw><lb/> are of a nature perhaps
+                    never to be relieved. Meet me<lb/>to morrow, &slong;aid Adelaide, at the foot of
+                    this hill, under<lb/>the &slong;preading oak where you heard me moan. I
+                    will<lb/>there reveal what will excite your commi&slong;eration They<lb/>parted.
+                    Fonro&slong;e passed the night with great inquietude<lb/>his fate depended on
+                    what he was to hear , he dreaded<lb/>the disclo&slong;ure of a tender unhappy
+                    passion. If &slong;he loves<lb/> another I am undone.</p>
+                <p rend="first-indent(2)">He &slong;et out to the rendezvous, and the fair
+                        &slong;hepherd&ndash;<lb type="inWord"/>e&slong;s arrived &slong;oon after.
+                    The morn was overcast with<lb/>clouds, as if nature had presaged their
+                    &slong;orrowful con&ndash;<lb type="inWord"/>ver&slong;ation, They seated
+                    them&slong;elves under the oak; when<lb/> after a profound sigh, Adelaide thus
+                    began.</p>
+            </div>
+
+
+            <div type="section">
+                <head rend="align(centre)">THE<lb/>STORY OF HER WOES.</head><lb/>
+                <p rend="first-indent(2)">&rdquo;BENEATH tho&slong;e &slong;tones you see there,
+                    almo&slong;t<lb/> covered with the creeping gra&slong;s, lie the remains of
+                    the<lb/>mo&slong;t faithful and virtuous man, whom love and impru&ndash;<lb
+                        type="inWord"/>dence brought to the grave I was born in France, of<lb/>a
+                    wealthy family, and of high di&slong;tinction; too rich, to<lb/>my misfortune.
+                    Count Ore&slong;ton conceived for me the<lb/>mo&slong;t pa&slong;&slong;ionate,
+                    tender love to which my heart corre&ndash;<lb type="inWord"/>&slong;ponded with
+                    equal warmth. My parents odjected to our<lb/>union, and refu&slong;ed their
+                    con&slong;ent. Hurried on by pa&slong;&slong;i&ndash;<lb type="inWord"/>on, I
+                    agreed to a private mirriage &slong;acred to virtuous<lb/>&slong;ouls, but
+                    di&slong;approved by laws. Italy was then the &slong;eat<lb/>of war. My
+                    hu&slong;band was odered to join the corps he<lb/>was to command; and I went
+                    with him as far as Brian<lb/>con. There my fooli&slong;h fondne&slong;s
+                    prevailed on him to re&ndash;<lb type="inWord"/>main with me three days, which
+                    he pa&slong;&slong;ed with extreme<lb/>reluctance. I &slong;acrifice, &slong;aid
+                    he, my duty for you. But<lb/>what had I not &slong;acrificed for him.</p>
+
+
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                <lb/>
+                <p rend="first-indent(2)">&ldquo;He afterwards &slong;et out, but with a foreboding
+                    that<lb/>terrified me. I accompanied him to this Valley, where<lb/>we took leave
+                    of each other, and I returned to Briancon.<lb/>In a few days, a report of a
+                    battle was &slong;pread about. I<lb/>was &slong;ure my dear Ore&slong;ton was
+                    there. Wi&slong;hing it for his<lb/>honour, but fearing it for roy love. When I
+                    received a<lb/>letter from him [which afforded me great comfort] it in&ndash;<lb
+                        type="inWord"/>formed, that &slong;uch a day, &slong;uch an hour I
+                    &slong;hould find him<lb/>in the Valley, under the &slong;ame oak where I had
+                    bid him<lb/>farewel that he &slong;hould be alone; and de&slong;ired to meet
+                    me<lb/>unaccompanied; adding that he only lived for me. Alas,<lb/>how
+                    incon&slong;iderate I was. I percived nothing in his<lb/>letter but his
+                    impatience to see me and that impatience<lb/>was to me very flattering. I was
+                    exact to the appoint&ndash;<lb type="inWord"/>ment. Mr. Ore&slong;ton received
+                    me in the mo&slong;t tender<lb/>manner. Ah, my dear Adelaide, &slong;aid he, you
+                    would<lb/>have it &slong;o. I have failed in my duty at the mo&slong;t
+                        import&ndash;<lb type="inWord"/>ant cri&slong;is of my life. What I feared
+                    has eome to pa&slong;s.<lb/>The battle was given; my regiment charged,
+                    performed<lb/>wonders of valour, and I was not at its head. I am
+                        di&slong;&ndash;<lb type="inWord"/>
+                    <choice>
+                        <orig>honouted</orig>
+                        <corr>honoured</corr>
+                    </choice> for ever; lo&slong;t without ri&slong;que; I have but one<lb/>one
+                    &slong;acrifice to make you, which I am come to consum.<lb/>mate. At the&slong;e
+                    words I pre&slong;&slong;ed my dear husband in my<lb/>arms. I felt my blood
+                    congeal in my &slong;hivering heart. I<lb/>fainted dead away. He took that
+                    opportunity to perpe&ndash;<lb type="inWord"/>trate his de&slong;ign and I was
+                    recalled to life by the report<lb/>of the fatal pi&slong;tol which had deprived
+                    him of exi&slong;tence.<lb/>How can I paint the cruel &slong;ituation in which I
+                    was left ?<lb/>it cannot be de&slong;cribed. The&slong;e tears that mu&slong;t
+                    for ever<lb/>flow; the &slong;ighs which ob&slong;truct expre&slong;&slong;ion,
+                    convey but a<lb/>faint idea of the di&slong;tre&slong;s I endure. I
+                    pa&slong;&slong;ed the night<lb/>over the lifele&slong;s fo n in a &slong;tupor
+                    of grief. My fir&slong;t<lb/>thoughts were, as &slong;oon as I was able to inter
+                    his dear<lb/>remains, and my &slong;hame together. The&slong;e hands dug
+                    his<lb/>grave. I do not mean to move your compassionate<lb/>heart; but the
+                    moment that was to &slong;eparate me from his<lb/>beloved remains, was a
+                    thou&slong;and times more dreadful<lb/>than can be that which &slong;eperates
+                    the body from the &slong;oul.<lb/>Depre&slong;&slong;ed with grief, deprived of
+                    food, my feeble hands 
+                    
+                    
+                    <pb n="17"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                    <fw type="pagenumber" rend="align(right)">17</fw><lb/> were two days employed in
+                    performing this la&slong;t &slong;ad duty<lb/>and I then formed a determined
+                    re&slong;olution to remain in<lb/>this &slong;olitude till death unite us.
+                    Gnawing hunger prey&ndash;<lb type="inWord"/>ed upon my vitals, and I thought
+                    my&slong;elt criminal in<lb/>preventing nature from &slong;upporting a life more
+                        in&slong;upport&ndash;<lb type="inWord"/>able to me than death. I changed my
+                    dre&slong;s for this of<lb/>a &slong;ingle &slong;hepherde&slong;s, and I look
+                    upon this , valley as my<lb/>only a&slong;ylum. Ever since I have had no other
+                    comfort<lb/>but that of weeping over this grave, which I hope
+                    will<lb/>&slong;oon be my own.</p>
+                <p rend="first-indent(2)">&ldquo;You &slong;ee with what &slong;incerity I open to
+                    you my in&ndash;<lb type="inWord"/>mo&slong;t &slong;oul. Henceforth I may weep
+                    in your prefence<lb/>without re&slong;traint; a relief my overburdened heart
+                    &slong;tands<lb/>much in need of. I expect you will put the &slong;ame
+                        con&ndash;<lb type="inWord"/>fidence iu me, as that I have repo&slong;ed in
+                    you. Do not<lb/>imagine that I am impo&slong;ed upon. I am certain that
+                    you<lb/>are no more a &slong;hepherd than I am a &slong;hepherde&slong;s.
+                    You<lb/>are young, perhaps in love; If I gue&slong;s aright, our mis&ndash;<lb
+                        type="inWord"/>fortunes flow from the &slong;ame &slong;ource. The
+                    &slong;imilitude of<lb/>our conditions will make us feel the more for each
+                    other.<lb/>I look upon you as one whom heaven, moved with my<lb/>afflictions,
+                    has &slong;ent in o this &slong;olitude to &slong;ave me from<lb/>de&slong;pair,
+                    Look upon me as a &slong;incere friend, capable of<lb/>giving, if not
+                    &slong;atisfactory advice, at lea&slong;t a firm example<lb/> of true
+                    resignation to the divine will.&rdquo;</p>
+                <p rend="first-indent(2)">Ah, Madam, &slong;aid Fonro&slong;e overwhelmed with
+                    what<lb/>he heard, whatever tender &slong;en&slong;ibility my heart is
+                    prone<lb/>to feel, you are far from imagining with what deep con&ndash;<lb
+                        type="inWord"/>cern the recital of your woes has affected me; the
+                        im&ndash;<lb type="inWord"/>pre&slong;&slong;ion will remain as long as
+                    life. Should I have a &slong;e&ndash;<lb type="inWord"/>cret re&slong;erved from
+                    you; from you who have a right, after<lb/>what you have entru&slong;ted me with,
+                    to &slong;crutinize my very<lb/>&slong;oul? But as I told you before, and as my
+                    forboding<lb/>heart apprehended, &slong;uch is the nature of my woes, that<lb/>I
+                    am doomed to conceal them in eternal &slong;ilence. Be not<lb/>offended charming
+                    friend, at a &slong;ilence which is my great&ndash;<lb type="inWord"/>e&slong;t
+                    torment. Unhappy as you are, I am &slong;till more &slong;o,<lb/>I will be your
+                    con&slong;tant companion, endeavour to miti&ndash;<lb type="inWord"/>gate your
+                    &slong;orrows, and help to ea&slong;e you in an employ&ndash;
+                    
+                    
+                    <pb n="18" type="inWord"/>
+                    <fw type="pagenumber" rend="align(left)">18</fw>
+                    <fw type="header" rend="align(centre)">&slong;hepherde&slong;s of the
+                    Alps.</fw><lb/>ent too laborious for your delicate frame. Let me be<lb/>a
+                    partaker of your grief; and when weeping over the<lb/>tomb, permit me to mix my
+                    tears with yours. Never<lb/>will you have cau&slong;e to repeat having deposited
+                    your &slong;e&ndash;<lb type="inWord"/>cret iu an unfortunate heart, that feels
+                    all the value of<lb/>its tru&slong;t. Adelaide replied, with &slong;ome
+                    confu&slong;ion, confe&slong;s&ndash;<lb/>ed that &slong;he repented it already, and
+                    retired without fur&ndash;<lb type="inWord"/>ther di&slong;cour&slong;e. From
+                    her abrupt departure, &slong;he &slong;aw in<lb/>Fonro&slong;e's countenance all
+                    the signs of an affected mind.<lb/>Alas, &slong;aid &slong;he, I have renewed
+                    his &slong;ufferings. O what<lb/>&slong;ufferings mu&slong;t they be, that can
+                    give him grounds to<lb/>&slong;uppo&slong;e hm&slong;elf more wretched than me.
+                    No more mu&ndash;<lb type="inWord"/>sic; no more conver&slong;ation. They
+                    neither &slong;eemed to<lb/>seek nor &slong;hun each other. Looks that
+                    &slong;poke their minds<lb/>was all their language. it was very expressive.</p>
+                <p rend="first-indent(2)">When he found her weeping over her husband's grave<lb/>he
+                    beheld her with mute attention, full of jealou&slong;y. grief<lb/>and pity,
+                    until her groans were echoed by his. A &slong;hort<lb/>time pa&slong;t in
+                    painful conflict, when Adelaide ob&slong;erved<lb/>how the youth wa&slong;ted
+                    away, faded like a blooming<lb/>flower, ju&slong;t bla&slong;ted by &slong;ome
+                    malignant planet. The grief<lb/>that con&slong;umed him gave her much concern,
+                    as not being<lb/>entru&slong;ted with what occasioned his trouble, it was out
+                    of<lb/>her power to admini&slong;ter him comfort. She little con&ndash;<lb
+                        type="inWord"/>jectured that her&slong;elf was the cau&slong;e of his
+                    di&slong;tre&slong;s. There<lb/>is an ob&slong;ervation, founded on nature, that
+                    when the &slong;oul<lb/>admits of two pa&slong;&slong;ions, they will of
+                    cour&slong;e weaken each<lb/>other. Adelaide's regret for the love of
+                    Ore&slong;ton grew<lb/>le&slong;s in proportion as her commi&slong;eration
+                    encrea&slong;ed for the<lb/>&slong;hepherd. She was certain that it proceeded
+                    from no<lb/>motive but what the mo&slong;t innocent friend&slong;hip
+                    &slong;ugge&slong;ted;<lb/>nor did it ever occur to her not to indulge it; for
+                    &slong;eeing<lb/>the youth plunged in &slong;o &slong;ettled a gloom, &slong;he
+                    thought it<lb/>incumbent upon her, after what &slong;he had
+                    profe&slong;&slong;ed for him<lb/>not to leave him to him&slong;elf. Unhappy
+                    youth, &slong;aid &slong;he the<lb/>fir&slong;t time they met after her
+                    re&slong;olve you peri&slong;h daily, and<lb/>give me the fruitle&slong;s
+                    concern of beholding you con&slong;ume<lb/>away, and not be able to afford yon
+                    the lea&slong;t comfort.<lb/>If the recital of my imprudent conduct has not
+                    altered 
+                    
+                    
+                    <pb n="19"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                    <fw type="pagenumber" rend="align(right)">19</fw><lb/> your opinion of me; if
+                    the sincere&slong;t friend&slong;hip is dear<lb/>unto you; in &slong;hort if it
+                    will not render me more unhap&ndash;<lb type="inWord"/>py than before our
+                    acquaintance, tell me I conjure you,<lb/>the cau&slong;e of your afflictions.
+                    Was the &slong;ecret more im&ndash;<lb type="inWord"/>portant than mine, you
+                    need not apprehend the di&slong;clo&ndash;<lb type="inWord"/>&slong;ure of it
+                    from me. Ore&slong;ton's death is an eternal bar&ndash;<lb type="inWord"/>rier
+                    between the world and me. The &slong;ecret of your<lb/>woe, which I
+                    de&slong;ired to be acquainted with' and for<lb/>your &slong;ake, not for mine,
+                    would have been depo&slong;ited in<lb/>Ore&slong;ton's tomb, with his faithful
+                    widow' and your &slong;in&ndash;<lb type="inWord"/>cere friend.</p>
+                <p rend="first-indent(2)">I hope, &slong;aid Fonro&slong;e, it will be my fate to
+                    die fir&slong;t.&mdash;<lb/>Ah, madam, let me, end my deplorable life,
+                    without<lb/>leaving you to reproach vour&slong;elf with having
+                    &slong;hortened<lb/>it. O heavens, &slong;he cried, what I ? Can I have
+                        contri&ndash;<lb type="inWord"/>buted to increa&slong;e the woes under which
+                    you &slong;truggle.&mdash;<lb/>Ea&slong;e my tortured heart, and tell me what I
+                    have &slong;aid.<lb/>What have I done to aggravate your afflictions ? Speak
+                    I<lb/>&slong;ay&mdash;you have revealed too much, to hide your&slong;elf
+                    any<lb/>longer: I do in&slong;i&slong;t upon knowing who you are. Since<lb/>you
+                    will force from me &slong;o peremptorily the fatal &slong;ecret,<lb/>know that I
+                    am&mdash;that I am Fonro&slong;e the &slong;on of tho&slong;e<lb/>you lately
+                    filled with admiration and re&slong;pect. All that<lb/>I have heard them relate
+                    of your virtue and charms, in&ndash;<lb type="inWord"/> &slong;pired me with the
+                    ra&slong;h de&slong;ign of &slong;eeing you under this<lb/>di&slong;gui&slong;e.
+                    I have &slong;een you, and my fate is fixed. My<lb/>family are in the
+                    deepe&slong;t di&slong;tre&slong;s. They conclude me<lb/>lo&slong;t for ever.
+                    Con&slong;cious of your attachment to this &slong;pot<lb/>I have no other hope
+                    but to die adoring you. Forbear<lb/>to offer me any u&slong;ele&slong;s advice;
+                    My re&slong;olution is as im.<lb/>movable as your own. If by betraying my,
+                    confidence,<lb/>you divulge my &slong;ecret, you will but <choice>
+                        <orig>di&slong;tnrb</orig>
+                        <corr>di&slong;turb</corr>
+                    </choice> the la&slong;t eb&ndash;<lb type="inWord"/>bing of declining life. and
+                    will have to impute to your&ndash;<lb type="inWord"/>&slong;elf a blame
+                    which you &slong;halt never have cau&slong;e to impute<lb/>to me. Adelaide,
+                    a&slong;toni&slong;hed at what &slong;he had heard, en&ndash;<lb type="inWord"
+                    />deavoured to &slong;ooth his de&slong;pair. I will re&slong;tore him,
+                    &slong;aid<lb/>&slong;he, to his afflicted parents, and &slong;ave their only
+                    hope<lb/>from death. Heaven has procured me this oppertunity<lb/>to acknowledge
+                    their goodne&slong;s. Wherefore, far from 
+                    
+                    
+                    <pb n="20"/>
+                    <fw type="pagenumber" rend="align(left)">20</fw>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                    affecting an ill&ndash;timed rigour, &slong;he adopted every means the<lb/>mo&slong;t
+                    in&slong;inuating friend could &slong;ugge&slong;t, to calm and comfort<lb/>him.
+                    Sweet angel, cried Fonro&slong;e, I &slong;ee with what re&ndash;<lb
+                        type="inWord"/>luctance yon are forced to render any one
+                    mi&slong;erable<lb/>your heart is devoted to him who lies in that tomb,
+                    no<lb/>power on earth can draw it thence: I &slong;ee with
+                    what<lb/>conde&slong;cen&slong;ion your virtue attempts to veil your
+                        unhappi&ndash;<lb type="inWord"/>ne&slong;s. I feel your goodne&slong;s in
+                    its full extent: and &slong;ink&ndash;<lb type="inWord"/>ing under it I forgive
+                    you. Tis your duty never to love<lb/>me, and mine is to adore you for ever.
+                    Adelaide, im&ndash;<lb type="inWord"/>patient to put in execution the design
+                    &slong;he had formed, ar&ndash;<lb type="inWord"/>rived at the hut. Father,
+                    &slong;aid &slong;he to the old Pa&slong;tor, do<lb/>you think your&slong;elf
+                    able to undertake a journey to Turin<lb/>I want a per&slong;on that I can rely
+                    on, to carry the Count<lb/>and Counte&slong;s Fonro&slong;e intelligence of what
+                    concerns their<lb/>whole happine&slong;s. My zeal, replied the old man,
+                    to<lb/>&slong;erve them, will give me &slong;trength equal to my
+                        inclina&ndash;<lb type="inWord"/>tion. Go then, continued &slong;he, you
+                    will find them at<lb/>pre&slong;ent lamenting, the death of their only child.
+                    Tell<lb/>them that he is living , and that it is their poor Adelaide<lb/>that
+                    will re&slong;tore him to their arms. But at the &slong;ame<lb/>time inform them
+                    that there is an indi&slong;pen&slong;ible nece&slong;&slong;ity<lb/>of their
+                    coming in per&slong;on to fetch him. He &slong;et out on<lb/>the in&slong;tant,
+                    and arrived &slong;afe at the Court's hou&slong;e in<lb/>Turiu. He now
+                    &slong;ent in word that the old man of the<lb/>Valley of Savoy was come to wait
+                    on them. Ah, cried<lb/>the Counte&slong;s, perhaps &slong;ome misfortuue has
+                    befallen our<lb/>lovely &slong;hepherde&slong;s. Bid the old man enter,
+                    &slong;aid the<lb/>Count; who knows but Adelaide con&slong;ents to come<lb/>and
+                    live with us It would be the only comfort that I<lb/>can ta&slong;te after the
+                    death of my &slong;on. The old man is in&ndash;<lb type="inWord"/>troduced. He
+                    embraced their knees; they rai&slong;e him to<lb/>their arms. Weep not,
+                    &slong;aid he the death of your &slong;on. I am come to inform you that he is
+                    alive. Our dear<lb/>child has di&slong;covered him in the Valley, and
+                    di&slong;patched<lb/>me with the plea&slong;ing intelligence to Turin; but
+                    &slong;he &slong;ays<lb/>that your&slong;elves, and none but you, can bring him
+                    home<lb/>Whil&slong;t he was &slong;peaking, the Counte&slong;s fainted,
+                    overcome,<lb/>with &slong;urprize and joy. The Count calls for
+                    a&slong;&slong;i&slong;tance 
+                    
+                    
+                    <pb n="21"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                    <fw type="pagenumber" rend="align(right)">21</fw><lb/> She revives. They embrace
+                    the old &slong;hepherd by turns<lb/>and acquaints the whole hou&slong;e with the
+                    &slong;ubject of their<lb/>tran&slong;port. How &slong;hall we &slong;hew our
+                    gratitude &slong;aid the<lb/>Connte&slong;s. How can we requite a benefaction
+                    which re&ndash;<lb type="inWord"/>&slong;tores us to life. They &slong;et out
+                    immediately on their jour&ndash;<lb type="inWord"/>ney, and arrived with the
+                    greate&slong;t expedition. Leaving<lb/>their equipage at &slong;ome
+                    di&slong;tance they proceed to the hut<lb/>through the vale which contained all
+                    that was dear unto<lb/>them. Adelaide was tending the flock as u&slong;ual.
+                    The<lb/>old dame conducted them to the place where &slong;he was.<lb/>How great
+                    their &slong;urpri&slong;e when they beheld their beloved <lb/>&slong;on with
+                    the &slong;hepherde&slong;s under the habit of a simple<lb/>pa&slong;tor. Ah,
+                    cruel child, cried Fonro&slong;e's mother, throw&ndash;<lb type="inWord"/>ing
+                    her arms about his neck, what troubles have you not<lb/>given us. What could
+                    induce you to leave your affec&ndash;<lb type="inWord"/>tionate parents. What is
+                    your bu&slong;ine&slong;s here. To<lb/>adore what you &slong;o much admired.
+                    Madam, &slong;aid Ade&ndash;<lb type="inWord"/>laide, whil&slong;t Fonro&slong;e
+                    embraced his father's knees, you<lb/>would riot have been &slong;o long a prey
+                    to grief, had I di&slong;&ndash;<lb type="inWord"/> covered &slong;ooner your
+                    dear &slong;on. After the fir&slong;t effu&slong;ions<lb/>of nature were over,
+                    Fonro&slong;e relapsed into his former<lb/>melancholy. Come, said the
+                    Counte&slong;s' let us go and<lb/>repo&slong;e our&slong;elves in the cabin, and
+                    forget the woes this<lb/>young madman has plunged us in. Tis very true,
+                    &slong;aid<lb/>Fonro&slong;e to his father, who led him by the hand,
+                    what<lb/>else but the deprivation of rea&slong;on could &slong;u&slong;pend
+                    the<lb/>emotions of nature, and make me forget the mo&slong;t
+                    &slong;acred<lb/>duties, what but madne&slong;s Twas you innocently
+                    gave<lb/>ri&slong;e to it, and I am &slong;everely puni&slong;hed, for I am in
+                    love<lb/>with the mo&slong;t amiable and accompli&slong;hed per&slong;on in
+                    the<lb/>world. The Count replied you have &slong;een but little of<lb/>her; and
+                    know but little of this incomparable lady.<lb/>Honour, virtue, and
+                    &slong;ensibility. She unites all that is<lb/>great and good. I doat upon her to
+                    idolatry. I cannot<lb/>be happy without her, and &slong;he never can be mine.
+                    Has<lb/>&slong;he tru&slong;ted you &slong;aid the Count with &slong;ecret of
+                    her<lb/>birth. I have learned enough replied the &slong;on to
+                    a&slong;&slong;ure<lb/>you it is not inferior to mine. She has renounced a
+                        con&ndash;<lb type="inWord"/>&slong;iderable fortune in the world, to remain
+                    in this &slong;olitude 
+                    
+                    
+                    <pb n="22"/>
+                    <fw type="pagenumber" rend="align(left)">22</fw>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw><lb/>
+                    Do you know what motive has induced her to it. I do<lb/>but it is a &slong;ecret
+                    which &slong;he alone can reveal. Is &slong;he mar&ndash;<lb type="inWord"
+                    />ried. No, &slong;he is a widow; but her heart is not the
+                    le&slong;s<lb/>engaged, nay it is rather bound with &slong;tronger
+                    chains.<lb/>Madam, said the Counte&slong;s to Adelaide, as they had en&ndash;<lb
+                        type="inWord"/>tered the Cabin, you &slong;ee how you turn the heads, as
+                    well<lb/>as captivate all that bear the name of Fonro&slong;e. Nothing<lb/>could
+                    have ju&slong;tified my son's extravagant pa&slong;&slong;ion, but
+                    &slong;o<lb/>virtuous, &slong;o loving an object. My wife's utmo&slong;t
+                    wi&slong;hes<lb/>were to have you for a friend; my &slong;on cannot live
+                        with&ndash;<lb type="inWord"/>out you for a wife; and it would be my
+                    greate&slong;t happi&ndash;<lb type="inWord"/>ne&slong;s to have you for a
+                    daughter. Oh con&slong;ider how many<lb/>that love you mu&slong;t be wretched if
+                    you refu&slong;e your con&ndash;<lb type="inWord"/>&slong;ent, Ah sir, replied
+                    Adelaide, your goodne&slong;s pre&ndash;<lb type="inWord"/>plexes me; lend me
+                    awhile your attention, and judge my<lb/>&slong;ituation. She then in
+                    pre&slong;ence of the old folks related<lb/>her &slong;ad &slong;tory, adding
+                    the name of the family, which the<lb/>Count was well acquainted with; and
+                    &slong;he fini&slong;hed her<lb/>narration by taking him to be a witne&slong;s
+                    of the inviolable<lb/>fidelity &slong;he owed her hu&slong;band. At the&slong;e
+                    words a deep<lb/>con&slong;ternation appeared in their looks. The Count's
+                    &slong;on<lb/>bur&slong;ting with grief, threw him&slong;elf into a corner of
+                    the hut<lb/>to give a loo&slong;e to his &slong;orrows. His father laid
+                    him&slong;elf<lb/>down by him and ca&slong;ting his eyes on Adelaide,
+                    Madam,<lb/>&slong;aid he behold the effects of yonr re&slong;olution. The
+                        Coun&ndash;<lb type="inWord"/>te&slong;s pressing her to her bo&slong;om,
+                    Ah, will you then &slong;aid<lb/>&slong;he, give us cau&slong;e to lament a
+                    &slong;econd time the death of<lb/>our dear child. Why did you re&slong;tore him
+                    to us. The<lb/>good old people, penetrated with what they
+                    &slong;awanheard<lb/>their eyes fixed on Adelaide, waited for her
+                        determina&ndash;<lb type="inWord"/>tion. Heaven knows, &slong;aid &slong;he,
+                    I would willingly give<lb/>up my life to acknowledge all this unbounded
+                    genero&slong;ity<lb/>I own it would be the height of mi&slong;ery, if I had
+                    to<lb/>upbraid my&slong;elf of having been the cau&slong;e of yours. I<lb/>leave
+                    the decision of our fate to your &slong;on; let me have a<lb/>few minutes
+                    copver&slong;ation with him. Then retiring by<lb/>them&slong;elves,
+                    Fouro&slong;e, &slong;aid &slong;he, you know what &slong;acred<lb/>lie bind me
+                    here. If I could cea&slong;e to lament the lo&slong;s of<lb/>him who loved and
+                    doted on me even beyond di&slong;cretion, 
+                    
+                    
+                    <pb n="23"/>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw>
+                    <fw type="pagenumber" rend="align(right)">23</fw><lb/> I &slong;hould be
+                    de&slong;ervedly de&slong;pi&slong;ed Friend&slong;hip, gatitude,<lb/>and
+                    e&slong;teem, is all I have left to give; and is that a com&ndash;<lb
+                        type="inWord"/>pen&slong;ation for love. The more you have conceived
+                    for<lb/>me the more you have a right to expect a &slong;uittable re&ndash;<lb
+                        type="inWord"/>turn, and what return can I make&ndash; The
+                    impo&slong;&slong;ibility of<lb/>performing that duty, is the object that
+                    prevents my<lb/>making my&slong;elf liable to it; neverthele&slong;s, I behold
+                    you<lb/>all in a &slong;ituation that would &slong;often the mo&slong;t oburate
+                    heart<lb/>Mine, alas, is but too &slong;en&slong;ible, I cannot bear the
+                        &slong;hock&ndash;<lb type="inWord"/>ing thougbt of being the cau&slong;e of
+                    your di&slong;tre&slong;s. How<lb/>can I hear your generous, worthy parents
+                    reproach me<lb/>with their lo&slong;s. I will therefore forget for awhile
+                    what<lb/>I am, and leave you to be the arbitrator of my de&slong;tiny<lb/>'Tis
+                    yours to decide, and choo&slong;e which is mo&slong;t agreeable<lb/>to you,
+                    either to conquer your pa&slong;&slong;ion, and &slong;trive to<lb/>forget me,
+                    or accept the hand of one who&slong;e heart is pos&ndash;<lb type="inWord"
+                    />&slong;essed of another object ; has nothing to be&slong;tow
+                    but<lb/>Friend&slong;hip and e&slong;teem, and what are they to &slong;atisfy
+                    a<lb/>lovers, ardent expectations 'Tis enough, replied he,<lb/>tenderly
+                    &slong;uch exalted friend&slong;hip equals love. I may<lb/>perhaps be jealous of
+                    the tears I &slong;hall &slong;ee you &slong;hed for a<lb/>former hu&slong;band,
+                    but the cau&slong;e of my jealou&slong;y will only<lb/>make you more
+                    e&slong;timable in my eyes, and dearer to my<lb/>&slong;oul. She is mine ! cried
+                    Fonro&slong;e, precipitating him&slong;elf<lb/>into his fond parent's arms. 'Tis
+                    to the re&slong;pect and gra&ndash;<lb type="inWord"/>titude &slong;he has for
+                    you that I owe my happine&slong;s and &mdash; it is<lb/>owing to a &slong;econd
+                    being. Adelaide could not appeal<lb/>from the &slong;entence. Did &slong;he
+                    con&slong;ent merely through<lb/>pity and gratitude. I believe &slong;he did
+                    &slong;he believed it<lb/>her&slong;elf, and I will not cea&slong;e to admire
+                    her. Before &slong;he<lb/>left the valley &slong;he would revisit the tomb,
+                    which &slong;he left<lb/>with regret. O my dear Ore&slong;ton, &slong;he cried
+                    if from<lb/>the mansions of the dead thou can&slong;t have &slong;een my
+                        &slong;trug&ndash;<lb type="inWord"/>gles, and read the bottom ofmyheait,
+                    thy &slong;hade will<lb/>not murmer at the &slong;acrifice I make to comfort a
+                    virtious<lb/>family. My love remains with you. I will go make<lb/>others happy
+                    without any hopes of being &slong;o my&slong;elf.<lb/>Twas with difficulty they
+                    got her away. She in&slong;i&slong;ted on<lb/>haviug a monument erected to the
+                    memory of her 
+                    
+                    
+                    <pb n="24"/>
+                    <fw type="pagenumber" rend="align(left)">24</fw>
+                    <fw type="header" rend="align(centre)">Shepherde&slong;s of the Alps.</fw><lb/>
+                    husband; and that the cabin of the good old people,<lb/>who were to accompany
+                    them to Turin, &slong;hould be con&ndash;<lb type="inWord"/>verted into a neat
+                    little country hou&slong;e, as plain as it<lb/>would be &slong;olitary, where
+                    &slong;he might ocasionally retire<lb/>to lament the errors and misfortunes of
+                    her youth.<lb/>Time, and the a&slong;&slong;iduous care that Fonro&slong;e had
+                    in each<lb/>re&slong;pect for Adelaide, joined to the &slong;weet pledges
+                    fruits<lb/>of her &slong;econd marriage, opened her heart to receive
+                    the<lb/>impression of a new inclination. And she is quoted<lb/>as a model of
+                    perfection, that claims admiration and re&ndash;<lb type="inWord"/>&slong;pect
+                    even to her fidelity.</p>
+                <lg>
+                    <l rend="indent(4)">&ldquo;Great blessings ever wait on virtuous deeds,</l>
+                    <l rend="indent(4)">And tho' a late, a &slong;ure Reward
+                        &slong;ucceeds.&rdquo;</l>
+                </lg>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure><lb/>
+            </div>
+        </body>
+        <back>
+            <div type="colophon">
+                <p>J. Kendrew, Collier&ndash;gate, York.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

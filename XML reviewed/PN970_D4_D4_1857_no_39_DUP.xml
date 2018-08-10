@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2013-01-18"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-07-26"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S<lb/>Illustrated Farthing Books.<lb/>&rule;</title><lb/>
+                    <title level="m">OUR GOLD DUST.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>46C133</name>
+                            <desc>pack-animal</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <pubPlace>LONDON</pubPlace>:<publisher>DEAN &amp;SON,<lb/>11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">39</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <head rend="align(centre)">OUR &ldquo;GOLD DUST.&rdquo;</head>
+            <lb/>
+
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42B71</name>
+                    <desc>family life at home</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+
+            <p rend="align(justfify)">FIRST, I am going to write to mother,&rdquo;<lb/>said Thomas,
+                with his eye on the clock, <pb n="3"/>
+                <fw type="header" rend="align(centre)">OUR GOLD DUST.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> parceling out Wednesday
+                afternoon; &lsquo;next,<lb/>two hours&rsquo; play ; next, come in and study<lb/>my
+                algebra lesson; after supper, go and<lb/>hear that man lecture on Africa.&rdquo;
+                Did<lb/>he ? for boys as well as men make capital<lb/>plans, which they da not
+                always execute.</p>
+            <p rend="first-indent(2) align(justify)">No sooner said than Tom took his<lb/>writing
+                materials, and sat down to write.<lb/>There was a great hurrah in the
+                street,<lb/>but he never got up to look out. He<lb/>went once for the dictionary, to
+                learn how<lb/>a word was spelled. &ldquo; Do you care<lb/>when you are only writing
+                home ?&rdquo; asked<lb/>one of Tom's cousins who was waiting for<lb/>him. &ldquo; I
+                    <hi rend="italic">always</hi> care,&rdquo; answered Tom.<lb/>The letter was
+                finished, well done for a<lb/>boy of his age, in about three&ndash;quarters
+                of<lb/>an hour, and he was ready to be off. And<lb/>so the afternoon was filled out
+                as promptly<lb/>as that letter was filled up. That is a<lb/>specimen of Tom.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Uncle,&rdquo; said Tom, one day,
+                &ldquo;it seems<lb/>to me your things do not look as well as<lb/>they might.&rdquo;
+                They were in the garden,<lb/>and &ldquo; the things &rdquo; the boy had his eye
+                on<lb/>were the currant&ndash;bushes.</p>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">OUR GOLD DUST.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">&ldquo; I do not expect they do,&rdquo; replied
+                his<lb/>uncle ; &ldquo; I'm no great hand at a garden.<lb/>Well, sir, what can you
+                improve ?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; I can <hi rend="italic">try</hi> on the
+                currants,&rdquo; said Tom.<lb/>&ldquo;They want to be thinned out, and the<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43B143</name>
+                        <desc>gathering herbs</desc>
+                    </ic:iconClass>
+                </figure><lb/> old wood cut off, and the right suckers<lb/>trained. Do you ever dig
+                around them,<lb/>and put ashes on the roots?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">His uncle had never done one of
+                these<lb/>things; did not know they ought to be <pb n="5"/>
+                <fw type="header" rend="align(centre)">OUR GOLD DUST.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> done. He thought, he said,
+                currants took<lb/>care of themselves.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; But they can be cared for,&rdquo; said
+                Tom,<lb/>&ldquo;and all the better.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;Suppose you try, boy,&rdquo; said
+                his<lb/>uncle.</p>
+            <p rend="first-indent(2) align(justify)">Tom's uncle gave him a home for two<lb/>years,
+                to attend to school and prepare for<lb/>college, and that gave him time to try
+                the<lb/>bushes. In the autumn he dug around<lb/>their roots, pulled up the grass,
+                separated<lb/>the large old bushes, and put out new<lb/>ones. It took time, but he
+                worked<lb/>hard at it. In the spring he loosened<lb/>the soil, laid on some ashes,
+                watched<lb/>the young shoots, kept some, and cut<lb/>down others. His uncle did not
+                believe<lb/>much would come of it; but he had<lb/>reason to change his mind. Much
+                    <hi rend="italic">did</hi><lb/>come of it. All at once, it seemed to
+                him,<lb/>for time goes fast to an old man, his<lb/>bushes were loaded with fruit,
+                fine large<lb/>currants, such as his garden had not seen<lb/>for many a day, if ever
+                before. People,<lb/>when they walked in the garden, ex&ndash; <pb n="6"
+                    type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">OUR GOLD DUST.</fw>
+                <lb/> claimed, &ldquo; What splendid currants you<lb/>have!&rdquo;</p>
+
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42B71</name>
+                    <desc>family life at home</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+
+            <p rend="first-indent(2) align(justify)">&ldquo;That boy knows how to take care of <pb n="7"/>
+                <fw type="header" rend="align(centre)">OUR GOLD DUST.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> his gold dust,&rdquo; said his
+                uncle often to<lb/>himself, and sometimes aloud.</p>
+            <p rend="first-indent(2) align(justify)">Tom went to college, and every account<lb/>they
+                heard of him, he was going ahead,<lb/>laying a solid foundation for the future.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Certainly,&rdquo; said his uncle,
+                &ldquo;certainly.<lb/>That boy, I tell you, knows how to take<lb/>care of the gold
+                dust.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Gold dust!&rdquo; where did Tom get
+                gold<lb/>dust? He was a poor boy. He has not<lb/>been to California. He never was
+                a<lb/>miner. Where did <hi rend="italic">he</hi> get the gold dust?<lb/>Ah ! he had
+                the <hi rend="italic">seconds</hi> and the <hi rend="italic">minutes</hi>,<lb/>and
+                these are the &ldquo;gold dust&rdquo; of time&mdash;<lb/><hi rend="italic"
+                    >specks</hi> and <hi rend="italic">particles</hi> of time, which boys<lb/>and
+                girls and grown&ndash;up people are so apt<lb/>to waste and throw away. Tom
+                knew<lb/>their value. His deceased father, a poor<lb/>minister, had taught him that
+                every speck<lb/>and particle of time was worth its weight<lb/>of gold ; and his son
+                took care of them as<lb/>if they were. He never spent them<lb/>foolishly, but only
+                in good bargains; &ldquo; for<lb/>value received &rdquo; was stamped on all
+                he<lb/>passed away.</p>
+            <p rend="first-indent(2) align(justify)">It is a mistake to suppose that miners <pb n="8"/>
+                <fw type="header" rend="align(centre)">OUR GOLD DUST.</fw>
+                <lb/> and the mints have all the &ldquo; gold dust.&rdquo;<lb/>You, children, have
+                some, some of infi&ndash;<lb type="inWord"/>nitely greater value than the richest
+                mines<lb/>can yield. God does not give it to you in<lb/>gold bars a day, a month, or
+                a year long;<lb/>nobody can be trusted with so much time<lb/>all at once; but God
+                wisely deals it out in<lb/>seconds and minutes, so that you can<lb/>make the most of
+                it. If you are robbed<lb/>of one, or lose it, the loss is comparatively<lb/>small.
+                It cannot, to be sure, <hi rend="italic">ever</hi> be<lb/>made up ; the <hi
+                    rend="italic">whole world</hi> cannot ever<lb/>make up for a minute lost; but if
+                it teach<lb/>you to be thoughtful and careful of the<lb/>rest, you will, by and by,
+                be rich with the<lb/>golden years of an useful and happy life.</p>
+            <p rend="first-indent(2) align(justify)">Take care of your &ldquo; gold dust,&rdquo;
+                    chil&ndash;<lb type="inWord"/>dren.</p>
+
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>43B144</name>
+                    <desc>picking flowers</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+        </body>
+        <back/>
+    </text>
+</TEI>

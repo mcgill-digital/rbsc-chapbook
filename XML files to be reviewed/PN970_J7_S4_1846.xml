@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Annika Robbins</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            
+            <change>
+                <date when="2013"/>
+                <label>Double-checked</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="MetricalTales">
+
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="yellow coloured pictorial wrappers">
+                <bibl>
+                    <title level="m" rend="align(centre)">THE<lb/>SEASONS.</title></bibl>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C92</name>
+                        <desc>one pair dancing; man and woman dancing as a couple</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <lg>
+                    <l>The welcome spring brings beauties forth</l>
+                    <l>From Nature's gifts to cheer the earth;</l>
+                    <l>Stern winter gone the nymphs and swains</l>
+                    <l>To dance assemble on the plains,</l>
+                    <l>With flowery poles and garlands gay</l>
+                    <l>They observe the rites of May.</l>
+                </lg>
+
+
+
+
+
+                <pb n="2"/>
+            </div>
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <div type="section">
+                <head rend="align(centre)">THE<lb/> SEASONS.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>43C92</name>
+                        <desc>one pair dancing; man and woman dancing as a couple</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>The welcome spring brings beauties forth</l>
+                    <l>From Nature's gifts to cheer the earth;</l>
+                    <l>Stern winter gone the nymphs and swains</l>
+                    <l>To dance assemble on the plains,</l>
+                    <l>With flowery poles and garlands gay</l>
+                    <l>They observe the rites of May.</l>
+                </lg>
+            </div>
+
+            <pb n="4"/>
+
+            <pb n="5"/>
+
+            <pb n="6"/>
+            <div type="section">
+                <head rend="align(centre)">SPRING.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>46C13187</name>
+                        <desc>leading a horse by the reins; rider beside his horse</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>Unto the peasant, welcome Spring</l>
+                    <l>Useful employment then does bring;</l>
+                    <l>The Plough and Harrow are in use,</l>
+                    <l>And seeds are sown crops to produce;</l>
+                    <l>Then Nature, with her bounteous hand,</l>
+                    <l>Fertilizes the rich land.</l>
+                </lg>
+            </div>
+            <pb n="7"/>
+            <div type="section">
+                <head rend="align(centre)">SUMMER.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>47I149</name>
+                        <desc>rest during harvest (eating, dancing, making love, etc.)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>Fragrant the smell of new-mown hay</l>
+                    <l>As in the summer fields we stray,</l>
+                    <l>The men beneath a tree recline</l>
+                    <l>On their humble meat to dine;</l>
+                    <l>While faithful Tray on his hind legs</l>
+                    <l>For a morsel humbly begs.</l>
+                </lg>
+            </div>
+
+
+            <pb n="8"/>
+
+
+            <pb n="9"/>
+
+            <pb n="10"/>
+            <div type="section">
+                <head rend="align(centre)">SUMMER.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>41A6811</name>
+                        <desc>watering plants</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>The summer does rich treasures yield</l>
+                    <l>And the green foliage forms a shield</l>
+                    <l>From the sun, while the fair</l>
+                    <l>Reads a book, or takes the air;</l>
+                    <l>At cool of eve she tends her flowers,</l>
+                    <l>And nurtures them with gentle showers</l>
+                </lg>
+            </div>
+
+
+            <pb n="11"/>
+            <div type="section">
+                <head rend="align(centre)">AUTUMN.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>47I142</name>
+                        <desc>binding ~ harvest</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>The harvest now employment yields</l>
+                    <l>To the reapers in the fields,</l>
+                    <l>The women aid the sheafs to bind,</l>
+                    <l>And many thus employment find</l>
+                    <l>To purchase food, to pay their rent,</l>
+                    <l>And bless their cottage with content.</l>
+                </lg>
+            </div>
+
+
+            <pb n="12"/>
+
+            <pb n="13"/>
+
+            <pb n="14"/>
+            <div type="section">
+                <head rend="align(centre)">AUTUMN.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>43C1113</name>
+                        <desc>bird hunting</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>Yellow Autumn is the time</l>
+                    <l>When feathered game are full prime;</l>
+                    <l>Gentlemen with guns resort</l>
+                    <l>In the fields to take their sport;</l>
+                    <l>The Pheasant and the Partridge dies</l>
+                    <l>And luxurious food supplies.</l>
+                </lg>
+            </div>
+
+
+            <pb n="15"/>
+            <div type="section">
+                <head rend="align(centre)">WINTER.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>43C244</name>
+                        <desc>skates (winter sports)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>The waters now in ice are bound,</l>
+                    <l>Yet much pleasure on them is found,</l>
+                    <l>To those who love in skates to glide,</l>
+                    <l>Or on the frozen surface slide;</l>
+                    <l>This exercise will make you glow,</l>
+                    <l>Preventing you the cold to know.</l>
+                </lg>
+            </div>
+
+
+            <pb n="16"/>
+
+            <pb n="17"/>
+
+            <pb n="18"/>
+            <div type="section">
+                <head rend="align(centre)">WINTER.</head>
+                <lb/>
+                <figure rend="coloured align(centre)">
+                    <ic:iconClass>
+                        <name>41C43</name>
+                        <desc>evening meal, dinner, supper</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>On Christmas day, the English board</l>
+                    <l>With beef and pudding is well stored;</l>
+                    <l>Parents their offspring do invite,</l>
+                    <l>And with old friends also delight</l>
+                    <l>To circulate the wine and ale,</l>
+                    <l>The merry song, or pleasing tale.</l>
+                </lg>
+            </div>
+        </body>
+        <back>
+            <div type="cover">
+                <pb n="19"/>
+
+
+                <pb n="20"/>
+                <div type="advertisement" rend="align(centre) within double rule border">
+                    <p>ILLUSTRATED WORKS ADAPTED FOR PRESENTS<lb/>&rule;</p>
+                    <p>STORY BOOKS,<lb/> PRICE <measure type="price">TWO-PENCE</measure> EACH, <lb/>
+                        COLOURED THROUGHOUT,<lb/> IN WRAPPER. POST 8vo.<lb/>&rule;</p>
+                    <list>
+                        <item>The History of William the Conqueror.</item>
+                        <item>The History of Joan of Arc.</item>
+                        <item>The History of Alfred the Great.</item>
+                        <item>The Life and Death of Cock Robin.</item>
+                        <item>The Comic History of Monsieur Tonson.</item>
+                        <item>Comic Rhymes on the Cries of London.</item>
+                        <item>The History of an Apple Pie.</item>
+                        <item>Dame Trot and Her Comical Cat.</item>
+                        <item>The House that Jack Built.</item>
+                        <item>Aladdin and the Wonderful Lamp.</item>
+                        <item>The Seasons.</item>
+                        <item>Mother Hubbard and Her Wonderful Dog.</item>
+                        <item>Tom Thumb's A B C.</item>
+                        <item>The Comic Tale of the Farmer's Blunders.</item>
+                        <item>Nursery Rhymes.</item>
+                        <item>The Beggar's Petition; or, Pity the Sorrows of<lb rend="indent(2)"/>A
+                            Poor Old Man.</item>
+                        <item>Apostle's Creed, and Lord Prayer (In Verse.)</item>
+                    </list>
+                    <div type="colophon" rend="align(centre)">
+                        <p>&rule;<lb/>LONDON: PRINTED AND PUBLISHED, BY<lb/> W. S. JOHNSON,<lb/> 60,
+                            ST. MARTIN'S LAN CHARING CROSS ;<lb/> AND OF ALL SELLERS.</p>
+                    </div>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>

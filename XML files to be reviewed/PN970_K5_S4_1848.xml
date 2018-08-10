@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-16"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="blue coloured pictorial wrappers">
+                <bibl>
+                    <figure type="borderornament"/>
+                    <title level="s">THIRD SERIES.&mdash;No.<num type="cardinal">
+                        9</num>.<lb/>&rule;<lb/></title>
+                    <title level="m">THE<lb/>SELFlSH GIRL;<lb/>A TALE OF TRUTH.</title>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>46C131</name>
+                            <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <publisher>NEW YORK:<lb/>KIGGINS &amp;KELLOGG,<lb/>123 &amp;125 William
+                        St.</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+            <pb n="3"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart type="main">THE<lb/>SELFlSH GIRL;</titlePart>
+                    <titlePart type="sub">A TALE OF TRUTH.</titlePart>
+                </docTitle>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C131</name>
+                        <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace>NEW YORK:</pubPlace>
+                    <publisher>KIGGINS &amp;KELLOGG,<lb/>88 JOHN STREET.</publisher>
+                </docImprint>
+            </titlePage>
+
+            <pb n="4"/>
+            <figure type="borderornament"/>
+            <figure rend="align(centre) landscape">
+                <ic:iconClass>
+                    <name>42B7422</name>
+                    <desc>mother and daughter(s) (family group)</desc>
+                </ic:iconClass>
+                <head>Mrs. Mortimer, Anna, and Clara.</head>
+            </figure>
+            <lb/>
+
+        </front>
+
+        <body>
+            <pb n="5"/>
+            <head rend="align(centre)">THE<lb/>SELFISH GIRL.<lb/>&rule;<lb/></head>
+            <p rend="first-indent(2) align(justify)">&ldquo; SHUT the door, Anna, the wind
+                is<lb/>cold from the hall, and makes our room<lb/>uncomfortable.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Oh, mother, why do you ask me,
+                to<lb/>close the door, when you can ring the bell,<lb/>and let a servant come in and
+                shut it?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;What, Anna, bring James through<lb/>the
+                bleak wind to save you from the<lb/>trouble of crossing the floor ? I am<lb/>ashamed
+                of you, my daughter. See<lb/>little Clara has jumped down and gone<lb/>unbidden, and
+                done what I requested you<lb/>to do. Kiss me, Clara, I love
+                obliging<lb/>girls.&rdquo;</p>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">The elder of the children thus spoken<lb/>to,
+                was at the time reclining upon her<lb/>mother's lap, while the younger, was
+                on<lb/>the couch at her side with her head fond&ndash;<lb type="inWord"/>ly resting
+                upon her shoulder. The two<lb/>were as opposite in looks as in temper.<lb/>Anna was
+                about eight years old, and<lb/>Clara three years younger. Anna was<lb/>very pretty.
+                Her light brown hair fell<lb/>in graceful curls over her white neck;<lb/>she had
+                bright blue eyes, her cheeks were<lb/>like roses, and when she was a good
+                girl,<lb/>she was extremely lovely. Everybody<lb/>admired, when they <hi
+                    rend="italic">first</hi> knew her, but<lb/>her disobliging and selfish temper
+                soon<lb/>made them withdraw their admiration<lb/>&mdash; for no one is worthy of
+                esteem, who<lb/>has nothing but beauty of person, with&ndash;<lb type="inWord"/>out
+                that of mind, to recommend them.<lb/>Clara seldom attracted attention at
+                first,<lb/>for she was by no means beautiful. Her<lb/>complexion was pale, her eyes
+                gray and<lb/>without lustre; but in a little time she <pb n="7"/>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> became the favorite, for she
+                was always<lb/>ready to oblige, and would leave her<lb/>play to render any person a
+                benefit, and<lb/>if smaller girls than herself came to visit<lb/>her, she gave them
+                her dolls and toys,<lb/>and would try in every way to amuse<lb/>and please them. But
+                Anna never did<lb/>so; she was too lazy to do a favor for<lb/>those around her, and
+                too selfish to care<lb/>for the pleasure or convenience of any<lb/>one but herself.
+                It distressed her mother<lb/>very much to see so beautiful a girl of<lb/>such a
+                disposition, and she could not<lb/>avoid loving little Clara more every day<lb/>for
+                her goodness and obedience. After<lb/>the last scene, the party sat silent for
+                a<lb/>few minutes, but Anna was too obstinate<lb/>to think of feeling sorry for her
+                conduct,<lb/>though reproved by her mother's words,<lb/>for her sister's different
+                behavior.&mdash;<lb/>&ldquo; Anna,&rdquo; said her mother, &ldquo; you will
+                    nev&ndash;<lb type="inWord"/>er be happy nor beloved, while you con&ndash;<lb
+                    type="inWord"/>tinue so much absorbed by your own <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw><lb/> comfort, and so
+                regardless of that of<lb/>others. Do you think servants are des&ndash;<lb
+                    type="inWord"/>titute of feeling, that you have so little<lb/>consideration for
+                them ? Remember<lb/>that you will hereafter have to give an<lb/>account of your
+                conduct to them &mdash; and<lb/>that of every unkindness God takes no&ndash;<lb
+                    type="inWord"/>tice, and will judge you for it in the last<lb/>day. Now, you do
+                not wish to leave<lb/>your netting for an instant, nor your warm<lb/>fire, and yet
+                you did not mind disturbing<lb/>the servants when you know how fatigued<lb/>they are
+                all day, and that at night they<lb/>strive to do a little work for
+                themselves,<lb/>such as platting straw for baskets and<lb/>mats, by the sale of
+                which they earn<lb/>money, to purchase a few luxuries for<lb/>their families.
+                Believe me, my child,<lb/>if we do not think of the comforts of<lb/>others, we shall
+                be neither respected nor<lb/>valued ourselves, and shall find few<lb/>friends.
+                Besides all this, you have dis&ndash;<lb type="inWord"/>obeyed me, but I need not
+                dwell upon <pb n="9"/>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> this point, you know as well
+                as I do, the<lb/>command of God on the subject.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Anna hung down her head, and seem&ndash;<lb
+                    type="inWord"/>ed for a moment to reflect on what she<lb/>had heard, but a quick
+                rap at the door<lb/>made her forget the advice in curiosity<lb/>to know who was at
+                it. She hastily<lb/>jumped up, and ran into the entry (in<lb/>spite of the cold she
+                had refused to en&ndash;<lb type="inWord"/>counter a few minutes before) and
+                    open&ndash;<lb type="inWord"/>ed the door ere James could reach the<lb/>spot.
+                The snow blew in her face, and<lb/>enwreathed her soft ringlets, and her<lb/>cheeks
+                were crimsoned with the sharp<lb/>air, but Anna regarded not all this, for<lb/>she
+                was delighted to see the milliner's<lb/>girl, with a basket containing their
+                new<lb/>bonnets &mdash; and taking them from her, she<lb/>ran into the parlor to
+                look at them ;<lb/>Clara passed by her, without attending<lb/>to the exclamations of
+                pleasure she<lb/>heard, and kindly went to the girl, who<lb/>was trembling with cold
+                in the passage, <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw><lb/>
+                <figure type="borderornament"/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>46AA175</name>
+                        <desc>child labour - AA - women</desc>
+                    </ic:iconClass>
+                    <head>The Milliner's Girl.</head>
+                </figure><lb/>
+                <pb n="11"/>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw><lb/> and begged her to come in to
+                the fire.<lb/>She gladly did so, and as the children<lb/>tried on the beaver hats
+                and feathers she<lb/>had brought, she could not help think&ndash;<lb type="inWord"
+                />ing, that with all Anna's beauty, Clara's<lb/>was a sweeter countenance, there
+                was<lb/>so much goodness and consideration in<lb/>its expression. Thus by one little
+                act<lb/>of kindness, was a friend obtained !</p>
+            <p rend="first-indent(2) align(justify)">The next morning was bright
+                and<lb/>clear&mdash;the girls were in the nursery<lb/>playing with their dolls. Mrs.
+                Mortimer<lb/>was in her chamber when she called out,<lb/>&ldquo;Anna, go down
+                stairs, and tell Jacob<lb/>to get the sleigh &mdash; the day is so fine we<lb/>will
+                take a ride.&rdquo; &mdash; &ldquo; Oh, mother! do<lb/>send Clara, for I am so busy
+                with this<lb/>baby's frock, that I can not leave it.&rdquo;<lb/>Clara ran off
+                without her mother's speak&ndash;<lb type="inWord"/>ing, and gave the order. When
+                the<lb/>sleigh drove to the door, Mrs. Mortimer<lb/>went into the next room, and
+                there saw<lb/>Anna, ready to go out, dressed in her <pb n="12"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw><lb/> new hat and
+                feathers, and with a gay<lb/>cloak on, looking very prettily. &ldquo; Where<lb/>are
+                you going, Anna?&rdquo; said her mother.<lb/>&ldquo;To ride with you, mamma.&rdquo;
+                &mdash; &lsquo; Indeed,<lb/>you are going to do no such a thing&mdash;as<lb/>it was
+                too much trouble for you to give<lb/>my orders, I am sure it will be too
+                much<lb/>trouble for you to go down to get into<lb/>the sleigh. Betty, undress Miss
+                Anna,<lb/>and put on her calico frock again, she<lb/>will not leave the house
+                to&ndash;day. How is<lb/>this, Clara, not ready ?&rdquo; &mdash; &ldquo; Why,
+                mother,<lb/>when I went to call Jacob, to give your<lb/>message, I saw poor Fidelle
+                limping<lb/>along, and I stopped to bind up his foot;<lb/>a thorn had got in it; but
+                do not wait for<lb/>me, mamma, I will stay at home, as An&ndash;<lb type="inWord"
+                />na will be alone.&rdquo; &mdash; &ldquo; No, my daughter,<lb/>I will wait for you.
+                I like to oblige<lb/>obedient girls, and permit them to go<lb/>out with me. Come
+                here, and let me<lb/>see your bonnet.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Clara was sorry to leave her sister, <pb n="13"/>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw>
+                <fw type="pagenumber" rend="align(right)">11</fw><lb/>
+                <figure type="borderornament"/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>46C1811</name>
+                        <desc>horse-sleigh</desc>
+                    </ic:iconClass>
+                    <head>The Sleighride</head>
+                </figure><lb/>
+                <pb n="14"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw><lb/> but she was very
+                much delighted with<lb/>her ride. Her uncle went with them ;<lb/>and the merry
+                jingle of the sleigh&ndash;bells, as<lb/>they glided swiftly over the snow
+                for<lb/>several miles into the country, was music<lb/>to her ears. She only
+                regretted that her<lb/>sister had not been more obedient to her<lb/>mother, so that
+                she might have enjoyed<lb/>the ride with them.</p>
+            <p rend="first-indent(2) align(justify)">Their father had that morning gone<lb/>to a
+                neighboring town on business of im&ndash;<lb type="inWord"/>portance. He went on
+                horseback, his<lb/>favorite mode of riding, in summer or in<lb/>winter if the
+                weather would permit of<lb/>it. As they were on their way back,<lb/>they discovered
+                him some distance ahead,<lb/>apparently urging on his horse that he<lb/>might get
+                home to his family before sun&ndash;<lb type="inWord"/>down, little dreaming that
+                they were so<lb/>near him. But he was soon apprized of<lb/>their presence by the
+                joyous ringing<lb/>laugh of Clara as they came up with<lb/>him. They continued on in
+                company, <pb n="15"/>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw><lb/>
+                <figure type="borderornament"/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>46C131</name>
+                        <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                    </ic:iconClass>
+                    <head>Mr. Mortimer returning to Town.</head>
+                </figure><lb/>
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw><lb/> till they came
+                into town, when Jacob<lb/>was ordered to drive to the milliner's in<lb/>order that
+                Mrs. Mortimer might pay for<lb/>her daughters' hats, while Mr. Mortimer<lb/>rode
+                directly home. The same servant&ndash;<lb type="inWord"/>girl who brought their
+                hats, was in the<lb/>store, and while Mrs. Mortimer was set&ndash;<lb type="inWord"
+                />tling with her mistress, she brought a<lb/>little gilt cage with a beautiful bird
+                in it, <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34B131</name>
+                        <desc>bird in a cage</desc>
+                    </ic:iconClass>
+                </figure><lb/> and begged Clara to accept it as a keep&ndash;<lb type="inWord"/>sake
+                from her for the kindness she had<lb/>shown her the night before in calling<lb/>her
+                in from the cold. &ldquo; Whenever you<lb/>look at it,&rdquo; said she, &ldquo; it
+                will remind you <pb n="17"/>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw>
+                <fw type="pagenumber" rend="align(right)">15</fw><lb/> that a good action always
+                meets its re&ndash;<lb type="inWord"/>ward.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Anna was much mortified when she<lb/>saw this
+                gift, and heard how much praise<lb/>was bestowed on Clara, and nobody loved<lb/>her,
+                for being selfish. She determined<lb/>to conquer her disagreeable temper,
+                and<lb/>took Clara for an example. In a short<lb/>time she became an amiable girl,
+                and<lb/>then no one could tell which was the<lb/>sweetest, herself or Clara.</p>
+            <p rend="first-indent(2) align(justify)">Now I hope all little girls, who read<lb/>my
+                story, will be good too, and oblige<lb/>every one, and never try to please
+                    them&ndash;<lb type="inWord"/>selves at the expense of another's pleas&ndash;<lb
+                    type="inWord"/>ure ; and I hope, too, they will remem&ndash;<lb type="inWord"
+                />ber, that the prettiest face looks ugly<lb/>when spoiled by ill&ndash;humor; and
+                the<lb/>ugliest looks pretty if it expresses be&ndash;<lb type="inWord"/>nevolence
+                and virtue. I trust they will<lb/>ever avoid that feeling which consists in<lb/><choice>
+                    <orig>oving</orig>
+                    <corr>loving</corr>
+                </choice> self to excess, in thinking upon,<lb/>and seeking eagerly at all times,
+                one's <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">THE SELFISH GIRL.</fw><lb/> own comfort,
+                interest, and pleasure. It<lb/>is a feeling which, by indulgence,
+                gains<lb/>strength, and freezes up all the finer emo&ndash;<lb type="inWord"/>tions
+                of the heart. That they may avoid<lb/>this error, and learn to be kind
+                and<lb/>generous, and to study the comfort and<lb/>happiness of others as earnestly
+                as they<lb/>do their own, is the sincere wish of one<lb/>who has written for their
+                improvement,<lb/>this &ldquo;TALE OF TRUTH.&rdquo;</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31D13</name>
+                    <desc>adolescent, young woman, maiden</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+        </body>
+
+        <back>
+            <pb n="19"/>
+
+            <pb n="20"/>
+            <figure type="borderornament"/>
+            <div type="advertisement" rend="align(centre)">
+                <head>KIGGINS &amp;KELLOGG,</head>
+                <p>Publishers, Booksellers, &amp;Stationers,<lb/>123 &amp;125 William St.</p>
+                <p>Also Manufacturers of every description of<lb/>ACCOUNT BOOKS,<lb/><hi
+                        rend="italic">MEMORANDUMS and PASS BOOKS,</hi><lb/>a large Stock of which is
+                    constantly kept<lb/>on hand.<lb/> Their Assortment
+                    of<lb/>SCHOOL,<lb/>AND<lb/>MISCELLANEOUS BOOKS,<lb/>and of Foreign and
+                        Domestic<lb/>STATIONERY,<lb/><hi rend="italic">is very complete, to the
+                        inspection of which<lb/>they would invite</hi> COUNTRY MERCHANTS<lb/><hi
+                        rend="italic">before purchasing elsewhere</hi>.<lb/>&rule;</p>
+                <p>ALSO PUBLISH,<lb/>REDFIELD'S TOY BOOKS,<lb/>Four Series of Twelve Books
+                    each<lb/>BEAUTIFULLY ILLUSTRATED,</p>
+                <p>PRICE,<measure type="price"> ONE, TWO, FOUR, AND SIX CENTS.</measure></p>
+            </div>
+        </back>
+    </text>
+</TEI>

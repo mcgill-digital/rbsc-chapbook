@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-10-16"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-05-11"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="GeographHistory">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover">
+                <bibl>
+                    <figure type="borderornament"/>
+                    <title level="m">NATURAL<lb/>HISTORY<lb/>OF<lb/>THE BEE.</title>
+                    <figure>
+                        <ic:iconClass>
+                            <name>31D14</name>
+                            <desc>adult man</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <publisher>Providence:<lb/>H. H. BROWN,
+                        PRINTER.<lb/>&rule;<lb/>1831.</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+            <pb n="3"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart>NATURAL<lb/>HISTORY<lb/>OF<lb/>THE BEE.</titlePart>
+                </docTitle>
+                <figure>
+                    <ic:iconClass>
+                        <name>41A646</name>
+                        <desc>garden vase</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace>Providence:</pubPlace>
+                    <publisher>H. H. BROWN, PRINTED.</publisher>
+                    <docDate>1831.</docDate>
+                </docImprint>
+            </titlePage>
+        </front>
+
+        <body>
+            <pb n="4"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C24</name>
+                    <desc>sailing-ship, sailing-boat</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42A411</name>
+                    <desc>cradle, crib</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+
+            <pb n="5"/>
+            <head type="work" rend="align(centre)">NATURAL<lb/>HISTORY<lb/>OF<lb/>THE
+                BEE.<lb/>&rule;<lb/></head>
+            <p rend="first-indent(3) align(justify)"><hi rend="italic"> The Queen Bee. </hi>The
+                royal<lb/>insect passes three days in the<lb/>egg, is five a worm, when the
+                bees<lb/>close its cell, and it immediately<lb/>begins to cocoon, which is
+                finished<lb/>in twenty&ndash;four hours. During<lb/>eleven days, and even
+                sixteen<lb/>hours of the twelfth, it remains<lb/>in a state of complete repose.
+                Its<lb/>transformation into a nymph then<lb/>takes place, in which state
+                four<lb/>days and part of a fifth are pass&ndash;<lb type="inWord"/>ed. On the fifth
+                day after her <pb n="6"/>
+                <fw type="pagenumber" rend="align(centre)">4</fw><lb/> appearance the queen quits
+                the<lb/>hive for the purpose of fecunda&ndash;<lb type="inWord"/>tion :
+                forty&ndash;six hours afterwards<lb/>she begins to lay eggs, and a hive<lb/>will
+                often consist of forty thousand<lb/>inhabitants, the most of them her<lb/>own
+                offspring. The first eggs of<lb/>the queen always give birth to<lb/>workers. In
+                spring she lays about<lb/>two thousand eggs of males, re&ndash;<lb type="inWord"
+                />sumes it again in August, but dur&ndash;<lb type="inWord"/>ing the rest of the
+                intervals she<lb/>exclusively lays workers' eggs.&mdash;<lb/>It is curious that
+                oviposition is re&ndash;<lb type="inWord"/>tarded by cold;during winter it
+                does<lb/>not take place. Huber relates an<lb/>instance where a queen instead
+                of<lb/>laying her eggs 46 hours after fe&ndash;<lb type="inWord"/>cundation, did not
+                do so for seve&ndash;<lb type="inWord"/>ral months, owing to her impregna&ndash;<lb
+                    type="inWord"/>tion having taken place just before<lb/>winter. The queen must be
+                at least <pb n="7"/>
+                <fw type="pagenumber" rend="align(centre)">5</fw><lb/> eleven months old before she
+                    be&ndash;<lb type="inWord"/>gins to lay the eggs of males.&mdash;<lb/>The bees
+                both workers and queen,<lb/>know the period of oviposition<lb/>proper for each kind
+                of egg, and<lb/>take care to provide suitable cells<lb/>at a proper period. Huber
+                    re&ndash;<lb type="inWord"/>moved all the workers' cells from<lb/>a hive, and
+                left nothing but the<lb/>male cells; the bees, instead of<lb/>repairing the damage
+                done to the<lb/>hive, by uniting the fragments of<lb/>comb, seemed quite
+                disheartened,<lb/>went into the field, but returned<lb/>unladen. The queen too,
+                    hesitat&ndash;<lb type="inWord"/>ed about laying her worker eggs<lb/>in the
+                large male cells, and at last<lb/>they were seen to drop from her<lb/>at random.
+                However, six eggs<lb/>were deposited regularly; but the<lb/>workers did not treat
+                them very<lb/>carefully. They were removed <pb n="8"/>
+                <fw type="pagenumber" rend="align(centre)">6</fw><lb/> next day, and the cells left
+                empty.<lb/>In order to re&ndash;animate them, he<lb/>gave the bees a piece of
+                comb,<lb/>composed of workers' cells, but<lb/>which were filled with male
+                    in&ndash;<lb type="inWord"/>stead of workers' eggs. For twelve<lb/>days the bees
+                obstinately abstain&ndash;<lb type="inWord"/>ed from working in wax, but at<lb/>last
+                they positively removed the<lb/>whole of the male brood, and clean&ndash;<lb
+                    type="inWord"/>ed the cells, just as if they had<lb/>been aware that the eggs
+                which<lb/>were to come from the queen re&ndash;<lb type="inWord"/>quired worker
+                cells. As soon as<lb/>this was done, the queen no lon&ndash;<lb type="inWord"/>ger
+                dropped her eggs at random,<lb/>but deposited them in the cells.&mdash;<lb/>The male
+                cells were then taken<lb/>away, and the worker cells restor&ndash;<lb type="inWord"
+                />ed; upon which the ordinary la&ndash;<lb type="inWord"/>bors of the hive were
+                resumed. If<lb/>the workers reasoned and felt, <pb n="9"/>
+                <fw type="pagenumber" rend="align(centre)">7</fw><lb/> here is a fact which would at
+                once<lb/>attest their foresight and their af&ndash;<lb type="inWord"/>fection for
+                their queen; they knew<lb/>she required worker cells, and ac&ndash;<lb type="inWord"
+                />cordingly, to accommodate her,<lb/>they pulled out the male brood,<lb/>which under
+                other circumstances,<lb/>they would have fondly nourished.<lb/><hi rend="italic"
+                    >Murray's Family Library.</hi></p>
+            <p rend="first-indent(3) align(justify)"><hi rend="italic">Economy of Bees.</hi> There
+                are<lb/>three substances for which bees<lb/>forage during their excursions from the
+                hive: honey, or a saccharine<lb/>matter extracted from the nectary<lb/>of
+                flowers&mdash;the <choice>
+                    <orig>pollon</orig>
+                    <corr>pollen</corr>
+                </choice> or fertilizing<lb/>dust of the anthers&mdash;and an odi&ndash;<lb
+                    type="inWord"/>riferous resin called propolis.&mdash;<lb/>Honey is extracted
+                from that part<lb/>of the flower called the nectarium.<lb/>For the purpose of
+                collecting this<lb/>fluid substance, the insect is fur&ndash;<lb type="inWord"
+                />nished with a trunk, or tongue, <pb n="10"/>
+                <fw type="pagenumber" rend="align(centre)">8</fw><lb/> which is capable of doubling
+                up<lb/>or elongating at pleasure. This<lb/>is not formed in the manner of
+                a<lb/>tube, by which the fluid is to be<lb/>sucked up, but like a tongue,
+                to<lb/>lick away the honied juice which<lb/>nature has secreted in little
+                glands<lb/>which were always known to the<lb/>bee, although they had, until
+                a<lb/>very recent period, completely e&ndash;<lb type="inWord"/>luded the researches
+                of the most<lb/>skilful botanists. From the tongue<lb/>this sweet juice is conveyed
+                to<lb/>the mouth; it then passes through<lb/>the gullet into the first stomach,
+                or<lb/>honey bag, which when filled, ap&ndash;<lb type="inWord"/>pears like an
+                oblong bladder, and<lb/>as transparent as chrystal. Chil&ndash;<lb type="inWord"
+                />dren in country places are well<lb/>acquainted with this bladder, and<lb/>destroy
+                many bees in order to get<lb/>at their store of honey. When <pb n="11"/>
+                <fw type="pagenumber" rend="align(centre)">9</fw><lb/> the bee has sufficiently
+                filled this<lb/>bag, it returns to the hive, and re&ndash;<lb type="inWord"/>serving
+                only a small part of its<lb/>load for its own use, disgorges<lb/>the remainder into
+                one of the cells.<lb/>Sometimes the insect may be seen<lb/>delivering its surplus
+                store to an&ndash;<lb type="inWord"/>other bee, which appears ready to<lb/>receive
+                it at the entrance of the<lb/>hive; when it flies off for a fresh<lb/>supply. Some
+                honey combs are<lb/>always left open for the use of the<lb/>common workers engaged
+                in the<lb/>hive ; but the greater number of<lb/>the cells filled during the
+                course<lb/>of the summer are carefully stop&ndash;<lb type="inWord"/>ped up until
+                the infernal supply of<lb/>honey begins to fail and it becomes<lb/>necessary to have
+                recourse to their<lb/>contents. When the harvest of hon&ndash;<lb type="inWord"/>ey
+                is so plentiful that the bees have<lb/>not sufficient room for it, they <pb n="12"/>
+                <fw type="pagenumber" rend="align(centre)">10</fw><lb/> lengthen their cells or
+                build new<lb/>ones. The <choice>
+                    <orig>pollon</orig>
+                    <corr>pollen</corr>
+                </choice>, or yellow dust<choice>
+                    <orig>&rsquo;</orig>
+                    <corr>,</corr>
+                </choice><lb/>which loosely adheres to the cen&ndash;<lb type="inWord"/>tral parts
+                of flowers, is another<lb/>substance eagerly sought after by<lb/>the industrious
+                bee. The breast,<lb/>legs, and many other parts of the<lb/>body, are covered with a
+                fine<lb/>down, or hair. The insect enters<lb/>the cup of a flower charged
+                with<lb/>this yellow farina, rolls itself round,<lb/>and soon becomes quite
+                covered<lb/>with this vegetable dust. Nature<lb/>has provided the bee with
+                means<lb/>admirably adapted to secure the<lb/>treasures thus collected on its
+                body;<lb/>the last joint but one of each leg<lb/>being formed exactly like a
+                brush.<lb/>These natural brushes are passed<lb/>one after another over the
+                various<lb/>parts of the body, and by that<lb/>means the <choice>
+                    <orig>pollon</orig>
+                    <corr>pollen</corr>
+                </choice> is collected into <pb n="13"/>
+                <fw type="pagenumber" rend="align(centre)">11</fw><lb/> two little heaps. The thighs
+                of<lb/>the last pair of the insect's legs<lb/>are furnished with two
+                cavities<lb/>fringed with hair; these form a<lb/>convenient basket for the use
+                of<lb/>the bee. The dust collected from<lb/>a thousand flowers is kneaded<lb/>into
+                diminutive pellets and stuck<lb/>into these cavities; and when these<lb/>balls have
+                been increased to the<lb/>size of a grain of pepper, away<lb/>flies the insect to
+                deposit its store<lb/>in the hive. But this meal, or<lb/>dust, is not always to be
+                obtained<lb/>in sufficient quantities: early in<lb/>the season, before the flowers
+                upon<lb/>which the bee feeds are generally<lb/>blown, this <choice>
+                    <orig>pollon</orig>
+                    <corr>pollen</corr>
+                </choice> is contained in<lb/>a capsule from which in its then<lb/>immature state,
+                it is not easily<lb/>dislodged. The bee, however,<lb/>well knows where the object of
+                its <pb n="14"/>
+                <fw type="pagenumber" rend="align(centre)">12</fw><lb/> search lies
+                concealed&mdash;it exam&ndash;<lb type="inWord"/>ines and feels these
+                repositories:<lb/>having discovered one sufficiently<lb/>advanced towards maturity
+                to an&ndash;<lb type="inWord"/>swer its purpose, it pinches the<lb/>capsule with its
+                teeth, and then<lb/>takes possession of the hidden<lb/>treasure. When a bee
+                charged<lb/>with a load of this vegetable dust<lb/>reaches the hive, it enters one
+                of<lb/>the cells head foremost. The pel&ndash;<lb type="inWord"/>lets are then
+                detached from the<lb/>hollow cavities in which they have<lb/>been carried, and being
+                    moisten&ndash;<lb type="inWord"/>ed and mixed with a small portion<lb/>of honey,
+                they are kneaded into a<lb/>substance called by the country<lb/>people
+                bee&ndash;bread. An adequate<lb/>supply of this food is indispensa&ndash;<lb
+                    type="inWord"/>ble for the health and strength of<lb/>bees during the winter
+                season.&mdash;<lb/>Bees may be robbed of their hon&ndash; <pb n="15" type="inWord"/>
+                <fw type="pagenumber" rend="align(centre)">13</fw><lb/> ey, and will thrive if fed
+                during<lb/>the winter with treacle; but no<lb/>proper substitute has yet
+                been<lb/>found for this bee&ndash;bread. When<lb/>deprived of this necessary of
+                life,<lb/>they become consumptive and die.<lb/>The gathering of the pollen
+                    af&ndash;<lb type="inWord"/>fords a striking illustration of the<lb/>means
+                indirectly employed by na&ndash;<lb type="inWord"/>ture to second her purposes.
+                The<lb/>pollen is the fertilizing dust of<lb/>flowers; it is necessary for
+                some<lb/>of it to fall on a particular part of<lb/>the pistil, in order that the
+                flower<lb/>shall give place to fruit, inclosing<lb/>the seed of a future plant.
+                Now,<lb/>it has been remarked by a great<lb/>number of naturalists, that the
+                bee,<lb/>when it collects the pollen from<lb/>one plant, does not go to a
+                    differ&ndash;<lb type="inWord"/>ent sort of plant for more, but, la&ndash;<lb
+                    type="inWord"/>boring to collect the same kind of <pb n="16"/>
+                <fw type="pagenumber" rend="align(centre)">14</fw><lb/> fertilizing dust, it seeks
+                only the<lb/>same kind of flowers. Since the<lb/>foundation of the vegetable
+                    king&ndash;<lb type="inWord"/>dom is effected in no small degree<lb/>through the
+                medium of insects,<lb/>which, while searching for their<lb/>own food, unconsciously
+                sprinkle<lb/>the fertilizing pollen on the re&ndash;pro&ndash;<lb type="inWord"
+                />ductive organs of plants, it follows,<lb/>that had the bee gone from one<lb/>kind
+                of flower to another, this<lb/>would given rise to hybrid plants,<lb/>and thus have
+                counteracted the<lb/>purpose of nature. <hi rend="italic">Murray' s Fam&ndash;<lb
+                        type="inWord"/>ily Library.</hi></p>
+            <p rend="first-indent(3) align(justify)"><hi rend="italic">Duels of Bees.</hi> On those
+                fine<lb/>spring days, in which the sun is<lb/>beautiful and warm, duels
+                may<lb/>often be seen to take place be&ndash;<lb type="inWord"/>tween two
+                inhabitants of the same<lb/>hive. In some cases, the quarrel<lb/>appears to have
+                begun within, and <pb n="17"/>
+                <fw type="pagenumber" rend="align(centre)">15</fw><lb/> the combatants may be seen
+                    com&ndash;<lb type="inWord"/>ing out of the gates eager for blows.<lb/>Sometimes
+                a bee peaceably settled<lb/>on the outside of the hive, or walk&ndash;<lb
+                    type="inWord"/>ing about is rudely jostled by<lb/>another, and then the attack
+                    com&ndash;<lb type="inWord"/>mences, each endeavoring to ob&ndash;<lb
+                    type="inWord"/>tain the most advantageous posi&ndash;<lb type="inWord"/>tion.
+                They turn, pirouettle, throt&ndash;<lb type="inWord"/>tle each other; and such is
+                their<lb/>bitter earnestness, that Reaumur<lb/>has been enabled to come
+                near<lb/>enough to observe them with a<lb/>lens without causing a
+                separation.<lb/>After rolling about in the dust,<lb/>the victor, watching the time
+                when<lb/>its enemy uncovers his body by<lb/>elongating it, in the attempt
+                to<lb/>sting, thrusts its weapon between<lb/>the scales, and the next instant
+                its<lb/>antagonist stretches out its quiv&ndash;<lb type="inWord"/>ering wings, and
+                expires. A bee <pb n="18"/>
+                <fw type="pagenumber" rend="align(centre)">16</fw><lb/> cannot be killed so
+                suddenly, ex&ndash;<lb type="inWord"/>cept by crushing, as by the sting<lb/>of
+                another bee. Sometimes the<lb/>stronger insect produces the death<lb/>of the
+                vanquished by squeezing<lb/>its chest. After this feat has been<lb/>done, the
+                victorious bee constant&ndash;<lb type="inWord"/>ly remains, says Reaumur,
+                near<lb/>his victim, standing on his four<lb/>front legs, and rubbing the
+                two<lb/>posterior ones together. Some&ndash;<lb type="inWord"/>times the enemy is
+                killed in the<lb/>hive; then the victor always car&ndash;<lb type="inWord"/>ries the
+                corpse out of the city and<lb/>leaves it. These combats are<lb/>strictly duels, not
+                more than two<lb/>being concerned in them; and this<lb/>is even the case when armies
+                of<lb/>bees meet in combat. <hi rend="italic">Murray's<lb/>Family Library.</hi></p>
+        </body>
+        <back rend="align(centre)">
+            <pb n="19"/>
+
+            <pb n="20"/>
+            <div type="alphabet">
+                <figure>
+                    <ic:iconClass>
+                        <name>46C144</name>
+                        <desc>four-wheeled, animal-drawn vehicle, e.g.: cab, carriage, coach</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <div type="alphabet">
+                    <p><lb/>&rule;<lb/></p>
+
+                    <p>A B C D E F<lb/>G H I J K L<lb/>M N O P Q R<lb/>S T U V W<lb/>X <choice>
+                            <orig>Z</orig>
+                            <corr>Y</corr>
+                        </choice> Z &amp;</p>
+                    <p><lb/>&rule;<lb/></p>
+                </div>
+                <figure>
+                    <ic:iconClass>
+                        <name>46C251</name>
+                        <desc>paddle-wheel boat</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+            </div>
+        </back>
+    </text>
+</TEI>

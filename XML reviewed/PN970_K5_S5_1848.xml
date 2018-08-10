@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-16"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-06"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="MetricalTales">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="yellow coloured pictorial wrappers">
+                <note type="handwritten" rend="align(centre)"><unclear/></note>
+                <bibl>
+                    <figure type="borderornament"/>
+                    <series>
+                        <biblScope>SECOND SERIES.&mdash;No. 11.<lb/>&rule;<lb/></biblScope>
+                    </series>
+                    <title level="m">SIMPLE POEMS<lb/>FOR<lb/>INFANT MINDS.</title>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25F(+421)</name>
+                            <desc>animals (+ nest, den, burrow)</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <publisher>NEW YORK:<lb/>KIGGINS &amp;KELLOGG,<lb/>123 &amp;125 William
+                        St.</publisher>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+            <note type="handwritten" rend="align(left)">SARAH</note>
+            <note type="handwritten" rend="align(centre)">PATIA</note>
+
+            <pb n="3"/>
+            <titlePage>
+
+                <docTitle>
+                    <titlePart type="main">SIMPLE POEMS<lb/>FOR<lb/>INFANT MINDS.</titlePart>
+                </docTitle>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F(+421)</name>
+                        <desc>animals (+ nest, den, burrow)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace>NEW YORK:</pubPlace>
+                    <publisher>KIGGINS &amp;KELLOGG,<lb/>88 JOHN STREET.</publisher>
+                </docImprint>
+            </titlePage>
+
+            <pb n="4"/>
+            <figure rend="align(centre) landscape">
+                <ic:iconClass>
+                    <name>46C24</name>
+                    <desc>sailing-ship, sailing-boat</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+        </front>
+
+        <body>
+            <pb n="5"/>
+            <head type="work" rend="align(centre)">SIMPLE POEMS,<lb/>FOR INFANT
+                MINDS.<lb/>&rule;<lb/></head>
+            <div type="section">
+                <lg>
+                    <head rend="align(centre)">THE SAIL&ndash;BOAT.</head>
+                    <lb/>
+                    <lg>
+                        <l rend="align(left)">OH, see our little boat,</l>
+                        <l rend="indent(2) align(left)">How prettily it glides;</l>
+                        <l rend="align(left)">Like a bird it seems to float,</l>
+                        <l rend="indent(2) align(left)">Press'd forward by the tides,</l>
+                        <l rend="align(right)">By the tides.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="align(left)">The sky is shining brightly,</l>
+                        <l rend="indent(2) align(left)">The fishes dart below,</l>
+                        <l rend="align(left)">While our little boat so lightly</l>
+                        <l rend="indent(2) align(left)">Leaps onward as we go&mdash;</l>
+                        <l rend="align(right)">As we go</l>
+                    </lg>
+                    <pb n="6"/>
+                    <fw type="pagenumber" rend="align(left)">4</fw>
+                    <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l rend="align(left)">I would like to be a boat,</l>
+                    <l rend="indent(2) align(left)">And live upon the sea;</l>
+                    <l rend="align(left)">So merrily I'd float,</l>
+                    <l rend="indent(2) align(left)">With naught to trouble me&mdash;</l>
+                    <l rend="align(right)">Trouble me.</l>
+                    <lb/>
+                </lg>
+                <lg>
+
+                    <l rend="align(left)">But should a storm come near,</l>
+                    <l rend="indent(2) align(left)">And fill me with alarms,</l>
+                    <l rend="align(left)">I would row to mother dear&mdash;</l>
+                    <l rend="indent(2) align(left)">My boat should be her arms,</l>
+                    <l rend="align(right)">Mother's arms.</l>
+                </lg>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C24</name>
+                        <desc>sailing-ship, sailing-boat</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+            </div>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <fw type="pagenumber" rend="align(right)">5</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">A LITTLE STORY.</head>
+                    <lb/>
+                    <l>I WILL write a little story,</l>
+                    <l rend="indent(2)">About a little boy;</l>
+                    <l>He is his father's comfort,</l>
+                    <l rend="indent(2)">He is his mother's joy.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>When we give a little errand,</l>
+                    <l rend="indent(2)">He thinks of what is said,</l>
+                    <l>Pulls down his little waistcoat,</l>
+                    <l rend="indent(2)">And holds up his little head.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>He holds his little fork</l>
+                    <l rend="indent(2)">By the handle as he should,</l>
+                    <l>And never spills his coffee,</l>
+                    <l rend="indent(2)">Nor drops about his food.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>His face is very pleasant,</l>
+                    <l rend="indent(2)">What he says is always true;</l>
+                    <l>Now tell me, <hi rend="italic">youngest reader</hi>,</l>
+                    <l rend="indent(2)">If this little boy is <hi rend="italic">you</hi>.</l>
+                </lg>
+            </div>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">MY LITTLE DOLL ROSE.</head>
+                    <lb/>
+                    <l>I HAVE a little doll,</l>
+                    <l rend="indent(2)">I take care of her clothes ;</l>
+                    <l>She has soft flaxen hair,</l>
+                    <l rend="indent(2)">And her name is Rose.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>She has pretty blue eyes,</l>
+                    <l rend="indent(2)">And a very small nose,</l>
+                    <l>And a cunning little mouth;</l>
+                    <l rend="indent(2)">And her name is Rose.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>I have a little sofa</l>
+                    <l rend="indent(2)">Where my doll may repose,</l>
+                    <l>Or sit up like a lady;</l>
+                    <l rend="indent(2)">And her name is Rose.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>My doll can move her arms,</l>
+                    <l rend="indent(2)">And stand upon her toes,</l>
+                    <l>She can make a pretty courtesy,</l>
+                    <l rend="indent(2)">My dear little Rose.</l>
+                </lg>
+            </div>
+
+            <pb n="9"/>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <fw type="pagenumber" rend="align(right)">7</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34B1311</name>
+                        <desc>empty bird cage</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg rend="align(left)">
+                    <head rend="align(centre)">MY BIRD IS GONE.</head>
+                    <lb/>
+                    <l>&ldquo;MY bird is gone,&rdquo;</l>
+                    <l rend="indent(2)">Said Fanny Ray;</l>
+                    <l>&ldquo;My bird has flown,</l>
+                    <l rend="indent(2)">I can not play.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>&ldquo; He sung so sweetly,</l>
+                    <l rend="indent(2)">Every day;</l>
+                    <l>He sings no more,</l>
+                    <l rend="indent(2)">I can not play.</l>
+
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(left)">8</fw>
+                    <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>&ldquo; Go, put his cage</l>
+                    <l rend="indent(2)">Far, far away,</l>
+                    <l>I do not love,</l>
+                    <l rend="indent(2)">His cage to&ndash;day.&rdquo;</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>She wiped her eyes,</l>
+                    <l rend="indent(2)">Poor Fanny Ray;</l>
+                    <l>And sat and sighed,</l>
+                    <l rend="indent(2)">But could not play.</l>
+                </lg>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F3</name>
+                        <desc>birds</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+            </div>
+
+
+            <pb n="11"/>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <fw type="pagenumber" rend="align(right)">9</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">THE BIRD'S ANSWER.</head>
+                    <lb/>
+
+                    <l>&ldquo;I AM sorry, my dear,</l>
+                    <l>But I'd rather live here ;</l>
+                    <l>The skies they are fair,</l>
+                    <l>And I love the fresh air,</l>
+                    <l>The trees they are green,</l>
+                    <l>And I sit like a queen,</l>
+                    <l>On a branch as it goes,</l>
+                    <l>While the pleasant wind blows.</l>
+                    <l>I have more on my table</l>
+                    <l>To eat than I'm able,</l>
+                    <l>For the very large field</l>
+                    <l>My dessert does yield;</l>
+                    <l>But come from your book,</l>
+                    <l>With a good humored look,</l>
+                    <l>When with care you have read</l>
+                    <l>And your lesson is said,</l>
+                    <l>Sit under the tree,</l>
+                    <l>With your sewing by me,</l>
+                    <l>And this afternoon,</l>
+                    <l>I will sing you a tune.&rdquo;</l>
+                </lg>
+            </div>
+
+            <pb n="12"/>
+            <fw type="pagenumber" rend="align(left)">10</fw>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">THE KITE.</head>
+                    <lb/>
+                    <l>OH look at my kite,</l>
+                    <l>In its airy flight,</l>
+                    <l>How pretty it flies,</l>
+                    <l>Right up to the skies,</l>
+                    <l>With its white breast stirr'd,</l>
+                    <l>Just like a bird !</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l rend="indent(2)">Pretty kite, pretty kite,</l>
+                    <l>In your airy flight</l>
+                    <l>What do you spy,</l>
+                    <l>In the bright blue sky ?</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l rend="indent(2)">I wish I was you,</l>
+                    <l>To be there too,</l>
+                    <l>Oh, then, how soon</l>
+                    <l>I would peep at the moon,</l>
+                    <l>And see the man there,</l>
+                    <l>Who gives me a stare,</l>
+                    <l>When I look up at night,</l>
+                    <l>At his beautiful light!</l>
+                </lg>
+            </div>
+
+            <pb n="13"/>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <fw type="pagenumber" rend="align(right)">11</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">OH ! LOOK AT THE MOON.</head>
+                    <lb/>
+                    <l>OH, look at the moon!</l>
+                    <l rend="indent(2)">She is shining up there,</l>
+                    <l>Oh, mother, she looks</l>
+                    <l rend="indent(2)">Like a lamp in the air.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>Last week she was smaller,</l>
+                    <l rend="indent(2)">And shaped like a bow,</l>
+                    <l>But now she's grown bigger,</l>
+                    <l rend="indent(2)">And round as an O.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>Pretty moon, pretty moon,</l>
+                    <l rend="indent(2)">How you shine on the door,</l>
+                    <l>And make it all bright</l>
+                    <l rend="indent(2)">On my nursery floor.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>You shine on my playthings,</l>
+                    <l rend="indent(2)">And show me their place,</l>
+                    <l>And I love to look up</l>
+                    <l rend="indent(2)">At your pretty bright face.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>And there is a star</l>
+                    <l rend="indent(2)">Close by you, and may be</l>
+                    <l>That small twinkling star</l>
+                    <l rend="indent(2)">Is your little baby.</l>
+                </lg>
+            </div>
+
+            <pb n="14"/>
+            <fw type="pagenumber" rend="align(left)">12</fw>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <lb/>
+            <div type="section">
+                <lg>
+                    <head rend="align(centre)">THE SLEEPING BABY.</head>
+                    <lb/>
+                    <l rend="align(left)">HUSH, hush, with your noise,</l>
+                    <l rend="indent(2) align(left)">What a talking you keep,</l>
+                    <l rend="align(left)">You rude little boys,</l>
+                    <l rend="indent(2) align(left)">Now the baby's asleep !</l>
+                    <l rend="align(right)">Hushaby, baby.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l rend="align(left)">Mamma has just told me</l>
+                    <l rend="indent(2) align(left)">To stay quite here,</l>
+                    <l rend="align(left)">And, oh, she will scold me,</l>
+                    <l rend="indent(2) align(left)">If wakes, baby dear.</l>
+                    <l rend="align(right)">Hushaby, baby.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l rend="align(left)">How soft its white arm,</l>
+                    <l rend="indent(2) align(left)">As it lies on its breast,</l>
+                    <l rend="align(left)">Little baby no harm</l>
+                    <l rend="indent(2) align(left)">Shall come while you rest.</l>
+                    <l rend="align(right)">Hushaby, hush.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l rend="align(left)">My task has been given,</l>
+                    <l rend="indent(2) align(left)">And I will be true,</l>
+                    <l rend="align(left)">And sister and Heaven</l>
+                    <l rend="indent(2) align(left)">Will watch over you.</l>
+                    <l rend="align(right)">Hushaby, baby.</l>
+                </lg>
+            </div>
+
+            <pb n="15"/>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <fw type="pagenumber" rend="align(right)">13</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">SCHOOL IS OUT.</head>
+                    <lb/>
+                    <l>SCHOOL is out,</l>
+                    <l>But do not shout;</l>
+                    <l>School is done,</l>
+                    <l>But do not run.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>Put up your slate,</l>
+                    <l>Neat and straight;</l>
+                    <l>Make your bow,</l>
+                    <l>If you know how.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>Take your &ldquo; spelling,&rdquo;</l>
+                    <l>To your dwelling,</l>
+                    <l>Your &ldquo; reading&rdquo; too,</l>
+                    <l>Keep clean and new.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>Then go home,</l>
+                    <l>And do not roam;</l>
+                    <l>Your parents kiss,</l>
+                    <l>In quietness.</l>
+                    <lb/>
+                </lg>
+                <lg rend="align(left)">
+                    <l>Now run and play;</l>
+                    <l>And so, &ldquo; good day.&rdquo;</l>
+                </lg>
+            </div>
+
+            <pb n="16"/>
+            <fw type="pagenumber" rend="align(left)">14</fw>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">TO AN ANT.</head>
+                    <lb/>
+                    <l>RUN here, little ant,</l>
+                    <l>For the pretty bird can't.</l>
+                    <l>I want you to come,</l>
+                    <l>And live at my home;</l>
+                    <l>I know you will stay,</l>
+                    <l>And help me to play.</l>
+                    <l>Stop making that hill,</l>
+                    <l>Little ant, and be still;</l>
+                    <l>Come creep to my feet,</l>
+                    <l>Here is sugar to eat.</l>
+                    <l>Say are you not weary,</l>
+                    <l>My poor little deary,</l>
+                    <l>With bearing that load,</l>
+                    <l>Across the wide road ?</l>
+                    <l>Leave your hill now, to me,</l>
+                    <l>And then you shall see,</l>
+                    <l>That by filling my hand,</l>
+                    <l>I can pile up the sand,</l>
+                    <l>And save you the pains,</l>
+                    <l>Of bringing these grains.</l>
+                </lg>
+            </div>
+
+            <pb n="17"/>
+            <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+            <fw type="pagenumber" rend="align(right)">15</fw>
+            <lb/>
+            <div type="section">
+                <lg rend="align(left)">
+                    <head rend="align(centre)">THE ANT'S ANSWER.</head>
+                    <lb/>
+                    <l>STOP, stop, little miss,</l>
+                    <l>No such building as this,</l>
+                    <l>Will answer for me,</l>
+                    <l>As you plainly can see.</l>
+                    <l>I take very great pains,</l>
+                    <l>And place all the grains</l>
+                    <l>As if with a tool,</l>
+                    <l>By a carpenter's rule.</l>
+                    <l>You have thrown the sand</l>
+                    <l>All out of your hand,</l>
+                    <l>And so filled up my door,</l>
+                    <l>That I can't find it more.</l>
+                    <l>My king and my queen</l>
+                    <l>Are choked up within ;</l>
+                    <l>My little ones too,</l>
+                    <l>Oh what shall I do ?</l>
+                    <l>You have smothered them all</l>
+                    <l>With the sand you let fall;</l>
+                    <l>I must borrow, or beg,</l>
+                    <l>Or look for an egg,</l>
+                    <l>To keep under my eye,</l>
+                </lg>
+                    <pb n="18"/>
+                    <fw type="pagenumber" rend="align(left)">16</fw>
+                    <fw type="header" rend="align(centre)">SIMPLE POEMS.</fw>
+                    <lb/>
+                <lg>
+                    <l>For help by&ndash;and&ndash;by.</l>
+                    <l>A new house I must raise,</l>
+                    <l>In a very few days,</l>
+                    <l>Nor stand here and pine,</l>
+                    <l>Because you've spoilt mine.</l>
+                    <l>For when winter days come,</l>
+                    <l>I shall mourn for my home;</l>
+                    <l>So stand out of my way,</l>
+                    <l>I have no time to play.</l>
+                </lg>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>41A54</name>
+                        <desc>fence, wall, paling</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+            </div>
+        </body>
+        <back>
+            <pb n="19"/>
+
+            <pb n="20"/>
+            <figure type="borderornament"/>
+            <div type="advertisement" rend="align(centre)">
+                <head>KIGGINS &amp;KELLOGG,</head>
+                <p>Publishers, Booksellers, &amp;Stationers,<lb/>123 &amp;125 William St.</p>
+                <p>Also Manufacturers of every description of<lb/>ACCOUNT BOOKS,<lb/><hi
+                        rend="italic">MEMORANDUMS and PASS BOOKS,</hi><lb/>a large Stock of which is
+                    constantly kept<lb/>on hand. Their Assortment
+                    of<lb/>SCHOOL,<lb/>AND<lb/>MISCELLANEOUS BOOKS,<lb/>and of Foreign and
+                        Domestic<lb/>STATIONERY,<lb/><hi rend="italic">is very complete, to the
+                        inspection of which<lb/>they would invite</hi> COUNTRY MERCHANTS<lb/>before
+                    purchasing elsewhere.<lb/>&rule;</p>
+                <p>JUST PUBLISHED,<lb/>REDFIELD'S TOY BOOKS,<lb/>Four Series of Twelve Books
+                    each,<lb/>BEAUTIFULLY ILLUSTRATED,</p>
+                <p><hi rend="italic">Price,<measure type="price"> One, Two, Four, and Six
+                            Cents.</measure></hi></p>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-11-21"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-07"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="pink coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <bibl>
+                    <lb/><title level="m">THE <lb/>PLATE OF CHERRIES.</title>
+                    <lb/>&rule; <lb/><publisher>RELIGIOUS TRACT SOCIETY ;</publisher>
+                    <lb/><pubPlace>56, Paternoster&ndash;row; 164, Piccadilly,
+                        <lb/>LONDON.</pubPlace>
+                </bibl>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>49N1</name>
+                        <desc>reading to somebody</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+
+            <pb n="2"/>
+        </front>
+
+        <body>
+            <pb n="3"/>
+            <head type="work" rend="align(centre)">THE PLATE OF CHERRIES.</head>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>33A3</name>
+                    <desc>visiting; receiving guests; elegant company</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(justify)">OF all the cherry&ndash;trees in our<lb/>village there was not
+                one like that<lb/>which grew in Widow White's<lb/>little garden The children, as <fw
+                    type="signature" rend="align(right)"><hi rend="italics">f</hi></fw>
+                <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">2</fw>
+                <fw type="header" rend="align(centre)">THE PLATE OF CHERRIES.</fw><lb/> they came
+                out of school, were<lb/>sure to stop and look at the<lb/>red&ndash;cheeked fruit in
+                the cherry<lb/>season. But it is a sad thing to<lb/>tell, that there were some of
+                the<lb/>school&ndash;boys who not only threw<lb/>stones to knock down the
+                    cher&ndash;<lb type="inWord"/>ries, but took a delight in playing<lb/>some other
+                foolish tricks, which<lb/>often ended to their own hurt<lb/>and shame.</p>
+            <p rend="first-indent(2) align(justify)">By the side of the cherry&ndash;<lb/>tree at
+                Widow White's was a<lb/>large water&ndash;butt, placed near the<lb/>gate which
+                opened into a green,<lb/>shady lane; and to this spot<lb/>some of the bad boys
+                would<lb/>often slily creep, and then<lb/>turn the tap, that the water<lb/>might run
+                to waste, while they<lb/>got quickly away. This conduct <pb n="5"/>
+                <fw type="header" rend="align(centre)">THE PLATE OF CHERRIES.</fw>
+                <fw type="pagenumber" rend="align(right)">3</fw><lb/> was the more shameful, as
+                water<lb/>was scarce in the village, and peo&ndash;<lb type="inWord"/>ple had to
+                bring it from a distant<lb/>brook.</p>
+            <p rend="first-indent(2) align(justify)">Many a time did the poor<lb/>widow try to
+                overtake the wicked<lb/>boys, but they were too swift of<lb/>foot for her to secure.
+                One day,<lb/>however, just after the school<lb/>had broken up, three of the
+                boys<lb/>made their way to the garden&ndash;<lb/>gate. They looked up and
+                down<lb/>the lane, and over the common.<lb/>They saw no one at hand, so
+                they<lb/>slily opened the gate, and set<lb/>the water running all over the<lb/>path.
+                They were about to<lb/>hasten away, when who should<lb/>turn the corner but
+                Widow<lb/>White; and little John Turner,<lb/>in his flurry, ran directly against <pb
+                    n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">THE PLATE OF CHERRIES.</fw><lb/> her, and was
+                caught in her<lb/>arms.</p>
+            <p rend="first-indent(2) align(justify)">John tried hard to get away,<lb/>but holding
+                him fast by the<lb/>collar of his jacket, she managed<lb/>to take him through her
+                kitchen,<lb/>into her little front parlour.<lb/>&ldquo; There now, sit down,&rdquo;
+                said<lb/>Mrs. White, almost out of<lb/>breath : &ldquo; sit there, I desire
+                you,<lb/>till I return.&rdquo; She then went<lb/>out of the room, taking care
+                to<lb/>lock the door after her. John<lb/>sat down, and was now left to<lb/>his own
+                thoughts, which were<lb/>not of a very pleasant kind.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; How foolish have I been to<lb/>get into
+                such trouble!&rdquo; said John.<lb/>&ldquo; What will my mother say to<lb/>me, and
+                what will the school&ndash;<lb type="inWord"/>master do, when he knows what <pb
+                    n="7"/>
+                <fw type="header" rend="align(centre)">THE PLATE OF CHERRIES.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> I have done ? And how the
+                boys<lb/>will laugh at me for being caught<lb/>and punished! &rdquo;</p>
+            <p rend="first-indent(2) align(justify)">While John was thus speak&ndash;<lb
+                    type="inWord"/>ing to himself, he heard the<lb/>steps of Widow White at
+                the<lb/>door. As the lock was unturned,<lb/>his eyes at once fell on the<lb/>hands
+                of the old lady, for he<lb/>made sure she had gone into<lb/>the garden for a stick
+                to beat<lb/>him. But what was his surprise<lb/>when he saw in her hand a
+                plate<lb/>of ripe cherries!</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Do you like cherries, my<lb/>little boy
+                ?&rdquo; she said, in her<lb/>usual kind manner. John looked<lb/>at her, and did not
+                know what<lb/>to answer.&ldquo; Does she mean,&rdquo;<lb/>thought he, &ldquo; to
+                give me the<lb/>cherries first, and the flogging <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">THE PLATE OF CHERRIES.</fw><lb/> afterwards
+                ?&rdquo; &ldquo; Come, do not<lb/>be afraid: see, if you think they<lb/>are
+                ripe,&rdquo; she continued. John<lb/>now took one. &ldquo; There, don't<lb/>be
+                afraid, take a few more.&rdquo;<lb/>Widow White then placed the<lb/>whole plateful
+                on the table, and<lb/>invited him to take as many as<lb/>he thought would do him
+                good.</p>
+            <p rend="first-indent(2) align(justify)">The boy could not make out<lb/>what it all
+                meant. But as he<lb/>saw she did not look angry, he<lb/>took courage, and ate nearly
+                all<lb/>the fruit. &ldquo;Well, John,&rdquo; said<lb/>she, &ldquo; are they not fine
+                cherries ?&rdquo;<lb/>In a short time he began to<lb/>think that Widow White
+                was,<lb/>indeed, a good old woman; and<lb/>the more so, when she sat down<lb/>by his
+                side, and talked to him<lb/>kindly of the folly and sin of<lb/>playing hurtful
+                tricks, and of <pb n="9"/>
+                <fw type="header" rend="align(centre)">THE PLATE OF CHERRIES.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/> joining bad boys in their
+                evil<lb/>ways. She told him to ask God<lb/>for his Holy Spirit, to give him
+                a<lb/>new heart, that he might be made<lb/>sorry for his sins, and find
+                mercy<lb/>for the sake of Jesus Christ the<lb/>only and ever&ndash;blessed
+                Saviour.</p>
+            <p rend="first-indent(2) align(justify)">After she had thus spoken to<lb/>him, she said,
+                &ldquo; There, John,<lb/>you may now go home, or your<lb/>mother will think some
+                harm has<lb/>come to you; but before you go<lb/>I wish you to tell me if you
+                will<lb/>turn the tap any more, and<lb/>waste the water from the butt
+                ?&rdquo;<lb/>&ldquo;Oh, no,&rdquo; cried John, as the<lb/>tears came into his eyes,
+                and<lb/>his heart beat quickly, &ldquo;that I<lb/>never will; and if I see
+                any<lb/>other boys about to do it, I will<lb/>try all I can to stop them.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">The Widow White's forgiving <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">THE PLATE OF CHERRIES.</fw><lb/> conduct had
+                touched the heart<lb/>of little John Turner; and it is<lb/>reported in the village
+                that from<lb/>that time, the boys never again<lb/>threw stones at the
+                cherry&ndash;tree,<lb/>nor acted rudely in any way to<lb/>the kind old woman. As for
+                John,<lb/>when he used to meet her, he<lb/>always made a low bow, looked<lb/>up in
+                her face with a smile, as<lb/>the thought would come into<lb/>his mind of the way in
+                which<lb/>she led him to repent of his bad<lb/>conduct by the gift of a plate<lb/>of
+                ripe, red cherries.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; BE NOT OVERCOME OF EVIL,<lb/>BUT
+                OVERCOME EVIL WITH GOOD,&rdquo;<lb/> Rom. <num type="roman numeral">xii</num>.
+                21.</p>
+            <div type="colophon"><p>&rule;<lb/>Pardon and Son, Printers,
+                Paternoster&ndash;row.</p></div>
+            <lb/>
+
+        </body>
+        <back>
+
+            <pb n="11"/>
+
+            <pb n="12"/>
+            <figure type="borderornament"/>
+            <div type="epigraph">
+                <lg>
+                    <l>LORD, If thou thy grace impart,</l>
+                    <l>Poor in spirit, meek in heart,</l>
+                    <l>I shall as my Saviour be,</l>
+                    <l>Clothed with humility.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l>Simple, teachable, and mild,</l>
+                    <l>Changed into a little child ;</l>
+                    <l>Pleased with all the Lord provides,</l>
+                    <l>Wean'd from all the world besides.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l>Father, fix my soul on Thee,</l>
+                    <l>Every evil let me flee :</l>
+                    <l>Nothing want, beneath, above,</l>
+                    <l>Happy in thy care and love.</l>
+                    <lb/>
+                </lg>
+                <lg>
+                    <l>Oh that all may seek and find</l>
+                    <l>Every good in Jesus join'd ;</l>
+                    <l>Him let every saint adore,</l>
+                    <l>Trust him, praise him, evermore.</l>
+                </lg>
+            </div>
+        </back>
+    </text>
+</TEI>

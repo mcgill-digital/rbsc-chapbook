@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-11-07"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-06"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="GeographHistory">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="yellow coloured pictorial wrappers align(centre)">
+                <bibl>
+                    <title level="m">THE <lb/>HISTORY <lb/>OF <lb/>CURIOUS AND WONDERFUL
+                        <lb/>BIRDS.</title>
+                    <lb/>
+                </bibl>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F3</name>
+                        <desc>birds</desc>
+                    </ic:iconClass>
+                </figure>
+                <lg>
+                    <l>The birds that rise on trembling wing,</l>
+                    <l>Appear to hymn their Maker's praise,</l>
+                    <l>And all the mingling sounds of Spring,</l>
+                    <l>To God a general song do raise.</l>
+                </lg>
+                <p>&rule;</p>
+                <bibl>
+                    <lb/><pubPlace>NEW&ndash;YORK:</pubPlace>
+                    <lb/><publisher>Printed and sold by Mahlon Day,</publisher>
+                    <lb/><hi rend="italics">At the New Juvenile Bookstore,</hi>
+                    <lb/><pubPlace>No. 376, Pearl&ndash;street.</pubPlace>
+                </bibl>
+
+                <pb n="2"/>
+            </div>
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart>THE<lb/>HISTORY<lb/>OF<lb/>CURIOUS AND
+                        WONDERFUL<lb/>BIRDS.</titlePart>
+                </docTitle>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F3</name>
+                        <desc>birds</desc>
+                    </ic:iconClass>
+                </figure>
+                <epigraph>
+                    <lg>
+                        <l>The birds that rise on trembling wing,</l>
+                        <l>Appear to hymn their Maker's praise,</l>
+                        <l>And all the mingling sounds of Spring,</l>
+                        <l>To God a general song do raise.</l>
+                    </lg>
+                    <p>&rule;</p>
+                </epigraph>
+                <docImprint>
+                    <pubPlace>NEW&ndash;YORK:</pubPlace>
+                    <publisher>Printed and sold by Mahlon Day,</publisher>
+                    <pubPlace><hi rend="italics">At the New Juvenile Bookstore,</hi><lb/>No. 376,
+                        Pearl&ndash;street.</pubPlace>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(centre)">2</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F35</name>
+                    <desc>(BIRD OF PARADISE)	ornamental birds: bird of paradise</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE TOUCAN.</p>
+            <p rend="first-indent(2) align(justify)">This bird is a native of South<lb/>America,
+                very conspicuous for the<lb/>bigness and shape of its bill. The<lb/>monkies are his
+                bitter enemies ;<lb/>they often attack his nest, but Pro&ndash;<lb type="inWord"
+                />vidence has allotted him a head and<lb/>beak of such a size, as to fill up
+                the<lb/>whole entrance of his nest ; and<lb/>when the plunderer approaches,<lb/>the
+                bird gives him such a rough<lb/>welcome, that the monkey is glad<lb/>to run
+                away.</p>
+
+            <pb n="5"/>
+            <fw type="pagenumber" rend="align(centre)">3</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>25F36</name>
+                    <desc>water-birds</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE PENGUIN.</p>
+            <p rend="first-indent(2) align(justify)">This bird is never seen far from<lb/>shore, and
+                it is therefore, a sure in&ndash;<lb type="inWord"/>dication to the seamen, who
+                observe<lb/>it, that land is near. Its legs are<lb/>placed very far back, which
+                makes<lb/>the bird a bad walker ; but it swims<lb/>and dives well. It walks
+                erect,<lb/>when on the land, and makes a<lb/>very curious sight.</p>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(centre)">4</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>25F38</name>
+                    <desc>(OSTRICH)	walker and runner birds: ostrich</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE OSTRICH.</p>
+            <p rend="first-indent(2) align(justify)">This is the largest of birds, it<lb/>being ten
+                feet in height, when it<lb/>raises its head. It is a glutton in<lb/>eating, for it
+                will devour leather,<lb/>glass, iron, bread and hair, as well<lb/>as other food. The
+                eggs of an Os&ndash;<lb type="inWord"/>trich are about the size of an
+                infant's<lb/>head. The Ostrich is hunted for<lb/>its feathers, the surpassing
+                beauty<lb/>of which is well known. These<lb/>fine feathers are from the tail
+                of<lb/>the bird.</p>
+
+            <pb n="7"/>
+            <fw type="pagenumber" rend="align(centre)">5</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F37</name>
+                    <desc>(CRANE)	shore-birds and wading-birds: crane</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE CRANE.</p>
+            <p rend="first-indent(2) align(justify)">These birds fly from the south in<lb/>the
+                Spring, and spend their Sum&ndash;<lb type="inWord"/>mer in northern regions.
+                Their<lb/>flight is generally so high, that they<lb/>are rarely observed. They may
+                be<lb/>seen afar off, with their long necks<lb/>stretched out, and slim legs
+                    hang&ndash;<lb type="inWord"/>ing behind, with slow steady flap,<lb/>the sight
+                of which has often de&ndash;<lb type="inWord"/>lighted us. They sometimes
+                utter<lb/>a shrill cry, which can be heard two<lb/>miles.</p>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(centre)">6</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F32</name>
+                    <desc>(WREN)	song-birds: wren</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE WREN.</p>
+            <p rend="first-indent(2) align(justify)">This little gossip usually makes<lb/>her nest
+                near the garden, in some<lb/>box or crevice of a tree ; or she will<lb/>put up with
+                an old hat, nailed<lb/>against the weather&ndash;boards, with a<lb/>small bole for
+                an entrance. They<lb/>hate a cat ; they have been seen<lb/>to fly at puss, who sat
+                in the gar&ndash;<lb type="inWord"/>den, and snap their little beak
+                very<lb/>spitefully close to her ears, while<lb/>puss would strike back with
+                her<lb/>swift paw, trying to catch the bird.</p>
+
+            <pb n="9"/>
+            <fw type="pagenumber" rend="align(centre)">7</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F39</name>
+                    <desc>(CUCKOO)	other birds: cuckoo</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE CUCKOO.</p>
+            <p rend="first-indent(2) align(justify)">The song of this bird is closely<lb/>connected
+                with our ideas of reviv&ndash;<lb type="inWord"/>ing spring. When singing,
+                this<lb/>bird is very seldom seen, as his<lb/>shyness induces him to hide
+                himself<lb/>in thickets.</p>
+            <p rend="first-indent(2) align(justify)">The European Cuckoo is sup&ndash;<lb
+                    type="inWord"/>posed to build no nest, and, what is<lb/>extraordinary, the
+                female Cuckoo<lb/>deposits her solitary egg in the nest<lb/>of another bird, by
+                which it is<lb/>hatched.</p>
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(centre)">8</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F39</name>
+                    <desc>(WOODPECKER)	other birds: woodpecker</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE WOODPECKER.</p>
+            <p rend="first-indent(2) align(justify)">The Woodpecker makes his nest<lb/>by digging
+                with his beak into the<lb/>trunk or limb of some decayed tree,<lb/>forming a
+                circular cavity, in which<lb/>the eggs are deposited, and the<lb/>young ones
+                hatched.</p>
+            <p rend="first-indent(2) align(justify)">He climbs along the trunks of<lb/>trees, and
+                discovers by the appear&ndash;<lb type="inWord"/>ance of the bark, where the
+                insect<lb/>is lurking. The multitude of cat&ndash;<lb type="inWord"/>erpillars,
+                bugs, and worms which<lb/>one of these birds devours in a day<lb/>is surprising.</p>
+
+            <pb n="11"/>
+            <fw type="pagenumber" rend="align(centre)">9</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F38(PHEASANT)</name>
+                    <desc>walker and runner birds: pheasant</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE PHEASANT.</p>
+            <p rend="first-indent(2) align(justify)">The Pheasant of Europe, in shape<lb/>and
+                plumage, is one of the most<lb/>elegant of birds. It was originally<lb/>brought from
+                the banks of the river<lb/>Phasis, in Asia Minor, whence it<lb/>derives its name. It
+                is beautifully<lb/>marked with various brilliant hues.<lb/>The cock Pheasant is
+                considerably<lb/>larger, his tail longer, and his plu&ndash;<lb type="inWord"/>mage
+                more brilliant than that of the<lb/>hen Pheasant.</p>
+
+            <pb n="12"/>
+            <fw type="pagenumber" rend="align(centre)">10</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F35</name>
+                    <desc>(PEACOCK)	ornamental birds: peacock</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE PEACOCK.</p>
+            <p rend="first-indent(2) align(justify)">The plumage of this bird is more<lb/>gorgeous
+                and beautiful than any<lb/>other of the feathered race. Its<lb/>form is also elegant
+                ; and, as if con&ndash;<lb type="inWord"/>scious of these personal
+                advantages,<lb/>it often spreads its gaudy tail, and<lb/>marches about with a
+                pompous<lb/>step, apparently vain of its beauty,<lb/>and anxious to display to the
+                eye of<lb/>the beholder, its rich and changing<lb/>hues. Yet the Peacock is
+                nearly<lb/>an useless bird, and its voice harsh.</p>
+
+            <pb n="13"/>
+            <fw type="pagenumber" rend="align(centre)">11</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F35</name>
+                    <desc>(PARROT)	ornamental birds: parrot</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE PARROT.</p>
+            <p rend="first-indent(2) align(justify)">Some years since, a parrot in<lb/>Boston, that
+                had been taught to<lb/>whistle in the manner of calling a<lb/>dog, was sitting in
+                his cage at the<lb/>door of a shop. As he was whistling<lb/>one day, a large dog
+                happened to<lb/>be passing. The animal imagining<lb/>that his master called him,
+                turned<lb/>suddenly about and ran towards the<lb/>cage. Just then the bird
+                exclaimed<lb/>&ldquo; Get out, you brute !&rdquo; The dog<lb/>scampered quickly
+                away.</p>
+
+            <pb n="14"/>
+            <fw type="pagenumber" rend="align(centre)">12</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F39</name>
+                    <desc>(HUMMING-BIRD)	other birds: humming-bird</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE HUMMING BIRD.</p>
+            <p rend="first-indent(2) align(justify)">There are seventy kinds of Hum&ndash;<lb
+                    type="inWord"/>ming Birds, nearly all of them na&ndash;<lb type="inWord"/>tives
+                of America, yet only one kind<lb/>visits the United States. He fre&ndash;<lb
+                    type="inWord"/>quents the gardens, and sips the ho&ndash;<lb type="inWord"
+                />ney&ndash;suckle and other plants, like<lb/>the hive and humble bee.</p>
+            <p rend="first-indent(2) align(justify)">The nest of this bird is very small,<lb/>and is
+                beautifully lined with the<lb/>down of the mullen.</p>
+
+            <pb n="15"/>
+            <fw type="pagenumber" rend="align(centre)">13</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F32</name>
+                    <desc>(JAY)	song-birds (BLUE JAY)</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE BLUE JAY.</p>
+            <p rend="first-indent(2) align(justify)">This elegant bird is distinguished<lb/>as a
+                kind of beau among the feather&ndash;<lb type="inWord"/>ed tenants of our woods, by
+                the<lb/>brilliancy of his dress, and, like<lb/>most other coxcombs, makes
+                    him&ndash;<lb type="inWord"/>self still more noted by his noise,<lb/>and the
+                oddness of his tones and<lb/>gestures. In the charming season of<lb/>Spring, when
+                every thicket pours<lb/>forth harmony, the part performed<lb/>by the Jay always
+                catches the ear.</p>
+
+            <pb n="16"/>
+            <fw type="pagenumber" rend="align(centre)">14</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F3</name>
+                    <desc>birds</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE STORMY PETREL.</p>
+            <p rend="align(centre)"><hi rend="italics">Or Mother Carey's Chickens.</hi></p>
+            <p rend="first-indent(2) align(justify)">This bird is about the size of a<lb/>swallow.
+                It is seen in all parts of<lb/>the ocean, busily engaged in search&ndash;<lb
+                    type="inWord"/>ing for food. It braves the storm,<lb/>skimming along the waves,
+                    some&ndash;<lb type="inWord"/>times above the tops, then again by<lb/>sinking
+                down into the billows be&ndash;<lb type="inWord"/>tween them. It does not sit
+                upon<lb/>the water, but often places its feet<lb/>it, while feeding.</p>
+
+            <pb n="17"/>
+            <fw type="pagenumber" rend="align(centre)">15</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F36</name>
+                    <desc>(SWAN)	water-birds: swan</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE SWAN.</p>
+            <p rend="first-indent(2) align(justify)">The Swan is the largest of
+                all<lb/>web&ndash;footed water&ndash;fowl, some of<lb/>them weighing above 20 lbs.
+                The<lb/>whole body is covered with a beau&ndash;<lb type="inWord"/>tiful
+                lily&ndash;white plumage. The ele&ndash;<lb type="inWord"/>gance of his form, which
+                this bird<lb/>displays, when, with his arched<lb/>neck and half displayed wings,
+                he<lb/>sails along the crystal surface of the<lb/>stream, which reflects, as he
+                passes,<lb/>the snowy beauty of his dress, is<lb/>worthy of admiration.</p>
+
+            <pb n="18"/>
+            <fw type="pagenumber" rend="align(centre)">16</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F37</name>
+                    <desc>(WOODCOCK)	shore-birds and wading-birds: woodcock</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE WOODCOCK.</p>
+            <p rend="first-indent(2) align(justify)">During the day, this bird sleeps<lb/>in the
+                woods and thickets, and at<lb/>the approach of evening seeks the<lb/>springs, and
+                open marshy places,<lb/>to feed in. It usually feeds in the<lb/>night. Its flesh is
+                reckoned very<lb/>delicious, and no game is more<lb/>prized by sportsmen. It is
+                about<lb/>as large as a Quail, and has a bill<lb/>three inches long.</p>
+            <p rend="align(centre)">THE END.</p>
+        </body>
+        <back>
+            <pb n="19"/>
+            <pb n="20"/>
+            <div type="advertisement">
+                <head rend="align(centre)">SCHOOL BOOKS,</head>
+                <lb/>
+                <p rend="align(centre)"><hi rend="italics">For Sale by M. Day, 376
+                        Pearl&ndash;st.</hi></p>
+                <list>
+                <head rend="align(centre)">DICTIONARIES.</head>
+               <item>Ely's new dictionary,</item>
+               <item>Webster's dictionary, large&amp;small.</item>
+               <item>Walker's dictionary,</item>
+               <item>Johnson's dictionary,</item>
+               <item>Nomenclature, (Burhan's)</item>
+               <item>Primary dictionary,</item>
+               <item>Juvenile Expositor,</item>
+               <item>New&ndash;York Expositor,</item>
+               <item>Grimshaw's Etymology,</item>
+               <item>Ladies' Lexicon,</item>
+               <item>Speller and Definer,</item>
+               <item>Nugent's French dictionary,</item>
+               <item>Barnes' Red Book, or Practical<lb rend="indent(2)"/>Orthography,</item>
+               <item>Young Tyro,</item>
+               <item>Ainsworth's Latin Dictionary,</item>
+               <item>Brown's Dictionary of the Bible,</item>
+               <item>Martindale's do. do.</item>
+               <item>Buck's Historical dictionary,</item>
+               <item>Boyer's French Dictionary,</item>
+               <item>Lempriere's Classical diction'y,&amp;c.</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>

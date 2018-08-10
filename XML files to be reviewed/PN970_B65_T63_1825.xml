@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-12-07"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="SongBooks">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="brown coloured pictorial wrappers">
+                <bibl>
+                    <figure type="borderornament"/>
+                    <title level="m">TODLEN HAME.<lb/>The Bandy&ndash;legged Officer,<lb/>What have
+                        we with day to do.<lb/>Hae ye seen in the calm dewy<lb/>morning.<lb/>It was
+                        in and about the Martinmas time.<lb/>Deserted by the waning Moon.</title>
+                    <figure>
+                        <ic:iconClass>
+                            <name>25G3</name>
+                            <desc>trees</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <publisher>&rule;<lb/>Glasgow &mdash; Printed for the Booksellers.</publisher>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <p>&orn;</p>
+            <div type="section">
+
+                <head rend="align(centre)">TODLEN HAME.</head>
+                <lb/>
+                <lg>
+                    <l>When I have a saxpence under my thumb,</l>
+                    <l>Then I'll get credit in ilka town,</l>
+                    <!-- should I do <choice> for all of the many unusual spellings/abbreviations                             ? -->
+                    <l>But ay when I'm poor, they bid me gae bye,</l>
+                    <l>O poverty parts good good company.</l>
+                    <l rend="indent(2)">Todlen hame, todlen hame,</l>
+                    <l rend="indent(2)">O cou'dna my love come todlen hame.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Fair fa' the goodwife, and send her good sale,</l>
+                    <l>She gie's us wuite bannocks to drink her ale,</l>
+                    <l>Syne if her tippenny chance to be sma',</l>
+                    <!-- is there a way to indicate these apostrophes are backwards? -->
+                    <l>We'll tak a good scour o&lsquo;t, aud ca't awa'.</l>
+                    <l rend="indent(2)">Todleu hame, todlen hame,</l>
+                    <l rend="indent(2)">As round as a neep come todlen hame.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>My kimmer and I lay down to sleep,</l>
+                    <l>With twa pint stoups at our bed&lsquo;s feet;</l>
+                    <l>And ay when we waken&lsquo;d, we drank them dry:</l>
+                    <l><choice>
+                            <orig>Wbot</orig>
+                            <corr>What</corr>
+                        </choice> think ye of my wee kimmer and I ?</l>
+                    <l rend="indent(2)">Todlen butt, and todlen ben,</l>
+                    <l rend="indent(2)">Sae round as my love comes todlen hame ;</l>
+                </lg>
+
+                <pb n="3"/>
+                <fw type="pagenumber" rend="align(centre)">3</fw>
+                <lb/>
+                <lg>
+                    <l>Leeze me on liquor, my todlen dow,</l>
+                    <l>Ye're ay sae good humoured whan weeting<lb rend="indent(4)"/>your mou';</l>
+                    <l>When sober, sae sour, ye'll fight with a flee,</l>
+                    <l>That 'tis a blyth sight for the bairns and me,</l>
+                    <l rend="indent(2)">When todlen hame, todlen hame,</l>
+                    <l rend="indent(2)">When round as a neep you come todlen<lb rend="indent(4)"
+                        />hame.</l>
+                </lg>
+                <p>&rule;</p>
+            </div>
+
+            <div type="section">
+
+                <head rend="align(centre)">THE BANDY&ndash;LEGGED OFFICER.</head>
+                <lb/>
+                <lg>
+                    <l>A Landlady in France, lov'd an officer, &lsquo;tis<lb rendition="indent(6)"
+                        />said,</l>
+                    <l rend="indent(2)">And the officer he dearly lov'd his brandyO</l>
+                    <l>Said she, I love this officer, altho' his nose is<lb rend="indent(4)"
+                        />red,</l>
+                    <l>And his legs are what the regiment call<lb rend="indent(6)"/>bandy O.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>When this bandy&ndash;legged officer was order'd<lb rend="indent(6)"/>to the
+                        coast,</l>
+                    <l rend="indent(2)">How she tore her lovely locks that look'd<lb
+                            rend="indent(6)"/>so sandy O,</l>
+                    <l> Adieu, my love, says she, if you write pray<lb rend="indent(6)"/>the
+                        post,</l>
+                    <l>But before we part, let's take a cup of<lb rend="indent(6)"/>brandy O.</l>
+                </lg>
+
+                <pb n="4"/>
+                <fw type="pagenumber" rend="align(centre)">4</fw>
+                <lb/>
+                <lg>
+                    <l>She fill'd him up a bumper just before he left<lb rend="indent(6)"/>the
+                        town,</l>
+                    <l rend="indent(2)">And another for herself so neat and handy O</l>
+                    <l>So they kept their spirits up by pouring spi&ndash;<lb type="inWord"
+                            rend="indent(6)"/>rits down,</l>
+                    <l rend="indent(2)">For love is like the cholic cur'd by brandy O</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Take a bottle o't says she, for you're going<lb rend="indent(6)"/>into
+                        camp.</l>
+                    <l rend="indent(2)">In your tent you know my love, &lsquo;twill be<lb
+                            rendition="indent(6)"/>the dandy O.</l>
+                    <l>You're right says he my life, for a tent is very<lb rend="indent(6)"
+                        />damp,</l>
+                    <l rend="indent(2)">And &lsquo;tis better with my tent to take some<lb
+                            rend="indent(6)"/>brandy O.</l>
+                </lg>
+                <p>&rule;</p>
+            </div>
+
+            <div type="section">
+
+                <head rend="align(centre)">WHAT HAVE WE WITH DAY TO DO ?</head>
+                <lb/>
+                <lg>
+                    <l>By the gaily circling glass,</l>
+                    <l>We can see how minutes pass.</l>
+                    <l>By the hollow cask we're told</l>
+                    <l>How the waning night grows old.</l>
+                    <l>Soon, too soon, the busy day</l>
+                    <l>Drives us from our sport away,</l>
+                    <l>What have we with day to do?</l>
+                    <l>Sons of care, 'twas made for you !</l>
+                </lg>
+
+                <pb n="5"/>
+                <fw type="pagenumber" rend="align(centre)">5</fw>
+                <lb/>
+                <lg>
+                    <l>By the silence of the owl,</l>
+                    <l rend="indent(2)">By the chirping on the thorn.</l>
+                    <l>By the butts thas empty roll,</l>
+                    <l rend="indent(2)">We foretel the approach of morn.</l>
+                    <l>Fill, then, fill the vacant glass,</l>
+                    <l rend="indent(2)">Let no precious moment slip ;</l>
+                    <l>Flout the moralizing ass,</l>
+                    <l rend="indent(2)">Joys find entrance by the lip.</l>
+                </lg>
+                <p>&rule;</p>
+            </div>
+
+            <div type="section">
+
+                <head rend="align(centre)">HAE YE SEEN IN THE CALM DEWY MORNING.</head>
+                <lb/>
+                <lg>
+                    <l>Hae ye seen in the calm dewy morning,</l>
+                    <l rend="indent(2)">The red&ndash;breast wild warbling sae clear</l>
+                    <l>Or the low dwelling, snow breasted gowan,</l>
+                    <l rend="indent(2)">Sur&ndash;charged wi' mild e'ening's soft tear,</l>
+                    <l>O then ye hae seen my dear lassie,</l>
+                    <l rend="indent(2)">The lassie I loe best of a'</l>
+                    <l>But far frae the hame o' my lassie,</l>
+                    <l rend="indent(2)">I'm monie a lang mile awa.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Her hair is she wing o' the blackbird,</l>
+                    <l rend="indent(2)">Her eye is the eye o' the dove,</l>
+                    <l>Her lips are the red blushing rose&ndash;bud,</l>
+                    <l rend="indent(2)">Her bosom's the palace of love.</l>
+                    <l>Tho' green be thy banks O sweet Clutha,</l>
+                    <l rend="indent(2)">Thy beauties ne'er charm me ava,</l>
+                    <l>Forgive me, ye maid of sweet Clutha,</l>
+                    <l rend="indent(2)">My heart is wi' her that's awa.</l>
+                </lg>
+
+
+                <pb n="6"/>
+                <lg>
+                    <l>O love thou'rt a dear fleeting pleasure,</l>
+                    <l rend="indent(2)">The sweetest we mortals here know,</l>
+                    <l>But soon as thy heav'n bright beaming,</l>
+                    <l rend="indent(2)">O'ercast with the darkness of wo.</l>
+                    <l>As the moon on the oft changing ocean,</l>
+                    <l rend="indent(2)">Delight's the lone mariner's eye,</l>
+                    <l>Till red rush the storms of the desert,</l>
+                    <l rend="indent(2)">And dark billows tumble on high.</l>
+                </lg>
+                <p>&rule;</p>
+            </div>
+
+            <div type="section">
+
+                <head rend="align(centre)">IT WAS IN AND ABOUT THE MARTINMAS TIME.</head>
+                <lb/>
+                <lg>
+                    <l>It was in and about the Martinmas time,</l>
+                    <l rend="indent(2)">When the green leaves were a&ndash;falling,</l>
+                    <l>That Sir John Graeme in the west countrie,</l>
+                    <l rend="indent(2)">Fell in love with Barbara Allan.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>He sent his man down to the town,</l>
+                    <l rend="indent(2)">To the place where she was dwelling,</l>
+                    <l>O haste and come to my master dear,</l>
+                    <l rend="indent(2)">Gin ye be Barbara Allan.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>O hooly, hooly rose she up,</l>
+                    <l rend="indent(2)">To the place where he was lying,</l>
+                    <l>And when she drew the curtain, by,</l>
+                    <l rend="indent(2)">Young man I think you're dying.</l>
+                </lg>
+
+                <pb n="7"/>
+                <fw type="pagenumber" rend="align(centre)">7</fw>
+                <lb/>
+                <lg>
+                    <l>O it's I'm sick, and very very sick.</l>
+                    <l rend="indent(2)">And 'tis a' for Barbara Allan,</l>
+                    <l>O the better for me ye's never be,</l>
+                    <l rend="indent(2)">Though your heart's blood were a' spilling.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>O dinna ye mind, young man she said,</l>
+                    <l rend="indent(2)">When ye was in the tavern a' drinking</l>
+                    <l>That ye made the healths go round,</l>
+                    <l rend="indent(2)">And slighted Barbara Allan.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>He turn'd his face unto the wa',</l>
+                    <l rend="indent(2)">For death was wi' him dealing,</l>
+                    <l>Adieu, adieu, my dear friends a',</l>
+                    <l rend="indent(2)">Be kind to Barbara Allan.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Slowly, slowly rose she up,</l>
+                    <l rend="indent(2)">And slowly, slowly left him,</l>
+                    <l>She, sighing said, she could not stay,</l>
+                    <l rend="indent(2)">Since death of life bereft him.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>She had nae gane a mile but twa,</l>
+                    <l rend="indent(2)">When she heard the dead bell ringing,</l>
+                    <l>And every jowl the dead bell gied,</l>
+                    <l rend="indent(2)">I't cried woe to Barbara Allan.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>O mother, mother mak my bed,</l>
+                    <l rend="indent(2)">O mak it saft and narrow,</l>
+                    <l>Since my love died for me to day,</l>
+                    <l rend="indent(2)">I'll die for him to&ndash;morrow.</l>
+                </lg>
+            </div>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(centre)">8</fw>
+            <lb/>
+            <div type="section">
+
+                <head rend="align(centre)">DESERTED BY THE WANING MOON.</head>
+                <lb/>
+                <lg>
+                    <l>Or sailing on the midnight deep,</l>
+                    <l>While weary messmates soundly sleep,</l>
+                    <l>The careful watch patroles the deck,</l>
+                    <l>To guard the ship from foes or wreck ;</l>
+                    <l>Some friendly voice salutes his ear,</l>
+                    <l>What cheer ?&mdash;Brother&mdash;quickly tell ?&mdash;</l>
+                    <l>Above&mdash;below?&mdash;good night&mdash;call's well.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Deserted by the waning moon,</l>
+                    <l>When skies proclaim night's cheerless doom</l>
+                    <l>On tower, fort, or tented ground,</l>
+                    <l>The sentry walks his lonely round ;</l>
+                    <l>And should a footstep haply stray,</l>
+                    <l>Where caution marks the guarded way,</l>
+                    <l>Who goes there?&mdash;stranger&mdash;quickly tell?&mdash;</l>
+                    <l>A Friend&mdash;the word ?&mdash;goodnight&mdash; all's well</l>
+                </lg>
+                <p rend="align(centre)">FINIS.</p>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI>

@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY emdash "&#8212;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+<!ENTITY ctlig "ct-ligature">
+<!ENTITY brace "&#x7d;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+<!ENTITY tcdquo   "&#11826;"> <!-- turned comma -->
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+]>
+
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Erin Bienert</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Instruction">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre) yellow coloured wrappers">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">THE<lb/><hi rend="italic"
+                    >CORAL</hi><lb/>NECKLACE.</title><lb/>&swell;<lb/>BY THE AUTHOR OF &ldquo;THE
+                    PEARL BRACELET,&rdquo;<lb/>&ldquo;BOTANICAL RAMBLES,&rdquo; ETC. <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>31D15</name>
+                            <desc>adult woman</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <pubPlace>LONDON</pubPlace>:<lb/>PRINTED AND SOLD BY <publisher>J. E.
+                        EVANS,<lb/>LONG LANE, SMITHFIELD</publisher>.<lb/>&rule;<lb/>PRICE <measure
+                        type="price">FOURPENCE</measure>. </bibl>
+            </div>
+            <pb n="2"/>
+            <pb n="3"/>
+            <pb n="4"/>
+            <div type="frontispiece">
+                <head type="main" rend="align(centre)">FRONTISPlECE.</head>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C71751</name>
+                        <desc>blind-man's buff</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <epigraph>
+                    <p>&ldquo; It was evening. * * * A party of gay little<lb rend="indent(2)"
+                        />girls, full of health and spirits, were at play at<lb rend="indent(2)"
+                        />blindman's&ndash;buff. Page 5.</p>
+                </epigraph>
+            </div>
+            <pb n="5"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart type="main">THE<lb/>CORAL NECKLACE;</titlePart>
+                    <lb/>
+                    <titlePart type="sub">INTENDED FOR THE<lb/>Amusement of Children.</titlePart>
+                </docTitle>
+                <lb/>
+                <docImprint>&swell;<lb/><hi rend="italic">By the Author of &ldquo; The Pearl
+                        Bracelet,&rdquo; &amp;c.</hi><lb/></docImprint>
+                <docEdition>SECOND EDITION.</docEdition>
+                <note type="handwritten">1825?</note>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>31A27113</name>
+                        <desc>strolling</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>&crule;<lb/>Embellished with neat Engravings on
+                        Wood.<lb/>&crule;<lb/><pubPlace>LONDON</pubPlace>:<lb/>PRINTED AND SOLD BY
+                        <publisher>J. E. EVANS,<lb/>Long Lane, West
+                    Smithfield.</publisher></docImprint>
+                <pb n="6"/>
+                <imprimatur>&rule;<lb/><hi rend="italic">Entered at Stationers'
+                    Hall,</hi><lb/>&rule;</imprimatur>
+            </titlePage>
+        </front>
+        <pb n="7"/>
+        <body>
+            <div type="section">
+                <head type="work" rend="align(centre)">THE<lb/>CORAL NECKLACE.<lb/>&swell;</head>
+                <lb/>
+                <p rend="align(justify)">It was evening. The curtains were drawn,<lb/>and the
+                    candles taken into the parlour. A<lb/>party of gay little girls, full of health
+                    and<lb/>spirits, were at play at blindman's&ndash;buff. It<lb/>was Lucy's
+                    birth&ndash;day ; and Lucy, like other<lb/>children of her own age, had begged
+                    her<lb/>Mamma to invite some of her young friends<lb/>to tea. The favourite game
+                    of blindman's&ndash;buff<lb/>lasted for some time; and at length, tired
+                    of<lb/>running about, the happy group seated them&ndash;<lb type="inWord"
+                    />selves upon the sofa to think of some new play.<lb/>Many different ones were
+                    proposed, but none<lb/>of them were fresh, and therefore none were<lb/>fixed
+                    upon. The children, at Lucy's request,<lb/>
+                    <fw type="signature" rend="align(centre)">A 3</fw>
+                    <pb n="8"/>
+                    <fw type="pagenumber">6</fw>
+                    <fw type="header" rend="align(centre)">THE CORAL</fw>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>43C7863</name>
+                            <desc>toy house, doll's house</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/> Went up into the nursery, to examine a baby&ndash;<lb/>house, which had
+                    that very morning come<lb/>from grandpapa's, as a birth&ndash;day present.
+                    This<lb/>afforded great amusement to all parties. The<lb/>chairs, tables, beds,
+                    and carpets, were taken<lb/>out, and looked at again and again; the
+                    din&ndash;<lb/>ing&ndash;room was arranged afresh, the dolls were<lb/>dressed,
+                    and the little candles lit. Lucy felt<lb/>very happy ; she next reached the
+                    work&ndash;box<lb/>which her father had given her, and then the <pb n="9"/>
+                    <fw type="header" rend="align(centre)">NECKLACE,</fw>
+                    <fw type="pagenumber" rend="align(right)">7</fw>
+                    <lb/> new book she had received as a reward for<lb/>taking pains with her
+                    writing&mdash;&ldquo; and here !&rdquo;<lb/>said she, opening a drawer, &ldquo;
+                    here is a coral<lb/>necklace ! a red coral necklace, which my<lb/>cousin
+                    Charlotte sent me !&rdquo; and as Lucy spoke,<lb/>she clasped the coral necklace
+                    round her fair<lb/>and fat little neck.&mdash;At this moment the bell<lb/>rung,
+                    and the children were called to tea.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Look at my coral necklace, dear
+                    Mamma,<lb/>(cried Lucy, as she entered the parlour). Is<lb/>it not pretty ?
+                    Don't you admire it ?&rdquo; con&ndash;<lb type="inWord"/>tinued she, drawing
+                    her chair close to the tea&ndash;<lb/>table.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Her mother smiled, and said, &ldquo;Would
+                    it not<lb/>be of more value, if it were <hi rend="italic">useful</hi> as well
+                        as<lb/><hi rend="italic">pretty?</hi> For my own part, I like those
+                    things<lb/>which are not merely intended for ornaments,<lb/>but which will do us
+                    good also : for instance,<lb/>I call your straw bonnet useful; it shelters
+                    you<lb/>from the rain and sun when you go out&mdash;I call<lb/>your shoes useful
+                    also ; they prevent your feet<lb/>from being hurt, when you run up and down <lb/>
+                    <fw type="signature" rend="align(centre)">B</fw>
+                    <pb n="10"/>
+                    <fw type="pagenumber">8</fw>
+                    <fw type="header" rend="align(centre)">THE CORAL</fw>
+                    <lb/>the gravel walk;&mdash;but I really do not see much<lb/><hi rend="italic"
+                        >use</hi> in a coral necklace, pretty as it certainly<lb/>is.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Lucy looked grave, and twirled the
+                    red<lb/>beads round and round between the finger and<lb/>thumb. At length she
+                    exclaimed, &ldquo; I have<lb/>been thinking of a plan, Mamma, by which
+                    my<lb/>necklace may become of use in one way at<lb/>least, I do not know what
+                    coral is, and I<lb/>believe neither Emma, nor Julia, nor Harriet<lb/>know: and
+                    if you will tell us after tea, then<lb/>my pretty coral necklace will be of some
+                    use.<lb/>You must acknowledge that, Mamma,&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Mrs. Dent smiled, and her little
+                    daughter<lb/>considered this as a sure sign of her consent.<lb/>Tea was soon
+                    over, the hissing urn was taken<lb/>away, and John, the footman, removed the
+                    tea<lb/>things with more than usual dispatch.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">The children soon arranged
+                    themselves<lb/>around the cheerful fire, all smiling and<lb/>happy.</p>
+                <pb n="11"/>
+                <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">What little girl has not been present at
+                    such<lb/>a scene&mdash;what little girl has not glowed with<lb/>delight in the
+                    full enjoyment of such an<lb/>evening !</p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>41B211</name>
+                        <desc>warming oneself at a fire (or hearth, stove, fire-pan, brazier)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Lucy's mother began her account by
+                    asking<lb/>the children if any of them could tell her what<lb/>coral was.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">One said China, another said the berry
+                    of<lb/>some tree, and another said coloured glass.&mdash;<lb/>None of them were
+                    right.</p>
+                <fw type="signature" rend="align(centre)">B 2</fw>
+                <pb n="12"/>
+                <fw type="pagenumber">10</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Coral,&rdquo; said Mrs. Dent,
+                    &ldquo; is a <hi rend="italic">marine</hi><lb/>production; that is to say, it is
+                    found in the<lb/>sea; and any thing that is found in the sea, is<lb/>called
+                    marine. Coral is found sticking to<lb/>rocks, and in the form of little trees
+                    and bushes,<lb/>not in round beads, as it is in your
+                    necklace,<lb/>Lucy.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)"> &lsquo;&mdot;Pray, Mamma, tell us how they
+                    manage to<lb/>get it&mdash;and does it grow there&mdash;is it a plant
+                    ?&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;No, it is not a plant, my dear, but
+                    it is<lb/>formed by insects: and now if you please, I<lb/>will tell you how they
+                    manage to procure it.&mdash;<lb/>On the sea&ndash;shore of those countries where
+                    it is<lb/>found, there are great rocks below the water,<lb/>to which it clings
+                    very firmly. In the spring,<lb/>five or six men, called coral&ndash;fishers, go
+                    in a<lb/>little open boat: one of them throws a great<lb/>net, made of two
+                    pieces of wood, a leaden<lb/>weight, and a great deal of hemp and
+                    strong<lb/>cords twisted about the beams of wood, into<lb/>the sea. When the
+                    coral is torn from the<lb/>rocks and entangled in it, they draw it out by <pb
+                        n="13"/>
+                    <fw type="header" rend="align(centre)"> NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">11</fw>
+                    <lb/> a rope, which is sometimes very hard work,<lb/>and requires much strength.
+                    These branches<lb/>of coral are sometimes white, and sometimes<lb/>red. Your
+                    necklace is made of <hi rend="italic">red</hi> coral. Men<lb/>are employed to
+                    polish the branches, and to<lb/>make them into beads.&rdquo;</p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>42B742</name>
+                        <desc>mother and child(ren), woman and child(ren) (family group)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Thank you, Mamma !&rdquo; said
+                    Lucy.&mdash;<lb/>&ldquo; Charlotte's present has been of some use to<lb/>me, you
+                    see; for I am sure I did not know<lb/>before what coral was.&rdquo;</p>
+                <fw type="signature" rend="align(centre)">B 3</fw>
+                <pb n="14"/>
+                <fw type="pagenumber">12</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; And it may be of yet farther
+                    use,&rdquo; said<lb/>her mother; &ldquo;for it is not made of coral <hi
+                        rend="italic">only.</hi><lb/>Try if you cannot find out some other
+                    article<lb/>which is employed.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; The clasp &mdash;the gold clasp ! I
+                    know what<lb/>you mean, Mamma. What is gold ?&mdash;and the<lb/>ribbon, the
+                    narrow blue ribbon upon which the<lb/>beads are threaded, how is ribbon made
+                    ?&mdash;I<lb/>see I have a great deal to learn.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Let us begin with the clasp,&rdquo;
+                    said Mrs.<lb/>Dent. &ldquo; Gold is a metal. All metals are dug<lb/>out of the
+                    earth, mixed with other substances<lb/>and in this state are called <hi
+                        rend="italic">ores</hi>: There are<lb/>many different kinds of metals : I
+                    will tell you<lb/>the names of some of them&mdash;gold, silver,
+                    copper,<lb/>iron, lead, and tin. These metals are separated<lb/>from the
+                    minerals or substances with which<lb/>they are mixed. The holes or pits made in
+                    the<lb/>earth in order to procure them,are called <hi rend="italic"
+                        >mines.&rdquo;</hi></p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Then is gold found in mines, Mamma
+                    ?&rdquo;<lb/>said Lucy.</p>
+                <pb n="15"/>
+                <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Yes, very often,&rdquo; said Mrs.
+                    Dent. &ldquo; It<lb/>is sometimes found in rivers also : little parti&ndash;<lb
+                        type="inWord"/>cles of it are mixed with the sand, and the poor<lb/>black
+                    people in Africa separate it from the<lb/>sand, and give the gold they find, in
+                    exchange<lb/>for other things.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; But how do they get up the gold
+                    from the<lb/>bottom of the rivers ?&rdquo; said Emma&mdot;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; They put in long sloping troughs,
+                    lined at<lb/>the bottom with coarse cloth or flannel,&rdquo; said<lb/>Mrs. Dent;
+                    &ldquo; and the poor people who have to<lb/>wash the sand, stir the water about
+                    with their<lb/>hands, until the little bits of gold, about the<lb/>size of peas,
+                    sink into the woolly part of the<lb/>flannel; and these are afterwards washed
+                    out<lb/>with great care, and brought to England. It<lb/>is then melted in a
+                    fire, and made into different<lb/>articles &mdash; watches, ear&ndash;rings,
+                    broaches, and<lb/>clasps for coral necklaces.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Now,&rdquo; said Lucy, we know what
+                    gold <fw type="signature" rend="align(centre)">c</fw>
+                    <pb n="16"/>
+                    <fw type="pagenumber">14</fw>
+                    <fw type="header" rend="align(centre)">THE CORAL</fw>
+                    <lb/>is, and what coral is&emdash;now, for ribbon, dear<lb/>Mamma.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Coral is made by insects,&rdquo;
+                    said Mrs. Dent,<lb/>&ldquo; and ribbon is also formed by little
+                    insects,<lb/>somewhat like caterpillars.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Insects, Mamma! <choice>
+                        <orig>inseets</orig>
+                        <corr>insects</corr>
+                    </choice> ! are you quite<lb/>sure that they can make ribbon ?&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Yes, quite sure and quite
+                    certain,&rdquo; replied<lb/>her mother, &ldquo; that they form the material
+                    of<lb/>which ribbon is composed. But before I tell<lb/>you any thing more, do
+                    you know what cater&ndash;<lb type="inWord"/>pillars are ?</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Oh yes, yes, we have often seen
+                    them<lb/>upon the currant&ndash;trees in the garden.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Well,&rdquo; said Mrs. Dent,
+                    &ldquo; the insects or<lb/>caterpillars which spin the silk (for ribbon,
+                    you<lb/>know, is made of silk) are called <hi rend="italic"
+                        >silk&ndash;worms.</hi><lb/>They live upon mulberry trees in warm
+                        coun&ndash;<lb type="inWord"/>tries. They spin themselves up in little silky
+                        <pb n="17"/>
+                    <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">15</fw>
+                    <lb/> bags of a yellow colour, which they fasten to<lb/>the leaves of the trees,
+                    and which are called<lb/><hi rend="italic">cones</hi>. These are collected
+                    together, and the<lb/>silk is wound off with great care. They put<lb/>the little
+                    golden balls into warm water, that<lb/>the silk may be wound off more readily.
+                    And<lb/>when a great deal is wound off, it is taken to<lb/>a man called a <hi
+                        rend="italic">weaver,</hi> who weaves it into silk<lb/>or ribbon.&rdquo;</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47H463</name>
+                        <desc>weaving-loom</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; But you told us it was yellow when
+                    the<lb/>little insect spun it, Mamma&rdquo; said Lucy.&mdash;<lb/>&ldquo; Mow
+                    camc it blue?&rdquo;</p>
+                <fw type="signature" rend="align(centre)">c 2</fw>
+                <pb n="18"/>
+                <fw type="pagenumber">16</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; It is quite right to ask,&rdquo;
+                    said Mrs. Dent.<lb/>&ldquo;I forgot to tell you, that before it is
+                    brought<lb/>to the weaver, it is <hi rend="italic">bleached,</hi> or made
+                    white,<lb/>by being put in the sun, or left in the open air,<lb/>and then dyed
+                    of different colours, red, green,<lb/>or blue, whichever they please.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; And now, my dear little Lucy, I
+                    will agree<lb/>with you, that your coral necklace has been of<lb/>some
+                    use;&mdash;you have learned from it that coral<lb/>and silk are both made by
+                    little insects; and<lb/>that gold is a metal dug out of the earth.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">The children were well pleased with what
+                    they<lb/>had heard, and began to talk to each other<lb/>about it.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; I wish I might ask a
+                    question,&rdquo; said Em&ndash;<lb type="inWord"/>ma, &ldquo; for I would much
+                    rather hear about these<lb/>things than play.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Ask whatever you please, my
+                    dear,&rdquo; said<lb/>Mrs. Dent. &ldquo; I shall be glad to tell you
+                    any<lb/>thing you do not know.&rdquo;</p>
+                <pb n="19"/>
+                <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                <fw type="pagenumber" rend="align(right)">17</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Well, Ma'am, since you have been
+                    talking<lb/>to Lucy about her necklace, I have thought<lb/>about many things ; I
+                    should like to know<lb/>what my frock is made of&mdash;and my
+                    shoes&mdash;<lb/>and almost every thing in the room:&mdash;the car&ndash;<lb
+                        type="inWord"/>pet&mdash;the looking&ndash;glass&mdash;the tables&mdash;the
+                    fender<lb/>&mdash;and the candles, and the candlesticks. As<lb/>Lucy says, we
+                    have a great deal to learn.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; You have, indeed,&rdquo; said Mrs.
+                    Dent; &ldquo; and<lb/>as you shew a desire for learning, I hope you<lb/>will in
+                    due time become a very clever girl.&mdash;<lb/>But as I can answer only one
+                    question at a<lb/>time, what shall we begin with ? I see my<lb/>little Harriet
+                    is looking at the carpet. Well,<lb/>now try, my love, if you can tell me of what
+                    it<lb/>is made.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Harriet was only four years old, and
+                    she<lb/>replied, &ldquo; I do not know, Mamma.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Examine it,&rdquo; said her mother.
+                    &ldquo; Feel it.<lb/>Is it hard like the floor ?&rdquo;</p>
+                <fw type="signature" rend="align(centre)">c 3</fw>
+                <pb n="20"/>
+                <fw type="pagenumber">18</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Oh no, Mamma. It is soft, and it is
+                    prettier<lb/>than the floor,&rdquo; said Harriet, stooping down,<lb/>and rubbing
+                    it with her hand.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>41B211</name>
+                        <desc>warming oneself at a fire (or hearth, stove, fire-pan, brazier)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Its colours have nothing to do with
+                    the<lb/>question,&rdquo; said Mrs. Dent; &ldquo; the carpet would<lb/>be as good
+                    a carpet, though not so pretty a one,<lb/>if it had never been dyed at all. Look
+                    at it<lb/>again, and try if you can find out what it is<lb/>made of.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; I now see threads in it,&rdquo;
+                    cried Harriet.<lb/>&ldquo; I believe it is made of big threads.&rdquo;</p>
+                <pb n="21"/>
+                <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                <fw type="pagenumber" rend="align(right)">19</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; You are partly right; but are these
+                    threads<lb/>made of the same materials as the thread with<lb/>which I am now
+                    sewing? Come and look at<lb/>it.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;No,&rdquo; said Harriet; &ldquo; I
+                    see there is a differ&ndash;<lb type="inWord"/>ence ; and the threads that make
+                    the carpet, are<lb/>red, blue, and green.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Never mind the colours,&rdquo; said
+                    Mrs. Dent ;<lb/>&ldquo; they are of no consequence : let us not think<lb/>of
+                    them at all. Let us examine a thread of the<lb/>carpet without minding the
+                    colour ; and see,<lb/>here is one: compare it with mine, and tell me<lb/>where
+                    you perceive a difference.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; It is larger and softer,
+                    Mamma,&rdquo; said the<lb/>little rosy Harriet.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; The softness,&rdquo; said her
+                    mother, &ldquo; may lead<lb/>you to guess of what it is made.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; I believe it is wool &mdash;wool
+                    that grows upon<lb/>the backs of Papa's sheep.&rdquo;</p>
+                <pb n="22"/>
+                <fw type="pagenumber">20</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Ah, you are right! Wool does grow
+                    upon<lb/>the backs of sheep. It is clipped off every year<lb/>with large
+                    scissars, called shears. The sheep are<lb/>penned in a fold close to a barn,
+                    from whence<lb/>they are fetched by the lads, one by one, as fast<lb/>as the
+                    shearers are ready for them. After the<lb/>sheep are shorn, the wool is washed
+                    and carded,<lb/>and spun into yarn, which you call threads.&rdquo;</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47H5341</name>
+                        <desc>fulling ~ cloth finishing</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Well, Mamma,&rdquo; said Harriet,
+                    &ldquo; tell me<lb/>something more.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; It is then sent to the dyer,&rdquo;
+                    said her mo&ndash; <pb n="23" type="inWord"/>
+                    <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">21</fw>
+                    <lb/>ther, &ldquo; who dyes one part yellow, another<lb/>green, and so on. It
+                    then goes to the weaver,<lb/>who puts it in a loom, and weaves it by a
+                    pattern<lb/>as you see. And now you understand that the<lb/>colour is mere
+                    matter of choice or fancy ; but<lb/>that it is not necessary, like the wool, or
+                    the<lb/>spinning, or the weaving.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)"> &ldquo; Yes, I understand all this very
+                    well,&rdquo; said<lb/>Harriet. &ldquo; And when I see pretty sheep nib&ndash;<lb
+                        type="inWord"/>bling the green grass in the fields, I shall think<lb/>of the
+                    carpet, and that it is made of wool.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Ah, Mamma,&rdquo; cried Lucy,
+                    &ldquo; Harriet would<lb/>not have thought of the carpet if it had not
+                    been<lb/>for my coral necklace.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Now, Ma'am,&rdquo; said Emma,
+                    &ldquo;will you be so<lb/>good as to tell me of what my frock is made
+                    ?&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)"> &ldquo; It is muslin,&rdquo; said Mrs.
+                    Dent, &ldquo; and muslin<lb/>is made of cotton.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)"> &ldquo;What is cotton?&rdquo; said Emma.
+                    &ldquo; Is cot&ndash;<lb type="inWord"/>ton made by an insect as well as silk
+                    ?&rdquo;</p>
+                <pb n="24"/>
+                <fw type="pagenumber">22</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; No ; cotton is procured from a tree
+                    called<lb/>a cotton&ndash;tree, which grows only in warm coun&ndash;<lb
+                        type="inWord"/>tries. It is thick like a bushy shrub, and bears<lb/>very
+                    beautiful flowers, which produces fruit<lb/>almost as large as walnuts. This
+                    fruit, or pods<lb/>as they are called, are full of soft down ; this<lb/>down is
+                    separated from the husk or outside, by<lb/>means of a mill, and it is then spun
+                    and sent<lb/>to the weaver, who weaves it in his useful loom<lb/>into various
+                    articles of clothing &mdash;muslin is only<lb/>of them.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; What !&rdquo; cried Emma, in
+                    surprise, &ldquo; my<lb/>clear white muslin frock is produced from the<lb/>down
+                    contained in pods no larger than wal&ndash;<lb type="inWord"/>nuts. How
+                    wonderful !&emdash;But I shall not<lb/>wonder at any thing you tell us now,
+                    Ma'am<lb/>&mdash; though, to be sure, I should never have<lb/>thought that my
+                    muslin frock once grew upon<lb/>a tree. I think it is Julia's turn to ask
+                    a<lb/>question ; and I like this play very much.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Julia laughed, and looked around her.
+                    &mdash;<lb/>&ldquo;There are so many things in the room, that <pb n="25"/>
+                    <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">23</fw>
+                    <lb/>really, Emma, I do not know what to fix<lb/>upon,&rdquo; said she. &ldquo;
+                    However, here is a book;<lb/>let us hear how paper is made. If I were
+                    to<lb/>guess all night, I believe I could not find out.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Paper is made of rags,&rdquo; said
+                    Mrs. Dent.<lb/>&ldquo; The rags are collected together and taken<lb/>to a mill,
+                    and put into an engine placed in a<lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>47B24</name>
+                            <desc>industries ~ plant material</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>great trough filled with water. The engine has<lb/>long spikes of iron in
+                    it, and by moving round<lb/>with great swiftness, it soon tears the
+                    rags<lb/>every way, and turns them into a soft pulp.&rdquo;</p>
+                <pb n="26"/>
+                <fw type="pagenumber">24</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Well, Mamma, (said Lucy,) go on
+                    &rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; A mould, or frame, is then used,
+                    the size<lb/>of a sheet of paper, which is dipped in this<lb/>pulp, and shaken
+                    about, till it forms a thin<lb/>layer, as the workmen wish it to do; then
+                    it<lb/>is turned out, and the mould is dipped in again,<lb/>and then again, and
+                    so on. Do you under&ndash;<lb/>stand ?&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Yes, Ma'am, (said Julia;) but they
+                    must<lb/>be damp and wet&mdash;what is done to dry them ?&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; They are placed sheet upon
+                    sheet,&rdquo; said<lb/>Mrs. Dent, &ldquo; and when a great number of<lb/>sheets
+                    are made in this manner, they are put<lb/>into a press, with something between
+                    each, and<lb/>after they are well pressed, they are hung up to<lb/>dry. When
+                    they are quite dry, they are rubbed<lb/>and sized, that they may be fit to write
+                    upon.<lb/>And now, my dear little girl, you know how pa&ndash;<lb type="inWord"
+                    />per is made.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo;Thanks to Lucy's necklace!&rdquo;
+                    said Julia. <pb n="27"/>
+                    <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">25</fw>
+                    <lb/> &ldquo; Now let us know how rags are made, as paper<lb/>is made from
+                    them.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Linen rags are made of flax.
+                    Perhaps you<lb/>do not know what I mean by flax.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; I think it is a plant,&rdquo; said
+                    Lucy ; &ldquo; but<lb/>who ever thought that linen cloth could be made<lb/>of a
+                    plant! Go on, Mamma.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; It is a plant at all events,&rdquo;
+                    said Mrs. Dent,<lb/>&ldquo; and it bears a pretty blue blossom. It is<lb/>sown
+                    in the ground, in the same way as any<lb/>other seeds. When it is time to gather
+                    it,<lb/>they collect it together in bundles, and spread<lb/>it out in the field
+                    to dry. When it is dry, it<lb/>is combed with a thing called a <hi rend="italic"
+                        >ripple,</hi> so as<lb/>to pull off the blossoms and the leaves,
+                    and<lb/>leave only the stalks, of which linen is made.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; But the stalks are green,&rdquo;
+                    said Emma,<lb/>&ldquo; and linen is commonly white: but I suppose<lb/>the cloth
+                    will have to be bleached, as you<lb/>said silk had. But before you go on, will
+                    you <pb n="28"/>
+                    <fw type="pagenumber">26</fw>
+                    <fw type="header" rend="align(centre)">THE CORAL</fw>
+                    <lb/> please to tell us whether any other part of the<lb/>plant is of use
+                    ?&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Yes ; an oil is extracted, or drawn
+                    from<lb/>it, called linseed oil, and its seed is called<lb/><hi rend="italic"
+                        >linseed.&rdquo;</hi></p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&lsquo;&mdot; Oh, then, it is useful, (said
+                    Emma,) for my<lb/>little birds are fed with linseed every morning.<lb/>I never
+                    knew before what linseed was&mdash;and I<lb/>shall remember that it is the seed
+                    of flax.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; We were just talking about combing
+                    the<lb/>flax with a ripple,&rdquo; said Mrs. Dent: &ldquo; when<lb/>this is
+                    done, they put the stalks into a ditch or<lb/>pond of water, where they remain
+                    for some time<lb/>until the bark, or outside part of the stalks,<lb/>becomes
+                    soft, when they are taken out. They<lb/>then beat off the bark by means of a
+                    tool called<lb/>a <hi rend="italic">brake,</hi> which is something like a flail.
+                    I<lb/>suppose you know what a flail is.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; I do,&rdquo; said Julia:
+                    &ldquo;when I went a walk<lb/>with my Papa one day, we passed by a barn, <pb
+                        n="29"/>
+                    <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">27</fw>
+                    <lb/>where a man was thrashing corn. He beat it<lb/>with a great tool made of
+                    wood, which separated<lb/>the grain from the ear; and this, my Papa
+                    said,<lb/>was a flail.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Very well,&rdquo; said Mrs. Dent.
+                    &ldquo; The bark<lb/>is beaten off the stalks of the flax with a brake,<lb/>and
+                    has then to be cleaned and combed again,<lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>47H313</name>
+                            <desc>spinning-wheel</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/> and afterwards spun into thread ; this is thread<lb/>which I am at work
+                    with. Have you ever seen<lb/>a spinning wheel ?&rdquo;</p>
+                <pb n="30"/>
+                <fw type="pagenumber">28</fw>
+                <fw type="header" rend="align(centre)">THE CORAL</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">One little girl said no, and another said
+                    yes,<lb/>and it was at last discovered that only Emma<lb/>had seen one. The
+                    children all wished to see<lb/>one, that they might know how flax is
+                    spun<lb/>into thread, as well as the state it is in before<lb/>it is spun ; and
+                    it was therefore agreed for<lb/>Lucy, Emma, Julia, and all the rest of
+                    their<lb/>young friends, to meet the next morning at<lb/>twelve o'clock, if it
+                    were a fine day, to take, a<lb/>walk together into the village, and pay a
+                    visit<lb/>to old Nurse Smith.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">What has flax or spinning to do with
+                    old<lb/>Nurse Smith ? some little girl may ask. The<lb/>case is this. Old Nurse
+                    Smith earned her<lb/>livelihood by spinning, and therefore she was<lb/>fixed
+                    upon as a likely person to show and ex&ndash;<lb type="inWord"/>plain the nature
+                    of the spinning&ndash;wheel to th<lb/>children.</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">When this arrangement had been duly
+                    made,<lb/>Mrs. Dent went on with her account of flax<lb/>&ldquo; The thread,
+                    (said she) is taken to the weaver<lb/>who weaves it into cloth. He is a very
+                    useful <pb n="31"/>
+                    <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">29</fw>
+                    <lb/>person. If I walk with you to&ndash;morrow, when<lb/>we have paid a visit
+                    to old Nurse, and have<lb/>seen her spinning&ndash;wheel, we will go up
+                    the<lb/>lane to the weaver's cottage at the other end<lb/>of the village, and
+                    there you can see the whole<lb/>process of weaving thread into cloth.
+                    All<lb/>cloth is made of threads placed across and across<lb/>each other, you
+                    know. The weaver calls<lb/>the threads that are placed lengthwise, the<lb/><hi
+                        rend="italic">warp</hi> and those that are crosswise, the <hi rend="italic"
+                        >woof,</hi><lb/>and he passeth the woof backwards and forwards<lb/>by means
+                    of a <hi rend="italic">shuttle,</hi> which is a sort of needle.<lb/>But I need
+                    not tell you any thing more about<lb/>it; for if we go to&ndash;morrow, as we at
+                    present<lb/>intend to do, you will understand it better<lb/>than by any thing I
+                    can say.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; I hope it will be fine, (said Lucy)
+                    and then<lb/>we can gather the primroses that grow upon<lb/>the bank in that
+                    pretty lane just above Nurse<lb/>Smith's cottage&mdash;and violets too&mdash;and
+                    cowslips.<lb/>&mdash;Do you know my Mamma means to make<lb/>cowslip wine this
+                    spring ? She says it is good<lb/>for poor people to take when they are ill. Will
+                        <pb n="32"/>
+                    <fw type="pagenumber">30</fw>
+                    <fw type="header" rend="align(centre)">THE CORAL</fw>
+                    <lb/>you tell us how wine can he made from cowslip<lb/>pips, dear Mamma ? It
+                    seems almost as won&ndash;<lb type="inWord"/>derful as for cloth to be made from
+                    a plant.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; Not just now,&rdquo; said Mrs.
+                    Dent. &ldquo;I think<lb/>you have heard enough for one evening. if<lb/>you will
+                    remind me of it when we are walking<lb/>to&ndash;morrow, I will tell you how it
+                    is done; for<lb/>even this knowledge may sometimes be of use<lb/>to you. All
+                    kinds of knowledge are useful in<lb/>some way or other.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">&ldquo; And my coral necklace has been of
+                    great<lb/>use,&rdquo; exclaimed Lucy. &ldquo; If it it had not been<lb/>for it,
+                    I do not think we should have heard<lb/>about gold, and coral, and ribbon, and
+                    carpets,<lb/>and paper, and linen, and a great many more<lb/>things that we did
+                    not know before. Thanks<lb/>to my coral necklace ! and thanks to you,
+                    dear<lb/>Mamma, for having amused us so nicely.&rdquo;</p>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">It was now getting late; first a knock
+                    came<lb/>at the door for one little girl, and then a loud<lb/>peal at the bell
+                    for another. At length Lucy <pb n="33"/>
+                    <fw type="header" rend="align(centre)">NECKLACE.</fw>
+                    <fw type="pagenumber" rend="align(right)">31</fw>
+                    <lb/>and Harriet were left alone with their mother.<lb/>They soon retired to
+                    rest, for it was later than<lb/>usual. Early the next morning, and
+                    almost<lb/>before it was light, Lucy jumped out of bed,<lb/>and peeped between
+                    the window&ndash;curtains, ex&ndash;<lb type="inWord"/>claiming, &ldquo; Oh, it
+                    is a fine day&mdash;we shall walk<lb/>with Mamma to Nurse Smith's, and see
+                    her<lb/>spinning&ndash;wheel, and hear about cowslip wine.&rsquo;</p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C131</name>
+                        <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+            <pb n="34"/>
+            <div type="section">
+                <fw type="pagenumber" rend="align(centre)">32</fw>
+                <head type="main" rend="align(centre)"><hi rend="italic">Alfred and the
+                        Thorn&ndash;bushes.</hi><lb/>&swell;</head>
+                <lb/>
+                <p rend="align(justify)">Mr. Thomson and his son Alfred were one<lb/>evening, in the
+                    month of May, sitting at the<lb/>foot of a delightful hill, and surveying
+                    the<lb/>beautiful works of nature that surrounded<lb/>them. The declining sun,
+                    now sinking into<lb/>the west, seemed to clothe every thing with a<lb/>purple
+                    robe. The cheerful song of a shepherd<lb/>called off their attention from their
+                    meditations<lb/>on those delightful prospects. This shepherd<lb/>was driving
+                    home his flock from the adjacent<lb/>fields.</p>
+                <p rend="align(justify) first-indent(3)">Thorn&ndash;bushes grew on each side of the
+                    road,<lb/>and every sheep that approached the thorns was<lb/>sure to be robbed
+                    of some part of its wool,<lb/>which much displeased little Alfred. &ldquo;
+                    Only<lb/>see, Papa,&rdquo; said he, &ldquo; how the sheep are de&ndash;<lb
+                        type="inWord"/>prived of their wool by those bushes ! You<lb/>have often
+                    told me that God makes nothing in<lb/>vain; but these briars seem only made for
+                        <pb n="35"/>
+                    <fw type="header" rend="align(centre)">ALFRED.</fw>
+                    <fw type="pagenumber" rend="align(right)">33</fw>
+                    <lb/>mischief : people should therefore join to de&ndash;<lb type="inWord"
+                    />stroy them root and branch. Were the poor<lb/>sheep to come often this way,
+                    they would be<lb/>robbed of all their clothing. But that shall not<lb/>be the
+                    case, for I will rise with the sun to&ndash;<lb type="inWord"/>morrow morning,
+                    and with my little bill&ndash;hook<lb/>and snip&ndash;snap, I will level all
+                    these briars with<lb/>the ground. You may come with me, Papa, if<lb/>you please,
+                    and bring with you an axe. Before<lb/>breakfast, we shall be able to destroy
+                    them all.&rdquo;</p>
+                <p rend="align(justify) first-indent(3)">Mr. Thomson replied, &ldquo; We must not
+                    go<lb/>about this business in too great a hurry, but<lb/>take a little time to
+                    consider of it; perhaps<lb/>there may not be so much cause for being
+                    angry<lb/>with these bushes, as you at present seem to<lb/>imagine. Have you not
+                    seen the shepherds<lb/>about Lammas with great sheers in their hands,<lb/>take
+                    from the trembling sheep all their wool,<lb/>not being contented with a few
+                    locks only?&rdquo;</p>
+                <p rend="align(justify) first-indent(3)">Alfred allowed that was true; but they
+                    did<lb/>it in order to make clothes ; whereas the hedges<lb/>robbed the sheep
+                    without having the least<lb/>occasion for their wool, and evidently for
+                    no<lb/>useful purpose.</p>
+                <pb n="36"/>
+                <fw type="pagenumber">34</fw>
+                <fw type="header" rend="align(centre)">ALFRED.</fw>
+                <lb/>
+                <p rend="align(justify) first-indent(3)">Mr. Thomson allowed the arguments of
+                    little<lb/>Alfred to be just; for nature has given to<lb/>every beast a
+                    clothing, and we are obliged from<lb/>them to borrow our own, otherwise we
+                    should<lb/>be forced to go naked, and exposed to the in&ndash;<lb type="inWord"
+                    />clemency of the elements.</p>
+                <p rend="align(justify) first-indent(3)">&ldquo; Very well, Papa,&rdquo; said
+                    Alfred, &ldquo; though<lb/>they want clothing, yet these bushes want none
+                    :<lb/>they rob us of what we have need, and there&ndash;<lb/>fore down they
+                    shall all come with to&ndash;morrow<lb/>morning's rising sun. And, I dare say,
+                    Papa,<lb/>you will come along: with me, and assist me.&rdquo;</p>
+                <p rend="align(justify) first-indent(3)">Mr. Thomson could not but consent,
+                    and<lb/>little Alfred thought himself nothing less than<lb/>Alexander, merely
+                    from the expectation of<lb/>destroying at once this formidable band
+                    of<lb/>robbers. He could hardly sleep, being so much<lb/>taken up with the idea
+                    of his victories, to<lb/>which the morrow's sun was to be witness.</p>
+                <p rend="align(justify) first-indent(3)">The cheerful lark had hardly begun to
+                        pro&ndash;<lb type="inWord"/>claim the approach of morning, when
+                    Alfred<lb/>got up, and ran to awaken his Papa, Although<lb/>Mr. Thomson was very
+                    indifferent concerning<lb/>the fate of the thorn&ndash;bushes, yet he was not
+                        <pb n="37"/>
+                    <fw type="header" rend="align(centre)">ALFRED.</fw>
+                    <fw type="pagenumber" rend="align(right)">35</fw>
+                    <lb/>displeased with having the opportunity of shew&ndash;<lb type="inWord"/>ing
+                    to his son Alfred the beauties of the rising<lb/>sun. They dressed themselves
+                    immediately,<lb/>took the necessary instruments, and set out on<lb/>this
+                    important expedition.</p>
+                <p rend="align(justify) first-indent(3)">When they came near to the bushes,
+                    they<lb/>observed a multitude of little birds flying in and<lb/>out of them, and
+                    fluttering their wings from<lb/>branch to branch. On seeing this, Mr.
+                        Thom&ndash;<lb type="inWord"/>son stopped his son, and desired him to
+                        sus&ndash;<lb type="inWord"/>pend his vengeance a little time, that
+                    they<lb/>might not disturb those innocent birds. With<lb/>this view they retired
+                    to the foot of the hill<lb/>where they had sat the preceding evening,
+                    and<lb/>from thence examined more particularly what<lb/>had occasioned this
+                    apparent bustle among the<lb/>birds. From hence they plainly saw, that
+                    they<lb/>were employed in carrying away those bits of<lb/>wool in their beaks,
+                    which the bushes had torn<lb/>from the sheep the evening before. There<lb/>came
+                    a multitude of different sorts of birds,<lb/>who loaded themselves with the
+                    plunder.</p>
+                <p rend="align(justify) first-indent(3)">Alfred was quite astonished at this
+                    sight,<lb/>and asked his father what could be the meaning <pb n="38"/>
+                    <fw type="pagenumber">36</fw>
+                    <fw type="header" rend="align(centre)">ALFRED.</fw>
+                    <lb/>of it. &ldquo; You by this plainly see,&rdquo; replied Mr,<lb/>Thomson,
+                    &ldquo; that Providence provides for crea&ndash;<lb type="inWord"/>tures of
+                    every class, and furnishes them with<lb/>all things necessary for their
+                    convenience <choice>
+                        <orig>aud</orig>
+                        <corr>and</corr>
+                    </choice><lb/>preservation. Here, you see, the poor birds<lb/>find what is
+                    necessary for their habitations,<lb/>wherein they are to nurse and rear their
+                    young,<lb/>and with this they make a comfortable bed for<lb/>themselves and
+                    their little progeny. The in&ndash;<lb type="inWord"/>nocent thorn&ndash;bush,
+                    against which you yesterday<lb/>so loudly exclaimed, is of infinite service to
+                    the<lb/>inhabitants of the air ; it takes from those that<lb/>are rich only what
+                    they can very well spare, in<lb/>order to satisfy the wants of the poor.
+                    Have<lb/>you now any wish to cut those bushes down ?&rdquo;</p>
+                <p rend="align(justify) first-indent(3)">Alfred shook his head, and said he would
+                    not<lb/>cut the bushes down for the world. Mr. Thomson<lb/>applauded his son for
+                    so saying ; and, after<lb/>enjoying the sweets of the morning, they
+                    retired<lb/>home to breakfast, leaving the bushes to flourish<lb/>in peace.</p>
+                <lb/>
+            </div>
+            <div type="colophon" rend="align(centre)">
+                <p>&swell;<lb/>Printed by J. E. Evans, Long&ndash;lane, London.</p>
+            </div>
+        </body>
+        <back>
+            <pb n="39"/>
+            <pb n="40"/>
+            <div type="advertisement">
+                <figure type="borderornament"/>
+                <p>New Juvenile Books,<lb/>ORNAMENTED WITH ENGRAVINGS,<lb/>PRICE <measure
+                        type="price">SIXPENCE</measure> EACH.<lb/>&swell;</p>
+                <list rend="align(justify)">
+                    <item rend="first-indent(3)">The Pearl Bracelet, intended for the<lb/>amusement
+                        of Children. By the Author of<lb/>the Coral Necklace, Botanical
+                        Rambles,<lb/>Indian Antiquities, &amp;c.</item>
+                    <item rend="first-indent(3)">Augustus and his Squirrel. By the
+                        same<lb/>Author.</item>
+                    <item rend="first-indent(3)">Amusing Anecdotes of various Animals.<lb/>By the
+                        same Author.</item>
+                    <item rend="first-indent(3)">The Pious Parents' Gift; or, a plain<lb/>and
+                        familiar Sermon; wherein the Prin&ndash;<lb type="inWord"/>ciples of the
+                        Christian Religion are pro&ndash;<lb type="inWord"/>posed and clearly
+                        represented to the<lb/>Minds of Children. By William Mason.</item>
+                    <item rend="first-indent(3)">The Interesting History of an Apple.</item>
+                    <item rend="first-indent(3)">The Escapes, Wanderings, and Pre&ndash;<lb
+                            type="inWord"/>servations of a Hare. Related by Herself.</item>
+                    <item rend="first-indent(3)">Scripture Histories made easy to
+                        the<lb/>comprehension of Children; containing the<lb/>History of Cain and
+                        Abel; Noah ; Lot<lb/>and his Family ; Abraham and his son<lb/>Isaac ; and
+                        Esau and Jacob.</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>

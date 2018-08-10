@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-11-06"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="GeographHistory">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="green coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <bibl>
+                    <fw rend="align(centre)">FIRST SERIES.&mdash;No 9. <lb/>&rule;</fw>
+                    <lb/><title level="m">HISTORY <lb/>OF <lb/>DOMESTIC ANIMALS.</title>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>47I213</name>
+                            <desc>sheep</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/><pubPlace>NEW YORK :</pubPlace>
+                    <lb/><publisher>KIGGINS &amp; KELLOGG,</publisher>
+                    <lb/><pubPlace>123 &amp; 125 William St.</pubPlace>
+                </bibl>
+
+                <pb n="2"/>
+                <note type="handwritten" rend="align(centre)">PaTia</note>
+            </div>
+
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart>HISTORY<lb/>OF<lb/>DOMESTIC ANIMALS.</titlePart>
+                </docTitle>
+                <note type="handwritten">Yaluda H Burgess</note>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47I213</name>
+                        <desc>sheep</desc>
+                    </ic:iconClass>
+                </figure>
+                <docImprint>
+                    <pubPlace>NEW YORK :</pubPlace>
+                    <publisher>KIGGINS &amp; KELLOGG,</publisher>
+                    <pubPlace>88 JOHN STREET.</pubPlace>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="4"/>
+            <fw rend="align(centre)">2</fw>
+            <lb/>
+            <figure rend="align(centre) landscape">
+                <ic:iconClass>
+                    <name>46C13183</name>
+                    <desc>galloping horse</desc>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="5"/>
+            <fw rend="align(centre)">3</fw>
+            <lb/>
+            <p rend="align(centre)">THE HORSE.</p>
+            <p rend="first-indent(3) align(justify)">THE horse is the most useful<lb/>to man of all
+                animals. In the<lb/>beauty of his form, and the<lb/>ease and the grace of his
+                motion<lb/>he also is among the most noted.<lb/>We can better judge of the
+                    ex&ndash;<lb type="inWord"/>treme beauty of the horse, by<lb/>viewing him in his
+                wild state,<lb/>as shown in the picture on the<lb/>opposite page, than by
+                looking<lb/>at him as he exists with us.<lb/>He appears in the greatest
+                    per&ndash;<lb type="inWord"/>fection in Arabia, on ever ver&ndash;<lb
+                    type="inWord"/>dant plains where he is free,<lb/>and where the climate is
+                better<lb/>for him. There wild horses are<lb/>seen in droves. They are<lb/>caught by
+                means of ropes and <fw type="footer">18</fw><lb/>
+                <pb n="6"/>
+                <fw rend="align(centre)">4</fw><lb/> snares hid in the sand. Be&ndash;<lb
+                    type="inWord"/>ing by nature mild and gentle,<lb/>he is easily learned to be
+                    obe&ndash;<lb type="inWord"/>dient, and being once tamed, he<lb/>never shows a
+                wish to return<lb/>to his wild state.</p>
+            <p rend="first-indent(3) align(justify)">Many stories are told which<lb/>exhibit the
+                remarkable intelli&ndash;<lb type="inWord"/>gence and sagacity of this no&ndash;<lb
+                    type="inWord"/>ble animal.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C131</name>
+                    <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                </ic:iconClass>
+            </figure>
+            <fw type="footer" rend="align(right)">17</fw>
+
+            <pb n="7"/>
+            <fw rend="align(centre)">5</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C131</name>
+                    <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE ASS.</p>
+            <p rend="first-indent(3) align(justify)">THE ass is a small animal<lb/>of the
+                horse&ndash;kind, used mostly<lb/>to carry burdens, and draw the<lb/>cart. In some
+                countries he is<lb/>used in preference to the horse,<lb/>being able to endure
+                greater<lb/>hardships, and work longer, and<lb/>suffer more the abuse of
+                cruel<lb/>drivers than the horse.</p>
+
+            <pb n="8"/>
+            <fw rend="align(centre)">6</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>47I21111</name>
+                    <desc>ox</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE OX.</p>
+            <p rend="first-indent(3) align(justify)">THE ox is an animal of great<lb/>value. The
+                farmer uses him<lb/>for labor, then takes his flesh<lb/>for food. His skin is
+                converted<lb/>into leather, and his horns made<lb/>into combs. Thus every
+                part<lb/>of the ox when dead is turned<lb/>to some useful purpose to sup&ndash;<lb
+                    type="inWord"/>ply the wants of man.</p>
+
+            <pb n="9"/>
+            <fw rend="align(centre)">7</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>47I21211</name>
+                    <desc>hog (castrated male pig)</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">THE HOG.</p>
+            <p rend="first-indent(3) align(justify)">THE hog is almost the only<lb/>tame animal,
+                that is not of some<lb/>use to us while living. The ox<lb/>draws the plow and the
+                cart ;<lb/>the horse carries us to ride ; the<lb/>cow gives us milk ; hens lay
+                us<lb/>eggs ; the sheep yields us wool,<lb/>from which our warm winter<lb/>clothing
+                is made&mdash;but the hog <pb n="10"/>
+                <fw rend="align(centre)">8</fw><lb/> does nothing but eat, and sleep<lb/>as we see
+                him in the picture.<lb/>But the pork and lard we get<lb/>from his carcase when
+                dead<lb/>repay us for our care of him<lb/>while living.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>34B12</name>
+                    <desc>cat</desc>
+                </ic:iconClass>
+            </figure>
+            <note type="handwritten" rend="align(centre)">Yaluda H Burgess</note>
+        </body>
+        <back>
+            <pb n="11"/>
+            <pb n="12"/>
+            <div type="advertisement">
+                <figure type="borderornament"/>
+                <head rend="align(centre)">KIGGINS &amp; KELLOGG,</head>
+                <lb/>
+                <p rend="align(centre)"><hi rend="italics">Publishers, Booksellers, and
+                        Stationers,</hi><lb/> 123 &amp; 125 William St.<lb/> Also Manufacturers of
+                    all descriptions of<lb/> Account Books,<lb/>
+                    <hi rend="italics">MEMORANDUM and PASS BOOKS,</hi><lb/> a large Stock of which
+                    is constantly<lb/> kept on hand. Their assortment of<lb/> SCHOOL<lb/> AND<lb/>
+                    MISCELLANEOUS BOOKS,<lb/> and of Foreign and Domestic<lb/> STATIONERY,<lb/> is
+                    very complete, to the inspection of<lb/> which they would invite COUNTRY<lb/>
+                    MERCHANTS before buying elsewhere.</p>
+                <p rend="align(centre)">&rule;</p>
+                <p>JUST PUBLISHED,<lb/> REDFIELD'S TOY BOOKS,<lb/> Four Series of Twelve Books
+                    each,<lb/> BEAUTIFULLY ILLUSTRATED,<lb/>
+                    <hi rend="italics">Price, <measure type="price">One, Two, Four, and Six
+                            Cents.</measure></hi></p>
+            </div>
+        </back>
+    </text>
+</TEI>

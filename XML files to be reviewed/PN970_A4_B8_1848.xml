@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+            
+            <change>
+                <date when="2012-09-25"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+            
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+            
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+        
+        
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    
+    
+    <text type="Religious">
+    <front>
+        <pb n="1"/>
+        <div type="cover">
+        <figure type="borderornament"></figure>
+            <bibl rend="align(centre)">
+                <title level="m">THE
+                    <lb/>BURYING&ndash;GROUND.</title>
+                <lb/><author>BY CHARLOTTE ELIZABETH</author>
+                <lb/>&rule;
+                <lb rend="within boarderornament"/><publisher>PUBLISHED BY
+                <lb/>THE
+                    <lb/>AMERICAN TRACT
+                    <lb/>SOCIETY.</publisher>
+            </bibl>
+        <pb n="2"/>
+        </div>
+        <pb n="3"/>
+        <titlePage rend="align(centre)">
+        <docTitle>
+            <titlePart type="main">THE<lb/>BURYING&ndash;GROUND.<lb/></titlePart>
+                 </docTitle>
+            <docAuthor>BY CHARLOTTE ELIZABETH.<lb/></docAuthor>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42E131</name>
+                    <desc>mourning the dead</desc>
+                </ic:iconClass>
+            </figure>
+      <docImprint>PUBLISHED BY THE<lb/>AMERICAN TRACT SOCIETY,<lb/>
+        150 NASSAU&ndash;STREET, NEW YORK.<lb/>
+          <num type="cardinal">15</num>15<lb/></docImprint>
+        </titlePage>
+       <pb n="4"/>
+            <div type="frontispiece"><figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42B121</name>
+                    <desc>mother with son(s) (mother-love)</desc>
+                </ic:iconClass>
+            </figure></div>
+    </front>
+    <body>
+        <pb n="5"/>
+        <head rend="align(centre)">
+            THE<lb/>
+            BURYING&ndash;GROUND.<lb/>
+            &rule;</head><lb/>
+        
+        <p rend="align(justify) indent(2)">&ldquo;WHAT is that man going to do<lb/>with the grass, aunt?&rdquo; said a little<lb/>boy, as
+            he saw a laborer carrying<lb/>away some fresh green sods that he<lb/>had just dug from
+            a piece of waste<lb/>ground.</p>
+        <p rend="align(justify) indent(2)">&ldquo;He is going, my dear,&rdquo; replied<lb/>his aunt, &ldquo; to do that for another
+            per&ndash;<lb type="inWord"/>son, which he may, perhaps, do both<lb/>for you and for me before
+            long.&rdquo;<lb/>&ldquo;What can that be, I wonder,&rdquo;<lb/>said John, smiling. &ldquo; Let us
+            follow<lb/>him, aunt.&rdquo;</p>
+        <p rend="align(justify) indent(2)">They did so. The man passed<lb/>down a little alley of trees, and en&ndash;<lb type="inWord"/></p>
+        
+        <pb n="6"/>
+        <fw type="pagenumber" rend="align(left)">4</fw>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw><lb/>
+        <p rend="align(justify)">tered some large folding gates of iron,<lb/>which led into a very spacious
+            square,<lb/>enclosed completely by a low wall, on<lb/>which was an iron railing,
+            forming a<lb/>very strong and handsome fence. The<lb/>lady and her little nephew soon
+            found<lb/>themselves within it.</p>
+        <p rend="align(justify) indent(2)">&ldquo; Why, this is a churchyard,&rdquo; said<lb/>John.</p>
+        <p rend="align(justify) indent(2)">&ldquo; Not exactly, my dear, for the<lb/>church is not in it ; but this is
+            the<lb/>burying&ndash;ground, and a beautiful place<lb/> it is.&rdquo;</p>
+        <p rend="align(justify) indent(2)">John looked about him, and cer&ndash;<lb type="inWord"/>tainly agreed with his aunt. The<lb/>spot was
+            completely surrounded by a<lb/>grove of firs, that pointed their tall<lb/>green heads
+            far above the iron pali&ndash;<lb type="inWord"/>sades. Just within the fence, a great<lb/>number of
+            laurels were planted, the<lb/>richly shining leaves of which looked<lb/>doubly bright,
+            as they rested against</p>
+       
+        <pb n="7"/>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw>
+        <fw type="pagenumber" rend="align(right)">5</fw><lb/>
+        <p rend="align(justify)">the black railings, and so near to the<lb/>dark firs. The short grass was soft<lb/>as
+            velvet, and green as an emerald;<lb/>and beautiful little flower&ndash;beds sur&ndash;<lb type="inWord"/>rounded
+            several of the tombs. Over<lb/>one, hung a rich weeping&ndash;willow, an<lb/>acacia shaded
+            another, and a third<lb/>was placed between two young cy&ndash;<lb type="inWord"/>press&ndash;trees. At one end
+            was a row<lb/>of humble graves, each with its white<lb/>headstone and simple
+            inscription;<lb/>and upon the last of these the laborer<lb/>whom John had seen was
+            carefully<lb/>laying down the green sods that he<lb/>had dug.</p>
+        <p rend="align(justify) indent(2)">To this grave they walked, and the<lb/>lady asked her little nephew if he<lb/>knew who
+            was buried there.</p>
+        <p rend="align(justify) indent(2)">&ldquo; I suppose it is the soldiers wife,&quot;<lb/>said he.</p>
+        <p rend="align(justify) indent(2)">&ldquo; Yes. One week ago that woman<lb/>was as little likely, according to hu&ndash;<lb type="inWord"/></p>
+        
+        <pb n="8"/>
+        <fw type="pagenumber" rend="align(left)">6</fw>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw><lb/>
+        <p rend="align(justify)">man appearances, as you or I now<lb/>seem, to become the inhabitant of a<lb/>grave.
+            Sudden illness seized her, and<lb/>ended in death almost immediately.<lb/>You know, my
+            child, that we visited<lb/>her only four days back, and you saw<lb/>with what mingled
+            hope and terror<lb/>she listened when I spoke of judgment<lb/>to come&mdash;of the Judge,
+            who is like&ndash;<lb type="inWord"/>wise the Saviour of every true peni&ndash;<lb type="inWord"/>tent who clings to his
+            cross, and casts<lb/>his soul upon him. You saw the<lb/>agony of that dying woman;
+            you<lb/>kneeled with us in prayer to the God<lb/>of the spirits of all flesh, that
+            he<lb/>would be pleased to grant unto her<lb/>repentance and forgiveness of
+            sins;<lb/>and you heard, in three hours after,<lb/>that she had breathed her last.
+            She<lb/>is under our feet, John, shut up in a<lb/>coffin, covered with the damp
+            earth,<lb/>there to remain till the trumpet shall</p>
+        
+        <pb n="9"/>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw>
+        <fw type="pagenumber" rend="align(right)">7</fw><lb/>
+        <p rend="align(justify)">sound, and the dead shall arise, and<lb/>the books shall be opened, out of<lb/>which
+            the dead must be judged.&rdquo;<lb/></p>
+        <p rend="align(justify) indent(2)">John's heart was too full to allow<lb/>of his
+            speaking just then ; so, after a<lb/>pause, his aunt went on:</p>
+        <p rend="align(justify) indent(2)">&quot;I told you, my love, that the<lb/>grave&ndash;digger might soon do for us<lb/>what he is
+            now doing for this poor<lb/>woman. And oh, what a solemn&mdash;<lb/>what an important
+            question it is,<lb/>Where will our souls be, when our<lb/>bodies are committed to the
+            dust?<lb/>At all times important and solemn<lb/>beyond any other subject
+            whatever;<lb/>but does it not appear even more so,<lb/>standing as we here do, just
+            over the<lb/>lifeless remains of one whom we so<lb/>lately saw able to ask the
+            question<lb/>which is now for ever set at rest, as<lb/>concerns <hi rend="italics">her</hi> soul ? If a voice
+            could<lb/>issue from these mounds of earth,</p>
+            
+       <pb n="10"/>
+       <fw type="pagenumber" rend="align(left)">6</fw>
+       <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw><lb/>     
+       <p rend="align(justify)">surely&mdash;surely, every one of them<lb/>would cry aloud, what now they si&ndash;<lb type="inWord"/>lently
+            seem to teach us, &lsquo; Prepare to<lb/>meet thy God !&rsquo; &rdquo;</p>
+       <p rend="align(justify) indent(2)">&ldquo;Let us come here very often,<lb/>aunt,&rdquo; said John; &ldquo;it will keep me<lb/>thinking
+            of death, and preparing for<lb/>it.&rdquo;</p>
+       <p rend="align(justify) indent(2)">&ldquo; It might, indeed, lead you daily<lb/>to think of death, my dear child ; but<lb/>it
+            is very possible to do so, without<lb/>rightly preparing for it. It is the<lb/>office
+            of the Holy Spirit, to keep alive<lb/>in your heart such a sense of eternal<lb/>things
+            as shall enable you, accord&ndash;<lb type="inWord"/>ing to the apostle's language, to &lsquo; die<lb/>daily
+            .&rsquo;</p>
+        <p rend="align(justify) indent(2)">&ldquo; The poor Roman Catholics, whom,<lb/>whilst we lament their errors, we<lb/>should
+            pity and teach, have departed<lb/>from the truth of the gospel, and<lb/>made the
+            commandment of God of</p>
+        
+        <pb n="11"/>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw>
+        <fw type="pagenumber" rend="align(right)">9</fw><lb/>
+        <p rend="align(justify)">no effect by their traditions and in&ndash;<lb type="inWord"/>ventions ; they have many such ways<lb/>of
+            keeping themselves in what they<lb/>vainly suppose to be a religious frame<lb/>of
+            mind. They have death's heads,<lb/>and cross bones, and black garments,<lb/>with a
+            number of words and cere&ndash;<lb type="inWord"/>monies to remind them of their end ;<lb/>but neglecting
+            to seek the great gift<lb/>of God, the assistance of the Holy<lb/>Ghost, and not
+            reading the blessed<lb/>Bible in order to be made wise unto<lb/>salvation, their work
+            is vain, their<lb/>hope a delusion, and their light dark&ndash;<lb type="inWord"/>ness.</p>
+        <p rend="align(justify) indent(2)">&ldquo; It is easy to let our thoughts de&ndash;<lb type="inWord"/>scend into the grave, and it is well
+            so<lb/>to do, for there our Lord descended,<lb/>and there too our own bodies
+            shall<lb/>come; but our chief wisdom is to<lb/>look up, where the risen Saviour
+            has<lb/>ascended, and now sits on the right</p>
+        
+        <pb n="12"/>
+        <fw type="pagenumber" rend="align(left)">10</fw>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw><lb/>   
+        <p rend="align(justify)">hand of God&mdash;to consider the glories<lb/>of that high and holy place, and what<lb/>the
+            Lord has declared concerning those<lb/>who shall dwell there with him; and<lb/>then to
+            examine ourselves, and try<lb/>what fitness there is in us for such a<lb/>state.</p>
+        <p rend="align(justify) indent(2)">&ldquo; When I talk of fitness, my dear<lb/>child, I do not mean to say that it
+            is<lb/>possible for us to be, or to do, any<lb/>thing deserving of such
+            blessedness.<lb/>No, <hi rend="italics">we</hi> are all as an unclean thing,<lb/>and all <hi rend="italics">our</hi> righteousnesses
+            are as<lb/>filthy rags. But if we be indeed wash&ndash;<lb type="inWord"/>ed in the blood of Christ Jesus,
+            we are<lb/>also justified in God's sight, through<lb/>him; and if we be so washed
+            and jus&ndash;<lb type="inWord"/>tified, we shall be sanctified too by<lb/>the power of the Holy Ghost:
+            though<lb/>in ourselves, that is, in our flesh,<lb/>dwelleth no good thing, yet we
+            shall<lb/>both see and hate our sinfulness, and</p>
+        
+        <pb n="13"/>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw>
+        <fw type="pagenumber" rend="align(right)">11</fw><lb/>
+        <p rend="align(justify)">constantly be praying, &lsquo; Create in me<lb/>a clean heart, O Lord, and renew a<lb/>right
+            spirit within me.&rsquo; We shall be<lb/>growing in grace, loving God with a<lb/>more
+            perfect love, and hating sin<lb/>with a more perfect hatred, every day.<lb/>We shall
+            take that delight in the<lb/>ways of holiness, which the world<lb/>takes in the ways
+            of folly and wick&ndash;<lb type="inWord"/>edness, and devote our whole selves,<lb/>mind, body, and
+            estate, to the service<lb/>of our heavenly Lord and Master;<lb/>doing all possible
+            good to our fellow&ndash;<lb type="inWord"/>creatures, <hi rend="italics">not</hi> by way of deserving<lb/>heaven, but <hi rend="italics">because</hi>, &lsquo;
+            if God so loved<lb/>us, we ought also to love one another.&rsquo;<lb/>Do you understand
+            what I mean by<lb/>fitness for the presence of God?&rdquo;</p>
+        <p rend="align(justify) indent(2)">&ldquo; Yes, aunt, I think I do. God must<lb/>love me, and make me love him, and<lb/>then I
+            shall always try to do what<lb/>pleases him.&rdquo;</p>
+        
+        <pb n="14"/>
+        <fw type="pagenumber" rend="align(left)">12</fw>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw><lb/>   
+        <p rend="align(justify) indent(2)">&ldquo; True, my dear; but God cannot<lb/>love any thing <hi rend="italics">unholy</hi>, like us ; there&ndash;<lb type="inWord"/>fore
+            we must be &lsquo; accepted in the Be&ndash;<lb type="inWord"/>loved.&rsquo; Our sins must all be blotted<lb/>out by
+            the blood of the Lamb, and our<lb/>hearts changed by the Holy Spirit;<lb/>and we must
+            be numbered among the<lb/>little flock to whom the Lord Jesus<lb/>says, &lsquo; It is your
+            Father's good pleasure<lb/>to give you the kingdom.&rsquo;</p>
+        <p rend="align(justify) indent(2)">&ldquo;Neither do we love God, until we<lb/>behold him, &lsquo;in Christ, reconciling<lb/>the
+            world unto himself, not imputing<lb/>their trespasses unto them.&rsquo; Let us<lb/>but have
+            this sweet assurance of the<lb/>Lord's power and willingness to save,<lb/>and find
+            in ourselves a heart softened<lb/>and renewed by him, and then I know<lb/>not what can
+            be more profitable than<lb/>to look upon a scene like this. For<lb/>not only will it
+            make our own troubles<lb/>seem lighter, as the traveller bears</p>
+        
+        <pb n="15"/>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw>
+        <fw type="pagenumber" rend="align(right)">13</fw><lb/>
+        <p rend="align(justify)">the storm more patiently after he has<lb/>got within sight of his home; but
+            it<lb/>must, if we use it rightly, fill us with<lb/>greater zeal for the conversion
+            of<lb/>others, when we look on the graves<lb/>of many to whom the sweet sound
+            of<lb/>the gospel can never more come&mdash;<lb/>many, perhaps, who despised and
+            re&ndash;<lb type="inWord"/>jected it for the wretched pleasures of<lb/>a sinful world, and who would
+            now<lb/>give millions of worlds, could the offer<lb/>be once more made them to repent
+            and<lb/>be saved.</p>
+        <p rend="align(justify) indent(2)">&quot; Oh, what a dreadful thought it<lb/>is, that through our neglect, any soul<lb/>should perish! How cruel, how base,<lb/>how
+            ungrateful to our Redeemer, if<lb/>we let pass one opportunity of trying<lb/>to take a
+            prey from Satan, and to add<lb/>another to the family of Jesus Christ!<lb/>From these
+            graves must every mould&ndash;<lb type="inWord"/>ering body arise at the judgment&ndash;day ;</p>
+            
+        <pb n="16"/>
+        <fw type="pagenumber" rend="align(left)">14</fw>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw><lb/>   
+        <p rend="align(justify)">and would you not be indeed rejoiced<lb/>to think that every one of them
+            should<lb/>awake to the resurrection of life ?&rdquo;<lb/>&quot; Yes, indeed, aunt ; I do hope
+            that<lb/>they all will be saved.&rdquo;</p>
+        <p rend="align(justify) indent(2)">&ldquo;We cannot tell. <hi rend="italics">Their</hi> state is<lb/>now unchangeable. But look around<lb/>you among
+            the living, and see if there<lb/>be none to whom you may become an<lb/>instrument of
+            mercy; that, if it should<lb/>be your lot to look down on their<lb/>graves also, you
+            may reflect with joy,<lb/>on having done what you could to<lb/>bring them to
+            Jesus.</p>
+        <p rend="align(justify) indent(2)">&quot; Come now to the opposite corner,<lb/>John. Here is a row of little mounds,<lb/>of
+            which the longest must be the rest&ndash;<lb type="inWord"/>ing&ndash;place of a child no bigger
+            than<lb/>yourself. What a lesson is here!<lb/>Surely this smaller spot must
+            enclose<lb/>an infant, which only just opened its<lb/>eyes on the world, and then took
+            flight</p>
+                
+        <pb n="17"/>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw>
+        <fw type="pagenumber" rend="align(right)">15</fw><lb/>
+        <p rend="align(justify)">to a better. The Scripture is very<lb/>full of consolation respecting such:<lb/>we are
+            assured that they partake in<lb/>Adam's sin by nature, but grace be&ndash;<lb type="inWord"/>stows on
+            them eternal life, through<lb/>the redemption that is in Christ Je&ndash;<lb type="inWord"/>sus. Sleep,
+            little babe, in your cold<lb/>dark bed; your spirit is with Him who<lb/>gave it, and
+            there too shall your body<lb/>be, in his own good time.&rdquo;</p>
+        <p rend="align(justify) indent(2)">&quot; Aunt,&rdquo; said John, &quot;here is a daisy<lb/>growing on the grave that belongs
+            to<lb/>a child like me. It is just my length.<lb/>I will keep the daisy to remind me
+            that<lb/>little children die;&rdquo; and he plucked<lb/>the flower.</p>
+        <p rend="align(justify) indent(2)">&quot; That daisy will soon wither too,<lb/>my dear, however carefully you keep<lb/>it, and
+            will then more powerfully<lb/>show you how fading are all earthly<lb/>things. I would
+            wish you to be as<lb/>humble, as simple, and unpretending</p>
+        
+        <pb n="18"/>
+        <fw type="pagenumber" rend="align(left)">16</fw>
+        <fw type="header" rend="align(centre)">THE BURYING&ndash;GROUND.</fw><lb/>   
+        <p rend="align(justify)">among men, as that daisy is among<lb/>flowers. Like it, you are of the earth,<lb/>and
+            must wait all the days of your<lb/>appointed time thereon; but may your<lb/>eye also
+            be turned to heaven, and<lb/>may you preserve as cheerful a com&ndash;<lb type="inWord"/>posure among all
+            mortal changes, as<lb/>does that little flower, smiling amid<lb/>the mansions of the
+            dead. You are<lb/>now nearer to your last hour than<lb/>when we began this
+            conversation.<lb/>May the Spirit of holiness so increase<lb/>your growth in grace,
+            that no single<lb/>hour shall be passed in vanity. All<lb/>is vanity that draws us not
+            nearer to<lb/>God: the very thought of foolishness<lb/>is sin. But &lsquo;draw nigh unto
+            God,<lb/>and he will draw nigh unto you.&rsquo; &lsquo;In<lb/>all thy ways
+            acknowledge him, and<lb/>he shall direct thy paths.&rdquo;</p>
+    </body>
+    <back>
+        <pb n="19"/>
+        <pb n="20"/>
+        <div type="advertisement">
+            <head rend="align(centre)">A VARIETY<lb/>OF<lb/>BOOKS FOR CHILDREN<lb/>AND<lb/>YOUTH,</head><lb/>
+        <p rend="align(centre)">ILLUSTRATED WITH NEAT ENGRAVINGS<lb/>PUBLISHED BY THE<lb/>AMERICAN TRACT SOCIETY.<lb/></p>
+        <p>&rule;</p>
+        <p>NEW&ndash;YORK : 150 NASSAU&ndash;STREET.</p>
+        <p>BOSTON; 28 CORNHILL.</p>
+        <p rend="italics">Also to be had in Philadelphia, Baltimore,<lb/>and other princpal cities and towns.</p>
+        </div>
+    </back>
+</text>
+</TEI>
+

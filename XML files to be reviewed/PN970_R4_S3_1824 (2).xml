@@ -1,0 +1,2917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Includes Changes</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="beige coloured pictorial wrappers">
+                <figure type="borderornament">
+                    <bibl rend="align(centre)">
+                        <title level="m">SARAH BELL,<lb/>AND<lb/>FANNY BLAKE.<lb/>IN VERSE.</title>
+                        <figure rend="align(centre)">
+                            <ic:iconClass>
+                                <name/>
+                                <desc/>
+                            </ic:iconClass>
+                        </figure>
+                        <pubPlace>&rule;<lb/>LONDON:</pubPlace><lb/>
+                        <publisher><hi rend="italic">Printed for the Religious Tract Society
+                            ;</hi><lb/>And sold at their Depository, 56, Pater&ndash;<lb
+                                type="inWord"/>noster Row; also by J. Nisbet,
+                            21,<lb/>Berners&ndash;street, Oxford&ndash;street;<lb/>and other
+                            Booksellers.<lb/>&rule;</publisher><lb/> Price <measure type="price"
+                            >Four&ndash;pence.</measure>
+                    </bibl>
+                </figure>
+            </div>
+
+            <pb n="2"/>
+            <pb n="3"/>
+
+            <titlePage rend="align(centre)">
+                <titlePart type="main">SARAH BELL,<lb/>AND<lb/>FANNY BLAKE.<lb/>IN
+                    VERSE.</titlePart>
+                <titlePart type="sub">SHEWING, HOW EVERY LETTER MAY BE THE<lb/>MEANS OF PUTTING A
+                    GOOD THOUGHT<lb/>INTO THE MIND OF A CHILD.</titlePart>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                    <p rend="italic">Addressed to Sunday Scholars and others.</p>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace>&rule;<lb/>LONDON:</pubPlace><lb/>
+                    <publisher><hi rend="italic">Printed for the Religious Tract Society
+                        ;</hi><lb/>And sold at their Depository, 56, Paternoster&ndash;Row<lb/>also
+                        by J. Nisbet, 21, Berners&ndash;street, Oxford&ndash;<lb/>street; and by all
+                        Booksellers.<lb/>&rule;</publisher><lb/>
+                    <!-- Unsure what tag to code below-->
+                    <pubPlace rend="italic">&quot; Entered at Stationers' Hall.&quot;</pubPlace>
+                </docImprint>
+
+            </titlePage>
+            <pb n="4"/>
+            <note type="handwritten" place="top">John Dawson</note>
+
+        </front>
+
+        <body>
+            <pb n="5"/>
+            <fw type="pagenumber" rend="align(centre)">3</fw>
+            <lb/>
+            <div type="section">
+                <head type="main" rend="align(centre)">SARAH BELL, &amp;c.</head>
+                <head type="sub" rend="align(centre) italic">Part the First.</head>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <lg>
+                    <l>YE children dear, pray all give ear,</l>
+                    <l rend="indent(1)">If you can spare the time ;</l>
+                    <l>For you may spend a pleasant hour</l>
+                    <l rend="indent(1)">In listening to my rhyme.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>A tale I tell of SARAH BELL ;</l>
+                    <l rend="indent(1)">And wish that you may be,</l>
+                    <l>Whoever reads this little book,</l>
+                    <l rend="indent(1)">As good a child as she.</l>
+                </lg>
+                <fw type="signature" place="bottom" rend="align(centre)">A 2</fw>
+
+                <pb n="6"/>
+                <fw type="pagenumber" rend="align(centre)">4</fw>
+                <lb/>
+
+                <lg>
+                    <l>She was a girl ten years of age,</l>
+                    <l rend="indent(1)">And early taught to know,</l>
+                    <l>The fear of God, that she might shun</l>
+                    <l rend="indent(1)">The way that sinners go.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>And few, who were not older grown,</l>
+                    <l rend="indent(1)">Could read their book so well;</l>
+                    <l>Or went so cheerfully to school</l>
+                    <l rend="indent(1)">As little SARAH BELL.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>One day, she called upon a friend</l>
+                    <l rend="indent(1)">Who wayward was and wild,</l>
+                    <l>And never yet had learn'd to read;</l>
+                    <l rend="indent(1)">She was a froward child.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>Yet SARAH thought she might be brought,</l>
+                    <l rend="indent(1)">By care and kindness, still,</l>
+                    <l>To take to better ways ; and try</l>
+                    <l rend="indent(1)">To curb her stubborn will.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo;Well, FANNY! Sunday's drawing near;</l>
+                    <l rend="indent(1)">&ldquo; Nay ! do not look so cool;</l>
+                    <l>&ldquo; You almost promis'd, as you know,</l>
+                    <l rend="indent(1)">&ldquo; With me to go to school.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>Thus SARAH BELL in kindness spoke,</l>
+                    <l rend="indent(1)">But FANNY made reply,</l>
+                    <l>&ldquo; No ! No! I'd rather stay at home;</l>
+                    <l rend="indent(1)">&ldquo; I sha'nt go there, not I !&rdquo;</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; I wish there were no Sunday School;</l>
+                    <l rend="indent(1)">&ldquo; For what good can there be,</l>
+                    <l>&ldquo; In poring o&rsquo;er one's book so long,</l>
+                    <l rend="indent(1)">&ldquo; And learning A B C?</l>
+                </lg>
+
+                <pb n="7"/>
+                <fw type="pagenumber" rend="align(centre)">5</fw>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo;O fie!&rdquo; said little SARAH BELL,</l>
+                    <l rend="indent(1)">&ldquo; Dear FANNY! say not so:</l>
+                    <l>&ldquo; Believe me, 'tis a blessed thing</l>
+                    <l rend="indent(1)">&ldquo;The Book of God to know.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; But if you now neglect to learn,</l>
+                    <l rend="indent(1)">&ldquo;Nor on your letters look;</l>
+                    <l>&ldquo;How can you, FANNY, ever hope</l>
+                    <l rend="indent(1)">&ldquo; To read that holy book ?</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; I would not, if I could, forget</l>
+                    <l rend="indent(1)">&ldquo; The truths that there are told;</l>
+                    <l>&ldquo;And leave unread my Bible, no!</l>
+                    <l rend="indent(1)">&ldquo; Not for a bag of gold.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; Besides ! it is so easy too,</l>
+                    <l rend="indent(1)">&ldquo; When once before us set,</l>
+                    <l>&ldquo;The letters lie, all large and plain,</l>
+                    <l rend="indent(1)">&ldquo; To learn the Alphabet.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>My teacher said, the other day,</l>
+                    <l rend="indent(1)">&ldquo; That every letter there,</l>
+                    <l>&ldquo; Might point out, to a thinking child,</l>
+                    <l rend="indent(1)">&ldquo; Something to love or fear.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; And then, she kindly gave a book</l>
+                    <l rend="indent(1)">&ldquo;That I might read and see,</l>
+                    <l>&ldquo; That what she had been speaking of</l>
+                    <l rend="indent(1)">&ldquo;Was true, as truth could be.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; I wrapt it up, with care, to read</l>
+                    <l rend="indent(1)">&ldquo;When I could time allow;</l>
+                    <l>&ldquo; And will do so, but, FANNY , stop !</l>
+                    <l rend="indent(1)">&ldquo; I'll run and fetch it now.</l>
+                </lg>
+
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(centre)">6</fw>
+                <lb/>
+
+                <lg>
+                    <l>&quot; I have not read a single word;</l>
+                    <l rend="indent(1)">&ldquo;Tho' once, my Fanny dear,</l>
+                    <l>&ldquo; I peep'd between the leaves, to see</l>
+                    <l rend="indent(1)">&ldquo; The pictures here and there.&rdquo;</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>Away then ran the little maid,</l>
+                    <l rend="indent(1)">In gay and happy mood :</l>
+                    <l>And would you all as happy be,</l>
+                    <l rend="indent(1)">O ! try to be as good.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>Soon back again came SARAH BELL,</l>
+                    <l rend="indent(1)">For she had run with speed;</l>
+                    <l>And sat her down, upon a chair,</l>
+                    <l rend="indent(1)">The little book to read.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo;Now then, &ldquo;said she,&quot; we'll quickly see</l>
+                    <l rend="indent(1)">&ldquo; About the letters all;</l>
+                    <l>&ldquo;Ay, here's an alphabet indeed!</l>
+                    <l rend="indent(1)">&ldquo;The letters fair and tall.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; I do remember, in a book,</l>
+                    <l rend="indent(1)">&ldquo;That I have long put by,</l>
+                    <l>&ldquo;That great A for an Archer stood;</l>
+                    <l rend="indent(1)">&ldquo; And for an Apple Pie.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&lsquo;Now FANNY, let that plaything go,</l>
+                    <l rend="indent(1)">&ldquo; And all attention pay,</l>
+                    <l>&ldquo;And I will read it loud and slow:</l>
+                    <l rend="indent(1)">&quot; And first here comes great A.</l>
+                </lg>
+
+
+                <pb n="9"/>
+                <lb/>
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">A</head>
+
+                    <lg>
+                        <l>A stands for ADAM ; made of dust,</l>
+                        <l rend="indent(1)">He trod this earthly ball;</l>
+                        <l>He was the very first of men,</l>
+                        <l rend="indent(1)">And father of us all.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>God plac'd him in a garden fair,</l>
+                        <l rend="indent(1)">To live and happy be;</l>
+                        <l>But told him not to touch the fruit</l>
+                        <l rend="indent(1)">That grew upon one tree.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Satan the serpent tempted Eve;</l>
+                        <l rend="indent(1)">This sinful deed to do,</l>
+                        <l>Eve ate the fruit, to Adam gave,</l>
+                        <l rend="indent(1)">And Adam ate it too.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>God sent them from that garden fair;</l>
+                        <l rend="indent(1)">His anger fierce did burn;</l>
+                        <l>And angels plac'd, with flaming sword,</l>
+                        <l rend="indent(1)">That they might ne'er return.</l>
+                    </lg>
+
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(centre)">8</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>It was not for the fruit alone</l>
+                        <l rend="indent(1)">That they endur'd the rod,</l>
+                        <l>But for their grievous sin ; it was</l>
+                        <l rend="indent(1)">For disobeying God.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O ! let us pray then every day.</l>
+                        <l rend="indent(1)">And night too e'er we sleep,</l>
+                        <l>For grace, the will of God to do,</l>
+                        <l rend="indent(1)">And his commandments keep.</l>
+                    </lg>
+                </div>
+                <lb/>
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">B</head>
+
+                    <lg>
+                        <l>B is the BIBLE, blessed Book!</l>
+                        <l rend="indent(1)">That shews the Gospel plan,</l>
+                        <l>And, like an angel from above,</l>
+                        <l rend="indent(1)">Speaks peace and love to man.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>It tells us how God made the world,</l>
+                        <l rend="indent(1)">With every living thing;</l>
+                        <l>And, after death, how sinful man</l>
+                        <l rend="indent(1)">He will to judgment bring.</l>
+                    </lg>
+
+                    <pb n="11"/>
+                    <fw type="pagenumber" rend="align(centre)">9</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>But while its searching truths expose</l>
+                        <l rend="indent(1)">Our secret thoughts to view ;</l>
+                        <l>It tells, not only of our sin,</l>
+                        <l rend="indent(1)">But of our Saviour too.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Though far from God, and every good,</l>
+                        <l rend="indent(1)">Our hearts have wander'd wide;</l>
+                        <l>It offers peace, and pardon free,</l>
+                        <l rend="indent(1)">Through Jesus crucified.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O ! may we bind it to our hearts;</l>
+                        <l rend="indent(1)">And read it o'er and o'er,</l>
+                        <l>With fervent prayer, that we may sin</l>
+                        <l rend="indent(1)">Against our God no more.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Whene'er I cast my roving eyes</l>
+                        <l rend="indent(1)">Upon the letter B ;</l>
+                        <l>Thou blessed Book of truth and grace.</l>
+                        <l rend="indent(1)">I'll ever think of thee.</l>
+                        <lb/>
+                    </lg>
+                    <p>&rule;</p>
+
+                    <lg>
+                        <l>When SARAH first began to read,</l>
+                        <l rend="indent(1)">Her face was light and gay :</l>
+                        <l>But, as she longer read, her smile</l>
+                        <l rend="indent(1)">To graver looks gave way.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>The solemn words, that she had read,</l>
+                        <l rend="indent(1)">Imprest her tender mind ;</l>
+                        <l>And all her little heart and soul</l>
+                        <l rend="indent(1)">To serious thoughts inclin'd.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Yet anxious, still, her friend to please,</l>
+                        <l rend="indent(1)">She gave a pleasant look,</l>
+                        <l>And kindly stopt, awhile, to shew</l>
+                        <l rend="indent(1)">The pictures in the book.</l>
+                    </lg>
+                    <lb/>
+
+                    <pb n="12"/>
+                    <fw type="pagenumber" rend="align(centre)">10</fw>
+                    <lb/>
+
+
+                    <lg>
+                        <l>&quot; Do, my dear girl! attend the while</l>
+                        <l rend="indent(1)">I read the next,&quot; said she,</l>
+                        <l>&ldquo; I wonder what the verse will say</l>
+                        <l rend="indent(1)">&ldquo; About the letter C ?&rdquo;</l>
+                    </lg>
+                    <lb/>
+
+                </div>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">C</head>
+
+                    <lg>
+                        <l>C always is a pleasant sight;</l>
+                        <l rend="indent(1)">It speaks of many a rhyme ;</l>
+                        <l>Of many a carol, sweetly sung,</l>
+                        <l rend="indent(1)">In happy CHRISTMAS time.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>It tells of many a childish sport.</l>
+                        <l rend="indent(1)">That I remember well ;</l>
+                        <l>And scenes of innocence and joy</l>
+                        <l rend="indent(1)">Where memory loves to dwell</l>
+                    </lg>
+
+                    <pb n="13"/>
+                    <fw type="pagenumber" rend="align(centre)">11</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>And brings to mind my many friends;</l>
+                        <l rend="indent(1)">Who us'd to meet with me;</l>
+                        <l>O ! we were all as happy then,</l>
+                        <l rend="indent(1)">As happy as could be.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And each had something to impart;</l>
+                        <l rend="indent(1)">Some strange event to name,</l>
+                        <l>For there were those, who never met,</l>
+                        <l rend="indent(1)">Unless when Christmas came.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And more than friends, and holiday,</l>
+                        <l rend="indent(1)">And vacant hours of mirth ;</l>
+                        <l>Christmas should ever bring to mind</l>
+                        <l rend="indent(1)">My blest Redeemer's birth.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And while I raise my heart to him,</l>
+                        <l rend="indent(1)">All other thoughts give way:</l>
+                        <l>The happiest day in all the year,</l>
+                        <l rend="indent(1)">That must be Christmas Day !</l>
+                    </lg>
+                    <p> &rule; </p>
+                    <lb/>
+
+                    <lg>
+                        <l>Here SARAH stopt a little while,</l>
+                        <l rend="indent(1)">That she might best attend,</l>
+                        <l>And turn at once to good account,</l>
+                        <l rend="indent(1)">The feelings of her friend :</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For FANNY lifted up her head,</l>
+                        <l rend="indent(1)">As she would something say;</l>
+                        <l>And SARAH ask'd her, what she thought</l>
+                        <l rend="indent(1)">Of happy Christmas Day.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For FANNY lifted up her head,</l>
+                        <l rend="indent(1)">As she would something say;</l>
+                        <l>And SARAH ask'd her, what she thought</l>
+                        <l rend="indent(1)">Of happy Christmas Day.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; I think,&quot; said little FANNY BLAKE,</l>
+                        <l rend="indent(1)">&ldquo; It may be very good;</l>
+                        <l>&ldquo; But, I had rather hear by half,</l>
+                        <l rend="indent(1)">&ldquo; The Children in the Wood.</l>
+                    </lg>
+                    <lb/>
+
+                    <pb n="14"/>
+                    <fw type="pagenumber" rend="align(centre)">12</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>&quot; That may be,&quot; SARAH mildly said,</l>
+                        <l rend="indent(1)">&ldquo; But time, with waving wings,</l>
+                        <l>&quot; Is flying fast, and we should learn</l>
+                        <l rend="indent(1)">&quot; To think of other things.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; Come ! pay attention; this, to me,</l>
+                        <l rend="indent(1)">&quot; Is very pleasant rhyme,</l>
+                        <l>&quot; And we, the Children in the Wood</l>
+                        <l rend="indent(1)">&ldquo; Can read another time.</l>
+                    </lg>
+                </div>
+                <lb/>
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">D</head>
+
+                    <lg>
+                        <l>I look upon the letter D,</l>
+                        <l rend="indent(1)">And quicker draw my breath;</l>
+                        <l>For solemn is the thought it brings;</l>
+                        <l rend="indent(1)">The day and hour of DEATH.</l>
+                    </lg>
+
+                    <pb n="15"/>
+                    <fw type="pagenumber" rend="align(centre)">13</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>However young, fail not to keep</l>
+                        <l rend="indent(1)">Thy latter end in view :</l>
+                        <l>If aught be certain in thy life,</l>
+                        <l rend="indent(1)">Death is as certain too.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>The moments that compose our lives</l>
+                        <l rend="indent(1)">Unnotic'd glide away ;</l>
+                        <l>And tens of thousands of them pass,</l>
+                        <l rend="indent(1)">With every passing day.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>But whether joy be in thy heart,</l>
+                        <l rend="indent(1)">Or grief; with all thy power,</l>
+                        <l>To Him, who gave thee life and hope,</l>
+                        <l rend="indent(1)">Devote thy every hour.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For he alone, when nature sinks,</l>
+                        <l rend="indent(1)">And fails thy fleeting breath ;</l>
+                        <l>Can keep thee from the bitter pains</l>
+                        <l rend="indent(1)">Of an eternal Death.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And He thy mortal hour can cheer ;</l>
+                        <l rend="indent(1)">And faith and grace supply ;</l>
+                        <l>And take thee to his dwelling place,</l>
+                        <l rend="indent(1)">Where thou shalt never die.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                </div>
+
+                <div type="section">
+
+                    <pb n="16"/>
+                    <fw type="pagenumber" rend="align(centre)">14</fw>
+                    <lb/>
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">E</head>
+
+                    <lg>
+                        <l>ETERNITY is brought to mind</l>
+                        <l rend="indent(1)">By this next letter E:</l>
+                        <l>O ! what a vast unbounded thing,</l>
+                        <l rend="indent(1)">Eternity must be!</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>There's nothing seen by human eyes;</l>
+                        <l rend="indent(1)">No thought to mortal lent,</l>
+                        <l>That can enable him to guess</l>
+                        <l rend="indent(1)">Eternity's extent.</l>
+                    </lg>
+
+                    <pb n="17"/>
+                    <fw type="pagenumber" rend="align(centre)">15</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>The blades of grass; the grains of sand,</l>
+                        <l rend="indent(1)">On ocean's brink that lie ;</l>
+                        <l>Ten thousand times ten thousand told,</l>
+                        <l rend="indent(1)">Are not Eternity.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Whether it prove a joy or grief,</l>
+                        <l rend="indent(1)">Depends on where we go :</l>
+                        <l>How blest, if past in happiness;</l>
+                        <l rend="indent(1)">How dreadful&mdash;spent in woe.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Remember, still, at heaven's high throne</l>
+                        <l rend="indent(1)">A simple child to bend;</l>
+                        <l>And, thus, put up a prayer to Him</l>
+                        <l rend="indent(1)">Who is the sinner's friend :</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&quot; Whate'er in this uncertain world</l>
+                        <l rend="indent(1)">My life, through time, may be;</l>
+                        <l>Still let me, O my Saviour! pass</l>
+                        <l rend="indent(1)">Eternity with thee.&rdquo;</l>
+                    </lg>
+                    <p>&rule;</p>
+                    <lb/>
+                    <lg>
+                        <l>&quot; That is, indeed, a solemn thought;</l>
+                        <l rend="indent(1)">&quot; And O ! how blest to know,</l>
+                        <l>&quot; That we, when all our days are past,</l>
+                        <l rend="indent(1)">&quot; Shall to our Saviour go.&rdquo;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>So SARAH spoke, and fondly wish'd</l>
+                        <l rend="indent(1)">She might not speak in vain;</l>
+                        <l>And then she look'd upon her book,</l>
+                        <l rend="indent(1)">And thus went on again.</l>
+                    </lg>
+                    <p>&orn;</p>
+                </div>
+
+                <pb n="18"/>
+                <fw type="pagenumber" rend="align(centre)">16</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">F</head>
+                    <lg>
+                        <l>F must remind us of the FLOOD,</l>
+                        <l rend="indent(1)">When waters rose around,</l>
+                        <l>And all, except one family,</l>
+                        <l rend="indent(1)">Of human kind were drown'd.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Men liv'd in sin: thus spoke the Lord,</l>
+                        <l rend="indent(1)">&ldquo; Noah! thou hast done well;</l>
+                        <l>&ldquo;Now build thyself an ark of wood,</l>
+                        <l rend="indent(1)">&ldquo; Where thou and thine may dwell.</l>
+                    </lg>
+
+                    <pb n="19"/>
+                    <fw type="pagenumber" rend="align(centre)">17</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>He heard the voice of God, and built</l>
+                        <l rend="indent(1)">The ark with speed and care;</l>
+                        <l>The waters came, and all mankind</l>
+                        <l rend="indent(1)">Then perish'd in despair.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>But Noah, and his family,</l>
+                        <l rend="indent(1)">Might well the Flood endure ;</l>
+                        <l>They did what God had bid them do,</l>
+                        <l rend="indent(1)">And thus were all secure.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Be ours to hear the word of God;</l>
+                        <l rend="indent(1)">To live obedient still,</l>
+                        <l>Confiding in a Saviour's love;</l>
+                        <l rend="indent(1)">And swift to do his will.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>That, when the judgment day shall dawn,</l>
+                        <l rend="indent(1)">And floods of wrath be given,</l>
+                        <l>Our souls with Christ our Lord may dwell.</l>
+                        <l rend="indent(1)">Safe in the ark of heaven.</l>
+                    </lg>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+
+                    <fw type="signature" place="bottom" rend="align(centre)">B</fw>
+                </div>
+
+                <pb n="20"/>
+                <fw type="pagenumber" rend="align(centre)">18</fw>
+                <lb/>
+
+                <div type="section">
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">G</head>
+                    <lg>
+                        <l>Remember, ever, while the path</l>
+                        <l rend="indent(1)">Of life is humbly trod,</l>
+                        <l>G is the letter that begins</l>
+                        <l rend="indent(1)">The sacred name of GOD.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O ! how shall mortals speak of Him,</l>
+                        <l rend="indent(1)">The glorious Lord above,</l>
+                        <l>The source of light and happiness;</l>
+                        <l rend="indent(1)">Of wisdom, power and love ?</l>
+                    </lg>
+
+                    <pb n="21"/>
+                    <fw type="pagenumber" rend="align(centre)">19</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Greater than all; and brighter far</l>
+                        <l rend="indent(1)">Than the consuming flame;</l>
+                        <l>That God of glory, down from heaven,</l>
+                        <l rend="indent(1)">As our Redeemer came.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O wondrous love! amazing grace !</l>
+                        <l rend="indent(1)">And did he die for me ?</l>
+                        <l>Then, let my soul without delay,</l>
+                        <l rend="indent(1)">From sin and folly flee.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>With humble reverence would I bend,</l>
+                        <l rend="indent(1)">At his eternal throne ;</l>
+                        <l>And praise him for redeeming grace,</l>
+                        <l rend="indent(1)">And trust in him alone.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>That heaven, at last, my home may be;</l>
+                        <l rend="indent(1)">Where I, when life is o'er,</l>
+                        <l>The Father, Son and Spirit blest,</l>
+                        <l rend="indent(1)">For ever may adore.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+
+                    <lg>
+                        <l>Here, naughty FANNY rudely yawn'd.</l>
+                        <l rend="indent(1)">And turn'd aside her head;</l>
+                        <l>For she was sadly tir'd, to hear</l>
+                        <l rend="indent(1)">So many verses read.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; Well now,&rdquo; said little SARAH BELL,</l>
+                        <l rend="indent(1)">&ldquo;We'll read no more to&ndash;day;</l>
+                        <l>&ldquo; For I have many things to do,</l>
+                        <l rend="indent(1)">&ldquo; And quick must haste away.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; But, mind me, FANNY ! they that read,</l>
+                        <l rend="indent(1)">&ldquo; Shall never read in vain ;</l>
+                        <l>&ldquo; So let us on the verses think,</l>
+                        <l rend="indent(1)">&ldquo; Until I come again.&rdquo;</l>
+                    </lg>
+                    <fw type="signature" place="bottom" rend="align(centre)">B 2</fw>
+
+                    <pb n="22"/>
+                    <fw type="pagenumber" rend="align(centre)">20</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Then lightly tript the lass away,</l>
+                        <l rend="indent(1)">With lively pleasant look;</l>
+                        <l>And many a happy glance she gave</l>
+                        <l rend="indent(1)">Upon her little book.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And when, before she went to rest,</l>
+                        <l rend="indent(1)">At night, she knelt to pray,</l>
+                        <l>And offer up her thanks for all</l>
+                        <l rend="indent(1)">The mercies of the day;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>With humble voice, and heart sincere,</l>
+                        <l rend="indent(1)">She pray'd that FANNY BLAKE</l>
+                        <l>Might yet be taught to know the Lord,</l>
+                        <l rend="indent(1)">For her Redeemer's sake.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <p rend="align(centre)">END OF PART THE FIRST.</p>
+                </div>
+            </div>
+
+            <pb n="23"/>
+            <fw type="pagenumber" rend="align(centre)">21</fw>
+            <lb/>
+
+            <div type="section">
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head type="sub" rend="align(centre) italic">Part the Second.</head>
+
+                <lg>
+                    <l>The morrow came, the glorious sun</l>
+                    <l rend="indent(1)">His beams was spreading wide,</l>
+                    <l>And SARAH BELL and FANNY BLAKE</l>
+                    <l rend="indent(1)">Were seated, side by side.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>And Sarah, from her handkerchief,</l>
+                    <l rend="indent(1)">With care and caution took,</l>
+                    <l>Where it was neatly wrapt, once more,</l>
+                    <l rend="indent(1)">The little picture book.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>&ldquo; Now, FANNY, how far had we read ?&quot;</l>
+                    <l rend="indent(1)">Said little SARAH BELL;</l>
+                    <l>As, lightly, she turned o'er the leaves;</l>
+                    <l rend="indent(1)">But FANNY could not tell.</l>
+                </lg>
+
+                <pb n="24"/>
+                <fw type="pagenumber" rend="align(centre)">22</fw>
+                <lb/>
+
+
+                <lg>
+                    <l>And SARAH still went talking on,</l>
+                    <l rend="indent(1)">&quot; Why FANNY ! let me see;</l>
+                    <l>If I remember right, my dear,</l>
+                    <l rend="indent(1)">&quot; We read to letter G.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>&ldquo; Ay! that we did, for here's the mark:</l>
+                    <l rend="indent(1)">&quot; H, is the next, you know,</l>
+                    <l>&quot; Now, try to understand it well,</l>
+                    <l rend="indent(1)">&quot; I'll read it very slow.&rdquo;</l>
+                </lg>
+                <lb/>
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">H</head>
+
+                    <lg>
+                        <l>H should be known by every child,</l>
+                        <l rend="indent(1)">And be remember'd well;</l>
+                        <l>It speaks of joy and sorrow too;</l>
+                        <l rend="indent(1)">And stands for Heaven, and Hell.</l>
+                    </lg>
+
+                    <pb n="25"/>
+                    <fw type="pagenumber" rend="align(centre)">23</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>For Heaven, that scene of light and peace</l>
+                        <l rend="indent(1)">The rolling clouds above;</l>
+                        <l>Where God, and holy angels are,</l>
+                        <l rend="indent(1)">And everlasting love.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And for that dismal world below,</l>
+                        <l rend="indent(1)">Where sinners ever dwell;</l>
+                        <l>Where woe and darkness always reign</l>
+                        <l rend="indent(1)">That dreadful place is Hell.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+                    <lg>
+                        <l>And must we then, whene'er we die,</l>
+                        <l rend="indent(1)">To light or darkness go ?</l>
+                        <l>And joyful reign, in Heaven above,</l>
+                        <l rend="indent(1)">Or groan in Hell below ?</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O ! let us, while we yet have breath</l>
+                        <l rend="indent(1)">Fly from the burning flame,</l>
+                        <l>And seek the offered grace of God</l>
+                        <l rend="indent(1)">In our Redeemer's name.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O Lord, thy mercy we implore,</l>
+                        <l rend="indent(1)">Our souls betimes prepare,</l>
+                        <l>The dreadful pains of Hell to shun,</l>
+                        <l rend="indent(1)">The joys of Heaven to share.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                </div>
+
+                <pb n="26"/>
+                <fw type="pagenumber" rend="align(centre)">24</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">I</head>
+
+                    <lg>
+                        <l>I is an Idol ; every breast</l>
+                        <l rend="indent(1)">Has idols of its own :</l>
+                        <l>Sometimes of gold and silver bright;</l>
+                        <l rend="indent(1)">Sometimes of wood and stone.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>And there are idols, sins I mean,</l>
+                        <l rend="indent(1)">Which young and old adore:</l>
+                        <l>O, God of mercy ! in thy lore,</l>
+                        <l rend="indent(1)">Destroy them evermore.</l>
+                    </lg>
+
+                    <pb n="27"/>
+                    <fw type="pagenumber" rend="align(centre)">25</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>If there be aught the world contains,</l>
+                        <l rend="indent(1)">Which I love more than Thee;</l>
+                        <l>That sinful love, within my heart,</l>
+                        <l rend="indent(1)">Idolatry must be.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then take that sinful love away,</l>
+                        <l rend="indent(1)">And place thy love within;</l>
+                        <l>And break down every image there,</l>
+                        <l rend="indent(1)">That wears the shape of sin.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O give me, with a contrite mind,</l>
+                        <l rend="indent(1)">To bend before thy throne :</l>
+                        <l>And offer humble prayer and praise,</l>
+                        <l rend="indent(1)">Through Jesus Christ alone.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Deeply inscrib'd upon my heart,</l>
+                        <l rend="indent(1)">Let thy commandment be ;</l>
+                        <l>That there may live within my breast.</l>
+                        <l rend="indent(1)">None other God but thee.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+                    <lg>
+                        <l>Then SARAH told her little friend,</l>
+                        <l rend="indent(1)">There was, across the sea,</l>
+                        <l>A wooden idol on a car,</l>
+                        <l rend="indent(1)">As ugly as could be.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And people worshipped it, as though</l>
+                        <l rend="indent(1)">It mov'd with life and breath ;</l>
+                        <l>And threw themselves beneath its wheels,</l>
+                        <l rend="indent(1)">And there were crush'd to death.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo;Indeed!&rdquo; said FANNY, staring wide;</l>
+                        <l rend="indent(1)">&ldquo; How foolish they must be,</l>
+                        <l>&quot; To do so to a wooden god</l>
+                        <l rend="indent(1)">&quot; That cannot hear or see.&quot;</l>
+                    </lg>
+
+                    <pb n="28"/>
+                    <fw type="pagenumber" rend="align(centre)">26</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo;; They know no better,&rdquo; SARAH said,</l>
+                        <l rend="indent(1)">&quot; That dwell in that strange place :</l>
+                        <l>&quot; Theirs is a god of cruelty,</l>
+                        <l rend="indent(1)">&ldquo; But ours, a God of grace.&rdquo;</l>
+                    </lg>
+
+                </div>
+                <lb/>
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">J</head>
+
+                    <lg>
+                        <l>Too much, ungratefully, we dwell,</l>
+                        <l rend="indent(1)">Whate'er be our employ,</l>
+                        <l>Upon the sorrows of the world;</l>
+                        <l rend="indent(1)">Let J then speak of Joy,</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l>There is a joy the wicked know;</l>
+                        <l rend="indent(1)">But soon, alas! they find,</l>
+                        <l>It spreads its wings and flies away,</l>
+                        <l rend="indent(1)">And sorrow leaves behind.</l>
+                    </lg>
+
+                    <pb n="29"/>
+                    <fw type="pagenumber" rend="align(centre)">27</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>And there are thousand joys, that God</l>
+                        <l rend="indent(1)">In goodness scatters free ;</l>
+                        <l>But earthly joys that live to day,</l>
+                        <l rend="indent(1)">To&ndash;morrow may not be.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Like flowers, awhile, they sweetly bloom,</l>
+                        <l rend="indent(1)">In colours rich and gay:</l>
+                        <l>Like flowers they wither in their prime,</l>
+                        <l rend="indent(1)">And fall and fade away.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Still would I, though my joys abound,</l>
+                        <l rend="indent(1)">Or earthly sorrows lour;</l>
+                        <l>Give all my moments to my God,</l>
+                        <l rend="indent(1)">Through every changing hour.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>That when from this expiring frame,</l>
+                        <l rend="indent(1)">All earthly joys are driven ;</l>
+                        <l>My soul, exultingly, may soar,</l>
+                        <l rend="indent(1)">And find the joys of Heaven.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                </div>
+
+                <pb n="30"/>
+                <fw type="pagenumber" rend="align(centre)">28</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">K</head>
+
+                    <lg>
+                        <l>K leads us on to Knowledge still;</l>
+                        <l rend="indent(1)">O may we wiser grow,</l>
+                        <l>And ever turn to good account,</l>
+                        <l rend="indent(1)">The little that we know!</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And what is Knowledge? O my God !</l>
+                        <l rend="indent(1)">Were human wisdom given;</l>
+                        <l>If I could read the books of earth,</l>
+                        <l rend="indent(1)">And count the stars of Heaven ;</l>
+                    </lg>
+
+                    <pb n="31"/>
+                    <fw type="pagenumber" rend="align(centre)">29</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>In all my learning and my pride,</l>
+                        <l rend="indent(1)">My folly would be shown,</l>
+                        <l>Had I all knowledge of the world,</l>
+                        <l rend="indent(1)">If Thou wert still unknown.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>That I may knowledge gain aright,</l>
+                        <l rend="indent(1)">Do Thou my teacher be:</l>
+                        <l>The entrance unto wisdom's way,</l>
+                        <l rend="indent(1)">Is, Lord, the fear of thee.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And teach me, too, myself to know :</l>
+                        <l rend="indent(1)">While on my heavenly road ;</l>
+                        <l>I nothing am, and nothing have,</l>
+                        <l rend="indent(1)">Which thou hast not bestow'd.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Though worldly knowledge be possess'd,</l>
+                        <l rend="indent(1)">The heart it cannot fill;</l>
+                        <l>Be mine to know the God of grace,</l>
+                        <l rend="indent(1)">And learn to do his will.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                </div>
+
+                <pb n="32"/>
+                <fw type="pagenumber" rend="align(centre)">30</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">L</head>
+
+                    <lg>
+                        <l>L bids me listen to the Lark,</l>
+                        <l rend="indent(1)">That, singing, soars on high ;</l>
+                        <l>And leaves the world, with fluttering wing</l>
+                        <l rend="indent(1)">To carol in the sky.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>How sweet it is, at early dawn,</l>
+                        <l rend="indent(1)">The fragrant fields among,</l>
+                        <l>To mark his happy heavenward flight,</l>
+                        <l rend="indent(1)">And hear his tuneful gong.</l>
+                    </lg>
+
+                    <pb n="33"/>
+                    <fw type="pagenumber" rend="align(centre)">31</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>The rising sun a rapture brings</l>
+                        <l rend="indent(1)">That cannot be represt :</l>
+                        <l>'Tis joy that tunes his little throat,</l>
+                        <l rend="indent(1)">And fills his pan tip breast.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And shall the Lark, then, rise and sing</l>
+                        <l rend="indent(1)">For every blessing given,</l>
+                        <l>And I, ungrateful, silent be,</l>
+                        <l rend="indent(1)">Nor raise my heart to heaven ?</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O ! rather let the dawn of day</l>
+                        <l rend="indent(1)">Raise all my thoughts above ;</l>
+                        <l>And witness many a song of praise</l>
+                        <l rend="indent(1)">For all my Saviour's love.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O may thy Spirit draw my heart</l>
+                        <l rend="indent(1)">Just like the Lark to soar ;</l>
+                        <l>Then shall my soul with faith and love</l>
+                        <l rend="indent(1)">My Lord and God adore.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+
+                    <lg>
+                        <l>Said FANNY, with a smiling face,</l>
+                        <l rend="indent(1)">&ldquo; I like that very well ;</l>
+                        <l>&ldquo; The pretty little Lark !&quot; &ldquo; And so</l>
+                        <l rend="indent(1)">Do I,&quot; said SARAH BELL.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&quot; How often have I watch&rsquo;d the Lark</l>
+                        <l rend="indent(1)">&ldquo; And seen it rise and fall ;</l>
+                        <l>&quot; But, FANNY ! let us read the next :</l>
+                        <l rend="indent(1)">&quot; I think I like them all.</l>
+                    </lg>
+                    <p rend="align(centre)">&orn;</p>
+                </div>
+                <pb n="34"/>
+                <fw type="pagenumber" rend="align(centre)">32</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">M</head>
+
+                    <lg>
+                        <l>M must be MERCY ; grateful sound,</l>
+                        <l rend="indent(1)">To those who feel within</l>
+                        <l>The sorrows of a broken heart;</l>
+                        <l rend="indent(1)">The sinfulness of sin.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>When guilty man, in deep distress,</l>
+                        <l rend="indent(1)">Condemned, was seen to lie ;</l>
+                        <l>'Twas Mercy fill'd the Saviour's breast,</l>
+                        <l rend="indent(1)">And brought him from the sky.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And Mercy fled the world around,</l>
+                        <l rend="indent(1)">And spread the Gospel wide;</l>
+                        <l>Our dark, desponding souls to cheer;</l>
+                        <l rend="indent(1)">Our wandering steps to guide.</l>
+                    </lg>
+
+                    <pb n="35"/>
+                    <fw type="pagenumber" rend="align(centre)">33</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>'Twas Mercy eas'd my troubled heart,</l>
+                        <l rend="indent(1)">And rais'd my thoughts above ;</l>
+                        <l>And told me peace might yet be found,</l>
+                        <l rend="indent(1)">In my Redeemer's love.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Through all my joys and trials past,</l>
+                        <l rend="indent(1)">Mercies have mark'd my way ;</l>
+                        <l>And still they gather round my path,</l>
+                        <l rend="indent(1)">Where'er my footsteps stray.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For Mercies manifold and great,</l>
+                        <l rend="indent(1)">My God, will I adore;</l>
+                        <l>And still for Mercy will I pray,</l>
+                        <l rend="indent(1)">Till I can pray no more.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <fw type="signature" place="bottom" rend="align(centre)">C</fw>
+                </div>
+
+                <pb n="36"/>
+                <fw type="pagenumber" rend="align(centre)">34</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <head rend="align(centre)">N</head>
+
+                    <lg>
+                        <l>N NATURE fair presents to view,</l>
+                        <l rend="indent(1)">Through every changing hour ;</l>
+                        <l>In flood, and field, and mountain wild,</l>
+                        <l rend="indent(1)">In bird, and beast, and flower.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Where'er I turn around to gaze</l>
+                        <l rend="indent(1)">A thousand beauties rise,</l>
+                        <l>And spread their ever&ndash;varied charms,</l>
+                        <l rend="indent(1)">In earth, and sea, and skies.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Whether the Sun be shining bright,</l>
+                        <l rend="indent(1)">Or showers incessant fall;</l>
+                        <l>In every change, Almighty God</l>
+                        <l rend="indent(1)">Is seen amidst them all.</l>
+                    </lg>
+
+                    <pb n="37"/>
+                    <fw type="pagenumber" rend="align(centre)">35</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Thus through my life, whate'er betide ;</l>
+                        <l rend="indent(1)">Obedient to thy will,</l>
+                        <l>O may my prayer arise that God</l>
+                        <l rend="indent(1)">Would shine around me still.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Whether with joy my heart be light,</l>
+                        <l rend="indent(1)">Or fill'd with gloomy fears ;</l>
+                        <l>Whether my face be bright with smiles</l>
+                        <l rend="indent(1)">Or stain'd with falling tears.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>In every joy, in every woe,</l>
+                        <l rend="indent(1)">Would I my Maker see ;</l>
+                        <l>Still all around, and in my heart,</l>
+                        <l rend="indent(1)">May God my Saviour be.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>In every joy, in every woe,</l>
+                        <l rend="indent(1)">Would I my Maker see ;</l>
+                        <l>Still all around, and in my heart,</l>
+                        <l rend="indent(1)">May God my Saviour be.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+                    <lg>
+                        <l>&ldquo; How should we love ,&rdquo; said SARAH BELL,</l>
+                        <l rend="indent(1)">&ldquo; The God who dwells on high :</l>
+                        <l>&ldquo; His hands have form'd the big round world</l>
+                        <l rend="indent(1)">&ldquo; And made the smallest fly.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&quot; The Sun and Moon, and twinkling Stars</l>
+                        <l rend="indent(1)">&ldquo; Or whether great or small;</l>
+                        <l>&ldquo; He gave them light, and bade them shine</l>
+                        <l rend="indent(1)">&ldquo; And He is Lord of All.&rdquo;</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                </div>
+                <pb n="38"/>
+                <fw type="pagenumber" rend="align(centre)">36</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">O</head>
+
+                    <lg>
+                        <l>O calls the mighty OCEAN deep,</l>
+                        <l rend="indent(1)">My wondering eyes before ;</l>
+                        <l>And I can fancy, that I hear</l>
+                        <l rend="indent(1)">Its rushing waters roar.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>The ships are tost upon the flood ;</l>
+                        <l rend="indent(1)">When dreadful storms arise,</l>
+                        <l>And Ocean waves are swelling high,</l>
+                        <l rend="indent(1)">As they would mount the skies.</l>
+                    </lg>
+
+                    <pb n="39"/>
+                    <fw type="pagenumber" rend="align(centre)">37</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>What wondrous power does God possess,</l>
+                        <l rend="indent(1)">Who can that sea command;</l>
+                        <l>And bid it roll its waves, within</l>
+                        <l rend="indent(1)">The hollow of his hand.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>If he can quell the mighty deep</l>
+                        <l rend="indent(1)">When all its billows roll;</l>
+                        <l>How easy, then, for him to still</l>
+                        <l rend="indent(1)">The tempests of my soul.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>To calm the stormy thoughts that rise,</l>
+                        <l rend="indent(1)">Within my troubled breast;</l>
+                        <l>To bid my restless sorrows cease,</l>
+                        <l rend="indent(1)">And lull my cares to rest.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O Ocean! in thy wondrous power,</l>
+                        <l rend="indent(1)">Mighty art thou to me;</l>
+                        <l>How much more mighty still, must thine</l>
+                        <l rend="indent(1)">Almighty Maker be!</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+
+                    <lg>
+                        <l>&ldquo; How I should like,&rdquo; said FANNY BLAKE,</l>
+                        <l rend="indent(1)">&ldquo; To visit the sea&ndash;side:</l>
+                        <l>&ldquo; It's deeper than a house is high,</l>
+                        <l rend="indent(1)">&ldquo; They say, and very wide.&rdquo;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; The sea is very wide and deep,</l>
+                        <l rend="indent(1)">&ldquo;No doubt,&rdquo; said SARAH BELL,</l>
+                        <l>&ldquo; But God's amazing grace more vast,</l>
+                        <l rend="indent(1)">&ldquo; Than we can think or tell.&rdquo;</l>
+                    </lg>
+                    <lb/>
+                    <p rend="align(centre)">&orn;</p>
+                </div>
+
+                <pb n="40"/>
+                <fw type="pagenumber" rend="align(centre)">38</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">P</head>
+
+                    <lg>
+                        <l>P, thou art PRIDE; that fatal sin</l>
+                        <l rend="indent(1)">By which high angels fell,</l>
+                        <l>From innocence and joy in Heaven,</l>
+                        <l rend="indent(1)">To punishment in Hell.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>If angels pure, by thee were led</l>
+                        <l rend="indent(1)">To act a sinful part;</l>
+                        <l>What need have I, through every hour</l>
+                        <l rend="indent(1)">To watch my wand'ring heart.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>With folly, weakness, vain desires,</l>
+                        <l rend="indent(1)">And all my sins in view;</l>
+                        <l>What need have I to pray to God,</l>
+                        <l rend="indent(1)">That he may watch me too :</l>
+                    </lg>
+
+                    <pb n="41"/>
+                    <fw type="pagenumber" rend="align(centre)">39</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>And put a bridle on my lips ;</l>
+                        <l rend="indent(1)">And close mine ears and eyes;</l>
+                        <l>Defending me, when lofty thoughts,</l>
+                        <l rend="indent(1)">And vain desires arise.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O may this thoughtless heart of mine,</l>
+                        <l rend="indent(1)">Be humble and sincere;</l>
+                        <l>Nor let the seeds of sinful Pride</l>
+                        <l rend="indent(1)">Be ever foster'd there.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For, while confusion, pain, and tears,</l>
+                        <l rend="indent(1)">To bosoms proud are given;</l>
+                        <l>In Christ, the humble soul shall find</l>
+                        <l rend="indent(1)">The way that leads to heaven.</l>
+                    </lg>
+                    <lb/>
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                </div>
+
+                <pb n="42"/>
+                <fw type="pagenumber" rend="align(centre)">40</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">Q</head>
+
+                    <lg>
+                        <l>Q asks a QUESTION, which we read</l>
+                        <l rend="indent(1)">In God's most holy word ;</l>
+                        <l>And happy they who answer well;</l>
+                        <l rend="indent(1)">Say, &ldquo;Lovest thou the Lord?&rdquo;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>This Question, and the solemn words</l>
+                        <l rend="indent(1)">Upon our hearts should fall&mdash;</l>
+                        <l>Was ask'd of zealous Peter once,</l>
+                        <l rend="indent(1)">And may be ask'd of all.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Say, Lovest thou the Lord thy God ?</l>
+                        <l rend="indent(1)">Art thou obedient still,</l>
+                        <l>And swift to learn his holy law,</l>
+                        <l rend="indent(1)">And do his heavenly will ?</l>
+                    </lg>
+
+                    <pb n="43"/>
+                    <fw type="pagenumber" rend="align(centre)">41</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Dost thou, in all thy words and deeds,</l>
+                        <l rend="indent(1)">Keep charity in view ?</l>
+                        <l>For he who truly loves the Lord,</l>
+                        <l rend="indent(1)">Will love his brother too.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Whene'er we think of heavenly things,</l>
+                        <l rend="indent(1)">Or read the sacred word ;</l>
+                        <l>This solemn Question still should rise,</l>
+                        <l rend="indent(1)">Say, Lovest thou the Lord ?</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And happier, Reader! shalt thou be</l>
+                        <l rend="indent(1)">Than words can e'er express ;</l>
+                        <l>If, when the Question's put to thee,</l>
+                        <l rend="indent(1)">Thy heart can answer YES !</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+
+                    <lg>
+                        <l>Now SARAH shut the book, in haste,</l>
+                        <l rend="indent(1)">The cuckoo clock struck eight:</l>
+                        <l>&ldquo; How quick the time has past away;</l>
+                        <l rend="indent(1)">&ldquo; I shall be very late!</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; Why, FANNY, I must run away</l>
+                        <l rend="indent(1)">&ldquo; As fast as I have power:</l>
+                        <l>&ldquo; Who would have ever thought it, Girl,</l>
+                        <l rend="indent(1)">&ldquo; That I'd been here an hour ?&rdquo;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then quick she bid her friend good bye.</l>
+                        <l rend="indent(1)">With manner sweet and mild,</l>
+                        <l>And ran away, with all her might:</l>
+                        <l rend="indent(1)">She was an active child;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Employing every moment, like</l>
+                        <l rend="indent(1)">The little busy Bee ;</l>
+                        <l>For at her work, or book, or play,</l>
+                        <l rend="indent(1)">No child more quick than she.</l>
+                    </lg>
+                </div>
+            </div>
+            <pb n="44"/>
+            <fw type="pagenumber" rend="align(centre)">42</fw>
+            <lb/>
+
+            <div type="section">
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <head rend="align(centre) italic">Part the Third.</head>
+
+                <lg>
+                    <l>It was toward the close of day,</l>
+                    <l rend="indent(1)">A pleasant sight to see,</l>
+                    <l>Both SARAH BELL and FANNY BLAKE,</l>
+                    <l rend="indent(1)">Seated beneath a tree.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>The tree was very large and high,</l>
+                    <l rend="indent(1)">And spread its boughs around;</l>
+                    <l>And leaves were lying, here and there.</l>
+                    <l rend="indent(1)">And acorns, on the ground.</l>
+                </lg>
+
+                <pb n="45"/>
+                <fw type="pagenumber" rend="align(centre)">43</fw>
+                <lb/>
+
+                <lg>
+                    <l>The rains had wash'd the earth away,</l>
+                    <l rend="indent(1)">And left a root quite bare ;</l>
+                    <l>And there they sat; the setting sun</l>
+                    <l rend="indent(1)">Was wondrous bright and fair.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>A pretty cottage was in sight,</l>
+                    <l rend="indent(1)">With garden ground before;</l>
+                    <l>The light blue smoke was rising high,</l>
+                    <l rend="indent(1)">And woodbines at the door.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>How sweet a thing it is, to gaze</l>
+                    <l rend="indent(1)">On childhood's happy hour ;</l>
+                    <l>Ere sorrow has pierc'd through the heart,</l>
+                    <l rend="indent(1)">Or worldly cares o'erpower.</l>
+                </lg>
+                <lb/>
+
+                <lg>
+                    <l>It was when sitting on the root,</l>
+                    <l rend="indent(1)">Beneath that tree so high ;</l>
+                    <l>That SARAH read her little book,</l>
+                    <l rend="indent(1)">And FANNY listen'd by.</l>
+                </lg>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+
+                <pb n="46"/>
+                <fw type="pagenumber" rend="align(centre)">44</fw>
+                <lb/>
+
+                <div type="section">
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">R</head>
+
+
+                    <lg>
+                        <l>R tells of RICHES ; glittering things !</l>
+                        <l rend="indent(1)">But let thy heart beware ;</l>
+                        <l>For he, who hasteth to be rich,</l>
+                        <l rend="indent(1)">Is caught in many a snare.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Though all the wealth of all the world,</l>
+                        <l rend="indent(1)">In sparkling heaps were thine ;</l>
+                        <l>Still wert thou poor, amidst thy gains,</l>
+                        <l rend="indent(1)">Unblest with grace divine.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>A camel easier may pass</l>
+                        <l rend="indent(1)">Through a small needle's eye;</l>
+                        <l>Than can a rich man, fill'd with pride,</l>
+                        <l rend="indent(1)">Attain to heaven on high.</l>
+                    </lg>
+
+                    <pb n="47"/>
+                    <fw type="pagenumber" rend="align(centre)">45</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>For all that thither go, though rich,</l>
+                        <l rend="indent(1)">Renounce their treasures all;</l>
+                        <l>And sinners, penitent and poor,</l>
+                        <l rend="indent(1)">Before their Saviour fall.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Wouldst thou be truly rich, and see</l>
+                        <l rend="indent(1)">Thy treasures round thee rise ;</l>
+                        <l>Be rich in faith, and place secure</l>
+                        <l rend="indent(1)">Thy treasures in the skies.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then though the gold and silver bright,</l>
+                        <l rend="indent(1)">Shall quickly melt away;</l>
+                        <l>Thy Riches, evermore shall last,</l>
+                        <l rend="indent(1)">Through heaven's eternal day.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                </div>
+
+                <pb n="48"/>
+                <fw type="pagenumber" rend="align(centre)">46</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">S</head>
+
+                    <lg>
+                        <l>Yes ! I will think of heavenly things</l>
+                        <l rend="indent(1)">While on my way I plod ;</l>
+                        <l>And S shall shadow forth, to me</l>
+                        <l rend="indent(1)">The SABBATH of my God.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>When Sunday dawns, in cheerful haste</l>
+                        <l rend="indent(1)">My head I'll joyful raise,</l>
+                        <l>To greet the day of rest and peace ;</l>
+                        <l rend="indent(1)">The day of prayer and praise.</l>
+                    </lg>
+
+                    <pb n="49"/>
+                    <fw type="pagenumber" rend="align(centre)">47</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>And I will gladly join the throng</l>
+                        <l rend="indent(1)">That seek the house of prayer ;</l>
+                        <l>For God has promised, in his love,</l>
+                        <l rend="indent(1)">To meet, and bless them there.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>But will the God of earth and skies,</l>
+                        <l rend="indent(1)">From heaven's exalted span,</l>
+                        <l>Descend in mercy from above,</l>
+                        <l rend="indent(1)">And comfort fallen man ?</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O Yes ! and let his promise be</l>
+                        <l rend="indent(1)">Thy stay in every storm:</l>
+                        <l>What he has written in his word,</l>
+                        <l rend="indent(1)">His goodness will perform.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>The Sabbath now that is enjoy'd,</l>
+                        <l rend="indent(1)">To man in love is given,</l>
+                        <l>Till one more glorious shall arise,</l>
+                        <l rend="indent(1)">Eternal and in heaven.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+                    <lg>
+                        <l>Then SARAH told about the school,</l>
+                        <l rend="indent(1)">Where she on Sunday went;</l>
+                        <l>How they, who had not learned to read,</l>
+                        <l rend="indent(1)">To the first class were sent.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And when they had been there awhile,</l>
+                        <l rend="indent(1)">And knew their letters well;</l>
+                        <l>They went into the second class,</l>
+                        <l rend="indent(1)">One syllable to spell.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then came the third ; &ldquo;and so,&rdquo; said she,</l>
+                        <l rend="indent(1)">&ldquo; My FANNY dear! indeed,</l>
+                        <l>&ldquo; You hardly would believe it, Girl,</l>
+                        <l rend="indent(1)">&ldquo; How soon they learn to read.&rdquo;</l>
+                    </lg>
+                </div>
+
+                <pb n="50"/>
+                <fw type="pagenumber" rend="align(centre)">48</fw>
+                <lb/>
+
+                <div type="section">
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">T</head>
+
+                    <lg>
+                        <l>Thou TIMME art told by letter T ;</l>
+                        <l rend="indent(1)">That space to mortals given,</l>
+                        <l>That they may learn the law of God,</l>
+                        <l rend="indent(1)">And raise their thoughts to heaven.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Unwillingly we hear the truth,</l>
+                        <l rend="indent(1)">And still are slow to learn,</l>
+                        <l>That Time, however swift, when past,</l>
+                        <l rend="indent(1)">Will never more return.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And will the winged dart of death</l>
+                        <l rend="indent(1)">Arrest my brief career ?</l>
+                        <l>Shall I as sinner or as saint,</l>
+                        <l rend="indent(1)">With grief or joy appear?</l>
+                    </lg>
+
+                    <pb n="51"/>
+                    <fw type="pagenumber" rend="align(centre)">49</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Then not a moment let me lose,</l>
+                        <l rend="indent(1)">But haste with heart and mind,</l>
+                        <l>To seek the pardoning grace of Christ;</l>
+                        <l rend="indent(1)">For they that seek shall find.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Though years in swift succession fly,</l>
+                        <l rend="indent(1)">And Time unnoticed glide ;</l>
+                        <l>Yet shall my every day be blest,</l>
+                        <l rend="indent(1)">If God be near my side.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>To thee, ere fleeting Time shall pass,</l>
+                        <l rend="indent(1)">My Saviour I would flee ;</l>
+                        <l>And give myself, with all my strength.</l>
+                        <l rend="indent(1)">Through all my Time, to thee.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+                    <lg>
+                        <l>How disposition shews itself</l>
+                        <l rend="indent(1)">In manner and in look ;</l>
+                        <l>For SARAH's anxious face was fix'd</l>
+                        <l rend="indent(1)">Intent upon her book.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>While FANNY's eye was roving round,</l>
+                        <l rend="indent(1)">The setting sun to see ;</l>
+                        <l>Or watch the leaves that, now and then</l>
+                        <l rend="indent(1)">Fell rustling from the tree.</l>
+                    </lg>
+                    <lb/>
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <fw type="signature" place="bottom" rend="align(centre)">D</fw>
+
+                </div>
+
+                <pb n="52"/>
+                <fw type="pagenumber" rend="align(centre)">50</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head rend="align(right)"><hi rend="italic">John</hi> xx.27&mdot;</head>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">U</head>
+
+                    <lg>
+                        <l>U tells me of a sin that steals</l>
+                        <l rend="indent(1)">Upon us like a thief ;</l>
+                        <l>And robs us of a thousand joys :</l>
+                        <l rend="indent(1)">That sin is UNBELIEF.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>God sent his prophets and his Son</l>
+                        <l rend="indent(1)">That sinners might believe ;</l>
+                        <l>But who the prophet's word would hear?</l>
+                        <l rend="indent(1)">Or who the Lord receive ?</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Now, God has sent his holy word</l>
+                        <l rend="indent(1)">To teach us all his will,</l>
+                        <l>And we that holy word read o'er,</l>
+                        <l rend="indent(1)">But disbelieve him still.</l>
+                    </lg>
+
+                    <pb n="53"/>
+                    <fw type="pagenumber" rend="align(centre)">51</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Did we believe ; our hearts would burn</l>
+                        <l rend="indent(1)">To serve the Lord on high;</l>
+                        <l>And sin, through Christ's atoning grace,</l>
+                        <l rend="indent(1)">And sorrows too would die.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Thou, Giver of eternal things!</l>
+                        <l rend="indent(1)">Thy servant's prayer receive ;</l>
+                        <l>And take away my UNBELIEF,</l>
+                        <l rend="indent(1)">And teach me to believe.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then shall I lift my heart to thee ;</l>
+                        <l rend="indent(1)">Thy Providence adore;</l>
+                        <l>And hope, and peace, and faith, and joy,</l>
+                        <l rend="indent(1)">Be mine for evermore.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <fw type="signature" place="bottom" rend="align(centre)">D 2</fw>
+                </div>
+
+                <pb n="54"/>
+                <fw type="pagenumber" rend="align(centre)">52</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">V</head>
+
+                    <lg>
+                        <l>VIRTUE, the letter V proclaims :</l>
+                        <l rend="indent(1)">And, O ! how truly blest</l>
+                        <l>Are they, and only they, who live</l>
+                        <l rend="indent(1)">With Virtue in their breast.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Its value is above all price</l>
+                        <l rend="indent(1)">That can be paid in gold :</l>
+                        <l>A crown of happiness to Youth;</l>
+                        <l rend="indent(1)">Of glory to the old.</l>
+                    </lg>
+
+                    <pb n="55"/>
+                    <fw type="pagenumber" rend="align(centre)">53</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Know all that seek for bliss in life</l>
+                        <l rend="indent(1)">And long for length of days ;</l>
+                        <l>That honour, peace, and health, are theirs,</l>
+                        <l rend="indent(1)">Who walks in Virtue's ways.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For godliness is greatest gain;</l>
+                        <l rend="indent(1)">So runs the sacred text;</l>
+                        <l>And hath the promise of this world</l>
+                        <l rend="indent(1)">As well as of the next.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then call upon the Lord thy God</l>
+                        <l rend="indent(1)">Would'st thou be virtuous still ;</l>
+                        <l>And read his sacred word, and strive</l>
+                        <l rend="indent(1)">To learn his holy will.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For all the Virtue that thou hast,</l>
+                        <l rend="indent(1)">From God, in mercy came ;</l>
+                        <l>And thou canst only hope for heaven</l>
+                        <l rend="indent(1)">Through thy Redeemer's name.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo;Now mark that FANNY !&rdquo; SARAH said</l>
+                        <l rend="indent(1)">&ldquo;No good can e'er befall,</l>
+                        <l>&ldquo; That comes not from the Lord our God ;</l>
+                        <l rend="indent(1)">&ldquo; For we are sinners all.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&lsquo;Sure we should never, then, forget</l>
+                        <l rend="indent(1)">&ldquo;Through all our passing days ;</l>
+                        <l>&ldquo; To pray that God our youth would guide</l>
+                        <l rend="indent(1)">&ldquo; And all our thoughts and ways.&rdquo;</l>
+                    </lg>
+                    <lb/>
+                    <p rend="align(centre)">&orn;</p>
+                </div>
+
+                <pb n="56"/>
+                <fw type="pagenumber" rend="align(centre)">54</fw>
+                <lb/>
+
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">W</head>
+
+                    <lg>
+                        <l>Or whether peace attend my path,</l>
+                        <l rend="indent(1)">Or storms around be hurl'd ;</l>
+                        <l>The letter W shall still</l>
+                        <l rend="indent(1)">Remind me of the WORLD.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>The many things the World contains</l>
+                        <l rend="indent(1)">Are very dear to me;</l>
+                        <l>Yet must the thought that they will fade</l>
+                        <l rend="indent(1)">On my remembrance be.</l>
+                    </lg>
+
+                    <pb n="57"/>
+                    <fw type="pagenumber" rend="align(centre)">55</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Our fame, alas! is but a breath;</l>
+                        <l rend="indent(1)">Our friends will turn to clay,</l>
+                        <l>And all our golden treasures bright,</l>
+                        <l rend="indent(1)">Make wings and fly away.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then, while we gratefully enjoy</l>
+                        <l rend="indent(1)">The gifts the World bestows,</l>
+                        <l>O let us praise that gracious God</l>
+                        <l rend="indent(1)">From whom each blessing flows;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Still let us while the World's delight</l>
+                        <l rend="indent(1)">Around our bosom clings,</l>
+                        <l>Press onward, with redoubled zeal,</l>
+                        <l rend="indent(1)">To more enduring things.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Still, in each fellow creature see</l>
+                        <l rend="indent(1)">A sister or a brother;</l>
+                        <l>And fix, while passing through this World</l>
+                        <l rend="indent(1)">Our hearts upon another.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                </div>
+
+                <pb n="58"/>
+                <fw type="pagenumber" rend="align(centre)">56</fw>
+                <lb/>
+                <div type="section">
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">X</head>
+
+
+                    <lg>
+                        <l>X is a letter little used</l>
+                        <l rend="indent(1)">And hard to write upon :</l>
+                        <l>It stands, here, for two famous men ;</l>
+                        <l rend="indent(1)">XERXES and XENEPHON.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>The first, he was a warrior bold</l>
+                        <l rend="indent(1)">A king of mighty fame ;</l>
+                        <l>The latter, was a learned man;</l>
+                        <l rend="indent(1)">In Greece well known his name.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>The one, in knowledge he was great ;</l>
+                        <l rend="indent(1)">The other great in power;</l>
+                        <l>But they are dead, and only liv'd,</l>
+                        <l rend="indent(1)">Alas ! their little hour.</l>
+                    </lg>
+
+                    <pb n="59"/>
+                    <fw type="pagenumber" rend="align(centre)">57</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>If learning deep, and kingly pride,</l>
+                        <l rend="indent(1)">The mighty cannot save;</l>
+                        <l>How certain and how soon shall I</l>
+                        <l rend="indent(1)">Sink in the silent grave.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>But though I may not talk of power</l>
+                        <l rend="indent(1)">Nor boast of learning's pride ;</l>
+                        <l>Yet may I to my Saviour go, </l>
+                        <l rend="indent(1)">And he will all provide.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>O, Thou ! who strength and wisdom art ;</l>
+                        <l rend="indent(1)">Thy servant let me be;</l>
+                        <l>And all my knowledge, and my power </l>
+                        <l rend="indent(1)">Obtain them, Lord, from thee.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+
+                    <lg>
+                        <l>While SARAH urged her little friend</l>
+                        <l rend="indent(1)">Her heavenly course to run ;</l>
+                        <l>FANNY peep'd at the book, to see</l>
+                        <l rend="indent(1)">If she had nearly done.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>This idle girl then smil'd with joy</l>
+                        <l rend="indent(1)">For she was pleas'd indeed,</l>
+                        <l>To see, as SARAH turn'd the leaves,</l>
+                        <l rend="indent(1)">There were so few to read. </l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>With soothing sound, and balmy breath,</l>
+                        <l rend="indent(1)">The evening breeze came by;</l>
+                        <l>As SARAH BELL began to read</l>
+                        <l rend="indent(1)">About the letter Y.</l>
+                    </lg>
+                    <lb/>
+                    <p rend="align(centre)">&orn;</p>
+                </div>
+
+                <pb n="60"/>
+                <fw type="pagenumber" rend="align(centre)">58</fw>
+                <lb/>
+
+                <div type="section">
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">Y</head>
+
+                    <lg>
+                        <l>Y speaks of YOUTH, that happy time,</l>
+                        <l rend="indent(1)">When pleasant thoughts abound ;</l>
+                        <l>And health, and hope, and holiday,</l>
+                        <l rend="indent(1)">Are smiling all around. </l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Unknown in youth, the deeper care,</l>
+                        <l rend="indent(1)">And toil and anxious fears,</l>
+                        <l>That cast a shade upon the brows,</l>
+                        <l rend="indent(1)">Of more advanced years.</l>
+                    </lg>
+
+                    <pb n="61"/>
+                    <fw type="pagenumber" rend="align(centre)">59</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>O, sweet it is! to see the young</l>
+                        <l rend="indent(1)">Their vacant hour employ,</l>
+                        <l>In many a laughter&ndash;loving sport,</l>
+                        <l rend="indent(1)">Of innocence and joy.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And sweeter still, when, taught aright,</l>
+                        <l rend="indent(1)">They walk in wisdom's ways;</l>
+                        <l>And offer up their youthful hearts,</l>
+                        <l rend="indent(1)">In gratitude and praise.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For they who early seek the Lord,</l>
+                        <l rend="indent(1)">The Lord shall early find ;</l>
+                        <l>And love, and peace, around their hearts,</l>
+                        <l rend="indent(1)">Eternal mercies bind.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>In all the changes of thy life,</l>
+                        <l rend="indent(1)">Still for thy death prepare ;</l>
+                        <l>O, give thy earliest youth to Christ,</l>
+                        <l rend="indent(1)">Thy age shall be his care.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                </div>
+
+                <pb n="62"/>
+                <fw type="pagenumber" rend="align(centre)">60</fw>
+                <lb/>
+
+                <div type="section">
+
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <head rend="align(centre)">Z</head>
+
+                    <lg>
+                        <l>This crooked letter is the last;</l>
+                        <l rend="indent(1)">Let Z, then, mark the ZEAL,</l>
+                        <l>For every high and holy thing,</l>
+                        <l rend="indent(1)">The Christian ought to feel.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Howe'er thy hand may be employ'd ;</l>
+                        <l rend="indent(1)">Thy secret thoughts inclin'd;</l>
+                        <l>Yet, forward press, in every good,</l>
+                        <l rend="indent(1)">With all thy heart and mind.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>If life be short; be zealous still,</l>
+                        <l rend="indent(1)">In what thou hast to do;</l>
+                        <l>And serve thy God with all thy soul,</l>
+                        <l rend="indent(1)">And love thy neighbour too.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Press forward with an ardent hope,</l>
+                        <l rend="indent(1)">Whatever thy life befall;</l>
+                        <l>In word and deed, in prayer and praise</l>
+                        <l rend="indent(1)">Be zealous in them all.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>When, trusting to our heavenly guide.</l>
+                        <l rend="indent(1)">Our earthly course we run;</l>
+                        <l>Too much of good we cannot do ;</l>
+                        <l rend="indent(1)">Too little all have done.</l>
+                    </lg>
+
+                    <pb n="63"/>
+                    <fw type="pagenumber" rend="align(centre)">61</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Let Zeal for Christ inspire our hearts;</l>
+                        <l rend="indent(1)">And with prevailing power,</l>
+                        <l>Attend us through the paths of life,</l>
+                        <l rend="indent(1)">And mark our dying hour.</l>
+                    </lg>
+                    <lb/>
+                    <p>&rule;</p>
+                    <lb/>
+                    <lg>
+                        <l>The sun, behind the distant hill,</l>
+                        <l rend="indent(1)">His setting beams had spread ;</l>
+                        <l>Ere SARAH BELL and FANNY BLAKE.</l>
+                        <l rend="indent(1)">The little book had read.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Then up they got and walk'd away;</l>
+                        <l rend="indent(1)">And FANNY BLAKE agreed,</l>
+                        <l>With SARAH BELL, that it must be</l>
+                        <l rend="indent(1)">A pleasant thing to read.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>But many an idle, vain excuse,</l>
+                        <l rend="indent(1)">She gave her friend to show,</l>
+                        <l>Why she, unto the Sunday School,</l>
+                        <l rend="indent(1)">At present, could not go.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>But O ! how sweetly SARAH BELL,</l>
+                        <l rend="indent(1)">To FANNY BLAKE replied ;</l>
+                        <l>And urg'd her friend to think, in time,</l>
+                        <l rend="indent(1)">Of Jesus crucified.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo;To day!&rdquo; said she &ldquo;To day's the time</l>
+                        <l rend="indent(1)">&ldquo; To seek for mercy free,</l>
+                        <l>&ldquo; And know the Lord; for none can tell</l>
+                        <l rend="indent(1)">&ldquo;Who may to&ndash;morrow see.&rdquo;</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Day after Day, poor SARAH strove:</l>
+                        <l rend="indent(1)">At times, indeed, she fear'd,</l>
+                        <l>That she might never win her friend ;</l>
+                        <l rend="indent(1)">But, still, she persever'd.</l>
+                    </lg>
+
+                    <pb n="64"/>
+                    <fw type="pagenumber" rend="align(centre)">62</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>And put up many a fervent prayer :</l>
+                        <l rend="indent(1)">At last, it so befell;</l>
+                        <l>That hand in hand went FANNY BLAKE,</l>
+                        <l rend="indent(1)">To School with SARAH BELL.</l>
+                    </lg>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+
+                    <lg>
+                        <l>Now FANNY, though neglected long,</l>
+                        <l rend="indent(1)">Was quick and ready still,</l>
+                        <l>At every thing she took in hand :</l>
+                        <l rend="indent(1)">She wanted but the will.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Instruction, to a stubborn child,</l>
+                        <l rend="indent(1)">In vain its care bestows ;</l>
+                        <l>But, where there is a willing mind,</l>
+                        <l rend="indent(1)">Then, learning easy, grows.</l>
+                    </lg>
+
+                    <pb n="65"/>
+                    <fw type="pagenumber" rend="align(centre)">63</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>Now then, my little readers all!</l>
+                        <l rend="indent(1)">A good example take;</l>
+                        <l>And something learn from SARAH BELL,</l>
+                        <l rend="indent(1)">And little FANNY BLAKE.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>What was it, that made SARAH BELL,</l>
+                        <l rend="indent(1)">As on her way she trod,</l>
+                        <l>So anxious for her little friend ?&mdash;</l>
+                        <l rend="indent(1)">It was the grace of God !</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For all that know the Lord aright,</l>
+                        <l rend="indent(1)">And love his will to do;</l>
+                        <l>Will ever strive, and anxious be,</l>
+                        <l rend="indent(1)">That others love it too.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Sarah was young; but yet her breast</l>
+                        <l rend="indent(1)">Of sin was sore afraid ;</l>
+                        <l>For knowledge of a Saviour's love.</l>
+                        <l rend="indent(1)">Her heart had tender made.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>And often would she pray, &ldquo; O, Thou !</l>
+                        <l rend="indent(1)">&ldquo; Who didst for sin atone ;</l>
+                        <l>&ldquo; Teach me my sinfulness to know,</l>
+                        <l rend="indent(1)">&ldquo; And trust in thee alone.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; My peace and joy have been obtain'd</l>
+                        <l rend="indent(1)">&ldquo; From sorrows borne by Thee</l>
+                        <l>&ldquo; My gain arises from thy loss,</l>
+                        <l rend="indent(1)">&ldquo; Thy death is life to me.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>&ldquo; Jesus, accept my youthful heart,</l>
+                        <l rend="indent(1)">&ldquo; Constrain'd by love divine ;</l>
+                        <l>&ldquo; And may my future years declare</l>
+                        <l rend="indent(1)">&ldquo; That I am wholly thine.&rdquo;</l>
+                    </lg>
+
+                    <pb n="66"/>
+                    <fw type="pagenumber" rend="align(centre)">64</fw>
+                    <lb/>
+
+                    <lg>
+                        <l>FANNY at first was slow; but soon</l>
+                        <l rend="indent(1)">She understood the plan,</l>
+                        <l>And learn'd apace ; and swiftly through</l>
+                        <l rend="indent(1)">The different classes ran.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For SARAH BELL was always near</l>
+                        <l rend="indent(1)">In every time of need;</l>
+                        <l>Encourag'd, guided and reprov'd,</l>
+                        <l rend="indent(1)">And was her friend indeed.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>Nor did she, on her knees forget,</l>
+                        <l rend="indent(1)">With grateful heart, to bend,</l>
+                        <l>And offer thanks for every gift,</l>
+                        <l rend="indent(1)">Bestow'd upon her friend.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>For FANNY, daily wiser grew,</l>
+                        <l rend="indent(1)">And read the sacred word,</l>
+                        <l>Till she was taught, O happy hour !</l>
+                        <l rend="indent(1)">To know and love the Lord.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>With spirit humble, and sincere ;</l>
+                        <l rend="indent(1)">With temper meek, and mild;</l>
+                        <l>She look'd upon the past with shame.</l>
+                        <l rend="indent(1)">And was an alter'd child.</l>
+                    </lg>
+                    <lb/>
+
+                    <lg>
+                        <l>With willing mind, she went to School,</l>
+                        <l rend="indent(1)">(It pleases me to tell,)</l>
+                        <l>Till she became as good a girl,</l>
+                        <l rend="indent(1)">As little SARAH BELL.</l>
+                    </lg>
+                    <lb/>
+                    <p rend="align(centre)">&orn;</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <pb n="67"/>
+            <pb n="68"/>
+            <div type="cover"/>
+            <figure type="borderornament"/>
+            <div type="epigraph">
+                <lg>
+                    <l>Jesus! make my froward heart </l>
+                    <l rend="indent(1)">Humble, teachable, and mild,</l>
+                    <l>Upright, simple, free from art,</l>
+                    <l rend="indent(1)">Like a little weaned child,</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>From all pride and envy free,</l>
+                    <l rend="indent(1)">Teach me to obey thy will,</l>
+                    <l>Pleas'd with all that pleases thee,</l>
+                    <l rend="indent(1)">Love, and praise, and bless thee still.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>What thou shalt to-day provide,</l>
+                    <l rend="indent(1)">Let me as a child receive;</l>
+                    <l>What to&ndash;morrow may betide,</l>
+                    <l rend="indent(1)">Calmly to thy wisdom leave.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Oh what grace! that Christ should<lb rend="indent(6)"/>care</l>
+                    <l rend="indent(1)">Thus for our poor helpless race,</l>
+                    <l>All our burdens kindly bear,</l>
+                    <l rend="indent(1)">Clasp us in his kind embrace.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Let me then on thee rely,</l>
+                    <l rend="indent(1)">While my heart to thee I give ;</l>
+                    <l>Happy when I come to die,</l>
+                    <l rend="indent(1)">Happier still with thee to live.</l>
+                </lg>
+            </div>
+        </back>
+    </text>
+</TEI>

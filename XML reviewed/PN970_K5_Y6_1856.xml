@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-11-07"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<name/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-06"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="beige coloured pictorial wrappers">
+                <note type="illegible"/>
+                <figure type="borderornament"/>
+                <bibl rend="align(centre)">
+                    <series>
+                    <biblScope>THIRD SERIES.&mdash;No 5. <lb/>&rule;</biblScope>
+                    </series>
+                    <lb/><title level="m">THE <lb/>YOUNG ARITHMETICIAN ; <lb/>OR, <lb/>THE REWARD OF
+                        PERSEVERANCE.</title>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>31D13</name>
+                            <desc>adolescent, young woman, maiden</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/><pubPlace>NEW YORK :</pubPlace>
+                    <lb/><publisher>KIGGINS &amp; KELLOGG,</publisher>
+                    <lb/><pubPlace>123 &amp; 125 William St.</pubPlace>
+                </bibl>
+
+                <pb n="2"/>
+            </div>
+
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart type="main">THE<lb/>YOUNG ARITHMETICIAN ;</titlePart>
+                    <titlePart type="sub">OR,<lb/>THE REWARD OF PERSEVERANCE.</titlePart>
+                </docTitle>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>31D13</name>
+                        <desc>adolescent, young woman, maiden</desc>
+                    </ic:iconClass>
+                </figure>
+                <docImprint>
+                    <pubPlace>NEW YORK :</pubPlace>
+                    <publisher>KIGGINS &amp; KELLOGG,</publisher>
+                    <pubPlace>123 &amp; 125 William St.</pubPlace>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="4"/>
+            <figure rend="align(centre) landscape">
+                <ic:iconClass>
+                    <name>31D13</name>
+                    <desc>adolescent, young woman, maiden</desc>
+                </ic:iconClass>
+                <head>Laura Sinclair.</head>
+                <lb/>
+            </figure>
+
+            <pb n="5"/>
+            <head rend="align(centre)">THE<lb/>YOUNG ARITHMETICIAN.<lb/>&rule;</head>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">LAURA SINCLAIR was an intelligent<lb/>girl,
+                studiously devoted to all her les&ndash;<lb type="inWord"/>sons except arithmetic.
+                That to her was<lb/>a hard, dry study. One pleasant morn&ndash;<lb type="inWord"
+                />ing, she had seated herself near the sum&ndash;<lb type="inWord"/>mer&ndash;house
+                in the garden, to be away from<lb/>the children's noise, and attempted to
+                fix<lb/>her mind upon the to her uninteresting<lb/>study ; but a hard sum, upon
+                which she<lb/>was engaged, overcame her patience,<lb/>and she threw down her slate
+                and book<lb/>in a pet. Her mother at that moment<lb/>came to the door which looked
+                into the<lb/>garden. &ldquo; Oh, mother,&rdquo; she exclaimed,<lb/>&ldquo; this is
+                arithmetic day ; how I hate it !&rdquo;</p>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">&ldquo; My daughter, do not make use
+                of<lb/>such expressions,&rdquo; replied her mother.<lb/>&ldquo; Nothing is wanting
+                but close attention<lb/>and perseverance, to make that study as<lb/>agreeable as any
+                other. If you pass<lb/>over a rule carelessly, and say you un&ndash;<lb
+                    type="inWord"/>derstand it from want of energy to learn<lb/>it, you will always
+                find it difficult, I<lb/>speak with feeling on this subject, for<lb/>when I went to
+                school, a fine arithmeti&ndash;<lb type="inWord"/>cian shared the same desk with
+                myself,<lb/>and whenever I was perplexed by a dif&ndash;<lb type="inWord"/>ficult
+                sum, instead of applying to the<lb/>teacher for an explanation, I asked
+                    Ame&ndash;<lb type="inWord"/>lia to do it for me. She was too obli&ndash;<lb
+                    type="inWord"/>ging, and complied. The consequence<lb/>is, that even now I am
+                often compelled<lb/>to refer to your father in trifling calcu&ndash;<lb
+                    type="inWord"/>lations. I expect much assistance from<lb/>your perseverance,
+                Laura,&rdquo; continued<lb/>she, affectionately taking her hand.</p>
+            <p rend="first-indent(2) align(justify)">Laura's eyes looked a good resolu&ndash;<lb
+                    type="inWord"/>tion, and she commenced the next day <pb n="7"/>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw><lb/> putting it in practice.
+                Instead of being<lb/>angry because she could not understand<lb/>her figures, she
+                tried to clear her brow<lb/>to understand them better ; and her tu&ndash;<lb
+                    type="inWord"/>tor was surprised to find her mind rap&ndash;<lb type="inWord"
+                />idly opening to comprehend the more<lb/>difficult rules. She now felt the
+                    pleas&ndash;<lb type="inWord"/>ure of self&ndash;conquest, besides the
+                    enjoy&ndash;<lb type="inWord"/>ment of her mother's approbation,
+                and<lb/>steadily gave herself up to the several<lb/>branches of mathematics.</p>
+            <p rend="first-indent(2) align(justify)">Laura was the eldest of four children,<lb/>one
+                an infant, who had been born to the<lb/>luxuries of wealth. Mr. Sinclair was
+                a<lb/>merchant of respectable connexions, and<lb/>had been successful in business,
+                with ev&ndash;<lb type="inWord"/>ery prospect of a competency to retire<lb/>upon in
+                his declining years. But, alas !<lb/>how uncertain all human calculations !<lb/>He,
+                late one afternoon, received word<lb/>by telegraph that an extensive
+                    mercan&ndash;<lb type="inWord"/>tile house in another city &mdash; one to
+                which<lb/>he was creditor to a very heavy amount <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw><lb/> &mdash;was on the very
+                verge of bankruptcy.<lb/>His immediate presence was required ;<lb/>not an hour was
+                to be lost. The utmost<lb/>speed of steam would only allow him to<lb/>arrive in
+                season to be of any avail. He<lb/>immediately threw a few necessary arti&ndash;<lb
+                    type="inWord"/>cles into a carpet&ndash;bag, seized his um&ndash;<lb
+                    type="inWord"/>brella, took a hasty leave of his family,<lb/>and speeded his way
+                to the boat. But<lb/>here he was destined to disappointment.<lb/>He arrived at the
+                pier only in season to <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C512</name>
+                        <desc>departure ~ travelling</desc>
+                    </ic:iconClass>
+                </figure> find the boat in the middle of the stream,<lb/>pursuing its way without
+                him. With a <pb n="9"/>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw><lb/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>49N1</name>
+                        <desc>reading to somebody</desc>
+                    </ic:iconClass>
+                </figure>
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw><lb/> heavy heart, he turned
+                his steps home<lb/>ward, feeling that by this single misfor&ndash;<lb type="inWord"
+                />tune his business was almost irretrieva&ndash;<lb type="inWord"/>bly involved, and
+                that he was nearly a<lb/>ruined man.</p>
+            <p rend="first-indent(2) align(justify)">A nervous temperament and a delicate<lb/>system
+                were soon sadly wrought upon<lb/>by this misfortune. Mr. Sinclair's
+                mind,<lb/>perplexed and harassed, seemed sinking<lb/>under the weight of anxiety.
+                Laura was<lb/>at this period sixteen years of age. Her<lb/>mind was clear and
+                vigorous, and seemed<lb/>resting, like a young fawn, for its first<lb/>bound. A
+                portion of her time was de&ndash;<lb type="inWord"/>voted to the instruction of her
+                little sis&ndash;<lb type="inWord"/>ter and brother. A picture of her
+                thus<lb/>occupied may be seen on the previous<lb/>page. One cold autumnal evening,
+                when<lb/>the children had got through their les&ndash;<lb type="inWord"/>sons, and
+                with their wild gambols were<lb/>playing round the room, Mr. Sinclair
+                sat<lb/>leaning his head upon his hand, over a<lb/>table covered with papers, with
+                his ledger <pb n="11"/>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw><lb/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>46B321</name>
+                        <desc>book-keeping, accountant</desc>
+                    </ic:iconClass>
+                </figure>
+                <pb n="12"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw><lb/> open before him. Mrs.
+                Sinclair was bu&ndash;<lb type="inWord"/>sily employed in sewing, and Laura,
+                with<lb/>her fingers between the pages of a book,<lb/>sat gazing at her father.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Those children distract me,&rdquo;
+                said<lb/>Mr. Sinclair.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Hush, Robert. Come here,
+                    Marga&ndash;<lb type="inWord"/>ret,&rdquo; said Mrs. Sinclair gently ; and
+                she<lb/>took one on her lap, and the other by<lb/>her knee, and whispering to them a
+                little<lb/>story, calmed them to sleepiness, and<lb/>then put them to bed. When Mrs.
+                    Sin&ndash;<lb type="inWord"/>clair had left the room, Laura laid down<lb/>her
+                book, and stood by her father.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Don't disturb me, Laura,&rdquo; said
+                he<lb/>roughly ; &ldquo; my head aches.&rdquo; Then rec&ndash;<lb type="inWord"
+                />ollecting himself, he took her hand and<lb/>continued, &ldquo; Do not feel hurt,
+                dear ; my<lb/>mind is perplexed with these complica&ndash;<lb type="inWord"/>ted
+                accounts.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Father,&rdquo; said Laura with a
+                smile,<lb/>&ldquo; I think I could help you, if you would<lb/>let me try.&rdquo;</p>
+
+            <pb n="13"/>
+            <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw>
+            <fw type="pagenumber" rend="align(right)">11</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">&ldquo; You, my love ?&rdquo; exclaimed her
+                    fa&ndash;<lb type="inWord"/>ther ; &ldquo; why, these papers would puzzle<lb/>a
+                wiser head than yours.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; I do not wish to boast, dear
+                father,&rdquo;<lb/>said Laura modestly, &ldquo; but Mr. Randon,<lb/>my tutor, said
+                to&ndash;day&mdash;&rdquo; Laura hesi&ndash;<lb type="inWord"/>tated.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Well, what did he say ?&rdquo; said
+                Mr.<lb/>Sinclair, encouragingly.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; He said,&rdquo; answered Laura,
+                blushing<lb/>deeply, &ldquo; that I was a better accountant<lb/>than most men. And I
+                do believe, fa&ndash;<lb type="inWord"/>ther,&rdquo; continued she earnestly,
+                &ldquo; that if<lb/>you were to state your case to me, I<lb/>could help
+                you.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Mr. Sinclair smiled sadly, but, to en&ndash;<lb
+                    type="inWord"/>courage her wish of usefulness, com&ndash;<lb type="inWord"
+                />menced with some remarks, and opened<lb/>his accounts. Insensibly he found
+                    him&ndash;<lb type="inWord"/>self engaging his daughter in the laby&ndash;<lb
+                    type="inWord"/>rinths of numbers. Laura, with a fixed<lb/>look and clear eye,
+                her pencil in her<lb/>hand, and her cheek kindling with inter&ndash; <pb n="14"
+                    type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw><lb/> est, listened to him.
+                Mrs. Sinclair en&ndash;<lb type="inWord"/>tered on tiptoe, and seated herself
+                softly<lb/>by the cradle which contained her in&ndash;<lb type="inWord"/>fant, to
+                sew. The accounts became more<lb/>and more complicated ; but Mr. Sinclair,<lb/>with
+                his practised mind, and Laura, with<lb/>her quick intellect, followed them up
+                with<lb/>close fidelity. The unexpected sympa&ndash;<lb type="inWord"/>thy of his
+                daughter seemed to inspire<lb/>him with new life. Three hours did Lau&ndash;<lb
+                    type="inWord"/>ra sit, and give the whole power of her<lb/>mind to these
+                calculations. Mr. Sin&ndash;<lb type="inWord"/>clair's spirits gradually rose with
+                every<lb/>chime of the clock.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Wife,&rdquo; said he suddenly, &ldquo;
+                if this<lb/>girl only gives me one more hour like<lb/>this, I shall be in a new
+                world.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; My beloved child,&rdquo; said Mrs.
+                Sinclair,<lb/>pressing Laura's fresh cheek to hers.</p>
+            <p rend="first-indent(2) align(justify)">Laura, with untiring patience, went<lb/>through
+                these mercantile details ; nor<lb/>did she quit her father's side until
+                the<lb/>warning hour of twelve. <pb n="15"/>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw><lb/>
+                <figure rend="align(centre) landscape">
+                    <ic:iconClass>
+                        <name>41D441</name>
+                        <desc>sewing</desc>
+                    </ic:iconClass>
+                    <head>Mrs. Sinclair engaged in sewing.</head>
+                    <lb/>
+                </figure>
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw rend="align(centre)">THE YOUNG ARITHMETICIAN.</fw><lb/> Laura commended herself
+                to God, and<lb/>slept profoundly. The next morning, af&ndash;<lb type="inWord"/>ter
+                seeking his blessing, she repaired to<lb/>Mr. Sinclair. &ldquo; You say you can
+                not<lb/>afford a clerk,&rdquo; said she. &ldquo;Now you<lb/>have tired me, father,
+                and you know I<lb/>am worth something. I will keep your<lb/>books, and you may give
+                me a little sal&ndash;<lb type="inWord"/>ary to buy shells for my
+                cabinet.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Mr. Sinclair accepted the proposal,<lb/>Laura's
+                cabinet increased in beauty, and<lb/>the fine female hand in his books
+                and<lb/>papers was a subject of curiosity and in&ndash;<lb type="inWord"/>terest to
+                his mercantile friends.</p>
+            <p>&orn;</p><lb/>
+         
+
+            <pb n="17"/>
+            <fw rend="align(centre)">MARY AND HER DOVE.</fw>
+            <fw type="pagenumber" rend="align(right)">15</fw>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F39</name>
+                    <desc>(DOVE)	other birds: dove</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(centre)">MARY AND HER DOVE.</p>
+            <p rend="first-indent(2) align(justify)">IT was a pleasant summer's evening,<lb/>as I
+                was sitting in the parlor, that the<lb/>children came running up to me and<lb/>asked
+                me to tell them a story. One de&ndash;<lb type="inWord"/>sired me to tell them about
+                Blue Beard,<lb/>and another the story of the disorderly<lb/>little girl. I told them
+                I had a new story<lb/>to relate ; the name of it was Mary and<lb/>her Dove. They
+                were delighted with<lb/>the title, seated themselves at the table,<lb/>and, looking
+                earnestly up in my face, in&ndash;<lb type="inWord"/>quired if it was a true story.
+                I told <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw rend="align(centre)">MARY AND HER DOVE.</fw><lb/> them it was a kind of fable,
+                and I then<lb/>commenced : Mary had a white dove, of<lb/>which she was very fond.
+                Whenever<lb/>Mary was good, the dove was very hap&ndash;<lb type="inWord"/>py, and
+                would discover in various ways<lb/>his approbation ; but when she was not<lb/>good,
+                the bird would droop its head and<lb/>seem very melancholy. The only way<lb/>in
+                which Mary could comfort it, was to<lb/>make sincere resolutions to be better
+                in<lb/>future. She always carried it about with<lb/>her, and indeed the dove was
+                never wil&ndash;<lb type="inWord"/>ling to be absent from her even for a<lb/>moment.
+                If she did the least wrong, it<lb/>silently reproved her. She would often<lb/>act
+                contrary to the wishes of the bird,<lb/>and then she always felt unhappy ;
+                but<lb/>when she had the dove's approbation,<lb/>she was full of gladness.</p>
+            <p rend="first-indent(2) align(justify)">The dove is an emblem of conscience,<lb/>which
+                is a friend that we all have within<lb/>our own hearts, and if we obey its
+                    dic&ndash;<lb type="inWord"/>tates, we shall always be happy.</p>
+        </body>
+        <back>
+            <pb n="19"/>
+            <pb n="20"/>
+            <div type="advertisement">
+                <figure type="borderornament"/>
+                <head rend="align(centre)">KIGGINS &amp; KELLOGG,</head>
+                <lb/>
+                <p rend="align(centre)">Publishers, Booksellers, and<lb/> Stationers,<lb/> 123 &amp;
+                    125 William St.,<lb/> Also Manufacturers of every descriptions of<lb/> ACCOUNT
+                    BOOKS,<lb/> MEMORANDUM and PASS BOOKS,<lb/> a large Stock of which is constantly
+                    kept on hand.<lb/> Their assortment of<lb/> SCHOOL<lb/> AND<lb/> MISCELLANEOUS
+                    BOOKS,<lb/> and of Foreign and Domestic<lb/> STATIONERY,<lb/>
+                    <hi rend="italics">is very complete, to the inspection of which they<lb/> would
+                        invite COUNTRY MERCHANTS before<lb/> purchasing elsewhere.</hi></p>
+                <p rend="align(centre)">&rule;</p>
+                <p>ALSO PUBLISH,<lb/> REDFIELD'S TOY BOOKS,<lb/> Four Series of Twelve Books each,<lb/>
+                    <hi rend="italics">BEAUTIFULLY ILLUSTRATED,</hi><lb/> Price, <measure
+                        type="price">One, Two, Four, and Six Cents.</measure></p>
+            </div>
+        </back>
+    </text>
+</TEI>

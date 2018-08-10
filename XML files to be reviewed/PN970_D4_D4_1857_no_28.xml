@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-10-24"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S<lb/> Illustrated Farthing Books.<lb/>&rule;</title><lb/>
+                    <title level="m">THE<lb/>BLIND CHILD.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>11Q2112</name>
+                            <desc>prayer at going to bed, or at getting up</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <pubPlace>LONDON</pubPlace>:<publisher>DEAN &amp; SON,<lb/> 11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">28</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+        <body>
+            <pb n="2"/>
+            <head rend="align(centre)">THE BLIND CHILD.</head>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42E131</name>
+                    <desc>mourning the dead</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(justify)">IT is beautiful to see the bright sunlight,<lb/>and the green
+                trees, and the wild flowers,<lb/>and the moon and stars. But little Paul<lb/>could
+                see none of these things, for he was<lb/>blind.</p>
+            <p rend="first-indent(3) align(justify)">His mother was poor, and his father<lb/>was
+                dead ; but the last words he said to <pb n="3"/>
+                <fw type="header" rend="align(centre)">THE BLIND CHILD.</fw><fw type="pagenumber"
+                    rend="align(right)">3</fw><lb/> his weeping wife were, &ldquo; Trust in God
+                !<lb/>God never forsakes his people !&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">Now the poor mother was all alone in<lb/>the
+                world with her blind child. And she<lb/>must work diligently with her needle
+                for<lb/>her living ; but that she did not mind.<lb/>Sometimes she did not come home
+                for the<lb/>whole day, for she had to go to work for<lb/>strangers from early
+                morning until late in<lb/>the evening ; and all that time the blind<lb/>child was
+                alone. But good Martha, the<lb/>old woman who lived over the way, came<lb/>several
+                times, in the course of the day, to<lb/>look after little Paul. But then she
+                could<lb/>not stay with him long. &ldquo; Munter,&rdquo; a<lb/>little
+                puppy&ndash;dog, and Bibi, a dear little<lb/>canary&ndash;bird, staid with him all
+                the while.<lb/>The canary&ndash;bird used to sing him its<lb/>sweetest songs ; and
+                when the little boy<lb/>let his hand hang down over the side of<lb/>the bed, Munter
+                would run up and lick<lb/>it ; when Paul wanted to get up, this<lb/>same sensible
+                Munter would take hold of<lb/>his little coat&ndash;sleeve, and lead him up
+                and<lb/>down the room, that he should not run<lb/>against a table or a chair.</p>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">THE BLIND CHILD.</fw>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">The happiest time for the little boy
+                was<lb/>the evening, when his mother came home.<lb/>She used to tell him, while she
+                sewed<lb/>away as fast as she could, of the blessed&ndash;<lb type="inWord"/>ness of
+                heaven, and of the good God and<lb/>all the holy angels ; and she
+                entertained<lb/>him with beautiful stories until late&mdash;un&ndash;<lb
+                    type="inWord"/>til he shut his eyes for very weariness.<lb/>&ldquo; When we get
+                to heaven,&rdquo; she said some&ndash;<lb type="inWord"/>times, &ldquo; the night
+                will be at an end. But<lb/>God's eyes can look through the thickest<lb/>darkness,
+                and he is always looking at you,<lb/>even at this moment.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">Thus they lived together very plea&ndash;<lb
+                    type="inWord"/>santly, until Paul was six years old. At<lb/>that time the mother
+                complained one<lb/>morning that she was so sick, that she could<lb/>not stand up ;
+                she had to stay in bed the<lb/>whole day, and was seized with a fever.<lb/>The next
+                day it was worse, so that she<lb/>lost her mind, and became delirious. Good<lb/>old
+                Martha tended both mother and child<lb/>faithfully ; but when another day
+                passed,<lb/>and the poor woman was no better, the old<lb/>woman ran to the doctor
+                and brought him<lb/><choice>
+                    <orig>nto</orig>
+                    <corr>into</corr>
+                </choice> the sick&ndash;room. The doctor was a <pb n="5"/>
+                <fw type="header" rend="align(centre)">THE BLIND CHILD.</fw><fw type="pagenumber"
+                    rend="align(right)">5</fw><lb/> kind, benevolent man ; he felt the
+                sick<lb/>woman's pulse, asked a great many ques&ndash;<lb type="inWord"/>tions, and
+                shook his head. When he saw <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>49G211</name>
+                        <desc>visiting the sick; sick person together with others</desc>
+                    </ic:iconClass>
+                </figure> little Paul lying in his bed, he said :<lb/>&ldquo; That child must not
+                stay in this room,<lb/>he must be taken away immediately.&rdquo;<lb/>Finding they
+                had no friends, and that<lb/>little Paul was blind, the good doctor took<lb/>him out
+                of his little bed, and carried him<lb/>to the window. After he had looked <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">6</fw><fw type="header"
+                    rend="align(centre)">THE BLIND CHILD.</fw><lb/> closely at the sightless eyes, a
+                bright smile<lb/>passed over his face. Without saying a<lb/>word, he took the child
+                across the street<lb/>to a large, fine house. In this house<lb/>lived some rich
+                people, friends of the doc&ndash;<lb type="inWord"/>tor's, who readily agreed to
+                take care of<lb/>the child till the mother got better. Emma,<lb/>the daughter,
+                undertook the charge of<lb/>him, and the kind&ndash;hearted doctor came<lb/>every
+                day to see him. After a good many<lb/>days, as Paul was asking for his
+                mother,<lb/>the doctor promised he should go to her<lb/>very soon, if he would
+                promise to be quite<lb/>still while he examined his eyes, for they<lb/>too must be
+                cured.</p>
+            <p rend="first-indent(3) align(justify)">The boy promised, and kept his word.<lb/>The
+                doctor took a sharp instrument, and<lb/>removed a thick skin that had
+                hindered<lb/>him from looking upon the bright sky, and<lb/>restored to him the use
+                of his eyes. Not<lb/>a cry of pain escaped from Paul's lips as<lb/>the sharp
+                instrument cut into his eye.<lb/>The operation succeeded.</p>
+            <p rend="first-indent(3) align(justify)">The next day the doctor removed the<lb/>bandage
+                he had tied over his eyes. Little<lb/>Paul trembled as the first rays of light <pb n="7"/>
+                <fw type="header" rend="align(centre)">THE BLIND CHILD.</fw><fw type="pagenumber"
+                    rend="align(right)">7</fw><lb/> streamed into his opened eyes, and
+                then<lb/>exclaimed: &ldquo; Now I'm in heaven, and the<lb/>night is past !&rdquo;
+                And as he saw the sun&mdash;<lb/>though almost covered with silvery
+                clouds<lb/>&mdash;he cried out : &ldquo; There is God's eye !&rdquo;<lb/>He looked
+                around him, and at the bloom&ndash;<lb type="inWord"/>ing Emma, and asked if she was
+                &ldquo; God's<lb/>angel !&quot; But now the eyes had to be<lb/>bandaged up
+                again.</p>
+            <p rend="first-indent(3) align(justify)">The mother's illness was conquered by<lb/>the
+                skill and care of the worthy doctor ;<lb/>but the weakened woman recovered
+                very<lb/>slowly.</p>
+            <p rend="first-indent(3) align(justify)">It was a beautiful spring morning, and<lb/>the
+                mother, for the first time, was walking<lb/>feebly across the room, when Emma
+                led<lb/>the boy, dressed in a neat new suit of<lb/>clothes, to the house in which
+                his mother<lb/>lived. She opened the door very softly,<lb/>and pushed him gently
+                into the room.<lb/>The mother stood near the window, pray&ndash;<lb type="inWord"
+                />ing ; and little Paul stood timidly near it ;<lb/>everything was strange to him ;
+                he did not<lb/>even know his mother. But Munter<lb/>sprang towards him, and barked
+                so loudly<lb/>with delight, that the mother turned<lb/>round, to see the cause.</p>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+            <fw type="header" rend="align(centre)">THE BLIND CHILD.</fw>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">&ldquo; My Paul !&rdquo; she cried, as soon as
+                she<lb/>saw her child ; and Paul, who knew her<lb/>now by her voice, was in her arms
+                and on<lb/>her bosom in a moment. The mother<lb/>hugged and kissed him, and looking
+                into<lb/>his face, started back in astonishment, ex&ndash;<lb type="inWord"
+                />claiming, &ldquo; Great God ! he sees !&quot;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Yes, I'm in heaven now,&quot;
+                answered<lb/>Paul, with delight. &ldquo; I have seen God's<lb/>eye, and one of His
+                angels, and now the<lb/>night is past.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">Overcome with gratitude, the poor<lb/>woman
+                sank upon her knees and lifted up<lb/>her hands ; and Paul folded his
+                little<lb/>hands, too, and raised them to heaven, as<lb/>his mother had taught him
+                long to do ;<lb/>and a wordless prayer went up from the<lb/>hearts of both to the
+                throne of the Highest.<lb/>Then came into the mother's mind those<lb/>parting words
+                of her dying husband :<lb/>&ldquo; Trust in God ! God never forsakes His<lb/>people
+                !&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">Tears flowed from her eyes, and
+                relieved<lb/>her heart ; and when little Paul saw her<lb/>weeping, he, too, shed the
+                first tears that<lb/>I had ever fallen from his eyes ; but they<lb/>were tears of
+                joy.</p>
+        </body>
+        <back/>
+    </text>
+</TEI>

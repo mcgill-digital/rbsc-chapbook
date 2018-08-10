@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Includes Changes</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Instruction">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="yellow coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <bibl rend="align(centre)">
+                    <title level="m">AN<lb/>ALPHABET<lb/>OF<lb/>ANIMALS.</title><lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>41A7751</name>
+                            <desc>container made of plant material other than wood: basket</desc>
+                        </ic:iconClass>
+                    </figure><lb/> PRICE <measure type="price">ONE PENNY.<lb/>&rule;</measure><lb/>
+                    <pubPlace>LONDON:</pubPlace><lb/>
+                    <publisher>SIMPKIN, MARSHALL, AND CO.,<lb/>LEICESTER: WINKS AND SON.</publisher>
+                </bibl>
+            </div>
+            <pb n="2"/>
+            <div type="frontispiece" rend="align(centre)">
+                <figure rend="landscape">
+                    <ic:iconClass>
+                        <name>34B11</name>
+                        <desc>dog</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <titlePart type="main">AN ALPHABET<lb/>OF<lb/>ANIMALS.</titlePart>
+                <lb/>
+                <docAuthor>&rule;<lb/>BY A LADY. &mdash; REVISED.<lb/>&rule;</docAuthor>
+                <lb/>
+                <epigraph>
+                    <lg>
+                        <l>A FRIEND, my dear children,</l>
+                        <l rend="indent(1)">This Alphabet sends;</l>
+                        <l>To make you all know</l>
+                        <l rend="indent(1)">About twenty&ndash;six friends.</l>
+                    </lg>
+                    <lg>
+                        <l>Tho' God their great Maker</l>
+                        <l rend="indent(1)">Has taught them no speech,</l>
+                        <l>These twenty&ndash;six lessons</l>
+                        <l rend="indent(1)">They unto us teach.</l>
+                    </lg>
+                </epigraph>
+                <lb/>
+
+                <docImprint>
+                    <pubPlace>LONDON:</pubPlace><lb/>
+                    <publisher>SIMPKIN, MARSHALL, &amp;Co.<lb/>LEICESTER: WINKS AND SON.</publisher>
+                </docImprint>
+
+            </titlePage>
+        </front>
+        <body>
+            <pb n="4"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F22</name>
+                        <desc>monkeys, apes</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>A&mdash;is the APE,</head>
+                <lg>
+                    <l rend="indent(1)">Which some Monkey call;</l>
+                    <lb/>
+                    <l>He will swing on a rope,</l>
+                    <lb/>
+                    <l rend="indent(1)">And toss up a ball</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>He often is trying</l>
+                    <lb/>
+                    <l rend="indent(1)">To do what we do,</l>
+                    <lb/>
+                    <l>But he can't say his lesson</l>
+                    <lb/>
+                    <l rend="indent(1)">Like Lucy and you.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+
+            <pb n="5"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F711(BEE)</name>
+                        <desc>insects: bee</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>B&mdash;is the BEE,</head>
+                <lg>
+                    <l rend="indent(1)">So busy and gay;</l>
+                    <lb/>
+                    <l>He is seeking for honey,</l>
+                    <lb/>
+                    <l rend="indent(1)">Sweet honey, all day.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>From him to be idle</l>
+                    <lb/>
+                    <l rend="indent(1)">We learn to avoid&mdash;</l>
+                    <lb/>
+                    <l>How happy he is,</l>
+                    <lb/>
+                    <l rend="indent(1)">For he's always employ'd.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">5</fw>
+
+            <pb n="6"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47I2112</name>
+                        <desc>cow</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>C&mdash;is the Cow,</head>
+                <lg>
+                    <l rend="indent(1)">Which, so kindly brings</l>
+                    <lb/>
+                    <l>Nice milk for our supper,</l>
+                    <lb/>
+                    <l rend="indent(1)">And twenty good things;</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>'Tis God who has made her</l>
+                    <lb/>
+                    <l rend="indent(1)">For food for our race;</l>
+                    <lb/>
+                    <l>So when eating our meals,</l>
+                    <lb/>
+                    <l rend="indent(1)">Let us think of His grace.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34B11</name>
+                        <desc>dog</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>D&mdash;is the DOG ;</head>
+                <lg>
+                    <l rend="indent(1)">He is faithful and bold</l>
+                    <lb/>
+                    <l>In watching the house</l>
+                    <lb/>
+                    <l rend="indent(1)">And guarding the fold.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Then come, faithful Keeper,</l>
+                    <lb/>
+                    <l rend="indent(1)">You're honest and true,;</l>
+                    <lb/>
+                    <l>And we'll try to be faithful</l>
+                    <lb/>
+                    <l rend="indent(1)">And trusty like you.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">7</fw>
+
+            <pb n="8"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F33(EAGLE)</name>
+                        <desc>predatory birds: eagle</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>E&mdash;is for EAGLE,</head>
+                <lg>
+                    <l rend="indent(1)">Of birds he's the king ;</l>
+                    <lb/>
+                    <l>With a very sharp eye,</l>
+                    <lb/>
+                    <l rend="indent(1)">And a very strong wing,</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>He builds his rough nest</l>
+                    <lb/>
+                    <l rend="indent(1)">On the rocks high away ;</l>
+                    <lb/>
+                    <l>And there he is feeding</l>
+                    <lb/>
+                    <l rend="indent(1)">His young ones with prey.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+
+            <pb n="9"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F51(FROG)</name>
+                        <desc>tailless amphibians: frog</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>F&mdash;is the FROG ;</head>
+                <lg>
+                    <l rend="indent(1)">He will soon leap away;</l>
+                    <lb/>
+                    <l>How cruel to hurt him</l>
+                    <lb/>
+                    <l rend="indent(1)">In sport or in play.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>On ground and in ponds</l>
+                    <lb/>
+                    <l rend="indent(1)">He can hop and can swim ;</l>
+                    <lb/>
+                    <l>He is frighten'd at us ;</l>
+                    <lb/>
+                    <l rend="indent(1)">We'll be gentle to him.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">9</fw>
+
+            <pb n="10"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47I2142</name>
+                        <desc>she-goat, nanny-goat</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>G&mdash;is a Welsh GOAT,</head>
+                <lg>
+                    <l rend="indent(1)">On the mountains so high;</l>
+                    <l>And you cannot catch her</l>
+                    <l rend="indent(1)">If all day you try.</l>
+                </lg>
+                <lg>
+                    <l>But pat her and feed her,</l>
+                    <l rend="indent(1)">And then you may take</l>
+                    <l>Good milk from her udder,</l>
+                    <l rend="indent(1)">Your breakfast to make.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">10</fw>
+
+
+            <pb n="11"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F26(HARE)</name>
+                        <desc>rodents: hare</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>H&mdash;is the HARE,</head>
+                <lg>
+                    <l rend="indent(1)">So timid and fleet,</l>
+                    <lb/>
+                    <l>That she scarcely touches</l>
+                    <lb/>
+                    <l rend="indent(1)">The ground with her feet,</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>When she takes her long leaps</l>
+                    <lb/>
+                    <l rend="indent(1)">To get out of the way</l>
+                    <lb/>
+                    <l>Of the dogs that are coming</l>
+                    <lb/>
+                    <l rend="indent(1)">To make her their prey.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">11</fw>
+
+
+            <pb n="12"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F24(IBEX)</name>
+                        <desc>hoofed animals: ibex</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>I&mdash;is the IBEX,</head>
+                <lg>
+                    <l rend="indent(1)">Which lives on the rocks,</l>
+                    <lb/>
+                    <l>And these cunning creatures</l>
+                    <lb/>
+                    <l rend="indent(1)">Are very shy folks.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>You cannot get near them,</l>
+                    <lb/>
+                    <l rend="indent(1)">Or climb up so high ;</l>
+                    <lb/>
+                    <l>And down you might tumble</l>
+                    <lb/>
+                    <l rend="indent(1)">If once you did try.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">12</fw>
+
+
+            <pb n="13"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F32(JAY)</name>
+                        <desc>song-birds: jay</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>J &mdash;is the JAY,</head>
+                <lg>
+                    <l rend="indent(1)">Which now comes in sight;</l>
+                    <lb/>
+                    <l>Its wings are all painted</l>
+                    <lb/>
+                    <l rend="indent(1)">With black, blue, and white;</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>It talks like the magpie,</l>
+                    <lb/>
+                    <l rend="indent(1)">And utters some words&mdash;</l>
+                    <lb/>
+                    <l>We love and admire you,</l>
+                    <lb/>
+                    <l rend="indent(1)">You nice pretty birds.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">13</fw>
+
+
+
+            <pb n="14"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34B12</name>
+                        <desc>cat</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>K&mdash;is our KITTEN,</head>
+                <lg>
+                    <l rend="indent(1)">Now grown to a cat;</l>
+                    <lb/>
+                    <l>There up in that tree</l>
+                    <lb/>
+                    <l rend="indent(1)">What would you be at ?</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>You would catch that bird,</l>
+                    <lb/>
+                    <l rend="indent(1)">But I hope you will not;</l>
+                    <lb/>
+                    <l>Fly away, little bird,</l>
+                    <lb/>
+                    <l rend="indent(1)">With the wings you have got.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">14</fw>
+
+
+            <pb n="15"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47I2211</name>
+                        <desc>herd, flock</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>L&mdash;is the LAMB,</head>
+                <lg>
+                    <l rend="indent(1)">It is gentle and mild;</l>
+                    <lb/>
+                    <l>But the best of all lambs</l>
+                    <lb/>
+                    <l rend="indent(1)">Is a dutiful child.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>And that gracious Shepherd,</l>
+                    <lb/>
+                    <l rend="indent(1)">The Saviour, we're told,</l>
+                    <lb/>
+                    <l>Calls all the good children</l>
+                    <lb/>
+                    <l rend="indent(1)">The Lambs of his fold.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">15</fw>
+
+
+            <pb n="16"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F26(MOUSE)</name>
+                        <desc>rodents: mouse</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>M &mdash;is the MOUSE,</head>
+                <lg>
+                    <l rend="indent(1)">With its pretty black eye ;</l>
+                    <lb/>
+                    <l>We will not torment it,</l>
+                    <lb/>
+                    <l rend="indent(1)">But let it run by ;</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>So, mouse, you may go,</l>
+                    <lb/>
+                    <l rend="indent(1)">And get out of the way,</l>
+                    <lb/>
+                    <l>That puss may not catch you</l>
+                    <lb/>
+                    <l rend="indent(1)">And make you her prey.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">16</fw>
+
+            <pb n="17"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C7321</name>
+                        <desc>hunting bird's eggs (children)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>N&mdash;is the NEST</head>
+                <lg>
+                    <l rend="indent(1)">Which little birds form,</l>
+                    <lb/>
+                    <l>To lay their nice eggs in,</l>
+                    <lb/>
+                    <l rend="indent(1)">So snug and so warm;</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>We never will take them,</l>
+                    <lb/>
+                    <l rend="indent(1)">Nor climb where they're hung,</l>
+                    <lb/>
+                    <l>For that would be robbing</l>
+                    <lb/>
+                    <l rend="indent(1)">Poor birds of their young.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">17</fw>
+
+
+
+            <pb n="18"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47I211</name>
+                        <desc>bovine cattle</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>O&mdash;is the Ox,</head>
+                <lg>
+                    <l rend="indent(1)">A very fine beast,</l>
+                    <lb/>
+                    <l>Whose flesh is so rich,</l>
+                    <lb/>
+                    <l rend="indent(1)">That it makes us a feast.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Roast beef and plum&ndash;pudding</l>
+                    <lb/>
+                    <l rend="indent(1)">We all like to eat;</l>
+                    <lb/>
+                    <l>Let us give some to others</l>
+                    <lb/>
+                    <l rend="indent(1)">And make them a treat.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">18</fw>
+
+
+            <pb n="19"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34B231</name>
+                        <desc>doves, pigeons</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>P&mdash;is the PIGEON&mdash;</head>
+                <lg>
+                    <l rend="indent(1)">An emblem of peace;</l>
+                    <lb/>
+                    <l>The dove showed to Noah</l>
+                    <lb/>
+                    <l rend="indent(1)">The waters should cease;</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>For she hasten'd again</l>
+                    <lb/>
+                    <l rend="indent(1)">Her kind master to seek,</l>
+                    <lb/>
+                    <l>And took him an olive leaf</l>
+                    <lb/>
+                    <l rend="indent(1)">Safe in her beak.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">19</fw>
+
+
+            <pb n="20"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F38(QUAIL)</name>
+                        <desc>walker and runner birds: quail</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>Q&mdash;is the QUAIL&mdash;</head>
+                <lg>
+                    <l rend="indent(1)">In the Bible we read,</l>
+                    <lb/>
+                    <l>God sent Quails from heaven</l>
+                    <lb/>
+                    <l rend="indent(1)">His people to feed.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>So let us think always</l>
+                    <lb/>
+                    <l rend="indent(1)">When eating our food,</l>
+                    <lb/>
+                    <l>'Tis God gives us all things,</l>
+                    <lb/>
+                    <l rend="indent(1)">Who is very good.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">20</fw>
+
+
+            <pb n="21"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F26(RABBIT)</name>
+                        <desc>rodents: rabbit</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>R&mdash;is the RABBIT&mdash;</head>
+                <lg>
+                    <l rend="indent(1)">What pains does she take,</l>
+                    <lb/>
+                    <l>For her poor helpless young ones</l>
+                    <lb/>
+                    <l rend="indent(1)">A shelter to make!</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>So we to our mothers</l>
+                    <lb/>
+                    <l rend="indent(1)">Our duty should pay,</l>
+                    <lb/>
+                    <l>Who feed and who watch us</l>
+                    <lb/>
+                    <l rend="indent(1)">By night and by day.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">21</fw>
+
+
+            <pb n="22"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F26(SQUIRREL)</name>
+                        <desc>rodents: squirrel</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>S&mdash;is the SQUIRREL ;</head>
+                <lg>
+                    <l rend="indent(1)">Some wisdom he'll lend,</l>
+                    <lb/>
+                    <l>For in cracking his nuts</l>
+                    <lb/>
+                    <l rend="indent(1)">He marks the right end.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Now this is a lesson</l>
+                    <lb/>
+                    <l rend="indent(1)">To me and to you,</l>
+                    <lb/>
+                    <l>To mind and do right</l>
+                    <lb/>
+                    <l rend="indent(1)">In all that we do.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">22</fw>
+
+
+            <pb n="23"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F32(THRUSH)</name>
+                        <desc>song-birds: thrush</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>T&mdash;is the THRUSH&mdash;</head>
+                <lg>
+                    <l rend="indent(1)">How these singing&ndash;birds gay,</l>
+                    <lb/>
+                    <l>All praise their Creator</l>
+                    <lb/>
+                    <l rend="indent(1)">As well as they may!</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Then we will be learning</l>
+                    <lb/>
+                    <l rend="indent(1)">Our hymns to repeat,</l>
+                    <lb/>
+                    <l>That we may sing praises</l>
+                    <lb/>
+                    <l rend="indent(1)">With voices as sweet.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">23</fw>
+
+
+            <pb n="24"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F24(RHINOCEROS)</name>
+                        <desc>hoofed animals: rhinoceros</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>U &mdash;is the UNICORN ;</head>
+                <lg>
+                    <l rend="indent(1)">But some people say</l>
+                    <lb/>
+                    <l>It is the Rhinoceros;</l>
+                    <lb/>
+                    <l rend="indent(1)">And perhaps it may.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>It is a strong creature,</l>
+                    <lb/>
+                    <l rend="indent(1)">And often has torn</l>
+                    <lb/>
+                    <l>Other wild beasts to pieces</l>
+                    <lb/>
+                    <l rend="indent(1)">With its mighty horn.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">24</fw>
+
+
+            <pb n="25"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F42(VIPER)</name>
+                        <desc>snakes: viper</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>V&mdash;is the VIPER,</head>
+                <lg>
+                    <l rend="indent(1)">It lives in the brake;</l>
+                    <lb/>
+                    <l>Can anything useful</l>
+                    <lb/>
+                    <l rend="indent(1)">Be learned from a snake?</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>O yes, we may think</l>
+                    <lb/>
+                    <l rend="indent(1)">How the Saviour approves,</l>
+                    <lb/>
+                    <l>To be &ldquo; wise as the serpent,</l>
+                    <lb/>
+                    <l rend="indent(1)">And harmless as doves.&rdquo;</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">25</fw>
+
+
+            <pb n="26"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F32</name>
+                        <desc>song-birds</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>W&mdash;is WAGTAIL,</head>
+                <lg>
+                    <l rend="indent(1)">Hopping about</l>
+                    <lb/>
+                    <l>Close by the water,</l>
+                    <lb/>
+                    <l rend="indent(1)">Picking things out.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Hopping and wagging</l>
+                    <lb/>
+                    <l rend="indent(1)">Its tail all day long,</l>
+                    <lb/>
+                    <l>But never giving us</l>
+                    <lb/>
+                    <l rend="indent(1)">One little song.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">26</fw>
+
+
+            <pb n="27"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <head rend="align(centre)">X</head>
+                <lb/>
+                <lg>
+                    <l>X&mdash;is not a letter</l>
+                    <lb/>
+                    <l rend="indent(1)">Beginning a word</l>
+                    <lb/>
+                    <l>For any one animal&mdash;</l>
+                    <lb/>
+                    <l rend="indent(1)">Fish, beast, or bird.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>But there was one creature</l>
+                    <lb/>
+                    <l rend="indent(1)">With two legs like you,</l>
+                    <lb/>
+                    <l>That the Greeks called a Xany;</l>
+                    <lb/>
+                    <l rend="indent(1)">Now mind what you do&mdash;</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Or they'll call you a Xany</l>
+                    <lb/>
+                    <l rend="indent(1)">If you go to school,</l>
+                    <lb/>
+                    <l>And dont mind your lesson&mdash;</l>
+                    <lb/>
+                    <l rend="indent(1)">For Xany means fool !</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">27</fw>
+
+
+            <pb n="28"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F32</name>
+                        <desc>song-birds</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>Y&mdash;is YELLOW&ndash;HAMMER;</head>
+                <lg>
+                    <l rend="indent(1)">O look! on that tree,</l>
+                    <lb/>
+                    <l>It is sitting and chirping</l>
+                    <lb/>
+                    <l rend="indent(1)">So happy and free !</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>You may fly through the air,</l>
+                    <lb/>
+                    <l rend="indent(1)">Lovely bird, we engage</l>
+                    <lb/>
+                    <l>That we never will snare you,</l>
+                    <lb/>
+                    <l rend="indent(1)">Or keep you in cage.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">28</fw>
+
+
+
+            <pb n="29"/>
+            <fw type="header" rend="align(centre)">AN ALPHABET OF ANIMALS.</fw>
+            <lb/>
+            <div type="section">
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C1314</name>
+                        <desc>horses and kindred animals</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <head>Z&mdash;is the ZEBRA&mdash;</head>
+                <lg>
+                    <l rend="indent(1)">And whence cometh he?</l>
+                    <lb/>
+                    <l>He came from wild Africa</l>
+                    <lb/>
+                    <l rend="indent(1)">Far over the sea;</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>So he is a pilgrim</l>
+                    <lb/>
+                    <l rend="indent(1)">And is made to roam;</l>
+                    <lb/>
+                    <l>And we are all pilgrims</l>
+                    <lb/>
+                    <l rend="indent(1)">To heaven our home.</l>
+                </lg>
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(right)">29</fw>
+
+            <pb n="30"/>
+            <div type="section">
+                <head rend="align(centre)">AND NOW ABOUT YOU.</head>
+                <lb/>
+                <lg>
+                    <l>So now I have done</l>
+                    <lb/>
+                    <l rend="indent(1)">What I did intend;</l>
+                    <lb/>
+                    <l>And I hope to dumb creatures</l>
+                    <lb/>
+                    <l rend="indent(1)">You will be a friend.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Never teaze or torment them,</l>
+                    <lb/>
+                    <l rend="indent(1)">For God made them all;</l>
+                    <lb/>
+                    <l>And he always feeds them&mdash;</l>
+                    <lb/>
+                    <l rend="indent(1)">The great and the small.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>But God has made you</l>
+                    <lb/>
+                    <l rend="indent(1)">Much better than they;</l>
+                    <lb/>
+                    <l>And he will care for you</l>
+                    <lb/>
+                    <l rend="indent(1)">If to him you pray.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>For Jesus, the Saviour,</l>
+                    <lb/>
+                    <l rend="indent(1)">Has died in your place,</l>
+                    <lb/>
+                    <l>And I'm sure he will bless you</l>
+                    <lb/>
+                    <l rend="indent(1)">If you seek his face.</l>
+                </lg>
+
+            </div>
+            <lb/>
+            <fw type="pagenumber" rend="align(left)">30</fw>
+
+            <pb n="31"/>
+            <figure rend="align(centre) landscape">
+                <ic:iconClass>
+                    <name>25F38(PHEASANT)</name>
+                    <desc>walker and runner birds: pheasant</desc>
+                </ic:iconClass>
+            </figure>
+        </body>
+        <back/>
+        <pb n="32"/>
+    </text>
+</TEI>

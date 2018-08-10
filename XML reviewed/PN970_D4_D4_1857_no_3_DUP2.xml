@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-12-19"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-12-21"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <titlePage>
+                <figure type="borderornament"/>
+                <docTitle rend="align(centre)">
+                    <titlePart type="sub">DEAN&rsquo;S<lb/> Illustrated Farthing Books.<lb/>
+                        &rule;</titlePart>
+                    <titlePart type="main">THE FISHERMAN<lb/> AND HIS SON.</titlePart>
+                </docTitle>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C223</name>
+                        <desc>harbour</desc>
+                    </ic:iconClass>
+                </figure>
+                <docImprint rend="align(centre)">
+                    <pubPlace>LONDON: </pubPlace><publisher>DEAN &amp; SON,</publisher><lb/>
+                    <pubPlace>11, Ludgate Hill.</pubPlace>
+                    <num rend="align(left)">3</num>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="2"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C24</name>
+                    <desc>sailing-ship, sailing-boat</desc>
+                </ic:iconClass>
+
+
+                <head>Signed V.G.Mason</head>
+            </figure>
+
+            <head type="work" rend="align(centre)">THE FISHERMAN AND HIS SON.</head>
+            <p>IT was a sultry afternoon in the month of<lb/>August, that Peter Hampton, a poor
+                but<lb/>worthy fisherman, and his little son, Davie,<lb/>a lad of some nine summers,
+                wearily<lb/>plodded their way across a sandy waste.<lb/>Davie&rsquo;s cheeks were
+                flushed with heat ; <pb n="3"/>
+                <fw type="header" rend="align(centre)">THE FISHERMAN AND HIS SON.</fw><fw
+                    type="pagenumber" rend="align(right)">3</fw> the big drops of perspiration stood
+                upon<lb/>his brow ; and his soft flaxen curls were<lb/>much displaced. The tract of
+                country<lb/>over which they passed was not entirely<lb/>barren ; here and there
+                might be seen a<lb/>little herbage, or a few scraggy bushes ;<lb/>but even these
+                were parched by the heat,<lb/>for it was long since these crisped leaves<lb/>and
+                blades of grass had tasted a refreshing<lb/>shower.</p>
+            <p rend="first-indent(3) align(justify)">Little Davie had accompanied his father<lb/>on a
+                fishing excursion, having left their<lb/>humble cottage early on the morning
+                of<lb/>the previous day, full of hope. But for<lb/>some reason or other, Peter,
+                though a<lb/>fisherman by trade, was not sufficiently on<lb/>his guard in time for
+                the tide, and so the<lb/>little boat was carried out upon the then<lb/>unfriendly
+                waters. The great waves<lb/>dashed it about like a feather, and seemed<lb/>every
+                moment ready to swallow it up.<lb/>But the poor man&rsquo;s prayer was heard
+                ;<lb/>and &ldquo; He who holdeth the waters in the<lb/>hollow of His hand,&rdquo;
+                and ruleth the fierce<lb/>winds, suffered them not to overwhelm<lb/>them. But after
+                tossing to and fro, during <pb n="4"/>
+                <fw type="pagenumber" rend="align(left)">4</fw><fw type="header"
+                    rend="align(centre)">THE FISHERMAN</fw> that long night, on the restless bosom
+                of<lb/>troubled ocean, the little boat drifted to<lb/>shore, many miles from their
+                own native<lb/>beach.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C24</name>
+                    <desc>sailing-ship, sailing-boat</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(3) align(justify)">What <choice>
+                    <orig>oould</orig>
+                    <corr>could</corr>
+                </choice> they do ? what could poor<lb/>Davie do ? for they were far from
+                any<lb/>habitation, and their supply of provisions<lb/>was indeed discouragingly
+                small. Such<lb/>questions as these were continually rising<lb/>in Davie&rsquo;s
+                mind. To which the father<lb/>replied, &ldquo; My son, God, who rescued us<lb/>from
+                a watery grave, will protect us still.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; But come ! we must not waste our<lb/>time in
+                lamenting our fate, but try and<lb/>make the best of it ; this is no
+                    resting&ndash;<lb type="inWord"/>place&mdash;far from our home.&rdquo;</p>
+
+            <pb n="5"/>
+            <fw type="header" rend="align(centre)">AND HIS SON.</fw>
+            <fw type="pagenumber" rend="align(right)">5</fw>
+            <p rend="first-indent(3) align(justify)">And thus they started to wind their<lb/>way, over
+                sandy waste and rugged moun&ndash;<lb type="inWord"/>tains, to their humble
+                dwelling, as dear to<lb/>them as a palace, nothing daunted by<lb/>intervening
+                distance. Little Davie, after<lb/>the terrors of the night at sea,
+                greatly<lb/>rejoiced to set his feet on solid earth again,<lb/>and was very willing
+                to set out homeward<lb/>on foot. For a time he ran along joyously,<lb/>and even
+                endeavoured to urge his father to<lb/>a more rapid movement. But
+                by&ndash;and&ndash;by<lb/>their course lay through a more desolate<lb/>region ; the
+                sun rose higher, and the heat<lb/>waxed more and more intense, and scarce<lb/>a
+                breeze disturbed the sultry air. No<lb/>water could be found to cool their
+                parched<lb/>lips ; no inviting shade&ndash;trees greeted their<lb/>eyes, or extended
+                their friendly arms to<lb/>shelter them from the oppressive heat.<lb/>On, on they
+                must go. Little Davie&rsquo;s<lb/>energies were severely taxed. He grew<lb/>faint,
+                and his courage beginning to fail,<lb/>and hope to die out, he exclaimed :</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Pa, shall we <hi rend="italics">never</hi>
+                pass this dreary<lb/>waste ?&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Yes, my son,&rdquo; said Peter, &ldquo; I
+                trust <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">6</fw><fw type="header"
+                    rend="align(centre)">THE FISHERMAN</fw> we shall. God will give us the
+                necessary<lb/>strength.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Why, then, don&rsquo;t God make a
+                spring<lb/>here for us to drink out of, like he did for<lb/>the Jews, when they were
+                in the wilder&ndash;<lb type="inWord"/>ness ?&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; That was a miracle, my son ;
+                God&rsquo;s<lb/>ways are not as our ways ; but he knows<lb/>what is best.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; But, Pa, I feel so weak ; my head<lb/>aches
+                so ; I never felt such pain&mdash;do let<lb/>us rest. &rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Not here, my child ; if we sit down<lb/>here,
+                the heat would make your head ache<lb/>worse, and then may be we couldn&rsquo;t
+                get<lb/>on at all.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Oh ! if I just had a little
+                drink&mdash;a<lb/>teaspoonful&mdash;I could do. My tongue<lb/>seems so big, I can
+                hardly talk.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Keep courage, my boy, a little
+                longer.<lb/>Look yonder ; can you see anything ?&rdquo;<lb/>pointing considerably
+                ahead.</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; I think I see some trees, but my eyes<lb/>are
+                so sore I can hardly see.&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; You are right, Davie, as to the trees
+                ;<lb/>and if I mistake not, we shall find water<lb/>there. Come, cheer up, my brave
+                boy.&rdquo;</p>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">AND HIS SON.</fw>
+            <fw type="pagenumber" rend="align(right)">7</fw>
+            <p rend="first-indent(3) align(justify)">For a distance they trudged along in<lb/>silence,
+                Davie carefully keeping his eye in<lb/>the direction of the trees, where he
+                hoped<lb/>to quench his burning thirst ; <choice>
+                    <orig>hut</orig>
+                    <corr>but</corr>
+                </choice> he<lb/>again became disheartened, because the<lb/>distance did not seem to
+                grow much less,<lb/>and cried out most piteously :</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; Oh ! Father, do let me lie down, or<lb/>sit
+                down, or something ; I feel as if I<lb/>would fall down ; I can&rsquo;t go any
+                further,&rdquo;</p>
+            <p rend="first-indent(3) align(justify)">&ldquo; We must not stop here,&rdquo; said
+                the<lb/>father, endeavouring to encourage poor<lb/>Davie. &ldquo; A little more
+                effort. This is<lb/>not the resting&ndash;place yet. See, we soon<lb/>shall reach
+                yonder wide spreading trees ;<lb/>put your hand in mine ; I can help you<lb/>along.
+                Think of poor Mother and Hettie ;<lb/>how they&rsquo;ll long for us, and how
+                they&rsquo;ll<lb/>embrace us when we get home again.&rdquo;</p>
+
+            <p rend="first-indent(3) align(justify)">At last, they reached the refreshing<lb/>shade. Poor <choice>
+                    <orig>Davy</orig>
+                    <corr>Davie</corr>
+                </choice> was so exhausted, that<lb/>he fell down just as they reached it,
+                but<lb/>was revived by water which his father<lb/>carried in his hat to him. There
+                they<lb/>spent the night. Then, after breakfasting<lb/>on such palatable vegetables
+                as could be <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">8</fw><fw type="header"
+                    rend="align(centre)">THE FISHERMAN AND HIS SON.</fw> found, they pursued their
+                journey with<lb/>renewed energy. Their way was no<lb/>longer barren, though it was
+                sometimes<lb/>rough, and even thorny. Yet they took<lb/>no longer account of the
+                occasional prick&ndash;<lb type="inWord"/>ing of thorns They no longer
+                suffered<lb/>from heat and thirst, and the prospect of<lb/>reaching home in safety
+                cheered them, as<lb/>each step brought that loved spot nearer.<lb/>And just as the
+                evening shadows were<lb/>slowly climbing the mountain, they reached<lb/>the cottage
+                door, and the fond embraces<lb/>which they received, showed how much<lb/>they were
+                beloved. That night, from the<lb/>little family altar, a sincere
+                thanksgiving<lb/>was offered up to God for his manifold<lb/>favours to the children
+                of men.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>11P31522</name>
+                    <desc>nun(s)</desc>
+                </ic:iconClass>
+            </figure>
+        </body>
+    </text>
+</TEI>

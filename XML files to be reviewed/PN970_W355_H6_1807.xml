@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Changes Made</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="NurseryRhymes">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="beige coloured pictorial wrappers"/>
+            <figure type="borderornament">
+                <p rend="within borderornament align(centre)">COLORED.</p>
+                <bibl rend="align(centre)">
+                    <title level="m">THE HOUSE<lb/>THAT<lb/>JACK BUILT.</title><lb/>
+                    <figure rend="coloured">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <pubPlace>LONDON &amp; OTLEY :</pubPlace><lb/>
+                    <publisher>WILLIAM WALKER AND SONS.</publisher>
+                </bibl>
+            </figure>
+        </front>
+        <body>
+            <pb n="2" rend="align(centre)"/>
+            <head type="work">HOUSE THAT JACK BUILT.</head>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>This is the House that<lb/>Jack built.</p>
+
+            <pb n="3" rend="align(centre)"/>
+            <fw type="header">HOUSE THAT JACK BUILT.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>This is the Malt<lb/> That lay in the House that<lb/>Jack built.</p>
+
+            <pb n="4" rend="align(centre)"/>
+            <fw type="header">HOUSE THAT JACK BUILT.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>This is the Rat<lb/> That ate the Malt<lb/>That lay in the House that<lb/>Jack
+                built.</p>
+
+            <pb n="5" rend="align(centre)"/>
+            <fw type="header">HOUSE THAT JACK BUILT.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>This is the Cat<lb/>That killed the Rat that<lb/>ate the Malt<lb/>That lay in the
+                House that<lb/>Jack built.</p>
+
+            <pb n="6" rend="align(centre)"/>
+            <fw type="header">HOUSE THAT JACK BUILT.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>This is the Dog,<lb/>That worried the Cat,<lb/>That killed the Rat, that<lb/>ate the
+                Malt,<lb/>That lay in the House that<lb/>Jack built.</p>
+
+
+            <pb n="7" rend="align(centre)"/>
+            <fw type="header">HOUSE THAT JACK BUILT.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>This is the Cow<lb/>With the crumpled Horn,<lb/>That tossed the Dog, that
+                worried<lb/>the Cat,<lb/>That killed the Rat, that ate the<lb/>Malt,<lb/>That lay in
+                the House that Jack<lb/>built.</p>
+
+            <pb n="8" rend="align(centre)"/>
+            <fw type="header">HOUSE THAT JACK BUILT.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p>This is the Maiden all forlorn<lb/>That milked the Cow with the<lb/>crumpled
+                Horn,<lb/>That tossed the Dog that worried<lb/>the Cat,<lb/>That killed the Rat that
+                ate the<lb/>Malt<lb/>That lay in the House that Jack<lb/>built.</p>
+        </body>
+        <back/>
+    </text>
+</TEI>

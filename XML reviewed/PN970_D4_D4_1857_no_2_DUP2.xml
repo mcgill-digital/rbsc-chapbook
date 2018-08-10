@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-10-19"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-07-31"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Religious">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s"> DEAN'S<lb/> Illustrated Farthing Books. &rule;</title><lb/>
+                    <title type="m">TRUE HEROES.</title>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>45B</name>
+                            <desc>the soldier; the soldier's life</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <pubPlace>LONDON</pubPlace>:<publisher>DEAN &amp; SON,<lb/> 11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">2</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+        <body>
+            <pb n="2"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42B7421</name>
+                    <desc>mother and son(s) (family group)</desc>
+                </ic:iconClass>
+                <head>ALFRED THE GREAT.</head>
+            </figure>
+            <head rend="align(centre)">TRUE HEROES.</head>
+             <p rend="first-indent(3) align(justify)">&ldquo; Is it not grand to hear about all<lb/>these
+                brave men ? I am so glad that I<lb/>live in these war times !&rdquo; said
+                George.</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; So am I,&rdquo; said his brother
+                William.<lb/>&ldquo; We do not think that men who live <pb n="3"/>
+                <fw type="header" rend="align(centre)">TRUE HEROES.</fw><fw type="pagenumber"
+                    rend="align(right)">3</fw> now&ndash;a&ndash;days could be such heroes.
+                It<lb/>seems like reading the histories of old<lb/>times. Think of that little boy,
+                who<lb/>stood on the deck of his vessel, calmly<lb/>filling the powder&ndash;flasks,
+                while men were<lb/>falling dead around him ; and of that<lb/>John Davis who threw
+                himself over a<lb/>barrel of powder, to cover it, when a<lb/>shell from the
+                enemy&rsquo;s battery burst near<lb/>him!&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; And kept on passing out the powder<lb/>for
+                the guns &rdquo; added George.</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; And think of that gunner on
+                the<lb/>Cumberland, who moved three steps on<lb/>his thighs after both legs were
+                shot off,<lb/>fired his gun, and fell back dead !&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; And the two gunners who went
+                down<lb/>clasping their guns !&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; And think of men standing at their<lb/>guns,
+                and firing as their ship went<lb/>down !&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; But I think,&rdquo; added Willy, &ldquo;that
+                the<lb/>sea captain, that Aunt Mary was telling<lb/>us about, was as brave as any of
+                them.&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; What was that ? I did not hear
+                her,&rdquo;<lb/>said George.</p>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">TRUE HEROES.</fw>
+             <p rend="first-indent(3) align(justify)">&ldquo; He was coming from the West<lb/>Indies, and
+                knew he was in great danger<lb/>from privateers. He saw a ship at a dis&ndash;<lb
+                    type="inWord"/>tance, which showed signals of distress.<lb/>All the crew and the
+                passengers begged<lb/>him to keep away, feeling confident that<lb/>it was a
+                privateer trying to decoy them.<lb/>His mate, who had sailed with him
+                many<lb/>years, entreated him not to go to her, and<lb/>told him that the crew were
+                all ready to<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C24</name>
+                        <desc>sailing-ship, sailing-boat</desc>
+                    </ic:iconClass>
+                </figure> mutiny. The passengers besought him<lb/>not to run into such danger; and
+                one of<lb/>them said that if they were taken prison&ndash;<lb type="inWord"/>ers, he
+                should testify that it was all the <pb n="5"/>
+                <fw type="header" rend="align(centre)">TRUE HEROES.</fw><fw type="pagenumber"
+                    rend="align(right)">5</fw> captain&rsquo;s fault. The captain said
+                nothing<lb/>in reply, but ordered them to steer for the<lb/>vessel, and kept his
+                glass in one hand and<lb/>a pistol in the other. As they came near<lb/>the vessel,
+                the whole crew became clamo&ndash;<lb type="inWord"/>rous, saying they could see men
+                and arms<lb/>on board. The captain thought he saw<lb/>a few men and bedding, and
+                signs of<lb/>distress, One of the passengers looked<lb/>through the glass, and said
+                he could see a<lb/>hundred men, and so the mate thought.<lb/>Still the captain kept
+                on till they reached<lb/>the ship.&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; And was it a privateer ?&rdquo;
+                asked<lb/>George.</p>
+             <p rend="first-indent(3) align(justify)">&ldquo;No, it was a ship, just sinking.<lb/>She sank
+                a few minutes after they got the<lb/>captain and crew on board their own<lb/>vessel.
+                There were twenty&ndash;one persons<lb/>in all, almost starved and
+                exhausted.<lb/>The captain brought them to this port,<lb/>and said not a word about
+                it. He merely<lb/>reported that he had brought home the<lb/>crew of a sunken vessel
+                The mate told<lb/>of it, and how he and almost all the crew<lb/>fell on their knees,
+                and thanked the cap&ndash; <pb n="6" type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">6</fw><fw type="header"
+                    rend="align(centre)">TRUE HEROES.</fw> tain for doing what they had tried so
+                hard<lb/>to keep him from doing.&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; Don&rsquo;t you wish, Will,&rdquo; said
+                George,<lb/>after a long pause. &ldquo; that we were men,<lb/>and could do such
+                things ?&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo;It is not every man who has the<lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>42B113</name>
+                        <desc>father with son(s) and daughter(s) (father-love)</desc>
+                    </ic:iconClass>
+                </figure> chance to do them,&rdquo; said William. &ldquo; Fa&ndash;<lb type="inWord"
+                />ther says that it is in a great many people <pb n="7"/>
+                <fw type="header" rend="align(centre)">TRUE HEROES.</fw><fw type="pagenumber"
+                    rend="align(right)">7</fw> to do great things, who never have an<lb/>opportunity
+                to do them. He says it takes<lb/>something besides a man to make
+                a<lb/>hero.&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; What ?&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; An occasion. He says that heroism<lb/>is
+                doing right when it is hard to do right.<lb/>It is doing, in the face of danger and
+                    diffi&ndash;<lb type="inWord"/>culty, precisely as one should do
+                without<lb/>them.&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo;In other words, heroism is virtue<lb/>going
+                through a tight place,&rdquo; said George.<lb/>&ldquo; But don&rsquo;t you suppose,
+                Will, that when<lb/>it comes to the tight place, it gets new<lb/>strength, and
+                becomes nerved to go<lb/>through ?&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; I suppose so. Father says that dan&ndash;<lb
+                    type="inWord"/>ger gives a sort of excitement, which<lb/>makes one able to do
+                what he could not<lb/>do at other times. His whole soul must<lb/>be roused, and in
+                the act. And then I<lb/>suppose that the thought of what people<lb/>will say, is
+                often a strong motive.&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">Their mother, who had been quietly<lb/>sewing, looked
+                up from her work, and<lb/>said : &ldquo; One of the noblest instances of <pb n="8"
+                    type="inWord"/>
+                <fw type="pagenumber" rend="align(left)">8</fw><fw type="header"
+                    rend="align(centre)">TRUE HEROES.</fw> true heroism is that of a miner, of
+                whom<lb/>I have lately read. He was with a com&ndash;<lb type="inWord"/>panion in
+                the mine preparing for a blast.<lb/>By accident, the match was lighted too<lb/>soon,
+                and there was not time for both to<lb/>escape, as they had to be drawn up
+                    sepa&ndash;<lb type="inWord"/>rately. Knowing that instant death was<lb/>before
+                him, he quietly said, &lsquo; Go aloft,<lb/>Jack ; in a minute I shall be in
+                heaven.&rsquo;<lb/>There he was alone, underground, with<lb/>no witnesses, no
+                encouragement, nothing<lb/>but his self&ndash;forgetting self. This was
+                true<lb/>heroism.&rdquo;</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; Yes, indeed,&rdquo; said the boys.</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; I should like to know how to go to<lb/>work
+                to become a hero,&rdquo; said George.</p>
+             <p rend="first-indent(3) align(justify)">&ldquo; There is only one way,&rdquo; said
+                his<lb/>mother&mdash;&ldquo; to love right more than you<lb/>fear evil, and to do
+                right in spite of every&ndash;<lb type="inWord"/>thing. Then if an opportunity comes
+                for<lb/>showing it, you are a hero ; if not, you<lb/>are quite as worthy, if not as
+                famous.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C24</name>
+                    <desc>sailing-ship, sailing-boat</desc>
+                </ic:iconClass>
+            </figure>
+        </body>
+        <back/>
+    </text>
+</TEI>

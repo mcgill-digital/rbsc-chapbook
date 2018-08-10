@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Annika Robbins</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Occult">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre) blue coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">GOODE'S<lb/>UNIVERSAL<lb/>DREAM BOOK<lb/></title><lb/>&rule;<lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>&rule;<lb/>
+                    <publisher rend="align(centre)">LONDON:<lb/> T. GOODE, PRINTER AND
+                        PUBLISHER,<lb/>CLERKENWELL GREEN.</publisher>
+                </bibl>
+
+
+                <pb n="2"/>
+            </div>
+
+
+
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <figure type="borderornament"/>
+                <docTitle>
+                    <titlePart type="main">GOODE'S<lb/>UNIVERSAL<lb/>DREAM
+                        BOOK<lb/>&rule;</titlePart>
+                </docTitle>
+                
+                <figure>
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+
+                <docImprint>&rule;<lb/><pubPlace>LONDON</pubPlace>:<lb/>
+                    <publisher>T. GOODE</publisher>, PRINTER AND PUBLISHER,<lb/>CLERKENWELL
+                    GREEN.</docImprint>
+
+            </titlePage>
+
+
+            <pb n="4"/>
+
+        </front>
+        <pb n="5"/>
+
+        <body rend="align(justify)">
+            <div type="section">
+
+                <head rend="align(centre)" type="main">GOODE'S<lb/>NEW UNIVERSAL<lb/>DREAM
+                    BOOK.<lb/>&rule;</head><lb/>
+                
+                <p rend="first-indent(2)">ACORNS.&mdash;To dream of acorns, and that you eat one,
+                    denotes<lb/>you will rise gradually to riches and honour. If you do not
+                    eat,<lb/>and throw one on the ground, you will quickly get rich, but
+                        ano&ndash;<lb type="inWord"/>ther will enjoy your property.</p>
+                <p rend="first-indent(2)">ADULTERY.&mdash;To dream that you have committed it shows
+                    great<lb/>contentions and debates; but to dream you have resisted the
+                        temp&ndash;<lb type="inWord"/>tation, shows victories over your enemies.</p>
+                <p rend="first-indent(2)">ADVERSARIES.&mdash;To dream you meet with an adversary,
+                    denotes<lb/>that you will overcome some obstacle to your happiness&mdash;if
+                    you<lb/>are a lover, you will conquer some powerful rival, and be happy.</p>
+                <p rend="first-indent(2)">ASSES. To dream you ride an ass, that bears your blows,
+                    and<lb/>the more you beat, the slower his pace, denotes that you will
+                    be<lb/>married to a virtuous industrious wife, but your passion will
+                    ruin<lb/>her. If the ass mends his pace under your blows, and throws you<lb/>she
+                    will prove incontinent.</p>
+                <p rend="first-indent(2)">ALTAR.&mdash;To dream you are at the altar, and receive
+                    the holy<lb/>sacrament. is a very unfavourable omen, and denotes many
+                    heavy<lb/>and severe afflictions.</p>
+                <p rend="first-indent(2)">AIR. To dream that you see it cloudy, and afterwards
+                    clear<lb/> and serene, denotes one part of your lifetime will prove
+                    unhappy,<lb/>the latter part the reverse.</p>
+                <p rend="first-indent(2)">ANGLING.&mdash;To dream you are angling, betokens loose
+                    desires in<lb/>the male; such as seeking opportunities of inveigling some
+                        inno&ndash;<lb type="inWord"/>cent female.</p>
+                <p rend="first-indent(2)">ANGER.&mdash;To dream that you are in a passion and angry
+                    with<lb/>any one, denotes you have many enemies ! if you are in love,
+                    be<lb/>sure that some rival is slandering you to your sweetheart. If
+                    you<lb/>dream you see another in a passion with you; it is more
+                    favourable,<lb/>if you are in love, your sweetheart will fall sick, and you will
+                        ex&ndash;<lb type="inWord"/>perience some weighty loss.</p>
+                <p rend="first-indent(2)">ANGELS.&mdash;to dream you see angels, is a sure sign that
+                    some one<lb/>is near you&mdash;if a woman with child dreams of them, she will
+                    have<lb/>a good time, perhaps twins.</p>
+                <p rend="first-indent(2)">APPLES.&mdash;To dream of seeing apples, and they eat
+                    sweet and<lb/>ripe, is a sure sign of prosperity, especially to virgins; if they
+                    should<lb/>eat sour, it signifies much sorrow and unhappiness.</p>
+
+
+                <pb n="6"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+
+                <p rend="first-indent(2)">APPAREL.&mdash;To dream that your apparel is proper and
+                    suited to<lb/>the season of the year, denotes prosperity and happiness.</p>
+                <p rend="first-indent(2)">To dream you are dressed in new clothes, is a favourable
+                    sign,<lb/>and portends honour and <choice>
+                        <orig>succsss</orig>
+                        <corr>success</corr>
+                    </choice>in your undertakings.</p>
+                <p rend="first-indent(2)">APPARITION.&mdash;So dream you see a ghost, is very
+                    unfortunate: if<lb/>it is of a comely aspect, and dressed in white, it <choice>
+                        <orig>shews</orig>
+                        <corr>shows</corr>
+                    </choice> deceit and<lb/>temptation to sin ; if you are in love, it is a sign of
+                    your not being<lb/>beloved in turn, and that you are in the habits of friendship
+                    with<lb/>one who is your most inveterate enemy.</p>
+                <p rend="first-indent(2)">ARMS.&mdash;To dream that your arms are withered and
+                    decayed,<lb/>shows that the person will decline in health or fortune; if they
+                        ap&ndash;<lb type="inWord"/>pear to be more plump and grow strong, you will
+                    meet with un&ndash;<lb type="inWord"/>expected prosperity; if your arms are
+                    broken, you will lose some<lb/>dear friend by removing to a great distance, if
+                    your right arm is cut<lb/>off, you will loose a near male relation, if the left,
+                    a female.</p>
+                <p rend="first-indent(2)">AUTHORITY.&mdash;It is good always for a rich man to think
+                    or dream<lb/>he is in authority.</p>
+                <p rend="first-indent(2)">BACON.&mdash;To dream of bacon, denotes the death of some
+                    friend</p>
+                <p>or relation, and that enemies will endeavour to do you a mischief;<lb/>in love,
+                    it denotes disappointment and discontent.</p>
+                <p rend="first-indent(2)">BARLEY&ndash;BREAD.&mdash;To dream of eating
+                    barley&ndash;bread, betokens<lb/>health and great comfort to the dreamer.</p>
+                <p rend="first-indent(2)">BOAT.&mdash;To dream you are in a boat on clear water, is
+                    very good,<lb/>and indicates joy and prosperity.</p>
+                <p rend="first-indent(2)">BULLOCK.&mdash;To dream a bullock pursues you, beware of
+                    some<lb/>powerful enemy, particular if the dreamer is a female: It a cow,<lb/>a
+                    female is an enemy.</p>
+                <p rend="first-indent(2)">BATHING.&mdash;To dream you bathe, and the water seems
+                    clear, you<lb/>are sure to prosper, everything will be well with you; but if the
+                    <lb/>water appears muddy, you will be apt to meet with shame and
+                    <lb/>sorrow.</p>
+                <p rend="first-indent(2)">BED. To dream that you are in bed, implies that he or she
+                    will<lb/>be married at the end of the month.</p>
+                <p rend="first-indent(2)">BREAD. To dream you see a great quantity of loaves,
+                    denotes<lb/>success in life. To dream that you are eating good bread,
+                    denotes<lb/>many friends.</p>
+                <p rend="first-indent(2)">BEES. To dream they sting you, denotes loss of good
+                    character,<lb/>and if you are in love, of your sweetheart.</p>
+                <p rend="first-indent(2)">BALL. To dream of dancing at a ball denotes that you will
+                    be<lb/>addressed by a lover ; the prospect will be a momentary pleasure<lb/>he
+                    will become your husband to a certainty</p>
+                <p rend="first-indent(2)">BURIED. To dream yourself or friend is buried, fortells a
+                        seri&ndash;<lb type="inWord"/>ous fit of illness.</p>
+                <p rend="first-indent(2)">CHURCH. To dream that you are in church, and that the
+                        par&ndash;<lb type="inWord"/> on and pulpit are in white, and that he
+                    preaches a sermon to your<lb/>taste, you will soon be married. If the parson is
+                    in black, and the<lb/>congregation sing a hymn, it denotes grief.</p>
+                <p rend="first-indent(2)">CATS. If a man dreams of a cat, and he caress her, and
+                    she<lb/>scratches him, his sweetheart is a spiteful termagant. If a female
+
+                <pb n="7"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+                dreams of a cat that acts similarly, she may rest assured that she <lb/>has a
+                    rival.</p>
+                <p rend="first-indent(2)">CLOCK. If you dream the clock falls or breaks, it denotes
+                        dan&ndash;<lb type="inWord"/>ger, especially to the sick. It is always
+                    better to dream of count&ndash;<lb type="inWord"/>ing the hours of the forenoon
+                    than the afternoon.</p>
+                <p rend="first-indent(2)">CHEESE. To dream you eat cheese denotes profit.</p>
+                <p rend="first-indent(2)">CAKE. To dream that you make a cake signifies joy and
+                        pros&ndash;<lb type="inWord"/>perity.</p>
+                <p rend="first-indent(2)">COALS. To dream of clear burning coals, denotes
+                    prosperity,<lb/>especially in love; coals in their natural state indicate
+                    trouble and<lb/>discontent ; extinguished coals, announce the fall of fortune,
+                    or<lb/>the death of some near friend.</p>
+                <p rend="first-indent(2)">CLIMBING. To dream you are climbing a tree, and gain
+                    the<lb/>top, you will rise to preferment, or your love will succeed ; or
+                    if<lb/>you dream you climb a very steep hill, foretells many difficulties<lb/>in
+                    life,</p>
+                <p rend="first-indent(2)">CANDLE. To dream a candle burns bright and clear denotes
+                    a<lb/>pleasing letter from your sweetheart; but if the candle's blaze
+                    gets<lb/>cull, you will be disappointed.</p>
+                <p rend="first-indent(2)">CROWNS. To dream of crowns denotes riches and honour.</p>
+                <p rend="first-indent(2)">CARDS. To dream you are playing at cards, it denotes that
+                    you<lb/>will soon be in love. If you hold a great many court cards, if
+                    you<lb/>are single, you will soon be married and happy.</p>
+                <p rend="first-indent(2)">CORN. To dream you are gathering ripe corn, promises
+                    you<lb/>success in your enterprise, but if it is blighted or mildewed,
+                    you<lb/>will be a great loser.</p>
+                <p rend="first-indent(2)">CARROTS. To dream of them denotes prosperity in life ; if
+                    you<lb/>have children they will all thrive, if you are in love your suit
+                    will<lb/>be successful.</p>
+                <p rend="first-indent(2)">DAIRY. To dream you are in a dairy, skimming the cream
+                    off<lb/>the milk, and that your sweetheart partakes of the cream,
+                    denotes<lb/>him inclined to luxury. But if he drinks the milk, it is a sign
+                    of<lb/>frugality.</p>
+                <p rend="first-indent(2)">DARKNESS. To think yourself in the dark, is a token of
+                        afflicti&ndash;<lb type="inWord"/>on, and loss in trade; to get out of
+                    darkness, into sudden light, is<lb/>a sign of rising to eminence, or of escaping
+                    out of prison.</p>
+                <p rend="first-indent(2)">DEATH To dream of death, denotes happiness and long
+                    life.<lb/>To see him sink into the ground, is a certain death. The
+                    married<lb/>to dream of death, implies a loss or second union.</p>
+                <p rend="first-indent(2)">DOGS. If they fawn and fondle upon you, it is a lucky omen
+                    :<lb/>if they are barking and snarling at you, then depend that enemies<lb/>are
+                    secretly endeavouring to destroy your reputation ; if you are<lb/>in love be
+                    careful of your present sweetheart.</p>
+                <p rend="first-indent(2)">DEVIL To dream of the devil denotes many troubles. If
+                    he<lb/>appears in fire immediate misfortunes will befall yau. A widow<lb/>to
+                    dream of the devil, after she has buried a bad husband, is sure<lb/>to have
+                    another&mdash;so widows, beware.</p>
+                <p rend="first-indent(2)">DANCING. To dream you are dancing at a ball, or
+                        entertain&ndash;<lb type="inWord"/>ment, fortells you will shortly receive
+                    some joyful news from a long
+
+
+                <pb n="8"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+                absent friend : to the sailor, a pleasant and successful voyage, in&ndash;<lb
+                        type="inWord"/>crease of children to married persons ; and to those in
+                    trade, much<lb/>business, and happy in marriage.</p>
+                <p rend="first-indent(2)">DROWNING. To dream you are drowning, or see another so
+                        sit&ndash;<lb type="inWord"/>uated, is good to the dreamer, and denotes that
+                    he will be preser&ndash;<lb type="inWord"/>ved through many strange
+                    difficulties.</p>
+                <p rend="first-indent(2)">DEBT. To dream you are in debt, and pursued by bailiffs,
+                        in&ndash;<lb type="inWord"/>dicates that you will fall into some unexpected
+                    difficulties, or great<lb/>danger.</p>
+                <p rend="first-indent(2)">ELEPHANT. To dream of an elephant, is a very fortunate
+                    dream<lb/>it denotes an acquirement of riches, and happy wedlock.</p>
+                <p rend="first-indent(2)">EAGLES. To dream you see an eagle or a hawk perched,
+                    and<lb/>they suffer you to caress them, you will be married to a
+                    military<lb/>man, either a officer, serjeant, or private.</p>
+                <p rend="first-indent(2)">EATING. To dream you see others eating, is a bad omen.
+                    But<lb/>if you dream you are asked to eat, and partake of those things
+                    you<lb/>like best, some relief, perhaps will follow.</p>
+                <p rend="first-indent(2)">EGGS. To dream of eggs, is honourable. whatever you are
+                    then<lb/>about will succeed. To dream of broken eggs, if married, you
+                    will<lb/>have no children. But to dream of eating them, you will have many.</p>
+                <p rend="first-indent(2)">EVIL SPIRITS. If you see evil spirits in your dream, it is
+                    a sign<lb/>of sickness, if you seem to exercise them, and they vanish,
+                    you<lb/>will get over your difficulties.</p>
+                <p rend="first-indent(2)">EARTHQUAKE. To dream of an earthquake, warns you to
+                    be<lb/>cautious and careful. If you see houses tumble, your friends
+                    will<lb/>feel a shock, public confidence is lost, or some dire calamity
+                    will<lb/>defall them.</p>
+                <p rend="first-indent(2)">FLIES. To dream of flies or other vermin, denotes enemies
+                    of<lb/>all sorts. To dream of killing them is a very good omen.</p>
+                <p rend="first-indent(2)">FOX. To dream of a fox is the forerunner of much
+                    difficulties,<lb/>beware of some designing adversaries.</p>
+                <p rend="first-indent(2)">FALL. To dream you fall into the mire, and you are
+                    covered<lb/>with filth, if a servant, you will lose your character through
+                        pilfer&ndash;<lb type="inWord"/>ing ; if the dirt gets into your eyes, you
+                    will experience confine&ndash;<lb type="inWord"/>ment, most likely be imprisoned
+                    ; if you see clouds rapidly moving<lb/>beware of transportation. To run and
+                    fall, then rise, and run a&ndash;<lb type="inWord"/> gain, is a sign that you
+                    have a litigious temper that will ruin you.<lb/>But to dream you run without
+                    interruption, is a sign of indiffer&ndash;<lb type="inWord"/>ence, and that you
+                    will accomplish your design.</p>
+                <p rend="first-indent(2)">FIRE. To dream of fire, denotes happiness, health and
+                    marriage,<lb/>and many children. To dream you see burning lights
+                    descending,<lb/>as it were from heaven, is a very bad sign ; it portends
+                    Some<lb/>dreadful accident to the dreamer, such as being hanged,
+                    loosing<lb/>your head, having your brains dashed out, breaking a leg, or
+                    other<lb/>strange accidents&mdash;to the lover, it also denotes the loss of the
+                        affec&ndash;<lb type="inWord"/>tions of your sweetheart.&mdash;to the
+                    tradesman, bad success in busi&ndash;<lb type="inWord"/>ness. To dream that you
+                    are burnt by fire, denotes great danger,<lb/>and that enemies will injure you,
+                    to the sailor, storm and ship<lb/>wreck.</p>
+
+
+                <pb n="9"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+                <p rend="first-indent(2)">FORTUNE. To dream you make a sudden fortune, is a
+                    very<lb/>bad omen.</p>
+                <p rend="first-indent(2)">FIELDS. If in your dream you are crossing newly
+                    ploughed<lb/>fields, promises some unexpected misfortune from a person
+                    who<lb/>has no children, if the fields are covered with corn, it denotes
+                        hav&ndash;<lb type="inWord"/>ing children.</p>
+                <p rend="first-indent(2)">FINGER. If you cut your finger and the blood runs, you
+                    will<lb/>get money where you least expect it; if you do not see any
+                    blood<lb/>you will have a quarrel or law suit for money which you paid
+                    before.</p>
+                <p rend="first-indent(2)">GIFTS. To dream you have any thing given to you is a
+                    sign<lb/>that some good is about to happen to you; it also denotes
+                    that<lb/>speedy marriage will take place between you and your sweetheart</p>
+                <p rend="first-indent(2)">GEESE. To dream of geese is the forerunner of good, they
+                        de&ndash;<lb type="inWord"/>note success and riches, also faithful
+                    sweethearts.</p>
+                <p rend="first-indent(2)">GARDEN. If you are walking in a beautiful garden, you
+                    will<lb/>soon be advanced in fortune, if you are gathering the fruits of
+                    it,<lb/>you will be happy in marriage, and have many children.</p>
+                <p rend="first-indent(2)">GALLOWS. To dream of the gallows, is a most fortunate
+                    omen,<lb/>it shows that the dreamer will become rich, and arrive at
+                    great<lb/>honours.</p>
+                <p rend="first-indent(2)">GRAVE. To dream you see a grave, fortells sickness and
+                        disap&ndash;<lb type="inWord"/>pointment, if you are in love, depend you
+                    will marry your present<lb/>sweetheart.</p>
+                <p rend="first-indent(2)">GIANTS. To dream of seeing giants is ominous of good if
+                    you<lb/>are in trade, you will have a great increase of business.</p>
+                <p rend="first-indent(2)">HAIL. Dreaming of hail, denotes grief and much sorrow.</p>
+                <p rend="first-indent(2)">HATRED. To dream of being hated, by friends or enemies,
+                    is<lb/>an ill omen.</p>
+                <p rend="first-indent(2)">HILLS. To dream of travelling over steep hills, shows that
+                    you<lb/>will encounter many difficulties. and enter upon some arduous
+                        un&ndash;<lb type="inWord"/>dertakings ; if you descend the hill easily, you
+                    will get the better<lb/>of all your difficulties.</p>
+                <p rend="first-indent(2)">HOUSE. To dream of building a house is a very
+                    favourable<lb/>omen; if you are in trade it denotes success, in love, that
+                    your<lb/>sweetheart is good tempered and faithful, and will make you
+                    very<lb/>happy.</p>
+                <p rend="first-indent(2)">HUNTING. To dream that you are hunting a fox, and that
+                    he<lb/>is killed, shows much trouble through the pretensions of
+                    false<lb/>friends, but that you will discover them, and overcome all
+                    their<lb/>machinations.</p>
+                <p rend="first-indent(2)">INFANTS. To dream of infants shows trouble, and in health,
+                        ex&ndash;<lb type="inWord"/>cept you see them playing, you may then expect
+                    to receive great<lb/>satisfaction from a distant part.</p>
+                <p rend="first-indent(2)">ICE. Dreaming of ice is a very favourable omen ; to the
+                    lover<lb/>it shows your sweetheart is of an amiable temper, and faithful ;
+                    to<lb/>the tradesman, it denotes success and riches, to the farmer a
+                        plen&ndash;<lb type="inWord"/>tiful harvest.</p>
+                <p rend="first-indent(2)">IRON. For one to dream he is hurt with iron, shows he will
+                        re&ndash;<lb type="inWord"/>ceive damage.</p>
+
+
+                <pb n="10"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+                <p rend="first-indent(2)">KEYS. To dream of keys is favourable, to a person in trade
+                    and<lb/>to a sailor&mdash;they denote some gift, and that the dreamer will
+                        be&ndash;<lb type="inWord"/>come rich.</p>
+                <p rend="first-indent(2)">KNIFE. To dream you give a knife, indicates you will
+                    have<lb/>much contention ; to give one to your intended, shows he will<lb/>loose
+                    her ; she will cut your acquaintance.</p>
+                <p rend="first-indent(2)">LETTER. If you receive a letter in your dream, it betokens
+                    a<lb/>legacy or presents ; if you send a letter, you will shortly relieve<lb/>a
+                    person who is in distress.</p>
+                <p rend="first-indent(2)">LADDER. To dream you climb a ladder, denotes a happy
+                        mar&ndash;<lb type="inWord"/>riage with the object of your affections, and
+                    that you will become<lb/>by industry, rich, and settle your children
+                    happily.</p>
+                <p rend="first-indent(2)">LINEN. To dream you are dressed in clean linen,
+                    denotes<lb/>that you will shortly receive some glad tidings&mdash; if it is
+                    dirty, then<lb/>poverty, a prison and disappointment in love, with the loss of
+                        some&ndash;<lb type="inWord"/>thing valuable</p>
+                <p rend="first-indent(2)">LION. To dream of seeing a lion, denotes that you will
+                    appear<lb/>before your betters, accumulate riches, and marry a woman
+                    of<lb/>great spirit.</p>
+                <p rend="first-indent(2)">MEAT. To dream you are buying meat, signifies that
+                    friends<lb/>will step forward, and be of great assistance to you, and that
+                    you<lb/>will overcome difficulties, and acquire great riches</p>
+                <p rend="first-indent(2)">MONEY. To dream of paying money denotes success in you
+                        af&ndash;<lb type="inWord"/>airs, the birth of a child, or the gain of a
+                    lawsuit; if received, you<lb/>will thrive.</p>
+                <p rend="first-indent(2)">MOTHER. To dream of seeing your mother, is a certain
+                        paognos&ndash;<lb type="inWord"/>tic of some agreeable adventure being about
+                    to happen to you, and<lb/>that you will hear from a friend at a distance.</p>
+                <p><choice>
+                        <orig>NUSIC</orig>
+                        <corr>MUSIC</corr>
+                    </choice>To dream you hear delicious music, is a very favoura&ndash;<lb
+                        type="inWord"/>ble omen ; it denotes joyful news from a long absent
+                    friend.</p>
+                <p rend="first-indent(2)">MOON. To dream of the moon is a very favourable omen, it
+                        de&ndash;<lb type="inWord"/>notes sudden and unexpected joy, great success
+                    in love, and that<lb/>the dreamer is tenderly beloved. To dream of seeing the
+                    new moon<lb/>is good for tradsmen, farmers, and lovers ; it is the forerunner
+                    of<lb/>success snd happiness. To handsome women it is a good sign to<lb/>see a
+                    full moon, but not to ugly ones.</p>
+                <p rend="first-indent(2)">
+                    <choice>
+                        <orig>MONKIES</orig>
+                        <corr>MONKEYS</corr>
+                    </choice> To dream of <choice>
+                        <orig>monkies</orig>
+                        <corr>monkeys</corr>
+                    </choice>is ominous ef evil, they an&ndash;<lb type="inWord"/>nounce deceit in
+                    love, unfaithfulness in the married state, undutiful<lb/>children, malibious
+                    enemies, and an attack by thieves.</p>
+                <p rend="first-indent(2)">NAKEDNESS. To dream of nakedness, denotes scandal of
+                        cha&ndash;<lb type="inWord"/>racter, to dream you see a naked woman is
+                    lucky; it <choice>
+                        <orig>fortels</orig>
+                        <corr>fortells</corr>
+                    </choice>that<lb/>some unexpected honours await you.</p>
+                <p rend="first-indent(2)">NIGHTMARE. To dream of being ridden by the nightmare, is
+                    a<lb/>sign of sudden marriage, or to be domineered over by a fool.</p>
+                <p rend="first-indent(2)">OYSTERS. To dream of eating oysters, indicates a coming
+                    of<lb/>much want; to open oysters <choice>
+                        <orig>shews</orig>
+                        <corr>shows</corr>
+                    </choice> we stand in need of assiduity<lb/>in our business.</p>
+                <p rend="first-indent(2)">ORANGES To dream you are eating oranges, implies grief
+                    and<lb/>wounds.</p>
+
+
+                <pb n="11"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+                <p rend="first-indent(2)">OXEN To dream of seeing fair and white cattle, shows
+                    virtuous<lb/>inclination ; to see fat or lean oxen, signifies present gain or
+                        mis&ndash;<lb type="inWord"/>fortune.</p>
+                <p rend="first-indent(2)">ORCHARD. To dream you are in an orchard, denotes that
+                    you<lb/>will become rich by the inheritance of a good legacy&mdash;that you
+                    will<lb/>marry much to your advantage.</p>
+                <p rend="first-indent(2)">OAK. To dream of seeing the stately oak, is a sign of long
+                    life<lb/>riches, and great gain.</p>
+                <p rend="first-indent(2)">PAPER To dream you write on paper, signifies an
+                    accusation<lb/>will be made against you.</p>
+                <p rend="first-indent(2)">PICTURES. To dream you are looking at any beautiful
+                    pictures,<lb/>denotes that you will be allured by false appearances into
+                    some<lb/>very disagreeable situation; if you are mrrried, be sure your
+                        part&ndash;<lb type="inWord"/>ner deceives you, and prefers another; and
+                    that the person who<lb/>estranged her affections is your most intimate
+                    friend.</p>
+                <p rend="first-indent(2)">PIT. To dream of falling into a deep pit, shows that some
+                    very<lb/>heavy misfortune is about to attend you&mdash;that your sweetheart
+                    is<lb/>false and prefers another&mdash;to a sailor, it forbodes some sad
+                    disaster<lb/>at the next port you touch at.</p>
+                <p rend="first-indent(2)">PLAYS. Dreaming of seeing a comedy, or farce, indicates
+                        suc&ndash;<lb type="inWord"/>cess in business; to dream of acting in a play,
+                    seldom indicates<lb/>much good,</p>
+                <p rend="first-indent(2)">PURSE To dream of loosing a purse, signifies good, if it
+                    be full;<lb/>but bad, if it be empty. To dream of finding a purse, is a
+                    very<lb/>favourable omen.</p>
+                <p rend="first-indent(2)">QUARRELLING. To dream you are quarrelling denotes
+                    that<lb/>some unexpected news will reach you, and that your sweetheart
+                    is<lb/>about to marry another.</p>
+                <p rend="first-indent(2)">RAIN. To dream of being in a shower of rain, denotes
+                    great<lb/>success in your undertakings, it is particularly favourable to
+                    lovers,<lb/>it denotes constancy, affection, and a sweet temper.</p>
+                <p rend="first-indent(2)">RIVER. To dream of seeing river water clear, indicates
+                    good ;<lb/>but to dream of swimning in the sea signifies great peril and
+                    danger.</p>
+                <p rend="first-indent(2)">RATS. To dream of rats, is a sign of many enemies, and
+                    that<lb/>you are exposed to many dangers from pretended friends.</p>
+                <p rend="first-indent(2)">READING. To dream you are reading scientific books shows
+                        ap&ndash;<lb type="inWord"/>proaching wisdom.</p>
+                <p rend="first-indent(2)">SHEEP.To dream you see a flock of sheep feeding,
+                    denotes<lb/>success in life.</p>
+                <p rend="first-indent(2)">SNOW. To dream you see the ground all covered with snow,
+                    is<lb/>a favourable dream ; to a young man; shows he will marry a virgin<lb/>and
+                    have children.</p>
+                <p rend="first-indent(2)">SHOES. To dream you have a new pair denotes triumph
+                    over<lb/>enemies.</p>
+                <p rend="first-indent(2)">SWIMMING. To dream you are swimming with your head
+                    under<lb/>water shows that you will experience some great trouble, and
+                    hear<lb/>some very unpleasant news from a person you thought dear. To<lb/>dream
+                    you are swimming with your head above the water denotes<lb/>great success in
+                    your undertakings, whether they be love, sea or<lb/>farming</p>
+
+
+                <pb n="12"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+                <p rend="first-indent(2)">TEETH. To dream you loose your teeth denotes the loss of
+                    some<lb/>friend by death ; and that troubles and misfortunes are about
+                    to<lb/>attend you.</p>
+                <p rend="first-indent(2)">TAVERN. To dream you are in a tavern, feasting with
+                    friends,<lb/>signifies joy and comfort</p>
+                <p rend="first-indent(2)">TREASURE. To dream you find a treasure, shows you will
+                    be<lb/>betrayed by your bosom friends.</p>
+                <p rend="first-indent(2)">THIEVES. To dream you fall into the hands of thieves,
+                    shows<lb/>loss and trouble.</p>
+                <p rend="first-indent(2)">THUNDER Dreamimg of thunder signifies affliction to the
+                    rich ;<lb/>but to the poor repose.</p>
+                <p rend="first-indent(2)">TREES To dream you are cutting down trees, forbodes
+                    heavy<lb/>losses in business ; to climb them, denotes advancement in
+                    dignity.</p>
+                <p rend="first-indent(2)">VAULTS. To dream of being in hollow vaults, deep cellars,
+                    or<lb/>at the bottom of coal&ndash;pits, signifies that you will match with
+                    a<lb/>widow.</p>
+                <p rend="first-indent(2)">VINEGAR. To dream you drink vinegar, indicates
+                    sickness.</p>
+                <p rend="first-indent(2)">VICTUALS. To dream of eating victuals, signifies loss of
+                    money</p>
+                <p rend="first-indent(2)">VERMIM. To dream of being covered with vermin, such as
+                    lice,<lb/>betokens long sickness, if the lice remain ; <choice>
+                        <orig>bnt</orig>
+                        <corr>but</corr>
+                    </choice> if you cast them off<lb/>yon will be delivered of troubles.</p>
+                <p rend="first-indent(2)">WALKING. To dream you are walking in a dirty muddy place,<lb/>
+                    <choice>
+                        <orig>fortels</orig>
+                        <corr>fortells</corr>
+                    </choice> sickness and vexation; to a lover, it denotes his sweetheart<lb/>to be
+                    bad tempered and unfaithful ; to the tradesman, it <choice>
+                        <orig>fortels</orig>
+                        <corr>fortells</corr>
+                    </choice>
+                    <lb/>dishonest servants and loss of goods by fire.</p>
+                <p rend="first-indent(2)">WHEAT. To dream you see or are walking in a field of
+                    wheat,<lb/>denotes great prosperity and riches&mdash;in love, a completion of
+                    your<lb/>most sanguine, wishes, and <choice>
+                        <orig>fortels</orig>
+                        <corr>fortells</corr>
+                    </choice> much happiness, with fine chil&ndash;<lb type="inWord"/>dren when you
+                    marry.</p>
+                <p rend="first-indent(2)">WOLF. To dream of a wolf, signifies an avaricious, cruel,
+                    and<lb/>despotic person ; if you dream you conquer a wolf, you will
+                        con&ndash;<lb type="inWord"/>quer a designing enemy, who has long
+                    endeavoured to prey on<lb/>you&mdash;to dream you are bitten by one, shows you
+                    will receive some<lb/>injury from a pretended friend.</p>
+                <p rend="first-indent(2)">WOOD. To dream you are cutting or chopping of wood,
+                    shows<lb/>that you will be happy in your family, and become rich and
+                        re&ndash;<lb type="inWord"/>spectable in life.</p>
+                <p rend="first-indent(2)">WEDDINGS. For a man while sick, to dream of wedding a
+                    maid,<lb/>denotes death ; if to a deformed woman, it signifies discontent;
+                    to<lb/>a handsome person much joy,</p>
+                <p rend="first-indent(2)">WINE. To dream of drinking wine with absent friend,
+                    signifies<lb/>a speedy meeting ; but to be drinking it by yourself, indicates
+                    you<lb/>will became a great drunkard ; and if you do, you may depend on<lb/>it,
+                    it will speedily prove your ruin.</p>
+                <p rend="first-indent(2)">WAR. To dream of war, denotes trouble and danger to
+                    all.<lb/>WATER. To dream you are drinking water, denotes great trou&ndash;<lb
+                        type="inWord"/>ble and adversity in trade, loss of business and arrest.</p>
+                <p rend="first-indent(2)">WASPS. To dream you are stung by wasps, signifies
+                    vexation<lb/>and trouble by envious persons</p>
+
+
+                <pb n="13"/>
+                <fw type="header" rend="align(centre)">GOODE'S NEW DREAM BOOK.</fw><lb/>
+                <p rend="first-indent(2)">WATER&ndash;MILL. To dream of being at one is a favorable
+                    omen.</p>
+                <p rend="first-indent(2)">WOOL. To dream you are buying or selling of wool,
+                    denotes<lb/>prosperity and great affluence, by means of industry and trade;
+                    to<lb/>the lover it is a favorable omen; your sweetheart is thereby shown<lb/>to
+                    be of an amiable disposition, very constant, and deeply in love<lb/>with
+                    you.</p>
+                <p rend="first-indent(2)">WIFE. A man to dream that he sees his wife married
+                    to<lb/>another, it <choice>
+                        <orig>betokeus</orig>
+                        <corr>betokens</corr>
+                    </choice>some change of affairs.</p>
+                <p rend="first-indent(2)">WINDS. To dream of high winds, storms and showers of
+                    rain,<lb/>shows you will be crossed in love.</p>
+                <p rend="first-indent(2)">YELLOW. To dream of yellow colour, denotes to the
+                    married<lb/>women, great trouble from a female friend, and the loss of
+                    her<lb/>husband's affections. To the lover it signifies he will marry a
+                        vir&ndash;<lb type="inWord"/>gin, who will give herself up to the first man
+                    she likes.</p>
+                <p rend="first-indent(2)">YOUNG. To dream you are young, <choice>
+                        <orig>fortels</orig>
+                        <corr>fortells</corr>
+                    </choice> peace, delight, and<lb/>fruition of your desire.</p>
+                <p rend="first-indent(2)">YOKE. To dream of having to bear the yoke, denotes
+                    danger,<lb/>if it be a woman, she will be ready and willing to obey her
+                    husband,<lb/>and careful to govern her family.</p>
+                <p rend="first-indent(2)">YEW TREE. An indication of the funeral of a very aged
+                    person,<lb/>by whose death the dreamer will derive some benefit,or a
+                    protecting<lb/>hand among the relations of the deceased person.</p>
+                <p rend="first-indent(2)">ZONE. When you dream of zones, <choice>
+                        <orig>fortels</orig>
+                        <corr>fortells</corr>
+                    </choice> much trouble and<lb/>vexation ; to the tradesman, imprisonment, and
+                    loss of goods ; to<lb/>the lover, unfaithfulness in his sweetheart, and
+                    disappointments in<lb/>his undertakings.</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+
+            <div type="section">
+                <head rend="align(centre)" type="main">TELLING FORTUNES<lb/>BY THE<lb/>LINES IN THE
+                    HAND.</head>
+                <p rend="first-indent(2)">Observe always to choose the left hand, because the heart
+                    and<lb/>brain have more influence over it than the right hand ; and
+                    observe<lb/>further it is better to examine these lines when the body is in
+                    good<lb/>order, for then they appear full.</p>
+                <p rend="first-indent(2)">By this the reader will see that one of the lines, and
+                    which in&ndash;<lb type="inWord"/>deed is reckoned the principal, is called the
+                    line of life ; this line<lb/>encloses the thumb, separating it from the hollow
+                    of the hand.<lb/>The next to it, which is called the natural line, takes it
+                    beginning
+
+                <pb n="14"/>
+                <fw type="header" rend="align(centre)">THE ART OF FORTUNE TELLER.</fw><lb/>
+                from the rising of the middle finger. The table line, commonly<lb/>called the
+                    line of fortune, begins under the little finger and near<lb/>the forefinger. The
+                    girdle of Venus is another line so called, be&ndash;<lb type="inWord"/>gins near
+                    the joint of the forefinger, and ends in the middle finger<lb/>The line of death
+                    is a counter line to the line of life, and is by<lb/>some called the sister
+                    line, there are also lines in the flesey parts,<lb/>as in the ball or the thumb,
+                    which is called the mount of Venus,<lb/>which are each governed by the several
+                    planets, and the hollow of<lb/>the hand is called the place of Mars.</p>
+                <p rend="first-indent(2)">If the lines which are in the middle of the hand, and are
+                    called<lb/>the table lines, are broad and fair, without being broken, is a
+                    sure<lb/>sign the party will lead a comfortable and happy life.</p>
+                <p rend="first-indent(2)">If the line from the wrist goes straight up to the little
+                    finger, it<lb/>is a better sign than if broken, for then it denotes the party
+                    will<lb/>live a good old age, but on the contrary, should the line want
+                        con&ndash;<lb type="inWord"/>tinuation, they are in danger of sudden
+                    death.</p>
+                <p rend="first-indent(2)">If the line of life, which is that which runs from the
+                    wrist by the<lb/>ball of the thumb, and ends under the forefinger, is clear, and
+                    ends<lb/>without breaks, it denotes possession, prosperity and happy
+                    old<lb/>age. Round lines like semicircles, on the inside of the tips of
+                    the<lb/>fingers, promises house, lands, and inheritance.</p>
+                <p rend="first-indent(2)">As many lines or crosses as a woman has in her wrist, so
+                    many<lb/>children she may expect to have.</p>
+                <p rend="first-indent(2)">If the middle, or table lines in the hand are very narrow
+                    and<lb/>contracted, it is a sign of poverty and crosses in the world. If
+                    a<lb/>crooked line goes through the table line, it is a sign of death
+                    by<lb/>accident or violence, but if it runs straight and even through, it<lb/>is
+                    a good sign.</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+
+            <div type="section">
+                <head rend="align(centre)" type="main">To know how soon a Person may
+                    be<lb/>Married.</head>
+                <p rend="first-indent(2)">Get a green pea&ndash;pod, in which are exactly nine peas
+                    ; hang it<lb/>over the door, and then take notice of the next person who
+                    comes<lb/>in, who is not of the family, and if it proves a bachelor, you
+                    will<lb/>certainly be married within that year.</p>
+                <p rend="first-indent(2)">On any Friday throughout the year.&mdash;Take rosemary
+                    flowers,<lb/>bay leaves, thyme and sweet marjoram, of each a handfull
+                    dry<lb/>these, and make them into a fine powder ; then take a
+                    tea&ndash;spoonful<lb/>of each sort, mix the powders together; then take twice
+                    the<lb/>quantity of barley flour, and make the whole into a cake with
+                    the<lb/>milk of a red cow. This cake is not to be baked, but wrapped
+                    in<lb/>clean writing paper, and laid under your head any Friday night.<lb/>If
+                    the person dreams of music she will wed <choice>
+                        <orig>thoes</orig>
+                        <corr>those</corr>
+                    </choice>she desires, and<lb/> that shortly ; if of fire, she will be crossed in
+                    love : if of a church<lb/>she will die single. If any thing is written, or the
+                    least spot of<lb/>ink is on the paper it will not do.</p>
+            </div>
+
+        </body>
+        <back>
+            <div type="cover">
+                <pb n="15"/>
+                <pb n="16"/>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-12-07"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Reviewed by Encoder Wid</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="RomancesFairyFolk">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="brown coloured pictorial wrappers">
+                <figure>
+                    <ic:iconClass>
+                        <name>43A3721</name>
+                        <desc>tight-ropewalker</desc>
+                    </ic:iconClass>
+                </figure>
+                <head>&orn;<lb/>Rope Dancing</head>
+            </div>
+
+            <pb n="2"/>
+            <div type="frontispiece">
+                <head>Frontispiece.</head>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>46C144</name>
+                        <desc>four-wheeled, animal-drawn vehicle, e.g.: cab, carriage, coach</desc>
+                    </ic:iconClass>
+                    <head>Prince's Carriage.</head>
+                </figure>
+                <p>&rule;</p>
+                <figure>
+                    <ic:iconClass>
+                        <name>46C13187</name>
+                        <desc>leading a horse by the reins; rider beside his horse</desc>
+                    </ic:iconClass>
+                    <head>Horse and Jockey.</head>
+                </figure>
+            </div>
+
+            <pb n="3"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart type="main">Diamonds and Toads</titlePart>
+                    <lb/>
+                    <titlePart type="sub">OR<lb/>HUMILITY REWARDED,<lb/>AND<lb/><hi rend="italics"
+                            >Pride Punished.</hi></titlePart>
+                </docTitle>
+                <docImprint> &orn;<lb/>Adorned with Cuts.<lb/>&orn;<lb/>
+                    <pubPlace>BIRMINGHAM:<lb/></pubPlace>
+                    <publisher>PUBLISHED BY T. Brandard.<lb/></publisher> &rule;<lb/><hi
+                        rend="italics">Price <measure type="price">One Penny.</measure></hi>
+                </docImprint>
+            </titlePage>
+            <pb n="4"/>
+        </front>
+
+        <body>
+            <pb n="5"/>
+            <head type="work" rend="align(centre)">Diamonds &amp; Toads<lb/>&orn;</head>
+            <lb/>
+            <p rend="align(justify)"><c type="lettrine">T</c>HERE was a widow,<lb/>who had two
+                daughters.<lb/>The eldest was very much like<lb/>her in the face and in
+                humour.<lb/>They were both so disagreea&ndash;<lb type="inWord"/>ble and proud that
+                there was<lb/>no living with them. The<lb/>youngest, who was the picture<lb/>of her
+                father for sweetness of<lb/>
+                <pb n="6"/>
+                <fw type="pagenumber" rend="align(centre)">6</fw>
+                <lb/> tamper, was the most beauti&ndash;<lb type="inWord"/>ful girl ever seen ; but
+                she was<lb/>hated by her mother, who<lb/>made her eat in the kitchen,<lb/>and do all
+                the work.</p>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31D13</name>
+                    <desc>adolescent, young woman, maiden</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">This poor child was forced<lb/>twice a day to
+                draw water a&ndash;<lb type="inWord"/>bove a mile from the house,<lb/>
+                <pb n="7"/>
+                <fw type="pagenumber" rend="align(centre)">7</fw>
+                <lb/> and bring home a pitcher full<lb/>of it.</p>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31D17</name>
+                    <desc>old woman</desc>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">One day as she was at the<lb/>fountain, there
+                came to her a<lb/>poor woman, who begged of<lb/>her to let her
+                drink.<lb/>&ldquo;With all my hearty, Goody,&rdquo;<lb/>said this pretty girl, and
+                    rin&ndash;<lb type="inWord"/>sing the pitcher, she took up<lb/>
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(centre)">8</fw>
+                <lb/> some water from the clearest<lb/>part of the fountain, and gave<lb/>it to her,
+                holding up the pit&ndash;<lb type="inWord"/>cher that she might drink easy<lb/>When
+                she had drank, she<lb/>said, &ldquo;You are so pretty, my<lb/>dear, and so mannerly,
+                that<lb/>at every word you speak there<lb/>shall come out of your mouth<lb/>either a
+                flower or a jewel.&rdquo;</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">When she came home, her<lb/>mother scolded her
+                for stay&ndash;<lb type="inWord"/>ing so long at the fountain.<lb/>&ldquo; I beg
+                your pardon, mamma,<lb/>(said the girl,) for not making<lb/>more haste; and there
+                came<lb/>out of her mouth two dia&ndash;<lb type="inWord"/>monds, two roses, and
+                two<lb/>pearls. &ldquo;What is it I see<lb/>
+                <pb n="9"/>
+                <fw type="pagenumber" rend="align(centre)">9</fw>
+                <lb/> there?&rdquo; said her mother.<lb/>&ldquo;How happens this child ?&rdquo;</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">The poor creature told her<lb/>all the
+                circumstance, dropping<lb/>a great many diamonds.&mdash; &ldquo;In<lb/>good faith,
+                (cried the mother)<lb/>I must send my child too.</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">Come, Fanny, look what<lb/>comes out of thy
+                sister's<lb/>mouth, when she speaks!</p>
+            <p rend="first-indent(3) align(justify)">Wouldst thou not be glad to<lb/>have such a
+                gift? Thou hast<lb/>nothing to do but to go and<lb/>draw water out of the
+                    foun&ndash;<lb type="inWord"/>tain, and when a certain poor<lb/>woman asks you
+                to let her<lb/>drink, give her civilly.&rdquo; &ldquo;It<lb/>would be a very pretty sight<lb/>
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(centre)">10</fw>
+                <lb/> indeed, (said the ill&ndash;bred minx)<lb/>to see me draw water.&rdquo;</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">&ldquo; You shall go ,Hussey,<lb/>(said the
+                mother,) and this<lb/>minute.&rdquo; Away she went,<lb/>grumbling all the way,
+                taking<lb/>with her the best silver tan&ndash;<lb type="inWord"/>kard.</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">She was no sooner at the<lb/>fountain, than she
+                saw a lady<lb/>beautifully dressed who came<lb/>up to her and asked her to<lb/>let
+                her drink. (This was the<lb/>very fairy who appeared to<lb/>her sister, but had
+                altered<lb/>her dress.) &ldquo;Am I come hi&ndash;<lb type="inWord"/>ther, (said she
+                proud saucy<lb/>slut,) to serve you with wa&ndash;
+                <pb n="11" type="inWord"/>
+                <fw type="pagenumber" rend="align(centre)">11</fw>
+                <lb/> ter? I suppose the silver tan&ndash;<lb type="inWord"/>kard was brought purely
+                for<lb/>your ladyship. However you<lb/>may drink out of it, if you<lb/>have a
+                fancy.&rdquo;</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">&ldquo; You are not over and a&ndash;<lb
+                    type="inWord"/>bove mannerly, (answered the<lb/>fairy,) and since you are
+                so<lb/>disobliging, at every word you<lb/>speak there shall come out of<lb/>your
+                mouth, a snake or a<lb/>toad.&rdquo;</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">When her mother saw her<lb/>coming, she cried
+                out, &ldquo;Well<lb/>daughter !&rdquo; &ldquo; Well mother!&rdquo;<lb/>replied the
+                pert hussey, throw&ndash;<lb type="inWord"/>ing out of her mouth two vi&ndash; <pb
+                    type="inWord" n="12"/>
+                <fw type="pagenumber" rend="align(centre)">12</fw>
+                <lb/> pers and two toads. &ldquo;Oh !<lb/>mercy! (cried the mother,)<lb/>what is it
+                I see ? Oh ! it is that<lb/>wretch, her sister, who has<lb/>occasioned all this ;
+                but she<lb/>shall pay for it.&ldquo; And im&ndash;<lb type="inWord"/>mediately she
+                ran to beat her.</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">The poor child ran away,<lb/>and went to hide
+                in a forest.</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">The King's son, on his re&ndash;<lb
+                    type="inWord"/>turn from hunting, met her<lb/>and seeing her a pretty
+                girl,<lb/>asked her what she did there.<lb/>&ldquo;Alas ! Sir, my mamma
+                has<lb/>turned me out of doors.&rdquo;</p>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">The prince seeing the pearls<lb/>and diamonds
+                come out of her<lb/>
+                <pb n="13"/>
+                <fw type="pagenumber" rend="align(centre)">13</fw>
+                <lb/> mouth, bid her inform him<lb/>how that happened, which<lb/>she did ; and he
+                fell in love<lb/>with her, considering that<lb/>such a gift was worth
+                any<lb/>marriage portion, conducted<lb/>her to the palace, and married<lb/>her.</p>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>42D24</name>
+                    <desc>civil marriage ceremony</desc>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="14"/>
+            <fw type="pagenumber" rend="align(centre)">14</fw>
+            <lb/>
+            <p rend="first-indent(3) align(justify)">Her sister made herself so<lb/>much hated, that
+                her mother<lb/>turned her off, and the wretch<lb/>having walked about a
+                long<lb/>time without finding any body<lb/>to take her in, went to a cor&ndash;<lb
+                    type="inWord"/>ner of a grove and died.</p>
+            <lb/>
+            <p rend="align(centre)">FINIS.</p>
+            <lb/>
+
+            <div type="colophon">
+                <p rend="align(centre)">&orn;<lb/><hi rend="italics">T. Brandard, Printer.</hi></p>
+            </div>
+        </body>
+        <back>
+            <pb n="15"/>
+
+            <pb n="16"/>
+            <div type="cover" rend="brown coloured pictorial wrappers"/>
+            <figure type="borderornament"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>44B1511</name>
+                    <desc>queen, empress, etc. (wife of a ruler)</desc>
+                </ic:iconClass>
+                <head>QUEEN</head>
+            </figure>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C13141</name>
+                    <desc>horse</desc>
+                </ic:iconClass>
+                <head><unclear reason="missing">HORSES</unclear></head>
+                <lb/>
+            </figure>
+        </back>
+    </text>
+</TEI>

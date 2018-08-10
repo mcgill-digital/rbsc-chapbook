@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-10-23"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-07-16"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="s">DEAN'S<lb/>Illustrated Farthing Books.<lb/>&rule;</title><lb/>
+                    <title level="m">BENNIE AND THE TIGER.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>34F</name>
+                            <desc>man and (wild) animal</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <pubPlace>LONDON</pubPlace>:<publisher>DEAN &amp;SON,<lb/>11, Ludgate
+                        Hill.</publisher>
+                    <series>
+                        <biblScope rend="align(right)">14</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <pb n="2"/>
+            <div type="section">
+                <head rend="align(centre)">BENNIE AND THE TIGER.</head>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>31BB1</name>
+                        <desc>sleeping; unconsciousness - BB - out of doors</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <p rend="align(justify)">A FAIR little English boy lay sleeping in<lb/>the shady
+                    verandah of his Indian home.<lb/>The servant who was left with him
+                    was<lb/>unfaithful to her trust, and, while he slept,<lb/>wandered away in
+                    search of pleasure.<lb/>A treacherous tiger, prowling in search of <pb n="3"/>
+                    <fw type="header" rend="align(centre)">BENNIE AND THE TIGER.></fw>
+                    <fw type="pagenumber" rend="align(right)">3</fw><lb/> a pig or a lamb for his
+                    supper, finding the<lb/>village very quiet, ventured in among the<lb/>dwellings.
+                    The English gentlemen were<lb/>all absent, and most of the natives were<lb/>at
+                    work in the rice swamp or the paddy<lb/>field ; while the white ladies,
+                    exhausted <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25F23</name>
+                            <desc>(TIGER) beasts of prey, predatory animals: tiger</desc>
+                        </ic:iconClass>
+                    </figure><lb/> with heat, were taking their rest, little<lb/>dreaming how
+                    careless were their nurses.</p>
+                <p rend="first-indent(2) align(justify)">The treacherous tiger crept
+                    noiselessly<lb/>past the deserted homes, until he espied<lb/>the sweet little
+                    sleeper. Then, with one<lb/>bound, he sprang upon him, grasped the<lb/>flowing
+                    white robe in his teeth, and<lb/>darted off to his native jungle.
+                    Having<lb/>secured the prize, he laid him down;<lb/>and as a kitten plays with
+                    the captive<lb/>mouse, began sporting with him. He <pb n="4"/>
+                    <fw type="pagenumber" rend="align(left)">4</fw>
+                    <fw type="header" rend="align(centre)">BENNIE AND</fw><lb/> walked round and
+                    round, layed first one<lb/>paw and then the other on the little<lb/>plump feet,
+                    and looked into his beautiful<lb/>face as if his ferocious heart was
+                    almost<lb/>melted by its sweetness.</p>
+                <p rend="first-indent(2) align(justify)">There was a brave heart in
+                    little<lb/>Bennie, for he seemed not at all alarmed<lb/>by his strange
+                    companion. He was well<lb/>used to Negro, the large black house<lb/>dog ; the
+                    ponies were his chief favourites ;<lb/>and he felt inclined to look on the
+                    tiger,<lb/>perhaps, as an addition to his circle of<lb/>dumb friends. Or, if the
+                    glance of these<lb/>fiery eyeballs, and the display of these<lb/>dreadful teeth,
+                    made his heart beat for a<lb/>moment, he only returned the gaze,<lb/>saying in
+                    baby language: &ldquo;I'm not<lb/>afraid of you, for I've got a father !
+                    You<lb/>can't touch Bennie&mdash;Bennie's got a mam&ndash;<lb type="inWord"/>ma
+                    !&rdquo; Oh, how strong this trust in<lb/>earthly love made that frail boy!
+                    Why<lb/>will not those who know that God is over<lb/>all, confide in him in
+                    times of danger, and<lb/>be at rest!</p>
+                <p rend="first-indent(2) align(justify)">All this time the boy's mother
+                    slept,<lb/>nor dreamed of danger to her darling.</p>
+
+                <pb n="5"/>
+                <fw type="header" rend="align(centre)">THE TIGER.></fw>
+                <fw type="pagenumber" rend="align(right)">5</fw>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The truant nurse, missing her little
+                    charge,<lb/>flew from house to house in search of him.<lb/>But the Eye which
+                    never sleeps was on <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>43B411</name>
+                            <desc>climbing up a tree</desc>
+                        </ic:iconClass>
+                    </figure><lb/> him. An aged native had heard the low<lb/>growl of satisfaction,
+                    which to his prac&ndash;<lb type="inWord"/>tised ear, told that a tiger had
+                    seized his <pb n="6"/>
+                    <fw type="pagenumber" rend="align(left)">6</fw>
+                    <fw type="header" rend="align(centre)">BENNIE AND THE TIGER.</fw><lb/> prey.
+                    Taking his carbine, he followed on<lb/>his trail, and secreted himself
+                    noiselessly<lb/>behind the bushes. He watched his<lb/>opportunity to fire,
+                    trembling less the<lb/>charge meant for the tiger might kill the<lb/>boy. He
+                    took his aim and fired. The<lb/>tiger ran a few steps toward the
+                    jungle,<lb/>then staggered and fell dead within a few<lb/>yards of the little
+                    captive. Do you think<lb/>that his mother could ever forget the kind<lb/>old
+                    native ? Could she ever forget God, who<lb/>saved her darling from so terrible
+                    a<lb/>death ?</p>
+                <p rend="first-indent(2) align(justify)">There is an enemy more dangerous<lb/>than
+                    any beast of the forest, who seeks to<lb/>destroy both soul and
+                    body&mdash;Satan, whom<lb/>the Scripture calls a &ldquo; roaring lion.&rdquo;
+                    He<lb/>has many servants, who watch like the<lb/>tiger for their prey, ready to
+                    spring upon<lb/>unguarded youth. God has warned us<lb/>against these spiritual
+                    foes, and promised<lb/>His protection to all that trust in Him.</p>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>41A646</name>
+                        <desc>garden vase</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+            </div>
+
+            <pb n="7"/>
+            <div type="section" rend="align(left)">
+                <head rend="align(centre)">THE DEAD BROTHER.</head>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34A1</name>
+                        <desc>friendship between man and animal; caressing, petting</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+
+                <lg>
+                    <l>I am all alone in my chamber now,</l>
+                    <l rend="indent(2)">And the midnight hour is near;</l>
+                    <l>And the faggot's crack and the clock's dull</l>
+                    <l rend="indent(4)">tick</l>
+                    <l rend="indent(2)">Are the only sounds I hear.</l>
+                    <l>And o'er my soul, in its solitude,</l>
+                    <l rend="indent(2)">Sweet feelings of sadness glide,</l>
+                    <l>For my heart and my eyes are full when</l>
+                    <l rend="indent(4)">I think</l>
+                    <l>Of the little boy that died.</l>
+                </lg>
+
+                <pb n="8"/>
+                <fw type="header" rend="align(centre)">THE DEAD BROTHER.</fw>
+                <lb/>
+                <lg>
+                    <l>I went one night to my father's house&mdash;</l>
+                    <l rend="indent(2)">Went home to the dear ones all&mdash;</l>
+                    <l>And softly I opened the garden gate,</l>
+                    <l rend="indent(2)">And softly the door of the hall.</l>
+                    <l>My mother came out to meet her son&mdash;</l>
+                    <l rend="indent(2)">She kissed me, and then she sighed,</l>
+                    <l>And her head fell on my neck, and she wept</l>
+                    <l rend="indent(2)">For the little boy that died.</l>
+                </lg>
+                <lb/>
+                <lg>
+
+                    <l>I shall miss him when the flowers come,</l>
+                    <l rend="indent(2)">In the garden where he played ;</l>
+                    <l>I shall miss him more by the fireside,</l>
+                    <l rend="indent(2)">When the flowers have all decayed.</l>
+                    <l>I shall see his toys and his empty chair,</l>
+                    <l rend="indent(2)">And the horse he used to ride ;</l>
+                    <l>And they will speak with a silent speech,</l>
+                    <l rend="indent(2)">Of the little boy that died.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>We shall go home to our Father's house&mdash;</l>
+                    <l rend="indent(2)">To our Father's house in the skies,</l>
+                    <l>Where the hopes of our souls shall have</l>
+                    <l rend="indent(4)">no blight,</l>
+                    <l rend="indent(2)">Or love no broken ties.</l>
+                    <l>We shall roam on the banks of the river</l>
+                    <l rend="indent(4)">of peace,</l>
+                    <l rend="indent(2)">And bathe in its blissful tide;</l>
+                    <l>And one of our joys of heaven shall be</l>
+                    <l rend="indent(2)">The little boy that died.</l>
+                </lg>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI>

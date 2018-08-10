@@ -1,0 +1,5976 @@
+default namespace = "http://www.tei-c.org/ns/1.0"
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace ns1 = "http://www.isocat.org/ns/dcr"
+namespace ns2 = "http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0"
+namespace rng = "http://relaxng.org/ns/structure/1.0"
+namespace s = "http://www.ascc.net/xml/schematron"
+namespace sch = "http://purl.oclc.org/dsdl/schematron"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+# Schema generated from ODD source 2013-03-05T17:20:14Z. 
+# Edition: 2.3.0. Last updated on 17th January 2013.
+# Edition Location: http://www.tei-c.org/Vault/P5/2.3.0/
+#
+
+# [Statement of license used for availability]
+sh_macro.paraContent =
+  (text
+   | sh_model.gLike
+   | sh_model.phrase
+   | sh_model.inter
+   | sh_model.global
+   | sh_lg)*
+sh_macro.limitedContent =
+  (text | sh_model.limitedPhrase | sh_model.inter)*
+sh_macro.phraseSeq =
+  (text | sh_model.gLike | sh_model.phrase | sh_model.global)*
+sh_macro.phraseSeq.limited =
+  (text | sh_model.limitedPhrase | sh_model.global)*
+sh_macro.specialPara =
+  (text
+   | sh_model.gLike
+   | sh_model.phrase
+   | sh_model.inter
+   | sh_model.divPart
+   | sh_model.global)*
+sh_macro.xtext = (text | sh_model.gLike)*
+sh_data.certainty = "high" | "medium" | "low" | "unknown"
+sh_data.probability =
+  xsd:double { minInclusive = "0" maxInclusive = "1" }
+sh_data.numeric =
+  xsd:double
+  | xsd:token { pattern = "(\-?[\d]+/\-?[\d]+)" }
+  | xsd:decimal
+sh_data.count = xsd:nonNegativeInteger
+sh_data.temporal.w3c =
+  xsd:date
+  | xsd:gYear
+  | xsd:gMonth
+  | xsd:gDay
+  | xsd:gYearMonth
+  | xsd:gMonthDay
+  | xsd:time
+  | xsd:dateTime
+sh_data.truthValue = xsd:boolean
+sh_data.xTruthValue = xsd:boolean | "unknown" | "inapplicable"
+sh_data.language = xsd:language
+sh_data.sex = "0" | "1" | "2" | "9"
+sh_data.namespace = xsd:anyURI
+sh_data.outputMeasurement =
+  xsd:token {
+    pattern =
+      "[\-+]?\d+(\.\d+)?(%|cm|mm|in|pt|pc|px|em|ex|gd|rem|vw|vh|vm)"
+  }
+sh_data.pattern = xsd:token
+sh_data.point =
+  xsd:token { pattern = "(\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*)" }
+sh_data.pointer = xsd:anyURI
+sh_data.version = xsd:token { pattern = "[\d]+(\.[\d]+){0,2}" }
+sh_data.word = xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+sh_data.text = xsd:string
+sh_data.code = sh_data.word
+sh_data.name = xsd:Name
+sh_data.enumerated = sh_data.name
+sh_data.temporal.iso =
+  xsd:date
+  | xsd:gYear
+  | xsd:gMonth
+  | xsd:gDay
+  | xsd:gYearMonth
+  | xsd:gMonthDay
+  | xsd:time
+  | xsd:dateTime
+  | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
+sh_att.ascribed.attributes = sh_att.ascribed.attribute.who
+sh_att.ascribed.attribute.who =
+  
+  ## indicates the person, or group of people, to whom the element content is ascribed.
+  attribute who {
+    list { sh_data.pointer+ }
+  }?
+sh_att.canonical.attributes =
+  sh_att.canonical.attribute.key, sh_att.canonical.attribute.ref
+sh_att.canonical.attribute.key =
+  
+  ## provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind.
+  attribute key { sh_data.text }?
+sh_att.canonical.attribute.ref =
+  
+  ## (reference) provides an explicit means of locating a full definition for the entity being named by means of one or more URIs.
+  attribute ref {
+    list { sh_data.pointer+ }
+  }?
+sh_att.ranging.attributes =
+  sh_att.ranging.attribute.atLeast,
+  sh_att.ranging.attribute.atMost,
+  sh_att.ranging.attribute.min,
+  sh_att.ranging.attribute.max,
+  sh_att.ranging.attribute.confidence
+sh_att.ranging.attribute.atLeast =
+  
+  ## gives a minimum estimated value for the approximate measurement.
+  attribute atLeast { sh_data.numeric }?
+sh_att.ranging.attribute.atMost =
+  
+  ## gives a maximum estimated value for the approximate measurement.
+  attribute atMost { sh_data.numeric }?
+sh_att.ranging.attribute.min =
+  
+  ## where the measurement summarizes more than one observation or a range, supplies the minimum value observed.
+  attribute min { sh_data.numeric }?
+sh_att.ranging.attribute.max =
+  
+  ## where the measurement summarizes more than one observation or a range, supplies the maximum value observed.
+  attribute max { sh_data.numeric }?
+sh_att.ranging.attribute.confidence =
+  
+  ## specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.
+  attribute confidence { sh_data.probability }?
+sh_att.dimensions.attributes =
+  sh_att.ranging.attributes,
+  sh_att.dimensions.attribute.unit,
+  sh_att.dimensions.attribute.quantity,
+  sh_att.dimensions.attribute.extent,
+  sh_att.dimensions.attribute.precision,
+  sh_att.dimensions.attribute.scope
+sh_att.dimensions.attribute.unit =
+  
+  ## names the unit used for the measurement
+  ## Suggested values include: 1] cm(centimetres) ; 2] mm(millimetres) ; 3] in(inches) ; 4] lines; 5] chars(characters) 
+  attribute unit {
+    
+    ## (centimetres) 
+    "cm"
+    | 
+      ## (millimetres) 
+      "mm"
+    | 
+      ## (inches) 
+      "in"
+    | 
+      ## lines of text
+      "lines"
+    | 
+      ## (characters) characters of text
+      "chars"
+    | xsd:Name
+  }?
+sh_att.dimensions.attribute.quantity =
+  
+  ## specifies the length in the units specified
+  attribute quantity { sh_data.numeric }?
+sh_att.dimensions.attribute.extent =
+  
+  ## indicates the size of the object concerned using a project-specific vocabulary combining quantity and units in a single string of words. 
+  attribute extent { sh_data.text }?
+sh_att.dimensions.attribute.precision =
+  
+  ## characterizes the precision of the values specified by the other attributes.
+  attribute precision { sh_data.certainty }?
+sh_att.dimensions.attribute.scope =
+  
+  ## where the measurement summarizes more than one observation, specifies the applicability of this measurement.
+  ## Sample values include: 1] all; 2] most; 3] range
+  attribute scope { sh_data.enumerated }?
+sh_att.damaged.attributes =
+  sh_att.dimensions.attributes,
+  sh_att.damaged.attribute.hand,
+  sh_att.damaged.attribute.agent,
+  sh_att.damaged.attribute.degree,
+  sh_att.damaged.attribute.group
+sh_att.damaged.attribute.hand =
+  
+  ## in the case of damage (deliberate defacement, inking out, etc.) assignable to a distinct hand, signifies the hand responsible for the damage.
+  attribute hand { sh_data.pointer }?
+sh_att.damaged.attribute.agent =
+  
+  ## categorizes the cause of the damage, if it can be identified.
+  ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+  attribute agent { sh_data.enumerated }?
+sh_att.damaged.attribute.degree =
+  
+  ## signifies the degree of damage according to a convenient scale. The damage tag with the degree attribute should only be used where the text may be read with some confidence; text supplied from other sources should be tagged as supplied.
+  attribute degree { sh_data.probability | sh_data.certainty }?
+sh_att.damaged.attribute.group =
+  
+  ## assigns an arbitrary number to each stretch of damage regarded as forming part of the same physical phenomenon.
+  attribute group { sh_data.count }?
+sh_att.breaking.attributes = sh_att.breaking.attribute.break
+sh_att.breaking.attribute.break =
+  
+  ## indicates whether or not the element bearing this attribute should be considered to mark the end of an orthographic token in the same way as whitespace.
+  attribute break { sh_data.enumerated }?
+sh_att.cReferencing.attributes = sh_att.cReferencing.attribute.cRef
+sh_att.cReferencing.attribute.cRef =
+  
+  ## (canonical reference) specifies the destination of the pointer by supplying a canonical reference from a scheme defined in a refsDecl element in the TEI header
+  attribute cRef { sh_data.text }?
+sh_att.datable.w3c.attributes =
+  sh_att.datable.w3c.attribute.when,
+  sh_att.datable.w3c.attribute.notBefore,
+  sh_att.datable.w3c.attribute.notAfter,
+  sh_att.datable.w3c.attribute.from,
+  sh_att.datable.w3c.attribute.to
+sh_att.datable.w3c.attribute.when =
+  
+  ## supplies the value of the date or time in a standard form, e.g. yyyy-mm-dd.
+  attribute when { sh_data.temporal.w3c }?
+sh_att.datable.w3c.attribute.notBefore =
+  
+  ## specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd.
+  attribute notBefore { sh_data.temporal.w3c }?
+sh_att.datable.w3c.attribute.notAfter =
+  
+  ## specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd.
+  attribute notAfter { sh_data.temporal.w3c }?
+sh_att.datable.w3c.attribute.from =
+  
+  ## indicates the starting point of the period in standard form, e.g. yyyy-mm-dd.
+  attribute from { sh_data.temporal.w3c }?
+sh_att.datable.w3c.attribute.to =
+  
+  ## indicates the ending point of the period in standard form, e.g. yyyy-mm-dd.
+  attribute to { sh_data.temporal.w3c }?
+sh_att.datable.attributes =
+  sh_att.datable.w3c.attributes,
+  sh_att.datable.iso.attributes,
+  sh_att.datable.custom.attributes,
+  sh_att.datable.attribute.calendar,
+  sh_att.datable.attribute.period
+sh_att.datable.attribute.calendar =
+  
+  ## indicates the system or calendar to which the date represented by the content of this element belongs.
+  attribute calendar { sh_data.pointer }?
+sch:pattern [
+  id = "calendar-constraint-calendar"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@calendar]"
+    "\x{a}" ~
+    "            "
+    sch:assert [
+      test = "string-length(.) gt 0"
+      "\x{a}" ~
+      "@calendar indicates the system or calendar to which the date represented by the content of this element\x{a}" ~
+      "belongs, but this "
+      sch:name [ ]
+      " element has no textual content."
+    ]
+    "\x{a}" ~
+    "          "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sh_att.datable.attribute.period =
+  
+  ## supplies a pointer to some location defining a named period of time within which the datable item is understood to have occurred.
+  attribute period { sh_data.pointer }?
+sh_att.datcat.attributes =
+  sh_att.datcat.attribute.datcat, sh_att.datcat.attribute.valueDatcat
+sh_att.datcat.attribute.datcat =
+  
+  ## contains a PID (persistent identifier) that aligns the given element with the appropriate Data Category (or categories) in ISOcat.
+  attribute ns1:datcat {
+    list { sh_data.pointer+ }
+  }?
+sh_att.datcat.attribute.valueDatcat =
+  
+  ## contains a PID (persistent identifier) that aligns the content of the given element or the value of the given attribute with the appropriate simple Data Category (or categories) in ISOcat.
+  attribute ns1:valueDatcat {
+    list { sh_data.pointer+ }
+  }?
+sh_att.declarable.attributes = sh_att.declarable.attribute.default
+sh_att.declarable.attribute.default =
+  
+  ## indicates whether or not this element is selected by default when its parent is selected.
+  [ a:defaultValue = "false" ]
+  attribute default {
+    
+    ## This element is selected if its parent is selected
+    "true"
+    | 
+      ## This element can only be selected explicitly, unless it is the only one of its kind, in which case it is selected if its parent is selected.
+      "false"
+  }?
+sh_att.declaring.attributes = sh_att.declaring.attribute.decls
+sh_att.declaring.attribute.decls =
+  
+  ## identifies one or more declarable elements within the header, which are understood to apply to the element bearing this attribute and its content.
+  attribute decls {
+    list { sh_data.pointer+ }
+  }?
+sh_att.fragmentable.attributes = sh_att.fragmentable.attribute.part
+sh_att.fragmentable.attribute.part =
+  
+  ## specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure : for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.
+  [ a:defaultValue = "N" ]
+  attribute part {
+    
+    ##  (yes) the element is fragmented in some (unspecified) respect
+    "Y"
+    | 
+      ##  (no) either the element is not fragmented, or no claim is made as to its completeness.
+      "N"
+    | 
+      ##  (initial) this is the initial part of a fragmented element
+      "I"
+    | 
+      ##  (medial) this is a medial part of a fragmented element
+      "M"
+    | 
+      ##  (final) this is the final part of a fragmented element
+      "F"
+  }?
+sh_att.divLike.attributes =
+  sh_att.fragmentable.attributes,
+  sh_att.divLike.attribute.org,
+  sh_att.divLike.attribute.sample
+sh_att.divLike.attribute.org =
+  
+  ## (organization) specifies how the content of the division is organized.
+  [ a:defaultValue = "uniform" ]
+  attribute org {
+    
+    ## composite content: i.e. no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships.
+    "composite"
+    | 
+      ## uniform content: i.e. the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence.
+      "uniform"
+  }?
+sh_att.divLike.attribute.sample =
+  
+  ## indicates whether this division is a sample of the original source and if so, from which part.
+  [ a:defaultValue = "complete" ]
+  attribute sample {
+    
+    ## division lacks material present at end in source.
+    "initial"
+    | 
+      ## division lacks material at start and end.
+      "medial"
+    | 
+      ## division lacks material at start.
+      "final"
+    | 
+      ## position of sampled material within original unknown.
+      "unknown"
+    | 
+      ## division is not a sample.
+      "complete"
+  }?
+sh_att.docStatus.attributes = sh_att.docStatus.attribute.status
+sh_att.docStatus.attribute.status =
+  
+  ## describes the status of a document either currently or, when associated with a dated element, at the time indicated.
+  ## Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] draft; 6] embargoed; 7] expired; 8] frozen; 9] galley; 10] proposed; 11] published; 12] recommendation; 13] submitted; 14] unfinished; 15] withdrawn
+  [ a:defaultValue = "draft" ] attribute status { sh_data.enumerated }?
+sh_att.responsibility.attributes =
+  sh_att.responsibility.attribute.cert,
+  sh_att.responsibility.attribute.resp
+sh_att.responsibility.attribute.cert =
+  
+  ## (certainty) signifies the degree of certainty associated with the intervention or interpretation.
+  attribute cert { sh_data.certainty }?
+sh_att.responsibility.attribute.resp =
+  
+  ## (responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.
+  attribute resp {
+    list { sh_data.pointer+ }
+  }?
+sh_att.editLike.attributes =
+  sh_att.dimensions.attributes,
+  sh_att.responsibility.attributes,
+  sh_att.editLike.attribute.evidence,
+  sh_att.editLike.attribute.source,
+  sh_att.editLike.attribute.instant
+sh_att.editLike.attribute.evidence =
+  
+  ## indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.
+  ## Suggested values include: 1] internal; 2] external; 3] conjecture
+  attribute evidence {
+    list {
+      (
+       ## there is internal evidence to support the intervention.
+       "internal"
+       | 
+         ## there is external evidence to support the intervention.
+         "external"
+       | 
+         ## the intervention or interpretation has been made by the editor, cataloguer, or scholar on the basis of their expertise.
+         "conjecture"
+       | xsd:Name)+
+    }
+  }?
+sh_att.editLike.attribute.source =
+  
+  ## contains a list of one or more pointers indicating sources supporting the given intervention or interpretation.
+  attribute source {
+    list { sh_data.pointer+ }
+  }?
+sh_att.editLike.attribute.instant =
+  
+  ## indicates whether this is an instant revision or not.
+  [ a:defaultValue = "false" ]
+  attribute instant { sh_data.xTruthValue }?
+sh_att.global.attributes =
+  sh_att.global.analytic.attributes,
+  sh_att.global.facs.attributes,
+  sh_att.global.change.attributes,
+  sh_att.global.attribute.xmlid,
+  sh_att.global.attribute.n,
+  sh_att.global.attribute.xmllang,
+  sh_att.global.attribute.rend,
+  sh_att.global.attribute.style,
+  sh_att.global.attribute.rendition,
+  sh_att.global.attribute.xmlbase,
+  sh_att.global.attribute.xmlspace
+sh_att.global.attribute.xmlid =
+  
+  ## (identifier) provides a unique identifier for the element bearing the attribute.
+  attribute xml:id { xsd:ID }?
+sh_att.global.attribute.n =
+  
+  ## (number) gives a number (or other label) for an element, which is not necessarily unique within the document.
+  attribute n { sh_data.text }?
+sh_att.global.attribute.xmllang =
+  
+  ## (language) indicates the language of the element content using a tag generated according to BCP 47.
+  attribute xml:lang { sh_data.language }?
+sh_att.global.attribute.rend =
+  
+  ## (rendition) indicates how the element in question was rendered or presented in the source text.
+  attribute rend {
+    list { sh_data.word+ }
+  }?
+sh_att.global.attribute.style =
+  
+  ## contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text 
+  attribute style { sh_data.text }?
+sh_att.global.attribute.rendition =
+  
+  ## points to a description of the rendering or presentation used for this element in the source text.
+  attribute rendition {
+    list { sh_data.pointer+ }
+  }?
+sh_att.global.attribute.xmlbase =
+  
+  ## provides a base URI reference with which applications can resolve relative URI references into absolute URI references.
+  attribute xml:base { sh_data.pointer }?
+sh_att.global.attribute.xmlspace =
+  
+  ## signals an intention about how white space should be managed by applications. 
+  attribute xml:space {
+    
+    ## signals that the application's default white-space processing modes are acceptable
+    "default"
+    | 
+      ## indicates the intent that applications preserve all white space
+      "preserve"
+  }?
+sh_att.handFeatures.attributes =
+  sh_att.handFeatures.attribute.scribe,
+  sh_att.handFeatures.attribute.scribeRef,
+  sh_att.handFeatures.attribute.script,
+  sh_att.handFeatures.attribute.scriptRef,
+  sh_att.handFeatures.attribute.medium,
+  sh_att.handFeatures.attribute.scope
+sh_att.handFeatures.attribute.scribe =
+  
+  ## gives a name or other identifier for the scribe believed to be responsible for this hand.
+  attribute scribe { sh_data.name }?
+sh_att.handFeatures.attribute.scribeRef =
+  
+  ## points to a full description of the scribe concerned, typically supplied by a person element elsewhere in the description.
+  attribute scribeRef {
+    list { sh_data.pointer+ }
+  }?
+sh_att.handFeatures.attribute.script =
+  
+  ## characterizes the particular script or writing style used by this hand, for example secretary, copperplate, Chancery, Italian, etc.
+  attribute script {
+    list { sh_data.name+ }
+  }?
+sh_att.handFeatures.attribute.scriptRef =
+  
+  ## points to a full description of the script or writing style used by this hand, typically supplied by a scriptNote element elsewhere in the description.
+  attribute scriptRef {
+    list { sh_data.pointer+ }
+  }?
+sh_att.handFeatures.attribute.medium =
+  
+  ## describes the tint or type of ink, e.g. brown, or other writing medium, e.g. pencil
+  attribute medium { sh_data.enumerated }?
+sh_att.handFeatures.attribute.scope =
+  
+  ## specifies how widely this hand is used in the manuscript.
+  attribute scope {
+    
+    ## only this hand is used throughout the manuscript
+    "sole"
+    | 
+      ## this hand is used through most of the manuscript
+      "major"
+    | 
+      ## this hand is used occasionally in the manuscript
+      "minor"
+  }?
+sh_att.internetMedia.attributes =
+  sh_att.internetMedia.attribute.mimeType
+sh_att.internetMedia.attribute.mimeType =
+  
+  ## (MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type
+  attribute mimeType {
+    list { sh_data.word+ }
+  }?
+sh_att.media.attributes =
+  sh_att.internetMedia.attributes,
+  sh_att.media.attribute.width,
+  sh_att.media.attribute.height,
+  sh_att.media.attribute.scale
+sh_att.media.attribute.width =
+  
+  ## Where the media are displayed, indicates the display width 
+  attribute width { sh_data.outputMeasurement }?
+sh_att.media.attribute.height =
+  
+  ## Where the media are displayed, indicates the display height
+  attribute height { sh_data.outputMeasurement }?
+sh_att.media.attribute.scale =
+  
+  ## Where the media are displayed, indicates a scale factor to be applied when generating the desired display size
+  attribute scale { sh_data.numeric }?
+sh_att.resourced.attributes = sh_att.resourced.attribute.url
+sh_att.resourced.attribute.url =
+  
+  ## (uniform resource locator) specifies the URL from which the media concerned may be obtained.
+  attribute url { sh_data.pointer }
+sh_att.interpLike.attributes =
+  sh_att.responsibility.attributes,
+  sh_att.interpLike.attribute.type,
+  sh_att.interpLike.attribute.inst
+sh_att.interpLike.attribute.type =
+  
+  ## indicates what kind of phenomenon is being noted in the passage.
+  ## Sample values include: 1] image; 2] character; 3] theme; 4] allusion
+  attribute type { sh_data.enumerated }?
+sh_att.interpLike.attribute.inst =
+  
+  ## (instances) points to instances of the analysis or interpretation represented by the current element.
+  attribute inst {
+    list { sh_data.pointer+ }
+  }?
+sh_att.measurement.attributes =
+  sh_att.measurement.attribute.unit,
+  sh_att.measurement.attribute.quantity,
+  sh_att.measurement.attribute.commodity
+sh_att.measurement.attribute.unit =
+  
+  ## indicates the units used for the measurement, usually using the standard symbol for the desired units.
+  ## Suggested values include: 1] m(metre) ; 2] kg(kilogram) ; 3] s(second) ; 4] Hz(hertz) ; 5] Pa(pascal) ; 6] Ω(ohm) ; 7] L(litre) ; 8] t(tonne) ; 9] ha(hectare) ; 10] Å(ångström) ; 11] mL(millilitre) ; 12] cm(centimetre) ; 13] dB(decibel) ; 14] kbit(kilobit) ; 15] Kibit(kibibit) ; 16] kB(kilobyte) ; 17] KiB(kibibyte) ; 18] MB(megabyte) ; 19] MiB(mebibyte) 
+  attribute unit {
+    
+    ## (metre) SI base unit of length
+    "m"
+    | 
+      ## (kilogram) SI base unit of mass
+      "kg"
+    | 
+      ## (second) SI base unit of time
+      "s"
+    | 
+      ## (hertz) SI unit of frequency
+      "Hz"
+    | 
+      ## (pascal) SI unit of pressure or stress
+      "Pa"
+    | 
+      ## (ohm) SI unit of electric resistance
+      "Ω"
+    | 
+      ## (litre) 1 dm³
+      "L"
+    | 
+      ## (tonne) 10³ kg
+      "t"
+    | 
+      ## (hectare) 1 hm²
+      "ha"
+    | 
+      ## (ångström) 10⁻¹⁰ m
+      "Å"
+    | 
+      ## (millilitre) 
+      "mL"
+    | 
+      ## (centimetre) 
+      "cm"
+    | 
+      ## (decibel) see remarks, below
+      "dB"
+    | 
+      ## (kilobit) 10³ or 1000 bits
+      "kbit"
+    | 
+      ## (kibibit) 2¹⁰ or 1024 bits
+      "Kibit"
+    | 
+      ## (kilobyte) 10³ or 1000 bytes
+      "kB"
+    | 
+      ## (kibibyte) 2¹⁰ or 1024 bytes
+      "KiB"
+    | 
+      ## (megabyte) 10⁶ or 1 000 000 bytes
+      "MB"
+    | 
+      ## (mebibyte) 2²⁰ or 1 048 576 bytes
+      "MiB"
+    | xsd:Name
+  }?
+sh_att.measurement.attribute.quantity =
+  
+  ## specifies the number of the specified units that comprise the measurement
+  attribute quantity { sh_data.numeric }?
+sh_att.measurement.attribute.commodity =
+  
+  ## indicates the substance that is being measured
+  attribute commodity {
+    list { sh_data.word+ }
+  }?
+sh_att.naming.attributes =
+  sh_att.canonical.attributes,
+  sh_att.naming.attribute.role,
+  sh_att.naming.attribute.nymRef
+sh_att.naming.attribute.role =
+  
+  ## may be used to specify further information about the entity referenced by this name, for example the occupation of a person, or the status of a place. 
+  attribute role { sh_data.enumerated }?
+sh_att.naming.attribute.nymRef =
+  
+  ## (reference to the canonical name) provides a means of locating the canonical form (nym) of the names associated with the object named by the element bearing it.
+  attribute nymRef {
+    list { sh_data.pointer+ }
+  }?
+sh_att.placement.attributes = sh_att.placement.attribute.place
+sh_att.placement.attribute.place =
+  
+  ## specifies where this item is placed
+  ## Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6] overleaf; 7] above; 8] end; 9] inline; 10] inspace
+  attribute place {
+    list {
+      (
+       ## below the line
+       "below"
+       | 
+         ## at the foot of the page
+         "bottom"
+       | 
+         ## in the margin (left, right, or both)
+         "margin"
+       | 
+         ## at the top of the page
+         "top"
+       | 
+         ## on the opposite, i.e. facing, page
+         "opposite"
+       | 
+         ## on the other side of the leaf
+         "overleaf"
+       | 
+         ## above the line
+         "above"
+       | 
+         ## at the end of e.g. chapter or volume.
+         "end"
+       | 
+         ## within the body of the text.
+         "inline"
+       | 
+         ## in a predefined space, for example left by an earlier scribe.
+         "inspace"
+       | xsd:Name)+
+    }
+  }?
+sh_att.typed.attributes =
+  sh_att.typed.attribute.type, sh_att.typed.attribute.subtype
+sh_att.typed.attribute.type =
+  
+  ## characterizes the element in some sense, using any convenient classification scheme or typology.
+  attribute type { sh_data.enumerated }?
+sh_att.typed.attribute.subtype =
+  
+  ## provides a sub-categorization of the element, if needed
+  attribute subtype { sh_data.enumerated }?
+sh_att.pointing.attributes =
+  sh_att.pointing.attribute.targetLang,
+  sh_att.pointing.attribute.target,
+  sh_att.pointing.attribute.evaluate
+sh_att.pointing.attribute.targetLang =
+  
+  ## specifies the language of the content to be found at the destination referenced by target, using a language tag generated according to BCP 47.
+  attribute targetLang { sh_data.language }?
+sch:pattern [
+  id = "targetLang-constraint-targetLang"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[not(self::tei:schemaSpec)][@targetLang]"
+    "\x{a}" ~
+    "            "
+    sch:assert [
+      test = "count(@target)"
+      "@targetLang can only be used if @target is specified."
+    ]
+    "\x{a}" ~
+    "          "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sh_att.pointing.attribute.target =
+  
+  ## specifies the destination of the reference by supplying one or more URI References
+  attribute target {
+    list { sh_data.pointer+ }
+  }?
+sh_att.pointing.attribute.evaluate =
+  
+  ## specifies the intended meaning when the target of a pointer is itself a pointer.
+  attribute evaluate {
+    
+    ## if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer.
+    "all"
+    | 
+      ## if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer.
+      "one"
+    | 
+      ## no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target.
+      "none"
+  }?
+sh_att.segLike.attributes =
+  sh_att.datcat.attributes,
+  sh_att.fragmentable.attributes,
+  sh_att.segLike.attribute.function
+sh_att.segLike.attribute.function =
+  
+  ## characterizes the function of the segment.
+  attribute function { sh_data.enumerated }?
+sh_att.sortable.attributes = sh_att.sortable.attribute.sortKey
+sh_att.sortable.attribute.sortKey =
+  
+  ## supplies the sort key for this element in an index, list or group which contains it.
+  attribute sortKey { sh_data.word }?
+sh_att.edition.attributes =
+  sh_att.edition.attribute.ed, sh_att.edition.attribute.edRef
+sh_att.edition.attribute.ed =
+  
+  ## (edition) supplies an arbitrary identifier for the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text.
+  attribute ed {
+    list { sh_data.code+ }
+  }?
+sh_att.edition.attribute.edRef =
+  
+  ##  (edition reference) provides a pointer to the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text.
+  attribute edRef {
+    list { sh_data.pointer+ }
+  }?
+sh_att.spanning.attributes = sh_att.spanning.attribute.spanTo
+sh_att.spanning.attribute.spanTo =
+  
+  ## indicates the end of a span initiated by the element bearing this attribute.
+  attribute spanTo { sh_data.pointer }?
+sch:pattern [
+  id = "spanTo-constraint-spanTo-2"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@spanTo]"
+    "\x{a}" ~
+    "         "
+    sch:assert [
+      test = "following::*[@xml:id=substring(current()/@target,2)]"
+      "\x{a}" ~
+      "The element indicated by @spanTo must follow the current element "
+      sch:name [ ]
+      "\x{a}" ~
+      "         "
+    ]
+    "\x{a}" ~
+    "      "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sch:pattern [
+  id = "spanTo-constraint-spanTo-3"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@spanTo]"
+    "\x{a}" ~
+    "         "
+    sch:assert [
+      test = "id(substring(@spanTo,2))"
+      "\x{a}" ~
+      "@spanTo on "
+      sch:name [ ]
+      " must point to  the identifier of some element  in this document"
+    ]
+    "\x{a}" ~
+    "      "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sh_att.styleDef.attributes = sh_att.styleDef.attribute.scheme
+sh_att.styleDef.attribute.scheme =
+  
+  ## identifies the language used to describe the rendition.
+  attribute scheme {
+    
+    ## Cascading Stylesheet Language
+    "css"
+    | 
+      ## Extensible Stylesheet Language Formatting Objects
+      "xslfo"
+    | 
+      ## Informal free text description
+      "free"
+    | 
+      ## A user-defined rendition description language
+      "other"
+  }?
+sh_att.tableDecoration.attributes =
+  sh_att.tableDecoration.attribute.role,
+  sh_att.tableDecoration.attribute.rows,
+  sh_att.tableDecoration.attribute.cols
+sh_att.tableDecoration.attribute.role =
+  
+  ## indicates the kind of information held in this cell or in each cell of this row.
+  ## Suggested values include: 1] label; 2] data
+  [ a:defaultValue = "data" ]
+  attribute role {
+    
+    ## labelling or descriptive information only.
+    "label"
+    | 
+      ## data values.
+      "data"
+    | xsd:Name
+  }?
+sh_att.tableDecoration.attribute.rows =
+  
+  ## indicates the number of rows occupied by this cell or row.
+  [ a:defaultValue = "1" ] attribute rows { sh_data.count }?
+sh_att.tableDecoration.attribute.cols =
+  
+  ## (columns) indicates the number of columns occupied by this cell or row.
+  [ a:defaultValue = "1" ] attribute cols { sh_data.count }?
+sh_att.timed.attributes =
+  sh_att.timed.attribute.start, sh_att.timed.attribute.end
+sh_att.timed.attribute.start =
+  
+  ## indicates the location within a temporal alignment at which this element begins.
+  attribute start { sh_data.pointer }?
+sh_att.timed.attribute.end =
+  
+  ## indicates the location within a temporal alignment at which this element ends.
+  attribute end { sh_data.pointer }?
+sh_att.transcriptional.attributes =
+  sh_att.editLike.attributes,
+  sh_att.transcriptional.attribute.hand,
+  sh_att.transcriptional.attribute.status,
+  sh_att.transcriptional.attribute.cause,
+  sh_att.transcriptional.attribute.seq
+sh_att.transcriptional.attribute.hand =
+  
+  ## signifies the hand of the agent which made the intervention.
+  attribute hand { sh_data.pointer }?
+sh_att.transcriptional.attribute.status =
+  
+  ## indicates the effect of the intervention, for example in the case of a deletion, strikeouts which include too much or too little text, or in the case of an addition, an insertion which duplicates some of the text already present.
+  ## Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] excessEnd; 5] shortStart; 6] shortEnd; 7] partial; 8] unremarkable
+  [ a:defaultValue = "unremarkable" ]
+  attribute status { sh_data.enumerated }?
+sh_att.transcriptional.attribute.cause =
+  
+  ## documents the presumed cause for the intervention.
+  attribute cause {
+    
+    ## repeated for the purpose of fixation
+    "fix"
+    | 
+      ## repeated to clarify a previously illegible or badly written text or mark
+      "unclear"
+  }?
+sh_att.transcriptional.attribute.seq =
+  
+  ## (sequence) assigns a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.
+  attribute seq { sh_data.count }?
+sh_att.translatable.attributes =
+  sh_att.translatable.attribute.versionDate
+sh_att.translatable.attribute.versionDate =
+  
+  ## specifies the date on which the source text was extracted and sent to the translator
+  attribute versionDate { sh_data.temporal.w3c }?
+sh_model.nameLike.agent = sh_name | sh_orgName | sh_persName
+sh_model.nameLike.agent_alternation = sh_name | sh_orgName | sh_persName
+sh_model.nameLike.agent_sequence = sh_name, sh_orgName, sh_persName
+sh_model.nameLike.agent_sequenceOptional =
+  sh_name?, sh_orgName?, sh_persName?
+sh_model.nameLike.agent_sequenceOptionalRepeatable =
+  sh_name*, sh_orgName*, sh_persName*
+sh_model.nameLike.agent_sequenceRepeatable =
+  sh_name+, sh_orgName+, sh_persName+
+sh_model.segLike = sh_s | sh_cl | sh_phr | sh_w | sh_m | sh_c | sh_pc
+sh_model.hiLike = sh_hi
+sh_model.hiLike_alternation = sh_hi
+sh_model.hiLike_sequence = sh_hi
+sh_model.hiLike_sequenceOptional = sh_hi?
+sh_model.hiLike_sequenceOptionalRepeatable = sh_hi*
+sh_model.hiLike_sequenceRepeatable = sh_hi+
+sh_model.emphLike =
+  sh_foreign
+  | sh_emph
+  | sh_distinct
+  | sh_mentioned
+  | sh_soCalled
+  | sh_gloss
+  | sh_term
+  | sh_title
+sh_model.emphLike_alternation =
+  sh_foreign
+  | sh_emph
+  | sh_distinct
+  | sh_mentioned
+  | sh_soCalled
+  | sh_gloss
+  | sh_term
+  | sh_title
+sh_model.emphLike_sequence =
+  sh_foreign,
+  sh_emph,
+  sh_distinct,
+  sh_mentioned,
+  sh_soCalled,
+  sh_gloss,
+  sh_term,
+  sh_title
+sh_model.emphLike_sequenceOptional =
+  sh_foreign?,
+  sh_emph?,
+  sh_distinct?,
+  sh_mentioned?,
+  sh_soCalled?,
+  sh_gloss?,
+  sh_term?,
+  sh_title?
+sh_model.emphLike_sequenceOptionalRepeatable =
+  sh_foreign*,
+  sh_emph*,
+  sh_distinct*,
+  sh_mentioned*,
+  sh_soCalled*,
+  sh_gloss*,
+  sh_term*,
+  sh_title*
+sh_model.emphLike_sequenceRepeatable =
+  sh_foreign+,
+  sh_emph+,
+  sh_distinct+,
+  sh_mentioned+,
+  sh_soCalled+,
+  sh_gloss+,
+  sh_term+,
+  sh_title+
+sh_model.highlighted = sh_model.hiLike | sh_model.emphLike
+sh_model.dateLike = sh_date | sh_time
+sh_model.dateLike_alternation = sh_date | sh_time
+sh_model.dateLike_sequence = sh_date, sh_time
+sh_model.dateLike_sequenceOptional = sh_date?, sh_time?
+sh_model.dateLike_sequenceOptionalRepeatable = sh_date*, sh_time*
+sh_model.dateLike_sequenceRepeatable = sh_date+, sh_time+
+sh_model.measureLike = sh_num | sh_measure | sh_measureGrp | sh_geo
+sh_model.measureLike_alternation =
+  sh_num | sh_measure | sh_measureGrp | sh_geo
+sh_model.measureLike_sequence =
+  sh_num, sh_measure, sh_measureGrp, sh_geo
+sh_model.measureLike_sequenceOptional =
+  sh_num?, sh_measure?, sh_measureGrp?, sh_geo?
+sh_model.measureLike_sequenceOptionalRepeatable =
+  sh_num*, sh_measure*, sh_measureGrp*, sh_geo*
+sh_model.measureLike_sequenceRepeatable =
+  sh_num+, sh_measure+, sh_measureGrp+, sh_geo+
+sh_model.egLike = notAllowed
+sh_model.egLike_alternation = notAllowed
+sh_model.egLike_sequence = empty
+sh_model.egLike_sequenceOptional = empty
+sh_model.egLike_sequenceOptionalRepeatable = empty
+sh_model.egLike_sequenceRepeatable = notAllowed
+sh_model.graphicLike =
+  sh_media | sh_graphic | sh_binaryObject | sh_formula
+sh_model.offsetLike = sh_offset | sh_geogFeat
+sh_model.offsetLike_alternation = sh_offset | sh_geogFeat
+sh_model.offsetLike_sequence = sh_offset, sh_geogFeat
+sh_model.offsetLike_sequenceOptional = sh_offset?, sh_geogFeat?
+sh_model.offsetLike_sequenceOptionalRepeatable =
+  sh_offset*, sh_geogFeat*
+sh_model.offsetLike_sequenceRepeatable = sh_offset+, sh_geogFeat+
+sh_model.pPart.editorial =
+  sh_choice | sh_abbr | sh_expan | sh_ex | sh_am | sh_subst
+sh_model.pPart.editorial_alternation =
+  sh_choice | sh_abbr | sh_expan | sh_ex | sh_am | sh_subst
+sh_model.pPart.editorial_sequence =
+  sh_choice, sh_abbr, sh_expan, sh_ex, sh_am, sh_subst
+sh_model.pPart.editorial_sequenceOptional =
+  sh_choice?, sh_abbr?, sh_expan?, sh_ex?, sh_am?, sh_subst?
+sh_model.pPart.editorial_sequenceOptionalRepeatable =
+  sh_choice*, sh_abbr*, sh_expan*, sh_ex*, sh_am*, sh_subst*
+sh_model.pPart.editorial_sequenceRepeatable =
+  sh_choice+, sh_abbr+, sh_expan+, sh_ex+, sh_am+, sh_subst+
+sh_model.pPart.transcriptional =
+  sh_sic
+  | sh_corr
+  | sh_reg
+  | sh_orig
+  | sh_add
+  | sh_del
+  | sh_unclear
+  | sh_damage
+  | sh_handShift
+  | sh_restore
+  | sh_supplied
+  | sh_surplus
+  | sh_mod
+  | sh_redo
+  | sh_retrace
+  | sh_undo
+sh_model.pPart.transcriptional_alternation =
+  sh_sic
+  | sh_corr
+  | sh_reg
+  | sh_orig
+  | sh_add
+  | sh_del
+  | sh_unclear
+  | sh_damage
+  | sh_handShift
+  | sh_restore
+  | sh_supplied
+  | sh_surplus
+  | sh_mod
+  | sh_redo
+  | sh_retrace
+  | sh_undo
+sh_model.pPart.transcriptional_sequence =
+  sh_sic,
+  sh_corr,
+  sh_reg,
+  sh_orig,
+  sh_add,
+  sh_del,
+  sh_unclear,
+  sh_damage,
+  sh_handShift,
+  sh_restore,
+  sh_supplied,
+  sh_surplus,
+  sh_mod,
+  sh_redo,
+  sh_retrace,
+  sh_undo
+sh_model.pPart.transcriptional_sequenceOptional =
+  sh_sic?,
+  sh_corr?,
+  sh_reg?,
+  sh_orig?,
+  sh_add?,
+  sh_del?,
+  sh_unclear?,
+  sh_damage?,
+  sh_handShift?,
+  sh_restore?,
+  sh_supplied?,
+  sh_surplus?,
+  sh_mod?,
+  sh_redo?,
+  sh_retrace?,
+  sh_undo?
+sh_model.pPart.transcriptional_sequenceOptionalRepeatable =
+  sh_sic*,
+  sh_corr*,
+  sh_reg*,
+  sh_orig*,
+  sh_add*,
+  sh_del*,
+  sh_unclear*,
+  sh_damage*,
+  sh_handShift*,
+  sh_restore*,
+  sh_supplied*,
+  sh_surplus*,
+  sh_mod*,
+  sh_redo*,
+  sh_retrace*,
+  sh_undo*
+sh_model.pPart.transcriptional_sequenceRepeatable =
+  sh_sic+,
+  sh_corr+,
+  sh_reg+,
+  sh_orig+,
+  sh_add+,
+  sh_del+,
+  sh_unclear+,
+  sh_damage+,
+  sh_handShift+,
+  sh_restore+,
+  sh_supplied+,
+  sh_surplus+,
+  sh_mod+,
+  sh_redo+,
+  sh_retrace+,
+  sh_undo+
+sh_model.pPart.edit =
+  sh_model.pPart.editorial | sh_model.pPart.transcriptional
+sh_model.linePart =
+  sh_model.segLike
+  | sh_model.hiLike
+  | sh_model.pPart.transcriptional
+  | sh_choice
+  | sh_zone
+  | sh_line
+sh_model.ptrLike = sh_ptr | sh_ref
+sh_model.lPart = notAllowed
+sh_model.global.meta =
+  sh_index
+  | sh_substJoin
+  | sh_listTranspose
+  | sh_span
+  | sh_spanGrp
+  | sh_interp
+  | sh_interpGrp
+sh_model.milestoneLike =
+  sh_milestone | sh_gb | sh_pb | sh_lb | sh_cb | sh_fw
+sh_model.gLike = sh_g
+sh_model.biblLike =
+  sh_bibl
+  | sh_biblStruct
+  | sh_biblFull
+  | sh_listRelation
+  | sh_relationGrp
+sh_model.biblLike_alternation =
+  sh_bibl
+  | sh_biblStruct
+  | sh_biblFull
+  | sh_listRelation
+  | sh_relationGrp
+sh_model.biblLike_sequence =
+  sh_bibl, sh_biblStruct, sh_biblFull, sh_listRelation, sh_relationGrp
+sh_model.biblLike_sequenceOptional =
+  sh_bibl?,
+  sh_biblStruct?,
+  sh_biblFull?,
+  sh_listRelation?,
+  sh_relationGrp?
+sh_model.biblLike_sequenceOptionalRepeatable =
+  sh_bibl*,
+  sh_biblStruct*,
+  sh_biblFull*,
+  sh_listRelation*,
+  sh_relationGrp*
+sh_model.biblLike_sequenceRepeatable =
+  sh_bibl+,
+  sh_biblStruct+,
+  sh_biblFull+,
+  sh_listRelation+,
+  sh_relationGrp+
+sh_model.headLike = sh_head
+sh_model.headLike_alternation = sh_head
+sh_model.headLike_sequence = sh_head
+sh_model.headLike_sequenceOptional = sh_head?
+sh_model.headLike_sequenceOptionalRepeatable = sh_head*
+sh_model.headLike_sequenceRepeatable = sh_head+
+sh_model.labelLike = sh_desc | sh_label
+sh_model.labelLike_alternation = sh_desc | sh_label
+sh_model.labelLike_sequence = sh_desc, sh_label
+sh_model.labelLike_sequenceOptional = sh_desc?, sh_label?
+sh_model.labelLike_sequenceOptionalRepeatable = sh_desc*, sh_label*
+sh_model.labelLike_sequenceRepeatable = sh_desc+, sh_label+
+sh_model.listLike =
+  sh_list
+  | sh_listBibl
+  | sh_listOrg
+  | sh_listEvent
+  | sh_listPerson
+  | sh_listPlace
+  | sh_listNym
+  | sh_table
+sh_model.listLike_alternation =
+  sh_list
+  | sh_listBibl
+  | sh_listOrg
+  | sh_listEvent
+  | sh_listPerson
+  | sh_listPlace
+  | sh_listNym
+  | sh_table
+sh_model.listLike_sequence =
+  sh_list,
+  sh_listBibl,
+  sh_listOrg,
+  sh_listEvent,
+  sh_listPerson,
+  sh_listPlace,
+  sh_listNym,
+  sh_table
+sh_model.listLike_sequenceOptional =
+  sh_list?,
+  sh_listBibl?,
+  sh_listOrg?,
+  sh_listEvent?,
+  sh_listPerson?,
+  sh_listPlace?,
+  sh_listNym?,
+  sh_table?
+sh_model.listLike_sequenceOptionalRepeatable =
+  sh_list*,
+  sh_listBibl*,
+  sh_listOrg*,
+  sh_listEvent*,
+  sh_listPerson*,
+  sh_listPlace*,
+  sh_listNym*,
+  sh_table*
+sh_model.listLike_sequenceRepeatable =
+  sh_list+,
+  sh_listBibl+,
+  sh_listOrg+,
+  sh_listEvent+,
+  sh_listPerson+,
+  sh_listPlace+,
+  sh_listNym+,
+  sh_table+
+sh_model.noteLike = sh_note
+sh_model.lLike = sh_l
+sh_model.lLike_alternation = sh_l
+sh_model.lLike_sequence = sh_l
+sh_model.lLike_sequenceOptional = sh_l?
+sh_model.lLike_sequenceOptionalRepeatable = sh_l*
+sh_model.lLike_sequenceRepeatable = sh_l+
+sh_model.pLike = sh_p
+sh_model.pLike_alternation = sh_p
+sh_model.pLike_sequence = sh_p
+sh_model.pLike_sequenceOptional = sh_p?
+sh_model.pLike_sequenceOptionalRepeatable = sh_p*
+sh_model.pLike_sequenceRepeatable = sh_p+
+sh_model.stageLike = sh_stage
+sh_model.stageLike_alternation = sh_stage
+sh_model.stageLike_sequence = sh_stage
+sh_model.stageLike_sequenceOptional = sh_stage?
+sh_model.stageLike_sequenceOptionalRepeatable = sh_stage*
+sh_model.stageLike_sequenceRepeatable = sh_stage+
+sh_model.entryPart = notAllowed
+sh_model.global.edit =
+  sh_gap | sh_addSpan | sh_damageSpan | sh_delSpan | sh_space
+sh_model.divPart = sh_model.lLike | sh_model.pLike | sh_lg | sh_sp
+sh_model.persStateLike =
+  sh_persName
+  | sh_age
+  | sh_education
+  | sh_faith
+  | sh_floruit
+  | sh_langKnowledge
+  | sh_nationality
+  | sh_occupation
+  | sh_residence
+  | sh_sex
+  | sh_socecStatus
+  | sh_state
+  | sh_trait
+sh_model.persEventLike = sh_birth | sh_death | sh_event | sh_listEvent
+sh_model.personLike = sh_org | sh_person | sh_personGrp
+sh_model.personPart =
+  sh_model.persStateLike | sh_model.persEventLike | sh_bibl | sh_idno
+sh_model.placeNamePart =
+  sh_placeName
+  | sh_country
+  | sh_region
+  | sh_district
+  | sh_settlement
+  | sh_geogName
+sh_model.placeNamePart_alternation =
+  sh_placeName
+  | sh_country
+  | sh_region
+  | sh_district
+  | sh_settlement
+  | sh_geogName
+sh_model.placeNamePart_sequence =
+  sh_placeName,
+  sh_country,
+  sh_region,
+  sh_district,
+  sh_settlement,
+  sh_geogName
+sh_model.placeNamePart_sequenceOptional =
+  sh_placeName?,
+  sh_country?,
+  sh_region?,
+  sh_district?,
+  sh_settlement?,
+  sh_geogName?
+sh_model.placeNamePart_sequenceOptionalRepeatable =
+  sh_placeName*,
+  sh_country*,
+  sh_region*,
+  sh_district*,
+  sh_settlement*,
+  sh_geogName*
+sh_model.placeNamePart_sequenceRepeatable =
+  sh_placeName+,
+  sh_country+,
+  sh_region+,
+  sh_district+,
+  sh_settlement+,
+  sh_geogName+
+sh_model.placeStateLike =
+  sh_model.placeNamePart
+  | sh_location
+  | sh_population
+  | sh_state
+  | sh_terrain
+  | sh_trait
+sh_model.placeStateLike_alternation =
+  sh_model.placeNamePart_alternation
+  | sh_location
+  | sh_population
+  | sh_state
+  | sh_terrain
+  | sh_trait
+sh_model.placeStateLike_sequence =
+  sh_model.placeNamePart_sequence,
+  sh_location,
+  sh_population,
+  sh_state,
+  sh_terrain,
+  sh_trait
+sh_model.placeStateLike_sequenceOptional =
+  sh_model.placeNamePart_sequenceOptional?,
+  sh_location?,
+  sh_population?,
+  sh_state?,
+  sh_terrain?,
+  sh_trait?
+sh_model.placeStateLike_sequenceOptionalRepeatable =
+  sh_model.placeNamePart_sequenceOptionalRepeatable*,
+  sh_location*,
+  sh_population*,
+  sh_state*,
+  sh_terrain*,
+  sh_trait*
+sh_model.placeStateLike_sequenceRepeatable =
+  sh_model.placeNamePart_sequenceRepeatable+,
+  sh_location+,
+  sh_population+,
+  sh_state+,
+  sh_terrain+,
+  sh_trait+
+sh_model.placeEventLike = sh_event
+sh_model.orgPart = sh_listOrg | sh_listPerson | sh_listPlace
+sh_model.publicationStmtPart =
+  sh_address
+  | sh_date
+  | sh_publisher
+  | sh_pubPlace
+  | sh_distributor
+  | sh_authority
+  | sh_idno
+  | sh_availability
+sh_model.availabilityPart = sh_licence
+sh_model.certLike = notAllowed
+sh_model.descLike = sh_desc
+sh_model.glossLike = sh_gloss
+sh_model.quoteLike = sh_quote | sh_cit
+sh_model.quoteLike_alternation = sh_quote | sh_cit
+sh_model.quoteLike_sequence = sh_quote, sh_cit
+sh_model.quoteLike_sequenceOptional = sh_quote?, sh_cit?
+sh_model.quoteLike_sequenceOptionalRepeatable = sh_quote*, sh_cit*
+sh_model.quoteLike_sequenceRepeatable = sh_quote+, sh_cit+
+sh_model.qLike = sh_model.quoteLike | sh_said | sh_q | sh_floatingText
+sh_model.qLike_alternation =
+  sh_model.quoteLike_alternation | sh_said | sh_q | sh_floatingText
+sh_model.qLike_sequence =
+  sh_model.quoteLike_sequence, sh_said, sh_q, sh_floatingText
+sh_model.qLike_sequenceOptional =
+  sh_model.quoteLike_sequenceOptional?,
+  sh_said?,
+  sh_q?,
+  sh_floatingText?
+sh_model.qLike_sequenceOptionalRepeatable =
+  sh_model.quoteLike_sequenceOptionalRepeatable*,
+  sh_said*,
+  sh_q*,
+  sh_floatingText*
+sh_model.qLike_sequenceRepeatable =
+  sh_model.quoteLike_sequenceRepeatable+,
+  sh_said+,
+  sh_q+,
+  sh_floatingText+
+sh_model.respLike =
+  sh_author
+  | sh_editor
+  | sh_respStmt
+  | sh_meeting
+  | sh_sponsor
+  | sh_funder
+  | sh_principal
+sh_model.divWrapper =
+  sh_meeting
+  | sh_byline
+  | sh_dateline
+  | sh_argument
+  | sh_epigraph
+  | sh_salute
+  | sh_docAuthor
+  | sh_docDate
+sh_model.divTopPart = sh_model.headLike | sh_opener
+sh_model.divTop = sh_model.divWrapper | sh_model.divTopPart
+sh_model.pLike.front =
+  sh_head
+  | sh_byline
+  | sh_argument
+  | sh_epigraph
+  | sh_docTitle
+  | sh_titlePart
+  | sh_docAuthor
+  | sh_docEdition
+  | sh_docImprint
+  | sh_docDate
+sh_model.divBottomPart =
+  sh_trailer | sh_closer | sh_signed | sh_postscript
+sh_model.divBottom = sh_model.divWrapper | sh_model.divBottomPart
+sh_model.titlepagePart =
+  sh_graphic
+  | sh_binaryObject
+  | sh_byline
+  | sh_argument
+  | sh_epigraph
+  | sh_docTitle
+  | sh_titlePart
+  | sh_docAuthor
+  | sh_imprimatur
+  | sh_docEdition
+  | sh_docImprint
+  | sh_docDate
+sh_model.choicePart =
+  sh_sic
+  | sh_corr
+  | sh_reg
+  | sh_orig
+  | sh_unclear
+  | sh_abbr
+  | sh_expan
+  | sh_ex
+  | sh_am
+sh_model.imprintPart =
+  sh_publisher | sh_biblScope | sh_pubPlace | sh_distributor
+sh_model.catDescPart = notAllowed
+sh_model.addressLike = sh_email | sh_address
+sh_model.addressLike_alternation = sh_email | sh_address
+sh_model.addressLike_sequence = sh_email, sh_address
+sh_model.addressLike_sequenceOptional = sh_email?, sh_address?
+sh_model.addressLike_sequenceOptionalRepeatable = sh_email*, sh_address*
+sh_model.addressLike_sequenceRepeatable = sh_email+, sh_address+
+sh_model.nameLike =
+  sh_model.nameLike.agent
+  | sh_model.offsetLike
+  | sh_model.placeStateLike
+  | sh_rs
+  | sh_idno
+  | sh_model.persNamePart
+sh_model.nameLike_alternation =
+  sh_model.nameLike.agent_alternation
+  | sh_model.offsetLike_alternation
+  | sh_model.placeStateLike_alternation
+  | sh_rs
+  | sh_idno
+  | sh_model.persNamePart_alternation
+sh_model.nameLike_sequence =
+  sh_model.nameLike.agent_sequence,
+  sh_model.offsetLike_sequence,
+  sh_model.placeStateLike_sequence,
+  sh_rs,
+  sh_idno,
+  sh_model.persNamePart_sequence
+sh_model.nameLike_sequenceOptional =
+  sh_model.nameLike.agent_sequenceOptional?,
+  sh_model.offsetLike_sequenceOptional?,
+  sh_model.placeStateLike_sequenceOptional?,
+  sh_rs?,
+  sh_idno?,
+  sh_model.persNamePart_sequenceOptional?
+sh_model.nameLike_sequenceOptionalRepeatable =
+  sh_model.nameLike.agent_sequenceOptionalRepeatable*,
+  sh_model.offsetLike_sequenceOptionalRepeatable*,
+  sh_model.placeStateLike_sequenceOptionalRepeatable*,
+  sh_rs*,
+  sh_idno*,
+  sh_model.persNamePart_sequenceOptionalRepeatable*
+sh_model.nameLike_sequenceRepeatable =
+  sh_model.nameLike.agent_sequenceRepeatable+,
+  sh_model.offsetLike_sequenceRepeatable+,
+  sh_model.placeStateLike_sequenceRepeatable+,
+  sh_rs+,
+  sh_idno+,
+  sh_model.persNamePart_sequenceRepeatable+
+sh_model.global =
+  sh_model.global.meta
+  | sh_model.milestoneLike
+  | sh_model.noteLike
+  | sh_model.global.edit
+  | sh_metamark
+  | sh_notatedMusic
+  | sh_figure
+sh_model.biblPart =
+  sh_model.respLike
+  | sh_model.imprintPart
+  | sh_series
+  | sh_citedRange
+  | sh_bibl
+  | sh_relatedItem
+  | sh_textLang
+  | sh_edition
+  | sh_extent
+sh_model.frontPart = sh_divGen | sh_titlePage
+sh_model.addrPart =
+  sh_model.nameLike | sh_addrLine | sh_street | sh_postCode | sh_postBox
+sh_model.pPart.data =
+  sh_model.dateLike
+  | sh_model.measureLike
+  | sh_model.addressLike
+  | sh_model.nameLike
+sh_model.inter =
+  sh_model.egLike
+  | sh_model.biblLike
+  | sh_model.labelLike
+  | sh_model.listLike
+  | sh_model.stageLike
+  | sh_model.qLike
+sh_model.common = sh_model.divPart | sh_model.inter
+sh_model.phrase =
+  sh_model.segLike
+  | sh_model.highlighted
+  | sh_model.graphicLike
+  | sh_model.pPart.edit
+  | sh_model.ptrLike
+  | sh_model.lPart
+  | sh_model.pPart.data
+sh_model.limitedPhrase =
+  sh_model.hiLike
+  | sh_model.emphLike
+  | sh_model.pPart.editorial
+  | sh_model.ptrLike
+  | sh_model.pPart.data
+sh_model.divLike = sh_div
+sh_model.divGenLike = sh_divGen
+sh_model.div1Like = sh_div1
+sh_model.div2Like = sh_div2
+sh_model.div3Like = sh_div3
+sh_model.div4Like = sh_div4
+sh_model.div5Like = sh_div5
+sh_model.div6Like = sh_div6
+sh_model.div7Like = sh_div7
+sh_model.applicationLike = sh_application
+sh_model.teiHeaderPart = sh_encodingDesc | sh_profileDesc
+sh_model.sourceDescPart = notAllowed
+sh_model.encodingDescPart =
+  sh_projectDesc
+  | sh_samplingDecl
+  | sh_editorialDecl
+  | sh_tagsDecl
+  | sh_styleDefDecl
+  | sh_refsDecl
+  | sh_listPrefixDef
+  | sh_classDecl
+  | sh_geoDecl
+  | sh_appInfo
+  | sh_charDecl
+sh_model.editorialDeclPart =
+  sh_correction
+  | sh_normalization
+  | sh_quotation
+  | sh_hyphenation
+  | sh_segmentation
+  | sh_stdVals
+  | sh_interpretation
+sh_model.profileDescPart =
+  sh_creation
+  | sh_langUsage
+  | sh_textClass
+  | sh_calendarDesc
+  | sh_handNotes
+  | sh_listTranspose
+sh_att.source.attributes = sh_att.source.attribute.source
+sh_att.source.attribute.source =
+  
+  ##  (pointer to a bibliographical source reference) provides a pointer to the bibliographical source from which a quotation or citation is drawn.
+  attribute source {
+    list { sh_data.pointer+ }
+  }?
+sh_model.resourceLike = sh_facsimile | sh_sourceDoc
+sh_att.personal.attributes =
+  sh_att.naming.attributes,
+  sh_att.personal.attribute.full,
+  sh_att.personal.attribute.sort
+sh_att.personal.attribute.full =
+  
+  ## indicates whether the name component is given in full, as an abbreviation or simply as an initial.
+  [ a:defaultValue = "yes" ]
+  attribute full {
+    
+    ## the name component is spelled out in full.
+    "yes"
+    | 
+      ## (abbreviated) the name component is given in an abbreviated form.
+      "abb"
+    | 
+      ## (initial letter) the name component is indicated only by one initial.
+      "init"
+  }?
+sh_att.personal.attribute.sort =
+  
+  ## specifies the sort order of the name component in relation to others within the name.
+  attribute sort { sh_data.count }?
+sh_model.placeLike = sh_place
+sh_att.milestoneUnit.attributes = sh_att.milestoneUnit.attribute.unit
+sh_att.milestoneUnit.attribute.unit =
+  
+  ## provides a conventional name for the kind of section changing at this milestone.
+  ## Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] canto; 7] speaker; 8] stanza; 9] act; 10] scene; 11] section; 12] absent; 13] unnumbered
+  attribute unit {
+    
+    ## physical page breaks (synonymous with the pb element).
+    "page"
+    | 
+      ## column breaks.
+      "column"
+    | 
+      ## line breaks (synonymous with the lb element).
+      "line"
+    | 
+      ## any units termed book, liber, etc.
+      "book"
+    | 
+      ## individual poems in a collection.
+      "poem"
+    | 
+      ## cantos or other major sections of a poem.
+      "canto"
+    | 
+      ## changes of speaker or narrator.
+      "speaker"
+    | 
+      ## stanzas within a poem, book, or canto.
+      "stanza"
+    | 
+      ## acts within a play.
+      "act"
+    | 
+      ## scenes within a play or act.
+      "scene"
+    | 
+      ## sections of any kind.
+      "section"
+    | 
+      ## passages not present in the reference edition.
+      "absent"
+    | 
+      ## passages present in the text, but not to be included as part of the reference.
+      "unnumbered"
+    | xsd:Name
+  }
+sh_p =
+  
+  ## (paragraph) marks paragraphs in prose. [3.1.  7.2.5. ]
+  element p {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    sh_att.fragmentable.attributes,
+    empty
+  }
+sh_foreign =
+  
+  ## (foreign) identifies a word or phrase as belonging to some language other than that of the surrounding text.  [3.3.2.1. ]
+  element foreign {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_emph =
+  
+  ## (emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [3.3.2.2.  3.3.2. ]
+  element emph { sh_macro.paraContent, sh_att.global.attributes, empty }
+sh_hi =
+  
+  ## (highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made.  [3.3.2.2.  3.3.2. ]
+  element hi { sh_macro.paraContent, sh_att.global.attributes, empty }
+sh_distinct =
+  
+  ## identifies any word or phrase which is regarded as linguistically distinct, for example as archaic, technical, dialectal, non-preferred, etc., or as forming part of a sublanguage.  [3.3.2.3. ]
+  element distinct {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    
+    ## specifies the sublanguage or register to which the word or phrase is being assigned
+    attribute type { sh_data.enumerated }?,
+    
+    ## specifies how the phrase is distinct diachronically
+    attribute time { sh_data.text }?,
+    
+    ## specifies how the phrase is distinct diatopically
+    attribute space { sh_data.text }?,
+    
+    ## specifies how the phrase is distinct diastatically
+    attribute social { sh_data.text }?,
+    empty
+  }
+sh_said =
+  
+  ## (speech or thought) indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters. [3.3.3. ]
+  element said {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    sh_att.ascribed.attributes,
+    
+    ## may be used to indicate whether the quoted matter is regarded as having been vocalized or signed.
+    [ a:defaultValue = "unknown" ]
+    attribute aloud { sh_data.xTruthValue }?,
+    
+    ## may be used to indicate whether the quoted matter is regarded as direct or indirect speech.
+    [ a:defaultValue = "true" ]
+    attribute direct { sh_data.xTruthValue }?,
+    empty
+  }
+sh_quote =
+  
+  ## (quotation) contains a phrase or passage attributed by the narrator or author to some agency external to the text. [3.3.3.  4.3.1. ]
+  element quote {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.source.attributes,
+    empty
+  }
+sh_q =
+  
+  ## (quoted) contains material which is distinguished from the surrounding text using quotation marks or a similar method, for any one of a variety of reasons including, but not limited to: direct speech or thought, technical terms or jargon, authorial distance, quotations from elsewhere, and passages that are mentioned but not used. [3.3.3. ]
+  element q {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    sh_att.ascribed.attributes,
+    sh_att.source.attributes,
+    
+    ## may be used to indicate whether the offset passage is spoken or thought, or to characterize it more finely.
+    ## Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] foreign(foreign words) ; 6] distinct(linguistically distinct) ; 7] term(technical term) ; 8] emph(rhetorically emphasized) ; 9] mentioned
+    attribute type {
+      
+      ## representation of speech
+      "spoken"
+      | 
+        ## representation of thought, e.g. internal monologue
+        "thought"
+      | 
+        ## quotation from a written source
+        "written"
+      | 
+        ## authorial distance
+        "soCalled"
+      | 
+        ## (foreign words) 
+        "foreign"
+      | 
+        ## (linguistically distinct) 
+        "distinct"
+      | 
+        ## (technical term) 
+        "term"
+      | 
+        ## (rhetorically emphasized) 
+        "emph"
+      | 
+        ## refering to itself, not its normal referant
+        "mentioned"
+      | xsd:Name
+    }?,
+    empty
+  }
+sh_cit =
+  
+  ## (cited quotation) contains a quotation from some other document, together with a bibliographic reference to its source. In a dictionary it may contain an example text with at least one occurrence of the word form, used in the sense being described, or a translation of the headword, or an example.  [3.3.3.  4.3.1.  9.3.5.1. ]
+  element cit {
+    (sh_model.qLike
+     | sh_model.egLike
+     | sh_model.biblLike
+     | sh_model.ptrLike
+     | sh_model.global
+     | sh_model.entryPart)+,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_mentioned =
+  
+  ## marks words or phrases mentioned, not used. [3.3.3. ]
+  element mentioned {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_soCalled =
+  
+  ## contains a word or phrase for which the author or narrator indicates a disclaiming of responsibility, for example by the use of scare quotes or italics. [3.3.3. ]
+  element soCalled {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_desc =
+  
+  ## (description) contains a brief description of the object documented by its parent element, including its intended usage, purpose, or application where this is appropriate. [22.4.4.  22.4.5.  22.4.6.  22.4.7. ]
+  element desc {
+    sh_macro.limitedContent,
+    sh_att.global.attributes,
+    sh_att.translatable.attributes,
+    empty
+  }
+sh_gloss =
+  
+  ## identifies a phrase or word used to provide a gloss or definition for some other word or phrase. [3.3.4. ]
+  element gloss {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    sh_att.translatable.attributes,
+    sh_att.typed.attributes,
+    sh_att.pointing.attributes,
+    sh_att.cReferencing.attributes,
+    empty
+  }
+sh_term =
+  
+  ## contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.3.4. ]
+  element term {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    sh_att.pointing.attributes,
+    sh_att.typed.attributes,
+    sh_att.canonical.attributes,
+    sh_att.sortable.attributes,
+    sh_att.cReferencing.attributes,
+    empty
+  }
+sh_sic =
+  
+  ## (Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [3.4.1. ]
+  element sic {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.responsibility.attributes,
+    empty
+  }
+sh_corr =
+  
+  ## (correction) contains the correct form of a passage apparently erroneous in the copy text. [3.4.1. ]
+  element corr {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_choice =
+  
+  ## groups a number of alternative encodings for the same point in a text. [3.4. ]
+  element choice {
+    (sh_model.choicePart | sh_choice)*, sh_att.global.attributes, empty
+  }
+sh_reg =
+  
+  ## (regularization) contains a reading which has been regularized or normalized in some sense. [3.4.2.  12. ]
+  element reg {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_orig =
+  
+  ## (original form) contains a reading which is marked as following the original, rather than being normalized or corrected. [3.4.2.  12. ]
+  element orig {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.responsibility.attributes,
+    empty
+  }
+sh_gap =
+  
+  ## (gap) indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [3.4.3. ]
+  element gap {
+    (sh_model.descLike | sh_model.certLike)*,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    
+    ## gives the reason for omission. Sample values include sampling, inaudible, irrelevant, cancelled.
+    attribute reason {
+      list { sh_data.word+ }
+    }?,
+    
+    ## in the case of text omitted from the transcription because of deliberate deletion by an identifiable hand, signifies the hand which made the deletion.
+    attribute hand { sh_data.pointer }?,
+    
+    ## In the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified.
+    ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+    attribute agent { sh_data.enumerated }?,
+    empty
+  }
+sh_add =
+  
+  ## (addition) contains letters, words, or phrases inserted in the text by an author, scribe, annotator, or corrector. [3.4.3. ]
+  element add {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.transcriptional.attributes,
+    sh_att.placement.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_del =
+  
+  ## (deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector. [3.4.3. ]
+  element del {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.transcriptional.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_unclear =
+  
+  ## contains a word, phrase, or passage which cannot be transcribed with certainty because it is illegible or inaudible in the source. [11.3.3.1.  3.4.3. ]
+  element unclear {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    
+    ## indicates why the material is hard to transcribe.
+    attribute reason {
+      list { sh_data.word+ }
+    }?,
+    
+    ## Where the difficulty in transcription arises from action (partial deletion, etc.) assignable to an identifiable hand, signifies the hand responsible for the action.
+    attribute hand { sh_data.pointer }?,
+    
+    ## Where the difficulty in transcription arises from damage, categorizes the cause of the damage, if it can be identified.
+    ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+    attribute agent { sh_data.enumerated }?,
+    empty
+  }
+sh_name =
+  
+  ## (name, proper noun) contains a proper noun or noun phrase. [3.5.1. ]
+  element name {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.personal.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_rs =
+  
+  ## (referencing string) contains a general purpose name or referring string. [13.2.1.  3.5.1. ]
+  element rs {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_email =
+  
+  ## (electronic mail address) contains an e-mail address identifying a location to which e-mail messages can be delivered.  [3.5.2. ]
+  element email { sh_macro.phraseSeq, sh_att.global.attributes, empty }
+sh_address =
+  
+  ## contains a postal address, for example of a publisher, an organization, or an individual. [3.5.2.  2.2.4.  3.11.2.3. ]
+  element address {
+    (sh_model.global*, (sh_model.addrPart, sh_model.global*)+),
+    sh_att.global.attributes,
+    empty
+  }
+sh_addrLine =
+  
+  ## (address line) contains one line of a postal address. [3.5.2.  2.2.4.  3.11.2.3. ]
+  element addrLine {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_street =
+  
+  ## contains a full street address including any name or number identifying a building as well as the name of the street or route on which it is located. [3.5.2. ]
+  element street { sh_macro.phraseSeq, sh_att.global.attributes, empty }
+sh_postCode =
+  
+  ## (postal code) contains a numerical or alphanumeric code used as part of a postal address to simplify sorting or delivery of mail.  [3.5.2. ]
+  element postCode { text, sh_att.global.attributes, empty }
+sh_postBox =
+  
+  ## (postal box or post office box) contains a number or other identifier for some postal delivery point other than a street address.  [3.5.2. ]
+  element postBox { text, sh_att.global.attributes, empty }
+sh_num =
+  
+  ## (number) contains a number, written in any form. [3.5.3. ]
+  element num {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.ranging.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "cardinal"
+      | 
+        ##
+        "ordinal"
+      | 
+        ##
+        "fraction"
+      | 
+        ##
+        "roman numeral"
+    }?,
+    
+    ## supplies the value of the number in standard form.
+    attribute value { sh_data.numeric }?,
+    empty
+  }
+sh_measure =
+  
+  ## contains a word or phrase referring to some quantity of an object or commodity, usually comprising a number, a unit, and a commodity name. [3.5.3. ]
+  element measure {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.measurement.attributes,
+    
+    ## specifies the type of measurement in any convenient typology.
+    attribute type { sh_data.enumerated }?,
+    empty
+  }
+sh_measureGrp =
+  
+  ## (measure group) contains a group of dimensional specifications which relate to the same object, for example the height and width of a manuscript page. [10.3.4. ]
+  element measureGrp {
+    (text | sh_model.gLike | sh_model.measureLike)*,
+    sh_att.global.attributes,
+    sh_att.measurement.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_date =
+  
+  ## contains a date in any format. [3.5.4.  2.2.4.  2.5.  3.11.2.3.  15.2.3.  13.3.6. ]
+  element date {
+    (text | sh_model.gLike | sh_model.phrase | sh_model.global)*,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_time =
+  
+  ## contains a phrase defining a time of day in any format. [3.5.4. ]
+  element time {
+    (text | sh_model.gLike | sh_model.phrase | sh_model.global)*,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_abbr =
+  
+  ## (abbreviation) contains an abbreviation of any sort. [3.5.5. ]
+  element abbr {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.responsibility.attributes,
+    sh_att.typed.attribute.subtype,
+    
+    ## allows the encoder to classify the abbreviation according to some convenient typology.
+    attribute type { sh_data.enumerated }?,
+    empty
+  }
+sh_expan =
+  
+  ## (expansion) contains the expansion of an abbreviation. [3.5.5. ]
+  element expan {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    empty
+  }
+sh_ptr =
+  
+  ## (pointer) defines a pointer to another location. [3.6.  16.1. ]
+  element ptr {
+    empty
+    >> sch:pattern [
+         id = "ptr-constraint-ptrAtts"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:ptr"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @cRef"
+             "Only one of the\x{a}" ~
+             "attributes @target and @cRef may be supplied on "
+             sch:name [ ]
+             "."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.pointing.attributes,
+    sh_att.internetMedia.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    sh_att.cReferencing.attributes,
+    empty
+  }
+sh_ref =
+  
+  ## (reference) defines a reference to another location, possibly modified by additional text or comment. [3.6.  16.1. ]
+  element ref {
+    sh_macro.paraContent
+    >> sch:pattern [
+         id = "ref-constraint-refAtts"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:ref"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @cRef"
+             "Only one of the\x{a}" ~
+             "	attributes @target' and @cRef' may be supplied on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.pointing.attributes,
+    sh_att.internetMedia.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    sh_att.cReferencing.attributes,
+    empty
+  }
+sh_list =
+  
+  ## (list) contains any sequence of items organized as a list. [3.7. ]
+  element list {
+    ((sh_model.divTop | sh_model.global)*,
+     ((sh_item, sh_model.global*)+
+      | (sh_headLabel?,
+         sh_headItem?,
+         (sh_label, sh_model.global*, sh_item, sh_model.global*)+)),
+     (sh_model.divBottom, sh_model.global*)*),
+    sh_att.global.attributes,
+    sh_att.sortable.attributes,
+    
+    ## describes the form of the list.
+    ## Suggested values include: 1] ordered; 2] bulleted; 3] simple; 4] gloss
+    [ a:defaultValue = "simple" ]
+    attribute type {
+      
+      ## list items are numbered or lettered. 
+      "ordered"
+      | 
+        ## list items are marked with a bullet or other typographic device. 
+        "bulleted"
+      | 
+        ## list items are not numbered or bulleted. 
+        "simple"
+      | 
+        ## each list item glosses some term or concept, which is given by a label element preceding the list item.
+        "gloss"
+      | xsd:Name
+    }?,
+    empty
+  }
+sh_item =
+  
+  ## contains one component of a list. [3.7.  2.5. ]
+  element item {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_label =
+  
+  ## contains any label or heading used to identify part of a text, typically but not exclusively in a list or glossary. [3.7. ]
+  element label {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.placement.attributes,
+    empty
+  }
+sh_head =
+  
+  ## (heading) contains any type of heading, for example the title of a section, or the heading of a list, glossary, manuscript description, etc. [4.2.1. ]
+  element head {
+    (text
+     | sh_lg
+     | sh_model.gLike
+     | sh_model.phrase
+     | sh_model.inter
+     | sh_model.lLike
+     | sh_model.global)*,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_headLabel =
+  
+  ## (heading for list labels) contains the heading for the label or term column in a glossary list or similar structured list. [3.7. ]
+  element headLabel {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_headItem =
+  
+  ## (heading for list items) contains the heading for the item or gloss column in a glossary list or similar structured list. [3.7. ]
+  element headItem {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_note =
+  
+  ## contains a note or annotation. [3.8.1.  2.2.6.  3.11.2.7.  9.3.5.4. ]
+  element note {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    sh_att.placement.attributes,
+    sh_att.pointing.attributes,
+    sh_att.responsibility.attributes,
+    sh_att.typed.attribute.subtype,
+    
+    ##
+    attribute type {
+      
+      ##
+      "handwritten"
+      | 
+        ##
+        "illegible"
+    }?,
+    
+    ## indicates whether the copy text shows the exact place of reference for the note.
+    [ a:defaultValue = "true" ]
+    attribute anchored { sh_data.truthValue }?,
+    
+    ## points to the end of the span to which the note is attached, if the note is not embedded in the text at that point.
+    attribute targetEnd {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_index =
+  
+  ## (index entry) marks a location to be indexed for whatever purpose. [3.8.2. ]
+  element index {
+    (sh_term, sh_index?)*,
+    sh_att.global.attributes,
+    sh_att.spanning.attributes,
+    
+    ## a single word which follows the rules defining a legal XML name (see ), supplying a name to specify which index (of several) the index entry belongs to.
+    attribute indexName { sh_data.name }?,
+    empty
+  }
+sh_media =
+  
+  ## indicates the location of any form of external media such as an audio or video clip etc. [3.9. ]
+  element media {
+    sh_model.descLike*,
+    sh_att.typed.attributes,
+    sh_att.global.attributes,
+    sh_att.media.attribute.width,
+    sh_att.media.attribute.height,
+    sh_att.media.attribute.scale,
+    sh_att.resourced.attributes,
+    sh_att.declaring.attributes,
+    sh_att.timed.attributes,
+    
+    ## (MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type
+    attribute mimeType {
+      list { sh_data.word+ }
+    },
+    empty
+  }
+sh_graphic =
+  
+  ## indicates the location of an inline graphic, illustration, or figure. [3.9. ]
+  element graphic {
+    sh_model.descLike*,
+    sh_att.global.attributes,
+    sh_att.media.attributes,
+    sh_att.resourced.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_binaryObject =
+  
+  ## provides encoded binary data representing an inline graphic, audio, video or other object. [3.9. ]
+  element binaryObject {
+    text,
+    sh_att.global.attributes,
+    sh_att.media.attributes,
+    sh_att.timed.attributes,
+    sh_att.typed.attributes,
+    
+    ## The encoding used to encode the binary data. If not specified, this is assumed to be Base64.
+    attribute encoding {
+      list { sh_data.word+ }
+    }?,
+    empty
+  }
+sh_milestone =
+  
+  ## marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [3.10.3. ]
+  element milestone {
+    empty,
+    sh_att.global.attributes,
+    sh_att.milestoneUnit.attributes,
+    sh_att.typed.attributes,
+    sh_att.edition.attributes,
+    sh_att.spanning.attributes,
+    sh_att.breaking.attributes,
+    empty
+  }
+sh_gb =
+  
+  ##  (gathering begins) marks the point in a transcribed codex at which a new gathering or quire begins. [3.10.3. ]
+  element gb {
+    empty,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.spanning.attributes,
+    sh_att.breaking.attributes,
+    empty
+  }
+sh_pb =
+  
+  ## (page break) marks the boundary between one page of a text and the next in a standard reference system. [3.10.3. ]
+  element pb {
+    empty,
+    sh_att.global.attributes,
+    sh_att.typed.attribute.subtype,
+    sh_att.edition.attributes,
+    sh_att.spanning.attributes,
+    sh_att.breaking.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "inWord"
+    }?,
+    empty
+  }
+sh_lb =
+  
+  ## (line break) marks the start of a new (typographic) line in some edition or version of a text. [3.10.3.  7.2.5. ]
+  element lb {
+    empty,
+    sh_att.global.attributes,
+    sh_att.typed.attribute.subtype,
+    sh_att.edition.attributes,
+    sh_att.spanning.attributes,
+    sh_att.breaking.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "inWord"
+    }?,
+    empty
+  }
+sh_cb =
+  
+  ## (column break) marks the boundary between one column of a text and the next in a standard reference system. [3.10.3. ]
+  element cb {
+    empty,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.edition.attributes,
+    sh_att.spanning.attributes,
+    sh_att.breaking.attributes,
+    empty
+  }
+sh_analytic =
+  
+  ## (analytic level) contains bibliographic elements describing an item (e.g. an article or poem) published within a monograph or journal and not as an independent publication. [3.11.2.1. ]
+  element analytic {
+    (sh_author
+     | sh_editor
+     | sh_respStmt
+     | sh_title
+     | sh_ref
+     | sh_date
+     | sh_textLang
+     | sh_idno)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_monogr =
+  
+  ## (monographic level) contains bibliographic elements describing an item (e.g. a book or journal) published as an independent item (i.e. as a separate physical object). [3.11.2.1. ]
+  element monogr {
+    ((((sh_author | sh_editor | sh_meeting | sh_respStmt),
+       (sh_author | sh_editor | sh_meeting | sh_respStmt)*,
+       sh_title+,
+       (sh_idno | sh_textLang | sh_editor | sh_respStmt)*)
+      | ((sh_title | sh_ref)+,
+         (sh_idno
+          | sh_textLang
+          | sh_author
+          | sh_editor
+          | sh_meeting
+          | sh_respStmt)*)
+      | (sh_authority, sh_idno))?,
+     sh_model.noteLike*,
+     (sh_edition,
+      (sh_idno | sh_editor | sh_sponsor | sh_funder | sh_respStmt)*)*,
+     sh_imprint,
+     (sh_imprint | sh_extent | sh_biblScope)*),
+    sh_att.global.attributes,
+    empty
+  }
+sh_series =
+  
+  ## (series information) contains information about the series in which a book or other bibliographic item has appeared. [3.11.2.1. ]
+  element series {
+    (text
+     | sh_model.gLike
+     | sh_title
+     | sh_ref
+     | sh_editor
+     | sh_respStmt
+     | sh_biblScope
+     | sh_idno
+     | sh_textLang
+     | sh_model.global)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_author =
+  
+  ## in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority.  [3.11.2.2.  2.2.1. ]
+  element author {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_editor =
+  
+  ## contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc.  [3.11.2.2. ]
+  element editor {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_respStmt =
+  
+  ## (statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [3.11.2.2.  2.2.1.  2.2.2.  2.2.5. ]
+  element respStmt {
+    ((sh_resp+, sh_model.nameLike.agent+)
+     | (sh_model.nameLike.agent+, sh_resp+)),
+    sh_att.global.attributes,
+    empty
+  }
+sh_resp =
+  
+  ## (responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [3.11.2.2.  2.2.1.  2.2.2.  2.2.5. ]
+  element resp {
+    sh_macro.phraseSeq.limited,
+    sh_att.global.attributes,
+    sh_att.canonical.attributes,
+    empty
+  }
+sh_title =
+  
+  ## contains a title for any kind of work. [3.11.2.2.  2.2.1.  2.2.5. ]
+  element title {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.canonical.attributes,
+    sh_att.typed.attribute.subtype,
+    
+    ## classifies the title according to some convenient typology.
+    ## Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] short; 5] desc(descriptive) 
+    attribute type { sh_data.enumerated }?,
+    
+    ## indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material.
+    attribute level {
+      
+      ## (analytic) analytic title (article, poem, or other item published as part of a larger item) 
+      "a"
+      | 
+        ## (monographic) monographic title (book, collection, or other item published as a distinct item, including single volumes of multi-volume works) 
+        "m"
+      | 
+        ## (journal) journal title 
+        "j"
+      | 
+        ## (series) series title 
+        "s"
+      | 
+        ## (unpublished) title of unpublished material (including theses and dissertations unless published by a commercial press)
+        "u"
+    }?,
+    empty
+  }
+sh_meeting =
+  
+  ## contains the formalized descriptive title for a meeting or conference, for use in a bibliographic description for an item derived from such a meeting, or as a heading or preamble to publications emanating from it. [3.11.2.2. ]
+  element meeting {
+    sh_macro.limitedContent, sh_att.global.attributes, empty
+  }
+sh_imprint =
+  
+  ## groups information relating to the publication or distribution of a bibliographic item. [3.11.2.3. ]
+  element imprint {
+    (sh_classCode, sh_catRef)*,
+    ((sh_model.imprintPart | sh_model.dateLike),
+     sh_respStmt*,
+     sh_model.global*)+,
+    sh_att.global.attributes,
+    empty
+  }
+sh_publisher =
+  
+  ## provides the name of the organization responsible for the publication or distribution of a bibliographic item. [3.11.2.3.  2.2.4. ]
+  element publisher {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_biblScope =
+  
+  ## (scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.11.2.3. ]
+  element biblScope {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    
+    ## identifies the unit of information conveyed by the element, e.g. columns, pages, volume.
+    ## Suggested values include: 1] vol(volume) ; 2] issue; 3] pp(pages) ; 4] ll (lines) ; 5] chap(chapter) ; 6] part
+    attribute unit {
+      
+      ## (volume) the element contains a volume number.
+      "vol"
+      | 
+        ## the element contains an issue number, or volume and issue numbers.
+        "issue"
+      | 
+        ## (pages) the element contains a page number or page range.
+        "pp"
+      | 
+        ##  (lines) the element contains a line number or line range.
+        "ll"
+      | 
+        ## (chapter) the element contains a chapter indication (number and/or title)
+        "chap"
+      | 
+        ## the element identifies a part of a book or collection.
+        "part"
+      | xsd:Name
+    }?,
+    
+    ## identifies the type of information conveyed by the element, e.g. columns, pages, volume.
+    ## Suggested values include: 1] vol(volume) ; 2] issue; 3] pp(pages) ; 4] ll (lines) ; 5] chap(chapter) ; 6] part
+    attribute type {
+      
+      ## (volume) the element contains a volume number.
+      "vol"
+      | 
+        ## the element contains an issue number, or volume and issue numbers.
+        "issue"
+      | 
+        ## (pages) the element contains a page number or page range.
+        "pp"
+      | 
+        ##  (lines) the element contains a line number or line range.
+        "ll"
+      | 
+        ## (chapter) the element contains a chapter indication (number and/or title)
+        "chap"
+      | 
+        ## the element identifies a part of a book or collection.
+        "part"
+      | xsd:Name
+    }?,
+    
+    ## specifies the starting point of the range of units indicated by the unit attribute.
+    attribute from { sh_data.word }?,
+    
+    ## specifies the end-point of the range of units indicated by the unit attribute.
+    attribute to { sh_data.word }?,
+    empty
+  }
+sh_citedRange =
+  
+  ##  (cited range) defines the range of cited content, often represented by pages or other units [3.11.2.3. ]
+  element citedRange {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.pointing.attributes,
+    
+    ## identifies the type of information conveyed by the element, e.g. columns, pages, volume.
+    ## Suggested values include: 1] vol (volume) ; 2] issue; 3] pp (pages) ; 4] ll (lines) ; 5] chap (chapter) ; 6] part
+    attribute unit {
+      
+      ##  (volume) the element contains a volume number.
+      "vol"
+      | 
+        ## the element contains an issue number, or volume and issue numbers.
+        "issue"
+      | 
+        ##  (pages) the element contains a page number or page range.
+        "pp"
+      | 
+        ##  (lines) the element contains a line number or line range.
+        "ll"
+      | 
+        ##  (chapter) the element contains a chapter indication (number and/or title)
+        "chap"
+      | 
+        ## the element identifies a part of a book or collection.
+        "part"
+      | xsd:Name
+    }?,
+    
+    ## specifies the starting point of the range of units indicated by the unit attribute.
+    attribute from { sh_data.word }?,
+    
+    ## specifies the end-point of the range of units indicated by the unit attribute.
+    attribute to { sh_data.word }?,
+    empty
+  }
+sh_pubPlace =
+  
+  ## (publication place) contains the name of the place where a bibliographic item was published. [3.11.2.3. ]
+  element pubPlace {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_bibl =
+  
+  ## (bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged.  [3.11.1.  2.2.7.  15.3.2. ]
+  element bibl {
+    (text
+     | sh_model.gLike
+     | sh_model.highlighted
+     | sh_model.pPart.data
+     | sh_model.pPart.edit
+     | sh_model.segLike
+     | sh_model.ptrLike
+     | sh_model.biblPart
+     | sh_model.global)*,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    sh_att.typed.attributes,
+    sh_att.sortable.attributes,
+    sh_att.docStatus.attributes,
+    empty
+  }
+sh_biblStruct =
+  
+  ## (structured bibliographic citation) contains a structured bibliographic citation, in which only bibliographic sub-elements appear and in a specified order.  [3.11.1.  2.2.7.  15.3.2. ]
+  element biblStruct {
+    (sh_analytic*,
+     (sh_monogr, sh_series*)+,
+     (sh_model.noteLike
+      | sh_idno
+      | sh_model.ptrLike
+      | sh_relatedItem
+      | sh_citedRange)*),
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    sh_att.typed.attributes,
+    sh_att.sortable.attributes,
+    sh_att.docStatus.attributes,
+    empty
+  }
+sh_listBibl =
+  
+  ## (citation list) contains a list of bibliographic citations of any kind.  [3.11.1.  2.2.7.  15.3.2. ]
+  element listBibl {
+    (sh_model.headLike*,
+     (sh_model.biblLike | sh_model.milestoneLike | sh_listBibl)+),
+    sh_att.global.attributes,
+    sh_att.sortable.attributes,
+    sh_att.declarable.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_relatedItem =
+  
+  ## contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [3.11.2.6. ]
+  element relatedItem {
+    ((sh_model.biblLike | sh_model.ptrLike)?)
+    >> sch:pattern [
+         id = "relatedItem-constraint-targetorcontent11"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and count( child::* ) > 0"
+             "\x{a}" ~
+             "If the @target attribute on "
+             sch:name [ ]
+             " is used, the\x{a}" ~
+             "relatedItem element must be empty"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "relatedItem-constraint-targetorcontent11"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@target or child::*"
+             "A relatedItem element should have either a 'target' attribute\x{a}" ~
+             "        or a child element to indicate the related bibliographic item"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    
+    ## points to the related bibliographic element by means of an absolute or relative URI reference
+    attribute target { sh_data.pointer }?,
+    empty
+  }
+sh_l =
+  
+  ## (verse line) contains a single, possibly incomplete, line of verse. [3.12.1.  3.12.  7.2.5. ]
+  element l {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.fragmentable.attributes,
+    empty
+  }
+sh_lg =
+  
+  ## (line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.12.1.  3.12.  7.2.5. ]
+  element lg {
+    ((sh_model.divTop | sh_model.global)*,
+     (sh_model.lLike | sh_model.stageLike | sh_model.labelLike | sh_lg),
+     (sh_model.lLike
+      | sh_model.stageLike
+      | sh_model.labelLike
+      | sh_model.global
+      | sh_lg)*,
+     (sh_model.divBottom, sh_model.global*)*)
+    >> sch:pattern [
+         id = "lg-constraint-atleast1oflggapl"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:lg"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test =
+               "count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) > 0"
+             "An lg element\x{a}" ~
+             "        must contain at least one child l, lg or gap element."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_sp =
+  
+  ## (speech) contains an individual speech in a performance text, or a passage presented as such in a prose or verse text. [3.12.2.  3.12.  7.2.2. ]
+  element sp {
+    (sh_model.global*,
+     (sh_speaker, sh_model.global*)?,
+     ((sh_lg
+       | sh_model.lLike
+       | sh_model.pLike
+       | sh_model.listLike
+       | sh_model.stageLike
+       | sh_model.qLike),
+      sh_model.global*)+),
+    sh_att.global.attributes,
+    sh_att.ascribed.attributes,
+    empty
+  }
+sh_speaker =
+  
+  ## contains a specialized form of heading or label, giving the name of one or more speakers in a dramatic text or fragment. [3.12.2. ]
+  element speaker {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_stage =
+  
+  ## (stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.12.2.  3.12.  7.2.4. ]
+  element stage {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    
+    ## indicates the kind of stage direction.
+    ## Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] novelistic; 6] delivery; 7] modifier; 8] location; 9] mixed
+    attribute type {
+      
+      ## describes a setting.
+      "setting"
+      | 
+        ## describes an entrance.
+        "entrance"
+      | 
+        ## describes an exit.
+        "exit"
+      | 
+        ## describes stage business.
+        "business"
+      | 
+        ## is a narrative, motivating stage direction.
+        "novelistic"
+      | 
+        ## describes how a character speaks.
+        "delivery"
+      | 
+        ## gives some detail about a character.
+        "modifier"
+      | 
+        ## describes a location.
+        "location"
+      | 
+        ## more than one of the above
+        "mixed"
+      | xsd:Name
+    }?,
+    empty
+  }
+sh_teiCorpus =
+  
+  ## contains the whole of a TEI encoded corpus, comprising a single corpus header and one or more TEI elements, each containing a single text header and a text. [4.  15.1. ]
+  element teiCorpus {
+    (sh_teiHeader, (sh_TEI | sh_teiCorpus)+),
+    sh_att.global.attributes,
+    
+    ## The version of the TEI scheme
+    [ a:defaultValue = "5.0" ] attribute version { sh_data.version }?,
+    empty
+  }
+sh_divGen =
+  
+  ## (automatically generated text division) indicates the location at which a textual division generated automatically by a text-processing application is to appear. [3.8.2. ]
+  element divGen {
+    sh_model.headLike*,
+    sh_att.global.attributes,
+    
+    ## specifies what type of generated text division (e.g. index, table of contents, etc.) is to appear.
+    ## Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist
+    attribute type { sh_data.enumerated }?,
+    empty
+  }
+sh_textLang =
+  
+  ## (text language) describes the languages and writing systems identified within the bibliographic work being described, rather than its description.  [3.11.2.3.  10.6.6. ]
+  element textLang {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    
+    ## (main language) supplies a code which identifies the chief language used in the bibliographic work.
+    attribute mainLang { sh_data.language }?,
+    
+    ## (other languages) one or more codes identifying any other languages used in the bibliographic work.
+    attribute otherLangs {
+      list { sh_data.language* }
+    }?,
+    empty
+  }
+sh_teiHeader =
+  
+  ## (TEI Header) supplies the descriptive and declarative information making up an electronic title page prefixed to every TEI-conformant text. [2.1.1.  15.1. ]
+  element teiHeader {
+    (sh_fileDesc, sh_model.teiHeaderPart*, sh_revisionDesc?),
+    sh_att.global.attributes,
+    
+    ## specifies the kind of document to which the header is attached, for example whether it is a corpus or individual text.
+    ## Sample values include: 1] text; 2] corpus
+    [ a:defaultValue = "text" ] attribute type { sh_data.enumerated }?,
+    empty
+  }
+sh_fileDesc =
+  
+  ## (file description) contains a full bibliographic description of an electronic file. [2.2.  2.1.1. ]
+  element fileDesc {
+    ((sh_titleStmt,
+      sh_editionStmt?,
+      sh_extent?,
+      sh_publicationStmt,
+      sh_seriesStmt?,
+      sh_notesStmt?),
+     sh_sourceDesc+),
+    sh_att.global.attributes,
+    empty
+  }
+sh_titleStmt =
+  
+  ## (title statement) groups information about the title of a work and those responsible for its content. [2.2.1.  2.2. ]
+  element titleStmt {
+    (sh_title+, sh_model.respLike*), sh_att.global.attributes, empty
+  }
+sh_sponsor =
+  
+  ## specifies the name of a sponsoring organization or institution. [2.2.1. ]
+  element sponsor {
+    sh_macro.phraseSeq.limited, sh_att.global.attributes, empty
+  }
+sh_funder =
+  
+  ## (funding body) specifies the name of an individual, institution, or organization responsible for the funding of a project or text. [2.2.1. ]
+  element funder {
+    sh_macro.phraseSeq.limited, sh_att.global.attributes, empty
+  }
+sh_principal =
+  
+  ## (principal researcher) supplies the name of the principal researcher responsible for the creation of an electronic text. [2.2.1. ]
+  element principal {
+    sh_macro.phraseSeq.limited, sh_att.global.attributes, empty
+  }
+sh_editionStmt =
+  
+  ## (edition statement) groups information relating to one edition of a text. [2.2.2.  2.2. ]
+  element editionStmt {
+    (sh_model.pLike+ | (sh_edition, sh_model.respLike*)),
+    sh_att.global.attributes,
+    empty
+  }
+sh_edition =
+  
+  ## (edition) describes the particularities of one edition of a text. [2.2.2. ]
+  element edition {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_extent =
+  
+  ## describes the approximate size of a text stored on some carrier medium or of some other object, digital or non-digital, specified in any convenient units. [2.2.3.  2.2.  3.11.2.3.  10.7.1. ]
+  element extent { sh_macro.phraseSeq, sh_att.global.attributes, empty }
+sh_publicationStmt =
+  
+  ## (publication statement) groups information concerning the publication or distribution of an electronic or other text.  [2.2.4.  2.2. ]
+  element publicationStmt {
+    (sh_model.pLike+ | sh_model.publicationStmtPart+),
+    sh_att.global.attributes,
+    empty
+  }
+sh_distributor =
+  
+  ## supplies the name of a person or other agency responsible for the distribution of a text. [2.2.4. ]
+  element distributor {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_authority =
+  
+  ## (release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [2.2.4. ]
+  element authority {
+    sh_macro.phraseSeq.limited, sh_att.global.attributes, empty
+  }
+sh_idno =
+  
+  ## (identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [2.2.4.  2.2.5.  3.11.2.3. ]
+  element idno {
+    (text | sh_model.gLike | sh_idno)*,
+    sh_att.global.attributes,
+    sh_att.sortable.attributes,
+    
+    ## categorizes the identifier, for example as an ISBN, Social Security number, etc. 
+    attribute type { sh_data.enumerated }?,
+    empty
+  }
+sh_availability =
+  
+  ## supplies information about the availability of a text, for example any restrictions on its use or distribution, its copyright status, any licence applying to it, etc. [2.2.4. ]
+  element availability {
+    (sh_model.availabilityPart | sh_model.pLike)+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    
+    ## supplies a code identifying the current availability of the text. 
+    [ a:defaultValue = "unknown" ]
+    attribute status {
+      
+      ## the text is freely available. 
+      "free"
+      | 
+        ## the status of the text is unknown. 
+        "unknown"
+      | 
+        ## the text is not freely available. 
+        "restricted"
+    }?,
+    empty
+  }
+sh_licence =
+  
+  ## contains information about a licence or other legal agreement applicable to the text. [2.2.4. ]
+  element licence {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    sh_att.pointing.attributes,
+    sh_att.datable.attributes,
+    empty
+  }
+sh_seriesStmt =
+  
+  ## (series statement) groups information about the series, if any, to which a publication belongs. [2.2.5.  2.2. ]
+  element seriesStmt {
+    (sh_model.pLike+
+     | (sh_title+,
+        (sh_editor | sh_respStmt)*,
+        (sh_idno | sh_biblScope)*)),
+    sh_att.global.attributes,
+    empty
+  }
+sh_notesStmt =
+  
+  ## (notes statement) collects together any notes providing information about a text additional to that recorded in other parts of the bibliographic description. [2.2.6.  2.2. ]
+  element notesStmt {
+    sh_model.noteLike+, sh_att.global.attributes, empty
+  }
+sh_sourceDesc =
+  
+  ## (source description) describes the source from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text, or a phrase such as "born digital" for a text which has no previous existence. [2.2.7. ]
+  element sourceDesc {
+    (sh_model.pLike+
+     | (sh_model.biblLike
+        | sh_model.sourceDescPart
+        | sh_model.listLike)+),
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_biblFull =
+  
+  ## (fully-structured bibliographic citation) contains a fully-structured bibliographic citation, in which all components of the TEI file description are present. [3.11.1.  2.2.  2.2.7.  15.3.2. ]
+  element biblFull {
+    ((sh_titleStmt,
+      sh_editionStmt?,
+      sh_extent?,
+      sh_publicationStmt,
+      sh_seriesStmt?,
+      sh_notesStmt?),
+     sh_sourceDesc*),
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    sh_att.sortable.attributes,
+    sh_att.docStatus.attributes,
+    empty
+  }
+sh_encodingDesc =
+  
+  ## (encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. [2.3.  2.1.1. ]
+  element encodingDesc {
+    (sh_model.encodingDescPart | sh_model.pLike)+,
+    sh_att.global.attributes,
+    empty
+  }
+sh_projectDesc =
+  
+  ## (project description) describes in detail the aim or purpose for which an electronic file was encoded, together with any other relevant information concerning the process by which it was assembled or collected. [2.3.1.  2.3.  15.3.2. ]
+  element projectDesc {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_samplingDecl =
+  
+  ## (sampling declaration) contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection. [2.3.2.  2.3.  15.3.2. ]
+  element samplingDecl {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_editorialDecl =
+  
+  ## (editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. [2.3.3.  2.3.  15.3.2. ]
+  element editorialDecl {
+    (sh_model.pLike | sh_model.editorialDeclPart)+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_correction =
+  
+  ## (correction principles) states how and under what circumstances corrections have been made in the text. [2.3.3.  15.3.2. ]
+  element correction {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    
+    ## indicates the degree of correction applied to the text. 
+    [ a:defaultValue = "unknown" ]
+    attribute status {
+      
+      ## the text has been thoroughly checked and proofread. 
+      "high"
+      | 
+        ## the text has been checked at least once. 
+        "medium"
+      | 
+        ## the text has not been checked. 
+        "low"
+      | 
+        ## the correction status of the text is unknown. 
+        "unknown"
+    }?,
+    
+    ## indicates the method adopted to indicate corrections within the text. 
+    [ a:defaultValue = "silent" ]
+    attribute method {
+      
+      ## corrections have been made silently 
+      "silent"
+      | 
+        ## corrections have been represented using markup
+        "markup"
+    }?,
+    empty
+  }
+sh_normalization =
+  
+  ## indicates the extent of normalization or regularization of the original source carried out in converting it to electronic form. [2.3.3.  15.3.2. ]
+  element normalization {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    
+    ## indicates the authority for any normalization carried out. 
+    attribute source { sh_data.pointer }?,
+    
+    ## indicates the method adopted to indicate normalizations within the text. 
+    [ a:defaultValue = "silent" ]
+    attribute method {
+      
+      ## normalization made silently 
+      "silent"
+      | 
+        ## normalization represented using markup 
+        "markup"
+    }?,
+    empty
+  }
+sh_quotation =
+  
+  ## specifies editorial practice adopted with respect to quotation marks in the original.  [2.3.3.  15.3.2. ]
+  element quotation {
+    (sh_model.pLike*)
+    >> sch:pattern [
+         id = "quotation-constraint-quotationContents"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:quotation"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "not(@marks) and not (tei:p)"
+             "\x{a}" ~
+             "On "
+             sch:name [ ]
+             ", either the @marks attribute should be used, or a paragraph of description provided"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    
+    ## (quotation marks) indicates whether or not quotation marks have been retained as content within the text. 
+    attribute marks {
+      
+      ## no quotation marks have been retained 
+      "none"
+      | 
+        ## some quotation marks have been retained 
+        "some"
+      | 
+        ## all quotation marks have been retained 
+        "all"
+    }?,
+    
+    ## specifies how quotation marks are indicated within the text.
+    [ a:defaultValue = "unknown" ] attribute form { text }?,
+    empty
+  }
+sh_hyphenation =
+  
+  ## summarizes the way in which hyphenation in a source text has been treated in an encoded version of it. [2.3.3.  15.3.2. ]
+  element hyphenation {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    
+    ## (end-of-line) indicates whether or not end-of-line hyphenation has been retained in a text.
+    [ a:defaultValue = "some" ]
+    attribute eol {
+      
+      ## all end-of-line hyphenation has been retained, even though the lineation of the original may not have been. 
+      "all"
+      | 
+        ## end-of-line hyphenation has been retained in some cases. 
+        "some"
+      | 
+        ## all soft end-of-line hyphenation has been removed: any remaining end-od-line hyphenation should be retained. 
+        "hard"
+      | 
+        ## all end-of-line hyphenation has been removed: any remaining hyphenation occurred within the line. 
+        "none"
+    }?,
+    empty
+  }
+sh_segmentation =
+  
+  ## describes the principles according to which the text has been segmented, for example into sentences, tone-units, graphemic strata, etc. [2.3.3.  15.3.2. ]
+  element segmentation {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_stdVals =
+  
+  ## (standard values) specifies the format used when standardized date or number values are supplied. [2.3.3.  15.3.2. ]
+  element stdVals {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_interpretation =
+  
+  ## describes the scope of any analytic or interpretive information added to the text in addition to the transcription.  [2.3.3. ]
+  element interpretation {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_tagsDecl =
+  
+  ## (tagging declaration) provides detailed information about the tagging applied to a document. [2.3.4.  2.3. ]
+  element tagsDecl {
+    (sh_rendition*, sh_namespace*), sh_att.global.attributes, empty
+  }
+sh_tagUsage =
+  
+  ## supplies information about the usage of a specific element within a text.  [2.3.4. ]
+  element tagUsage {
+    sh_macro.limitedContent,
+    sh_att.global.attributes,
+    
+    ## (element name) specifies the name (generic identifier) of the element indicated by the tag.
+    attribute gi { sh_data.name },
+    
+    ## specifies the number of occurrences of this element within the text.
+    attribute occurs { sh_data.count }?,
+    
+    ## (with unique identifier) specifies the number of occurrences of this element within the text which bear a distinct value for the global xml:id attribute.
+    attribute withId { sh_data.count }?,
+    
+    ## specifies the identifier of a rendition element which defines how this element was rendered in the source text.
+    attribute render {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_namespace =
+  
+  ## supplies the formal name of the namespace to which the elements documented by its children belong.  [2.3.4. ]
+  element namespace {
+    sh_tagUsage+,
+    sh_att.global.attributes,
+    
+    ## specifies the full formal name of the namespace concerned.
+    attribute name { sh_data.namespace },
+    empty
+  }
+sh_rendition =
+  
+  ## supplies information about the rendition or appearance of one or more elements in the source text. [2.3.4. ]
+  element rendition {
+    sh_macro.limitedContent,
+    sh_att.global.attributes,
+    
+    ## identifies the language used to describe the rendition.
+    attribute scheme {
+      
+      ## Cascading Stylesheet Language
+      "css"
+      | 
+        ## Extensible Stylesheet Language Formatting Objects
+        "xslfo"
+      | 
+        ## Informal free text description
+        "free"
+      | 
+        ## A user-defined rendition description language
+        "other"
+    }?,
+    
+    ## where CSS is used, provides a way of defining pseudo-elements, that is, styling rules applicable to specific sub-portions of an element.
+    ## Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after
+    attribute scope { sh_data.enumerated }?,
+    empty
+  }
+sh_styleDefDecl =
+  
+  ##  (style definition language declaration) specifies the name of the formal language in which style or renditional information is supplied elsewhere in the document. [2.3.5. ]
+  element styleDefDecl {
+    sh_model.pLike*,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    sh_att.styleDef.attributes,
+    empty
+  }
+sh_refsDecl =
+  
+  ## (references declaration) specifies how canonical references are constructed for this text. [2.3.6.3.  2.3.  2.3.6. ]
+  element refsDecl {
+    (sh_model.pLike+ | sh_cRefPattern+ | sh_refState+),
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_cRefPattern =
+  
+  ## (canonical reference pattern) specifies an expression and replacement pattern for transforming a canonical reference into a URI.  [2.3.6.3.  2.3.6.  2.3.6.2. ]
+  element cRefPattern {
+    sh_model.pLike*,
+    sh_att.global.attributes,
+    sh_att.patternReplacement.attributes,
+    empty
+  }
+sh_att.patternReplacement.attributes =
+  sh_att.patternReplacement.attribute.matchPattern,
+  sh_att.patternReplacement.attribute.replacementPattern
+sh_att.patternReplacement.attribute.matchPattern =
+  
+  ## specifies a regular expression against which the values of other attributes can be matched.
+  attribute matchPattern { sh_data.pattern }
+sh_att.patternReplacement.attribute.replacementPattern =
+  
+  ## specifies a replacement pattern which, once subpattern substitution has been performed, provides a URI.
+  attribute replacementPattern { text }
+sh_prefixDef =
+  
+  ##  (prefixing scheme used in data.pointer values) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [16.2.3. ]
+  element prefixDef {
+    sh_model.pLike*,
+    sh_att.global.attributes,
+    sh_att.patternReplacement.attributes,
+    
+    ## supplies the identifier which functions as the prefix for an abbreviated pointing scheme such as a private URI scheme. The prefix constitutes the text preceding the first colon.
+    attribute ident { sh_data.name },
+    empty
+  }
+sh_listPrefixDef =
+  
+  ##  (list of prefix definitions) contains a list of definitions of prefixing schemes used in data.pointer values, showing how abbreviated URIs using each scheme may be expanded into full URIs. [16.2.3. ]
+  element listPrefixDef {
+    (sh_prefixDef | sh_listPrefixDef)+, sh_att.global.attributes, empty
+  }
+sh_refState =
+  
+  ## (reference state) specifies one component of a canonical reference defined by the milestone method. [2.3.6.3.  2.3.6. ]
+  element refState {
+    empty,
+    sh_att.global.attributes,
+    sh_att.milestoneUnit.attributes,
+    sh_att.edition.attributes,
+    
+    ## specifies the fixed length of the reference component.
+    attribute length { sh_data.count }?,
+    
+    ## (delimiter) supplies a delimiting string following the reference component.
+    attribute delim { text }?,
+    empty
+  }
+sh_classDecl =
+  
+  ## (classification declarations) contains one or more taxonomies defining any classificatory codes used elsewhere in the text. [2.3.7.  2.3. ]
+  element classDecl { sh_taxonomy+, sh_att.global.attributes, empty }
+sh_taxonomy =
+  
+  ## defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy. [2.3.7. ]
+  element taxonomy {
+    ((sh_model.glossLike | sh_model.descLike)*
+     | sh_category+
+     | (sh_model.biblLike, sh_category*)),
+    sh_att.global.attributes,
+    empty
+  }
+sh_category =
+  
+  ## contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [2.3.7. ]
+  element category {
+    ((sh_catDesc+ | (sh_model.descLike | sh_model.glossLike)*),
+     sh_category*),
+    sh_att.global.attributes,
+    empty
+  }
+sh_catDesc =
+  
+  ## (category description) describes some category within a taxonomy or text typology, either in the form of a brief prose description or in terms of the situational parameters used by the TEI formal textDesc. [2.3.7. ]
+  element catDesc {
+    (text | sh_model.limitedPhrase | sh_model.catDescPart)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_geoDecl =
+  
+  ## (geographic coordinates declaration) documents the notation and the datum used for geographic coordinates expressed as content of the geo element elsewhere within the document. [2.3.8. ]
+  element geoDecl {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    
+    ## supplies a commonly used code name for the datum employed.
+    ## Suggested values include: 1] WGS84(World Geodetic System) ; 2] MGRS(Military Grid Reference System) ; 3] OSGB36(ordnance survey great britain) ; 4] ED50(European Datum coordinate system) 
+    [ a:defaultValue = "WGS84" ]
+    attribute datum {
+      
+      ## (World Geodetic System) a pair of numbers to be interpreted as latitude followed by longitude according to the World Geodetic System.
+      "WGS84"
+      | 
+        ## (Military Grid Reference System) the values supplied are geospatial entity object codes, based on
+        "MGRS"
+      | 
+        ## (ordnance survey great britain) the value supplied is to be interpreted as a British National Grid Reference.
+        "OSGB36"
+      | 
+        ## (European Datum coordinate system) the value supplied is to be interpreted as latitude followed by longitude according to the European Datum coordinate system.
+        "ED50"
+      | xsd:Name
+    }?,
+    empty
+  }
+sh_appInfo =
+  
+  ## (application information) records information about an application which has edited the TEI file. 
+  element appInfo {
+    sh_model.applicationLike+, sh_att.global.attributes, empty
+  }
+sh_application =
+  
+  ## provides information about an application which has acted upon the document.
+  element application {
+    (sh_model.labelLike+, (sh_model.ptrLike* | sh_model.pLike*)),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.datable.attributes,
+    
+    ## Supplies an identifier for the application, independent of its version number or display name.
+    attribute ident { sh_data.name },
+    
+    ## Supplies a version number for the application, independent of its identifier or display name.
+    attribute version {
+      xsd:token {
+        pattern = "[\d]+[a-z]*[\d]*(\.[\d]+[a-z]*[\d]*){0,3}"
+      }
+    },
+    empty
+  }
+sh_profileDesc =
+  
+  ## (text-profile description) provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting. [2.4.  2.1.1. ]
+  element profileDesc {
+    sh_model.profileDescPart*, sh_att.global.attributes, empty
+  }
+sh_handNote =
+  
+  ## (note on hand) describes a particular style or hand distinguished within a manuscript. [10.7.2. ]
+  element handNote {
+    sh_macro.specialPara,
+    sh_att.global.attributes,
+    sh_att.handFeatures.attributes,
+    empty
+  }
+sh_creation =
+  
+  ## contains information about the creation of a text. [2.4.1.  2.4. ]
+  element creation {
+    (text | sh_model.limitedPhrase | sh_listChange)*,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    empty
+  }
+sh_langUsage =
+  
+  ## (language usage) describes the languages, sublanguages, registers, dialects, etc. represented within a text. [2.4.2.  2.4.  15.3.2. ]
+  element langUsage {
+    sh_language+,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_language =
+  
+  ## characterizes a single language or sublanguage used within a text. [2.4.2. ]
+  element language {
+    sh_macro.phraseSeq.limited,
+    sh_att.global.attributes,
+    
+    ## (identifier) Supplies a language code constructed as defined in BCP 47 which is used to identify the language documented by this element, and which is referenced by the global xml:lang attribute.
+    attribute ident { sh_data.language },
+    
+    ## specifies the approximate percentage (by volume) of the text which uses this language. 
+    attribute usage {
+      xsd:nonNegativeInteger { maxInclusive = "100" }
+    }?,
+    empty
+  }
+sh_textClass =
+  
+  ## (text classification) groups information which describes the nature or topic of a text in terms of a standard classification scheme, thesaurus, etc. [2.4.3. ]
+  element textClass {
+    (sh_classCode | sh_catRef | sh_keywords)*,
+    sh_att.global.attributes,
+    sh_att.declarable.attributes,
+    empty
+  }
+sh_keywords =
+  
+  ## contains a list of keywords or phrases identifying the topic or nature of a text. [2.4.3. ]
+  element keywords {
+    (sh_term+ | sh_list),
+    sh_att.global.attributes,
+    
+    ## identifies the controlled vocabulary within which the set of keywords concerned is defined. 
+    attribute scheme { sh_data.pointer }?,
+    empty
+  }
+sh_classCode =
+  
+  ## (classification code) contains the classification code used for this text in some standard classification system. [2.4.3. ]
+  element classCode {
+    sh_macro.phraseSeq.limited,
+    sh_att.global.attributes,
+    
+    ## identifies the classification system or taxonomy in use.
+    attribute scheme { sh_data.pointer },
+    empty
+  }
+sh_catRef =
+  
+  ## (category reference) specifies one or more defined categories within some taxonomy or text typology. [2.4.3. ]
+  element catRef {
+    empty,
+    sh_att.global.attributes,
+    sh_att.pointing.attributes,
+    
+    ## identifies the classification scheme within which the set of categories concerned is defined 
+    attribute scheme { sh_data.pointer }?,
+    empty
+  }
+sh_calendarDesc =
+  
+  ## (calendar description) contains a description of the calendar system used in any dating expression found in the text. [2.4.  2.4.4. ]
+  element calendarDesc { sh_calendar+, sh_att.global.attributes, empty }
+sh_calendar =
+  
+  ## describes a calendar or dating system used in a dating formula in the text. [2.4.4. ]
+  element calendar {
+    sh_model.pLike+,
+    sh_att.global.attributes,
+    sh_att.pointing.attributes,
+    empty
+  }
+sh_revisionDesc =
+  
+  ## (revision description) summarizes the revision history for a file. [2.5.  2.1.1. ]
+  element revisionDesc {
+    (sh_list | sh_listChange | sh_change+),
+    sh_att.global.attributes,
+    sh_att.docStatus.attributes,
+    empty
+  }
+sh_change =
+  
+  ## documents a change or set of changes made during the production of a source document, or during the revision of an electronic file. [2.5.  2.4.1. ]
+  element change {
+    sh_macro.specialPara,
+    sh_att.ascribed.attributes,
+    sh_att.datable.attributes,
+    sh_att.docStatus.attributes,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    
+    ## points to one or more elements that belong to this change.
+    attribute target {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_listChange =
+  
+  ## groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. 
+  element listChange {
+    (sh_listChange | sh_change)+,
+    sh_att.global.attributes,
+    sh_att.sortable.attributes,
+    
+    ## indicates whether the ordering of its child change elements is to be considered significant or not
+    [ a:defaultValue = "true" ]
+    attribute ordered { sh_data.truthValue }?,
+    empty
+  }
+sh_TEI =
+  
+  ## (TEI document) contains a single TEI-conformant document, comprising a TEI header and a text, either in isolation or as part of a teiCorpus element. [4.  15.1. ]
+  element TEI {
+    (sh_teiHeader,
+     ((sh_model.resourceLike+, sh_text?) | sh_text))
+    >> sch:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ]
+    >> sch:ns [
+         prefix = "rng"
+         uri = "http://relaxng.org/ns/structure/1.0"
+       ],
+    sh_att.global.attributes,
+    
+    ## specifies the major version number of the TEI Guidelines against which this document is valid.
+    attribute version { sh_data.version }?,
+    empty
+  }
+sh_text =
+  
+  ## contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [4.  15.1. ]
+  element text {
+    (sh_model.global*,
+     (sh_front, sh_model.global*)?,
+     (sh_body | sh_group),
+     sh_model.global*,
+     (sh_back, sh_model.global*)?),
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    sh_att.typed.attribute.subtype,
+    
+    ##
+    attribute type {
+      
+      ##
+      "Religious"
+      | 
+        ##
+        "Household"
+      | 
+        ##
+        "HistPolitBiograph"
+      | 
+        ##
+        "GeographHistory"
+      | 
+        ##
+        "TravelAdventure"
+      | 
+        ##
+        "OddStrangeEvents"
+      | 
+        ##
+        "ProseFiction"
+      | 
+        ##
+        "RomancesFairyFolk"
+      | 
+        ##
+        "NurseryRhymes"
+      | 
+        ##
+        "Dramatic"
+      | 
+        ##
+        "MetricalTales"
+      | 
+        ##
+        "SongBooks"
+      | 
+        ##
+        "JestBooks"
+      | 
+        ##
+        "Occult"
+      | 
+        ##
+        "Prophecies"
+      | 
+        ##
+        "Crimes"
+      | 
+        ##
+        "Instruction"
+      | 
+        ##
+        "Miscellaneous"
+    }?,
+    empty
+  }
+sh_body =
+  
+  ## (text body) contains the whole body of a single unitary text, excluding any front or back matter. [4. ]
+  element body {
+    (sh_model.global*,
+     (sh_model.divTop, (sh_model.global | sh_model.divTop)*)?,
+     (sh_model.divGenLike, (sh_model.global | sh_model.divGenLike)*)?,
+     ((sh_model.divLike, (sh_model.global | sh_model.divGenLike)*)+
+      | (sh_model.div1Like, (sh_model.global | sh_model.divGenLike)*)+
+      | ((sh_model.common, sh_model.global*)+,
+         ((sh_model.divLike, (sh_model.global | sh_model.divGenLike)*)+
+          | (sh_model.div1Like,
+             (sh_model.global | sh_model.divGenLike)*)+)?)),
+     (sh_model.divBottom, sh_model.global*)*),
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_group =
+  
+  ## contains the body of a composite text, grouping together a sequence of distinct texts (or groups of such texts) which are regarded as a unit for some purpose, for example the collected works of an author, a sequence of prose essays, etc. [4.  4.3.1.  15.1. ]
+  element group {
+    ((sh_model.divTop | sh_model.global)*,
+     ((sh_text | sh_group), (sh_text | sh_group | sh_model.global)*),
+     sh_model.divBottom*),
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_floatingText =
+  
+  ## contains a single text of any kind, whether unitary or composite, which interrupts the text containing it at any point and after which the surrounding text resumes. [4.3.2. ]
+  element floatingText {
+    (sh_model.global*,
+     (sh_front, sh_model.global*)?,
+     (sh_body | sh_group),
+     sh_model.global*,
+     (sh_back, sh_model.global*)?),
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_div =
+  
+  ## (text division) contains a subdivision of the front, body, or back of a text. [4.1. ]
+  element div {
+    ((sh_model.divTop | sh_model.global)*,
+     ((((sh_model.divLike | sh_model.divGenLike), sh_model.global*)+
+       | ((sh_model.common, sh_model.global*)+,
+          ((sh_model.divLike | sh_model.divGenLike),
+           sh_model.global*)*)),
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attribute.subtype,
+    sh_att.declaring.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "cover"
+      | 
+        ##
+        "frontispiece"
+      | 
+        ##
+        "preface"
+      | 
+        ##
+        "alphabet"
+      | 
+        ##
+        "imprint"
+      | 
+        ##
+        "advertisement"
+      | 
+        ##
+        "epistle"
+      | 
+        ##
+        "colophon"
+      | 
+        ##
+        "chapter"
+      | 
+        ##
+        "section"
+      | 
+        ##
+        "bookplate"
+      | 
+        ##
+        "epilogue"
+      | 
+        ##
+        "epigraph"
+    }?,
+    empty
+  }
+sh_div1 =
+  
+  ## (level-1 text division) contains a first-level subdivision of the front, body, or back of a text. [4.1.2. ]
+  element div1 {
+    ((sh_model.divTop | sh_model.global)*,
+     ((((sh_model.div2Like | sh_model.divGenLike), sh_model.global*)+
+       | ((sh_model.common, sh_model.global*)+,
+          ((sh_model.div2Like | sh_model.divGenLike),
+           sh_model.global*)*)),
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_div2 =
+  
+  ## (level-2 text division) contains a second-level subdivision of the front, body, or back of a text. [4.1.2. ]
+  element div2 {
+    ((sh_model.divTop | sh_model.global)*,
+     ((((sh_model.div3Like | sh_model.divGenLike), sh_model.global*)+
+       | ((sh_model.common, sh_model.global*)+,
+          ((sh_model.div3Like | sh_model.divGenLike),
+           sh_model.global*)*)),
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_div3 =
+  
+  ## (level-3 text division) contains a third-level subdivision of the front, body, or back of a text. [4.1.2. ]
+  element div3 {
+    ((sh_model.divTop | sh_model.global)*,
+     ((((sh_model.div4Like | sh_model.divGenLike), sh_model.global*)+
+       | ((sh_model.common, sh_model.global*)+,
+          ((sh_model.div4Like | sh_model.divGenLike),
+           sh_model.global*)*)),
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_div4 =
+  
+  ## (level-4 text division) contains a fourth-level subdivision of the front, body, or back of a text. [4.1.2. ]
+  element div4 {
+    ((sh_model.divTop | sh_model.global)*,
+     ((((sh_model.div5Like | sh_model.divGenLike), sh_model.global*)+
+       | ((sh_model.common, sh_model.global*)+,
+          ((sh_model.div5Like | sh_model.divGenLike),
+           sh_model.global*)*)),
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_div5 =
+  
+  ## (level-5 text division) contains a fifth-level subdivision of the front, body, or back of a text. [4.1.2. ]
+  element div5 {
+    ((sh_model.divTop | sh_model.global)*,
+     ((((sh_model.div6Like | sh_model.divGenLike), sh_model.global*)+
+       | ((sh_model.common, sh_model.global*)+,
+          ((sh_model.div6Like | sh_model.divGenLike),
+           sh_model.global*)*)),
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_div6 =
+  
+  ## (level-6 text division) contains a sixth-level subdivision of the front, body, or back of a text. [4.1.2. ]
+  element div6 {
+    ((sh_model.divTop | sh_model.global)*,
+     ((((sh_model.div7Like | sh_model.divGenLike), sh_model.global*)+
+       | ((sh_model.common, sh_model.global*)+,
+          ((sh_model.div7Like | sh_model.divGenLike),
+           sh_model.global*)*)),
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_div7 =
+  
+  ## (level-7 text division) contains the smallest possible subdivision of the front, body or back of a text, larger than a paragraph. [4.1.2. ]
+  element div7 {
+    ((sh_model.divTop | sh_model.global)*,
+     ((sh_model.common, sh_model.global*)+,
+      (sh_model.divBottom, sh_model.global*)*)?),
+    sh_att.global.attributes,
+    sh_att.divLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_trailer =
+  
+  ## contains a closing title or footer appearing at the end of a division of a text.  [4.2.4.  4.2. ]
+  element trailer {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_byline =
+  
+  ## contains the primary statement of responsibility given for a work on its title page or at the head or end of the work. [4.2.2.  4.5. ]
+  element byline {
+    (text
+     | sh_model.gLike
+     | sh_model.phrase
+     | sh_docAuthor
+     | sh_model.global)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_dateline =
+  
+  ## contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer.  [4.2.2. ]
+  element dateline {
+    sh_macro.phraseSeq, sh_att.global.attributes, empty
+  }
+sh_argument =
+  
+  ## contains a formal list or prose description of the topics addressed by a subdivision of a text. [4.2.  4.6. ]
+  element argument {
+    ((sh_model.global | sh_model.headLike)*,
+     (sh_model.common, sh_model.global*)+),
+    sh_att.global.attributes,
+    empty
+  }
+sh_epigraph =
+  
+  ## contains a quotation, anonymous or attributed, appearing at the start or end of a section or on a title page.  [4.2.3.  4.2.  4.6. ]
+  element epigraph {
+    (sh_model.common | sh_model.global)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_opener =
+  
+  ## groups together dateline, byline, salutation, and similar phrases appearing as a preliminary group at the start of a division, especially of a letter. [4.2. ]
+  element opener {
+    (text
+     | sh_model.gLike
+     | sh_model.phrase
+     | sh_argument
+     | sh_byline
+     | sh_dateline
+     | sh_epigraph
+     | sh_salute
+     | sh_signed
+     | sh_model.global)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_closer =
+  
+  ## groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2.  4.2. ]
+  element closer {
+    (text
+     | sh_model.gLike
+     | sh_signed
+     | sh_dateline
+     | sh_salute
+     | sh_model.phrase
+     | sh_model.global)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_salute =
+  
+  ## (salutation) contains a salutation or greeting prefixed to a foreword, dedicatory epistle, or other division of a text, or the salutation in the closing of a letter, preface, etc. [4.2.2. ]
+  element salute { sh_macro.phraseSeq, sh_att.global.attributes, empty }
+sh_signed =
+  
+  ## (signature) contains the closing salutation, etc., appended to a foreword, dedicatory epistle, or other division of a text.  [4.2.2. ]
+  element signed {
+    sh_macro.paraContent, sh_att.global.attributes, empty
+  }
+sh_postscript =
+  
+  ## contains a postscript, e.g. to a letter. [4.2. ]
+  element postscript {
+    ((sh_model.global | sh_model.divTopPart)*,
+     sh_model.common,
+     (sh_model.global | sh_model.common)*,
+     (sh_model.divBottomPart, sh_model.global*)*),
+    sh_att.global.attributes,
+    empty
+  }
+sh_titlePage =
+  
+  ## (title page) contains the title page of a text, appearing within the front or back matter.  [4.6. ]
+  element titlePage {
+    (sh_model.global*,
+     sh_model.titlepagePart,
+     (sh_model.titlepagePart | sh_model.global)*),
+    sh_att.global.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "titleblock"
+      | 
+        ##
+        "halftitle"
+      | 
+        ##
+        "colophon"
+      | 
+        ##
+        "page"
+    }?,
+    empty
+  }
+sh_docTitle =
+  
+  ## (document title) contains the title of a document, including all its constituents, as given on a title page. [4.6. ]
+  element docTitle {
+    (sh_model.global*, (sh_titlePart, sh_model.global*)+),
+    sh_att.global.attributes,
+    sh_att.canonical.attributes,
+    empty
+  }
+sh_titlePart =
+  
+  ## contains a subsection or division of the title of a work, as indicated on a title page. [4.6. ]
+  element titlePart {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "main"
+      | 
+        ##
+        "sub"
+    }?,
+    empty
+  }
+sh_docAuthor =
+  
+  ## (document author) contains the name of the author of the document, as given on the title page (often but not always contained in a byline). [4.6. ]
+  element docAuthor {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.canonical.attributes,
+    empty
+  }
+sh_imprimatur =
+  
+  ## contains a formal statement authorizing the publication of a work, sometimes required to appear on a title page or its verso. [4.6. ]
+  element imprimatur {
+    sh_macro.paraContent, sh_att.global.attributes, empty
+  }
+sh_docEdition =
+  
+  ## (document edition) contains an edition statement as presented on a title page of a document. [4.6. ]
+  element docEdition {
+    sh_macro.paraContent, sh_att.global.attributes, empty
+  }
+sh_docImprint =
+  
+  ## (document imprint) contains the imprint statement (place and date of publication, publisher name), as given (usually) at the foot of a title page. [4.6. ]
+  element docImprint {
+    (text
+     | sh_model.gLike
+     | sh_model.phrase
+     | sh_pubPlace
+     | sh_docDate
+     | sh_publisher
+     | sh_model.global)*,
+    sh_att.global.attributes,
+    empty
+  }
+sh_docDate =
+  
+  ## (document date) contains the date of a document, as given (usually) on a title page. [4.6. ]
+  element docDate {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    
+    ## gives the value of the date in standard form, i.e. YYYY-MM-DD.
+    attribute when { sh_data.temporal.w3c }?,
+    empty
+  }
+sh_front =
+  
+  ## (front matter) contains any prefatory matter (headers, title page, prefaces, dedications, etc.) found at the start of a document, before the main body. [4.6.  4. ]
+  element front {
+    ((sh_model.frontPart | sh_model.pLike.front | sh_model.global)*,
+     ((sh_model.div1Like,
+       (sh_model.frontPart | sh_model.div1Like | sh_model.global)*)
+      | (sh_model.divLike,
+         (sh_model.frontPart | sh_model.divLike | sh_model.global)*))?,
+     (sh_model.divBottomPart,
+      (sh_model.divBottomPart | sh_model.global)*)?),
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_back =
+  
+  ## (back matter) contains any appendixes, etc. following the main part of a text. [4.7.  4. ]
+  element back {
+    ((sh_model.frontPart | sh_model.pLike.front | sh_model.global)*,
+     ((sh_model.div1Like,
+       (sh_model.frontPart | sh_model.div1Like | sh_model.global)*)
+      | (sh_model.divLike,
+         (sh_model.frontPart | sh_model.divLike | sh_model.global)*))?,
+     (sh_model.divBottomPart,
+      (sh_model.divBottomPart | sh_model.global)*)?),
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_att.datable.custom.attributes =
+  sh_att.datable.custom.attribute.when-custom,
+  sh_att.datable.custom.attribute.notBefore-custom,
+  sh_att.datable.custom.attribute.notAfter-custom,
+  sh_att.datable.custom.attribute.from-custom,
+  sh_att.datable.custom.attribute.to-custom,
+  sh_att.datable.custom.attribute.datingPoint,
+  sh_att.datable.custom.attribute.datingMethod
+sh_att.datable.custom.attribute.when-custom =
+  
+  ## supplies the value of a date or time in some standard form.
+  attribute when-custom {
+    list { sh_data.word+ }
+  }?
+sh_att.datable.custom.attribute.notBefore-custom =
+  
+  ## specifies the earliest possible date for the event in some custom standard form.
+  attribute notBefore-custom {
+    list { sh_data.word+ }
+  }?
+sh_att.datable.custom.attribute.notAfter-custom =
+  
+  ## specifies the latest possible date for the event in some custom standard form.
+  attribute notAfter-custom {
+    list { sh_data.word+ }
+  }?
+sh_att.datable.custom.attribute.from-custom =
+  
+  ## indicates the starting point of the period in some standard form.
+  attribute from-custom {
+    list { sh_data.word+ }
+  }?
+sh_att.datable.custom.attribute.to-custom =
+  
+  ## indicates the ending point of the period in some standard form.
+  attribute to-custom {
+    list { sh_data.word+ }
+  }?
+sh_att.datable.custom.attribute.datingPoint =
+  
+  ## supplies a pointer to some location defining a named point in time with reference to which the datable item is understood to have occurred
+  attribute datingPoint { sh_data.pointer }?
+sh_att.datable.custom.attribute.datingMethod =
+  
+  ## supplies a pointer to a calendar element or other means of interpreting the values of the custom dating attributes.
+  attribute datingMethod { sh_data.pointer }?
+sh_model.persNamePart =
+  sh_surname | sh_forename | sh_genName | sh_nameLink | sh_roleName
+sh_model.persNamePart_alternation =
+  sh_surname | sh_forename | sh_genName | sh_nameLink | sh_roleName
+sh_model.persNamePart_sequence =
+  sh_surname, sh_forename, sh_genName, sh_nameLink, sh_roleName
+sh_model.persNamePart_sequenceOptional =
+  sh_surname?, sh_forename?, sh_genName?, sh_nameLink?, sh_roleName?
+sh_model.persNamePart_sequenceOptionalRepeatable =
+  sh_surname*, sh_forename*, sh_genName*, sh_nameLink*, sh_roleName*
+sh_model.persNamePart_sequenceRepeatable =
+  sh_surname+, sh_forename+, sh_genName+, sh_nameLink+, sh_roleName+
+sh_orgName =
+  
+  ## (organization name) contains an organizational name.  [13.2.2. ]
+  element orgName {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.personal.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_persName =
+  
+  ## (personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. ]
+  element persName {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.personal.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_surname =
+  
+  ## contains a family (inherited) name, as opposed to a given, baptismal, or nick name. [13.2.1. ]
+  element surname {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.personal.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_forename =
+  
+  ## contains a forename, given or baptismal name. [13.2.1. ]
+  element forename {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.personal.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_genName =
+  
+  ## (generational name component) contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named. [13.2.1. ]
+  element genName {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.personal.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_nameLink =
+  
+  ## (name link) contains a connecting phrase or link used within a name but not regarded as part of it, such as van der or of. [13.2.1. ]
+  element nameLink {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_roleName =
+  
+  ## contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank. [13.2.1. ]
+  element roleName {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.personal.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_placeName =
+  
+  ## contains an absolute or relative place name.  [13.2.3. ]
+  element placeName {
+    sh_macro.phraseSeq,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.global.attributes,
+    sh_att.personal.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_country =
+  
+  ## (country) contains the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc. [13.2.3. ]
+  element country {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    sh_att.datable.attributes,
+    empty
+  }
+sh_region =
+  
+  ## contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country. [13.2.3. ]
+  element region {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    sh_att.datable.attributes,
+    empty
+  }
+sh_district =
+  
+  ## contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit. [13.2.3. ]
+  element district {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    sh_att.datable.attributes,
+    empty
+  }
+sh_settlement =
+  
+  ## contains the name of a settlement such as a city, town, or village identified as a single geo-political or administrative unit. [13.2.3. ]
+  element settlement {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    sh_att.datable.attributes,
+    empty
+  }
+sh_offset =
+  
+  ## marks that part of a relative temporal or spatial expression which indicates the direction of the offset between the two place names, dates, or times involved in the expression.  [13.2.3. ]
+  element offset {
+    sh_macro.xtext,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_geogName =
+  
+  ## (geographical name) identifies a name associated with some geographical feature such as Windrush Valley or Mount Sinai. [13.2.3. ]
+  element geogName {
+    sh_macro.phraseSeq,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_geogFeat =
+  
+  ## (geographical feature name) contains a common noun identifying some geographical feature contained within a geographic name, such as valley, mount, etc. [13.2.3. ]
+  element geogFeat {
+    sh_macro.xtext,
+    sh_att.global.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    sh_att.datable.attributes,
+    empty
+  }
+sh_age =
+  
+  ## (age) specifies the age of a person.
+  element age {
+    sh_macro.phraseSeq.limited,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.datable.attributes,
+    
+    ## supplies a numeric code representing the age or age group
+    attribute value { sh_data.count }?,
+    empty
+  }
+sh_birth =
+  
+  ## (birth) contains information about a person's birth, such as its date and place. [15.2.2. ]
+  element birth {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.datable.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_death =
+  
+  ## (death) contains information about a person's death, such as its date and place. [15.2.2. ]
+  element death {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.datable.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_education =
+  
+  ## contains a description of the educational experience of a person. [15.2.2. ]
+  element education {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.datable.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_event =
+  
+  ## (event) contains data relating to any kind of significant event associated with a person, place, or organization.
+  element event {
+    (sh_model.headLike*,
+     (sh_model.pLike+ | sh_model.labelLike+),
+     (sh_model.noteLike | sh_model.biblLike)*,
+     sh_event*),
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.naming.attributes,
+    sh_att.sortable.attributes,
+    
+    ## indicates the location of an event by pointing to a place element
+    attribute where { sh_data.pointer }?,
+    empty
+  }
+sh_faith =
+  
+  ## specifies the faith, religion, or belief set of a person.
+  element faith {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.datable.attributes,
+    sh_att.canonical.attributes,
+    empty
+  }
+sh_floruit =
+  
+  ## contains information about a person's period of activity.
+  element floruit {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    empty
+  }
+sh_geo =
+  
+  ## (geographical coordinates) contains any expression of a set of geographic coordinates, representing a point, line, or area on the surface of the earth in some notation. [13.3.4.1. ]
+  element geo {
+    text, sh_att.global.attributes, sh_att.declaring.attributes, empty
+  }
+sh_langKnowledge =
+  
+  ## (language knowledge) summarizes the state of a person's linguistic knowledge, either as prose or by a list of langKnown elements.
+  element langKnowledge {
+    (sh_model.pLike | sh_langKnown+),
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    
+    ## supplies one or more valid language tags for the languages specified
+    attribute tags {
+      list { sh_data.language+ }
+    }?,
+    empty
+  }
+sh_langKnown =
+  
+  ## (language known) summarizes the state of a person's linguistic competence, i.e., knowledge of a single language. [15.2.2. ]
+  element langKnown {
+    sh_macro.phraseSeq.limited,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    
+    ## supplies a valid language tag for the language concerned.
+    attribute tag { sh_data.language },
+    
+    ## a code indicating the person's level of knowledge for this language 
+    attribute level { sh_data.word }?,
+    empty
+  }
+sh_listOrg =
+  
+  ## (list of organizations) contains a list of elements, each of which provides information about an identifiable organization.  [13.2.2. ]
+  element listOrg {
+    (sh_model.headLike*,
+     (sh_org | sh_listOrg)+,
+     (sh_listRelation | sh_relationGrp | sh_relation)*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.declarable.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_listEvent =
+  
+  ## (list of events) contains a list of descriptions, each of which provides information about an identifiable event. 
+  element listEvent {
+    (sh_model.headLike*,
+     (sh_event | sh_listEvent)+,
+     (sh_relation | sh_relationGrp | sh_listRelation)*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.declarable.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_listPerson =
+  
+  ## (list of persons) contains a list of descriptions, each of which provides information about an identifiable person or a group of people, for example the participants in a language interaction, or the people referred to in a historical source.  [13.3.2.  15.2.  2.4.  15.3.2. ]
+  element listPerson {
+    (sh_model.headLike*,
+     (sh_model.personLike | sh_listPerson)+,
+     (sh_relation | sh_listRelation | sh_relationGrp)*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.declarable.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_listPlace =
+  
+  ## (list of places) contains a list of places, optionally followed by a list of relationships (other than containment) defined amongst them. 
+  element listPlace {
+    (sh_model.headLike*,
+     (sh_model.placeLike | sh_listPlace)+,
+     (sh_listRelation | sh_relationGrp | sh_relation)*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.declarable.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_location =
+  
+  ## defines the location of a place as a set of geographical coordinates, in terms of other named geo-political entities, or as an address.
+  element location {
+    (sh_model.labelLike
+     | sh_model.placeNamePart
+     | sh_model.offsetLike
+     | sh_model.measureLike
+     | sh_model.addressLike
+     | sh_model.noteLike
+     | sh_model.biblLike)*,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    empty
+  }
+sh_nationality =
+  
+  ## contains an informal description of a person's present or past nationality or citizenship. [15.2.2. ]
+  element nationality {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_occupation =
+  
+  ## contains an informal description of a person's trade, profession or occupation. [15.2.2. ]
+  element occupation {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.naming.attributes,
+    
+    ## identifies the classification system or taxonomy in use by supplying the identifier of a taxonomy element typically but not necessarily elsewhere in the current document header.
+    attribute scheme { sh_data.pointer }?,
+    
+    ## identifies an occupation code defined within the classification system or taxonomy defined by the scheme attribute.
+    attribute code { sh_data.pointer }?,
+    empty
+  }
+sh_org =
+  
+  ## (organization) provides information about an identifiable organization such as a business, a tribe, or any other grouping of people. [13.2.2. ]
+  element org {
+    (sh_model.headLike*,
+     (sh_model.pLike*
+      | (sh_model.labelLike
+         | sh_model.nameLike
+         | sh_model.placeLike
+         | sh_model.orgPart)*),
+     (sh_model.noteLike | sh_model.biblLike)*,
+     sh_model.personLike*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.editLike.attributes,
+    sh_att.sortable.attributes,
+    
+    ## specifies a primary role or classification for the organization.
+    attribute role {
+      list { sh_data.word+ }
+    }?,
+    empty
+  }
+sh_listRelation =
+  
+  ## provides information about relationships identified amongst people, places, and organizations, either informally as prose or as formally expressed relation links.  [15.2.2. ]
+  element listRelation {
+    (sh_model.pLike+ | sh_relation+),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_relationGrp =
+  
+  ## (relation group) provides information about relationships identified amongst people, places, and organizations, either informally as prose or as formally expressed relation links.  [15.2.2. ]
+  element relationGrp {
+    (sh_model.pLike+ | sh_relation+),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_person =
+  
+  ## provides information about an identifiable individual, for example a participant in a language interaction, or a person referred to in a historical source. [15.2.2. ]
+  element person {
+    (sh_model.pLike+ | (sh_model.personPart | sh_model.global)*),
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.sortable.attributes,
+    
+    ## specifies a primary role or classification for the person.
+    attribute role {
+      list { sh_data.enumerated+ }
+    }?,
+    
+    ## specifies the sex of the person.
+    attribute sex { sh_data.sex }?,
+    
+    ## specifies an age group for the person.
+    attribute age { sh_data.enumerated }?,
+    empty
+  }
+sh_personGrp =
+  
+  ## (personal group) describes a group of individuals treated as a single person for analytic purposes. [15.2.2. ]
+  element personGrp {
+    (sh_model.pLike+ | sh_model.personPart*),
+    sh_att.global.attributes,
+    sh_att.sortable.attributes,
+    
+    ## specifies the role of this group of participants in the interaction.
+    attribute role { sh_data.enumerated }?,
+    
+    ## specifies the sex of the participant group.
+    attribute sex { sh_data.sex | "mixed" }?,
+    
+    ## specifies the age group of the participants.
+    attribute age { sh_data.enumerated }?,
+    
+    ## specifies the size or approximate size of the group.
+    attribute size {
+      list { sh_data.word+ }
+    }?,
+    empty
+  }
+sh_place =
+  
+  ## contains data about a geographic location
+  element place {
+    (sh_model.headLike*,
+     (sh_model.pLike*
+      | (sh_model.labelLike
+         | sh_model.placeStateLike
+         | sh_model.placeEventLike)*),
+     (sh_model.noteLike | sh_model.biblLike | sh_idno)*,
+     (sh_model.placeLike | sh_listPlace)*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.editLike.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_population =
+  
+  ## contains information about the population of a place.
+  element population {
+    (sh_model.headLike*,
+     ((sh_model.pLike+ | sh_model.labelLike+),
+      (sh_model.noteLike | sh_model.biblLike)*)?,
+     sh_population*),
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_relation =
+  
+  ## (relationship) describes any kind of relationship or linkage amongst a specified group of objects, places, events or people. [15.2.2. ]
+  element relation {
+    (sh_desc?)
+    >> sch:pattern [
+         id = "relation-constraint-activemutual"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relation"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@active and @mutual"
+             "Only one of the attributes\x{a}" ~
+             "@active and @mutual may be supplied"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "relation-constraint-activepassive"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relation"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@passive and not(@active)"
+             "the attribute 'passive'\x{a}" ~
+             "	may be supplied only if the attribute 'active' is\x{a}" ~
+             "	supplied"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.canonical.attributes,
+    sh_att.sortable.attributes,
+    
+    ## categorizes the relationship in some respect, e.g. as social, personal or other.
+    ## Suggested values include: 1] social; 2] personal; 3] other
+    [ a:defaultValue = "personal" ]
+    attribute type {
+      
+      ## relationship concerned with social roles
+      "social"
+      | 
+        ## relationship concerned with personal roles, e.g. kinship, marriage, etc.
+        "personal"
+      | 
+        ## other kinds of relationship
+        "other"
+      | xsd:Name
+    }?,
+    
+    ## supplies a name for the kind of relationship of which this is an instance.
+    attribute name { sh_data.enumerated },
+    (
+     ## identifies the active participants in a non-mutual relationship, or all the participants in a mutual one.
+     attribute active {
+       list { sh_data.pointer+ }
+     }?
+     | 
+       ## supplies a list of participants amongst all of whom the relationship holds equally.
+       attribute mutual {
+         list { sh_data.pointer+ }
+       }?),
+    
+    ## identifies the passive participants in a non-mutual relationship.
+    attribute passive {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_residence =
+  
+  ## (residence) describes a person's present or past places of residence. [15.2.2. ]
+  element residence {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_sex =
+  
+  ## specifies the sex of a person.
+  element sex {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    sh_att.datable.attributes,
+    
+    ## supplies a coded value for sex
+    attribute value { sh_data.sex }?,
+    empty
+  }
+sh_socecStatus =
+  
+  ## (socio-economic status) contains an informal description of a person's perceived social or economic status. [15.2.2. ]
+  element socecStatus {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.naming.attributes,
+    
+    ## identifies the classification system or taxonomy in use.
+    attribute scheme { sh_data.pointer }?,
+    
+    ## identifies a status code defined within the classification system or taxonomy defined by the scheme attribute.
+    attribute code { sh_data.pointer }?,
+    empty
+  }
+sh_state =
+  
+  ## contains a description of some status or quality attributed to a person, place, or organization often at some specific time or for a specific date range.
+  element state {
+    (sh_state+
+     | (sh_model.headLike*,
+        sh_model.pLike+,
+        (sh_model.noteLike | sh_model.biblLike)*)
+     | (sh_model.labelLike | sh_model.noteLike | sh_model.biblLike)*),
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.typed.attributes,
+    sh_att.naming.attributes,
+    empty
+  }
+sh_terrain =
+  
+  ## contains information about the physical terrain of a place.
+  element terrain {
+    (sh_model.headLike*,
+     (sh_model.pLike+ | sh_model.labelLike+),
+     (sh_model.noteLike | sh_model.biblLike)*,
+     sh_terrain*),
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_trait =
+  
+  ## contains a description of some status or quality attributed to a person, place, or organization typically, but not necessarily, independent of the volition or action of the holder and usually not at some specific time or for a specific date range.
+  element trait {
+    (sh_trait+
+     | (sh_model.headLike*,
+        sh_model.pLike+,
+        (sh_model.noteLike | sh_model.biblLike)*)
+     | (sh_model.labelLike | sh_model.noteLike | sh_model.biblLike)*),
+    sh_att.global.attributes,
+    sh_att.datable.attributes,
+    sh_att.editLike.attributes,
+    sh_att.naming.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_nym =
+  
+  ## (canonical name) contains the definition for a canonical name or name component of any kind. [13.3.5. ]
+  element nym {
+    (sh_model.entryPart*, sh_model.pLike*, sh_nym*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.sortable.attributes,
+    
+    ## points to constituent nyms 
+    attribute parts {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_listNym =
+  
+  ## (list of canonical names) contains a list of nyms, that is, standardized names for any thing.  [13.3.5. ]
+  element listNym {
+    (sh_model.headLike*,
+     (sh_nym | sh_listNym)+,
+     (sh_listRelation | sh_relationGrp | sh_relation)*),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.declarable.attributes,
+    sh_att.sortable.attributes,
+    empty
+  }
+sh_att.datable.iso.attributes =
+  sh_att.datable.iso.attribute.when-iso,
+  sh_att.datable.iso.attribute.notBefore-iso,
+  sh_att.datable.iso.attribute.notAfter-iso,
+  sh_att.datable.iso.attribute.from-iso,
+  sh_att.datable.iso.attribute.to-iso
+sh_att.datable.iso.attribute.when-iso =
+  
+  ## supplies the value of a date or time in a standard form.
+  attribute when-iso { sh_data.temporal.iso }?
+sh_att.datable.iso.attribute.notBefore-iso =
+  
+  ## specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd.
+  attribute notBefore-iso { sh_data.temporal.iso }?
+sh_att.datable.iso.attribute.notAfter-iso =
+  
+  ## specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd.
+  attribute notAfter-iso { sh_data.temporal.iso }?
+sh_att.datable.iso.attribute.from-iso =
+  
+  ## indicates the starting point of the period in standard form.
+  attribute from-iso { sh_data.temporal.iso }?
+sh_att.datable.iso.attribute.to-iso =
+  
+  ## indicates the ending point of the period in standard form.
+  attribute to-iso { sh_data.temporal.iso }?
+sh_facsimile =
+  
+  ## contains a representation of some written source in the form of a set of images rather than as transcribed or encoded text. [11.1. ]
+  element facsimile {
+    (sh_front?,
+     (sh_model.graphicLike | sh_surface | sh_surfaceGrp)+,
+     sh_back?),
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_sourceDoc =
+  
+  ## contains a transcription or other representation of a single source document potentially forming part of a dossier génétique or collection of sources.
+  element sourceDoc {
+    (sh_model.global
+     | sh_model.graphicLike
+     | sh_surface
+     | sh_surfaceGrp)+,
+    sh_att.global.attributes,
+    sh_att.declaring.attributes,
+    empty
+  }
+sh_att.global.facs.attributes = sh_att.global.facs.attribute.facs
+sh_att.global.facs.attribute.facs =
+  
+  ## (facsimile) points to all or part of an image which corresponds with the content of the element.
+  attribute facs {
+    list { sh_data.pointer+ }
+  }?
+sh_att.global.change.attributes = sh_att.global.change.attribute.change
+sh_att.global.change.attribute.change =
+  
+  ## points to one or more change elements documenting a state or revision campaign to which the element bearing this attribute and its children have been assigned by the encoder.
+  attribute change {
+    list { sh_data.pointer+ }
+  }?
+sh_surface =
+  
+  ## defines a written surface as a two-dimensional coordinate space, optionally grouping one or more graphic representations of that space, zones of interest within that space, and transcriptions of the writing within them.
+  element surface {
+    ((sh_model.global | sh_model.labelLike | sh_model.graphicLike)*,
+     ((sh_zone | sh_line | sh_surface | sh_surfaceGrp),
+      sh_model.global*)*),
+    sh_att.global.attributes,
+    sh_att.coordinated.attributes,
+    sh_att.declaring.attributes,
+    sh_att.typed.attributes,
+    
+    ## describes the method by which this surface is or was connected to the main surface
+    ## Sample values include: 1] glued; 2] pinned; 3] sewn
+    attribute attachment { sh_data.enumerated }?,
+    
+    ## indicates whether the surface is attached and folded in such a way as to provide two writing surfaces
+    attribute flipping { sh_data.truthValue }?,
+    empty
+  }
+sh_surfaceGrp =
+  
+  ## defines any kind of useful grouping of written surfaces, for example the recto and verso of a single leaf, which the encoder wishes to treat as a single unit. 
+  element surfaceGrp {
+    (sh_model.global | sh_surface | sh_surfaceGrp)+,
+    sh_att.global.attributes,
+    sh_att.coordinated.attributes,
+    sh_att.declaring.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_att.coordinated.attributes =
+  sh_att.coordinated.attribute.start,
+  sh_att.coordinated.attribute.ulx,
+  sh_att.coordinated.attribute.uly,
+  sh_att.coordinated.attribute.lrx,
+  sh_att.coordinated.attribute.lry
+sh_att.coordinated.attribute.start =
+  
+  ## indicates the element within a transcription of the text containing at least the start of the writing represented by this zone or surface.
+  attribute start { sh_data.pointer }?
+sh_att.coordinated.attribute.ulx =
+  
+  ## gives the x coordinate value for the upper left corner of a rectangular space.
+  attribute ulx { sh_data.numeric }?
+sh_att.coordinated.attribute.uly =
+  
+  ## gives the y coordinate value for the upper left corner of a rectangular space.
+  attribute uly { sh_data.numeric }?
+sh_att.coordinated.attribute.lrx =
+  
+  ## gives the x coordinate value for the lower right corner of a rectangular space.
+  attribute lrx { sh_data.numeric }?
+sh_att.coordinated.attribute.lry =
+  
+  ## gives the y coordinate value for the lower right corner of a rectangular space.
+  attribute lry { sh_data.numeric }?
+sh_zone =
+  
+  ## defines any two-dimensional area within a surface element.
+  element zone {
+    (text
+     | sh_model.graphicLike
+     | sh_model.global
+     | sh_surface
+     | sh_model.linePart)*,
+    sh_att.global.attributes,
+    sh_att.coordinated.attributes,
+    sh_att.typed.attributes,
+    
+    ## identifies a two dimensional area within the bounding box specified by the other attributes by means of a series of pairs of numbers, each of which gives the x,y coordinates of a point on a line enclosing the area.
+    attribute points {
+      list {
+        sh_data.point, sh_data.point, sh_data.point, sh_data.point*
+      }
+    }?,
+    
+    ## indicates the amount by which this zone has been rotated clockwise, with respect to the normal orientation of the parent surface element as implied by the dimensions given in the msDesc element or by the coordinates of the surface itself. The orientation is expressed in arc degrees.
+    [ a:defaultValue = "0" ] attribute rotate { sh_data.count }?,
+    empty
+  }
+sh_addSpan =
+  
+  ## (added span of text) marks the beginning of a longer sequence of text added by an author, scribe, annotator or corrector (see also add). [11.3.1.4. ]
+  element addSpan {
+    empty
+    >> sch:pattern [
+         id = "addSpan-constraint-spanTo"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:addSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "The spanTo= attribute of "
+             sch:name [ ]
+             " is required."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "addSpan-constraint-spanTo_fr"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:addSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "L'attribut spanTo est requis."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.transcriptional.attributes,
+    sh_att.placement.attributes,
+    sh_att.typed.attributes,
+    sh_att.spanning.attributes,
+    empty
+  }
+sh_damage =
+  
+  ## contains an area of damage to the text witness. [11.3.3.1. ]
+  element damage {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    sh_att.damaged.attributes,
+    empty
+  }
+sh_damageSpan =
+  
+  ## (damaged span of text) marks the beginning of a longer sequence of text which is damaged in some way but still legible. [11.3.3.1. ]
+  element damageSpan {
+    empty
+    >> sch:pattern [
+         id = "damageSpan-constraint-spanTo"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:damageSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "\x{a}" ~
+             "The @spanTo attribute of "
+             sch:name [ ]
+             " is required."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "damageSpan-constraint-spanTo_fr"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:damageSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "L'attribut spanTo est requis."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.damaged.attributes,
+    sh_att.typed.attributes,
+    sh_att.spanning.attributes,
+    empty
+  }
+sh_delSpan =
+  
+  ## (deleted span of text) marks the beginning of a longer sequence of text deleted, marked as deleted, or otherwise signaled as superfluous or spurious by an author, scribe, annotator, or corrector. [11.3.1.4. ]
+  element delSpan {
+    empty
+    >> sch:pattern [
+         id = "delSpan-constraint-spanTo"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:delSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "The spanTo= attribute of "
+             sch:name [ ]
+             " is required."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "delSpan-constraint-spanTo_fr"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:delSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "L'attribut spanTo est requis."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.transcriptional.attributes,
+    sh_att.typed.attributes,
+    sh_att.spanning.attributes,
+    empty
+  }
+sh_ex =
+  
+  ## (editorial expansion) contains a sequence of letters added by an editor or transcriber when expanding an abbreviation. [11.3.1.2. ]
+  element ex {
+    sh_macro.xtext,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    empty
+  }
+sh_fw =
+  
+  ## (forme work) contains a running head (e.g. a header, footer), catchword, or similar material appearing on the current page. [11.6. ]
+  element fw {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.placement.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "pagenumber"
+      | 
+        ##
+        "catchword"
+      | 
+        ##
+        "signature"
+      | 
+        ##
+        "header"
+      | 
+        ##
+        "footer"
+      | 
+        ##
+        "altpagenumber"
+      | 
+        ##
+        "enumeration"
+    }?,
+    empty
+  }
+sh_handNotes =
+  
+  ## contains one or more handNote elements documenting the different hands identified within the source texts. [11.3.2.1. ]
+  element handNotes { sh_handNote+, sh_att.global.attributes, empty }
+sh_handShift =
+  
+  ## marks the beginning of a sequence of text written in a new hand, or the beginning of a scribal stint. [11.3.2.1. ]
+  element handShift {
+    empty,
+    sh_att.global.attributes,
+    sh_att.handFeatures.attributes,
+    sh_att.responsibility.attributes,
+    
+    ## identifies the new hand.
+    attribute new { sh_data.pointer }?,
+    empty
+  }
+sh_am =
+  
+  ## (abbreviation marker) contains a sequence of letters or signs present in an abbreviation which are omitted or replaced in the expanded form of the abbreviation. [11.3.1.2. ]
+  element am {
+    (text | sh_model.gLike | sh_model.pPart.transcriptional)*,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    empty
+  }
+sh_restore =
+  
+  ## indicates restoration of text to an earlier state by cancellation of an editorial or authorial marking or instruction. [11.3.1.6. ]
+  element restore {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.transcriptional.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_space =
+  
+  ## indicates the location of a significant space in the copy text. [11.5.1. ]
+  element space {
+    (sh_model.descLike | sh_model.certLike)*,
+    sh_att.global.attributes,
+    sh_att.dimensions.attributes,
+    
+    ## (dimension) indicates whether the space is horizontal or vertical.
+    attribute dim {
+      
+      ## the space is horizontal.
+      "horizontal"
+      | 
+        ## the space is vertical.
+        "vertical"
+    }?,
+    
+    ## (responsible party) indicates the individual responsible for identifying and measuring the space.
+    attribute resp { sh_data.pointer }?,
+    empty
+  }
+sh_subst =
+  
+  ## (substitution) groups one or more deletions with one or more additions when the combination is to be regarded as a single intervention in the text.
+  element subst {
+    ((sh_add | sh_del | sh_model.milestoneLike)+)
+    >> sch:pattern [
+         id = "subst-constraint-substContents1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:subst"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "child::tei:add and child::tei:del"
+             "\x{a}" ~
+             "                  "
+             sch:name [ ]
+             " must have at least one child add and at least one child del"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.transcriptional.attributes,
+    empty
+  }
+sh_substJoin =
+  
+  ## (substitution join) identifies a series of possibly fragmented additions, deletions or other revisions on a manuscript that combine to make up a single intervention in the text
+  element substJoin {
+    (sh_model.descLike | sh_model.certLike)*,
+    sh_att.global.attributes,
+    sh_att.pointing.attributes,
+    sh_att.transcriptional.attributes,
+    empty
+  }
+sh_supplied =
+  
+  ## signifies text supplied by the transcriber or editor for any reason, typically because the original cannot be read because of physical damage or loss to the original. [11.3.3.1. ]
+  element supplied {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    
+    ## indicates why the text has had to be supplied.
+    attribute reason {
+      list { sh_data.word+ }
+    }?,
+    empty
+  }
+sh_surplus =
+  
+  ## marks text present in the source which the editor believes to be superfluous or redundant. [11.3.3.1. ]
+  element surplus {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.editLike.attributes,
+    
+    ## indicates the grounds for believing this text to be superfluous.
+    attribute reason {
+      list { sh_data.word+ }
+    }?,
+    empty
+  }
+sh_line =
+  
+  ## contains the transcription of a topographic line in the source document
+  element line {
+    (text | sh_model.global | sh_model.linePart)*,
+    sh_att.typed.attributes,
+    sh_att.global.attributes,
+    sh_att.coordinated.attributes,
+    empty
+  }
+sh_listTranspose =
+  
+  ## supplies a list of transpositions, each of which is indicated at some point in a document typically by means of metamarks.
+  element listTranspose {
+    sh_transpose+, sh_att.global.attributes, empty
+  }
+sh_metamark =
+  
+  ## contains or describes any kind of graphic or written signal within a document the function of which is to determine how it should be read rather than forming part of the actual content of the document.
+  element metamark {
+    sh_macro.specialPara,
+    sh_att.spanning.attributes,
+    sh_att.placement.attributes,
+    sh_att.global.attributes,
+    
+    ## describes the function (for example status, insertion, deletion, transposition) of the mark.
+    attribute function { sh_data.word }?,
+    
+    ## identifies one or more elements to which the function indicated by the metamark applies. 
+    attribute target {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_mod =
+  
+  ## represents any kind of modification identified within a single document.
+  element mod {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.transcriptional.attributes,
+    sh_att.typed.attributes,
+    sh_att.spanning.attributes,
+    empty
+  }
+sh_redo =
+  
+  ## indicates one or more cancelled interventions in a document which have subsequently been marked as reaffirmed or repeated.
+  element redo {
+    empty,
+    sh_att.global.attributes,
+    sh_att.spanning.attributes,
+    sh_att.transcriptional.attributes,
+    
+    ## points to one or more elements representing the interventions which are being reasserted.
+    attribute target {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_retrace =
+  
+  ## contains a sequence of writing which has been retraced, for example by over-inking, to clarify or fix it.
+  element retrace {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.spanning.attributes,
+    sh_att.transcriptional.attributes,
+    empty
+  }
+sh_transpose =
+  
+  ## describes a single textual transposition as an ordered list of at least two pointers specifying the order in which the elements indicated should be re-combined. 
+  element transpose {
+    (sh_ptr, sh_ptr+), sh_att.global.attributes, empty
+  }
+sh_undo =
+  
+  ## indicates one or more marked-up interventions in a document which have subsequently been marked for cancellation.
+  element undo {
+    empty,
+    sh_att.global.attributes,
+    sh_att.spanning.attributes,
+    sh_att.transcriptional.attributes,
+    
+    ## points to one or more elements representing the interventions which are to be reverted or undone.
+    attribute target {
+      list { sh_data.pointer+ }
+    }?,
+    empty
+  }
+sh_table =
+  
+  ## contains text displayed in tabular form, in rows and columns. [14.1.1. ]
+  element table {
+    ((sh_model.headLike | sh_model.global)*,
+     ((sh_row, sh_model.global*)+
+      | (sh_model.graphicLike, sh_model.global*)+),
+     (sh_model.divBottom, sh_model.global*)*),
+    sh_att.global.attributes,
+    
+    ## indicates the number of rows in the table.
+    attribute rows { sh_data.count }?,
+    
+    ## (columns) indicates the number of columns in each row of the table.
+    attribute cols { sh_data.count }?,
+    empty
+  }
+sh_row =
+  
+  ## contains one row of a table.  [14.1.1. ]
+  element row {
+    sh_cell+,
+    sh_att.global.attributes,
+    sh_att.tableDecoration.attributes,
+    empty
+  }
+sh_cell =
+  
+  ## contains one cell of a table.  [14.1.1. ]
+  element cell {
+    sh_macro.paraContent,
+    sh_att.global.attributes,
+    sh_att.tableDecoration.attributes,
+    empty
+  }
+sh_formula =
+  
+  ## contains a mathematical or other formula. [14.2. ]
+  element formula {
+    (text | sh_model.graphicLike | sh_model.hiLike)*,
+    sh_att.global.attributes,
+    
+    ## names the notation used for the content of the element.
+    attribute notation { sh_data.enumerated }?,
+    empty
+  }
+sh_notatedMusic =
+  
+  ## encodes the presence of music notation in a text
+  element notatedMusic {
+    (sh_model.labelLike
+     | sh_model.ptrLike
+     | sh_graphic
+     | sh_binaryObject)*,
+    sh_att.global.attributes,
+    sh_att.placement.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_figure =
+  
+  ## groups elements representing or containing graphic information such as an illustration, formula, or figure. [14.4. ]
+  element figure {
+    (sh_model.headLike
+     | sh_model.common
+     | sh_figDesc
+     | sh_model.graphicLike
+     | sh_model.global
+     | sh_model.divBottomPart
+     | sh_iconClass)*,
+    sh_att.global.attributes,
+    sh_att.placement.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_figDesc =
+  
+  ## (description of figure) contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it. [14.4. ]
+  element figDesc {
+    sh_macro.limitedContent, sh_att.global.attributes, empty
+  }
+sh_g =
+  
+  ## (character or glyph) represents a glyph, or a non-standard character. [5. ]
+  element g {
+    text,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    
+    ## points to a description of the character or glyph intended.
+    attribute ref { sh_data.pointer }?,
+    empty
+  }
+sh_char =
+  
+  ## (character) provides descriptive information about a character. 
+  element char {
+    (sh_charName?,
+     sh_model.descLike*,
+     sh_charProp*,
+     sh_mapping*,
+     sh_figure*,
+     sh_model.graphicLike*,
+     sh_model.noteLike*),
+    sh_att.global.attributes,
+    empty
+  }
+sh_charName =
+  
+  ## (character name) contains the name of a character, expressed following Unicode conventions. 
+  element charName { text, sh_att.global.attributes, empty }
+sh_charProp =
+  
+  ## (character property) provides a name and value for some property of the parent character or glyph. 
+  element charProp {
+    ((sh_unicodeName | sh_localName), sh_value),
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_charDecl =
+  
+  ## (character declarations) provides information about nonstandard characters and glyphs. 
+  element charDecl {
+    (sh_desc?, (sh_char | sh_glyph)+),
+    sh_att.global.attributes,
+    empty
+  }
+sh_glyph =
+  
+  ## (character glyph) provides descriptive information about a character glyph. 
+  element glyph {
+    (sh_glyphName?,
+     sh_model.descLike*,
+     sh_charProp*,
+     sh_mapping*,
+     sh_figure*,
+     sh_model.graphicLike*,
+     sh_model.noteLike*),
+    sh_att.global.attributes,
+    empty
+  }
+sh_glyphName =
+  
+  ## (character glyph name) contains the name of a glyph, expressed following Unicode conventions for character names. 
+  element glyphName { text, sh_att.global.attributes, empty }
+sh_localName =
+  
+  ## (locally-defined property name) contains a locally defined name for some property. 
+  element localName { text, sh_att.global.attributes, empty }
+sh_mapping =
+  
+  ## (character mapping) contains one or more characters which are related to the parent character or glyph in some respect, as specified by the type attribute.
+  element mapping {
+    sh_macro.xtext,
+    sh_att.global.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_unicodeName =
+  
+  ## (unicode property name) contains the name of a registered Unicode normative or informative property. 
+  element unicodeName {
+    text,
+    sh_att.global.attributes,
+    
+    ## specifies the version number of the Unicode Standard in which this property name is defined.
+    attribute version { sh_data.version }?,
+    empty
+  }
+sh_value =
+  
+  ## (value) contains a single value for some property, attribute, or other analysis.
+  element value { sh_macro.xtext, sh_att.global.attributes, empty }
+sh_s =
+  
+  ## (s-unit) contains a sentence-like division of a text. [17.1.  8.4.1. ]
+  element s {
+    sh_macro.phraseSeq
+    >> sch:pattern [
+         id = "s-constraint-noNestedS"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:s"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "tei:s"
+             "You may not nest one s element within\x{a}" ~
+             "      another: use seg instead"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.segLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_cl =
+  
+  ## (clause) represents a grammatical clause. [17.1. ]
+  element cl {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.segLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_phr =
+  
+  ## (phrase) represents a grammatical phrase. [17.1. ]
+  element phr {
+    sh_macro.phraseSeq,
+    sh_att.global.attributes,
+    sh_att.segLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_w =
+  
+  ## (word) represents a grammatical (not necessarily orthographic) word. [17.1. ]
+  element w {
+    (text
+     | sh_model.gLike
+     | sh_w
+     | sh_m
+     | sh_c
+     | sh_model.global
+     | sh_model.lPart
+     | sh_model.hiLike
+     | sh_model.pPart.edit)*,
+    sh_att.global.attributes,
+    sh_att.segLike.attributes,
+    sh_att.typed.attributes,
+    
+    ## provides a lemma for the word, such as an uninflected dictionary entry form.
+    attribute lemma { sh_data.text }?,
+    
+    ## provides a pointer to a definition of the lemma for the word, for example in an online lexicon. 
+    attribute lemmaRef { sh_data.pointer }?,
+    empty
+  }
+sh_m =
+  
+  ## (morpheme) represents a grammatical morpheme. [17.1. ]
+  element m {
+    (text | sh_model.gLike | sh_m | sh_c | sh_model.global)*,
+    sh_att.global.attributes,
+    sh_att.segLike.attributes,
+    sh_att.typed.attributes,
+    
+    ## identifies the morpheme's base form.
+    attribute baseForm { sh_data.word }?,
+    empty
+  }
+sh_c =
+  
+  ## (character) represents a character. [17.1. ]
+  element c {
+    sh_macro.xtext,
+    sh_att.global.attributes,
+    sh_att.segLike.attributes,
+    sh_att.typed.attributes,
+    empty
+  }
+sh_pc =
+  
+  ##  (punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [17.1. ]
+  element pc {
+    (text | sh_model.gLike | sh_c | sh_model.pPart.edit)*,
+    sh_att.global.attributes,
+    sh_att.segLike.attributes,
+    sh_att.typed.attributes,
+    
+    ## indicates the extent to which this punctuation mark conventionally separates words or phrases
+    attribute force {
+      
+      ## the punctuation mark is a word separator
+      "strong"
+      | 
+        ## the punctuation mark is not a word separator
+        "weak"
+      | 
+        ## the punctuation mark may or may not be a word separator
+        "inter"
+    }?,
+    
+    ## provides a name for the kind of unit delimited by this punctuation mark.
+    attribute unit { sh_data.enumerated }?,
+    
+    ## indicates whether this punctuation mark precedes or follows the unit it delimits.
+    attribute pre { sh_data.truthValue }?,
+    empty
+  }
+sh_att.global.analytic.attributes = sh_att.global.analytic.attribute.ana
+sh_att.global.analytic.attribute.ana =
+  
+  ## (analysis) indicates one or more elements containing interpretations of the element on which the ana attribute appears.
+  attribute ana {
+    list { sh_data.pointer+ }
+  }?
+sh_span =
+  
+  ## associates an interpretative annotation directly with a span of text. [17.3. ]
+  element span {
+    sh_macro.phraseSeq.limited
+    >> sch:pattern [
+         id = "span-constraint-targetfrom"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@from and @target"
+             "\x{a}" ~
+             "Only one of the attributes @target and @from may be supplied on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "span-constraint-targetto"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@to          and          @target"
+             "\x{a}" ~
+             "Only one of the attributes @target and @to may be supplied on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "span-constraint-tonotfrom"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@to          and          not(@from)"
+             "\x{a}" ~
+             "If @to is supplied on "
+             sch:name [ ]
+             ", @from must be supplied as well"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "span-constraint-tofrom"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:span"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "contains(@to,' ') or contains(@from,' ')"
+             "\x{a}" ~
+             "The attributes @to and @from on "
+             sch:name [ ]
+             " may each contain only a single value"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sh_att.global.attributes,
+    sh_att.interpLike.attributes,
+    sh_att.pointing.attributes,
+    
+    ## gives the identifier of the node which is the starting point of the span of text being annotated; if not accompanied by a to attribute, gives the identifier of the node of the entire span of text being annotated.
+    attribute from { sh_data.pointer }?,
+    
+    ## gives the identifier of the node which is the end-point of the span of text being annotated.
+    attribute to { sh_data.pointer }?,
+    empty
+  }
+sh_spanGrp =
+  
+  ## (span group) collects together span tags. [17.3. ]
+  element spanGrp {
+    sh_span*,
+    sh_att.global.attributes,
+    sh_att.interpLike.attributes,
+    empty
+  }
+sh_interp =
+  
+  ## (interpretation) summarizes a specific interpretative annotation which can be linked to a span of text. [17.3. ]
+  element interp {
+    (text | sh_model.gLike | sh_model.descLike | sh_model.certLike)*,
+    sh_att.global.attributes,
+    sh_att.interpLike.attributes,
+    empty
+  }
+sh_interpGrp =
+  
+  ## (interpretation group) collects together a set of related interpretations which share responsibility or type. [17.3. ]
+  element interpGrp {
+    (sh_model.descLike*, sh_interp+),
+    sh_att.global.attributes,
+    sh_att.interpLike.attributes,
+    empty
+  }
+sh_iconClass =
+  
+  ## This element is the ICONCLASS assigned to the images contained in the woodcut. The name element contains the ICONCLASS code. The desc element contains a text ICONCLASS associates with the code.
+  element ns2:iconClass {
+    sh_name, sh_desc, sh_att.global.attributes, empty
+  }
+start = sh_TEI | sh_teiCorpus

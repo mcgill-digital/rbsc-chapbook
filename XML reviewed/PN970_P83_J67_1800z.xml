@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name><note/>
+            </change>
+
+            <change>
+                <date when="2012-11-16"/>
+                <label>Initial TEI Markup</label>
+                <name>Kara Garvey</name><note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-06"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Religious">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="green coloured leaves">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">&ldquo;I DON'T BELIEVE IN<lb/>YOUR WAY.&rdquo;</title>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>11P5</name>
+                            <desc>spreading the gospel; missionary work</desc>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <series>
+                    <biblScope rend="align(left)">No.32</biblScope>
+                    </series>
+                </bibl>
+            </div>
+        </front>
+
+        <body>
+            <figure type="borderornament"/>
+            <pb n="2"/>
+            <head rend="align(centre)">&ldquo; I DON'T BELIEVE IN
+                YOUR<lb/>WAY.&rdquo;<lb/>&rule;<lb/></head>
+            <p rend="first-indent(1) align(justify)">SO said a respectable fatherly&ndash;<lb
+                    type="inWord"/>looking old man in the town of<lb/>B&mdash;, in England.</p>
+            <p rend="first-indent(2) align(justify)">I had taken a handful of tracts<lb/>and gone
+                out to visit in the district<lb/>where I lived, to speak of Jesus,<lb/>and to invite
+                the perishing ones to<lb/>hear the story of his matchless love<lb/>to sinners.</p>
+            <p rend="first-indent(2) align(justify)">On knocking at one door,
+                my<lb/>fatherly&ndash;looking friend presented<lb/>himself. I asked him kindly if
+                he<lb/>would accept of a tract. He said<lb/>&ldquo;No, I don't believe in your
+                way.&rdquo;<lb/>I said &ldquo;No, I don't believe in my<lb/>own way.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">My old friend stared at me as if<lb/>I had been
+                an apparition from the<lb/>spirit world. I remained silent <pb n="3"/> until the
+                silence became painful.<lb/>My friend was bewildered. I said<lb/>&ldquo; I did
+                believe in my own way for<lb/>the first twenty years of my life, and<lb/>I'll tell
+                you what my own way was.<lb/>I was well brought up by Christian<lb/>parents, went
+                regularly to church<lb/>from my infancy, and joined the<lb/>church when I became old
+                enough;<lb/>I often read my Bible and said my<lb/>prayers; I never did any one
+                any<lb/>harm; I always paid my way&mdash;in<lb/>short, I was <hi rend="italic">doing
+                    my best</hi>.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Well,&rdquo; said my friend, &ldquo;I
+                think<lb/>that was a very good way.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;Yes,&rdquo; I replied, &ldquo;I thought
+                so<lb/>too; but I found it was not <hi rend="italic">God's<lb/>way</hi>. I found it
+                written in God's<lb/>word, &lsquo;Verily, verily, I say unto<lb/>thee, except a man
+                be born again<lb/>he cannot see the kingdom of God&rsquo;<lb/>(John <num type="roman numeral">iii</num>. 3).
+                &lsquo;He that believeth<lb/>not is condemned already&rsquo; (verse 18);<lb/>&lsquo;
+                He that believeth not the Son shall<lb/>not see life; but the wrath of God <pb n="4"
+                /> abideth on him&rdquo; (verse 36). &lsquo;He<lb/>that believeth not shall be
+                damned &rsquo;<lb/>(Mark <num type="roman numeral">xvi</num>. 16). &lsquo; Now to him that<lb/>worketh is the reward
+                not reckoned<lb/>of grace, but of debt; but to him<lb/>that worketh not, but <hi
+                    rend="italic">believeth</hi> on<lb/>Him that justifieth the ungodly,
+                his<lb/>faith is counted for righteousness&rsquo;<lb/>(Romans <num type="roman numeral">iv</num>. 4, 5). I found my
+                way<lb/>was in direct opposition to <hi rend="italic">God's<lb/>way</hi>. I was on
+                the <hi rend="italic">doing line</hi>, and<lb/>that is the down line to dark
+                    dam&ndash;<lb type="inWord"/>nation.&rdquo; &ldquo; By the deeds of the
+                law<lb/>there shall be no flesh justified in<lb/>his sight &rdquo; (Romans <num type="roman numeral">iii</num>.
+                20.)</p>
+            <p rend="first-indent(2) align(justify)">My friend believed in a salvation<lb/>without
+                faith and a religion without<lb/>Christ. He would not simply<lb/>receive it as the
+                gift of God by faith,<lb/>who says, &ldquo; look unto Me and be ye<lb/>saved&rdquo;
+                (Isaiah <num type="roman numeral">xlv</num>. 22).</p>
+            <p rend="first-indent(2) align(justify)">Do you believe in your own way<lb/>or in God's
+                way? Which? God's<lb/>testimony of us is that &ldquo;we have<lb/>turned every one to
+                his own way &rdquo; <pb n="5"/> (Isaiah l<num type="roman numeral">iii</num>. 6). That is the broad<lb/>way (Matthew
+                <num type="roman numeral">vii</num>. 13), and it leads<lb/>to destruction just as surely as God<lb/>has said it.
+                Your way may <hi rend="italic">seem</hi><lb/>right. &ldquo; There is a way
+                which<lb/>seemeth right unto a man, but the<lb/>ends thereof are the ways of
+                death<lb/>(Proverbs <num type="roman numeral">xiv</num>. 12). Jesus says, &ldquo;<hi rend="italic">I<lb/>am the
+                    way</hi>&rdquo; (John <num type="roman numeral">xiv</num>. 6). &ldquo;He<lb/><hi rend="italic">that hath</hi>
+                the Son <hi rend="italic">hath life</hi>; and he<lb/>that <hi rend="italic">hath
+                    not</hi> the Son of God <hi rend="italic">hath<lb/>not life</hi>&rdquo; (I John
+                <num type="roman numeral">v.</num> 12).</p>
+            <p rend="first-indent(2) align(justify)">Now, I think I hear you say&mdash;<lb/>&ldquo;
+                But you know I have been well<lb/>brought up, and I know my
+                Bible<lb/>well.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Yes; but that is just your own<lb/>way. You are
+                too far up to take<lb/>Christ, as a lost perishing sinner;<lb/>but, like little
+                Zaccheus, you must<lb/><hi rend="italic">come down</hi>. Nicodemus was
+                well<lb/>brought up; but with all his up&ndash;<lb type="inWord"/>bringing, he was
+                going to hell, right<lb/>to hell. Up&ndash;bringing will prove<lb/>but a rotten twig
+                to hold on to for <pb n="6"/> salvation, &ldquo;for there is none other<lb/>name
+                under heaven given among<lb/>men whereby we must be saved &rdquo;<lb/>(Acts <num type="roman numeral">iv</num>. 12)
+                but the &ldquo;name of Jesus<lb/>Christ of Nazareth&rdquo; (verse 10).<lb/>Jesus
+                says, &ldquo;<hi rend="italic">I am the way</hi>.&rdquo; But<lb/>you say, &ldquo; I
+                am not an unbeliever.<lb/>I believe the Bible, and have always<lb/>believed in
+                Christ.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Then you are saved ?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Oh no, I cannot say
+                that&mdash;it<lb/>would be great presumption in me<lb/>to say that.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">But God says it; and whether is<lb/>it more
+                presumptuous to take God<lb/>at His word or <hi rend="italic">make Him a liar
+                ?</hi><lb/>(I John <num type="roman numeral">v</num>. 10). It is one thing to<lb/>believe that Christ came into
+                the<lb/>world more than eighteen hundred<lb/>years ago, and died to save sinners
+                ;<lb/>it is quite another thing, as a lost<lb/>sinner, to believe on Him as
+                my<lb/>personal Saviour. I may believe<lb/>that my dinner is on the
+                table<lb/>waiting for me; but that will not <pb n="7"/> satisfy me&mdash;I must
+                really partake<lb/>or die. So it is not believing <hi rend="italic"
+                >about</hi><lb/>Christ, but believing <hi rend="italic">on</hi> Him,
+                &ldquo;and<lb/>he that believeth on the Son <hi rend="italic">hath<lb/>everlasting
+                    life</hi>&rdquo; (John <num type="roman numeral">iii</num>. 36).<lb/>Mark the word <hi rend="italic"
+                    >h&ndash;a&ndash;t&ndash;h</hi> &ldquo;hath ever&ndash;<lb type="inWord"
+                />lasting life.&rdquo; God says so.</p>
+            <p rend="first-indent(2) align(justify)">But you say, &ldquo; I am a member of<lb/>the
+                Church.&rdquo; Very good, if you are<lb/>saved ; but if you are
+                unconverted,<lb/>your taking the sacrament is one of<lb/>the blackest sins under
+                heaven. It<lb/>is eating and drinking judgment to<lb/>yourself (I Cor. <num type="roman numeral">xi</num>. 29).
+                    Church&ndash;<lb type="inWord"/>membership is not Christ. Jesus<lb/>says,
+                &ldquo; <hi rend="italic">I am the way</hi>.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">At the close of a gospel meeting<lb/>lately I
+                was asked to speak to an<lb/>anxious woman. When I got<lb/>through the many that
+                were there<lb/>to where she was sitting, she<lb/>grasped me by the hand, and
+                with<lb/>streaming eyes, and choking with<lb/>emotion, she said, &ldquo; Oh sir, I
+                have<lb/>been a member of the Church for <pb n="8"/> twenty&ndash;four years, and I
+                never knew<lb/>till to&ndash;night that I am a lost sinner ; &rdquo;<lb/>and as she
+                buried her face in her<lb/>handkerchief, she sobbed out, &ldquo; O<lb/>what must I
+                do to be saved ? &rdquo;</p>
+            <p rend="first-indent(2) align(justify)">I pointed her to the Lamb of<lb/>God,
+                &ldquo;who His own self bare our<lb/>sins in His own body on the tree&rdquo;<lb/>(I
+                Peter <num type="roman numeral">ii</num>. 24). She saw that<lb/>&ldquo; while we were yet sinners, Christ<lb/>died
+                for us&rdquo; (Rom. <num type="roman numeral">v</num>. 8). She<lb/>believed and lived. The smile of<lb/>heaven was
+                on her face, her yet<lb/>undried tears sparkled under the<lb/>Sun of Righteousness
+                like the dew<lb/>under the morning sun. I left her<lb/>rejoicing in the Lord. This
+                is God's<lb/>way of saving sinners.</p>
+            <p rend="first-indent(2) align(justify)">Have done with your own way,<lb/>your own
+                doing, your upbringing,<lb/>and your religiousness. None of<lb/>these will
+                save&mdash;all put together<lb/>cannot save you. Jesus says, &ldquo; I<lb/>am the
+                Way.&rdquo;</p>
+            <docAuthor rend="align(right)">J. M. S.</docAuthor>
+        </body>
+        <back/>
+    </text>
+</TEI>

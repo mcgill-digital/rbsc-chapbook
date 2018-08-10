@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013-02-12"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        <change>                 <date when="2013-03-20"/>                 <label>Available to Library Technology Services for processing</label>                 <name/>                 <note/>             </change>         </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="HistPolitBiograph">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="green coloured pictoral wrappers align(centre)">
+                <bibl><publisher>PRINTED BY S. &amp;J. KEYS,</publisher> <pubPlace>DEVONPORT.</pubPlace>
+                    <lb/>&rule;
+                    <lb/><figure type="borderornament"/>
+                    <lb/><title level="m" rend="within borderornament">THE LIFE OF
+                        <lb/>DICK TURPIN</title>
+                    <lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>46C131</name>
+                            <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                        </ic:iconClass>
+                        <head>TURPIN BILKING THE HORNSEY TOLL&ndash;BAR</head>
+                    </figure>
+                </bibl>
+            </div>
+
+            <pb n="2"/>
+
+        </front>
+        <body>
+            <pb n="3"/>
+            <head type="work" rend="align(centre)">LIFE AND ADVENTURES OF<lb/>DICK
+                TURPIN.<lb/>&rule;</head><lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C131</name>
+                    <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="align(justify)"><c rend="lettrine">R</c>ICHARD TURPIN was born in Essex, where
+                his father kept<lb/>the Bell Inn, and, after having been the usual time at
+                school,<lb/>he was bound apprentice to a butcher, in Whitechapel; but he did<lb/>not
+                serve out his time, his master discharging him from his house,<lb/>for his
+                brutality, and the impropriety of his conduct generally.<lb/>Turpin was not a little
+                encouraged by his parents, who improperly<lb/>indulged him and supplied him with
+                money, whereby be was enabled<lb/>to cut a figure in the town, among the blades of
+                the &ldquo;road&rdquo; and<lb/>&ldquo;turf,&rdquo; whose company he affected to
+                keep.</p>
+            <p rend="first-indent(2) align(justify)">Very early in life he was taken up for poaching
+                on the grounds<lb/>of Sir Litton Weston. The principal evidence against him
+                was<lb/>Black Dennis, the gamekeeper. He was tried, and the case not<lb/>having been
+                proved very clearly against him, he was remanded for<lb/>further examination.</p>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">2</fw>
+            <fw type="header" rend="align(centre)">THE LIFE OF</fw><lb/>
+            <p rend="first-indent(2) align(justify)">The ponderous prison lock was turned upon him,
+                and the vision<lb/>of his early days recurred to his memory, which presented a
+                painful<lb/>distinctness and reality to his mind's eye.</p>
+            <p rend="first-indent(2) align(justify)">He paced round his narrow cell; the image of
+                Dennis recurred<lb/>to him ; he seized him, and, in imagination, tore him with the
+                    fero&ndash;<lb type="inWord"/>city of a caged tiger&mdash;he stamped him to the
+                earth, and struggled<lb/>till the cold drops of perspiration started from every
+                pore.</p>
+            <p rend="first-indent(2) align(justify)">The possibility of an escape presented itself
+                to his view, and in<lb/>less than an hour he succeeded in effecting it. Skirting the
+                shady<lb/>side of the hedges, and occasionally making his way along a dry<lb/>ditch,
+                at the expense of a few scratches from the brambles, he took<lb/>the direction of
+                his foster&ndash;mother's house. He went to the back<lb/>part of it. Selecting a few
+                small pebbles, he threw them cautiously<lb/>against the glass. After repeating this
+                several times he ventured<lb/>upon trusting his voice in a low whisper. &ldquo;
+                Hist, dear mother, it<lb/>is I&mdash;your son Richard,&rdquo; said he. No reply,
+                however, came from<lb/>the direction in which his voice was directed ; but at length
+                his ear<lb/>caught the sound of the fastenings of the back&ndash;door being
+                cautiously<lb/>removed.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Come in, for God's sake ! &rdquo; said
+                a female voice&mdash;(it was that of<lb/>a girl, who acted in the capacity of a
+                servant)&mdash;&ldquo; all the people said<lb/>you were committed to prison
+                &rdquo;</p>
+            <p rend="first-indent(2) align(justify)">They entered the house, Turpin knew too well
+                the value of every<lb/>moment, and the danger of his situation, to risk his liberty
+                by<lb/>remaining long ; he, therefore, after making up a small bundle
+                of<lb/>immediate necessaries, and leaving a promise that his mother should<lb/>soon
+                hear from him, bade farewell to his home, and again took to the<lb/>fields.</p>
+            <p rend="first-indent(2) align(justify)">Though well aware of his liability to
+                apprehension, he could not<lb/>quit Hempstead without one farewell of the scene of
+                his joys&mdash;<lb/>the garden of Esther Bevis. Thither he cautiously directed
+                his<lb/>steps. The house of Dennis rose upon his view: he thought of<lb/>revenge.
+                While thus lurking in the shadow of the trees he fancied<lb/>he heard the hum of
+                men's voices : the sounds approached&mdash;and, as<lb/>he lay close to the trunk of
+                a tree, two men neared the spot.<lb/>Turpin's blood boiled, as the voice of Dennis
+                met his ear, and he<lb/>caught the following part of the conversation.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Why, what a precious hurry you're in.
+                You're a bigger fool<lb/>than I took you to be; but I'd advise you not to ride rusty
+                with<lb/>your friends. We're all in it; and if so be you can't do as I do,<lb/>I'll
+                take care you don't get the best of me. But I'll show you as<lb/>how I'll act
+                honourable. Why, the valley (value) of what them<lb/>cups and spoons 'ud fetch, now,
+                is nothink ; put your price on 'em,<lb/>and I'll make up the reg'lars ; I'd scorn to
+                have it said I done a pal.<lb/>Hows'ever, when we've got this younker out of the
+                way&mdash;an' I think<lb/>I've spun his hemp for him&mdash;you shan'n't fiad me
+                backward ; but it
+
+            <pb n="5"/>
+            <fw type="header" rend="align(centre)">RICHARD TURPIN.</fw>
+            <fw type="pagenumber" rend="align(right)">3</fw><lb/>
+                might be as well as if yer comed no nearer to the house nor this, for<lb/>there's
+                that old affair still out agin yer. Here's all I have just now,<lb/>but meet me on
+                Monday, at Sam's hovel, in the marsh, and I'll<lb/>make it all right. Good
+                bye.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">So saying, Dennis put some silver into the
+                hands of his scoundrel&ndash;<lb type="inWord"/>looking accomplice, who stealthily
+                moved off among the trees. &ldquo; I<lb/>don't half like that vagabound,&rdquo; said
+                he, soliloquising ; &ldquo; but I must<lb/>sweeten him a trifle just now. I guess
+                Master Dick is sorry by<lb/>this time as how he has made me his enemy.&rdquo;</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>33B14</name>
+                    <desc>threatening behaviour, challenging</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(2) align(justify)">Dennis began to examine the priming of his 
+                <choice><corr>gun</corr><orig>guu</orig></choice>.
+                At this<lb/>moment a rustle among the leaves struck on his ear, and while he<lb/>was
+                looking for its cause, the very object of his thoughts rushed to&ndash;<lb
+                    type="inWord"/>wards him. The gun was half raised to his shoulder, when,
+                with<lb/>one hand, Turpin struck down the weapon, and fixing the other with<lb/>a
+                gripe, strong as his hatred, on the throat of Dennis, dashed him<lb/>violently
+                against the bole of a tree. His senses reeled, as Richard<lb/>compressed the
+                villain's throat; and clutching the barrel of the gun,<lb/>the trigger caught some
+                part of his dress, exploded, and lodged the<lb/>charge in the body of Dennis. The
+                man leaped from the ground<lb/>with a piercing shriek, and fell heavily at the feet
+                of Turpin, while
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">THE LIFE OF</fw><lb/>
+                the blood from his side changed the green turf into a dull red. He<lb/>cast the gun
+                from him, and feeling that he was a murderer, fled<lb/>with speed, which he
+                slackened not until he had placed some miles<lb/>between himself and his murdered
+                victim.</p>
+            <p rend="first-indent(2) align(justify)">He now resolved to make his way into London for
+                a while, and<lb/>then betake himself to some foreign land.</p>
+            <p rend="first-indent(2) align(justify)">Soon after this his friends tried to persuade
+                him to marry, hoping<lb/>it would reclaim him ; but it was to no purpose, for he
+                joined a<lb/>desperate gang of thieves, with whom he committed several
+                daring<lb/>robberies on the highway, and afterwards they turned
+                housebreakers.<lb/>One of the most cruel of those transactions was the robbery of
+                an<lb/>old woman at Loughton, who, refusing to tell where her money was<lb/>hidden,
+                was put by Turpin upon the fire, where she was held till she<lb/>made a disclosure,
+                when they took her off the grate, and robbed her<lb/>of all they could find. They
+                next robbed a farmer at Ripple&ndash;side,<lb/>near Barking, and got about
+                &pound;700, which amounted to about &pound;80<lb/>a man. They also attacked the
+                house of Mr. Mason, the keeper of<lb/>the Epping Forest, where, in revenge for his
+                former zeal in detect&ndash;<lb type="inWord"/>ing their poaching, they destroyed
+                every thing. But Turpin was<lb/>not in this affair. After plundering Mr. Saunders's
+                house, and<lb/>committing numerous other crimes, Turpin and his
+                companions<lb/>resolved to appear, in future, on horseback. They accordingly
+                hired<lb/>horses at the Old Leaping Bar, in High Holborn, and went to<lb/>Stenmore,
+                where they robbed the house of Mr. Lawrence, using<lb/>great brutality, but got
+                little plunder. These actions alarmed the<lb/>country, and a reward of &pound;50 was
+                offered to any of them who would<lb/>impeach his accomplices. Shortly afterwards
+                several of the gang<lb/>were taken and hanged ; and Turpin, being left to himself,
+                hastened <lb/>to Cambridge, as the safest place, where he turned
+                highwayman.<lb/>Near Alton he met with a comical adventure, which gained him<lb/>a
+                very merry companion&mdash;Tom King, the highwayman, who was<lb/>returning from this
+                place to London. Turpin seeing him to be well<lb/>drest and mounted, and to have
+                the appearance of a gentleman, rode <lb/>up to him, and presenting his pistols, bade
+                him stand and deliver,<lb/>when King, laughing, said, &ldquo; What! dog rob dog ?
+                Come, come,<lb/>brother Turpin, if you don't know me I know you, and shall be
+                glad<lb/>of your company.&rdquo; After a mutual communication of
+                circumstances,<lb/>they agreed to keep company in future. They proceeded to
+                make<lb/>themselves a cave in the earth, on the Waltham side of Epping,<lb/>near the
+                sign of the King's Oak. Through several holes they could<lb/>discover the passengers
+                in the road, and would issue forth and rob<lb/>them. Upon one occasion Turpin and
+                King stopped a person of<lb/>very decent appearance, near Hackney, and demanded his
+                money;<lb/>but the gentleman, bursting into tears, said he was in great
+                distress,<lb/>and possessed only eighteen&ndash;pence, upon which, instead of
+                robbing<lb/>him, they made him a present of a half&ndash;a&ndash;crown.</p>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">RICHARD TURPIN.</fw>
+            <fw type="pagenumber" rend="align(right)">5</fw><lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>33B14</name>
+                    <desc>threatening behaviour, challenging</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(2) align(justify)">Turpin had for a long while gone on in the most
+                daring way.<lb/>A reward having been offered for his apprehension, many
+                were<lb/>induced to attempt his capture: among the rest was the
+                ranger,<lb/>Thomson's man, who, in company with a higgler, whom he
+                heard<lb/>advancing, sought to discover the spot of Turpin's retirement.<lb/>Having
+                reached the thicket in which the cave was concealed, Thom&ndash;<lb type="inWord"
+                />son's man proceeded to reconnoitre. Turpin was at this time un&ndash;<lb
+                    type="inWord"/>armed, and standing alone. Not knowing the man, he took him
+                for<lb/>one poaching for hares, and told him he would get no hares in
+                that<lb/>thicket. &ldquo; No,&rdquo; said the fellow, &ldquo; but I've got a
+                Turpin!&rdquo; and,<lb/>presenting his gun, commanded him to surrender. Turpin
+                stood<lb/>talking with him, and, receding to the cave, laid hold of his
+                carbine<lb/>and shot him dead, at which the higgler made off. Affairs wore
+                a<lb/>very serious aspect for a short time; Turpin was obliged to be
+                very<lb/>cautious in his approaches to the metropolis. Turpin and King
+                next<lb/>joined one Potter, a desperate roadsman, and performed many rob&ndash;<lb
+                    type="inWord"/>beries ; Turpin being sometimes disguised in a miller's frock,
+                and<lb/>at others drest like a waggoner. Thus disguised he rode a good
+                horse<lb/>towards London, and, when near the Green Man, met one Mr.
+                Major,<lb/>(owner of White Stockings, the race&ndash;horse) whom he robbed,
+                and<lb/>took from him his whip. Finding Mr. Major had a better horse<lb/>than his
+                own, he made him quickly dismount, and change saddles,
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">THE LIFE OF</fw><lb/>
+                also, when he rode on to London. On the Monday following Mr.<lb/>Bayes, landlord of
+                the Green Man, heard that such horse at Mr.<lb/>Major had lost was left at the Red
+                Lion Inn, in Whitechapel.<lb/>Going thither, he found it to be the same, and
+                resolved to wait till<lb/>somebody came to fetch it. About eleven o'clock at night
+                King's<lb/>brother came for the horse. He was immediately taken into
+                custody<lb/>when he told the constable, who was charged with him, that a
+                lusty<lb/>man, in a white duffel coat, had sent him for the horse, and that
+                he<lb/>was then waiting for it in Red&ndash;Lion&ndash;street. Mr. Bayes
+                immediately<lb/>went out, found it was King, and attacked him. King clapped
+                a<lb/>pistol to Mr. Baye's breast, but it luckily flashed in the pan.</p>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>31EE23472</name>
+                    <desc>violent death by fusillade - EE - death not certain; wounded person</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(2) align(justify)">Turpin who was waiting at a short distance, now
+                came up, when<lb/>King cried out, &ldquo; Damn ye, shoot him Dick, or we shall be
+                taken.&rdquo;<lb/>and instantly Turpin let fly one of his pistols, which wounded
+                King<lb/>severely in two places, who said, &ldquo;Why, Dick, you have killed
+                me,<lb/>or nearly so.&rdquo; Turpin, alarmed, rode off as fast as he could ; and
+                it<lb/>was then that the thoughts of executing his extraordinary ride to<lb/>York
+                first flashed across him ; his bosom throbbed high with rapture,<lb/>and he
+                involuntarily exclaimed aloud, as he raised himself in the<lb/>saddle, &ldquo; By
+                G&mdash;, I will do it ! &rdquo;</p>
+
+            <pb n="9"/>
+            <fw type="header" rend="align(centre)">RICHARD TURPIN.</fw>
+            <fw type="pagenumber" rend="align(right)">7</fw><lb/>
+            <p rend="first-indent(2) align(justify)">He took one last look at the great Babel that
+                lay buried in a<lb/>world of trees beneath him ; and as his quick eye ranged over
+                the<lb/>magnificent prospect, lit up by the gorgeous sunset, he could not<lb/>help
+                thinking of Tom King's last words. &ldquo; Poor fellow ! &rdquo; thought<lb/>Dick,
+                he said, truly, &ldquo; he should never see another sunset.&rdquo; Aroused<lb/>by
+                the approaching clatter of his pursuers, who were but little behind<lb/>him, Dick
+                struck into a lane which lies on the right of the road now<lb/>called
+                Shoot&ndash;up&ndash;hill&ndash;lane, and set off at a good pace, in the
+                direction<lb/>of Hempstead.</p>
+            <p rend="first-indent(2) align(justify)">His pursuers were now within a hundred yards,
+                and shouted to<lb/>him to stand. Pointing to a gate which seemed to bar their
+                farther<lb/>progress. Dick, unhesitatingly, charged it, clearing it in
+                beautiful<lb/>style. Not so with Coate's party; and the time they lost in
+                    un&ndash;<lb type="inWord"/>fastening the gate, which none of them liked to
+                leap, enabled Dick<lb/>to put additional space between himself and them.</p>
+            <p rend="first-indent(2) align(justify)">The whole neighbourhood was alarmed by the
+                cries, and by the<lb/>tramp of horses. The men of Hornsey rushed into the road to
+                seize<lb/>the fugitive; and suddenly three horsemen appear in the road ;
+                they<lb/>hear the uproar and din. &ldquo; A highwayman&mdash;a highwayman ! &rdquo;
+                cry<lb/>the voices, &ldquo;stop him&mdash;stop him !&rdquo; but it was no such easy
+                matter.<lb/>With a pistol in each hand, and his bridle in his teeth, did
+                Turpin<lb/>boldly pass on. The horsemen gave way, and only to swell the list<lb/>of
+                the pursuers.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;We have him now&mdash;we have him now !
+                &rdquo; cried Paterson exult&ndash;<lb type="inWord"/>ingly. &ldquo;Shout for your
+                lives&mdash;the turnpike&ndash;man will hear us&mdash;<lb/>shout again, again
+                :&mdash;the fellow has heard it&mdash;the gate is shut; we<lb/>have him&mdash;ha, ha
+                !&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">The old Hornsey toll&ndash;bar was a high gate,
+                with cheveux de frize<lb/>in the upper rail. The gate was swung in its lock, and the
+                    turnpike&ndash;<lb type="inWord"/>man ensconced within his doorway, ready to
+                spring upon the run&ndash;<lb type="inWord"/>away; but Dick kept steadily on. He
+                looked to the right and to<lb/>the left; nothing better offered ; he spoke a few
+                words of encourage&ndash;<lb type="inWord"/>ment to Bess, gently patted her neck,
+                then struck spurs into her<lb/>sides, and cleared the spikes by an inch. Out rushed
+                the amazed<lb/>turnpike&ndash;man, thus unmercifully bilked, and was nearly
+                trampled<lb/>to death under the feet of Paterson's horse.</p>
+            <p rend="first-indent(2) align(justify)">The pursuers lost considerable time by waiting
+                for the turnpike&ndash;<lb type="inWord"/>man to open the gate.</p>
+            <p rend="first-indent(2) align(justify)">A few more miles hard riding tired the
+                volunteers, and before the<lb/>chase reached Edmonton, most of them were &ldquo; no
+                where.&rdquo;&mdash;Unlike<lb/>the men of Tottenham, the people received him with
+                acclamations,<lb/>thinking, no doubt, that, &ldquo;like the citizen of famous London
+                town,&rdquo;<lb/>he rode for a wager. Presently, however, borne on the wings
+                of<lb/>the blast, came the cries of &ldquo;Turpin, Dick Turpin!&rdquo; and
+                the<lb/>hurrahs were changed to hootings; but such was the rate at which<lb/>our
+                highwayman rode, that no serious opposition could be offered to
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+            <fw type="header" rend="align(centre)">THE LIFE OF</fw><lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C131</name>
+                    <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                </ic:iconClass>
+            </figure>
+                him. A man in a donkey&ndash;cart, unable to get out of the way, drew<lb/>himself up
+                in the middle of the road ; but Turpin treated him as he<lb/>had done the dub at the
+                knapping&ndash;jigger, and cleared the driver<lb/>and his little wain with ease. He
+                finally reached York, without<lb/>being overtaken by his pursuers.</p>
+            <p rend="first-indent(2) align(justify)">For the last two years of his life Turpin seems
+                to have confined<lb/>his residence mostly to the county of York, where, taking the
+                name<lb/>of Palmer, he appears to have been so little known, that his
+                company<lb/>was chiefly with the best yeomen of the county. At length
+                    suspi&ndash;<lb type="inWord"/>cion was somehow raised that he was the outlaw
+                Turpin ; and two<lb/>persons coming from Lincolnshire, to claim a mare and a foal,
+                and a<lb/>horse, which he had stolen in that county, he was committed to<lb/>York
+                Castle. He had two trials, upon both of which he was con&ndash;<lb type="inWord"
+                />victed on the most conclusive evidence.</p>
+            <p rend="first-indent(2) align(justify)">The unfortunate prisoner, who received no
+                assistance to secure<lb/>him from the inclemency of the law, was hanged, as
+                previously<lb/>sentenced, on the 7th of April, 1739.</p>
+            <div type="colophon">
+                <p rend="align(centre)">&rule;<lb/>DEVONPORT : PRINTED BY SAMUEL AND JOHN KEYS.</p>
+            </div>
+        </body>
+
+        <back>
+            <pb n="11"/>
+            <pb n="12"/>
+            <div type="section">
+                <figure type="borderornament"/>
+                <head rend="align(centre)">ON BLACK BESS, TURPIN'S FAVORITE
+                    MARE.<lb/>&rule;</head><lb/>
+                <lg>
+                    <l><c rend="lettrine">L</c>ET the lover his mistress's beauty rehearse,</l>
+                    <l>And laud her attractions in languishing verse;</l>
+                    <l>Be it mine in rude strains, but with truth to express,</l>
+                    <l>The love that I bear to my bonny Black Bess.</l>
+                    <l>From the west was her dame, from the east was her sire,</l>
+                    <l>From the one came her swiftness, the other her fire ;</l>
+                    <l>No peer of the realm better blood can possess,</l>
+                    <l>Than flows in the veins of my bonny Black Bess.</l>
+                    <lb/>
+                    <l>Look ! look how that eye&ndash;ball glows bright as a brand,</l>
+                    <l>That neck proudly arches, those nostrils expand !</l>
+                    <l>Mark that wide&ndash;flowing mane, of which each silken tress</l>
+                    <l>Might adorn prouder beauties&mdash;though none like Black Bess.</l>
+                    <l>Mark that skin sleek as velvet, and dusky as night,</l>
+                    <l>With its jet undisfigured with one lock of white ;</l>
+                    <l>The throat branched with veins, prompt to charge or caress,</l>
+                    <l>Now, is she not beautiful!&mdash;bonny Black Bess!</l>
+                    <lb/>
+                    <l>Over highway and byeway, in rough and smooth weather,</l>
+                    <l>Some thousands of miles have we journeyed together !</l>
+                    <l>Our couch the same straw, and our meal the same mess.</l>
+                    <l>No couple more constant than I and Black Bess.</l>
+                    <l>By moonlight, in darkness, by night, or by day,</l>
+                    <l>Her headlong career there is nothing can stay;</l>
+                    <l>She cares not for distance, she knows not distress,</l>
+                    <l>Can you show me a courser to match with Black Bess?</l>
+                    <lb/>
+                    <l>Once it happened in Cheshire, near Durham, I popped</l>
+                    <l>On a horseman alone, whom I speedily stopped;</l>
+                    <l>That I lightened his pockets you'll readily guess&mdash;</l>
+                    <l>Quick work makes Dick Turpin when mounted on Bess.</l>
+                    <l>Now it seems that man knew me : &ldquo; Dick Turpin,&rdquo; said he,</l>
+                    <l>&ldquo; You shall swing for this job, as you live, d'ye see ; &rdquo;</l>
+                    <l>I laughed at his threats and his vows of redress,</l>
+                    <l>I was sure of an <hi rend="italic">alibi</hi> then with Black Bess.</l>
+                    <lb/>
+                    <l>Brake, brook, meadow, ploughed field, Bess fleetly bestrode ;</l>
+                    <l>As the crow wings her flight, we directed our road;</l>
+                    <l>We arrived at Hough Green in five minutes or less,&mdash;</l>
+                    <l>My neck it was saved by the speed of Black Bess.</l>
+                    <l>Stepping carelessly forward, I lounge on the green,</l>
+                    <l>Take excellent care that by all I am seen :</l>
+                    <l>Some remarks on time's flight to the 'squire I address,</l>
+                    <l>But I say not a word on the flight of Black Bess.</l>
+                    <lb/>
+                    <l>I mention the hour&mdash;it was just about four&mdash;</l>
+                    <l>Play a rubber at bowls, think the danger is o'er;</l>
+                    <l>When athwart my next game, like a checkmate at chess,</l>
+                    <l>Comes the horsemen in search of the rider of Bess.</l>
+                    <l>What matter details? Off with triumph I came,</l>
+                    <l>He swears to the hour, and the 'squires swear to the same;</l>
+                    <l>I robbed him at four; while at four they profess</l>
+                    <l>I was quietly bowling, all thanks to Black Bess.</l>
+                    <l>Then one halloo, boys, one loud cheering, halloo,</l>
+                    <l>To the swiftest of coursers, the gallant, the true!</l>
+                    <l>For the sportsman unborn shall the memory bless</l>
+                    <l>Of the horse of the highway, bonny Black Bess.</l>
+                </lg>
+            </div>
+        </back>
+    </text>
+</TEI>

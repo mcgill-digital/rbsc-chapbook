@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013-02-04"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="NurseryRhymes">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="yellow coloured pictoral wrappers">
+                <bibl>
+                    <title level="m" rend="align(centre)">TOM, <lb/><hi rend="italic">THE PIPER'S
+                            SON.</hi></title>
+                    <lb/>&rule; <lb/>
+                </bibl>
+                <lg>
+                    <l>With all the fun.</l>
+                    <l>That he had done.</l>
+                    <l rend="indent(6)">And how at last he went to France,</l>
+                    <l rend="indent(6)">To teach great Bonaparte to dance.</l>
+                </lg>
+                <figure>
+                    <ic:iconClass>
+                        <name>45B</name>
+                        <desc>the soldier; the soldier's life</desc>
+                    </ic:iconClass>
+                </figure>
+                <bibl>
+                    <lb/>&rule;&rule; <lb/><pubPlace><hi rend="italic">YORK</hi>:</pubPlace>
+                    <lb/><publisher>Printed by J. Kendrew, Colliergate.</publisher>
+                </bibl>
+            </div>
+        </front>
+        <body>
+            <pb n="2"/>
+            <fw type="pagenumber" rend="align(left)">2</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>31A27112</name>
+                    <desc>running</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>TOM, Tom, the Piper's son,</l>
+                <l>Stole a pig and away he ran,</l>
+                <l>The pig was eat, and Tom was beat,</l>
+                <l>And Tom came roaring down the<lb rend="indent(5)"/>street ;</l>
+                <l>Yes, yes, Tom stole the pig,</l>
+                <l>And at school they flogg'd his rig.</l>
+            </lg>
+
+            <pb n="3"/>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <fw type="pagenumber" rend="align(right)">3</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>47I212</name>
+                    <desc>pig</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Here's a long tail'd pig,</l>
+                <l>Or a short tail'd pig,</l>
+                <l>Or a pig without a tail,</l>
+                <l>A boar pig, or a sow pig,</l>
+                <l>Or a pig with a curley tail.</l>
+            </lg>
+
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">4</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>46B412</name>
+                    <desc>selling</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(2) align(justify)">This man makes pigs of paste and<lb/>fills
+                their bellies with currants, and<lb/>places two little currants in their<lb/>heads
+                for eyes ; so while the man set<lb/>down the basket to sell a little Miss
+                a<lb/>curley tail'd pig, Tom ran away with<lb/>a long tail'd pig: but he would
+                not<lb/>have stolen it, if he had known what<lb/>sauce he should have had to it.</p>
+
+            <pb n="5"/>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <fw type="pagenumber" rend="align(right)">5</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>44G373</name>
+                    <desc>corporal punishment in public</desc>
+                </ic:iconClass>
+            </figure>
+            <p rend="first-indent(2) align(justify)">For he was beat in the street, and<lb/>whipped
+                at school, and made to beg<lb/>pardon on his marrow&ndash;bones, and pro&ndash;<lb
+                    type="inWord"/>mise never to steal any thing again,<lb/>thus after the
+                sweet&ndash;meat of stealing<lb/>he got the sour sauce of correction.</p>
+
+            <pb n="6"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>48C7351</name>
+                    <desc>flute, aulos, tibia</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l rend="indent(2)">Tom he was a piper's son,</l>
+                <l>He learn'd to play while he was young,</l>
+                <l>All the tunes that he could play,</l>
+                <l>Was over the hills and far away.</l>
+            </lg>
+
+            <pb n="7"/>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <fw type="pagenumber" rend="align(right)">7</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>43C9</name>
+                    <desc>dancing</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Tom with his pipe then made such a<lb rend="indent(5)"/>noise.</l>
+                <l>Pleasing the old, the girls and the boys,</l>
+                <l>They'd dance and sing while he did<lb rend="indent(5)"/>play,</l>
+                <l>Over the hills and far away.</l>
+            </lg>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>29A</name>
+                    <desc>animals acting as human beings</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Now Tom after this, learn'd to play<lb rend="indent(5)"/>with such skill,</l>
+                <l>That whoever heard him could never<lb rend="indent(5)"/>stand still ;</l>
+                <l>As soon as he play'd they began for<lb rend="indent(5)"/>to dance,</l>
+                <l>E'en pigs on their hind legs did after<lb rend="indent(5)"/>him prance.</l>
+            </lg>
+
+            <pb n="9"/>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <fw type="pagenumber" rend="align(right)">9</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>29A</name>
+                    <desc>animals acting as human beings</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>As Dolly was milking her cow one day,</l>
+                <l>Tom took out his pipe and began for<lb rend="indent(5)"/>to play ;</l>
+                <l>The cow danc'd, and Doll danc'd, a<lb rend="indent(5)"/>merry go round,</l>
+                <l>Till the pail it was broke and the milk<lb rend="indent(5)"/>on the ground.</l>
+            </lg>
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(left)">10</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>43C9</name>
+                    <desc>dancing</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>He met old Dame Trot with a basket<lb rend="indent(5)"/>of eggs,</l>
+                <l>He used his pipe and she used her legs,</l>
+                <l>She danced about till her eggs were<lb rend="indent(5)"/>all broke,</l>
+                <l>Then he left her to fret, while he<lb rend="indent(5)"/>laugh'd at the joke.</l>
+            </lg>
+
+            <pb n="11"/>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <fw type="pagenumber" rend="align(right)">11</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>29A</name>
+                    <desc>animals acting as human beings</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Tom saw a cross fellow who was beat&ndash;<lb type="inWord"/>ing an ass,</l>
+                <l>Heavy laden with pots, pans, dishes,<lb rend="indent(5)"/>and glass,</l>
+                <l>He played them a jig, and they danc'd<lb rend="indent(5)"/>to a tune,</l>
+                <l>That the load of the jackass was<lb rend="indent(5)"/>lightened soon.</l>
+            </lg>
+
+            <pb n="12"/>
+            <fw type="pagenumber" rend="align(left)">12</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>29A</name>
+                    <desc>animals acting as human beings</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Once a Dog got a sow fast hold by<lb rend="indent(5)"/>the ear,</l>
+                <l>The sow squall'd out murder, and<lb rend="indent(5)"/>Tom being near,</l>
+                <l>He play'd them a tune, and they did<lb rend="indent(5)"/>not dance bad,</l>
+                <l>Considering the little experience they<lb rend="indent(5)"/>had.</l>
+            </lg>
+
+            <pb n="13"/>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <fw type="pagenumber" rend="align(right)">13</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>48C7351</name>
+                    <desc>flute, aulos, tibia</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Tom met with a Parson in a sad dirty<lb rend="indent(5)"/>place,</l>
+                <l>Where he made him to dance he had<lb rend="indent(5)"/>so little grace,</l>
+                <l>He danc'd in the dirt, till he danc'd<lb rend="indent(5)"/>in a ditch,</l>
+                <l>Where he left him in mud quite up to<lb rend="indent(5)"/>the breech.</l>
+            </lg>
+
+            <pb n="14"/>
+            <fw type="pagenumber" rend="align(left)">14</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>31B13</name>
+                    <desc>sleeping on the ground</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Some little time after, Tom slept on<lb rend="indent(5)"/>some hay,</l>
+                <l>The very same Parson was passing<lb rend="indent(5)"/>that way,</l>
+                <l>He took poor Tom's pipe and bid him<lb rend="indent(5)"/>prepare,</l>
+                <l>To answer his crimes before the Lord<lb rend="indent(5)"/>Mayor.</l>
+            </lg>
+
+            <pb n="15"/>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <fw type="pagenumber" rend="align(right)">15</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>44B231</name>
+                    <desc>mayor, burgomaster</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>To the Lord Mayor he took him, and<lb rend="indent(5)"/>told Tom's art,</l>
+                <l>To make people dance with a sorrow&ndash;<lb type="inWord"/>ful heart,</l>
+                <l>Begg'd he'd send him to sea, where he<lb rend="indent(5)"/>might teach a
+                    dance,</l>
+                <l>To the great Bonaparte, the First<lb rend="indent(5)"/>Consul of France.</l>
+            </lg>
+
+            <pb n="16"/>
+            <fw type="pagenumber" rend="align(left)">16</fw>
+            <fw type="header" rend="align(centre)">TOM, THE PIPER'S SON.</fw>
+            <lb/>
+            <figure>
+                <ic:iconClass>
+                    <name>43C94</name>
+                    <desc>group dancing</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Says Tom, I am willing to fight<lb rend="indent(5)"/>against France,</l>
+                <l>First give me my pipe, I'll teach<lb rend="indent(5)"/>Boney a dance.</l>
+                <l>They gave him his pipe, he began for<lb rend="indent(5)"/>to play,</l>
+                <l>And the Parson and Mayor went<lb rend="indent(5)"/>dancing away.</l>
+            </lg>
+        </body>
+        <back>
+            <div type="colophon">
+                <p rend="align(centre)">&rule;<lb/>J. KENDREW, PRINTER, YORK.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

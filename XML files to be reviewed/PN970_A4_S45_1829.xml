@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012-12-05"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-07-11"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013"/>
+                <label>Reviewed by Encoder Wid</label>
+                <name/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="MetricalTales">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="Beige coloured pictorial wrappers">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">THE<lb/>SHIPWRECK.</title><lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>46C291</name>
+                            <desc>shipwreck</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <publisher rend="align(centre)">PUBLISHED BY THE<lb/>American
+                        Tract<lb/>Society,</publisher><lb/><pubPlace>
+                        <hi rend="italics">No.</hi> 144 <hi rend="italic">
+                        Nassau&ndash;St.</hi><lb/>New&ndash;York.</pubPlace><lb/>&rule;<lb/>
+                    <series>
+                        <biblScope rend="align(left)">SERIES <num type="roman numeral"
+                            >II</num></biblScope>
+                        <biblScope>NO. <num type="roman numeral">XXVII</num>.</biblScope>
+                    </series>
+                </bibl>
+
+                <pb n="2"/>
+
+            </div>
+            <pb n="3"/>
+            <titlePage>
+                <fw rend="align(right)">THE №27.</fw>
+                <lb/>
+                <docTitle>
+                    <titlePart type="main" rend="align(centre)">THE<lb/>SHIPWRECK.<lb/></titlePart>
+                    <titlePart type="sub" rend="align(centre)">SHOWING<lb/>WHAT SOMETIMES
+                        HAPPENS<lb/>ON THE<lb/>SEA COASTS:<lb/></titlePart>
+                    <titlePart type="sub" rend="align(centre)"><hi rend="italics">Also giving a
+                            Particular Account of</hi><lb/>A POOR SAILOR BOY,</titlePart>
+                    <titlePart type="sub" rend="align(left)">Who was refused any Assistance by the
+                            Wreck&ndash;<lb rend="indent(2)"/>ers, and who died in consequence of
+                        their In&ndash;<lb rend="indent(2)"/>human Conduct.</titlePart>
+                </docTitle>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C294</name>
+                        <desc>wreck ashore</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint rend="align(centre)">
+                    <publisher>PUBLISHED BY<lb/>THE AMERICAN TRACT SOCIETY,</publisher>
+                    <lb/><pubPlace> 144 Nassau&ndash;street, New&ndash;York.</pubPlace>
+                </docImprint>
+            </titlePage>
+            <pb n="4"/>
+            <div type="frontispiece">
+                <figure rend="landscape">
+                    <ic:iconClass>
+                        <name>46C292</name>
+                        <desc>drowning, shipwrecked person</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+        </front>
+        <body>
+            <pb n="5"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>46C232</name>
+                    <desc>rowing-boat, canoe, etc.</desc>
+                </ic:iconClass>
+            </figure>
+            <head type="work" rend="align(centre)">THE SHIPWRECK,<lb/>&orn;</head>
+            <lb/>
+            <lg>
+                <l>IN winter's rude storm, when the tem&ndash;<lb type="inWord" rend="indent(6)"
+                    />pests blow loud,</l>
+                <l rend="indent(2)">And the hail drives full hard 'gainst<lb rend="indent(6)"/>the
+                    door,</l>
+                <l>And babes run together, like lambs in a<lb rend="indent(6)"/>crowd,</l>
+                <l>And cling to their mother, as, forth from<lb rend="indent(6)"/>a cloud,</l>
+                <l rend="indent(2)">Fresh and deep&ndash;roaring torrents still<lb rend="indent(6)"
+                    />pour :</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>When wolves through the forest in sa&ndash;<lb type="inWord" rend="indent(6)"
+                    />vageness scowl,</l>
+                <l rend="indent(2)">And poor lambs cry for help, but in<lb rend="indent(6)"/>vain
+                    ;&mdash;</l>
+
+                <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="altpagenumber" rend="align(right)">[164</fw>
+                <lb/>
+
+                <l>And tigers for slaughter rush forward<lb rend="indent(6)"/>and howl,</l>
+                <l>And <hi rend="italics">wreckers</hi>, as cruel, do savagely prowl</l>
+                <l rend="indent(2)">Round the shores of the dark&ndash;troubled<lb rend="indent(6)"
+                    />main:</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>'Tis then the poor bark often sinks in the<lb rend="indent(6)"/>wave,</l>
+                <l rend="indent(2)">And brave Seamen go down to the<lb rend="indent(6)"/>dead;</l>
+                <l>No harbour, nor vessel, nor mortal to<lb rend="indent(6)"/>save,</l>
+                <l>To snatch one poor soul from a watery<lb rend="indent(6)"/>grave,</l>
+                <l rend="indent(2)">Or in pity to hold up his head.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>But, ah ! there are scenes and sad tales<lb rend="indent(6)"/>yet behind,</l>
+                <l rend="indent(2)">Which may well make our heart&ndash;blood<lb rend="indent(6)"
+                    />run chill;</l>
+                <l>When the poor stranded vessel, long<lb rend="indent(6)"/>press'd by the wind.</l>
+                <l>Is driv'n on shore, but no safety can find</l>
+                <l rend="indent(2)">From the <hi rend="italics">wreckers</hi>, who plunder or<lb
+                        rend="indent(6)"/>kill.</l>
+            </lg>
+            <p rend="align(centre)">&rule;</p>
+            <lg>
+                <l>'TWAS gloomy December, and dark was<lb rend="indent(6)"/>the night,</l>
+                <l rend="indent(2)">And the sky was so wild and so drear,</l>
+                <l>When to land all the sea birds, with<lb rend="indent(6)"/>screams, urg'd their
+                    flight,</l>
+
+                <pb n="7"/>
+                <fw type="altpagenumber" rend="align(right)">165]</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw>
+                <lb/>
+
+                <l>Ere the long&ndash;forked stream 'gan to flash<lb rend="indent(6)"/>down its
+                    light,</l>
+                <l rend="indent(2)">And the thunders had burst on the ear.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>'Twas then a poor bark was returning<lb rend="indent(6)"/>from far,</l>
+                <l rend="indent(2)">After crossing the wide western main,</l>
+                <l>Where oft, through the night&ndash;watch each<lb rend="indent(6)"/>long absent
+                    Tar</l>
+                <l>Had cast a glad eye on the bright east<lb rend="indent(6)"/>ern star</l>
+                <l rend="indent(2)">Which directed his way home again.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>And oft had they mus'd on the long&ndash;<lb rend="indent(6)"/>hop'd&ndash;for
+                    morn,</l>
+                <l rend="indent(2)">When the wife and the husband should<lb rend="indent(6)"
+                    />meet;</l>
+                <l>When the parents and children, and lo&ndash;<lb type="inWord" rend="indent(6)"
+                    />vers forlorn,</l>
+                <l>Should confess, 'midst the troubles to<lb rend="indent(6)"/>which we are
+                    born,</l>
+                <l rend="indent(2)">There are mingled some portions of<lb rend="indent(6)"
+                    />sweet.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>But who can now tell what to&ndash;morrow<lb rend="indent(6)"/>may bring,</l>
+                <l rend="indent(2)">When so frail and uncertain our time ?</l>
+                <l>While mirth fills each heart, and so gaily<lb rend="indent(6)"/>we sing,</l>
+                <l>And dream not of danger, or any such<lb rend="indent(6)"/>thing,</l>
+                <l rend="indent(2)">Oft our days are cut short in their<lb rend="indent(6)"
+                    />prime.</l>
+            </lg>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">6</fw>
+            <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+            <fw type="altpagenumber" rend="align(right)">[166</fw>
+            <lb/>
+            <lg>
+                <l>So it prov'd with yon crew, who, nearing<lb rend="indent(6)"/>the land,</l>
+                <l rend="indent(2)">Had concluded their dangers were<lb rend="indent(6)"/>past,</l>
+                <l>When, lo! their own coast must become<lb rend="indent(6)"/>the fell strand</l>
+                <l>Where Death, in the storm, shall pro&ndash;<lb type="inWord" rend="indent(6)"
+                    />nounce his command,</l>
+                <l rend="indent(2)">Which numbers that day as their last.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>A long time they strove, both with skill<lb rend="indent(6)"/>and with might,</l>
+                <l rend="indent(2)">To surmount all the dangers around;</l>
+                <l>But torn were their sails in the last dis&ndash;<lb type="inWord"
+                        rend="indent(6)"/>mal night,</l>
+                <l>At day&ndash;dawn a lee&ndash;shore was full in their<lb rend="indent(6)"
+                    />sight,</l>
+                <l rend="indent(2)">So they drove on the hard rocky<lb rend="indent(6)"/>ground.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Crash, crash, went the bark, as the big<lb rend="indent(6)"/>waves assail'd,</l>
+                <l rend="indent(2)">And her masts were plunged over the<lb rend="indent(6)"
+                    />lee;</l>
+                <l>Then, nor courage nor skill of command&ndash;<lb type="inWord" rend="indent(6)"
+                    />er avail'd,</l>
+                <l>Death drew a long dart, and o'er many<lb rend="indent(6)"/>prevail'd,</l>
+                <l rend="indent(2)">And, half mangled, they sunk in the<lb rend="indent(6)"
+                    />sea.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Now high flew the foam, as it broke o'er<lb rend="indent(6)"/>their head,</l>
+
+                <pb n="9"/>
+                <fw type="altpagenumber" rend="align(right)">167]</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw>
+                <lb/>
+
+                <l rend="indent(2)">And the vessel groan'd under each<lb rend="indent(6)"/>blow,</l>
+                <l>And the raging surf roll'd o'er the dying<lb rend="indent(6)"/>and dead;</l>
+                <l>And the rock's craggy cliff was their<lb rend="indent(6)"/>last lonely bed,</l>
+                <l rend="indent(2)">When the life&ndash;blood had ceased to flow.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>These sights, so afflicting, to <hi rend="italics">wreckers</hi><lb
+                        rend="indent(6)"/>were dear,</l>
+                <l rend="indent(2)">Who live by fell rapine and crime ;</l>
+                <l>Whose eyes never shed soft Compas&ndash;<lb type="inWord" rend="indent(6)"
+                    />sion's sweet tear,</l>
+                <l>Whose hearts never learnt e'en their<lb rend="indent(6)"/>Maker to fear,</l>
+                <l rend="indent(2)">Or reflect on the end of their time.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Awhile lash'd to ring&ndash;bolts, some few yet<lb rend="indent(6)"/>remain, </l>
+                <l rend="indent(2)">And their shrieks rend the pitiless air;</l>
+                <l>From the <hi rend="italics">wreckers</hi> on shore no relief can<lb
+                        rend="indent(6)"/>they gain,</l>
+                <l>(They beckon, and call, but they beckon<lb rend="indent(6)"/>in vain)</l>
+                <l rend="indent(2)">Who rejoice in the cries of despair.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Now shore&ndash;ward the masts and their<lb rend="indent(6)"/>tackling swing
+                    round,</l>
+                <l rend="indent(2)">And the <hi rend="italics">wreckers</hi> begin their glad
+                    toil;</l>
+                <l>They curse and blaspheme, while they<lb rend="indent(6)"/>cover the ground</l>
+
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="altpagenumber" rend="align(right)">[168</fw>
+                <lb/>
+
+                <l>With spars, and with sails, and whatever<lb rend="indent(6)"/>is found;</l>
+                <l rend="indent(2)">For each seizes his share of the spoil.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>When the tempest's wild fury had some&ndash;<lb type="inWord" rend="indent(6)"
+                    />time allay'd,</l>
+                <l rend="indent(2)">They launch'd off, and boarded the<lb rend="indent(6)"
+                    />bark;</l>
+                <l>Where their hearts and their eyes still<lb rend="indent(6)"/>on plunder were
+                    stay'd,</l>
+                <l>Though the captain and crew for assist&ndash;<lb type="inWord" rend="indent(6)"
+                    />ance oft pray'd</l>
+                <l rend="indent(2)">Ere extinct was life's faint, trembling<lb rend="indent(6)"
+                    />spark.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Their cords were untied; but the wet<lb rend="indent(6)"/>and the frost</l>
+                <l rend="indent(2)">Had so stiff'ned their limbs with the<lb rend="indent(6)"
+                    />cold,</l>
+                <l>That the next breaking wave, as the ves&ndash;<lb type="inWord" rend="indent(6)"
+                    />sel it cross'd,</l>
+                <l>Swept them over the side, and they<lb rend="indent(6)"/>quickly were lost,</l>
+                <l rend="indent(2)">While the <hi rend="italics">wreckers</hi> held on a fast
+                    hold.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>One fine youthful Sea Boy alone rode<lb rend="indent(6)"/>the wave,</l>
+                <l rend="indent(2)">And half lifeless was thrown on the<lb rend="indent(6)"
+                    />sand;</l>
+                <l>While his captain and comrades had<lb rend="indent(6)"/>each found their
+                    grave</l>
+
+                <pb n="11"/>
+                <fw type="altpagenumber" rend="align(right)">169]</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="pagenumber" rend="align(right)">9</fw>
+                <lb/>
+
+                <l>Unpitied by <hi rend="italics">wreckers</hi>, who strove not to<lb
+                        rend="indent(6)"/>save,</l>
+                <l rend="indent(2)">Or convey them for shelter to land.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Awhile those on shore throng'd the Ship<lb rend="indent(6)"/>Boy around,</l>
+                <l rend="indent(2)">And rudely asked all that he knew;</l>
+                <l>He told them his tale, as he lay on the<lb rend="indent(6)"/>ground,</l>
+                <l>While the blood from his temples a free<lb rend="indent(6)"/>course had
+                    found,</l>
+                <l rend="indent(2)">And still weaker and fainter he grew.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Now reviving, he turned his pale cheek<lb rend="indent(6)"/>from the earth,</l>
+                <l rend="indent(2)">And concluded his sorrowful tale,</l>
+                <l>By speaking of her who had given him<lb rend="indent(6)"/>birth,</l>
+                <l>A parent of tenderness, piety, and worth,</l>
+                <l rend="indent(2)">Who lived in a far distant vale.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; My mother,&rdquo; said he, &ldquo; she is old and<lb rend="indent(6)"
+                    />gone blind,</l>
+                <l rend="indent(2)">But I love her most dearly and true&mdash;</l>
+                <l>In my chest some relief for her wants<lb rend="indent(6)"/>you will
+                    find&mdash;</l>
+                <l>Oh! save it for her who to me was so<lb rend="indent(6)"/>kind,</l>
+                <l rend="indent(2)">And the Lord will be kind unto you.&rdquo;</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>They heard him, as wolves hear the ewes<lb rend="indent(6)"/>intercede</l>
+                <l rend="indent(2)">For the lambkins they torture and<lb rend="indent(6)"/>slay
+                    ;</l>
+
+                <pb n="12"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="altpagenumber" rend="align(right)">[170</fw>
+                <lb/>
+
+                <l>In an instant they left him to faint and<lb rend="indent(6)"/>to bleed,</l>
+                <l>While they grappled his chest from a<lb rend="indent(6)"/>bank of
+                    sea&ndash;weed,</l>
+                <l rend="indent(2)">And like harpies they strove for the<lb rend="indent(6)"
+                    />prey.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>The news of a wreck, it soon spread<lb rend="indent(6)"/>along shore,</l>
+                <l rend="indent(2)">And women and men ran for gain ;</l>
+                <l>Thus numbers they harden each other<lb rend="indent(6)"/>the more,</l>
+                <l>Till to mercy and justice their hearts<lb rend="indent(6)"/>close the door,</l>
+                <l rend="indent(2)">That the love of curst money may<lb rend="indent(6)"/>reign.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Anon came the pious old Vicar that way,</l>
+                <l rend="indent(2)">For he heard there was evil abroad:</l>
+                <l>Against wrecking, and plund'ring, for<lb rend="indent(6)"/>many a day</l>
+                <l>He had preach'd; but, alas ! there were<lb rend="indent(6)"/>few t' obey,</l>
+                <l rend="indent(2)">Or give heed to his tears or his word.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Arriv'd at the spot, what a scene was<lb rend="indent(6)"/>display'd!</l>
+                <l rend="indent(2)">For its numbers 'twas like to a fair;</l>
+                <l>Dead bodies, and cargo, and trunks<lb rend="indent(6)"/>about lay'd,</l>
+                <l>Or pil'd up in heaps where a sentinel<lb rend="indent(6)"/>stay'd;</l>
+                <l rend="indent(2)">But, nor mercy nor pity was there.</l>
+            </lg>
+
+            <pb n="13"/>
+            <fw type="altpagenumber" rend="align(right)">171]</fw>
+            <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+            <fw type="pagenumber" rend="align(right)">11</fw>
+            <lb/>
+            <lg>
+                <l>The poor fainting Sea Boy the Vicar<lb rend="indent(6)"/>espied,</l>
+                <l rend="indent(2)">With his head lying hard on a rock ;</l>
+                <l>To aid whose distress, he sat down by<lb rend="indent(6)"/>his side,</l>
+                <l>And many a tear of compassion he cried,</l>
+                <l rend="indent(2)">While the <hi rend="italics">wreckers</hi> continued to
+                    mock.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo;Ah! Sir,&rdquo; spake the Sea Boy, &ldquo;my<lb rend="indent(6)"/>blood it
+                    runs cold,</l>
+                <l rend="indent(2)">Here life's voyage it shortly must end ;</l>
+                <l>I shall ne'er see my home, nor my pa&ndash;<lb type="inWord" rend="indent(6)"
+                    />rent behold;</l>
+                <l>My tales and adventures for ever are<lb rend="indent(6)"/>told,</l>
+                <l rend="indent(2)">I shall never shake hands with a friend.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo;But four days ago, oh! how happy<lb rend="indent(6)"/>was I,</l>
+                <l rend="indent(2)">And so was our cheerful ship's band;</l>
+                <l>But, alas! the rude storm that late howl'd<lb rend="indent(6)"/>in the sky,</l>
+                <l>It has wreck'd our fine bark, and I short&ndash;<lb type="inWord"
+                        rend="indent(6)"/>ly must die</l>
+                <l rend="indent(2)">On the shores of this hard&ndash;hearted land.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; My mother oft said, when the young<lb rend="indent(6)"/>ravens cry,</l>
+                <l rend="indent(2)">How kind Heaven some succour still<lb rend="indent(6)"
+                    />brings;</l>
+                <l>Ah! why then give up us poor seamen<lb rend="indent(6)"/>to die,</l>
+                <l>To perish, while men their assistance<lb rend="indent(6)"/>deny ?</l>
+
+                <pb n="14"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="altpagenumber" rend="align(right)">[172</fw>
+                <lb/>
+                <l rend="indent(2)">Do explain, my good Sir, these<lb rend="indent(6)"/>strange
+                    things.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; My Captain was kind to his lads and<lb rend="indent(6)"/>his men,</l>
+                <l rend="indent(2)">And kind was my mistress so dear,</l>
+                <l>That the poor never call'd and were bid<lb rend="indent(6)"/>call again;</l>
+                <l>Who asked her relief never asked it in<lb rend="indent(6)"/>vain,</l>
+                <l rend="indent(2)">For she lov'd to dry misery's tear.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; But now her kind heart, it will sorrow<lb rend="indent(6)"/>and
+                    break,</l>
+                <l rend="indent(2)">When she hears the sad tale of our<lb rend="indent(6)"/>wo;</l>
+                <l>Keen anguish will pour its sharp stream<lb rend="indent(6)"/>down her cheek;</l>
+                <l>In vain for support to these sharks may<lb rend="indent(6)"/>she seek;</l>
+                <l rend="indent(2)">Down to ruin and death she must go.</l>
+            </lg>
+            <lg>
+                <l>&ldquo; And must the young babes of our dead<lb rend="indent(6)"/>plunder'd
+                    crew</l>
+                <l rend="indent(2)">Come and beg for their bread on this<lb rend="indent(6)"
+                    />shore,</l>
+                <l>And be charg'd by the <hi rend="italics">wreckers</hi> as idle,<lb
+                        rend="indent(6)"/>untrue;</l>
+                <l>And be curs'd, and abus'd, as their cry<lb rend="indent(6)"/>they renew,</l>
+                <l rend="indent(2)">And some food for their hunger im&ndash;<lb type="inWord"
+                        rend="indent(6)"/>plore ?</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; Oh, Sir! can kind Heav'n look on all<lb rend="indent(6)"/> the while,</l>
+
+                <pb n="15"/>
+                <fw type="altpagenumber" rend="align(right)">173]</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw>
+                <lb/>
+
+                <l rend="indent(2)">And refrain its dread thunders to hurl ?</l>
+                <l>Methinks, its blest spirits would speed<lb rend="indent(6)"/>down, and smile,</l>
+                <l>To inflict their dread anger on <hi rend="italics">wreckers</hi><lb
+                        rend="indent(6)"/>so vile,</l>
+                <l rend="indent(2)">And all angels their vengeance un&ndash;<lb type="inWord"
+                        rend="indent(6)"/>furl.&rdquo;</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; Hush, hush, my dear child,&rdquo; cried the<lb rend="indent(6)"/>pious
+                    old man,</l>
+                <l rend="indent(2)">&ldquo;All was right that was taught in thy<lb rend="indent(6)"
+                    />youth :</l>
+                <l>From the day yonder sun his bright<lb rend="indent(6)"/>course first began,</l>
+                <l>Has thy Maker pursu'd one beneficent<lb rend="indent(6)"/>plan,</l>
+                <l rend="indent(2)">And his ways are all wisdom and truth.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; But deep, nay, and dark, they some&ndash;<lb type="inWord"
+                        rend="indent(6)"/>times may appear,</l>
+                <l rend="indent(2)">Yet judgment surrounds his blest<lb rend="indent(6)"
+                    />throne,</l>
+                <l>Whence he calls thee to trust him, to<lb rend="indent(6)"/>love, and to fear,</l>
+                <l>To submit as a child, while a sojourner<lb rend="indent(6)"/>here:</l>
+                <l rend="indent(2)">So far are his purposes known.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; What though yonder <hi rend="italics">wreckers</hi> live out<lb
+                        rend="indent(6)"/>a long day, </l>
+                <l rend="indent(2)">And thyself find an early rough grave;</l>
+                <l>Though the wicked appear to succeed<lb rend="indent(6)"/>in their way,</l>
+
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="altpagenumber" rend="align(right)">[174</fw>
+                <lb/>
+
+                <l>And the kind&ndash;hearted Seaman becomes<lb rend="indent(6)"/>their fell
+                    prey,</l>
+                <l rend="indent(2)">Yet the righteous for ever he'll save.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; Not save from all troubles of life's<lb rend="indent(6)"/>stormy day,</l>
+                <l rend="indent(2)">But from evils hereafter to come;</l>
+                <l>Oft as death finds their feet treading du&ndash;<lb type="inWord"
+                        rend="indent(6)"/>ty's safe way,</l>
+                <l>Still aiming their Saviour to love and<lb rend="indent(6)"/>obey,</l>
+                <l rend="indent(2)">He conveys their blest spirits straight<lb rend="indent(6)"
+                    />home,</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo;But wo to the wrecker that dies in his<lb rend="indent(6)"/>sin !</l>
+                <l rend="indent(2)">To his soul there no peace can remain;</l>
+                <l>When his heart fails to beat, Oh! what<lb rend="indent(6)"/>torments begin,</l>
+                <l>The worm, never&ndash;dying, shall fasten<lb rend="indent(6)"/>within,</l>
+                <l rend="indent(2)">And the flame rage with infinite pain.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo;From realms of despair he shall lift up<lb rend="indent(6)"/>an eye,</l>
+                <l rend="indent(2)">>And behold the blest spirits above;</l>
+                <l>He shall call out for death, but he never<lb rend="indent(6)"/>shall die;</l>
+                <l>But shall plunge down the gulf, and in<lb rend="indent(6)"/>misery lie,</l>
+                <l rend="indent(2)">While the saints share a heaven of<lb rend="indent(6)"
+                    />love.</l>
+            </lg>
+
+            <pb n="17"/>
+            <fw type="altpagenumber" rend="align(right)">175]</fw>
+            <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+            <fw type="pagenumber" rend="align(right)">15</fw>
+            <lb/>
+            <lg>
+                <l>&ldquo; Nay, on earth, the dread curse often<lb rend="indent(6)"/>enters his
+                    door,</l>
+                <l rend="indent(2)">And his children they die in ill time;</l>
+                <l>His wealth is consum'd, and he, wretch&ndash;<lb type="inWord" rend="indent(6)"
+                    />ed and poor,</l>
+                <l>Can revel in plunder and pillage no<lb rend="indent(6)"/>more,</l>
+                <l rend="indent(2)">But must smart in old age for his<lb rend="indent(6)"
+                    />crime.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; Oh ! turn then, dear youth, all thy<lb rend="indent(6)"/>thoughts to the
+                    sky,</l>
+                <l rend="indent(2)">For thy spirit must quickly depart:</l>
+                <l>To the Saviour of sinners direct thy last<lb rend="indent(6)"/>cry&mdash;</l>
+                <l>To pardon, and cleanse, and accept, he<lb rend="indent(6)"/>is nigh ;</l>
+                <l rend="indent(2)">May his peace now possess thy whole<lb rend="indent(6)"
+                    />heart.&rdquo;</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>So spake the good man, in kind accents,<lb rend="indent(6)"/>as mild</l>
+                <l rend="indent(2)">As the zephyrs that fan the still air;</l>
+                <l>Then he wip'd off the blood from the<lb rend="indent(6)"/>poor dying child,</l>
+                <l>Who, looking to heaven, with confidence,<lb rend="indent(6)"/>smil'd,</l>
+                <l rend="indent(2)">And thus uttered his last dying pray&ndash;<lb type="inWord"
+                        rend="indent(6)"/>er :&mdash;</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo;O Jesus, thou Saviour of sinners below!</l>
+                <l rend="indent(2)">On thy mercy my soul it relies ;</l>
+                <l>Cleanse its stains in thy blood, which so<lb rend="indent(6)"/>freely did
+                    flow;</l>
+
+                <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">THE SHIPWRECK.</fw>
+                <fw type="altpagenumber" rend="align(right)">[174</fw>
+                <lb/>
+                <l>And, when thou shalt bid it these trou&ndash;<lb type="inWord" rend="indent(6)"
+                    />bles forego,</l>
+                <l rend="indent(2)">O take it to thee in the skies.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo;Forget not my mother, poor, aged, and<lb rend="indent(6)"/>blind,</l>
+                <l rend="indent(2)">Nor leave her to sink down in grief;</l>
+                <l>Let a sense of thy love ever comfort her<lb rend="indent(6)"/>mind,</l>
+                <l>While her Sea Boy lies dead in a land<lb rend="indent(6)"/>far behind,</l>
+                <l rend="indent(2)">And can bring her no further relief.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>&ldquo; O pardon these <hi rend="italics">wreckers</hi>, thou God of<lb
+                        rend="indent(6)"/>all grace !</l>
+                <l rend="indent(2)">Let their many dark crimes be for<lb rend="indent(6)"/>given
+                    ;</l>
+                <l>Save, save them from wrath, from that<lb rend="indent(6)"/>horrible place,</l>
+                <l>And grant them to see a Redeemer's<lb rend="indent(6)"/>blest face;</l>
+                <l rend="indent(2)">O receive them, in mercy, to heaven!&rdquo;</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>Thus saying, he bow'd his faint head to<lb rend="indent(6)"/>the ground,</l>
+                <l rend="indent(2)">And, expiring in peace, clos'd his<lb rend="indent(6)"
+                    />prayer;</l>
+                <l>His soul, we may hope, will in glory be<lb rend="indent(6)"/>found,</l>
+                <l>Where no cries of distress ever utter<lb rend="indent(6)"/>their sound.</l>
+                <l rend="indent(2)">For no pains, no afflictions ,are there.</l>
+            </lg>
+            <p rend="align(right)">R. M.</p>
+            <p rend="align(centre)">FINIS.</p>
+        </body>
+        <back>
+            <pb n="19"/>
+            <pb n="20"/>
+            <div type="advertisement">
+                <figure type="borderornament"/>
+                <p><measure type="price">1 cent</measure>.</p>
+                <p rend="align(centre)">THE<lb/>AMERICAN TRACT SOCIETY,</p>
+                <lb/>
+                <p rend="first-indent(2)">In addition to a very extensive<lb/>series of duodecimo
+                    Tracts, in differ&ndash;<lb type="inWord"/>ent languages, Occasional
+                    Volumes,<lb/>&amp;c., have published a large variety<lb/>of Children's Books,
+                    among which<lb/>are the following:</p>
+
+                <list>
+                    <head><hi rend="italics">Series</hi>
+                        <num type="roman numeral">IV</num>.... <hi rend="italics">Vol.</hi>
+                            1....32<hi rend="italics">p's</hi>....18<hi rend="italics"
+                        >mo.</hi></head>
+                    <item rend="first-indent(1)">1. A Memoir of Thomas Hamitah<lb rend="indent(6)"
+                        />Patoo.</item>
+                    <item rend="first-indent(1)">2. History of Lucy Jackson.</item>
+                    <item rend="first-indent(1)">3. History of Honest Roger.</item>
+                    <item rend="first-indent(1)">4. History of the English Bible.</item>
+                    <item rend="first-indent(1)">5. Life of Mary Mordant.</item>
+                    <item rend="first-indent(1)">6. History of Jacob Newman.</item>
+                    <item rend="first-indent(1)">7. The Cottage Girl.</item>
+                </list>
+                <list>
+                    <head rend="align(centre)">VOL. <num type="roman numeral">II</num>.</head>
+                    <item rend="first-indent(1)">8. Little Ann.</item>
+                    <item rend="first-indent(1)">9. History of Peter Thomson.</item>
+                    <item>10. The Village School.</item>
+                    <item>11. Scripture Parables, in verse.</item>
+                    <item>12. The Fourth of July.</item>
+                    <item>13. Memoir of David Acheson, Jun.</item>
+                    <item>14. A Catechism on the Commands.</item>
+                </list>
+                <list>
+                    <head rend="align(centre)">VOL. <num type="roman numeral">III</num>.</head>
+                    <item>15. The Simple Flower.</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>

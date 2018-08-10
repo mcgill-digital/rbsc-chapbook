@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013-02-26"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name/>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013"/>
+                <label>Includes Changes</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="NurseryRhymes">
+        <figure type="borderornament"/>
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="beige coloured pictorial wrappers">
+                <note type="handwritten" place="margin">15&ndash;</note>
+                <bibl>
+                    <title>NURSERY RHYMES.</title>
+                    <lb/>
+                    <figure rend="coloured">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>
+                    <publisher>BISHOP &amp; CO.,</publisher>
+                    <lb/><pubPlace>Printers, 101, Houndsditch, London.</pubPlace>
+                </bibl>
+            </div>
+        </front>
+        <body>
+            <pb n="2"/>
+            <head type="work" rend="align(centre)">NURSERY<lb/>RHYMES.</head>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>See saw, sacradown,</l>
+                <l>Which is the way to London Town?</l>
+                <l>One foot up and the other down,</l>
+                <l>And that is the way to London Town.</l>
+            </lg>
+            <lg>
+                <l rend="indent(2)">High ding a diddle,</l>
+                <l rend="indent(2)">The cat and the fiddle,</l>
+                <l>The cow leap'd over the moon,</l>
+                <l rend="indent(2)">The little dog laughed,</l>
+                <l rend="indent(2)">To see the sport,</l>
+                <l>And the dish ran away with the Spoon</l>
+            </lg>
+
+            <pb n="3"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>There was once a great fish,</l>
+                <l rend="indent(2)">And that is not small;</l>
+                <l>He swallow'd a sailor,</l>
+                <l rend="indent(2)">With his boat and all.</l>
+            </lg>
+            <lb/>
+            <lg>
+                <l>The sailor he cried,</l>
+                <l rend="indent(2)">And the sailor did shout,</l>
+                <l>But from the whale's belly</l>
+                <l rend="indent(2)">He could not get out.</l>
+            </lg>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="4"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>Mistress Mary, quite contrary,</l>
+                <l rend="indent(2)">How does your garden grow,</l>
+                <l>With cockle and silver bells,</l>
+                <l rend="indent(2)">And cowslips all of a row.</l>
+            </lg>
+            <lg>
+                <l>Girls and boys come out to play,</l>
+                <l>The moon doth shine as bright as day.</l>
+            </lg>
+
+            <pb n="5"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>Come with a whistle, come with a call,</l>
+                <l>Come with a good will or not at all.</l>
+            </lg>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="6"/>
+            <lg>
+                <l>Hark, hark, the dogs do bark,</l>
+                <l rend="indent(2)">Beggars are coming to town,</l>
+                <l>Some in jags, some in rags,</l>
+                <l rend="indent(2)">And some in velvet gowns.</l>
+            </lg>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg rend="indent(6)">
+                <l>Ride a cock horse,</l>
+                <l rend="indent(2)">To Banbury Cross,</l>
+                <l>To see an old woman</l>
+                <l rend="indent(2)">Get on a black horse :</l>
+            </lg>
+            <lg>
+                <l>A ring on her finger,</l>
+                <l rend="indent(2)">A bonnet of straw,</l>
+                <l>The strangest old woman</l>
+                <l rend="indent(2)">That ever you saw.</l>
+            </lg>
+            <lb/>
+            <lg rend="indent(6)">
+                <l>Pat a cake, pat a cake,</l>
+                <l rend="indent(2)">Baker's man,</l>
+            </lg>
+
+            <pb n="7"/>
+            <fw type="pagenumber" rend="align(centre)">7</fw>
+            <lb/>
+            <lg rend="indent(6)">
+                <l>So I will master,</l>
+                <l rend="indent(2)">As fast as I can;</l>
+            </lg>
+            <lg rend="indent(6)">
+                <l>Prick it and prick it,</l>
+                <l rend="indent(2)">And mark it with T,</l>
+                <l>Then toss it in the oven,</l>
+                <l rend="indent(2)">For Tommy and me.</l>
+            </lg>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+            </figure>
+            <lb/>
+            <lg>
+                <l>Three wise men of Gotham,</l>
+                <l>Went to sea in a bowl,</l>
+                <l>And if the bowl had been stronger,</l>
+                <l>My song would have been longer.</l>
+            </lg>
+        </body>
+        <back>
+            <pb n="8"/>
+            <div type="cover">
+                <head rend="align(centre)">NURSERY RHYMES.</head>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+            </div>
+        </back>
+    </text>
+</TEI>

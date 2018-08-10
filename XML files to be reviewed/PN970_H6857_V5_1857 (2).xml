@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Includes Changes</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+
+    <text type="Religious">
+        <front>
+            <pb n="1" rend="align(centre)"/>
+            <div type="cover" rend="pink coloured pictorial wrappers">
+
+                <figure type="borderornament"/>
+
+                <figure>
+                    <ic:iconClass>
+                        <name>11Q511</name>
+                        <desc>the Bible as a book</desc>
+                    </ic:iconClass>
+                    <bibl>
+                        <title level="m">A VISIT TO<lb/>GRANDPAPA</title><lb/>
+                        <author>BY<lb/>MRS. SHERWOOD.</author><lb/>
+                        <pubPlace>LONDON</pubPlace><lb/>
+                        <publisher>HOULSTON AND WRIGHT</publisher><lb/><pubPlace>65, PATERNOSTER
+                            ROW.</pubPlace>
+                    </bibl>
+                </figure>
+                <p>PRICE <measure type="price">TWO</measure>PENCE.</p>
+            </div>
+
+            <pb n="2"/>
+            <pb n="3"/>
+            <note place="top">&pound;4</note>
+
+
+            <pb n="4"/>
+
+            <div type="frontispiece">
+                <head rend="align(centre)">FRONTISPIECE.<lb/>&rule;</head>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>41C43</name>
+                        <desc>evening meal, dinner, supper</desc>
+                    </ic:iconClass>
+                </figure>
+
+                <p rend="align(centre)">&rule;</p>
+                <p rend="align(right)"><hi rend="italic">See Page 27.</hi></p>
+
+            </div>
+
+            <pb n="5"/>
+
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart>VISIT TO GRANDPAPA.</titlePart>
+                    <lb/>
+                </docTitle>
+                <docAuthor>BY MRS. SHERWOOD,<lb/>AUTHOR OF &ldquo; LITTLE HENRY AND HIS
+                    BEARER,&quot;<lb/>ETC. ETC.</docAuthor>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>31D112</name>
+                        <desc>child</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docEdition>NEW EDITION.</docEdition>
+                <lb/>
+                <docImprint>
+                    <pubPlace>LONDON:</pubPlace>
+                    <lb/><publisher>HOULSTON AND STONE MAN,</publisher>
+                    <lb/><pubPlace>65, PATERNOSTER ROW.</pubPlace></docImprint>
+            </titlePage>
+            <pb n="6"/>
+        </front>
+        <body>
+            <pb n="7"/>
+            <head type="work" rend="align(centre)">A VISIT<lb/>TO<lb/>Grandpapa<lb/>&rule;</head>
+            <lb/>
+            <p rend="align(justify)"> IT was in the month of June,<lb/> when the strawberries were
+                ripe,<lb/>and the birds sang, that a letter<lb/>came from grandpapa to
+                invite<lb/>Robert and Joseph, the two little<lb/>sons of Mr. Seward, to spend a
+                day<lb/>at Westfield, where the old gentle&ndash;<lb type="inWord"/>man lived with
+                his good wife in a<lb/>very neat and beautiful house.</p>
+            <p rend="align(justify) indent(2)"> There was a stage&ndash;coach which <lb/>
+                <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">8</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> passed every morning, at six<lb/>o'clock, by Mr. Seward's house,<lb/>and
+                returned again at nine at<lb/>night. This coach travelled in<lb/>an hour between Mr.
+                Seward's<lb/>and Westfield; and the time<lb/>of its going and coming
+                served<lb/>quite as well as if it had been<lb/>set up only to carry Robert<lb/>and
+                Joseph to and fro from<lb/>their papa's house to their grand&ndash;<lb type="inWord"
+                />papa's.</p>
+
+            <p rend="first-indent(2) align(justify)">When the day came which had<lb/>been fixed by
+                the old gentleman,<lb/>Mr. Seward got up early and<lb/>went with his little boys to
+                the<lb/>place where they expected to<lb/>meet the coach; and there they<lb/>sat down
+                under an elm tree by <lb/>
+                <pb n="9"/>
+                <fw type="pagenumber" rend="align(right)">9</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43B1</name>
+                        <desc>enjoying nature</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/> the way&ndash;side, for the coach was<lb/>not yet come.</p>
+            <p rend="first-indent(2) align(justify)"> &ldquo; I hope that you will be wise<lb/>boys,
+                my little ones,&rdquo; said Mr.<lb/>Seward, &ldquo; and that you will try<lb/>to
+                learn all that is good, whatever<lb/>company you may fall into; and,<lb/>also, that
+                you will shut your ears<lb/>against every thing that is bad.<lb/>No one can travel
+                far in this or <lb/>
+                <fw type="signature" rend="align(left)">B</fw>
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> any other country without seeing<lb/>and hearing something which is<lb/>wrong;
+                but, when you go a&ndash;<lb type="inWord"/>broad, you must learn to pick
+                up<lb/>what is good and useful, and<lb/>then I shall not be afraid to trust<lb/>you
+                another time.&rdquo;</p>
+            <p rend="align(justify first-indent(2)">While Mr. Seward was speak&ndash;<lb
+                    type="inWord"/>ing, they heard the sound of the<lb/>coach&ndash;wheels at a
+                distance; and<lb/>in less than five minutes after<lb/>that time Robert and
+                Joseph<lb/>were on the top of the coach,<lb/>travelling as fast as four
+                horses<lb/>could carry them. There was no<lb/>room for them in the front,
+                so<lb/>they sat at the back; and there<lb/>were three men and one woman<lb/>with
+                them: and these people <lb/>
+                <pb n="11"/>
+                <fw type="pagenumber" rend="align(right)">11</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> were talking. An old man, and<lb/>a young one who sat opposite<lb/>to him,
+                both seemed very vulgar<lb/>people; I do not mean poor<lb/>people, nor people in low
+                rank,<lb/>but people who talked vulgarly,<lb/>and used bad words. They
+                were<lb/>cruel people, also, and talked of<lb/>fighting&ndash;cocks, and such sort
+                of<lb/>things: and they said that they<lb/>were going to see a badger bait&ndash;<lb
+                    type="inWord"/>ed that morning at Westfield,<lb/>in a pool which Joseph knew
+                to<lb/>be not very far from his grand&ndash;<lb type="inWord"/>father's house; for I
+                am sorry<lb/>to say, that Joseph listened<lb/>with all his ears to these men,<lb/>
+                <lb/>quite forgetting the promise he<lb/>had just made to his papa. But <lb/>
+                <pb n="12"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> Robert did not attend to these<lb/>people, for the first words he<lb/>heard
+                from them being bad, he<lb/>turned away from them as much<lb/>as he could, towards
+                the woman,<lb/>who was telling the old man a<lb/>very useful thing. It was
+                this.<lb/>She had slept the night before at<lb/>an inn; and was supping in
+                a<lb/>kitchen where a little child pulled<lb/>down on its arm a dish of
+                    scald&ndash;<lb type="inWord"/>ing tea; and, while the child was<lb/>screaming
+                with pain, some one pre&ndash;<lb type="inWord"/>sent took the dredger from the
+                wall<lb/>where it was hanging, and well<lb/>floured the baby's arm:
+                &ldquo;And<lb/>do you know, Sir,&rdquo; said the wo&ndash;<lb type="inWord"/>man at
+                the top of the coach,<lb/>&ldquo; that the baby ceased to cry in <lb/>
+                <pb n="13"/>
+                <fw type="pagenumber" rend="align(right)">13</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> a few moments; and the person<lb/>told its mother, that if she would<lb/>leave
+                the flour there till it fell off<lb/>of itself when the arm was well,<lb/>she would
+                have no more trouble<lb/>with it. Now, Sir,&quot; said the wo&ndash;<lb
+                    type="inWord"/>man, &ldquo; I call that a very useful<lb/>piece of knowledge,
+                and one that<lb/>it was worth taking a journey to<lb/>learn.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;And so it is, Madam,&rdquo; re&ndash;<lb
+                    type="inWord"/>plied the man, &ldquo; and I shall tell<lb/>my wife of it as soon
+                as I get<lb/>home.&rdquo;</p>
+            <p rend="align(justify)">Now Robert and Joseph had<lb/>only six miles to go, so they
+                were<lb/>very soon at the end of their<lb/>journey. The coachman knew<lb/>old Mr.
+                Seward's house very <lb/>
+                <pb n="14"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C14</name>
+                        <desc>animal traction, animal-drawn vehicle (carriage etc.)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/> well, so that they had not even<lb/>the trouble to call upon him to<lb/>stop
+                when they arrived at the<lb/>garden&ndash;gate.</p>
+            <p rend="first-indent(2) align(justify)">Grandpapa and grandmamma<lb/>were just come
+                down into the<lb/>breakfast &ndash; room, when Robert<lb/>and Joseph came in; and it
+                was<lb/>quite pleasant to see how much<lb/>joy there was on both sides. </p>
+            <pb n="15"/>
+            <fw type="pagenumber" rend="align(right)">15</fw>
+            <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+            <lb/>
+            <p rend="align(justify)">The little boys were very hungry;<lb/>and grandpapa laughed at
+                the<lb/>large slices of white bread which<lb/>they contrived to swallow.</p>
+            <p rend="align(centre) first-indent(2)">After breakfast, grandpapa, as<lb/>was his
+                custom, had family<lb/>prayer, and then he told the little<lb/>boys that they might
+                amuse them&ndash;<lb type="inWord"/>selves till two o'clock; but he<lb/>bade them
+                not to go beyond the<lb/>sound of the great bell which<lb/>hung at one end of the
+                house.<lb/>&quot; And when you hear that bell<lb/>ring,&rdquo; he said, &ldquo; you
+                must come<lb/> back with all speed.&rdquo;</p>
+            <p rend="align(centre) first-indent(2)">Robert and Joseph loved no&ndash;<lb
+                    type="inWord"/>thing so well as a complete day<lb/>of play at Westfield, because
+                the<lb/>country was so very pleasant, <lb/>
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">16</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> and there were so many things<lb/>to see. In the first place, there<lb/>was a
+                thick wood, in which were<lb/>several hollow trees; then there<lb/>was an old stone
+                &ndash; quarry, in<lb/>which was a cave, not half a<lb/>mile from their
+                grandpapa's<lb/>house; and there was a carpen&ndash;<lb type="inWord"/>ter's shop,
+                too, within sound of<lb/>the bell, and the carpenter him&ndash;<lb type="inWord"
+                />self was a very civil useful man,<lb/>and had known the boys from<lb/>babies; and
+                there was a round<lb/>hill covered with heath, and at<lb/>the top of it a grove of
+                firs, in<lb/>which the wind whistled curi&ndash;<lb type="inWord"/>ously; with many
+                other things<lb/>which delighted the little boys,<lb/>and which they always made a <lb/>
+                <pb n="17"/>
+                <fw type="pagenumber" rend="align(right)">17</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> rule of visiting whenever they<lb/>had opportunity.</p>
+            <p rend="first-indent(2) align(justify)">So they went first to the
+                stone&ndash;<lb/>quarry, and then to the carpen&ndash;<lb type="inWord"/>ter's shop,
+                and from one place to<lb/>another till they came to their<lb/>favourite hollow tree
+                in the wood;<lb/>and they got into this tree, and<lb/>sat down in the bottom of it,
+                and<lb/>began to talk to each other.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; How very old this tree must<lb/>be!
+                &rdquo; said Robert, &ldquo; for grandpa&ndash;<lb type="inWord"/>pa says that he
+                remembers it<lb/>when he was a little child, and it<lb/>looked as old then as it
+                does now;<lb/>and grandpapa says it may stand<lb/>here many years yet.&rdquo;</p>
+            <p rend="align(jusityf) first-indent(2)">While Robert was speaking, a<lb/>distant sound
+                was heard of dogs <lb/>
+                <pb n="18"/>
+                <fw type="pagenumber" rend="align(left)">18</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C73</name>
+                        <desc>child and nature (games and plays)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/> barking, and men shouting, and<lb/>Joseph said, &ldquo;Hark! do you<lb/> hear
+                that?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Robert listened&mdash;&ldquo; I do,&quot;
+                he<lb/> replied, &ldquo; but the noise is a great<lb/> way off.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; It is the people at the badger<lb/>
+                hunt, I dare say,&rdquo; said Joseph,<lb/> scrambling out of the tree.</p>
+            <pb n="19"/>
+            <fw type="pagenumber" rend="align(right)">19</fw>
+            <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+            <lb/>
+            <p rend="align(justify) indent(2)">&ldquo;What badger hunt?&rdquo; asked<lb/>Robert.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Why,&quot; said Joseph, &ldquo; did
+                you<lb/>not hear those men at the top of<lb/>the coach?&mdash;Did not you
+                hear<lb/>them say where they were going?&rdquo;</p>
+            <p rend="align(justify) indent(2)">&ldquo; No,&rdquo; replied Robert.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Why, you never hear any<lb/>thing,
+                Robert,&rdquo; said Joseph. &ldquo;You<lb/>are deaf, I think.&mdash;Why,
+                they<lb/>said they were going to the bad&ndash;<lb type="inWord"/>ger hunt, at the
+                pool below:&mdash;I<lb/>should like to see the hunt.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo;We must not go so far as the<lb/>pool,
+                Joseph,&rdquo; said Robert, &ldquo;it is<lb/>beyond the wood; and if we
+                go<lb/>there, the hill will be between us<lb/>and grandpapa's, and we
+                shall<lb/>never hear the bell.&rdquo;</p>
+            <pb n="20"/>
+            <fw type="pagenumber" rend="align(left)">20</fw>
+            <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">&ldquo; But I should like to have a<lb/>peep at
+                them,&rdquo; rejoined Joseph,<lb/>&ldquo;just a peep; I won't go very<lb/>near them:
+                &rdquo; and so saying, he<lb/>began to move towards that side<lb/>of the wood from
+                which the<lb/>sound came, and Robert followed<lb/> him.</p>
+            <p rend="first-indent(2) align(justify)">At length, the two little boys<lb/>came to a
+                place where they saw<lb/>below them a deep valley with<lb/>trees on each side, and,
+                in the<lb/>bottom, a brook running along<lb/>with a murmuring sound.</p>
+            <p rend="first-indent(2) align(justify)">&quot; That is the brook which fills<lb/>the
+                pool, Robert,&rdquo; said Joseph,<lb/>&ldquo; and if we go down the bank,<lb/>and
+                follow the brook a little way,<lb/>then we shall come to the pool, <lb/>
+                <pb n="21"/>
+                <fw type="pagenumber" rend="align(right)">21</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> and we shall see the badger<lb/>hunt.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Now by this time there was<lb/>no more noise of
+                men and dogs;<lb/>all was quiet in the wood; and<lb/>there was no sound but of
+                birds<lb/>and bees, and creatures of that<lb/>kind; but Joseph would have
+                it<lb/>that the badger hunt was going<lb/>on: and he was so set upon see&ndash;<lb
+                    type="inWord"/>ing it, that he ran down the side<lb/>of the dingle as fast as he
+                could;<lb/>and, being come near the bottom,<lb/>his foot caught in a bent, and
+                he<lb/>fell forward with his face in the<lb/>brook, and his foot entangled<lb/>in
+                the bent. He could not stir<lb/>nor even utter a cry, for when he<lb/>opened his
+                mouth the water and <lb/>
+                <pb n="22"/>
+                <fw type="pagenumber" rend="align(left)">22</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C73</name>
+                        <desc>child and nature (games and plays)</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/> mud came running into it, and<lb/>if his brother had not been near,<lb/>to
+                drag him out by the feet, he<lb/>would most likely have been<lb/>drowned. And this
+                is what he<lb/>would have got for listening to<lb/>these bad people.</p>
+            <p rend="first-indent(2) align(justify)">What an object was poor Jo&ndash;<lb
+                    type="inWord"/>seph, when Robert dragged him<lb/>out of the water half stifled
+                with <lb/>
+                <pb n="23"/>
+                <fw type="pagenumber" rend="align(right)">23</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> mud and mire ! It was well for<lb/>his coat that his grandmamma<lb/>had made
+                him put on a pinafore<lb/>before he went out; but, as it<lb/>was, his hair, and his
+                face, and<lb/>his whole body, were daubed with<lb/>mud; and it was some time
+                    be&ndash;<lb type="inWord"/>fore he could get it out of his<lb/>mouth and
+                eyes.</p>
+            <p rend="first-indent(2) align(justify)">While Robert was trying to<lb/>wipe his face as
+                well as he could,<lb/>the dinner&ndash;bell rang, and the boys<lb/>were obliged to
+                return to their<lb/>grandpapa. But Oh, how a&ndash;<lb type="inWord"/>shamed was
+                Joseph, when he<lb/>saw a lady and a gentleman<lb/>standing with his grandpapa
+                and<lb/>grandmamma, looking out of the<lb/>parlour&ndash;window, as he came up <lb/>
+                <pb n="24"/>
+                <fw type="pagenumber" rend="align(left)">24</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C514</name>
+                        <desc>arrival and return ~ travelling</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/> the gravel walk; and he was<lb/>more ashamed, after he had told<lb/>how he
+                came to be in such a<lb/>plight, to hear his grandpapa say,<lb/>&ldquo; Poor Joseph!
+                it is well that the<lb/>dogs did not come up while you<lb/>were in the water, for
+                they would<lb/>certainly have taken you for the<lb/>badger: but, go, child, you
+                must<lb/>be washed and get into bed while <lb/>
+                <pb n="25"/>
+                <fw type="pagenumber" rend="align(right)">25</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> your clothes are cleaned and<lb/>dried, and we will send you your<lb/>dinner;
+                and I trust, that while<lb/>you are alone, you will think of<lb/>the offence you
+                have committed&mdash;<lb/>first in disobeying your father, and<lb/>secondly in
+                giving way to that<lb/>low and disgraceful inclination<lb/>of listening to what is
+                not profit&ndash;<lb type="inWord"/>able. Go and pray for forgive&ndash;<lb
+                    type="inWord"/>ness, and ask God to give you<lb/>strength to do better in
+                future,<lb/>for I trust that you have not for&ndash;<lb type="inWord"/>gotten what
+                has been so often<lb/>told you, that without the help<lb/>of the Holy Spirit you can
+                do<lb/>nothing well.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">Poor Joseph went away hold&ndash;<lb
+                    type="inWord"/>ing down his head, and Robert <lb/>
+                <pb n="26"/>
+                <fw type="pagenumber" rend="align(left)">26</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> would have followed him, but<lb/>his grandpapa called him back,<lb/>and made
+                him sit down to dinner<lb/>with the company.</p>
+            <p rend="first-indent(2) align(justify)">When he had dined, Robert<lb/>went to his
+                brother, and helped<lb/>him to get up, the maid having<lb/>cleaned his clothes; and
+                by this<lb/>time tea was ready.</p>
+            <p rend="first-indent(2) align(justify)">There was a lofty bow&ndash;window<lb/>in
+                grandmamma's drawing&ndash;room,<lb/>and it was a very pleasant win&ndash;<lb
+                    type="inWord"/>dow ; it opened out upon the<lb/>grassplot. The tea&ndash;table
+                was<lb/>set in the window, and the com&ndash;<lb type="inWord"/>pany sat round the
+                table. Robert<lb/>and Joseph sat with their backs to<lb/>the window, because the old
+                    peo&ndash;<lb type="inWord"/>ple were afraid of the draught.</p>
+            <pb n="27"/>
+            <fw type="pagenumber" rend="align(right)">27</fw>
+            <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+            <lb/>
+            <p rend="first-indent(2) align(justify)">Now it happened, (for that,<lb/>you will say,
+                was rather an un&ndash;<lb type="inWord"/> lucky day,) that, as the footman<lb/>was
+                bringing in the tea&ndash;urn, he<lb/>held it unsteadily, and managed<lb/>to throw a
+                quantity of boiling<lb/>water upon grandmamma's arm:<lb/>the water was scalding hot,
+                and<lb/>the old lady's arm was bare; for<lb/>she was one of those who wore<lb/>short
+                sleeves and treble ruffles,<lb/>such as you have seen in old<lb/>pictures. The arm
+                was blistered<lb/>in a moment, from the elbow to<lb/>the wrist, and the old lady
+                grew<lb/>faint with pain, though she did<lb/>not forget to say to the
+                footman<lb/>&ldquo; Don't be uneasy, Richard, I am<lb/>sure you did not mean it; it
+                was <lb/>
+                <pb n="28"/>
+                <fw type="pagenumber" rend="align(left)">28</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> altogether an accident; you could<lb/>not help it.&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">But what was best to be done?<lb/>One said
+                scraped potatoes were<lb/>best; some said cold water; some<lb/>said sweet oil; for
+                every person<lb/>in the house was called: and one<lb/>ran one way and one
+                another,<lb/>and grandpapa coughed, and fid&ndash;<lb/>getted, and trembled, and
+                could<lb/>think of nothing.</p>
+            <p rend="first-indent(2) align(justify)">Now while all this bustle was<lb/>going
+                forwards, Robert had jump&ndash;<lb type="inWord"/>ed out of the window, ran
+                round<lb/>the house, got into the kitchen,<lb/>seized the dredger, which
+                luckily<lb/>happened to be full of fine flour,<lb/>and the next minute was at
+                his<lb/>grandmother's side raising such a <lb/>
+                <pb n="29"/>
+                <fw type="pagenumber" rend="align(right)">29</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>42B71</name>
+                        <desc>family life at home</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>dust as made those who were<lb/>near her jump back in astonish&ndash;<lb
+                    type="inWord"/>ment.</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; Never mind, grandmamma,<lb/>never
+                mind,&rdquo; said the little man:<lb/>&ldquo; you will soon find ease; it
+                will<lb/>soon cure you; let me cover your<lb/>arm well, and make a paste
+                upon<lb/>it. And you must not wash it off;<lb/>it will fall off, when your arm gets<lb/>
+                <pb n="30"/>
+                <fw type="pagenumber" rend="align(left)">30</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/>well. Now don't you find it ea&ndash;<lb type="inWord"/>sier
+                already?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; I do, my dear boy, indeed,
+                I<lb/>do,&rdquo; said the old lady, &ldquo; really I<lb/>do; the burning heat and
+                smart<lb/>are already abated. But, bless<lb/>you, my child, who put this in<lb/>your
+                head, my darling boy ?&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">&ldquo; A woman at the top of the<lb/>coach,
+                grandmamma, &rdquo; replied<lb/>little Robert. &ldquo; I heard her talk<lb/>about
+                it; and I am so glad that<lb/>I did. Do you still feel easier,<lb/>dear grandmamma?
+                &rdquo;</p>
+            <p rend="first-indent(2) align(justify)">I cannot tell you how many<lb/>kisses were
+                bestowed on little<lb/>Robert; and, as his grandmam&ndash;<lb type="inWord"/>ma's
+                arm was become perfectly<lb/>easy before it was time for the <lb/>
+                <pb n="31"/>
+                <fw type="pagenumber" rend="align(right)">31</fw>
+                <fw type="header" rend="align(centre)">A VISIT TO GRANDPAPA.</fw>
+                <lb/> coach to pass by, his grandpapa<lb/>presented him with a beautiful<lb/>new
+                Bible, in the beginning of<lb/>which was written this passage&mdash;<lb/>&ldquo; <hi
+                    rend="italic"> Take heed how you hear.</hi>&rdquo;</p>
+            <p rend="first-indent(2) align(justify)">And now, my little readers,<lb/>please to tell
+                your mamma the<lb/>moral of this story, for I am<lb/>quite sure that you know what
+                it<lb/>is.</p>
+            <lb/>
+            <p rend="align(centre)">FINIS.</p>
+
+        </body>
+        <back>
+            <div type="colophon" rend="align(centre)">
+                <p>RICKARD CLAY, PRINTER, BREAD STREET HILL.</p>
+            </div>
+
+            <pb n="32"/>
+            <div type="cover"/>
+            <div type="advertisement">
+
+                <head rend="align(centre)">REWARD BOOKS,<lb/>BY<lb/>MRS. CAMERON.<lb/>&rule;</head>
+                <lb/>
+
+                <list type="simple">
+                    <head rend="align(centre)"><measure type="price">SIXPENCE</measure> EACH.</head>
+                    <cb n="1"/>
+                    <item>The History of Margaret<lb rend="indent(2)"/>Whyte</item>
+                    <item>The Oaken Gates Wake</item>
+                    <item>The Raven and the Dove<lb rend="indent(2)"/>and the Holiday Queen</item>
+                    <item>The Pink Tippet</item>
+
+                    <cb n="2"/>
+                    <item>Entertainment and In&ndash;<lb type="inWord" rend="indent(2)"/>struction
+                        for Youth</item>
+                    <item>The Polite Little Child&ndash;<lb type="inWord" rend="indent(2)"/>ren, and
+                        the Lost Child</item>
+                    <item>Lectures for Little<lb rend="indent(2)"/>Children</item>
+
+                </list>
+                <list type="simple">
+                    <head rend="align(centre)"><measure type="price">THREEPENCE</measure>
+                        EACH.</head>
+                    <cb n="1"/>
+                    <item>Amelia</item>
+                    <item>Frank and his Sister</item>
+                    <item>Lucy and her Robin</item>
+                    <item>The Two Lambs</item>
+                    <item>The Mother's Nosegay</item>
+
+                    <cb n="2"/>
+                    <item>The Broken Doll; or, the<lb rend="indent(2)"/>Trial with Two Faces</item>
+                    <item>The Virginian Nightin&ndash;<lb type="inWord" rend="indent(2)"
+                        />gales</item>
+                    <item>The Choice of Glories</item>
+
+                </list>
+                <list type="simple">
+                    <head rend="align(centre)"><measure type="price">TWOPENCE</measure> EACH.</head>
+                    <cb n="1"/>
+                    <item>The Three Flower Pots</item>
+                    <item>The Careless Boy</item>
+
+                    <cb n="2"/>
+                    <item>Visit to an Infant<lb rend="indent(2)"/>School</item>
+
+                </list>
+                <list type="simple">
+                    <head rend="align(centre)"><measure type="price">ONE PENNY</measure>
+                        EACH.</head>
+                    <cb n="1"/>
+                    <item>The Little Dog Flora<lb rend="indent(2)"/>and her Silver Bell</item>
+                    <item>The Kind Little Boy</item>
+                    <item>The Warning Clock; or,<lb rend="indent(2)"/>the Voice of the<lb
+                            rend="indent(2)"/>New Year</item>
+
+                    <cb n="2"/>
+                    <item>The Mountain of Health</item>
+                    <item>The Nosegay of Honey&ndash;<lb type="inWord" rend="indent(2)"/>
+                        >suckles</item>
+                    <item>The Strawberry Gath&ndash;<lb type="inWord" rend="indent(2)"/>
+                        erers</item>
+                    <item>The Bunch of Violets</item>
+                </list>
+                <div type="colophon" rend="align(centre)">
+                    <p>HOULSTON AND WRIGHT</p>
+                    <p>65, PATERNOSTER ROW, LONDON.</p>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>

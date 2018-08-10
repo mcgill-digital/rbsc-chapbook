@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+<!ENTITY ctlig "ct-ligature">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Annika Robbins</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="JestBooks">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="blue coloured wrappers"/>
+
+
+            <pb n="2"/>
+            <titlePage rend="align(centre)">
+                <docTitle>
+                    <titlePart type="main">&drule;<lb/>FUN UPON FUN;</titlePart>
+                    <lb/>
+                    <titlePart type="sub">OR THE<lb/>HUMOURS OF A FAIR.<lb/>Giving a Description of
+                        the Curious<lb/><hi rend="italic">AMUSEMENTS IN EARLY LIFE:</hi><lb/>ALSO AN
+                        ACCOUNT OF A<lb/>MOUNTEBANK DOCTOR<lb/>AND HIS<lb/><hi rend="italic">MERRY
+                            ANDREW.</hi></titlePart>
+                </docTitle>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint><pubPlace>GLASGOW</pubPlace>:<lb/>Sold by <publisher>J. LUMSDEN &amp;
+                        Son.</publisher><lb/>[<hi rend="italic">Price <measure type="price"
+                            >Twopence</measure>.</hi>]</docImprint>
+
+            </titlePage>
+
+            <pb n="3"/>
+            <div type="frontispiece" rend="align(centre)">
+                <figure rend="brown ink">
+                    <head rend="align(top)">MERRY ANDREW</head>
+                    <lb/>
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                    <p rend="align(bottom)"><lg>
+                            <l>In ev'ry rank you'll Merry Andrews find,</l>
+                            <l>Who with their nonsence oft decieve Mankind.</l>
+                        </lg></p>
+                </figure>
+            </div>
+
+
+            <pb n="4"/>
+        </front>
+        <body rend="align(justify)">
+            <pb n="5"/>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">THE<lb/>MERRY ANDREW;<lb/>OR THE<lb/>HUMOURS
+                    OF A FAIR.</head>
+                <lb/>
+                <head type="sub" rend="align(centre)"><hi rend="italic">Which begins in a Manner not
+                        at all<lb/>Wonderful.</hi><lb/>&drule;</head>
+                <lb/>
+
+                <p>HALLOO Boys! halloo Boys!<lb/><hi rend="italic">Huzza! Huzza! Huzza!</hi></p>
+                <p rend="first-indent(2)">Come <hi rend="italic">Tom</hi>, make haste, the<lb/>Fair
+                    is begun. Here is <hi rend="italic">Jack<lb/>Pudding</hi>, with the
+                    Gridiron<lb/>on his back, and all the Boys<lb/>hallooing.</p>
+                <p rend="indent(2)">Make haste, make haste,<lb/>but don't get into the
+                    crowd;<lb/>for little boys are often trod <pb n="6"/>
+                    <fw type="pagenumber" rend="align(left)">6</fw><fw type="header"
+                        rend="align(centre) italic">Fun upon Fun; or</fw><lb/> upon, and even
+                    crushed to<lb/>death, by mixing with the<lb/>mob. If you would be safe,<lb/>by
+                    all means avoid a crowd.<lb/>Look yonder, <hi rend="italic">Dick
+                    Wilson</hi><lb/>there has done the very thing<lb/>I cautioned you against.
+                    He<lb/>has got into the middle of<lb/>that great mob. A silly chit:<lb/>that boy
+                    is always thrusting<lb/>his nose into difficulties: sure&ndash;<lb type="inWord"
+                    />ly there never was such an<lb/>impertinent little monkey.&mdash;</p>
+                <p rend="first-indent">How shall we get him out?<lb/>see, how the rogue
+                    scuffles<lb/>and roars. He deserves all<lb/>the squeezing he has got,
+                        be&ndash;<lb type="inWord"/>cause he will never take ad&ndash;<lb
+                        type="inWord"/>vice, and yet I am sorry for <pb n="7"/>
+                    <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                        type="pagenumber" rend="align(right)">7</fw><lb/> him. Who tapped me on
+                    the<lb/>shoulder? Oh, Sam, what are<lb/>you come puffing and blowing!<lb/>Why,
+                    you look as busy as a<lb/>fool in the fair. Well, what<lb/>news do you bring
+                    from the<lb/>region of nonsense? I have not<lb/>seen it, and should be
+                    glad<lb/>to know what is done without<lb/>the trouble of attending.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+            </div>
+
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+            <fw type="header" rend="align(centre) italic">Fun upon Fun; or</fw>
+            <lb/>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">&drule;<lb/>CHAP. II.<lb/>&drule;</head>
+                <lb/>
+                <head type="sub" rend="align(centre)">Sam Gooseberry's <hi rend="italic">Account of
+                        the<lb/>wonderful Things of the Fair.</hi></head>
+                <lb/>
+                <p>WHY, there is such a mob&ndash;<lb type="inWord"/>bing at the other side
+                    of<lb/>the Fair, says <hi rend="italic">Sam</hi>, as you<lb/>never saw in your
+                    life, and<lb/>one fat fellow has got among<lb/>them that has made me
+                    laugh<lb/>immoderately&mdash;Stand further,<lb/>good folks, says he, what
+                    a<lb/>mob is here! Who raked<lb/>all this filthy crowd together?<lb/>Honest
+                    friend, take away your<lb/>elbow. What a beastly crew<lb/>am I got among? What a
+                        <pb n="9"/>
+                    <pb n="10"/>
+                    <figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>DICK WILSON</head>
+                    </figure><lb/><figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>GAFFER GINGERBREAD</head>
+                    </figure>
+                    <pb n="11"/>
+                    <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                        type="pagenumber">11</fw><lb/> smell? Oh, and such squeez&ndash;<lb
+                        type="inWord"/>ing. Why, you overgrown<lb/>sloven, says a footman
+                    that<lb/>stood by, who makes half<lb/>so much noise and crowd&ndash;<lb
+                        type="inWord"/>ing as you; reduce your own<lb/>fat paunch to a
+                    reasonable<lb/>compass, sirrah, and there<lb/>will be room enough for
+                    us<lb/>all. Upon this the whole<lb/>company set up a shout, and<lb/>crowding
+                    around my friend,<lb/>Tunbelly, so left an opening,<lb/>through which I made my
+                        e&ndash;<lb type="inWord"/>scape, and having brought off<lb/><hi
+                        rend="italic">Dick Wilson</hi> with me, who, by<lb/>being heartily squeezed,
+                    and<lb/>having twelve of his ten toes<lb/>trod off, is now cured of his <pb
+                        n="12"/>
+                    <fw type="pagenumber" rend="align(left)">12</fw><fw type="header"
+                        rend="align(centre) italic">Fun upon Fun; or</fw><lb/> impertinent
+                    curiosity. But<lb/>you desire an account of the<lb/>fair, and I mean to
+                    gratify<lb/>you. The first thing I saw<lb/>which gave me pleasure, was<lb/>old
+                        <hi rend="italic">Gaffer Gingerbread's</hi> stall.</p>
+                <lb/>
+                <lg>
+                    <l>Here's gingerbread, ginger&ndash;<lb type="inWord"/>bread here of the
+                        best.</l>
+                    <l>Come buy all I have, and I'll<lb/>give you the rest.</l>
+                </lg>
+                <lb/>
+                <p rend="first-indent(2)">The man of the world for<lb/>gingerbread. What do
+                    you<lb/>buy, what do you buy? says<lb/>the old gentleman; please to<lb/>buy a
+                    gingerbread wife, Sir;<lb/>here's a very delicate one.<lb/>Indeed there is too
+                    much gold<lb/>on the nose: but that is no ob&ndash; <pb n="13"/>
+                    <fw type="header" rend="aign(centre) italic">The Merry Andrew.</fw><fw
+                        type="pagenumber">13</fw><lb/> jection to those who drive<lb/>Southfield
+                    bargains, and mar&ndash;<lb type="inWord"/>ry their wives by
+                    weight.&mdash;<lb/>Will you choose to have a gin&ndash;<lb type="inWord"
+                    />ger&ndash;bread husband, Madam; I<lb/>assure you, you may have a<lb/>worse; or
+                    a watch, Madam;<lb/>here are watches for belles,<lb/>beauxs, bucks, and
+                    blockheads.<lb/>But here comes Mr, Punch.<lb/>See, there he is with his
+                    haunch<lb/>at his back. The crowd that<lb/>came with him obliged us to<lb/>leave
+                    the place; but just as we<lb/>were going, <hi rend="italic">Giles</hi> called
+                    out, gen&ndash;<lb type="inWord"/>tlemen, buy a house before you<lb/>go. 'Tis
+                    better to buy than to<lb/>build. You have heard of the<lb/>Cock that crowed in
+                    the morn, <pb n="14"/>
+                    <fw type="pagenumber" rend="align(left)">14</fw><fw type="header"
+                        rend="align(centre) italic">Fun upon Fun; or</fw><lb/> that waked the Priest
+                    all shaven<lb/>and shorn, that married the<lb/>Man all tattered and torn,
+                    that<lb/>kissed the Maiden all forlorn,<lb/>that milked the Cow with
+                    the<lb/>crumpled horn, that tossed the<lb/>Dog, that worried the Cat,
+                    that<lb/>killed the Rat, that eat the Malt,<lb/>that lay in the house that
+                    Jack<lb/>built. If there is any part you<lb/>do not like, you may eat
+                    it;<lb/>and I sell it for a penny. Buy<lb/>gentlemen, buy, and don't<lb/>build.
+                    Many of my friends<lb/>have ruined themselves by <lb/>building. The insufferable
+                        fol&ndash;<lb type="inWord"/>ly of building a fine house, has I<lb/>obliged
+                    many a man to lie in <pb n="15"/>
+                    <figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>MR PUNCH</head>
+                    </figure><lb/>
+                    <figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>WHEEL of FORTUNE</head>
+                    </figure>
+                    <pb n="16"/>
+                    <pb n="17"/>
+                    <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                        type="pagenumber">17</fw><lb/> the street. Observe what the<lb/>poet says on
+                    the subject:<lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                    </figure><lb/>
+                    <lg>
+                        <l>The man who builds the finest<lb rend="indent(4)"/>place,</l>
+                        <l>And cannot for it pay,</l>
+                        <l>Is sure to feel his wretched<lb rend="indent(4)"/>case,</l>
+                        <l>While others in it lay.</l>
+                    </lg></p>
+
+
+                <fw type="pagenumber" rend="align(left)">18</fw>
+                <fw type="header" rend="align(centre) italic">Fun upon Fun; or</fw>
+                <lb/>
+                <p>A little further we saw one<lb/>with the Wheel of Fortune<lb/>before him, playing
+                    with chil&ndash;<lb type="inWord"/>dren for oranges. What do<lb/>you say? Twenty
+                    may play as<lb/>well as one. Ay, and all may<lb/>lose, I suppose. Go
+                    away,<lb/>sirrah; what, do you teach<lb/>children to game? Gaming is<lb/>a
+                    scandalous practice. The<lb/>gamester, the liar, the thief,<lb/>and the
+                    pick&ndash;pocket, are first<lb/>cousins, and ought all to be<lb/>turned out of
+                    company.</p>
+                <p rend="first-indent(2)">At this instant up came<lb/><hi rend="italic">Dick
+                        Sadbury</hi> crying. And<lb/>what do you think he cries<lb/>for? Why, he has
+                    been at the<lb/>gaming table; or, in other <pb n="19"/>
+                    <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                        type="pagenumber" rend="align(right)">19</fw><lb/> words, at the Wheel of
+                        For&ndash;<lb type="inWord"/>tune, and lost all the money<lb/>that was given
+                    him by his fa&ndash;<lb type="inWord"/>ther and mother, and the fair&ndash;<lb
+                        type="inWord"/>ing that he received from Mr.<lb/>Long, Mr. Williams, and
+                    Mrs.<lb/>Goodenough. At first he won<lb/>an orange, put it in to his<lb/>pocket,
+                    and was pleased; and<lb/>then he won a knife, whipt it<lb/>up, and was happy;
+                    after this<lb/>he won many other things,<lb/>till at last Fortune turned
+                        a&ndash;<lb type="inWord"/>gainst him, as at one time or<lb/>other she
+                    always does against<lb/>those that come to her wheel<lb/>and seek her favours,
+                    and he<lb/>was choused of all his money <pb n="20"/>
+                    <fw type="pagenumber" rend="align(left)">20</fw><fw type="header"
+                        rend="align(centre) italic">Fun upon Fun; or</fw><lb/> and brought nothing
+                    away but<lb/>a halfpenny Jew's harp. Why<lb/>do you bellow so, you mon&ndash;<lb
+                        type="inWord"/>key? Go away, and learn more<lb/>sense for the future.</p>
+                <lb/>
+                <lg>
+                    <l>Would you be wealthy, hon&ndash;<lb type="inWord" rend="indent(2)"/>est
+                        Dick,</l>
+                    <l>Ne'er seek success at Fortune's<lb rend="indent(2)"/>wheel;</l>
+                    <l>For she does all her vot'ries trick,</l>
+                    <l>And you'll her disappointments<lb rend="indent(2)"/>feel;</l>
+                    <l>For wealth, <hi rend="italic">in virtue</hi> put your<lb rend="indent(2)"
+                        />trust,</l>
+                    <l>Be <hi rend="italic">faithful, vigilant,</hi> and <hi rend="italic"
+                            >just.</hi></l>
+                </lg>
+                <lb/>
+
+                <p rend="first-indent(2)">Never game, or if you do,<lb/>never play for money. Avoid
+                        <pb n="21"/>
+                    <pb n="22"/>
+                    <figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>DICK SUDBURY</head>
+                    </figure><lb/>
+                    <figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>MOUNTEBACK DOCTOR</head>
+                    </figure>
+                    <pb n="23"/>
+                    <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                        type="pagenumber" rend="align(right)">23</fw><lb/> a gamester, as you would
+                    a<lb/>mad dog, or as a wolf that<lb/>comes to devour you.</p>
+                <p rend="first-indent(2)">Hey day! who comes here?<lb/>Oh, this is the
+                    Mountebank.</p>
+                <lg>
+                    <l>He talks of curing every sore,</l>
+                    <l>But makes you twice as many<lb/>more.</l>
+                </lg>
+                <p>But hear him! hear his speech,<lb/>and observe the merry An&ndash;<lb
+                        type="inWord"/>drew.</p>
+                <div type="section">
+                    <head rend="align(centre)">&rule;<lb/><hi rend="italic">The DOCTORS
+                        SPEECH.</hi></head>
+                    <lb/>
+                    <sp>
+                        <p rend="first-indent(2)">Gentlemen and Ladies, I<lb/>am the doctor of all
+                            doctors,<lb/>the great doctor of doctors,<lb/>who can doctor you all. I
+                                <pb n="24"/>
+                            <fw type="pagenumber" rend="align(left)">24</fw><fw type="header"
+                                rend="align(centre) italic">Fun upon Fun; or</fw><lb/> ease your
+                            pains gratis, cure<lb/>you for nothing, and sell you<lb/>my packets,
+                            that you may ne&ndash;<lb type="inWord"/>ver be sick again.
+                                (Enter<lb/><hi rend="italic">Andrew</hi> blowing on a
+                                scrub&ndash;<lb type="inWord"/>bing&ndash;broom.) Sirrah,
+                            where<lb/>have you been this morning?</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic)">Andrew.</speaker>
+                        <p>Been, Sir! why, I<lb/>have been on my travels, Sir,<lb/>with my knife,
+                            Sir; I have<lb/>travelled round this great ap&ndash;<lb type="inWord"
+                            />ple. Besides this, I have tra&ndash;<lb type="inWord"/>velled through
+                            the fair, Sir,<lb/>and bought all these ginger&ndash;<lb type="inWord"
+                            />bread books at a man's stall,<lb/>who sells learning by weight<lb/>and
+                            measure, arithmetic by<lb/>the gross, geometry by the<lb/>square, and
+                            physic and philo&ndash; <pb n="25" type="inWord"/>
+                            <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                                type="pagenumber" rend="align(right)">25</fw><lb/> sophy by the
+                            pound. So I<lb/>bought the philosophy, and<lb/>left the physic for you,
+                            master.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p>Why, sirrah, do you<lb/>never take physic?</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>Yes, master, some<lb/>times.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p>What sort do you<lb/>take?</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>Any sort, no mat&ndash;<lb type="inWord"/>ter what; 'tis all one to
+                            me.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p>And how do you<lb/>take it?</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>Why I take it; I<lb/>take it: and put it upon the<lb/> shelf: and if I
+                            don't get well,<lb/>I take it down again, and work<lb/>it off with good
+                            strong ale.<lb/>
+                            <fw type="signature" rend="align(centre)">B</fw>
+                            <pb n="26"/>
+                            <fw type="pagenumber" rend="align(left)">26</fw><fw type="header"
+                                rend="align(centre) italic">Fan upon Fun; or</fw><lb/> But you shall
+                            hear me read in<lb/>my golden books, master.</p>
+                        <lb/>
+                        <lg>
+                            <l>He that can dance with a bag<lb/>at his back,</l>
+                            <l>Need swallow no physic, for<lb/>none he doth lack,</l>
+                            <l>He who is healthy, and cheer&ndash;<lb type="inWord"/>ful and
+                                cool,</l>
+                            <l>Yet squanders his money on<lb/>physic's a fool,</l>
+                            <l>Fool, master, fool, master,<lb/>fool, fool.</l>
+                        </lg>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p>Sirrah, you block&ndash;<lb type="inWord"/>head, I'll break your
+                            head.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>What, for read&ndash;<lb type="inWord"/>ing my book, Sir?</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p> No; for your im&ndash;<lb type="inWord"/>pudence, puppy. But come, <pb
+                                n="27"/>
+                            <figure rend="align(centre) red ink">
+                                <ic:iconClass>
+                                    <name/>
+                                    <desc/>
+                                </ic:iconClass>
+                                <head>ASSEMBLING the PEOPLE</head>
+                            </figure><lb/>
+                            <figure rend="align(centre) red ink">
+                                <ic:iconClass>
+                                    <name/>
+                                    <desc/>
+                                </ic:iconClass>
+                                <head>SAM SENSIBLE</head>
+                            </figure>
+                            <pb n="28"/>
+                            <pb n="29"/>
+                            <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                                type="pagenumber">29</fw><lb/> good people, throw up
+                            your<lb/>handkerchiefs, you lose time<lb/>by attending to that
+                                blunder&ndash;<lb type="inWord"/>ing booby, and by and by<lb/>you'll
+                            be in a hurry, and we<lb/>shall not be able to serve you.<lb/>Consider,
+                            gentlemen and la&ndash;<lb type="inWord"/>dies, in one of these
+                            packets<lb/>is deposited a curious gold ring,<lb/>which the purchaser,
+                            whoever<lb/>it may happen to be, will have<lb/>for a shilling, together
+                            with all<lb/>the packet of medicines; and<lb/>every other adventurer
+                            will<lb/>have a packet for one shilling,<lb/>which he may sell for ten
+                            times<lb/>that sum.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>Master, master,<lb/>I'll tell you how to get this. <pb n="30"/><fw
+                                type="pagenumber" rend="align(left)">30</fw><fw type="header"
+                                rend="align(centre) italic">Fun upon Fun; or</fw><lb/> ring, and a
+                            great deal of mo&ndash;<lb type="inWord"/>ney into the bargain.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p>How, sirrah?</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>Why, buy up all<lb/>of them yourself, and you<lb/>will be sure of the
+                            ring, and<lb/>have the packets to sell for ten<lb/>shillings a
+                            piece.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p>That's true: but you<lb/>are covetous, sirrah: you are co&ndash;<lb
+                                type="inWord"/>vetous, and want to get money.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>And master, I be&ndash;<lb type="inWord"/>lieve you don't want to
+                            get<lb/>physic.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Doctor.</speaker>
+                        <p>Yes I do.</p>
+                    </sp>
+                    <sp rend="first-indent(2)">
+                        <speaker rend="italic">Andrew.</speaker>
+                        <p>Then 'tis to get<lb/>rid of it. But,<lb/>
+                            <lg>
+                                <l rend="indent(2)">He that can dance with a<lb rend="indent(4)"
+                                    />bag at his back,</l>
+                                <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw>
+                                <fw type="pagenumber" rend="align(right)">31</fw>
+                                <lb/>
+                                <l>Need swallow no physic, for<lb rend="indent(4)"/>none he doth
+                                    lack.</l>
+                            </lg></p>
+                        <p rend="first-indent(2)">Huzza, halloo boys, halloo<lb/>boys, halloo!</p>
+                    </sp>
+                </div>
+            </div>
+            <div type="chapter">
+                <head type="main" rend="align(centre)">&drule;<lb/>CHAP. III.</head>
+                <head type="sub" rend="align(centre)">Sam Sensible's <hi rend="italic">Account of
+                        what<lb/>he had seen in the Fair, parti&ndash;<lb type="inWord"/>cularly a
+                        description of the</hi> Up&ndash;<lb type="inWord"/>and&ndash;Down, <hi
+                        rend="italic">and other things.</hi></head>
+                <lb/>
+                <div type="section">
+                    <p>IT is strange! but some child&ndash;<lb type="inWord"/>ren will never take
+                            ad&ndash;<lb type="inWord"/>vice, and always are run&ndash;<lb
+                            type="inWord"/>ning into danger and diffi&ndash;<lb type="inWord"
+                        />culties: that silly chit, <hi rend="italic">Wat<lb/>Wilful</hi>, has been
+                        riding upon <pb n="32"/>
+                        <fw type="pagenumber" rend="align(left)">32</fw><fw type="header"
+                            rend="align(centre) italic">Fun upon Fun; or</fw><lb/> the Up&ndash;and
+                        down, and is fal&ndash;<lb type="inWord"/>len off, and almost
+                        killed.&mdash;<lb/>You know what I mean by<lb/>the Up&ndash;and&ndash;down?
+                        It is a<lb/>horse in a box, a horse that<lb/>flies in the air, like that
+                        which<lb/>the ancient poets rode on.</p>
+                    <p rend="first-indent(2)">In the next page you see<lb/>poor <hi rend="italic"
+                            >Wat</hi> and his mother la&ndash;<lb type="inWord"/>menting over
+                        him.</p>
+                    <p rend="first-indent(2)">If he had taken her advice,<lb/>all had been well; for
+                        as he<lb/>was going to mount, <hi rend="italic">Wat</hi>,<lb/>says she,
+                        don't be so ambi&ndash;<lb type="inWord"/>tious. Ambitious people
+                            ge&ndash;<lb type="inWord"/>nerally tumble; and when<lb/>once down, it
+                        is not easy to<lb/>get up again. Remember<lb/>what your poor father used <pb
+                            n="33"/>
+                        <pb n="34"/>
+                        <figure rend="align(centre) red ink">
+                            <ic:iconClass>
+                                <name/>
+                                <desc/>
+                            </ic:iconClass>
+                            <head>UP and DOWN</head>
+                        </figure><lb/><figure rend="align(centre) red ink">
+                            <ic:iconClass>
+                                <name/>
+                                <desc/>
+                            </ic:iconClass>
+                            <head>WAT and his MOTHER</head>
+                        </figure>
+                        <pb n="34"/>
+                        <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                            type="pagenumber" rend="align(right)">35</fw><lb/> to read about
+                        Cardinal Wol&ndash;<lb type="inWord"/>sey.</p>
+                    <p rend="first-indent(2)">&ldquo; Farewell, a long farewell to<lb/>all my
+                        greatness! This is the<lb/>state of man: to&ndash;day he puts<lb/>forth the
+                        tender leaves of<lb/>hope, to&ndash;morrow blossoms,<lb/>and bears his
+                        blushing hon&ndash;<lb type="inWord"/>ours thick upon him: The<lb/>third day
+                        comes a frost, a kill&ndash;<lb type="inWord"/>ing frost, and when he
+                        thinks,<lb/>good easy man, full surely his<lb/>greatness is a ripening,
+                        nips<lb/>his root and then he falls as<lb/>I do. I have ventured,
+                        like<lb/>little wanton boys that swim<lb/>on bladders, these many
+                            sum&ndash;<lb type="inWord"/>mers in a sea of glory: But<lb/>far beyond
+                        my depth! My <pb n="36"/>
+                        <fw type="pagenumber" rend="align(left)">36</fw><fw type="header"
+                            rend="align(centre) italic">Fun upon Fun; or</fw><lb/> high blown pride
+                        at length<lb/>broke under me, and now<lb/>has left me weary, and
+                        old<lb/>with service, to the mercy of<lb/>a rude stream, that must
+                        for<lb/>ever hide me. Vain pomp<lb/>and glory of the world I hate<lb/>ye, I
+                        feel my heart new o&ndash;<lb type="inWord"/>pened.&rdquo;</p>
+                    <p rend="first-indent(2)">But <hi rend="italic">Wilful</hi> would, and
+                        so<lb/>down he tumbled, and lies<lb/>there a warning to the ob&ndash;<lb
+                            type="inWord"/>stinate and ambitious. Had<lb/>he taken his mother's
+                        advice,<lb/>and rode upon the Round&ndash;<lb type="inWord"/>about, as <hi
+                            rend="italic">Dick Stamp</hi>, and<lb/><hi rend="italic">Will Somer</hi>
+                        did, he might have<lb/>whipped and spurred for an<lb/>hour without doing any
+                        mis&ndash; <pb n="37"/>
+                        <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                            type="pagenumber" rend="align(right)">37</fw><lb/> chief, or receiving
+                        any hurt.<lb/>But he was a proud and obsti&ndash;<lb type="inWord"/>nate
+                        silly boy.</p>
+                </div>
+                <div type="section">
+                    <head rend="align(centre)">&drule;<lb/>DESCANT ON TIME.</head>
+                    <lb/>
+                    <p rend="first-indent(2)">Now, my young friends,<lb/>though you have had a
+                            trea&ndash;<lb type="inWord"/>tise on many pleasing and im&ndash;<lb
+                            type="inWord"/>portant subjects, yet there is<lb/>one remains, and that
+                            <hi rend="italic">one</hi><lb/>should not be forgot. There&ndash;<lb
+                            type="inWord"/>fore I shall introduce a de&ndash;<lb type="inWord"
+                        />scant on Time; and this I<lb/>hope will meet with your ap&ndash;<lb
+                            type="inWord"/>probation; for the sole intent<lb/>of this little book is
+                        to furnish<lb/>you with such lessons as may<lb/>improve your
+                        understanding,<lb/>and ripen your judgement.</p>
+
+
+                    <pb n="38"/>
+                    <fw type="pagenumber" rend="align(left)">38</fw>
+                    <fw type="header" rend="align(centre) italic">Fun upon Fun; or</fw>
+                    <lb/>
+                    <p rend="first-indent(2)">You have just been in&ndash;<lb type="inWord"/>formed
+                        by the Poet, that<lb/>Time is a wonder worker,<lb/>and truly it may well be
+                            call&ndash;<lb type="inWord"/>ed so. It is an awful revo&ndash;<lb
+                            type="inWord"/>lutionist, for it brings strange<lb/>things to pass, and
+                        occasions<lb/>innumerable vicissitudes in the<lb/>world. Though it is
+                            continu&ndash;<lb type="inWord"/>ally moving on, yet its ad&ndash;<lb
+                            type="inWord"/>vancements are so slow and<lb/>progressive, that we
+                            frequent&ndash;<lb type="inWord"/>ly disregard its course. But<lb/>that
+                        time is uncertain, and<lb/>Death may cut you off even<lb/>in your youth.
+                        Therefore,<lb/>improve the present hour,<lb/>for you know not what
+                        the<lb/>next day may bring forth.</p>
+
+
+                    <pb n="39"/>
+                    <figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>ROUND ABOUT</head>
+                    </figure>
+                    <lb/>
+                    <figure rend="align(centre) red ink">
+                        <ic:iconClass>
+                            <name/>
+                            <desc/>
+                        </ic:iconClass>
+                        <head>OLD TIME</head>
+                    </figure>
+
+
+                    <pb n="40"/>
+                    <pb n="41"/>
+                    <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw>
+                    <fw type="pagenumber">41</fw>
+                    <lb/>
+                    <p rend="first-indent(2)">Slow as it seems to be, it<lb/>steals upon us, and
+                        gently leads<lb/>us from childhood to old age.<lb/>When we arrive at our
+                            three&ndash;<lb type="inWord"/>score years, then we begin<lb/>to think
+                        that time runs on a&ndash;<lb type="inWord"/>pace, and wish we had
+                            em&ndash;<lb type="inWord"/>ployed the fleeting hours to<lb/>more
+                        advantage. Here, my<lb/>young friends, is the fatal<lb/>error which
+                        thousands expe&ndash;<lb type="inWord"/>rience to their cost; for
+                        they<lb/>pursue their foolish vanities,<lb/>and never consider that
+                        time<lb/>is given us for the express<lb/>purpose of preparing for
+                            eter&ndash;<lb type="inWord"/>nity. Let me admonish you<lb/>to think
+                        better, and always<lb/>bear this truth in your minds.</p>
+                </div>
+
+
+                <pb n="42"/>
+                <fw type="pagenumber" rend="align(left)">42</fw>
+                <fw type="header" rend="align(centre) italic">Fun upon Fun; or</fw>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)">&drule;<lb/>ON LEARNING.</head>
+                    <lb/>
+                    <p rend="first-indent(2)">It is impossible to enumerate all<lb/>the advantages
+                        which are derived<lb/>from education or learning. It<lb/>qualifies us for
+                        every station, and<lb/>never fails to prove an invaluable<lb/>ornament to
+                        its possessor.&mdash;But the<lb/>Dunce appears in a very
+                        different<lb/>light; for he is the scoff of society,<lb/>and must of
+                        necessity drudge through<lb/>a life of ignorance and slavery.</p>
+                </div>
+                <div type="section">
+                    <head rend="align(centre)">&drule;<lb/>ON BUSINESS.</head>
+                    <lb/>
+                    <p rend="first-indent(2)">It is of little consequence what<lb/>your calling is,
+                        provided you ful&ndash;<lb type="inWord"/>fil your station with honesty
+                        and<lb/>integrity, for that is the true source<lb/>of contentment: and, if
+                        you are<lb/>satisfied with that state in which <pb n="43"/>
+                        <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw><fw
+                            type="pagenumber" rend="align(right)">43</fw><lb/> God hath placed you,
+                        not even<lb/>kings can desire, or be possessed<lb/>of more, perhaps not so
+                        much; be&ndash;<lb type="inWord"/>cause higher the station, the
+                            great&ndash;<lb type="inWord"/>er the cares.</p>
+                </div>
+                <div type="section">
+                    <head rend="align(centre)">&drule;<lb/>ON IDLENESS.</head>
+                    <lb/>
+                    <p rend="first-indent(2)">It would be thought a hard go&ndash;<lb type="inWord"
+                        />vernment that should tax its people<lb/>one&ndash;tenth part of their time
+                        to be<lb/>employed in its service: but idle&ndash;<lb type="inWord"/>ness
+                        taxes many of us much more,<lb/>if we reckon all that is spent
+                        in<lb/>absolute sloth, or in doing of no&ndash;<lb type="inWord"/>thing,
+                        with that which is spent in<lb/>idle employments or amusements,<lb/>that
+                        amount to nothing. Sloth,<lb/>by bringing on diseases,
+                        absolutely<lb/>shortens life. &ldquo;Sloth, like rust,<lb/>consumes faster
+                        than labour wears,<lb/>while the used key is always bright.&rdquo;</p>
+                </div>
+
+
+                <pb n="44"/>
+                <div type="section">
+                    <head rend="align(centre)">SELECT SENTENCES<lb/> FOR THE<lb/> CONDUCT OF
+                        LIFE.<lb/>&drule;</head>
+                    <lb/>
+                    <p rend="first-indent(2)">Disdain not who is below you<lb/>in the gifts of
+                        fortune, since he<lb/>may be as far above you in the gifts<lb/>of the mind,
+                        which are the only<lb/>true riches.</p>
+                    <p rend="first-indent(2)">Be very careful how you spend<lb/>your time; for when
+                        it is once<lb/>past, it can never be called back<lb/>again.</p>
+                    <p rend="first-indent(2)">Quiet persons are always the ob&ndash;<lb
+                            type="inWord"/>jects of love and esteem; having<lb/>therefore a hatred
+                        to all quarrels<lb/>and debates. Study to inform<lb/>your minds, and reform
+                        your lives.</p>
+                    <p rend="first-indent(2)">He that lives by the rules of<lb/>reason shall never
+                        be poor; and<lb/>he that governs his life by any<lb/>other rule, shall never
+                        be rich.</p>
+                </div>
+
+
+                <pb n="45"/>
+                <pb n="46"/>
+                <figure rend="align(centre) red ink">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                    <head>GOOD GIRL</head>
+                </figure>
+                <lb/>
+                <figure rend="align(centre) red ink">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                    <head>BAD GIRL</head>
+                </figure>
+
+
+
+                <pb n="47"/>
+                <fw type="header" rend="align(centre) italic">The Merry Andrew.</fw>
+                <fw type="pagenumber" rend="align(right)">47</fw>
+                <lb/>
+                <div type="section">
+                    <head rend="align(centre)">TO A GOOD GIRL.</head>
+                    <lb/>
+                    <lg>
+                        <l>SO, pretty Miss <hi rend="italic">Prudence</hi>, you're<lb
+                                rend="indent(4)"/>come to the Fair,</l>
+                        <l>And a very good girl they tell me<lb rend="indent(4)"/>you are,</l>
+                        <l>Here, take this fine orange, this<lb rend="first-indent(2)"/>watch, and
+                            this knot,</l>
+                        <l>You're welcome, my dear, to all<lb/>we have got.</l>
+                    </lg>
+                </div>
+                <div type="section">
+                    <head rend="align(centre)">TO A NAUGHTY GIRL.</head>
+                    <lb/>
+                    <lg>
+                        <l>SO, pert >Mistress <hi rend="italic">Prate apace</hi>,<lb
+                                rend="indent(4)"/> how came you here?</l>
+                        <l>There is nobody wants to see you at<lb rend="indent(2)"/>the Fair.</l>
+                        <l>Not an orange, an apple, a cake,<lb rend="indent(2)"/>or a nut,</l>
+                        <l>Will any one give to so saucy a slut.</l>
+                    </lg>
+                    <p>FINIS.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <pb n="48"/>
+        </back>
+    </text>
+</TEI>

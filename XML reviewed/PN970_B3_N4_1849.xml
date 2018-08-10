@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2012"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2012-10-02"/>
+                <label>Initial TEI Markup</label>
+                <name/>Casey Lees<note/>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012-10-17"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2012"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="RomancesFairyFolk">
+        <front>
+            <pb n="1"/>
+            <div rend="green coloured pictorial wrappers align(centre)" type="cover">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title type="m">NEW HISTORY<lb/>OF THE<lb/>Life and Adventures<lb/>OF<lb/>TOM
+                        THUMB.</title>
+                    <lb/>
+                    <figure>
+                        <ic:iconClass>
+                            <name>43C7146</name>
+                            <desc>ball games (children's games)</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <lb/>&rule;<lb/>
+                    <publisher>NEW HAVEN.<lb/> PUBLISHED BY S. BABCOCK.</publisher>
+                    <lb/>&rule;<lb/>
+                    <date>1850</date>. </bibl>
+
+                <pb n="2"/>
+            </div>
+
+            <pb n="3"/>
+            <titlePage rend="align(centre)" type="page">
+                <figure type="borderornament"/>
+                <docTitle>
+                    <titlePart rend="align(centre)">NEW HISTORY<lb/>OF THE<lb/>LIFE AND
+                        ADVENTURES<lb/>OF<lb/>TOM THUMB.</titlePart>
+                </docTitle>
+                <figure>
+                    <ic:iconClass>
+                        <name>31D11221 boy</name>
+                        <desc>(child between toddler and youth)</desc>
+                    </ic:iconClass>
+                </figure>
+                <epigraph>
+                    <lg>
+                        <l>His shirt was made of a butterfly&rsquo;s wing,</l>
+                        <l>His boots were made of a mouse&rsquo;s skin,</l>
+                        <l>His coat was wove of thistle down,</l>
+                        <l>An oak&ndash;leaf hat he had for his crown,</l>
+                        <l>A tailor&rsquo;s needle hung by his side,</l>
+                        <l>And a mouse for a horse he used to ride.</l>
+                    </lg>
+                </epigraph>
+                <docImprint> &rule;<lb/>
+                    <pubPlace rend="align(centre)">NEW HAVEN.</pubPlace>
+                    <publisher rend="align(centre)">PUBLISHED BY S. BABCOCK.</publisher>
+                    <lb/>&rule; <docDate>1849.</docDate>
+                </docImprint>
+
+            </titlePage>
+        </front>
+        <body>
+            <figure type="borderornament"/>
+            <pb n="4"/>
+            <fw type="pagenumber" rend="align(left)">2</fw>
+            <fw type="header" rend="align(centre)">MERLIN AT THE COTTAGE.</fw>
+            <fw>&rule;</fw>
+            <figure rend="vertical">
+                <ic:iconClass>
+                    <name>41C111</name>
+                    <desc>giving food</desc>
+                </ic:iconClass>
+                <head>signed Anderson</head>
+            </figure>
+            <pb n="5"/>
+            <head rend="align(centre)">NEW HISTORY<lb/>OF THE<lb/>LIFE AND ADVENTURES<lb/>OF<lb/>TOM
+                THUMB.<lb/>&rule;</head>
+            <p rend="indent(2) align(justify)">When I was a little boy, children&rsquo;s<lb/>books
+                were not quite as plenty, or as<lb/>cheap, or as good as they are now.<lb/>In those
+                days, children did not often<lb/>have a present of a pretty book with<lb/>beautiful
+                pictures; but when they<lb/>did get one, it was highly prized.</p>
+            <p rend="indent(2) align(justify)">We had Cock Robin, and Jack the<lb/>Giant Killer, and
+                Blue Beard, and<lb/>The Forty Thieves, and many other<lb/>amusing but not very
+                instructive tales.<lb/>Tom Thumb was one of the number,<lb/>and was a favorite book
+                of mine, al&ndash;<lb type="inWord"/>though I knew the story was not true,<lb/>and
+                that there were no such beings as<lb/>magicians and fairies. Perhaps my<lb/>little
+                readers would like to know<lb/>what kind of stories we old folks read<lb/>when we
+                were such little bodies as <pb n="6"/>
+                <fw type="pagenumber" rend="align(left)">4</fw>
+                <fw type="header" rend="align(centre)">MERLIN AND THE FAIRY QUEEN.</fw>
+                <fw>&rule;</fw>
+                <figure rend="vertical">
+                    <ic:iconClass>
+                        <name>44B1511</name>
+                        <desc>queen, empress, etc. (wife of a ruler)</desc>
+                    </ic:iconClass>
+                    <head>signed Anderson</head>
+                </figure>
+                <pb n="7"/>
+                <fw type="header" rend="align(centre)">NEW HISTORY OF TOM THUMB.</fw>
+                <fw type="pagenumber" rend="align(right)">5</fw>
+                <fw>&rule;</fw> you are now. I think I remember<lb/>enough of Tom Thumb to be able
+                to<lb/>tell you the story.</p>
+            <p rend="indent(2) align(justify)">Once on a time, Merlin, a famous<lb/>magician, was
+                traveling, and being<lb/>weary, he stopped at a plowman&rsquo;s<lb/>cottage to ask
+                lor some refreshment.<lb/>The plowman&rsquo;s wife kindly brought<lb/>him a bowl of
+                milk, and a wooden<lb/>plate of good brown bread, which she<lb/>urged him to partake
+                of.</p>
+            <p rend="indent(2) align(justify)">Merlin could not help seeing, that<lb/>the honest
+                couple looked quite sad<lb/>and sorrowful; so he asked the cause,<lb/>and learned
+                that they had no chil&ndash;<lb type="inWord"/>dren ; the wife declaring, with
+                tears<lb/>in her eyes, that she should be happy<lb/>if she had a son, even if he
+                were no<lb/>bigger than his father&rsquo;s thumb !</p>
+            <p rend="indent(2) align(justify)">Merlin was much amused with the<lb/>idea of a boy no
+                bigger than a man&rsquo;s<lb/>thumb, and sending for the queen of<lb/>the fairies,
+                he told her of the desire<lb/>of the plowman&rsquo;s wife. The queen<lb/>was no less
+                pleased than Merlin, and<lb/>she said the wish should be granted. <pb n="8"/>
+                <fw type="pagenumber" rend="align(left)">6</fw>
+                <fw type="header" rend="align(centre)">THE PEDLER AND THE PUDDING.</fw>
+                <fw>&rule;</fw>
+                <figure rend="vertical">
+                    <ic:iconClass>
+                        <name>46B222</name>
+                        <desc>pedlar</desc>
+                    </ic:iconClass>
+                    <head>signed Anderson></head>
+                </figure>
+                <pb n="9"/>
+                <fw type="header" rend="align(centre)">NEW HISTORY OF TOM THUMB.</fw>
+                <fw type="pagenumber" rend="align(right)">7</fw>
+                <fw>&rule;</fw> Accordingly, the plowman&rsquo;s wife<lb/>had a son, who was just
+                the size of<lb/>his father&rsquo;s thumb, and was named<lb/>by the queen, TOM
+                THUMB.</p>
+            <p rend="indent(2) align(justify)">One day his mother was making a<lb/>pudding, and that
+                he might see how<lb/>it was made, Tom climbed on the top<lb/>of the bowl; but his
+                foot happening<lb/>to slip, he fell over head and ears into<lb/>it, and his mother
+                not seeing him,<lb/>she stirred him into the batter, and<lb/>then popped the whole
+                into the pot.</p>
+            <p rend="indent(2) align(justify)">The hot water made Tom kick<lb/>and struggle, and his
+                mother, seeing<lb/> the pudding jump up and down in<lb/>the pot, thought it was
+                bewitched.<lb/>A pedlar going by at that moment,<lb/>she gave him the pudding, which
+                he<lb/>put in his pack and then walked on.<lb/>As soon as Tom could get the
+                batter<lb/>out of his mouth, he began to cry out.<lb/>This so frightened the pedler
+                that he<lb/>flung the pudding over a fence, and<lb/>took to his heels. The pudding
+                was<lb/>broken by the fall, and poor Tom<lb/>crawled out and ran home.</p>
+
+            <pb n="10"/>
+            <fw type="pagenumber" rend="align(left)">8</fw>
+            <fw type="header" rend="align(centre)">TOM LANDS IN THE HOT SOUP.</fw>
+            <fw>&rule;</fw>
+            <figure rend="vertical">
+                <ic:iconClass>
+                    <name>41C221</name>
+                    <desc>cook</desc>
+                </ic:iconClass>
+                <head>signed Anderson</head>
+            </figure>
+
+            <pb n="11"/>
+            <fw type="header" rend="align(centre)">NEW HISTORY OF TOM THUMB.</fw>
+            <fw type="pagenumber" rend="align(right)">9</fw>
+            <fw>&rule;</fw>
+            <p rend="indent(2) align(justify)">Tom never was any bigger; but as<lb/>he grew older be
+                grew cunning and<lb/>sly. When he played with boys for<lb/>cherry&ndash;stones, and
+                had lost his own,<lb/>he used to creep into his playmates&rsquo;<lb/>bags, fill his
+                pockets, and come out to<lb/>play again. One day, as he was doing<lb/>this, the
+                owner chanced to see him.<lb/>&ldquo;Ah, ha, my little Tom,&rdquo; said he, &ldquo;
+                I<lb/>have caught you at last; now I will<lb/>punish you for stealing.&rdquo; So he
+                drew<lb/>the bag&ndash;string tight about his neck,<lb/>and then shaking the bag,
+                Tom&rsquo;s legs<lb/>and thighs were so sadly bruised, that<lb/>he was thrown into a
+                raging fever.</p>
+            <p rend="indent(2) align(justify)">Just at this time the queen of the<lb/>faires came in
+                a coach drawn by six<lb/>flying mice, and placing Tom by her<lb/>side, drove through
+                the air to her pal&ndash;<lb type="inWord"/>ace in fairy land, where she kept
+                him<lb/>till he was restored to health. Then,<lb/>taking advantage of a fair wind,
+                she<lb/>blew him straight to the court of king<lb/>Arthur. But just as Tom was
+                about<lb/>to land in the palace&ndash;yard, the king&rsquo;s<lb/>cook happened to
+                pass with a huge <pb n="12"/>
+                <fw type="pagenumber" rend="align(left)">10</fw>
+                <fw type="header" rend="align(centre)">TOM SWALLOWED BY A FISH.</fw>
+                <fw>&rule;</fw>
+                <figure rend="vertical">
+                    <ic:iconClass>
+                        <name>47B192</name>
+                        <desc>miller</desc>
+                    </ic:iconClass>
+                </figure>
+                <pb n="13"/>
+                <fw type="header" rend="align(centre)">NEW HISTORY OF TOM THUMB.</fw>
+                <fw type="pagenumber" rend="align(right)">11</fw>
+                <fw>&rule;</fw> bowl of soup, into which Tom fell<lb/>plump, and splashed the hot
+                soup all<lb/>in the cook&rsquo;s face and eyes.</p>
+            <p rend="indent(2) align(justify)">&ldquo;Oh, dear! Oh, dear!&rdquo; cried Tom.<lb/>half
+                scalded and half drowned in his<lb/>hot bath; &ldquo; murder! murder! mur&ndash;<lb
+                    type="inWord"/>der !&rdquo; bellowed the cook, who was a<lb/>cross,
+                red&ndash;faced old fellow, and sup&ndash;<lb type="inWord"/>posed Tom had done all
+                this mischief<lb/>on purpose. Determined to be re&ndash;<lb type="inWord"/>venged on
+                the little fellow for the im&ndash;<lb type="inWord"/>aginary insult, he urged his
+                brother,<lb/>who was a miller, and as cross and<lb/>cruel as himself, to take little
+                Tom<lb/>home with him, and put him where<lb/>he could do no more mischief.</p>
+            <p rend="indent(2) align(justify)">Accordingly, the miller pocketed<lb/>Tom, and
+                carrying him to his mill,<lb/>dropped him from a window into the<lb/>river. But Tom
+                was not born to be<lb/>drowned. A large salmon swim&ndash;<lb type="inWord"/>ming by
+                at that moment, caught him<lb/>in its mouth and swallowed him<lb/>without any
+                trouble.</p>
+            <p rend="indent(2) align(justify)">The salmon was soon caught, and<lb/>being a fine
+                large fish, was presented <pb n="14"/>
+                <fw type="pagenumber" rend="align(left)">12</fw>
+                <fw type="header" rend="align(centre)">TOM RELEASED.</fw>
+                <fw>&rule;</fw>
+                <figure rend="vertical">
+                    <ic:iconClass>
+                        <name>33A6</name>
+                        <desc>saving an endangered fellow man</desc>
+                    </ic:iconClass>
+                </figure>
+                <pb n="15"/>
+                <fw type="header" rend="align(centre)">NEW HISTORY OF TOM THUMB.</fw>
+                <fw type="pagenumber" rend="align(right)">13</fw>
+                <fw>&rule;</fw> to the king, who ordered it to be<lb/>dressed immediately. When it
+                was<lb/>cut open, every body was delighted<lb/>to see little Tom Thumb step
+                out.<lb/>He soon became the favorite of the<lb/>king, who knighted him, and
+                gave<lb/>him a little golden palace to live in,<lb/>and also a tiny coach, which
+                was<lb/>drawn by six white mice.</p>
+            <p rend="indent(2) align(justify)">King Arthur one day questioned<lb/>Tom about his
+                parents, and Tom in&ndash;<lb type="inWord"/>formed his majesty that they
+                were<lb/>worthy people, but very poor. Then<lb/>the king led him into his
+                treasury,<lb/>and showing him the piles of gold<lb/>and silver, told him he might
+                pay his<lb/>parents a visit, and take with him<lb/>as much money as he could
+                carry!<lb/>Accordingly, Tom procured a little<lb/>purse, and putting a sixpence
+                into<lb/>it, he with much labor and difficulty<lb/>got the purse upon his back
+                and<lb/>started for home.</p>
+            <p rend="indent(2) align(justify)">His mother met him at the door,<lb/>where he arrived
+                almost tired to<lb/>death, having traveled nearly half a <pb n="16"/>
+                <fw type="pagenumber" rend="align(left)">14</fw>
+                <fw type="header" rend="align(centre)">TOM RIDING ON A BUTTERFLY.</fw>
+                <fw>&rule;</fw>
+                <figure rend="vertical">
+                    <ic:iconClass>
+                        <name>25F711(BUTTERFLY)</name>
+                        <desc>insects: butterfly</desc>
+                    </ic:iconClass>
+                    <head>signed Anderson</head>
+                </figure>
+                <pb n="17"/>
+                <fw type="header" rend="align(centre)">NEW HISTORY OF TOM THUMB.</fw>
+                <fw type="pagenumber" rend="align(right)">15</fw>
+                <fw>&rule;</fw> mile, with a huge sixpence on his<lb/>back. His parents were
+                delighted<lb/>to see him, especially as he brought<lb/>such an amazing sum of
+                money.</p>
+            <p rend="indent(2) align(justify)">Tom remained at home for some<lb/>time ; but at last
+                getting weary of<lb/>his humble life, he watched for an<lb/>opportunity to reach
+                king Arthur's<lb/>court again. One day he sauntered<lb/>out into the fields, and
+                seeing a but&ndash;<lb type="inWord"/>terfly seated on the ground, he ven&ndash;<lb
+                    type="inWord"/>tured to get astride of him. The<lb/>butterfly soon took wing,
+                and mount&ndash;<lb type="inWord"/>ing into the air with Tom on his<lb/>back, flew
+                from field to field, till at<lb/>last he reached the king&rsquo;s court.</p>
+            <p rend="indent(2) align(justify)">The king, queen, and nobles, all<lb/>tried to catch
+                the butterfly, but could<lb/>not. At last poor Tom, having no<lb/>saddle or bridle,
+                slipped off and tum&ndash;<lb type="inWord"/>bled into a watering&ndash;pot, where
+                he<lb/>was nearly drowned before he could<lb/>be taken out. But he soon
+                    recover&ndash;<lb type="inWord"/>ed from this mishap, and once more<lb/>became
+                the pride and ornament of<lb/>king Arthur&rsquo;s court.</p>
+
+            <pb n="18"/>
+            <fw type="header" rend="align(centre)">NEW HISTORY OF TOM THUMB.</fw>
+            <fw type="pagenumber" rend="align(left)">16</fw>
+            <p rend="indent(2) align(justify)">At last, a huge spider one day<lb/>attacked him, and
+                though he drew his<lb/>sword and fought well, yet the spi&ndash;<lb type="inWord"
+                />der&rsquo;s poisonous breath at last over&ndash;<lb type="inWord"/>came him.</p>
+            <p rend="indent(2) align(justify)">King Arthur and his whole court<lb/>went into
+                mourning for little Tom<lb/>Thumb. They buried him under a<lb/>rose&ndash;bush, and
+                raised a white marble<lb/>monument over his grave, with this<lb/>epitaph on it, in
+                letters of gold:</p>
+            <lg>
+                <l>Here lies Tom Thumb, a gallant knight,</l>
+                <l>Who died by a cruel spider&rsquo;s bite.</l>
+                <l>He was well known in king Arthur&rsquo;s court,</l>
+                <l>Where he afforded pleasant sport ;</l>
+                <l>He rode at tilt and tournament,</l>
+                <l>And on a mouse a hunting went.</l>
+                <l>Alive, he filled the court with mirth ;</l>
+                <l>His death to general grief gave birth.</l>
+                <l>Good people, tears of sorrow shed,</l>
+                <l>And cry, Alas ! Sir Tom is dead !</l>
+            </lg>
+            <p rend="indent(2) align(justify)">Now, my little readers, which do<lb/>you like
+                    best,&mdash;<hi rend="italics">true stories</hi>, <hi rend="italics">moral</hi>
+                    and<lb/><hi rend="italics">instructive</hi> stories, or stories like
+                the<lb/>wonderful adventures of<lb rend="align(centre)"/>TOM THUMB?</p>
+        </body>
+        <back>
+            <pb n="19"/>
+
+            <pb n="20"/>
+            <figure type="borderornament"/>
+            <div type="advertisement" rend="align(centre)">
+                <head>BABCOCK&rsquo;S<lb/> No. 3 TOY BOOKS,<lb/> NEW SERIES,<lb/> MORAL,
+                    INSTRUCTIVE, AND<lb/> ENTERTAINING,<lb/> ALL BEAUTIFULLY<lb/> EMBELLISHED<lb/>
+                    WITH<lb/> SUPERIOR<lb/> ENGRAVINGS.<lb/> EDITED BY<lb/> THOMAS TELLER.</head>
+                <p>&rule;</p>
+                <p>CHILDREN&rsquo;S BOOKS<lb/> OF<lb/> EVERY DESCRIPTION<lb/> CONSTANTLY
+                    PUBLISHING.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

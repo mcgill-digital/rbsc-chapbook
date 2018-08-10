@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name>Shannon May</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013-01-29"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013-08-12"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="MetricalTales">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="green coloured pictoral wrappers">
+                <figure type="borderornament"/>
+                <note type="handwritten" rend="align(vertical)">Atheeicore general</note>
+                <bibl>
+                    <title level="m" rend="align(centre)">YOUNG NIBBLE,<lb/>THE<lb/>DISCONTENTED
+                        MOUSE.<lb/></title>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>25I28</name>
+                            <desc>outskirts of village</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <publisher rend="align(centre)">LONDON:<lb/>DEAN &amp; Co. 35,
+                        THREADNEEDLE&ndash;STREET.<lb/>&rule;</publisher>
+                </bibl>
+                <note type="handwritten" rend="align(vertical)">Nov. 27/25</note>
+                <p rend="align(centre)">PRICE <measure type="price">THREE&ndash;PENCE</measure>.</p>
+            </div>
+            <pb n="2"/>
+            <titlePage rend="align(centre)">
+                <figure type="borderornament"/>
+                <docTitle>
+                    <titlePart type="main">THE<lb/>ADVENTURES OF NIBBLE,<lb/>A<lb/>DISCONTENTED
+                        MOUSE.<lb/></titlePart>
+                </docTitle>
+                <figure>
+                    <ic:iconClass>
+                        <name>34B121</name>
+                        <desc>cat and mouse</desc>
+                    </ic:iconClass>
+                </figure>
+                <docImprint>
+                    <pubPlace>LONDON:<lb/></pubPlace>
+                    <publisher>THOs. DEAN AND Co., THREADNEEDLE&ndash;STREET.</publisher>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="3"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F26(MOUSE)</name>
+                    <desc>rodents: mouse</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>YOUNG NIBBLE, who lived in a gentle&ndash;<lb type="inWord" rend="indent(5)"
+                    />man's house,</l>
+                <l>Thus said to himself, &ldquo; Were I field<lb rend="indent(5)"/>mouse,</l>
+                <l>I should then have more freedom:&rdquo; so<lb rend="indent(5)"/>meeting one
+                    day</l>
+                <l>With the mouse of a farmer, he scam&ndash;<lb type="inWord" rend="indent(5)"
+                    />pered away.</l>
+            </lg>
+
+            <pb n="4"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F26(MOUSE)</name>
+                    <desc>rodents: mouse</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>&ldquo; Here we are,&rdquo; said the field mouse,<lb rend="indent(5)"/>&ldquo; on
+                    liberty farm,</l>
+                <l>Where we live in abundance, and free<lb rend="indent(5)"/>from alarm;</l>
+                <l>And here s my good wife, and my family<lb rend="indent(5)"/>too:&rdquo;</l>
+                <l>Nibble, bowing politely, said, &ldquo; M'am,<lb rend="indent(5)"/>how d'ye
+                    do?&rdquo;</l>
+            </lg>
+
+            <pb n="5"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F26(MOUSE)</name>
+                    <desc>rodents: mouse</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Nibble found a snug nest, which he stored<lb rend="indent(5)"/>with nice
+                    food,</l>
+                <l>As filberts, and acorns, and things that<lb rend="indent(5)"/>were good;</l>
+                <l>But a wicked field&ndash;mouse that discovered<lb rend="indent(5)"/>his nest,</l>
+                <l>Was by Nibble detected in eating the<lb rend="indent(5)"/>best.</l>
+            </lg>
+
+            <pb n="6"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>34B12</name>
+                    <desc>cat</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>One day, to the garden he chanced to<lb rend="indent(5)"/>stroll out,</l>
+                <l>When a black cat and kitten were playing<lb rend="indent(5)"/>about:</l>
+                <l>At this Nibble felt very frightened in&ndash;<lb type="inWord" rend="indent(5)"
+                    />deed,</l>
+                <l>But escaped to his nest by exerting his<lb rend="indent(5)"/>speed.</l>
+            </lg>
+
+            <pb n="7"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F26(MOUSE)</name>
+                    <desc>rodents: mouse</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>But soon Nibble forgot all his dread of<lb rend="indent(5)"/>the cat,</l>
+                <l>And with acorns, and hazel&ndash;nuts, soon<lb rend="indent(5)"/>became fat;</l>
+                <l>And the fatter he grew, so his conse&ndash;<lb type="inWord" rend="indent(5)"
+                    />quence rose,</l>
+                <l>And at cheese, crumbs, and candles, he<lb rend="indent(5)"/>turned up his
+                    nose.</l>
+            </lg>
+
+            <pb n="8"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F34</name>
+                    <desc>owls</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>But a queer&ndash;looking bird he espied very<lb rend="indent(5)"/>soon,</l>
+                <l>With eyes large as saucers, and bright<lb rend="indent(5)"/>as the moon;</l>
+                <l>'Twas an owl, looking out for a mouse, or<lb rend="indent(5)"/>a mole,</l>
+                <l>So, Nibble, in terror, escaped to his hole.</l>
+            </lg>
+
+            <pb n="9"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F23(WEASEL)</name>
+                    <desc>beasts of prey, predatory animals: weasel</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Next day brought another great cause<lb rend="indent(5)"/>of alarm,</l>
+                <l>He had just quitted home, for a stroll on<lb rend="indent(5)"/>the farm;</l>
+                <l>When he saw a sly weazle, as slender as<lb rend="indent(5)"/>tape,</l>
+                <l>Approaching his hole, so he made his<lb rend="indent(5)"/>escape.</l>
+            </lg>
+
+            <pb n="10"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>25F34</name>
+                    <desc>owls</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>Soon after, an owl made a stoop in its<lb rend="indent(5)"/>flight,</l>
+                <l>And carried the field&ndash;mouse away from his<lb rend="indent(5)"/>sight;</l>
+                <l>Then Nibble began to reflect, on the<lb rend="indent(5)"/>road,</l>
+                <l>At the folly of leaving his former abode.</l>
+            </lg>
+
+            <pb n="11"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>34D111</name>
+                    <desc>mouse trap</desc>
+                </ic:iconClass>
+            </figure>
+            <lg>
+                <l>At length, came the last and most fatal<lb rend="indent(5)"/>mishap,</l>
+                <l>Poor Nibble was caught in the teeth of a<lb rend="indent(5)"/>trap;</l>
+                <l>When dying, he cried, &ldquo; Now my punish&ndash;<lb type="inWord"
+                        rend="indent(5)"/>ment's come,</l>
+                <l>For not knowing when I was well off at<lb rend="indent(5)"/>home.&rdquo;</l>
+            </lg>
+        </body>
+        <back>
+            <div type="colophon">
+                <p rend="align(right)">&rule;<lb/>THOS. DEAN AND CO. PRINTERS,<lb rend="indent(5)"
+                    />THREADNEEDLE&ndash;STREET.</p>
+            </div>
+
+            <pb n="12"/>
+            <figure type="borderornament"/>
+            <div type="advertisement">
+                <p rend="align(centre) within borderornament">CHILDREN'S ORIGINAL TOY
+                    BOOKS,<lb/>UNIFORM WITH THIS,<lb/>THIRTEEN SORTS, <measure type="price"
+                        >THREE&ndash;PENCE</measure> EACH.</p>
+                <p rend="align(centre)">LITTLE JANE AND HER MOTHER.</p>
+                <p rend="align(centre)">PASTIMES AND EMPLOYMENTS FOR YOUNG<lb/>FOLKS.</p>
+                <cb n="1"/>
+                <p>GOODY HOMESPUN<lb/>AND HER SEVEN CATS.</p>
+                <cb n="2"/>
+                <p>BARNABY BRAY,<lb/>THE WONDERFUL NEDDY.</p>
+                <p rend="align(centre)">THE WONDERFUL PLUM&ndash;PIE.</p>
+                <p rend="align(centre)">PETER'S ENQUIRIES AFTER KNOWLEDGE.</p>
+                <p rend="align(centre)">A PEEP AT THE WORLD.</p>
+                <cb n="1"/>
+                <p>PETER PLAYFUL,<lb/>OR, A<lb/>CURE FOR DULL SPIRITS.</p>
+                <cb n="2"/>
+                <p>YOUNG NIBBLE,<lb/>THE<lb/>DISCONTENTED MOUSE.</p>
+                <p rend="align(centre)">MRS. FIGGS'S GRAND BALL.</p>
+                <p rend="align(centre)">DAME TROT AND HER COMICAL CATS.</p>
+                <p rend="align(centre)">LITTLE JOHN AND HIS SISTERS.</p>
+                <p rend="align(centre)">LITTLE JACK, THE MALTSTER.</p>
+                <p rend="align(centre) within borderornament">DEAN &amp;
+                    CO.<lb/>THREADNEEDLE&ndash;STREET, LONDON.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

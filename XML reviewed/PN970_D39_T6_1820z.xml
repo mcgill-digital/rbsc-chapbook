@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Casey Lees</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+
+    <text type="Instruction">
+
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="Green coloured pictorial wrappers align(centre)">
+                <figure type="borderornament"/>
+                <bibl>
+                    <title level="m">TOM THUMB'S<lb/>PLAY BOOK<lb/>TO TEACH<lb/>CHILDREN THEIR
+                        LETTERS,<lb/>BY A<lb/>New and Pleasant Method.</title><lb/>
+                    <figure rend="align(centre)">
+                        <ic:iconClass>
+                            <name>34B11</name>
+                            <desc>dog</desc>
+                        </ic:iconClass>
+                    </figure>
+                    <pubPlace>ALNWICK :</pubPlace><lb/> STEREOTYPED AND PRINTED BY<lb/>
+                    <publisher>W. DAVISON,</publisher><pubPlace>22, BONDGATE STREET.</pubPlace>
+                    <lb/>&rule; <lb/>Price <measure type="price">Twopence</measure>. </bibl>
+            </div>
+
+            <pb n="2"/>
+            <figure rend="align(left)">
+                <ic:iconClass>
+                    <name>33A12</name>
+                    <desc>shaking hands, 'dextrarum junctio'</desc>
+                </ic:iconClass>
+            </figure>
+            <figure rend="align(right)">
+                <ic:iconClass>
+                    <name>31A27113</name>
+                    <desc>strolling</desc>
+                </ic:iconClass>
+            </figure>
+            <div type="alphabet" rend="align(centre)">
+                <head>&rule;<lb/>ROMAN CAPITALS.</head>
+                <p rend="align(justify)">A B C D E F<lb/>G H I J K L<lb/>M N O P Q<lb/>R S T U V
+                    W<lb/> X Y Z &AE; &OE;</p>
+                <p>&rule;</p>
+            </div>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>47I142</name>
+                    <desc>binding ~ harvest</desc>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="3"/>
+            <titlePage rend="align(centre)">
+                <figure type="borderornament"/>
+                <titlePart type="main">TOM THUMB'S<lb/>PLAY&ndash;BOOK ;</titlePart>
+                <titlePart type="sub">TO TEACH<lb/>CHILDREN THEIR LETTERS,<lb/>BY A NEW AND PLEASANT
+                    METHOD.</titlePart>
+                <p rend="align(centre)">&rule;</p>
+                <p>NEW AND IMPROVED EDITION.</p>
+                <figure>
+                    <ic:iconClass>
+                        <name>47I242</name>
+                        <desc>bee-hive</desc>
+                    </ic:iconClass>
+                </figure>
+                <p>ORNAMENTED WITH PICTURES</p>
+                <p rend="align(centre)">&rule;</p>
+                <docImprint>
+                    <pubPlace>ALNWICK :</pubPlace>
+                    <publisher>STEREOTYPED AND PRINTED BY<lb/> W. DAVISON, 22, BONDGATE
+                        STREET.</publisher> PRICE <measure>TWOPENCE.</measure>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="4"/>
+            <figure rend="align(left)">
+                <ic:iconClass>
+                    <name>46C13141</name>
+                    <desc>horse</desc>
+                </ic:iconClass>
+            </figure>
+            <figure rend="align(right)">
+                <ic:iconClass>
+                    <name>25F34</name>
+                    <desc>owls</desc>
+                </ic:iconClass>
+            </figure>
+            <div type="alphabet">
+                <head rend="align(centre)">&rule;<lb/>ROMAN SMALL LETTERS.</head>
+                <p rend="align(justify)">a b c d e f<lb/>g h i j k l<lb/>m n o p q r<lb/>s t u v w
+                    x<lb/>y z &ae; &oe; &amp;</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <figure rend="align(left)">
+                <ic:iconClass>
+                    <name>47I212</name>
+                    <desc>pig</desc>
+                </ic:iconClass>
+            </figure>
+            <figure rend="align(right)">
+                <ic:iconClass>
+                    <name>44B1511</name>
+                    <desc>queen, empress, etc. (wife of a ruler)</desc>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="5"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>43C111231</name>
+                    <desc>fox hunting</desc>
+                </ic:iconClass>
+            </figure>
+            <div type="alphabet">
+                <p rend="align(centre)">&rule;</p>
+                <label rend="align(centre)"><hi rend="italics">Letters promiscuously
+                    disposed.</hi></label>
+                <p rend="align(justify)">V A G C B D N U<lb/>F E H I L R K T<lb/>P O Q J X Y M Z</p>
+                <p>&drule;</p>
+                <p rend="align(justify)">b d q p w i l m<lb/>c o k l a n g h s r<lb/>v x y f e j t v
+                    u z</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>43C1113</name>
+                    <desc>bird hunting</desc>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="6"/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>47I149</name>
+                    <desc>rest during harvest (eating, dancing, making love, etc.)</desc>
+                </ic:iconClass>
+            </figure>
+            <div type="alphabet">
+                <p rend="align(centre)">&rule;</p>
+                <head rend="align(centre)">ITALIC CAPITALS.</head>
+                <p rend="align(justify)"><hi rend="italics">A B C D E F<lb/> G H I J K L<lb/> M N O
+                        P Q<lb/> R S T U V W<lb/> X Y Z &AE; &OE;</hi></p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>47I413</name>
+                    <desc>fruit harvest</desc>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="7"/>
+            <figure rend="align(left)">
+                <ic:iconClass>
+                    <name>47I242</name>
+                    <desc>bee-hive</desc>
+                </ic:iconClass>
+            </figure>
+            <figure rend="align(right)">
+                <ic:iconClass>
+                    <name>47I2132</name>
+                    <desc>ewe</desc>
+                </ic:iconClass>
+            </figure>
+            <div type="alphabet">
+                <p rend="align(centre)">&rule;</p>
+                <head rend="align(centre)">ITALIC SMALL LETTERS.</head>
+                <p rend="align(justify)"><hi rend="italics">a b c d e f g<lb/> h i j k l m n<lb/> o
+                        p q r s t u<lb/> v w x y z &aelig; &oelig;</hi></p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name>47I149</name>
+                    <desc>rest during harvest (eating, dancing, making love, etc.)</desc>
+                </ic:iconClass>
+            </figure>
+
+            <pb n="8"/>
+            <fw type="pagenumber" rend="align(centre)">8</fw>
+            <lb/>
+            <div type="section">
+                <head type="main" rend="align(centre)"><hi rend="italics">Syllables of Two
+                        Letters.</hi></head>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON I.</head>
+                <lb/>
+                <p rend="align(justify)">ba be bi bo bu by<lb/> ca ce ci co cu cy<lb/> da de di do
+                    du dy</p>
+                <head type="sub" rend="align(centre)">LESSON II.</head>
+                <lb/>
+                <p rend="align(justify)">fa fe fi fo fu fy<lb/> ga ge gi go gu gy<lb/> ha he hi ho
+                    hu hy</p>
+                <head type="sub" rend="align(centre)">LESSON III.</head>
+                <lb/>
+                <p rend="align(justify)">ja je ji jo ju jy<lb/> ka ke ki ko ku ky<lb/> la le li lo
+                    lu ly</p>
+                <head type="sub" rend="align(centre)">LESSON IV.</head>
+                <lb/>
+                <p rend="align(justify)">ma me mi mo mu my<lb/> na ne ni no nu ny<lb/> pa pe pi po
+                    pu py</p>
+
+                <pb n="9"/>
+                <fw type="pagenumber" rend="align(centre)">9</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON V.</head>
+                <lb/>
+                <p rend="align(justify)">ra re ri ro ru ry<lb/> sa se si so su sy<lb/> ta te ti to
+                    tu ty</p>
+                <head type="sub" rend="align(centre)">LESSON VI.</head>
+                <lb/>
+                <p rend="align(justify)">va ve vi vo vu vy<lb/> wa we wi wo wu wy<lb/> za ze zi zo
+                    zu zy</p>
+                <head type="sub" rend="align(centre)">LESSON VII.</head>
+                <lb/>
+                <p rend="align(justify)">He is up. We go in.<lb/> It is so. Lo we go.<lb/> Do ye so.
+                    I go up.</p>
+                <head type="sub" rend="align(centre)">LESSON VIII.</head>
+                <lb/>
+                <p rend="align(justify)">So do we. As we go.<lb/> If it be so. I am he.<lb/> So do
+                    I. He is in.</p>
+
+                <pb n="10"/>
+                <fw type="pagenumber" rend="align(centre)">10</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON IX.</head>
+                <lb/>
+                <p rend="align(justify)">Is he on? As we do.<lb/> I go to it. I go on.<lb/> He or
+                    me. I do go.</p>
+                <head type="sub" rend="align(centre)">LESSON X.</head>
+                <lb/>
+                <p rend="align(justify)">Ah me ! Be it so.<lb/> He is up. I am in it.<lb/> Ye do go.
+                    So it is.</p>
+                <head type="sub" rend="align(centre)">LESSON XI.</head>
+                <lb/>
+                <p rend="align(justify)">Ye go by. My ox is.<lb/> As we do. So be it.<lb/> Do so. So
+                    do ye.</p>
+                <head type="sub" rend="align(centre)">LESSON XII.</head>
+                <lb/>
+                <p rend="align(justify)">To do it, so as ye do.<lb/> We go to do as ye do.<lb/> Do
+                    as ye be to do.</p>
+
+                <pb n="11"/>
+                <fw type="pagenumber" rend="align(centre)">11</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON XIII.</head>
+                <lb/>
+                <p rend="align(justify)">ab ac ad af ag al<lb/> eb ec ed ef eg el<lb/> ib ic id if
+                    ig il<lb/> ob oc od of og ol</p>
+                <head type="sub" rend="align(centre)">LESSON XIV.</head>
+                <lb/>
+                <p rend="align(justify)">ub uc ud uf ug ul<lb/> am an ap ar as at<lb/> em en ep er
+                    es et<lb/> im in ip ir is it</p>
+                <head type="sub" rend="align(centre)">LESSON XV</head>
+                <lb/>
+                <p rend="align(justify)">om on op or os ot<lb/> um un up ur us ut<lb/> ax ex ix ox
+                    ux az<lb/> aw ow ay oy oz uz</p>
+
+                <pb n="12"/>
+                <fw type="pagenumber" rend="align(centre)">12</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON XVI.</head>
+                <lb/>
+                <p rend="align(justify)">So do we go. If he is to go.<lb/> Is it so or no ? I am to
+                    do so.<lb/> If I do go in. It is to be on.<lb/> Am I to go ? I am to do it.<lb/>
+                    I do go in. Do as we do.</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <div type="section">
+                <head type="main" rend="align(centre)"><hi rend="italics">Words of Three
+                        Letters.</hi></head>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON I.</head>
+                <lb/>
+                <p rend="align(justify)">bad fed did hod cud hag<lb/> lad led hid nod mud jag<lb/>
+                    mad red kid rod bag lag<lb/> sad wed lid sod fag nag</p>
+                <head type="sub" rend="align(centre)">LESSON II.</head>
+                <lb/>
+                <p rend="align(justify)">hen hum fan van men kin<lb/> dim mum man zan pen pin<lb/>
+                    him sum pan den din sin<lb/> rim rum ran fen fin tin<lb/> gun can tan hen gin
+                    con</p>
+
+                <pb n="13"/>
+                <fw type="pagenumber" rend="align(centre)">13</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON III.</head>
+                <lb/>
+                <p rend="align(justify)">don gum cap nap dip rip<lb/> yon pun gap pap hip sip<lb/>
+                    bun run hap rap lip tip<lb/> dun sun lap sap nip fob<lb/> fun tun map tap pip
+                    bob</p>
+                <head type="sub" rend="align(centre)">LESSON IV.</head>
+                <lb/>
+                <p rend="align(justify)">hob hop top mar fur fat<lb/> lob lop bar par pur hat<lb/>
+                    rob mop car fir has mat<lb/> sob pop far sir bat pat<lb/> fob sop jar cur cat
+                    rat</p>
+                <head type="sub" rend="align(centre)">LESSON V.</head>
+                <lb/>
+                <p rend="align(justify)">sat pet hit got sot hut<lb/> get ret kit hot wot nut<lb/>
+                    bet wet sit jot but put<lb/> met bit wit lot cut shy<lb/> net fit dot not gut
+                    thy</p>
+                <head type="sub" rend="align(centre)">LESSON VI.</head>
+                <lb/>
+                <p rend="align(justify)">sky cry ill art all boy<lb/> fly dry old ink ale fit<lb/>
+                    ply try elm ask get eat<lb/>
+                    <pb n="14"/>
+                    <fw type="pagenumber" rend="align(centre)">14</fw><lb/> sly wry ash ant you
+                    the<lb/> two ell oak are dog fox</p>
+                <p rend="align(centre)">&rule;</p>
+                <head type="sub" rend="align(centre)">LESSON VII</head>
+                <lb/>
+                <p rend="align(justify)">His pen is bad. I met a man.<lb/> He has a net. We had an
+                    egg.</p>
+                <head type="sub" rend="align(centre)">LESSON VIII.</head>
+                <lb/>
+                <p rend="align(justify)">Let me get up. My hat is on.<lb/> His hat is off. We are
+                    all up.</p>
+                <head type="sub" rend="align(centre)">LESSON IX.</head>
+                <lb/>
+                <p>His pen has no ink in it.<lb/> Bid him get my hat.<lb/> I met a man and a
+                    pig.<lb/> Let me go for my peg top.</p>
+                <head type="sub" rend="align(centre)">LESSON X.</head>
+                <lb/>
+                <p>Let the cat be put in a bag.<lb/> I can eat an egg.<lb/> The dog bit my toe.<lb/>
+                    The dog and cat are oft at<lb rend="indent(2)"/> war.</p>
+
+                <pb n="15"/>
+                <fw type="pagenumber" rend="align(centre)">15</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON XI.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">You are a bad boy if you<lb/> nip off the
+                    leg of a fly.</p>
+                <p rend="first-indent(2) align(justify)">A fox got my old hen, and<lb/> ate her. Our
+                    dog got the fox.</p>
+                <p rend="first-indent(2) align(justify)">Do as you are bid, or it<lb/> may be bad
+                    for you.</p>
+                <head type="sub" rend="align(centre)">LESSON XII.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The cat bit the rat, and the<lb/> dog bit
+                    the cat. Do not let<lb/> the cat lie on the bed, but you<lb/> may pat her. See
+                    how glad she<lb/> is now I pat her. Why does<lb/> she cry mew ? Let her run
+                    out.</p>
+                <head type="sub" rend="align(centre)">LESSON XIII.</head>
+                <lb/>
+                <p>Do not you be an ill boy.<lb/> A rod is for a bad boy.<lb/> Vex not God, but do
+                    his law.<lb/> In a bad boy is no joy.</p>
+
+                <pb n="16"/>
+                <fw type="pagenumber" rend="align(centre)">16</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON XIV.</head>
+                <lb/>
+                <p>Sin is the way to the pit.<lb/> O let me not die in sin.<lb/> No one has joy in
+                    the pit.<lb/> So do as you are bid.</p>
+                <head type="sub" rend="align(centre)">LESSON XV.</head>
+                <lb/>
+                <p>The Rod is for him that is bad.<lb/> End not the day in sin.<lb/> And do not lie
+                    any.<lb/> Do not vex God, nor do ill.</p>
+                <head type="sub" rend="align(centre)">LESSON XVI.</head>
+                <lb/>
+                <p>It is bad to die in sin.<lb/> No one is to go a bad way.<lb/> God has bid us do
+                    no sin.<lb/> So we are to do God's law.</p>
+                <head type="sub" rend="align(centre)">LESSON XVII.</head>
+                <lb/>
+                <p>You are not to be a bad boy.<lb/> If you are, the rod is for you.<lb/>
+                    <pb n="17"/>
+                    <fw type="pagenumber" rend="align(centre)">17</fw><lb/> But not, if you are not
+                    bad.<lb/> So go not in an ill way.</p>
+                <head type="sub" rend="align(centre)">LESSON XVIII.</head>
+                <lb/>
+                <p>But do all as I bid you.<lb/> The way of bad men is sin.<lb/> God is a foe to bad
+                    men.<lb/> Be not a bad boy to do ill.</p>
+                <head type="sub" rend="align(centre)">LESSON XIX.</head>
+                <lb/>
+                <p>I am bid to do no ill.<lb/> God can see me if I sin.<lb/> O let me do as I am
+                    bid.<lb/> And in God be all my joy.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C1113</name>
+                        <desc>bird hunting</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+
+            <pb n="18"/>
+            <fw type="pagenumber" rend="align(centre)">18</fw>
+            <lb/>
+            <div type="section">
+                <head type="main" rend="align(centre)"><hi rend="italics">Words of One
+                        Syllable.</hi></head>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON I.</head>
+                <lb/>
+                <p rend="align(justify)">half talk silk gall tall<lb/> pelf walk folk hall wall<lb/>
+                    wolf bilk bulk mall small<lb/> balk milk hulk pall stall</p>
+                <head type="sub" rend="align(centre)">LESSON II.</head>
+                <lb/>
+                <p rend="align(justify)">cell well shell fill till<lb/> fell yell smell gill
+                    will<lb/> hell dwell spell kill chill<lb/> sell knell swell mill drill</p>
+                <head type="sub" rend="align(centre)">LESSON III.</head>
+                <lb/>
+                <p rend="align(justify)">tell quell bill pill skill<lb/> poll gull pull belt
+                    smelt<lb/> roll hull whelp felt spelt<lb/> doll bull halt melt gilt<lb/> loll
+                    dull malt pelt hilt</p>
+                <head type="sub" rend="align(centre)">LESSON IV.</head>
+                <lb/>
+                <p rend="align(justify)">lull full salt welt jilt<lb/> jamb dumb numb pond
+                    stump<lb/> lamb hymn dump clamp rump<lb/>
+                    <pb n="19"/>
+                    <fw type="pagenumber" rend="align(centre)">19</fw><lb/> bomb cramp hump jump
+                    thumb<lb/> comb stamp camp pump line</p>
+                <head type="sub" rend="align(centre)">LESSON V.</head>
+                <lb/>
+                <p rend="align(justify)">tomb hemp damp rump band<lb/> womb limb lamp hand
+                    plump<lb/> brand mend spend rind champ<lb/> grand rend bind blind fond</p>
+                <head type="sub" rend="align(centre)">LESSON VI.</head>
+                <lb/>
+                <p rend="align(justify)">mash gnash flesh rush bush<lb/> stand send find grind
+                    fang<lb/> wand tend hind wind gang<lb/> bend vend kind bond hang<lb/> worn spurn
+                    stars tart wart</p>
+                <head type="sub" rend="align(centre)">LESSON VII.</head>
+                <lb/>
+                <p rend="align(justify)">shorn carp cart smart flirt<lb/> sworn harp dart start
+                    shirt<lb/> burn sharp hart chart skirt<lb/> turn bars mart warp spirt<lb/> churn
+                    cars part quart sort</p>
+                <head type="sub" rend="align(centre)">LESSON VIII.</head>
+                <lb/>
+                <p rend="align(justify)">cash rash plash fresh blush<lb/> dash sash brush dish smash<lb/>
+                    <pb n="20"/>
+                    <fw type="pagenumber" rend="align(centre)">20</fw><lb/> gash clash trash fish
+                    crush<lb/> hash crash wish flush quash<lb/> lash flash wash gush plush</p>
+                <head type="sub" rend="align(centre)">LESSON IX.</head>
+                <lb/>
+                <p rend="align(justify)">desk dusk hasp whisp class<lb/> risk husk rasp bass
+                    glass<lb/> brisk musk clasp lass less<lb/> frisk tusk grasp mass mess</p>
+                <head type="sub" rend="align(centre)">LESSON X.</head>
+                <lb/>
+                <p rend="align(justify)">busk gasp wasp pass bless<lb/> dress dross last lest
+                    chest<lb/> tress gloss mast nest grist<lb/> stress loss past pest post<lb/> hiss
+                    toss vast test frost</p>
+                <head type="sub" rend="align(centre)">LESSON XI.</head>
+                <lb/>
+                <p rend="align(justify)">kiss fuss blast vest crust<lb/> boss truss best west
+                    path<lb/> moss cast jest zest port<lb/> miss gross fast ghast rest<lb/> crest
+                    fist hist list mist</p>
+                <head type="sub" rend="align(centre)">LESSON XII.</head>
+                <lb/>
+                <p rend="align(justify)">twist whist wrist host most<kb/>
+                    <pb n="21"/>
+                    <fw type="pagenumber" rend="align(centre)">21</fw><lb/> ghost cost lost tost
+                    crost<lb/> trust gust just lust rust<lb/> must lath hath bath thrust<lb/> blest
+                    miss kiss hiss trees</p>
+                <head type="sub" rend="align(centre)">LESSON XIII.</head>
+                <lb/>
+                <p rend="align(justify)">earl roach yield bed wed<lb/> pearl loaf suit spill
+                    still<lb/> earn foam build doll loll<lb/> learn oar thief tilt colt<lb/> earth
+                    toast fraud balm calm</p>
+                <head type="sub" rend="align(centre)">LESSON XIV.</head>
+                <lb/>
+                <p rend="align(justify)">gird cloud stilt spilt throat<lb/> great thief sound short
+                    sport<lb/> fleece east meat wheat breast<lb/> cease feast neat treat sweet<lb/>
+                    peace least peat realm bleat<lb/> death eat seat dealt grease</p>
+                <head type="sub" rend="align(centre)">LESSON XV.</head>
+                <lb/>
+                <p rend="align(justify)">cast beat teat sweat breath<lb/> bear pear coach poach
+                    dearth<lb/> good load road toad woad<lb/>
+                    <pb n="22"/>
+                    <fw type="pagenumber" rend="align(centre)">22</fw><lb/> oak coal foal goal
+                    shoal<lb/> loam roam loan moan groan<lb/> boar roar soar host roan<lb/> boat
+                    coat goat moat float</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <div type="section">
+                <head type="main" rend="align(centre)"><hi rend="italics">Lessons in Words of One
+                        Syllable.</hi></head>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON XVI.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Come, James, make haste.<lb/>Now read your
+                    book. Here is a<lb/>pin to point with. Do not tear<lb/>the book. Spell that
+                    word. That<lb/>is a good boy. Now go and play<lb/>till I call you in</p>
+                <head type="sub" rend="align(centre)">LESSON XVII.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">When you have read your<lb/>book, you shall
+                    go to play. Will<lb/>you have a top, or a ball, or a kite,<lb/>to play with? If
+                    you have a top,<lb/>you should spin it; if you have a<lb/>ball, you must toss
+                    it; if you<lb/>have a kite, you ought to fly it.</p>
+                <pb n="23"/>
+                <fw type="pagenumber" rend="align(centre)">23</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON XVIII.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Miss May makes all her friends<lb/>laugh at
+                    her; if a poor mouse<lb/>runs by her, she screams for an<lb/>hour; and a bee on
+                    her frock will<lb/>put her in a fit; if a small fly should<lb/>get on her hair,
+                    and buzz in her<lb/>ear, she would call all in the house<lb/>to help her, as if
+                    she was hurt.</p>
+                <head type="sub" rend="align(centre)">LESSON XIX.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">You must not hurt live things.<lb/>You
+                    should not kill poor flies,<lb/>nor pull off their legs nor wings.<lb/>You must
+                    not hurt bees, for they<lb/>do good, and will not sting you<lb/>if you do not
+                    touch them. All<lb/>that have life can feel as well as<lb/>you can.</p>
+                <head type="sub" rend="align(centre)">LESSON XX.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Tom fell in the pond, they got<lb/>him out,
+                    but he was wet and cold,<lb/>and his eyes were shut; and then <pb n="24"/>
+                    <fw type="pagenumber" rend="align(centre)">24</fw><lb/> he was sick, and they
+                    put him to<lb/>bed, and he was long ill and weak,<lb/>and could not stand. Why
+                    did<lb/>he go near the pond? He had<lb/>been told not to go, for fear
+                    he<lb/>should fall in; but he would go,<lb/>and he did fall in; it was his
+                    own<lb/>fault, and he was a bad boy.<lb/>Mind and do not do the same.</p>
+                <head type="sub" rend="align(centre)">LESSON XXI.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">John Hall was a good boy.<lb/>He went to
+                    school and took pains<lb/>to learn as he ought. When he<lb/>was in school, he
+                    kept to his<lb/>books till all his tasks were done,<lb/>and then when he came
+                    out he<lb/>could play with a good heart, for<lb/>he knew that he had time;
+                    and<lb/>he was so kind that all the boys<lb/>were glad to play with him.</p>
+                <p rend="first-indent(2) align(justify)">When he was one of the least<lb/>boys in
+                    the school, he made all <pb n="25"/>
+                    <fw type="pagenumber" rend="align(centre)">25</fw><lb/> the great boys his
+                    friends, and<lb/>when he grew a great boy, he was<lb/>a friend to all that were
+                    less than<lb/>he was. He was not once known<lb/>to fight, or to use one of the
+                    boys<lb/>ill, as long as he staid at school.</p>
+                <p rend="first-indent(2) align(justify)">Be like John Hall, and you will<lb/>gain
+                    the love of all who know you.</p>
+                <head type="sub" rend="align(centre)">LESSON XXII.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">I knew a nice girl, but she was<lb/>not
+                    good : she was cross, and told<lb/>fibs. One day she went out to<lb/>take a walk
+                    in the fields, and tore<lb/>her frock in a bush; and when<lb/>she came home, she
+                    said she had<lb/>not done it, but that the dog had<lb/>done it with his paw. Was
+                    that<lb/>good? No. Her aunt gave her<lb/>a cake ; and she thought if
+                    John<lb/>saw it he would want to have a bit,<lb/>and she did not choose he
+                    should,<lb/>so she put it in a box, and hid it,<lb/>that he might not see
+                    it.</p>
+
+                <pb n="26"/>
+                <fw type="pagenumber" rend="align(centre)">26</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON XXIII.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Charles went out to walk in the<lb/>fields,
+                    he saw a bird, and ran to<lb/>catch it, and when they said, do<lb/>not take the
+                    poor bird, what will<lb/>you do with it? He said, I will<lb/>put it in a cage
+                    and keep it. But<lb/>they told him he must not, for<lb/>they were sure he would
+                    not like<lb/>to be shut up in a cage, and run<lb/>no more in the
+                    fields&mdash;Why then<lb/>should the bird like it ?</p>
+                <head type="sub" rend="align(centre)">LESSON XXIV.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Frank Pitt went out to walk in<lb/>the
+                    fields, he found a nest and<lb/>took out the young birds. He<lb/>brought them
+                    home, but they did<lb/>not know how to eat, and he did<lb/>not know how to feed
+                    them ; to<lb/>the poor things were soon dead,<lb/>and then he went to see if
+                    he<lb/>could get more, but he found the<lb/>
+                    <pb n="27"/>
+                    <fw type="pagenumber" rend="align(centre)">27</fw><lb/> poor old bird close by
+                    the nest,<lb/>&mdash;her young ones were gone, and<lb/>she was sad, and did
+                    cry.</p>
+                <head type="sub" rend="align(centre)">LESSON XXV.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">In the lane I met some boys.<lb/>They had a
+                    dog with them, and<lb/>they would make him draw a cart,<lb/>but it was full of
+                    great stones, and<lb/>he could not draw it. Poor dog !<lb/>he would have done it
+                    to please<lb/>them if he could, but he could<lb/>not move it, and when they
+                    saw<lb/>that he did not, they got a great<lb/>stick to beat him with, but
+                    I<lb/>would not let them do that.</p>
+                <head type="sub" rend="align(centre)">LESSON XXVI.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The sun shines. It is time to<lb/>get up.
+                    Jane come and dress<lb/>Charles. Wash his face and neck<lb/>and make him quite
+                    clean. Comb<lb/>his hair. Tie his frock. Now,<lb/>Charles, we will go down
+                    stairs.</p>
+
+                <pb n="28"/>
+                <fw type="pagenumber" rend="align(centre)">28</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25G41</name>
+                        <desc>(ROSE)	flowers: rose</desc>
+                    </ic:iconClass>
+                </figure>
+                <head type="sub" rend="align(centre)">LESSON XXVII.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">See what a sweet rose Mary<lb/>gave me, it
+                    is a moss rose&mdash;how<lb/>sweet it smells, but it soon will<lb/>fade. I will
+                    stick it in the ground<lb/>to keep it moist. Let me smell it.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25I3</name>
+                        <desc>farm or solitary house in landscape</desc>
+                    </ic:iconClass>
+                </figure>
+                <head type="sub" rend="align(centre)">LESSON XXVIII.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Whose is that fine house ?<lb/>It is my
+                    Aunt's, let us go in.</p>
+
+                <pb n="28"/>
+                <fw type="pagenumber" rend="align(centre)">29</fw>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">How do you do, Aunt ? Quite<lb/>well, I am
+                    glad to see you, my<lb/>dear&mdash;You will stay and dine&mdash;is<lb/>the cloth
+                    laid? Get the plates,<lb/>and knives, and forks. Sit down<lb/>by me.</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <div type="section">
+                <head type="main" rend="align(centre)"><hi rend="italics">Words of Two
+                        Syllables.</hi></head>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON I.</head>
+                <lb/>
+                <p rend="align(justify)">ab&ndash;ject ju&ndash;ry rab&ndash;bit um&ndash;pire<lb/>
+                    keep&ndash;er rak&ndash;ish un&ndash;der bab&ndash;ble<lb/> ram&ndash;part
+                    up&ndash;shot bad&ndash;ger king&ndash;dom<lb/> u&ndash;rine bas&ndash;ket
+                    kim&ndash;bo rich&ndash;es</p>
+                <head type="sub" rend="align(centre)">LESSON II.</head>
+                <lb/>
+                <p rend="align(justify)">cab&ndash;bage kit&ndash;ten rus&ndash;ty
+                    ut&ndash;most<lb/> la&ndash;dy ser&ndash;vant but&ndash;ter cop&ndash;per<lb/>
+                    ser&ndash;mon va&ndash;cant dam&ndash;sel loy&ndash;al<lb/> va&ndash;lid
+                    dis&ndash;mal mar&ndash;ket sor&ndash;row</p>
+                <head type="sub" rend="align(centre)">LESSON III.</head>
+                <lb/>
+                <p rend="align(justify)">dul&ndash;ness mar&ndash;ble tab&ndash;by
+                    vas&ndash;sal<lb/> mur&ndash;der ta&ndash;per ve&ndash;nom ver&ndash;dant<lb/>
+                    tar&ndash;dy en&ndash;try fu&ndash;ry nice&ndash;ly<lb/> ver&ndash;min
+                    fa&ndash;ble tow&ndash;er nut&ndash;meg</p>
+
+                <pb n="30"/>
+                <fw type="pagenumber" rend="align(centre)">30</fw>
+                <lb/>
+                <head type="sub" rend="align(centre)">LESSON IV.</head>
+                <lb/>
+                <p rend="align(justify)">for&ndash;tune ob&ndash;ject vi&ndash;car
+                    town&ndash;ship<lb/> o&ndash;pen trai&ndash;tor vil&ndash;lain
+                    gal&ndash;lant<lb/> tram&ndash;ple vi&ndash;per
+                    glo&ndash;ry<lb/>pa&ndash;per<lb/> vo&ndash;cal guz&ndash;zle pa&ndash;gan
+                    trea&ndash;ty</p>
+                <head type="sub" rend="align(centre)">LESSON V.</head>
+                <lb/>
+                <p rend="align(justify)">ha&ndash;bit pan&ndash;nel tres&ndash;pass
+                    vul&ndash;ture<lb/> par&ndash;cel tri&ndash;fle wa&ndash;fer hum&ndash;ble<lb/>
+                    trig&ndash;ger wan&ndash;ton qua&ndash;ker tro&ndash;phy<lb/> Je&ndash;sus
+                    in&ndash;fant tru&ndash;ant wor&ndash;ship<lb/> i&ndash;dol quar&ndash;rel
+                    year&ndash;ly wea&ndash;ther</p>
+                <head type="sub" rend="align(centre)">LESSON VI.</head>
+                <lb/>
+                <p rend="align(justify)">quar&ndash;ry con&ndash;fine joy&ndash;ful
+                    quar&ndash;ter<lb/> tu&ndash;lip ty&ndash;rant quick&ndash;ly
+                    youth&ndash;ful<lb/> za&ndash;ny i&ndash;mage puz&ndash;zle tri&ndash;umph<lb/>
+                    wis&ndash;dom tu&ndash;mult ap&ndash;prove trum&ndash;pet<lb/> jan&ndash;gle
+                    ze&ndash;nith be&ndash;ware con&ndash;duct</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>43C111261(+421)</name>
+                        <desc>hare-hunting, rabbit-hunting (+ hunting with dogs)</desc>
+                    </ic:iconClass>
+                </figure>
+            </div>
+            <div type="section">
+                <pb n="31"/>
+                <fw type="pagenumber" rend="align(centre)">31</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>34B</name>
+                        <desc>domestic animals, kept in and outside the house</desc>
+                    </ic:iconClass>
+                </figure>
+                <head rend="align(centre)">THE CAT AND THE DOG.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The cat has sharp claws, which
+                    she<lb/>draws back when you ca&ndash;ress her ;<lb/>then her foot is as soft as
+                    vel&ndash;vet,<lb/>Cats have less sense than dogs : their<lb/>re&ndash;gard is
+                    chief&ndash;ly to the house.</p>
+                <p rend="first-indent(2) align(justify)">The dog is true and faith&ndash;ful to
+                    his<lb/>mas&ndash;ter ; he will ra&ndash;ther die by the side<lb/>of him than
+                    take a bribe of a stran&ndash;ger<lb/>to be&ndash;tray him. Hap&ndash;py is the
+                    man<lb/>who finds a friend so true and faith&ndash;ful<lb/>as this
+                    crea&ndash;ture.</p>
+
+                <pb n="32"/>
+                <fw type="pagenumber" rend="align(centre)">32</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F24</name>
+                        <desc>(BOAR)	hoofed animals: boar</desc>
+                    </ic:iconClass>
+                </figure>
+                <head rend="align(centre)">THE HOG.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The hog has a clo&ndash;ven hoof,
+                    like<lb/>the ox ; but the bones of his feet are<lb/>like those of a beast of
+                    prey. Wild<lb/>hogs are ve&ndash;ry sa&ndash;vage.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47I213</name>
+                        <desc>sheep</desc>
+                    </ic:iconClass>
+                </figure>
+                <head rend="align(centre)">THE SHEEP.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Sheep sup&ndash;ply us with food ;
+                    their<lb/>flesh is call&ndash;ed mut&ndash;ton. They sup&ndash;ply<lb/>us with
+                    clothes ; for their wool is made<lb/>in&ndash;to cloth, flan&ndash;nel, and
+                    stock&ndash;ings</p>
+
+                <pb n="33"/>
+                <fw type="pagenumber" rend="align(centre)">33</fw>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C131</name>
+                        <desc>riding a horse, ass, or mule; rider, horseman</desc>
+                    </ic:iconClass>
+                </figure>
+                <head rend="align(centre)">THE HORSE.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The horse is a no&ndash;ble
+                    crea&ndash;ture, and<lb/>ve&ndash;ry use&ndash;ful to man. A horse knows<lb/>his
+                    mas&ndash;ter, his own sta&ndash;ble, and o&ndash;ther<lb/>hors&ndash;es, and
+                    can find his way by a&ndash;ny<lb/>road that he has gone be&ndash;fore.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>47I21111</name>
+                        <desc>ox</desc>
+                    </ic:iconClass>
+                </figure>
+                <head rend="align(centre)">THE OX.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">Ox is the com&ndash;mon name for
+                    horn&ndash;ed<lb/>cat&ndash;tle ; and of all these the cow is <pb n="34"/>
+                    <fw type="pagenumber" rend="align(centre)">34</fw><lb/> the most use&ndash;ful.
+                    The flesh of an ox<lb/>is beef.</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>46C13142</name>
+                        <desc>ass, donkey</desc>
+                    </ic:iconClass>
+                </figure>
+                <head rend="align(centre)">THE ASS.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">The ass is hum&ndash;ble, pa&ndash;tient,
+                    and<lb/>qui&ndash;et. Why should a crea&ndash;ture so<lb/>pa&ndash;tient, so
+                    sim&ndash;ple, and so use&ndash;ful, be<lb/>treat&ndash;ed with
+                    harsh&ndash;ness?</p>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name>25F23</name>
+                        <desc>(LION)	beasts of prey, predatory animals: lion</desc>
+                    </ic:iconClass>
+                </figure>
+                <head rend="align(centre)">THE LION.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">This no&ndash;ble beast has a large
+                    head,<lb/>short round ears, a long shag&ndash;gy mane, <pb n="35"/>
+                    <fw type="pagenumber" rend="align(centre)">35</fw><lb/> strong limbs, and a long
+                    tail tuft&ndash;ed<lb/>at the end. His co&ndash;lour is taw&ndash;ny.</p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <div type="section">
+                <head rend="align(centre)">THE LORD'S PRAYER.</head>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">OUR Father who art in heaven ;
+                        hal&ndash;<lb type="inWord"/>lowed be thy Name. Thy Kingdom<lb/>come. Thy
+                    will be done on earth as<lb/>it is in heaven. Give us this day our<lb/>daily
+                    bread. And forgive us our<lb/>trespasses, as we forgive them that<lb/>trespass
+                    against us. And lead us not<lb/>into temptation, but deliver us from<lb/>evil.
+                    For thine is the kingdom, and<lb/>the power and the glory, for ever
+                    and<lb/>ever. <hi rend="italics">Amen.</hi></p>
+                <head rend="align(centre)">A GRACE BEFORE MEAT.</head>
+                <lb/>
+                <p rend="align(justify)">Sanctify, O Lord, these thy blessings to our use,<lb/>and
+                    us to thy service, for Christ's sake. <hi rend="italics">Amen.</hi></p>
+                <head rend="align(centre)">A GRACE AFTER MEAT.</head>
+                <lb/>
+                <p rend="align(justify)">GOD, who hath created, and at this time plentifully<lb/>fed
+                    us, be praised both now and evermore. <hi rend="italics">Amen.</hi></p>
+                <p rend="align(centre)">&rule;</p>
+            </div>
+            <p><hi rend="italics">Printed by W. DAVISON, Alnwick.</hi></p>
+        </body>
+        <back>
+            <pb n="36"/>
+            <div type="advertisement">
+                <figure type="borderornament"/>
+                <head rend="align(centre)">BOOKS</head>
+                <lb/>
+                <p rend="align(centre)">Published by W. Davison, Alnwick.</p>
+                <p rend="align(centre)">&rule;</p>
+                <p rend="first-indent(2)">BURNS'S POEMS AND SONGS, with Engravings, 24mo, <measure
+                        type="price">9d.</measure></p>
+                <p rend="first-indent(2)">BUFFON'S NATURAL HISTORY, with 300 Engravings on<lb/>Wood,
+                    4 volumes, small 8vo, <measure type="price">6s.</measure></p>
+                <p rend="first-indent(2)">CAVE OF HOONGA, a Tongaen Tale, and other Poems,<lb/>by
+                    MISS HINDMARSH, small 8vo, <measure type="price">2s.</measure></p>
+                <p rend="first-indent(2)">FERGUSSON'S POEMS, with the Life of the Author,
+                    and<lb/>Engravings, 2 volumes, small 8vo, <measure type="price">3s.
+                        6d.</measure></p>
+                <p rend="first-indent(2)">THE HERMIT OF WARKWORTH, 18 mo, <measure type="price"
+                        >6d.</measure></p>
+                <p rend="first-indent(2)">BARRIE'S COLLESTION of English Prose and Verse,<lb/>with
+                    Exercises in Spelling, &amp;c. Price <measure type="price">2s.</measure>
+                    bound.</p>
+                <p rend="first-indent(2)">NEW ENGLISH SPELLING&ndash;BOOK, <measure type="price"
+                        >10d.</measure></p>
+                <p rend="first-indent(2)">READING MADE QUITE EASY ; or, a new English<lb/>Primer of
+                    easy and progressive Lessons. Price <measure type="price">6d.</measure></p>
+                <p rend="first-indent(2)">TOM THUMB'S PLAY&ndash;BOOK, or introduction to
+                        Read&ndash;<lb type="inWord"/>ing, <measure type="price">2d.</measure></p>
+                <p rend="first-indent(2)">NORTHUMBERLAND POLL&ndash;BOOK for the
+                    Contested<lb/>Elections in 1747&ndash;8, 1774, and Feb. 1826, including <lb/>the
+                    Addresses, Speeches of the Candidates, &amp;c. 8vo, pub&ndash;<lb type="inWord"
+                    />lished at <measure type="price">7s. 6d.</measure>, reduced to <measure
+                        type="price">2s.</measure></p>
+                <p rend="first-indent(2)">~~~~~~~~~~ for June, 1826, with<lb/> the Addresses and
+                    Speeches, 8vo, published at <measure type="price">8s. 6d.</measure>,<lb/>reduced
+                    to <measure type="price">2s. 6d.</measure></p>
+                <p>~~~~~~~~~~ for August, 1847, with<lb/> the Addresses, Speeches, &amp;c. 8vo,
+                        <measure type="price">3s. 6d.</measure></p>
+                <p rend="first-indent(2)">THE TYNESIDE SONGSTER, a choice collection of
+                    Comic<lb/>and Descriptive Songs in the Newcastle Dialect. <measure type="price"
+                        >1s.</measure></p>
+                <p rend="first-indent(2)">ARITHMETICAL TABLES, with Weights &amp; Measures, <measure
+                        type="price">1d.</measure></p>
+                <p rend="first-indent(2)">WATTS' DIVINE SONGS, with Engravings, <measure
+                        type="price">6d.</measure> Smaller<lb/><measure type="price">1d. and
+                        2d.</measure></p>
+                <p rend="first-indent(2)">ANDERSON'S CUMBERLAND BALLADS, with Notes de&ndash;<lb
+                        type="inWord"/>scriptive of the Cumberland Peasantry, a Glossary
+                    of<lb/>Local Words, and a Life of the Author, Royal 32mo, <lb/><measure
+                        type="price">1s. 6d.</measure></p>
+                <p rend="first-indent(2)">CATECHISMS, viz : Brown's&mdash;Channing's&mdash;the<lb/>
+                    Church of England, with Prayers, &amp;c&mdash;the Mother's&mdash;<lb/> the
+                    Shorter&mdash;Watts' First&mdash;Watts' Second and Historical.</p>
+            </div>
+        </back>
+    </text>
+</TEI>

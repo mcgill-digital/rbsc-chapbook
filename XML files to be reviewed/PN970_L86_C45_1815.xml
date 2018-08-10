@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+<!ENTITY mdot "&#xb7;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY ddagger "&#x2021;">
+<!ENTITY section "&#167;">
+<!ENTITY pilcrow "&#182;">
+<!ENTITY llateral "&#449;">
+<!ENTITY wfinger "&#x261e;">
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+<!ENTITY crule "curved rule">
+<!ENTITY vrule "vrule rule">
+
+<!ENTITY ctlig "ct-ligature">
+
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013"/>
+                <label>Includes Changes</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="Instruction">
+        <front>
+            <pb n="1"/>
+            <div type="cover" rend="beige coloured pictorial wrappers"/>
+            <note type="handwritten" rend="align(centre)">Child's Instructor</note>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+                <lg>
+                    <l>I feel your pul&#x17f;e &amp; take your fee</l>
+                    <l>To die your then at liberty</l>
+                </lg>
+            </figure>
+
+            <pb n="2"/>
+            <note type="handwritten" place="top">EX LIGRIS GRENT GRATION&ndash;MAXFIELD.
+                1970.</note>
+            <!-- Please review the note for accuracy -->
+
+            <pb n="3"/>
+            <pb n="4"/>
+            <titlePage rend="align(centre)">
+                <titlePart type="main">THE<lb/>CHILD'S INSTRUCTOR,</titlePart>
+                <lb/>
+                <titlePart type="sub">OR<lb rend="italic"/>Picture Alphabet.</titlePart>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+
+                <epigraph>
+                    <lg>
+                        <l>Good Girls and good Boys</l>
+                        <l>Prefer Books to Toys,</l>
+                        <l>And with the Cock rise</l>
+                        <l>To read and grow wise.</l>
+                    </lg>
+                </epigraph>
+                <lb/>
+                <docImprint>
+                    <pubPlace>&swell;<lb/>GLASGOW,</pubPlace><lb/>
+                    <publisher>PUBLISHED AND SOLD, WHOLESALE, BY<lb rend="italic"/>LUMSDEN &amp;
+                        SON.<lb/>&crule;</publisher>
+                    <lb/>Price <measure type="price">TWOPENCE.</measure>
+                </docImprint>
+            </titlePage>
+
+        </front>
+        <body>
+
+            <pb n="5"/>
+
+            <div type="section" rend="align(centre)">
+                <head>A a</head>
+                <p>An&ndash;gler. <hi rend="italic">An&ndash;gler.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ab eb ib ob ub</p>
+                <p>&crule;</p>
+                <p>An An&ndash;gler is one who catch&ndash;es<lb/>fish&ndash;es with a hook.</p>
+            </div>
+
+            <pb n="6"/>
+
+            <div type="section" rend="align(centre)">
+                <head>B b</head>
+                <p>Black. <hi rend="italic">Black.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ba be bi bo bu</p>
+                <p>&crule;</p>
+                <p>Black Men and Wo &ndash;men are na&ndash;<lb type="inWord"/>tives of warm
+                    coun&ndash;tries.</p>
+            </div>
+
+            <pb n="7"/>
+            <div type="section" rend="align(centre)">
+                <head>C c</head>
+                <p>Cap&ndash;tain. <hi rend="italic">Cap&ndash;tain.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ca ce ci co cu</p>
+                <p>&crule;</p>
+                <p>A Cap&ndash;tain is an of&ndash;fi&ndash;cer who<lb/>com&ndash;mands a
+                    hun&ndash;dred sol&ndash;diers.</p>
+            </div>
+
+
+            <pb n="8"/>
+            <div type="section" rend="align(centre)">
+                <head>D d</head>
+                <p>Drunk&ndash;ard. <hi rend="italic">Drunk&ndash;ard.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>da de di do du</p>
+                <p>&crule;</p>
+                <p>A Drunk&ndash;ard is a per&ndash;son who<lb/>drinks of&ndash;ten and to
+                    ex&ndash;cess.</p>
+            </div>
+
+            <pb n="9"/>
+            <div type="section" rend="align(centre)">
+                <head>E e</head>
+                <p>Elk. <hi rend="italic">Elk.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>eb ec ed ef eg</p>
+                <p>&crule;</p>
+                <p>An Elk is an an&ndash;i&ndash;mal that is to<lb/>be found in north&ndash;ern
+                    coun&ndash;tries.</p>
+            </div>
+
+
+            <pb n="10"/>
+            <div type="section" rend="align(centre)">
+                <head>F f</head>
+                <p>Fid&ndash;dler. <hi rend="italic">Fid&ndash;dler.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>fa fe fi fo fu</p>
+                <p>&crule;</p>
+                <p>A Fid&ndash;dler is a per&ndash;son who plays<lb/>on a fid&ndash;dle or
+                    vi&ndash;o&ndash;lin.</p>
+            </div>
+
+            <pb n="11"/>
+            <div type="section" rend="align(centre)">
+                <head>G g</head>
+                <p>Goose. <hi rend="italic">Goose.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ga ge gi go gu</p>
+                <p>&crule;</p>
+                <p>A Goose is a large wa&ndash;ter&ndash;fowl<lb/>like a duck.</p>
+            </div>
+
+            <pb n="12"/>
+            <div type="section" rend="align(centre)">
+                <head>H h</head>
+                <p>Hay&ndash;mak&ndash;er. <hi rend="italic">Hay&ndash;mak&ndash;er.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ha he hi ho hu</p>
+                <p>&crule;</p>
+                <p>A Hay&ndash;mak&ndash;er is a per&ndash;son who<lb/>gath&ndash;ers dry cut grass
+                    in&ndash;to heaps.</p>
+            </div>
+
+            <pb n="13"/>
+            <div type="section" rend="align(centre)">
+                <head>I i</head>
+                <p>Inn. <hi rend="italic">Inn.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ib ic id if ig</p>
+                <p>&crule;</p>
+                <p>An Inn is a house for lodg&ndash;ing<lb/>and en&ndash;ter&ndash;tain&ndash;ing
+                    trav&ndash;el&ndash;ers.</p>
+            </div>
+
+            <pb n="14"/>
+            <div type="section" rend="align(centre)">
+                <head>J j</head>
+                <p>Jack&ndash;daw, <hi rend="italic">Jack&ndash;daw.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ja je ji jo ju</p>
+                <p>&crule;</p>
+                <p>A Jack&ndash;daw is a small noisy<lb/>kind of crow.</p>
+            </div>
+
+
+            <pb n="15"/>
+            <div type="section" rend="align(centre)">
+                <head>K k</head>
+                <p>Kite. <hi rend="italic">Kite.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ka ke ki ko ku</p>
+                <p>&crule;</p>
+                <p>A Kite is a spe&ndash;cies of hawk which<lb/>kills and eats small birds.</p>
+            </div>
+
+            <pb n="16"/>
+            <div type="section" rend="align(centre)">
+                <head>L l</head>
+                <p>Lamb. <hi rend="italic">Lamb.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>la le li lo lu</p>
+                <p>&crule;</p>
+                <p>A Lamb is a young sheep, and is<lb/>ve&ndash;ry
+                    in&ndash;of&ndash;fen&ndash;sive.</p>
+            </div>
+
+            <pb n="17"/>
+            <div type="section" rend="align(centre)">
+                <head>M m</head>
+                <p>Me&ndash;lon. <hi rend="italic">Me&ndash;lon.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ma me mi mo mu</p>
+                <p>&crule;</p>
+                <p>A Me&ndash;lon is a fruit like an<lb/>ap&ndash;ple.</p>
+            </div>
+
+
+            <pb n="18"/>
+            <div type="section" rend="align(centre)">
+                <head>N n</head>
+                <p>Nag. <hi rend="italic">Nag.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>na ne ni no nu</p>
+                <p>&crule;</p>
+                <p>A Nag is a po&ndash;ny or lit&ndash;tle rid&ndash;<lb/>ing&ndash;horse.</p>
+            </div>
+
+            <pb n="19"/>
+            <div type="section" rend="align(centre)">
+                <head>O o</head>
+                <p>O&ndash;range&ndash;tree. <hi rend="italic">O&ndash;range&ndash;tree.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ob oc od of on</p>
+                <p>&crule;</p>
+                <p>O&ndash;range&ndash;trees grow in warm cli&ndash;<lb type="inWord"/>mates, or in
+                    hot&ndash;hous&ndash;es.</p>
+            </div>
+
+            <pb n="20"/>
+            <div type="section" rend="align(centre)">
+                <head>P p</head>
+                <p>Pi&ndash;geons. <hi rend="italic">Pi&ndash;geons.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>pa pe pi po pu</p>
+                <p>&crule;</p>
+                <p>Pi &ndash;geons are al&ndash;so called Doves,<lb/>and live in hous&ndash;es.</p>
+            </div>
+
+            <pb n="21"/>
+            <div type="section" rend="align(centre)">
+                <head>Q q</head>
+                <p>Quince. <hi rend="italic">Quince.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>qua que qui quo quy</p>
+                <p>&crule;</p>
+                <p>A Quince is a kind of fruit, used<lb/>for fla&ndash;vour&ndash;ing a pie.</p>
+            </div>
+
+            <pb n="22"/>
+            <div type="section" rend="align(centre)">
+                <head>R r</head>
+                <p>Rain&ndash;bow. <hi rend="italic">Rain&ndash;bow.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ra re ri ro ru</p>
+                <p>&crule;</p>
+                <p>The Rain&ndash;bow is the arch that ap&ndash;<lb type="inWord"/>pears
+                    dur&ndash;ing rain and sun&ndash;shine.</p>
+            </div>
+
+            <pb n="23"/>
+            <div type="section" rend="align(centre)">
+                <head>S s</head>
+                <p>Squir&ndash;rel. <hi rend="italic">Squir&ndash;rel.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>sa se si so su</p>
+                <p>&crule;</p>
+                <p>A Squir&ndash;rel is a nim&ndash;ble lit&ndash;tle<lb/>an&ndash;i&ndash;mal that
+                    lives in woods.</p>
+            </div>
+
+            <pb n="24"/>
+            <div type="section" rend="align(centre)">
+                <head>T t</head>
+                <p>Tom&ndash;tit. <hi rend="italic">Tom&ndash;tit.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ta te ti to tu</p>
+                <p>&crule;</p>
+                <p>A Tom&ndash;tit is a very small chat&ndash;<lb/>ter&ndash;ing bird.</p>
+            </div>
+
+
+            <pb n="25"/>
+            <div type="section" rend="align(centre)">
+                <head>U u</head>
+                <p>U&ndash;sur&ndash;cr <hi rend="italic">U&ndash;sur&ndash;cr</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ub uc ud uf un</p>
+                <p>&crule;</p>
+                <p>A U&ndash;sur&ndash;er is a per&ndash;son who lends<lb/>mo&ndash;ney for
+                    un&ndash;law&ndash;ful in&ndash;ter&ndash;est.</p>
+            </div>
+
+            <pb n="26"/>
+            <div type="section" rend="align(centre)">
+                <head>V v</head>
+                <p>Vil&ndash;lage. <hi rend="italic">Vil&ndash;lage.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>va ve vi vo vu</p>
+                <p>&crule;</p>
+                <p>A Vil&ndash;lage is a small coun&ndash;try<lb/>town, with few
+                    in&ndash;hab&ndash;i&ndash;tants.</p>
+            </div>
+
+            <pb n="27"/>
+            <div type="section" rend="align(centre)">
+                <head>W w</head>
+                <p>Weath&ndash;er&ndash;cock. <hi rend="italic">Weath&ndash;er&ndash;cock.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>wa we wi wo wu</p>
+                <p>&crule;</p>
+                <p>Weath&ndash;er&ndash;cocks show from what<lb/>di&ndash;rec&ndash;tion the wind
+                    blows.</p>
+            </div>
+
+            <pb n="28"/>
+            <div type="section" rend="align(centre)">
+                <head>X x</head>
+                <p>Xa&ndash;ny. <hi rend="italic">Xa&ndash;ny.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>xa xe xi xo xu</p>
+                <p>&crule;</p>
+                <p>A Xa&ndash;ny is a bad boy who ne&ndash;glects<lb/>his book, and runs
+                    a&ndash;bout i&ndash;dle.</p>
+            </div>
+
+            <pb n="29"/>
+            <div type="section" rend="align(centre)">
+                <head>Y y</head>
+                <p>Youth. <hi rend="italic">Youth.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>ya ye yi yo yu</p>
+                <p>&crule;</p>
+                <p>Youths are fond of ac&ndash;tive sports,<lb/>such as driv&ndash;ing a hoop.</p>
+            </div>
+
+            <pb n="30"/>
+            <div type="section" rend="align(centre)">
+                <head>Z z</head>
+                <p>Ze&ndash;no. <hi rend="italic">Ze&ndash;no.</hi></p>
+                <lb/>
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+                <p>&crule;</p>
+                <p>za ze zi zo zu</p>
+                <p>&crule;</p>
+                <p>Ze&ndash;no was a hea&ndash;then philo&ndash;so&ndash;<lb/>pher who be&ndash;came
+                    a Chris&ndash;tian.</p>
+            </div>
+
+            <pb n="31"/>
+            <div type="alphabet" rend="align(centre)">
+
+                <p>A B C D E F G H<lb/>I J K L M N O P Q<lb/>R S T UV W X Y Z</p>
+                <lb/>
+                <p>a b c d e f g h i j k l</p>
+                <lb/>
+                <p>m n o p q r s t u v w<lb/>x y z</p>
+                <lb/>
+                <p rend="italic">A B C D E F G H<lb/>I J K L M N O P Q<lb/>R S T U V W X Y Z</p>
+                <lb/>
+                <p rend="italic">a b c d e f g h i j k l m<lb/>n o p q r s t u v w x y z</p>
+                <lb/>
+                <p>a e i o u</p>
+                <lb/>
+                <p>1 2 3 4 5 6 7 8 9 0</p>
+            </div>
+
+            <pb n="32"/>
+            <div type="section">
+                <lg>
+                    <l>As we do, so do ye.</l>
+                    <lb/>
+                    <l>Be to us, as we to ye.</l>
+                    <lb/>
+                    <l>He is to be as we be.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>Do ye go to it, or no?</l>
+                    <lb/>
+                    <l>We go to it as ye go.</l>
+                    <lb/>
+                    <l>Lo, if I go, be it so.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>O go ye in as we go.</l>
+                    <lb/>
+                    <l>It is as we go by.</l>
+                    <lb/>
+                    <l>Is he to be as I am?</l>
+                    <lb/>
+                    <l>I am to be as he is.</l>
+                </lg>
+                <lb/>
+                <lg>
+                    <l>I am to do as ye do.</l>
+                    <lb/>
+                    <l>No, if I am to do it.</l>
+                    <lb/>
+                    <l>Is he to be at it, or no?</l>
+                    <lb/>
+                    <l>He is to be, is he no?</l>
+                </lg>
+            </div>
+
+
+            <pb n="33"/>
+            <div type="section">
+                <p rend="first-indent(2) align(justify)">A bad boy and a bad man<lb/>are in a bad
+                    way, and fear<lb/>not God nor man.</p>
+                <lb/>
+                <p rend="first-indent(2) align(justify)">A good boy and a good<lb/>girl will do no
+                    ill, nor go<lb/>with bad boys and bad girls.</p>
+
+                <figure rend="align(centre)">
+                    <ic:iconClass>
+                        <name/>
+                        <desc/>
+                    </ic:iconClass>
+                </figure>
+
+            </div>
+        </body>
+        <back>
+            <pb n="34"/>
+            <pb n="35"/>
+
+            <pb n="36"/>
+            <div type="cover"/>
+            <lb/>
+            <figure rend="align(centre)">
+                <ic:iconClass>
+                    <name/>
+                    <desc/>
+                </ic:iconClass>
+                <lg>
+                    <l>This worthy Magi&#x17f;trate they &#x17f;ay</l>
+                    <l>Takes his three gallns every day</l>
+                    <!-- "ns" are superscript, should it be coded differently? -->
+                </lg>
+            </figure>
+        </back>
+    </text>
+</TEI>

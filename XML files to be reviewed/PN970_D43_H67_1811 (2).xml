@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="oddRBSC26.rnc" type="application/relax-ng-compact-syntax"?>
+<!DOCTYPE TEI [
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY slong "&#x17f;">
+<!ENTITY pound "&#xa3;">
+<!ENTITY owithdm "&#555;">
+<!ENTITY ae "&#xe6;">
+<!ENTITY AE "&#xc6;">
+<!ENTITY oe "&#x153;">
+<!ENTITY OE "&#x276;">
+
+
+
+<!ENTITY lsquo   "&#8216;"> <!-- left single quotation mark,
+U+2018 ISOnum -->
+<!ENTITY rsquo   "&#8217;"> <!-- right single quotation mark,
+U+2019 ISOnum -->
+<!ENTITY sbquo   "&#8218;"> <!-- single low-9 quotation mark, 
+U+201A NEW -->
+<!ENTITY ldquo   "amp;“"> <!-- left double quotation mark,
+U+201C ISOnum -->
+<!ENTITY rdquo   "&#8221;"> <!-- right double quotation mark,
+U+201D ISOnum -->
+
+
+<!ENTITY orn "ornament">
+<!ENTITY rule "single rule">
+<!ENTITY drule "double rule">
+<!ENTITY thrule "thick rule">
+<!ENTITY swell "swell rule">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ic="http://www.MYINSTITUTION.edu/MYPROJECT/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><placeName/></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>
+                <date when="2013"/>
+                <label>Transcriber</label>
+                <name/>Shannon May<note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Initial TEI Markup</label>
+                <name>Wid Naima</name>
+                <note/>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>Content Reviewer</label>
+                <name/>
+                <note>Content Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI Reviewer</label>
+                <name>Sharon Rankin</name>
+                <note>TEI Reviewer notes</note>
+            </change>
+
+            <change>
+                <date when="2013"/>
+                <label>TEI header completed</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013-03-20"/>
+                <label>Available to Library Technology Services for processing</label>
+                <name/>
+                <note/>
+            </change>
+            <change>
+                <date when="2013"/>
+                <label>Includes Changes</label>
+                <name/>
+                <note/>
+            </change>
+        </revisionDesc>
+
+
+    </teiHeader>
+    <facsimile>
+        <graphic rend="recto" n="1r" url=" PN970_D4_D4_no44_1857_0003483191-001.tif"/>
+        <graphic rend="verso" n="1v" url=" PN970_D4_D4_no44_1857_0003483191-002.tif "/>
+        <graphic rend="recto" n="2r" url=" PN970_D4_D4_no44_1857_0003483191-003.tif "/>
+        <graphic rend="verso" n="2v" url=" PN970_D4_D4_no44_1857_0003483191-004.tif "/>
+        <graphic rend="verso" n="3v" url=" PN970_D4_D4_no44_1857_0003483191-005.tif "/>
+    </facsimile>
+    <text type="MetricalTales">
+        <front rend="align(centre)">
+            <pb n="1"/>
+            <div type="cover" rend="beige coloured pictorial wrappers">
+                <figure type="borderornament">
+                    <p>PRICE <measure type="price">SIX&ndash;PENCE.</measure></p>
+                    <figure type="borderornament">
+                        <bibl>
+                            <title>THE LILY.</title>
+                        </bibl>
+                    </figure>
+                    <bibl>
+                        <pubPlace>LONDON:</pubPlace><lb/>
+                        <publisher>DEAN AND MUNDAY,</publisher>
+                        <lb/><pubPlace>THREADNEEDLE&ndash;STREET.</pubPlace>
+                    </bibl>
+                </figure>
+            </div>
+            <pb n="2"/>
+            <div type="frontispiece">
+                <figure type="borderornament">
+                    <figure rend="coloured">
+                        <ic:iconClass>
+                            <name>31D11221</name>
+                            <desc>boy (child between toddler and youth)</desc>
+                        </ic:iconClass>
+                        <head rend="align(centre)">LITTLE WILLIAM.</head>
+                    </figure>
+                </figure>
+            </div>
+            <pb n="3"/>
+            <titlePage>
+                <titlePart type="main">THE LILY;</titlePart>
+                <titlePart type="main">OR,<lb/>LITTLE WILLIAM AND HIS MAMMA:<lb/>AND,<lb/>THE GOOD
+                    CHILDREN.<lb/>&rule;</titlePart>
+                <lb/>
+                <docAuthor>BY MRS. BAKER,<lb/>AUTHOR OF ORIGINAL POETRY FOR YOUNG MINDS, &amp;c.
+                    &amp;c.</docAuthor>
+                <lb/>
+                <figure>
+                    <ic:iconClass>
+                        <name>47I2133</name>
+                        <desc>lamb</desc>
+                    </ic:iconClass>
+                </figure>
+                <lb/>
+                <docImprint>
+                    <pubPlace>LONDON:</pubPlace><lb/>
+                    <publisher>DEAN AND MUNDAY</publisher>,
+                        <pubPlace>THREADNEEDLE&ndash;STREET</pubPlace>. <lb/><hi rend="italic">Price
+                            <measure type="price">Six&ndash;pence.</measure></hi>
+                </docImprint>
+
+            </titlePage>
+            <pb n="4"/>
+        </front>
+        <body>
+            <pb n="5"/>
+            <div type="section">
+                <head type="main" rend="align(centre)"><hi rend="italic">THE
+                    LILY.</hi><lb/>&rule;</head>
+                <div type="section">
+                    <head type="sub" rend="align(centre)">LITTLE WILLIAM AND HIS MAMMA.</head>
+                    <lg>
+                        <l rend="indent(4)">The daisy peeps out</l>
+                        <l rend="indent(4)">Of its pretty green bed,</l>
+                        <l>And the buttercup, yellow and gay,</l>
+                        <l rend="indent(4)">Above the soft grass</l>
+                        <l rend="indent(4)">High raises its head,</l>
+                        <l>And shines through the bright<lb rend="indent(6)"/>sunny day.</l>
+                    </lg>
+                    <pb n="6"/>
+                    <fw type="pagenumber" rend="align(centre)">6</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">The little birds chirp,</l>
+                        <l rend="indent(4)"> In their nest on the tree,</l>
+                        <l> As if longing to be on the wing;</l>
+                        <l rend="indent(4)">The lambs, too, are sporting</l>
+                        <l rend="indent(4)"> In frolic and glee ;</l>
+                        <l>All are pleased with return of the<lb rend="indent(6)"/>Spring.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">Then come, little William,</l>
+                        <l rend="indent(4)">We'll hasten away</l>
+                        <l>To the fields, all the beauties to see;</l>
+                        <l rend="indent(4)">Perchance the poor cake man</l>
+                        <l rend="indent(4)">We saw t'other day,</l>
+                        <l>May be sitting again 'neath the tree.</l>
+                    </lg>
+
+                    <pb n="7"/>
+                    <figure type="borderornament">
+                        <figure rend="coloured align(centre)">
+                            <ic:iconClass>
+                                <name>46A212</name>
+                                <desc>giving alms or other charity, e.g.: handing out food</desc>
+                            </ic:iconClass>
+                            <head>
+                                <lg>
+                                    <l rend="indent(4)">Perchance the poor cake man</l>
+                                    <l rend="indent(4)">We saw t'other day,</l>
+                                    <l>May be sitting again 'neath the tree.</l>
+                                </lg></head>
+                        </figure>
+                        <lb/>
+
+                    </figure>
+                    <pb n="8"/>
+                    <pb n="9"/>
+                    <fw type="pagenumber" rend="align(centre)">9</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">'Twill be kind, just to buy</l>
+                        <l rend="indent(4)">A few cakes, as we pass,</l>
+                        <l>For he seems to be feeble and poor:</l>
+                        <l rend="indent(4)">And his basket so clean,</l>
+                        <l rend="indent(4)">As it stands on the grass,</l>
+                        <l>Is to both of you tempting, I'm sure.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">And then we'll go over</l>
+                        <l rend="indent(4)">And get some warm milk from his<lb rend="indent(6)"
+                            />cow,</l>
+                        <l rend="indent(4)">'Twill be very nice,</l>
+                        <l rend="indent(4)">When we've eaten our cakes,</l>
+                        <l>And he's begun milking, 'ere now.</l>
+                    </lg>
+                    <pb n="10"/>
+                    <fw type="pagenumber" rend="align(centre)">10</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">And if Pompey will promise</l>
+                        <l rend="indent(4)">That he will be good,</l>
+                        <l>And not bark again at the sheep,</l>
+                        <l rend="indent(4)">And not run away,</l>
+                        <l rend="indent(4)">And behave very rude,</l>
+                        <l>I think we will give him a peep</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">At the fields, and the flowers,</l>
+                        <l rend="indent(4)">And blue sunny sky;</l>
+                        <l>To him it great pleasure will be,</l>
+                        <l rend="indent(4)">To swim in the pond,</l>
+                        <l rend="indent(4)">And then rub himself dry,</l>
+                        <l>And gambol around you and me.</l>
+                    </lg>
+                    <pb n="11"/>
+                    <figure type="borderornament">
+                        <figure rend="coloured align(centre)">
+                            <ic:iconClass>
+                                <name>42B7422</name>
+                                <desc>mother and daughter(s) (family group)</desc>
+                            </ic:iconClass>
+                            <head><lg>
+                                    <l rend="indent(4)">And if Pompey will promise</l>
+                                    <l rend="indent(4)">That he will be good,</l>
+                                    <l>And not bark again at the sheep.</l>
+                                </lg></head>
+                        </figure>
+
+
+                    </figure>
+                    <pb n="12"/>
+                    <pb n="13"/>
+                    <fw type="pagenumber" rend="align(centre)">13</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">He knows what I say,</l>
+                        <l rend="indent(4)">For he's run to the door:</l>
+                        <l>And there he has taken his place,</l>
+                        <l rend="indent(4)">Quite ready to promise,</l>
+                        <l rend="indent(4)">And thinks it is sure</l>
+                        <l>He shall not get into disgrace.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">I suppose he must go:</l>
+                        <l rend="indent(4)">So now for your hat;</l>
+                        <l>Your kite you may fly, if you please;</l>
+                        <l rend="indent(4)">Nay, go along, pussy.</l>
+                        <l rend="indent(4)">We can't take a cat,</l>
+                        <l>For you'll run away up the trees.</l>
+                    </lg>
+                    <pb n="14"/>
+                    <fw type="pagenumber" rend="align(centre)">14</fw>
+                    <lg>
+                        <l rend="indent(4)">And now we've got out;</l>
+                        <l rend="indent(4)">What a beautiful day!</l>
+                        <l>There, Pompey, poor fellow, down !<lb rend="indent(6)"/>down!</l>
+                        <l rend="indent(4)">He jumps up upon us,</l>
+                        <l rend="indent(4)">As much as to say,</l>
+                        <l>Your kindness I gratefully own.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">How soft is the turf!</l>
+                        <l rend="indent(4)">And how lovely its green,</l>
+                        <l>In this pretty lane in our way;</l>
+                        <l rend="indent(4)">In its hedge on each side,</l>
+                        <l rend="indent(4)">The young leaves are now seen</l>
+                        <l>To mix with the blossoms of May</l>
+                    </lg>
+                    <pb n="15"/>
+                    <figure type="borderornament">
+                        <figure rend="coloured align(centre)">
+                            <ic:iconClass>
+                                <name>25I2451</name>
+                                <desc>bridge in village across river, canal, etc.</desc>
+                            </ic:iconClass>
+                            <head><lg>
+                                    <l rend="indent(4)">And now we cross over</l>
+                                    <l rend="indent(4)">This clear little stream;</l>
+                                    <l>But we'll stop for a moment, to view.</l>
+                                </lg></head>
+                        </figure>
+
+
+                    </figure>
+                    <pb n="16"/>
+                    <pb n="17"/>
+                    <fw type="pagenumber" rend="align(centre)">17</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">And now we cross over</l>
+                        <l rend="indent(4)">This clear little stream;</l>
+                        <l>But we'll stop for a moment to view</l>
+                        <l rend="indent(4)">It's swift running course,</l>
+                        <l rend="indent(4)">For you'll find it will teem</l>
+                        <l>With a lesson most useful and true.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">As these waters pass on,</l>
+                        <l rend="indent(4)">In silence and shade,</l>
+                        <l>So Time, oft unheeded, goes by;</l>
+                        <l rend="indent(4)">No lesson is learnt,</l>
+                        <l rend="indent(4)">No improvement is made,</l>
+                        <l>We care not how quick it may fly.</l>
+                    </lg>
+                    <pb n="18"/>
+                    <fw type="pagenumber" rend="align(centre)">18</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">You may think that this stream,</l>
+                        <l rend="indent(4)">As it flows down the vale,</l>
+                        <l>Is idle and useless, my dear;</l>
+                        <l rend="indent(4)">But the shrubs in its couse,</l>
+                        <l rend="indent(4)">Tell a different tale,</l>
+                        <l>As in verdure and bloom they appear.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">It moistens the roots,</l>
+                        <l rend="indent(4)">Deep sunk in the mould,</l>
+                        <l>Giving beauty and strength to the<lb/><hi rend="indent(6)">tree;</hi></l>
+                        <l rend="indent(4)">Without moisture, all yellow</l>
+                        <l rend="indent(4)">Those leaves you'd behold,</l>
+                        <l>And scanty the blossoms would be.</l>
+                    </lg>
+                    <pb n="19"/>
+                    <figure type="borderornament">
+                        <figure rend="coloured align(centre)">
+                            <ic:iconClass>
+                                <name>35</name>
+                                <desc>pastorals, Arcadian scenes</desc>
+                            </ic:iconClass>
+                            <head><lg>
+                                    <l rend="indent(4)">You may think that this stream,</l>
+                                    <l rend="indent(4)">As it flows down the vale,</l>
+                                    <l>Is idle and useless, my dear:</l>
+                                </lg></head>
+                        </figure>
+                        <lb/>
+
+                    </figure>
+                    <pb n="20"/>
+                    <pb n="21"/>
+                    <fw type="pagenumber" rend="align(centre)">21</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">As this stream, or the rain,</l>
+                        <l rend="indent(4)">To the tree or the flower,</l>
+                        <l>So learning to youth should be dear;</l>
+                        <l rend="indent(4)">Then with diligence seek</l>
+                        <l rend="indent(4)">To improve every hour,</l>
+                        <l>If of knowledge the fruits you<lb rend="indent(6)"/>would bear.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">How silly the child is,</l>
+                        <l rend="indent(4)">Who idles away</l>
+                        <l>The time he in learning should spend;</l>
+                        <l rend="indent(4)">Who thinks it quite hard</l>
+                        <l rend="indent(4)">That, on every day,</l>
+                        <l>He should to some lesson attend.</l>
+                    </lg>
+                    <pb n="22"/>
+                    <fw type="pagenumber" rend="align(centre)">22</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">Besides, too, the pleasure</l>
+                        <l rend="indent(4)">Of growing more wise,</l>
+                        <l>Each day, as it passes away,</l>
+                        <l rend="indent(4)">Some little reward, dears,</l>
+                        <l rend="indent(4)">Will often arise,</l>
+                        <l>For those who instruction obey:</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">If you, now, this morning</l>
+                        <l rend="indent(4)">Had idled in bed,</l>
+                        <l>Or loitered to play or to talk,</l>
+                        <l rend="indent(4)">Your tasks, by this time,</l>
+                        <l rend="indent(4)">Would not have been said,</l>
+                        <l>And you would have lost this nice<lb rend="indent(6)"/>walk.</l>
+                    </lg>
+
+                    <pb n="23"/>
+                    <figure type="borderornament">
+                        <figure rend="coloured align(centre)">
+                            <ic:iconClass>
+                                <name>41A681</name>
+                                <desc>gardening</desc>
+                            </ic:iconClass>
+                            <head><lg>
+                                    <l rend="indent(4)">Some little reward, dears,</l>
+                                    <l rend="indent(4)">Will often arise,</l>
+                                    <l>For those who instruction obey.</l>
+                                </lg></head>
+                        </figure>
+                        <lb/>
+
+                    </figure>
+                    <pb n="24"/>
+                </div>
+                <div type="section">
+                    <pb n="25"/>
+                    <fw type="pagenumber" rend="align(centre)">25</fw>
+                    <lb/>
+                    <head type="main" rend="align(centre)">THE GOOD CHILDREN.</head>
+
+                    <lg>
+                        <l rend="indent(4)">COME, brother, dear brother,</l>
+                        <l rend="indent(4)">Said good little Ann,</l>
+                        <l>Papa will be presently here;</l>
+                        <l rend="indent(4)">Let us make up the fire,</l>
+                        <l rend="indent(4)">And do all we can,</l>
+                        <l>His evening, dear Julian, to cheer.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">Though papa now is poor,</l>
+                        <l rend="indent(4)">Let us, Julian, try</l>
+                        <l>To make him forget he is so;</l>
+                        <l rend="indent(4)">He has no servants, now,</l>
+                        <l rend="indent(4)">But old Nanny and I,</l>
+                        <l>Yet he many comforts shall know.</l>
+                    </lg>
+                    <pb n="26"/>
+                    <fw type="pagenumber" rend="align(centre)">26</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">You look out the tea&ndash;things,</l>
+                        <l rend="indent(4)">And I'll place his chair</l>
+                        <l>All ready for him to sit down;</l>
+                        <l rend="indent(4)">His boot&ndash;jack and slippers</l>
+                        <l rend="indent(4)">I'll get out to air,</l>
+                        <l>He'll be tired in walking from town.</l>
+                    </lg>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">We the curtains will draw,</l>
+                        <l rend="indent(4)">To keep out the cold,</l>
+                        <l>And the hearth we'll sweep tidy<lb rend="indent(6)"/>and clean;</l>
+                        <l rend="indent(4)">For Nanny, you know,</l>
+                        <l rend="indent(4)">Is now feeble and old,</l>
+                        <l>Though once young and strong she<lb rend="indent(6)"/>has been.</l>
+                    </lg>
+
+                    <pb n="27"/>
+                    <figure type="borderornament">
+                        <figure rend="coloured align(centre)">
+                            <ic:iconClass>
+                                <name>42F31</name>
+                                <desc>cleaning (the house)</desc>
+                            </ic:iconClass>
+                            <head><lg>
+                                    <l rend="indent(4)">We the curtains will draw</l>
+                                    <l rend="indent(4)">To keep out the cold,</l>
+                                    <l>And the hearth we'll sweep tidy and clean.</l>
+                                </lg></head>
+                        </figure>
+                        <lb/>
+
+                    </figure>
+                    <pb n="28"/>
+                    <pb n="29"/>
+                    <fw type="pagenumber" rend="align(centre)">29</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">Besides, she has proved,</l>
+                        <l rend="indent(4)">Since poor mamma died,</l>
+                        <l>A mother to you and to me;</l>
+                        <l rend="indent(4)">And we, dearest brother,</l>
+                        <l rend="indent(4)">Should make it our pride,</l>
+                        <l>That useful to her we can be.</l>
+                        <lb/>
+                    </lg>
+                    <lg>
+                        <l rend="indent(4)">The toast is now ready.</l>
+                        <l rend="indent(4)">The tea, too, is made:</l>
+                        <l>There's nothing for Nanny to do:</l>
+                        <l rend="indent(4)">She'll call us good children,</l>
+                        <l rend="indent(4)">Besides, we'll be paid</l>
+                        <l>>With a smile, dearest father, from<lb rend="indent(6)"/>you.</l>
+                    </lg>
+                    <pb n="30"/>
+                    <fw type="pagenumber" rend="align(centre)">30</fw>
+                    <lb/>
+                    <lg>
+                        <l rend="indent(4)">O there's papa's knock!</l>
+                        <l rend="indent(4)">Run, run, to the door:</l>
+                        <l>Dear Papa, we're so glad you are<lb/><hi rend="indent(6)">home;</hi></l>
+                        <l rend="indent(4)">And I am as glad,</l>
+                        <l rend="indent(4)">My dear children, I'm sure,</l>
+                        <l>To your very kind welcome to<lb/><hi rend="indent(6)">come.</hi></l>
+                    </lg>
+                    <pb n="31"/>
+                    <figure type="borderornament">
+                        <figure rend="coloured align(centre)">
+                            <ic:iconClass>
+                                <name>42B113</name>
+                                <desc>father with son(s) and daughter(s) (father-love)</desc>
+                            </ic:iconClass>
+                            <head><lg>
+                                    <l rend="indent(4)">And I am as glad,</l>
+                                    <l rend="indent(4)">My dear children, I'm sure,</l>
+                                    <l>To your very kind welcome to come.</l>
+                                </lg></head>
+                        </figure>
+                        <lb/>
+
+                    </figure>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="cover"/>
+            <figure type="borderornament"/>
+            <div type="advertisement">
+                <head rend="align(centre)" type="main">ORIGINAL TOY BOOKS,</head>
+                <head type="sub" rend="align(centre)"><hi rend="italic">On fine stout paper, with
+                        neatly coloured Engravings, <measure type="price">6d.</measure>
+                    each.</hi></head>
+                <list>
+                    <item>Baby Tales, in verse; by Mrs. Baker; 8 engravings.</item>
+                    <item>Baby Tales, in prose; by Mrs. Marten; 8 engravings.</item>
+                    <item>Blossoms of Learning; a new Alphabet; 15 engravings</item>
+                    <item>Concert of Cock Robin and Jenny Wren; 8 engravings</item>
+                    <item>The Evergreen; by Mrs. Marten; 8 coloured engravings</item>
+                    <item>Infant's Toy Book; 16 neatly coloured engravings.</item>
+                    <item>Juvenile Pastimes; with 30 coloured engravings.</item>
+                    <item>Juvenile Riddle-Book; a new collection; plate</item>
+                    <item>Little Tales for Little Folks; 8 coloured engravings.</item>
+                    <item>Months and the Seasons; or, a Picture of the Year</item>
+                    <item>Nursery Rhymes; 8 coloured engravings.</item>
+                    <item>New Story Book; by Mrs. Marten; 8 coloured plates.</item>
+                    <item>Orphan Rachel; by Jane Strickland; 7 engravings.</item>
+                    <item>Pleasing Tales for Infant Minds; 8 coloured engravings</item>
+                    <item>Pretty Picture Book, with very Easy Reading; 30 plates</item>
+                    <item>Pretty Stories, and Pretty Pictures; 16 engravings.</item>
+                    <item>Royal ABC; 13 coloured engravings.</item>
+                    <item>Road to Learning strewed with Flowers ; 8 engravings.</item>
+                    <item>The Rose Bud; with 8 coloured engravings.</item>
+                    <item>Sweets for Leisure Hours; 16 coloured engravings.</item>
+                    <item>The Lily; with 8 coloured engravings.</item>
+                    <item>Unlucky John, and his Lump of Silver; 15 engravings</item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>
